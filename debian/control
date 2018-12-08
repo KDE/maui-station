@@ -31,3 +31,4 @@ Depends: qml-module-org-kde-mauikit,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Convergent terminal emulator 
+ Convergent terminal emulator
