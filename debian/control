@@ -1,15 +1,34 @@
 Source: station
-Section: unknown
+Section: sound
 Priority: optional
-Maintainer: Bruno Queiros <bqueiros@gmail.com>
-Build-Depends: debhelper (>= 10)
-Standards-Version: 4.1.2
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: https://anonscm.debian.org/git/collab-maint/station.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/station.git
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Build-Depends: appstream,
+               cmake (>= 2.8.12),
+               debhelper (>= 11),
+               extra-cmake-modules (>= 5.24.0~),
+               libkf5config-dev (>= 5.24.0~),
+               libkf5coreaddons-dev (>= 5.24.0~),
+               libkf5i18n-dev (>= 5.24.0~),
+               libkf5kio-dev,
+               libkf5notifications-dev (>= 5.24.0~),
+               libqt5websockets5-dev,
+               libtag1-dev,
+               mauikit-dev,
+               pkg-kde-tools,
+               qtbase5-dev (>= 5.5.0~),
+               qtmultimedia5-dev (>= 5.5.0~),
+               qtquickcontrols2-5-dev,
+               qtwebengine5-dev
+Standards-Version: 4.2.1
+Homepage: https://github.com/mauikit/station
+Vcs-Browser: https://github.com/mauikit/station
+Vcs-Git: https://github.com/mauikit/station.git
 
 Package: station
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: qml-module-org-kde-mauikit,
+         youtube-dl,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Convergent terminal emulator 
+ Convergent terminal emulator

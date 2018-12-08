@@ -1,5 +1,15 @@
-station (1.0-1) unstable; urgency=medium
+station (1.2+git20181114-1) UNRELEASED; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * New snapshot
 
- -- Bruno Queiros <bqueiros@gmail.com>  Sat, 01 Dec 2018 16:08:24 +0000
+ -- Jonah Brüchert <jbb@kaidan.im>  Wed, 14 Nov 2018 15:42:55 +0100
+
+station (1.2-0ubuntu1) unstable; urgency=medium
+
+  [ Clive Johnston ]
+  * Initial packaging for Ubuntu
+
+  [ Rik Mills ]
+  * Initial upstream release (1.2) 
+
+ -- Clive Johnston <clivejo@kubuntu.org>  Fri, 24 Feb 2017 12:41:11 +0000
