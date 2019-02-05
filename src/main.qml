@@ -13,7 +13,7 @@ Maui.ApplicationWindow
     textColor: "#fafafa"
     headBarBGColor: "#2c2c2c"
     headBarFGColor: "#fff"
-    page.headBarVisible: false
+//    headBar.visible: false
     floatingBar: true
     footBarOverlap: true
     footBarMargins: space.huge
