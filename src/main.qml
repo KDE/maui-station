@@ -13,17 +13,20 @@ Maui.ApplicationWindow
     textColor: "#fafafa"
     headBarBGColor: "#2c2c2c"
     headBarFGColor: "#fff"
-    page.headBarVisible: false
     floatingBar: true
     footBarOverlap: true
     footBarMargins: space.huge
     footBarAligment: Qt.AlignRight
+    headBar.drawBorder: false
+
+    onSearchButtonClicked: terminal.findBar.visible = !terminal.findBar.visible
 
     footBar.middleContent:[
 
         Maui.PieButton
         {
             iconName: "list-add"
+            iconColor: "white"
             barHeight: footBar.height
             content: [
                 Maui.ToolButton
@@ -57,5 +60,31 @@ Maui.ApplicationWindow
         id: terminal
         anchors.fill: parent
         kterminal.colorScheme: "DarkPastels"
+
+//        menu:[
+//            Maui.MenuItem
+//            {
+//                Row
+//                {
+//                    anchors.fill: parent
+
+//                    Rectangle
+//                    {
+//                        height: iconSizes.medium
+//                        width: height
+//                        radius: radiusV
+//                        color: "#2c2c2c"
+//                    }
+
+//                    Rectangle
+//                    {
+//                        height: iconSizes.medium
+//                        width: height
+//                        radius: radiusV
+//                        color: "#2c2c2c"
+//                    }
+//                }
+//            }
+//        ]
     }
 }
