@@ -11,8 +11,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt5 REQUIRED NO_MODULE COMPONENTS Qml Quick Sql Svg QuickControls2 Widgets)
 
 add_executable(${PROJECT_NAME}
-    "src/main.cpp"
-    "src/qml.qrc"
+    src/main.cpp
+    src/helpers/keyshelper.cpp
+    src/qml.qrc
     )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
