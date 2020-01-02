@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
+#include "station_version.h"
+
 #ifdef Q_OS_ANDROID
 #include <QGuiApplication>
 #else
@@ -28,7 +30,7 @@ int main(int argc, char *argv[])
 #endif
 
 	app.setApplicationName("station");
-	app.setApplicationVersion("1.0");
+    app.setApplicationVersion(STATION_VERSION_STRING);
 	app.setApplicationDisplayName("station");
 
 #ifdef STATIC_KIRIGAMI
