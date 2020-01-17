@@ -1,5 +1,5 @@
-import QtQuick 2.9
-import QtQuick.Controls 2.2
+import QtQuick 2.10
+import QtQuick.Controls 2.10
 import org.kde.kirigami 2.4 as Kirigami
 import org.kde.mauikit 1.0 as Maui
 import QtQuick.Layouts 1.3
@@ -73,44 +73,36 @@ Label
     ]
 
 
-    Maui.FloatingButton
+
+    Maui.PieButton
     {
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        anchors.margins: Maui.Style.space.big
+        anchors.margins: height
 //        radius: Maui.Style.radiusV
+        z: 999
 
         height: Maui.Style.toolBarHeight
-        width: height
-        z: 999
-//        color: Kirigami.Theme.highlightColor
+        icon.name: "tools"
+        icon.color: Kirigami.Theme.highlightedTextColor
+        alignment: Qt.AlignLeft
 
-        Maui.PieButton
+        Action
         {
-            anchors.fill : parent
-            icon.name: "tools"
-            icon.color: Kirigami.Theme.highlightedTextColor
-            barHeight: parent.height
-            alignment: Qt.AlignLeft
-            content: [
-                ToolButton
-                {
-                    icon.name: "edit-copy"
-                    onClicked: kterminal.copyClipboard()
-                },
+            icon.name: "edit-copy"
+            onTriggered: kterminal.copyClipboard()
+        }
 
-                ToolButton
-                {
-                    icon.name: "edit-paste"
-                    onClicked: kterminal.pasteClipboard()
-                },
+        Action
+        {
+            icon.name: "edit-paste"
+            onTriggered: kterminal.pasteClipboard()
+        }
 
-                ToolButton
-                {
-                    icon.name: "edit-find"
-                    onClicked: terminal.findBar.visible = !terminal.findBar.visible
-                }
-            ]
+        Action
+        {
+            icon.name: "edit-find"
+            onTriggered: terminal.findBar.visible = !terminal.findBar.visible
         }
     }
 
