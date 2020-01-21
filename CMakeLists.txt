@@ -5,6 +5,8 @@ project(station LANGUAGES CXX VERSION ${STATION_VERSION})
 find_package(ECM 1.7.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
 
+include(KDEInstallDirs)
+include(ECMInstallIcons)
 include(ECMSetupVersion)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -20,6 +22,13 @@ add_executable(${PROJECT_NAME}
     src/helpers/keyshelper.cpp
     src/qml.qrc
     )
+
+install(TARGETS station ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(FILES org.kde.station.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
+ecm_install_icons(
+  ICONS src/sc-apps-maui-station.svg
+  DESTINATION share/icons
+)
 
 ecm_setup_version(${STATION_VERSION}
     VARIABLE_PREFIX STATION
