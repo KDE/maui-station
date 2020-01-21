@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>sc-apps-maui-station.svg</file>
     </qresource>
 </RCC>

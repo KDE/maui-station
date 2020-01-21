@@ -1,4 +1,5 @@
 #include <QGuiApplication>
+#include <QIcon>
 #include <QQmlApplicationEngine>
 
 #include "station_version.h"
@@ -21,33 +22,35 @@
 
 int main(int argc, char *argv[])
 {
-	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
 #ifdef Q_OS_ANDROID
-	QGuiApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
 #else
-	QApplication app(argc, argv);
+    QApplication app(argc, argv);
 #endif
 
-	app.setApplicationName("station");
+    app.setApplicationName("station");
     app.setApplicationVersion(STATION_VERSION_STRING);
-	app.setApplicationDisplayName("station");
+    app.setApplicationDisplayName("station");
+
+    app.setWindowIcon(QIcon(":/sc-apps-station.svg"));
 
 #ifdef STATIC_KIRIGAMI
-	KirigamiPlugin::getInstance().registerTypes();
+    KirigamiPlugin::getInstance().registerTypes();
 #endif
 
 #ifdef STATIC_MAUIKIT
-	MauiKit::getInstance().registerTypes();
+    MauiKit::getInstance().registerTypes();
 #endif
 
-	qmlRegisterType<Key> ();
-	qmlRegisterType<KeysHelper> ("org.maui.station", 1, 0, "KeysModel");
+    qmlRegisterType<Key> ();
+    qmlRegisterType<KeysHelper> ("org.maui.station", 1, 0, "KeysModel");
 
-	QQmlApplicationEngine engine;
-	engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-	if (engine.rootObjects().isEmpty())
-		return -1;
+    QQmlApplicationEngine engine;
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    if (engine.rootObjects().isEmpty())
+        return -1;
 
-	return app.exec();
+    return app.exec();
 }

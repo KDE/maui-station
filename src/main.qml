@@ -11,6 +11,10 @@ Maui.ApplicationWindow
     id: root
     title: qsTr("Station | ") +  terminal.session.title
     property alias kterminal : terminal.kterminal
+
+    Maui.App.iconName: "qrc:/sc-apps-station.svg"
+    Maui.App.description: qsTr("MAUI Station is a terminal emulator built with MauiKit")
+
     //    viewBackgroundColor: backgroundColor
     //    backgroundColor: "#242222"
     //    textColor: "#fafafa"

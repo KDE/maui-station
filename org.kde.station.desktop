@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Station
+Comment=Terminal Emulator
+TryExec=station
+Exec=station %U
+Terminal=false
+Type=Application
+Categories=Qt;KDE;System;
+StartupNotify=true
+Icon=maui-station
