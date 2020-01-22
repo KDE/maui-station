@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>station.svg</file>
+    </qresource>
+</RCC>

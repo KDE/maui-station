@@ -19,6 +19,7 @@ add_executable(${PROJECT_NAME}
     src/main.cpp
     src/helpers/keyshelper.cpp
     src/qml.qrc
+    src/assets/assets.qrc
     )
 
 ecm_setup_version(${STATION_VERSION}

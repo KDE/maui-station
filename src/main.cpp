@@ -1,5 +1,5 @@
-#include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QIcon>
 
 #include "station_version.h"
 
@@ -29,9 +29,13 @@ int main(int argc, char *argv[])
 	QApplication app(argc, argv);
 #endif
 
-	app.setApplicationName("station");
+    app.setApplicationName("station");
+    app.setApplicationDisplayName("Station");
+    app.setOrganizationName("Maui");
+    app.setOrganizationDomain("org.maui.station");
     app.setApplicationVersion(STATION_VERSION_STRING);
-	app.setApplicationDisplayName("station");
+    app.setApplicationDisplayName("Station");
+    app.setWindowIcon(QIcon(":/station.svg"));
 
 #ifdef STATIC_KIRIGAMI
 	KirigamiPlugin::getInstance().registerTypes();

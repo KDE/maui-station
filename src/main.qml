@@ -11,16 +11,9 @@ Maui.ApplicationWindow
     id: root
     title: qsTr("Station | ") +  terminal.session.title
     property alias kterminal : terminal.kterminal
-    //    viewBackgroundColor: backgroundColor
-    //    backgroundColor: "#242222"
-    //    textColor: "#fafafa"
-    //    headBarBGColor: "#2c2c2c"
-    //    headBarFGColor: "#fff"
-    //    floatingBar: true
-    //    footBarOverlap: true
-    //    footBarMargins: space.huge
-    //    footBarAligment: Qt.AlignRight
-    //    headBar.drawBorder: false
+    Maui.App.handleAccounts: false
+    Maui.App.description: qsTr("Station is a convergent terminal emulator")
+    Maui.App.iconName: "qrc:/station.svg"
 
     rightIcon.visible: false
 
@@ -29,57 +22,43 @@ Maui.ApplicationWindow
         if(terminal.session.hasActiveProcess)
         {
             root.notify("face-ninja", "Process is running", "Are you sure you want to quit?", root.close())
-                close.accepted = false
+            close.accepted = false
         }
-
     }
 
     headBar.leftContent: RowLayout
     {
-
-//        Rectangle
-//        {
-//            color: terminal.session.hasActiveProcess ? Kirigami.Theme.neutralTextColor : Kirigami.Theme.positiveTextColor
-//            Layout.preferredHeight: Maui.Style.iconSizes.tiny
-//            Layout.preferredWidth: height
-//            radius: height
-//        }
-
-Label
-    {
-        Layout.fillWidth: true
-        Layout.fillHeight: true
-        text: terminal.session.title
+        Label
+        {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            text: terminal.session.title
+        }
     }
-
-
-}
 
     headBar.rightContent: [
         ToolButton
-            {
-                icon.name: "view-split-left-right"
-            },
+        {
+            icon.name: "view-split-left-right"
+        },
 
-            ToolButton
-                {
-                    icon.name: "view-split-top-bottom"
-                },
+        ToolButton
+        {
+            icon.name: "view-split-top-bottom"
+        },
 
-                ToolButton
-                    {
-                        icon.name: "tab-new"
-                    }
+        ToolButton
+        {
+            icon.name: "tab-new"
+        }
     ]
-
-
 
     Maui.PieButton
     {
         anchors.right: parent.right
         anchors.bottom: parent.bottom
         anchors.margins: height
-//        radius: Maui.Style.radiusV
+        //        radius: Maui.Style.radiusV
         z: 999
 
         height: Maui.Style.toolBarHeight
@@ -106,6 +85,7 @@ Label
         }
     }
 
+    footBar.visible: Maui.Handy.isTouch
     footBar.leftContent:  Repeater
     {
         model: Station.KeysModel
@@ -120,9 +100,7 @@ Label
 
             onClicked: _keysModel.sendKey(index, terminal.kterminal)
         }
-
     }
-
 
     Maui.Terminal
     {
