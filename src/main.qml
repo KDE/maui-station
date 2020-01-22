@@ -109,8 +109,5 @@ Maui.ApplicationWindow
         anchors.fill : parent
         session.shellProgram: "/bin/zsh"
         kterminal.colorScheme: "DarkPastels"
-
     }
-
-
 }
