@@ -1,6 +1,8 @@
 [Desktop Entry]
 Name=Station
+Name[x-test]=xxStationxx
 Comment=Terminal Emulator
+Comment[x-test]=xxTerminal Emulatorxx
 TryExec=station
 Exec=station %U
 Terminal=false
