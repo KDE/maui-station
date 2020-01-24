@@ -15,8 +15,6 @@ Maui.ApplicationWindow
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
 
-    rightIcon.visible: false
-
     onClosing:
     {
         if(terminal.session.hasActiveProcess)
