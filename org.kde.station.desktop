@@ -1,7 +1,15 @@
 [Desktop Entry]
 Name=Station
+Name[ca]=Estació
+Name[nl]=Station:
+Name[pt]=Station
+Name[uk]=Station
 Name[x-test]=xxStationxx
 Comment=Terminal Emulator
+Comment[ca]=Emulador de terminal
+Comment[nl]=Terminalemulator
+Comment[pt]=Emulador de Terminal
+Comment[uk]=Емулятор термінала
 Comment[x-test]=xxTerminal Emulatorxx
 TryExec=station
 Exec=station %U
