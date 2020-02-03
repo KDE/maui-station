@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Station
 Name[ca]=Estació
+Name[es]=Estación
 Name[et]=Jaam
 Name[nl]=Station:
 Name[pt]=Station
@@ -10,6 +11,7 @@ Name[x-test]=xxStationxx
 Name[zh_TW]=Station
 Comment=Terminal Emulator
 Comment[ca]=Emulador de terminal
+Comment[es]=Emulador de terminal
 Comment[et]=Terminaliemulaator
 Comment[nl]=Terminalemulator
 Comment[pt]=Emulador de Terminal
