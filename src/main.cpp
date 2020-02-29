@@ -1,5 +1,7 @@
-#include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QIcon>
+
+#include "station_version.h"
 
 #ifdef Q_OS_ANDROID
 #include <QGuiApplication>
@@ -15,6 +17,8 @@
 #include "./mauikit/src/mauikit.h"
 #endif
 
+#include "helpers/keyshelper.h"
+
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -26,8 +30,12 @@ int main(int argc, char *argv[])
 #endif
 
     app.setApplicationName("station");
-    app.setApplicationVersion("1.0");
-    app.setApplicationDisplayName("station");
+    app.setApplicationDisplayName("Station");
+    app.setOrganizationName("Maui");
+    app.setOrganizationDomain("org.maui.station");
+    app.setApplicationVersion(STATION_VERSION_STRING);
+    app.setApplicationDisplayName("Station");
+    app.setWindowIcon(QIcon(":/station.svg"));
 
 #ifdef STATIC_KIRIGAMI
     KirigamiPlugin::getInstance().registerTypes();
@@ -36,6 +44,9 @@ int main(int argc, char *argv[])
 #ifdef STATIC_MAUIKIT
     MauiKit::getInstance().registerTypes();
 #endif
+
+    qmlRegisterType<Key> ();
+    qmlRegisterType<KeysHelper> ("org.maui.station", 1, 0, "KeysModel");
 
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
