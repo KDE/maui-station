@@ -16,15 +16,21 @@ Maui.Terminal
         control.kterminal.forceActiveFocus()
     }
 
-//   Component.onCompleted:
-//   {
-//       control.session.intialWorkingDirectory = control.path
-//   }
+   Component.onCompleted:
+   {
+       control.session.initialWorkingDirectory = control.path
+   }
 
    onClicked:
    {
        _splitView.currentIndex = control.index
 
+   }
+
+   onUrlsDropped:
+   {
+       for(var i in urls)
+       control.session.sendText(urls[i].replace("file://", "")+ " ")
    }
 
    SplitView.fillHeight: true
@@ -40,19 +46,19 @@ Maui.Terminal
     kterminal.colorScheme: "DarkPastels"
     onKeyPressed:
     {
-        if ((event.key == Qt.Key_V) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
+        if ((event.key == Qt.Key_T) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
         {
-            kterminal.pasteClipboard()
+            root.openTab(control.session.intialWorkingDirectory)
         }
 
-        if ((event.key == Qt.Key_C) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
-        {
-            kterminal.copyClipboard()
-        }
+//        if ((event.key == Qt.Key_C) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
+//        {
+//            kterminal.copyClipboard()
+//        }
 
-        if ((event.key == Qt.Key_F) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
-        {
-            footBar.visible = !footBar.visible
-        }
+//        if ((event.key == Qt.Key_F) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
+//        {
+//            footBar.visible = !footBar.visible
+//        }
     }
 }

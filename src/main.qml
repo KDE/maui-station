@@ -10,7 +10,7 @@ import org.maui.station 1.0 as Station
 Maui.ApplicationWindow
 {
     id: root
-    title: qsTr("Station | ") + currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
+    title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
 
     property alias currentTab : _browserList.currentItem
     Maui.App.handleAccounts: false
@@ -54,7 +54,7 @@ Maui.ApplicationWindow
         ToolButton
         {
             icon.name: "tab-new"
-            onClicked: root.openTab("$HOME")
+            onClicked: root.openTab("~")
         }
     ]
 
