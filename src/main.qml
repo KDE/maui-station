@@ -11,8 +11,8 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
-
     property alias currentTab : _browserList.currentItem
+
     Maui.App.handleAccounts: false
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
@@ -41,7 +41,6 @@ Maui.ApplicationWindow
             icon.name: "view-split-left-right"
             onClicked: root.currentTab.split(Qt.Horizontal)
             checked: root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
-
         },
 
         ToolButton
