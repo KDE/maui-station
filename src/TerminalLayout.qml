@@ -55,10 +55,10 @@ ColumnLayout
         radius: 0
         Layout.fillWidth: true
         Layout.alignment:Qt.AlignBottom
-onPlaceClicked:
-{
-    terminal.session.sendText("cd " + path.trim() + "\n")
-}
+        onPlaceClicked:
+        {
+            terminal.session.sendText("cd " + path.trim() + "\n")
+        }
         url: control.terminal.title.slice(control.terminal.title.indexOf(":")+1)
     }
 
