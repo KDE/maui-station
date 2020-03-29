@@ -12,6 +12,7 @@ Maui.ApplicationWindow
     id: root
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
     property alias currentTab : _browserList.currentItem
+    readonly property Maui.Terminal currentTerminal : currentTab.terminal
 
     Maui.App.handleAccounts: false
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
@@ -103,10 +104,9 @@ Maui.ApplicationWindow
             text: model.label
             icon.name: model.iconName
 
-            onClicked: _keysModel.sendKey(index, terminal.currentTab)
+            onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
         }
     }
-
 
     ObjectModel { id: tabsObjectModel }
 
