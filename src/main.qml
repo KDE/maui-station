@@ -17,7 +17,6 @@ Maui.ApplicationWindow
     Maui.App.handleAccounts: false
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
-    Maui.App.enableCSD: true
 
     onClosing:
     {
@@ -221,6 +220,6 @@ Maui.ApplicationWindow
 
     function closeTab(index)
     {
-
+        tabsObjectModel.remove(index)
     }
 }
