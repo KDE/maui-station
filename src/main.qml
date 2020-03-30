@@ -49,7 +49,7 @@ Maui.ApplicationWindow
             autoExclusive: true
             icon.name: "view-split-top-bottom"
             onClicked: root.currentTab.split(Qt.Vertical)
-              checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
+            checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
         },
 
         ToolButton
@@ -110,117 +110,117 @@ Maui.ApplicationWindow
 
     ObjectModel { id: tabsObjectModel }
 
-       ColumnLayout
-       {
-           id: _layout
-           anchors.fill: parent
-           spacing: 0
+    ColumnLayout
+    {
+        id: _layout
+        anchors.fill: parent
+        spacing: 0
 
-           Maui.TabBar
-           {
-               id: tabsBar
-               visible: _browserList.count > 1
-               Layout.fillWidth: true
-               Layout.preferredHeight: tabsBar.implicitHeight
-               position: TabBar.Header
-               currentIndex : _browserList.currentIndex
+        Maui.TabBar
+        {
+            id: tabsBar
+            visible: _browserList.count > 1
+            Layout.fillWidth: true
+            Layout.preferredHeight: tabsBar.implicitHeight
+            position: TabBar.Header
+            currentIndex : _browserList.currentIndex
 
-               Repeater
-               {
-                   id: _repeater
-                   model: tabsObjectModel.count
+            Repeater
+            {
+                id: _repeater
+                model: tabsObjectModel.count
 
-                   Maui.TabButton
-                   {
-                       id: _tabButton
-                       implicitHeight: tabsBar.implicitHeight
-                       implicitWidth: Math.max(root.width / _repeater.count, 120)
-                       checked: index === _browserList.currentIndex
+                Maui.TabButton
+                {
+                    id: _tabButton
+                    implicitHeight: tabsBar.implicitHeight
+                    implicitWidth: Math.max(root.width / _repeater.count, 120)
+                    checked: index === _browserList.currentIndex
 
-                       text: tabsObjectModel.get(index).terminal.title
+                    text: tabsObjectModel.get(index).terminal.title
 
-                       onClicked:
-                       {
-                           _browserList.currentIndex = index
-                       }
+                    onClicked:
+                    {
+                        _browserList.currentIndex = index
+                    }
 
-                       onCloseClicked: root.closeTab(index)
-                   }
-               }
-           }
+                    onCloseClicked: root.closeTab(index)
+                }
+            }
+        }
 
-           Flickable
-           {
-               Layout.margins: 0
-               Layout.fillWidth: true
-               Layout.fillHeight: true
+        Flickable
+        {
+            Layout.margins: 0
+            Layout.fillWidth: true
+            Layout.fillHeight: true
 
-               ListView
-               {
-                   id: _browserList
-                   anchors.fill: parent
-                   clip: true
-                   focus: true
-                   orientation: ListView.Horizontal
-                   model: tabsObjectModel
-                   snapMode: ListView.SnapOneItem
-                   spacing: 0
-                   interactive: Kirigami.Settings.hasTransientTouchInput && tabsObjectModel.count > 1
-                   highlightFollowsCurrentItem: true
-                   highlightMoveDuration: 0
-                   highlightResizeDuration: 0
-                   highlightRangeMode: ListView.StrictlyEnforceRange
-                   preferredHighlightBegin: 0
-                   preferredHighlightEnd: width
-                   highlight: Item {}
-                   highlightMoveVelocity: -1
-                   highlightResizeVelocity: -1
+            ListView
+            {
+                id: _browserList
+                anchors.fill: parent
+                clip: true
+                focus: true
+                orientation: ListView.Horizontal
+                model: tabsObjectModel
+                snapMode: ListView.SnapOneItem
+                spacing: 0
+                interactive: Kirigami.Settings.hasTransientTouchInput && tabsObjectModel.count > 1
+                highlightFollowsCurrentItem: true
+                highlightMoveDuration: 0
+                highlightResizeDuration: 0
+                highlightRangeMode: ListView.StrictlyEnforceRange
+                preferredHighlightBegin: 0
+                preferredHighlightEnd: width
+                highlight: Item {}
+                highlightMoveVelocity: -1
+                highlightResizeVelocity: -1
 
-                   onMovementEnded: _browserList.currentIndex = indexAt(contentX, contentY)
-                   boundsBehavior: Flickable.StopAtBounds
+                onMovementEnded: _browserList.currentIndex = indexAt(contentX, contentY)
+                boundsBehavior: Flickable.StopAtBounds
 
-                   onCurrentItemChanged:
-                   {
-//                       control.currentPath =  tabsObjectModel.get(currentIndex).path
-//                       _viewTypeGroup.currentIndex = browserView.viewType
-                       currentItem.forceActiveFocus()
-                   }
-               }
-           }
+                onCurrentItemChanged:
+                {
+                    //                       control.currentPath =  tabsObjectModel.get(currentIndex).path
+                    //                       _viewTypeGroup.currentIndex = browserView.viewType
+                    currentItem.forceActiveFocus()
+                }
+            }
+        }
 
 
-//           Maui.PathBar
-//              {
-//                  //    Kirigami.Theme.backgroundColor:"transparent"
-//                  //    Kirigami.Theme.textColor:c"white"
-//                  Layout.fillWidth: true
+        //           Maui.PathBar
+        //              {
+        //                  //    Kirigami.Theme.backgroundColor:"transparent"
+        //                  //    Kirigami.Theme.textColor:c"white"
+        //                  Layout.fillWidth: true
 
-//                  border.color: "transparent"
-//                  radius: 0
-//                  Layout.alignment:Qt.AlignBottom
+        //                  border.color: "transparent"
+        //                  radius: 0
+        //                  Layout.alignment:Qt.AlignBottom
 
-//                  url:  currentTab && currentTab.terminal ? currentTab.terminal.title.slice(currentTab.terminal.title.indexOf(":")+1) : ""
-//              }
-       }
+        //                  url:  currentTab && currentTab.terminal ? currentTab.terminal.title.slice(currentTab.terminal.title.indexOf(":")+1) : ""
+        //              }
+    }
 
-       Component.onCompleted:
-       {
-           openTab("$HOME")
-       }
+    Component.onCompleted:
+    {
+        openTab("$HOME")
+    }
 
-       function openTab(path)
-       {
-           const component = Qt.createComponent("TerminalLayout.qml");
-           if (component.status === Component.Ready)
-           {
-               const object = component.createObject(tabsObjectModel, {'path': path});
-               tabsObjectModel.append(object)
-               _browserList.currentIndex = tabsObjectModel.count - 1
-           }
-       }
+    function openTab(path)
+    {
+        const component = Qt.createComponent("TerminalLayout.qml");
+        if (component.status === Component.Ready)
+        {
+            const object = component.createObject(tabsObjectModel, {'path': path});
+            tabsObjectModel.append(object)
+            _browserList.currentIndex = tabsObjectModel.count - 1
+        }
+    }
 
-  function closeTab(index)
-  {
+    function closeTab(index)
+    {
 
-  }
+    }
 }
