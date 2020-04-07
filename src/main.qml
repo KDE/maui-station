@@ -11,12 +11,14 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
-    property alias currentTab : _browserList.currentItem
-    readonly property Maui.Terminal currentTerminal : currentTab.terminal
 
     Maui.App.handleAccounts: false
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
+//    Maui.App.enableCSD: true
+
+    property alias currentTab : _browserList.currentItem
+    readonly property Maui.Terminal currentTerminal : currentTab.terminal
 
     onClosing:
     {
