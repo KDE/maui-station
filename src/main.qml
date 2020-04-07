@@ -37,20 +37,27 @@ Maui.ApplicationWindow
     }
 
     headBar.rightContent: [
-        ToolButton
+        Maui.ToolActions
         {
+            expanded: headBar.width > Kirigami.Units.gridUnit * 32
+            currentIndex: -1
             autoExclusive: true
-            icon.name: "view-split-left-right"
-            onClicked: root.currentTab.split(Qt.Horizontal)
-            checked: root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
-        },
 
-        ToolButton
-        {
-            autoExclusive: true
-            icon.name: "view-split-top-bottom"
-            onClicked: root.currentTab.split(Qt.Vertical)
-            checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
+            Action
+            {
+                icon.name: "view-split-left-right"
+                text: qsTr("Split horizontal")
+                onTriggered: root.currentTab.split(Qt.Horizontal)
+//                checked: root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
+            }
+
+            Action
+            {
+                icon.name: "view-split-top-bottom"
+                text: qsTr("Split vertical")
+                onTriggered: root.currentTab.split(Qt.Vertical)
+//                checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
+            }
         },
 
         ToolButton
@@ -135,7 +142,7 @@ Maui.ApplicationWindow
                 {
                     id: _tabButton
                     implicitHeight: tabsBar.implicitHeight
-                    implicitWidth: Math.max(root.width / _repeater.count, 120)
+                    implicitWidth: Math.max(parent.width / _repeater.count, 120)
                     checked: index === _browserList.currentIndex
 
                     text: tabsObjectModel.get(index).terminal.title
