@@ -15,7 +15,7 @@ Maui.ApplicationWindow
     Maui.App.handleAccounts: false
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
-//    Maui.App.enableCSD: true
+    //    Maui.App.enableCSD: true
 
     property alias currentTab : _browserList.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
@@ -29,11 +29,25 @@ Maui.ApplicationWindow
         }
     }
 
-    headBar.leftContent: Label
+    headBar.leftContent: Item
     {
         Layout.fillWidth: true
         Layout.fillHeight: true
-        text : currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
+
+        Label
+        {
+            text : currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
+
+            anchors.fill: parent
+            visible: text.length
+            verticalAlignment: Qt.AlignVCenter
+            horizontalAlignment: Qt.AlignLeft
+            elide: Text.ElideMiddle
+            wrapMode: Text.NoWrap
+            color: Kirigami.Theme.textColor
+            font.weight: Font.Normal
+            font.pointSize: Maui.Style.fontSizes.default
+        }
     }
 
     headBar.rightContent: [
@@ -48,7 +62,7 @@ Maui.ApplicationWindow
                 icon.name: "view-split-left-right"
                 text: qsTr("Split horizontal")
                 onTriggered: root.currentTab.split(Qt.Horizontal)
-//                checked: root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
+                //                checked: root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
             }
 
             Action
@@ -56,7 +70,7 @@ Maui.ApplicationWindow
                 icon.name: "view-split-top-bottom"
                 text: qsTr("Split vertical")
                 onTriggered: root.currentTab.split(Qt.Vertical)
-//                checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
+                //                checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
             }
         },
 
