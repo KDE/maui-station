@@ -1,7 +1,8 @@
-import QtQuick 2.10
-import QtQuick.Controls 2.10
+import QtQuick 2.13
+import QtQuick.Controls 2.13
 import org.kde.kirigami 2.7 as Kirigami
 import org.kde.mauikit 1.0 as Maui
+import org.kde.mauikit 1.1 as MauiLab
 import QtQuick.Layouts 1.3
 import QtQml.Models 2.3
 
@@ -19,6 +20,7 @@ Maui.ApplicationWindow
 
     property alias currentTab : _browserList.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
+property string colorScheme: "DarkPastels"
 
     onClosing:
     {
@@ -26,6 +28,47 @@ Maui.ApplicationWindow
         {
             root.notify("face-ninja", "Process is running", "Are you sure you want to quit?", root.close())
             close.accepted = false
+        }
+    }
+
+    mainMenu: [
+    MenuItem
+        {
+            icon.name: "application-settings"
+           text: qsTr("Settings")
+           onClicked: _settingsDialog.open()
+
+        }
+
+    ]
+
+    MauiLab.SettingsDialog
+    {
+        id: _settingsDialog
+
+        Maui.Terminal
+        {
+            id: _dummyTerminal
+        }
+
+        MauiLab.SettingsSection
+        {
+            title: qsTr("General")
+            description: qsTr("Configure the app UI and plugins.")
+
+            ComboBox
+            {
+                id: _colorSchemesCombobox
+                model: _dummyTerminal.kterminal.availableColorSchemes
+//                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
+                onActivated:
+                {
+//                    settings.setValue("colorScheme", currentValue)
+                    root.colorScheme = _colorSchemesCombobox.currentValue
+                }
+
+                Kirigami.FormData.label: qsTr("Color Scheme")
+            }
         }
     }
 
@@ -83,6 +126,7 @@ Maui.ApplicationWindow
 
     Maui.PieButton
     {
+        visible: Maui.Handy.isTouch
         anchors.right: parent.right
         anchors.bottom: parent.bottom
         anchors.margins: height

@@ -47,6 +47,11 @@ ColumnLayout
         onCurrentItemChanged: currentItem.forceActiveFocus()
     }
 
+    Kirigami.Separator
+    {
+        Layout.fillWidth: true
+    }
+
     Maui.PathBar
     {
         //    Kirigami.Theme.backgroundColor:"transparent"

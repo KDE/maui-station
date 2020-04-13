@@ -43,7 +43,7 @@ Maui.Terminal
    SplitView.minimumWidth: _splitView.orientation === Qt.Horizontal ? 300 :  0
 
 
-    kterminal.colorScheme: "DarkPastels"
+    kterminal.colorScheme: root.colorScheme
     onKeyPressed:
     {
         if ((event.key == Qt.Key_T) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
