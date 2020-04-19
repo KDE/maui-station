@@ -16,11 +16,13 @@ Maui.ApplicationWindow
     Maui.App.handleAccounts: false
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
-    //    Maui.App.enableCSD: true
+    Maui.App.enableCSD: true
+    autoHideHeader: focusMode
 
     property alias currentTab : _browserList.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
-property string colorScheme: "DarkPastels"
+    property string colorScheme: "DarkPastels"
+    property bool focusMode : Maui.FM.loadSettings("FOCUS_MODE", "GENERAL", false) == "true"
 
     onClosing:
     {
@@ -32,14 +34,12 @@ property string colorScheme: "DarkPastels"
     }
 
     mainMenu: [
-    MenuItem
+        MenuItem
         {
             icon.name: "application-settings"
-           text: qsTr("Settings")
-           onClicked: _settingsDialog.open()
-
+            text: qsTr("Settings")
+            onClicked: _settingsDialog.open()
         }
-
     ]
 
     MauiLab.SettingsDialog
@@ -56,14 +56,27 @@ property string colorScheme: "DarkPastels"
             title: qsTr("General")
             description: qsTr("Configure the app UI and plugins.")
 
+            Switch
+            {
+                Kirigami.FormData.label: qsTr("Focus Mode")
+                Layout.fillWidth: true
+                checkable: true
+                checked: root.focusMode
+                onToggled:
+                {
+                    root.focusMode = !root.focusMode
+                    Maui.FM.saveSettings("FOCUS_MODE",  root.focusMode, "GENERAL")
+                }
+            }
+
             ComboBox
             {
                 id: _colorSchemesCombobox
                 model: _dummyTerminal.kterminal.availableColorSchemes
-//                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
+                //                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
                 onActivated:
                 {
-//                    settings.setValue("colorScheme", currentValue)
+                    //                    settings.setValue("colorScheme", currentValue)
                     root.colorScheme = _colorSchemesCombobox.currentValue
                 }
 
@@ -72,17 +85,18 @@ property string colorScheme: "DarkPastels"
         }
     }
 
-    headBar.leftContent: Item
-    {
-        Layout.fillWidth: true
-        Layout.fillHeight: true
-
+    headBar.leftContent: [
+        ToolButton
+        {
+            icon.name: "tab-new"
+            onClicked: root.openTab("~")
+        },
         Label
         {
-            text : currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
-
-            anchors.fill: parent
-            visible: text.length
+            text : root.title
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            //            visible: text.length
             verticalAlignment: Qt.AlignVCenter
             horizontalAlignment: Qt.AlignLeft
             elide: Text.ElideMiddle
@@ -90,15 +104,14 @@ property string colorScheme: "DarkPastels"
             color: Kirigami.Theme.textColor
             font.weight: Font.Normal
             font.pointSize: Maui.Style.fontSizes.default
-        }
-    }
+        }]
 
     headBar.rightContent: [
         Maui.ToolActions
         {
             expanded: headBar.width > Kirigami.Units.gridUnit * 32
-            currentIndex: -1
             autoExclusive: true
+            display: ToolButton.TextBesideIcon
 
             Action
             {
@@ -115,13 +128,9 @@ property string colorScheme: "DarkPastels"
                 onTriggered: root.currentTab.split(Qt.Vertical)
                 //                checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
             }
-        },
-
-        ToolButton
-        {
-            icon.name: "tab-new"
-            onClicked: root.openTab("~")
         }
+
+
     ]
 
     Maui.PieButton
