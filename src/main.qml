@@ -16,7 +16,6 @@ Maui.ApplicationWindow
     Maui.App.handleAccounts: false
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
-    Maui.App.enableCSD: true
     autoHideHeader: focusMode
 
     property alias currentTab : _browserList.currentItem
