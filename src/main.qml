@@ -23,6 +23,11 @@ Maui.ApplicationWindow
     property string colorScheme: "DarkPastels"
     property bool focusMode : Maui.FM.loadSettings("FOCUS_MODE", "GENERAL", false) == "true"
 
+    onCurrentTabChanged:
+    {
+        _splitButton.currentIndex = currentTab && currentTab.count > 1 ? currentTab.orientation === Qt.Vertical ? 1 : (currentTab.orientation === Qt.Horizontal ? 0 : -1) : -1
+    }
+
     onClosing:
     {
         if(currentTab.terminal.session.hasActiveProcess)
@@ -108,6 +113,7 @@ Maui.ApplicationWindow
     headBar.rightContent: [
         Maui.ToolActions
         {
+            id: _splitButton
             expanded: headBar.width > Kirigami.Units.gridUnit * 32
             autoExclusive: true
             display: ToolButton.TextBesideIcon
@@ -198,7 +204,7 @@ Maui.ApplicationWindow
             Layout.preferredHeight: tabsBar.implicitHeight
             position: TabBar.Header
             currentIndex : _browserList.currentIndex
-
+            onNewTabClicked: openTab("$HOME")
             Repeater
             {
                 id: _repeater
