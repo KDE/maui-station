@@ -36,15 +36,86 @@ ColumnLayout
             model: splitObjectModel
         }
 
-        onOrientationChanged:
-        {
-            _splitView.width = _splitView.width +1
-            _splitView.width = control.width
-            _splitView.height = _splitView.height +1
-            _splitView.height = control.height
-        }
+
 
         onCurrentItemChanged: currentItem.forceActiveFocus()
+
+        handle: Rectangle
+        {
+            implicitWidth: 6
+            implicitHeight: 6
+            color: SplitHandle.pressed ? Kirigami.Theme.highlightColor
+                                       : (SplitHandle.hovered ? Qt.lighter(Kirigami.Theme.backgroundColor, 1.1) : Kirigami.Theme.backgroundColor)
+
+            Rectangle
+            {
+                anchors.centerIn: parent
+                height: _splitView.orientation == Qt.Horizontal ? 48 : parent.height
+                width:  _splitView.orientation == Qt.Horizontal ? parent.width : 48
+                color: _splitSeparator1.color
+            }
+
+
+            states: [  State
+            {
+                when: _splitView.orientation === Qt.Horizontal
+
+                AnchorChanges
+                {
+                    target: _splitSeparator1
+                    anchors.top: parent.top
+                    anchors.bottom: parent.bottom
+                    anchors.left: parent.left
+                    anchors.right: undefined
+                }
+
+                AnchorChanges
+                {
+                    target: _splitSeparator2
+                    anchors.top: parent.top
+                    anchors.bottom: parent.bottom
+                    anchors.right: parent.right
+                    anchors.left: undefined
+                }
+            },
+
+            State
+            {
+                when: _splitView.orientation === Qt.Vertical
+
+                AnchorChanges
+                {
+                    target: _splitSeparator1
+                    anchors.top: parent.top
+                    anchors.bottom: undefined
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                }
+
+                AnchorChanges
+                {
+                    target: _splitSeparator2
+                    anchors.top: undefined
+                    anchors.bottom: parent.bottom
+                    anchors.right: parent.right
+                    anchors.left: parent.left
+                }
+            }
+
+            ]
+
+
+            Kirigami.Separator
+            {
+                id: _splitSeparator1
+            }
+
+            Kirigami.Separator
+            {
+                id: _splitSeparator2
+            }
+        }
+
     }
 
     Kirigami.Separator
