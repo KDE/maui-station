@@ -36,8 +36,6 @@ ColumnLayout
             model: splitObjectModel
         }
 
-
-
         onCurrentItemChanged: currentItem.forceActiveFocus()
 
         handle: Rectangle
@@ -127,6 +125,7 @@ ColumnLayout
     {
         //    Kirigami.Theme.backgroundColor:"transparent"
         //    Kirigami.Theme.textColor:c"white"
+        visible: root.pathBar
         border.color: "transparent"
         radius: 0
         Layout.fillWidth: true

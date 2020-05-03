@@ -21,7 +21,8 @@ Maui.ApplicationWindow
     property alias currentTab : _browserList.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
     property string colorScheme: "DarkPastels"
-    property bool focusMode : Maui.FM.loadSettings("FOCUS_MODE", "GENERAL", false) == "true"
+    property bool focusMode : Maui.FM.loadSettings("FOCUS_MODE", "GENERAL", false)
+    property bool pathBar : Maui.FM.loadSettings("PATH_BAR", "GENERAL", true)
 
     onCurrentTabChanged:
     {
@@ -70,6 +71,19 @@ Maui.ApplicationWindow
                 {
                     root.focusMode = !root.focusMode
                     Maui.FM.saveSettings("FOCUS_MODE",  root.focusMode, "GENERAL")
+                }
+            }
+
+            Switch
+            {
+                Kirigami.FormData.label: qsTr("PathBar")
+                Layout.fillWidth: true
+                checkable: true
+                checked: root.pathBar
+                onToggled:
+                {
+                    root.pathBar = !root.pathBar
+                    Maui.FM.saveSettings("PATH_BAR",  root.pathBar, "GENERAL")
                 }
             }
 
