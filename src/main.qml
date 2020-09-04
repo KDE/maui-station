@@ -1,8 +1,7 @@
 import QtQuick 2.13
 import QtQuick.Controls 2.13
 import org.kde.kirigami 2.7 as Kirigami
-import org.kde.mauikit 1.0 as Maui
-import org.kde.mauikit 1.1 as MauiLab
+import org.kde.mauikit 1.2 as Maui
 import QtQuick.Layouts 1.3
 import QtQml.Models 2.3
 
@@ -39,53 +38,63 @@ Maui.ApplicationWindow
     }
 
     mainMenu: [
-        MenuItem
+        Action
         {
             icon.name: "application-settings"
             text: qsTr("Settings")
-            onClicked: _settingsDialog.open()
+            onTriggered: _settingsDialog.open()
         }
     ]
 
-    MauiLab.SettingsDialog
+    Maui.Terminal
+    {
+        id: _dummyTerminal
+    }
+
+    Maui.SettingsDialog
     {
         id: _settingsDialog
 
-        Maui.Terminal
-        {
-            id: _dummyTerminal
-        }
 
-        MauiLab.SettingsSection
+        Maui.SettingsSection
         {
             title: qsTr("General")
             description: qsTr("Configure the app UI and plugins.")
 
-            Switch
+            Maui.SettingTemplate
             {
-                Kirigami.FormData.label: qsTr("Focus Mode")
-                Layout.fillWidth: true
-                checkable: true
-                checked: root.focusMode
-                onToggled:
+                label1.text: qsTr("Focus Mode")
+                label2.text: qsTr("Hides the main header for a distraction free console experience")
+
+                Switch
                 {
-                    root.focusMode = !root.focusMode
-                    Maui.FM.saveSettings("FOCUS_MODE",  root.focusMode, "GENERAL")
+
+                    checkable: true
+                    checked: root.focusMode
+                    onToggled:
+                    {
+                        root.focusMode = !root.focusMode
+                        Maui.FM.saveSettings("FOCUS_MODE",  root.focusMode, "GENERAL")
+                    }
                 }
             }
 
-            Switch
+            Maui.SettingTemplate
             {
-                Kirigami.FormData.label: qsTr("PathBar")
-                Layout.fillWidth: true
-                checkable: true
-                checked: root.pathBar
-                onToggled:
+                label1.text: qsTr("PathBar")
+                label2.text: qsTr("Display the console current path as breadcrumbs")
+                Switch
                 {
-                    root.pathBar = !root.pathBar
-                    Maui.FM.saveSettings("PATH_BAR",  root.pathBar, "GENERAL")
+                    checkable: true
+                    checked: root.pathBar
+                    onToggled:
+                    {
+                        root.pathBar = !root.pathBar
+                        Maui.FM.saveSettings("PATH_BAR",  root.pathBar, "GENERAL")
+                    }
                 }
             }
+
 
             ComboBox
             {
