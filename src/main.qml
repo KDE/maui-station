@@ -15,6 +15,9 @@ Maui.ApplicationWindow
     Maui.App.handleAccounts: false
     Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
+    Maui.App.credits: ([{ name: "Camilo Higuita",
+                           email: "milo.h@aol.com",
+                           year: "2019-2020"}])
     autoHideHeader: focusMode
 
     property alias currentTab : _browserList.currentItem
@@ -40,7 +43,7 @@ Maui.ApplicationWindow
     mainMenu: [
         Action
         {
-            icon.name: "application-settings"
+            icon.name: "settings-configure"
             text: qsTr("Settings")
             onTriggered: _settingsDialog.open()
         }
@@ -55,11 +58,11 @@ Maui.ApplicationWindow
     {
         id: _settingsDialog
 
-
         Maui.SettingsSection
         {
-            title: qsTr("General")
-            description: qsTr("Configure the app UI and plugins.")
+            title: qsTr("Interface")
+            description: qsTr("Configure the application components and behaviour.")
+            alt: true
 
             Maui.SettingTemplate
             {
@@ -94,21 +97,33 @@ Maui.ApplicationWindow
                     }
                 }
             }
+        }
 
+        Maui.SettingsSection
+        {
+            title: qsTr("Terminal")
+            description: qsTr("Configure the app UI and plugins.")
+            alt: false
+            lastOne: true
 
-            ComboBox
+            Maui.SettingTemplate
             {
-                id: _colorSchemesCombobox
-                model: _dummyTerminal.kterminal.availableColorSchemes
-                //                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
-                onActivated:
-                {
-                    //                    settings.setValue("colorScheme", currentValue)
-                    root.colorScheme = _colorSchemesCombobox.currentValue
-                }
+                label1.text: qsTr("Color Scheme")
+                label2.text: qsTr("Change the color scheme of the terminal")
 
-                Kirigami.FormData.label: qsTr("Color Scheme")
+                ComboBox
+                {
+                    id: _colorSchemesCombobox
+                    model: _dummyTerminal.kterminal.availableColorSchemes
+                    //                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
+                    onActivated:
+                    {
+                        //                    settings.setValue("colorScheme", currentValue)
+                        root.colorScheme = _colorSchemesCombobox.currentValue
+                    }
+                }
             }
+
         }
     }
 
@@ -146,7 +161,7 @@ Maui.ApplicationWindow
                 icon.name: "view-split-left-right"
                 text: qsTr("Split horizontal")
                 onTriggered: root.currentTab.split(Qt.Horizontal)
-                //                checked: root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
+                checked:  root.currentTab && root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
             }
 
             Action
@@ -154,11 +169,9 @@ Maui.ApplicationWindow
                 icon.name: "view-split-top-bottom"
                 text: qsTr("Split vertical")
                 onTriggered: root.currentTab.split(Qt.Vertical)
-                //                checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
-            }
+                checked:  root.currentTab && root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
+           }
         }
-
-
     ]
 
     Maui.PieButton
