@@ -167,6 +167,7 @@ ColumnLayout
             return //can not pop all the browsers, leave at leats 1
         }
 
+        console.log("Current splitview index", _splitView.currentIndex)
         closeSplit(_splitView.currentIndex === 1 ? 0 : 1)
     }
 
