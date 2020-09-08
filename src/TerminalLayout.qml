@@ -134,6 +134,12 @@ ColumnLayout
         {
             terminal.session.sendText("cd " + path.trim() + "\n")
         }
+
+        onPathChanged:
+        {
+            terminal.session.sendText("cd " + path.trim() + "\n")
+        }
+
         url: control.terminal.title.slice(control.terminal.title.indexOf(":")+1)
     }
 
