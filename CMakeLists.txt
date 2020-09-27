@@ -15,7 +15,12 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt5 REQUIRED NO_MODULE COMPONENTS Qml Quick Sql Svg QuickControls2 Widgets)
+set(REQUIRED_QT_VERSION 5.10.0)
+set(REQUIRED_KF5_VERSION 5.60)
+
+find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Sql Svg QuickControls2)
+
+find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n Notifications CoreAddons)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
@@ -37,4 +42,4 @@ ecm_setup_version(${STATION_VERSION}
     )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Sql Qt5::Qml Qt5::Widgets Qt5::Svg)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Sql Qt5::Qml Qt5::Svg KF5::I18n KF5::CoreAddons)

@@ -13,13 +13,8 @@ Maui.ApplicationWindow
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
 
     Maui.App.handleAccounts: false
-    Maui.App.description: qsTr("Station is a convergent terminal emulator")
-    Maui.App.reportPage: "https://invent.kde.org/maui/station/-/issues"
-    Maui.App.webPage : "https://mauikit.org"
+
     Maui.App.iconName: "qrc:/station.svg"
-    Maui.App.credits: ([{ name: "Camilo Higuita",
-                           email: "milo.h@aol.com",
-                           year: "2019-2020"}])
     autoHideHeader: focusMode
 
     property alias currentTab : _browserList.currentItem
