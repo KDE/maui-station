@@ -48,7 +48,7 @@ Maui.Terminal
    }
 
 
-    kterminal.colorScheme: root.colorScheme
+    kterminal.colorScheme: settings.colorScheme
     onKeyPressed:
     {
         if ((event.key == Qt.Key_Tab) && (event.modifiers & Qt.ControlModifier))

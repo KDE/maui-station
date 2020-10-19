@@ -4,6 +4,7 @@ import org.kde.kirigami 2.7 as Kirigami
 import org.kde.mauikit 1.2 as Maui
 import QtQuick.Layouts 1.3
 import QtQml.Models 2.3
+import Qt.labs.settings 1.0
 
 import org.maui.station 1.0 as Station
 
@@ -13,15 +14,12 @@ Maui.ApplicationWindow
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
 
     Maui.App.handleAccounts: false
-
     Maui.App.iconName: "qrc:/station.svg"
-    autoHideHeader: focusMode
+
+    autoHideHeader: settings.focusMode
 
     property alias currentTab : _browserList.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
-    property string colorScheme: "DarkPastels"
-    property bool focusMode : Maui.FM.loadSettings("FOCUS_MODE", "GENERAL", false)
-    property bool pathBar : Maui.FM.loadSettings("PATH_BAR", "GENERAL", true)
 
     onCurrentTabChanged:
     {
@@ -35,6 +33,15 @@ Maui.ApplicationWindow
             root.notify("face-ninja", "Process is running", "Are you sure you want to quit?", root.close())
             close.accepted = false
         }
+    }
+
+    Settings
+    {
+        id: settings
+        category: "General"
+        property string colorScheme: "DarkPastels"
+        property bool focusMode : false
+        property bool pathBar : true
     }
 
     mainMenu: [
@@ -70,12 +77,8 @@ Maui.ApplicationWindow
                 {
 
                     checkable: true
-                    checked: root.focusMode
-                    onToggled:
-                    {
-                        root.focusMode = !root.focusMode
-                        Maui.FM.saveSettings("FOCUS_MODE",  root.focusMode, "GENERAL")
-                    }
+                    checked: settings.focusMode
+                    onToggled: settings.focusMode = !settings.focusMode
                 }
             }
 
@@ -86,12 +89,8 @@ Maui.ApplicationWindow
                 Switch
                 {
                     checkable: true
-                    checked: root.pathBar
-                    onToggled:
-                    {
-                        root.pathBar = !root.pathBar
-                        Maui.FM.saveSettings("PATH_BAR",  root.pathBar, "GENERAL")
-                    }
+                    checked: settings.pathBar
+                    onToggled: settings.pathBar = !settings.pathBar
                 }
             }
         }
@@ -116,7 +115,7 @@ Maui.ApplicationWindow
                     onActivated:
                     {
                         //                    settings.setValue("colorScheme", currentValue)
-                        root.colorScheme = _colorSchemesCombobox.currentValue
+                        settings.colorScheme = _colorSchemesCombobox.currentValue
                     }
                 }
             }
