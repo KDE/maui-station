@@ -48,7 +48,7 @@ Maui.ApplicationWindow
         Action
         {
             icon.name: "settings-configure"
-            text: qsTr("Settings")
+            text: i18n("Settings")
             onTriggered: _settingsDialog.open()
         }
     ]
@@ -64,14 +64,14 @@ Maui.ApplicationWindow
 
         Maui.SettingsSection
         {
-            title: qsTr("Interface")
-            description: qsTr("Configure the application components and behaviour.")
+            title: i18n("Interface")
+            description: i18n("Configure the application components and behaviour.")
             alt: true
 
             Maui.SettingTemplate
             {
-                label1.text: qsTr("Focus Mode")
-                label2.text: qsTr("Hides the main header for a distraction free console experience")
+                label1.text: i18n("Focus Mode")
+                label2.text: i18n("Hides the main header for a distraction free console experience")
 
                 Switch
                 {
@@ -84,8 +84,8 @@ Maui.ApplicationWindow
 
             Maui.SettingTemplate
             {
-                label1.text: qsTr("PathBar")
-                label2.text: qsTr("Display the console current path as breadcrumbs")
+                label1.text: i18n("PathBar")
+                label2.text: i18n("Display the console current path as breadcrumbs")
                 Switch
                 {
                     checkable: true
@@ -97,15 +97,15 @@ Maui.ApplicationWindow
 
         Maui.SettingsSection
         {
-            title: qsTr("Terminal")
-            description: qsTr("Configure the app UI and plugins.")
+            title: i18n("Terminal")
+            description: i18n("Configure the app UI and plugins.")
             alt: false
             lastOne: true
 
             Maui.SettingTemplate
             {
-                label1.text: qsTr("Color Scheme")
-                label2.text: qsTr("Change the color scheme of the terminal")
+                label1.text: i18n("Color Scheme")
+                label2.text: i18n("Change the color scheme of the terminal")
 
                 ComboBox
                 {
@@ -155,7 +155,7 @@ Maui.ApplicationWindow
             Action
             {
                 icon.name: "view-split-left-right"
-                text: qsTr("Split horizontal")
+                text: i18n("Split horizontal")
                 onTriggered: root.currentTab.split(Qt.Horizontal)
                 checked:  root.currentTab && root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
             }
@@ -163,7 +163,7 @@ Maui.ApplicationWindow
             Action
             {
                 icon.name: "view-split-top-bottom"
-                text: qsTr("Split vertical")
+                text: i18n("Split vertical")
                 onTriggered: root.currentTab.split(Qt.Vertical)
                 checked:  root.currentTab && root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
            }
