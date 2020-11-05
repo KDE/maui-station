@@ -17,7 +17,6 @@
 #include "./mauikit/src/mauikit.h"
 #endif
 
-#include <KI18n/KLocalizedContext>
 #include <KI18n/KLocalizedString>
 #include <KAboutData>
 
