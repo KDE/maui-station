@@ -1,10 +1,10 @@
 import QtQuick 2.13
 import QtQuick.Controls 2.13
 import org.kde.kirigami 2.7 as Kirigami
-import org.kde.mauikit 1.0 as Maui
-import org.kde.mauikit 1.1 as MauiLab
+import org.kde.mauikit 1.2 as Maui
 import QtQuick.Layouts 1.3
 import QtQml.Models 2.3
+import Qt.labs.settings 1.0
 
 import org.maui.station 1.0 as Station
 
@@ -14,15 +14,12 @@ Maui.ApplicationWindow
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
 
     Maui.App.handleAccounts: false
-    Maui.App.description: qsTr("Station is a convergent terminal emulator")
     Maui.App.iconName: "qrc:/station.svg"
-    autoHideHeader: focusMode
+
+    autoHideHeader: settings.focusMode
 
     property alias currentTab : _browserList.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
-    property string colorScheme: "DarkPastels"
-    property bool focusMode : Maui.FM.loadSettings("FOCUS_MODE", "GENERAL", false)
-    property bool pathBar : Maui.FM.loadSettings("PATH_BAR", "GENERAL", true)
 
     onCurrentTabChanged:
     {
@@ -38,68 +35,91 @@ Maui.ApplicationWindow
         }
     }
 
+    Settings
+    {
+        id: settings
+        category: "General"
+        property string colorScheme: "DarkPastels"
+        property bool focusMode : false
+        property bool pathBar : true
+    }
+
     mainMenu: [
-        MenuItem
+        Action
         {
-            icon.name: "application-settings"
-            text: qsTr("Settings")
-            onClicked: _settingsDialog.open()
+            icon.name: "settings-configure"
+            text: i18n("Settings")
+            onTriggered: _settingsDialog.open()
         }
     ]
 
-    MauiLab.SettingsDialog
+    Maui.Terminal
+    {
+        id: _dummyTerminal
+    }
+
+    Maui.SettingsDialog
     {
         id: _settingsDialog
 
-        Maui.Terminal
+        Maui.SettingsSection
         {
-            id: _dummyTerminal
+            title: i18n("Interface")
+            description: i18n("Configure the application components and behaviour.")
+            alt: true
+
+            Maui.SettingTemplate
+            {
+                label1.text: i18n("Focus Mode")
+                label2.text: i18n("Hides the main header for a distraction free console experience")
+
+                Switch
+                {
+
+                    checkable: true
+                    checked: settings.focusMode
+                    onToggled: settings.focusMode = !settings.focusMode
+                }
+            }
+
+            Maui.SettingTemplate
+            {
+                label1.text: i18n("PathBar")
+                label2.text: i18n("Display the console current path as breadcrumbs")
+                Switch
+                {
+                    checkable: true
+                    checked: settings.pathBar
+                    onToggled: settings.pathBar = !settings.pathBar
+                }
+            }
         }
 
-        MauiLab.SettingsSection
+        Maui.SettingsSection
         {
-            title: qsTr("General")
-            description: qsTr("Configure the app UI and plugins.")
+            title: i18n("Terminal")
+            description: i18n("Configure the app UI and plugins.")
+            alt: false
+            lastOne: true
 
-            Switch
+            Maui.SettingTemplate
             {
-                Kirigami.FormData.label: qsTr("Focus Mode")
-                Layout.fillWidth: true
-                checkable: true
-                checked: root.focusMode
-                onToggled:
+                label1.text: i18n("Color Scheme")
+                label2.text: i18n("Change the color scheme of the terminal")
+
+                ComboBox
                 {
-                    root.focusMode = !root.focusMode
-                    Maui.FM.saveSettings("FOCUS_MODE",  root.focusMode, "GENERAL")
+                    id: _colorSchemesCombobox
+                    model: _dummyTerminal.kterminal.availableColorSchemes
+                    //                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
+                    onActivated:
+                    {
+                        //                    settings.setValue("colorScheme", currentValue)
+                        settings.colorScheme = _colorSchemesCombobox.currentValue
+                    }
                 }
             }
 
-            Switch
-            {
-                Kirigami.FormData.label: qsTr("PathBar")
-                Layout.fillWidth: true
-                checkable: true
-                checked: root.pathBar
-                onToggled:
-                {
-                    root.pathBar = !root.pathBar
-                    Maui.FM.saveSettings("PATH_BAR",  root.pathBar, "GENERAL")
-                }
-            }
-
-            ComboBox
-            {
-                id: _colorSchemesCombobox
-                model: _dummyTerminal.kterminal.availableColorSchemes
-                //                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
-                onActivated:
-                {
-                    //                    settings.setValue("colorScheme", currentValue)
-                    root.colorScheme = _colorSchemesCombobox.currentValue
-                }
-
-                Kirigami.FormData.label: qsTr("Color Scheme")
-            }
         }
     }
 
@@ -135,21 +155,19 @@ Maui.ApplicationWindow
             Action
             {
                 icon.name: "view-split-left-right"
-                text: qsTr("Split horizontal")
+                text: i18n("Split horizontal")
                 onTriggered: root.currentTab.split(Qt.Horizontal)
-                //                checked: root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
+                checked:  root.currentTab && root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
             }
 
             Action
             {
                 icon.name: "view-split-top-bottom"
-                text: qsTr("Split vertical")
+                text: i18n("Split vertical")
                 onTriggered: root.currentTab.split(Qt.Vertical)
-                //                checked: root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
-            }
+                checked:  root.currentTab && root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
+           }
         }
-
-
     ]
 
     Maui.PieButton

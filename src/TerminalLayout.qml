@@ -125,7 +125,7 @@ ColumnLayout
     {
         //    Kirigami.Theme.backgroundColor:"transparent"
         //    Kirigami.Theme.textColor:c"white"
-        visible: root.pathBar
+        visible: settings.pathBar
         border.color: "transparent"
         radius: 0
         Layout.fillWidth: true
@@ -134,6 +134,12 @@ ColumnLayout
         {
             terminal.session.sendText("cd " + path.trim() + "\n")
         }
+
+        onPathChanged:
+        {
+            terminal.session.sendText("cd " + path.trim() + "\n")
+        }
+
         url: control.terminal.title.slice(control.terminal.title.indexOf(":")+1)
     }
 
@@ -141,6 +147,12 @@ ColumnLayout
 
     function split(orientation)
     {
+        if(orientation === _splitView.orientation && _splitView.count === 2)
+        {
+            pop()
+            return
+        }//close the innactive split
+
         _splitView.orientation = orientation
 
         if(_splitView.count === 2)
@@ -154,4 +166,33 @@ ColumnLayout
         }
     }
 
+    function pop()
+    {
+        if(_splitView.count === 1)
+        {
+            return //can not pop all the browsers, leave at leats 1
+        }
+
+        console.log("Current splitview index", _splitView.currentIndex)
+        closeSplit(_splitView.currentIndex === 1 ? 0 : 1)
+    }
+
+    function closeSplit(index) //closes a split but triggering a warning before
+    {
+        if(index >= _splitView.count)
+        {
+            return
+        }
+
+        const item = _splitView.itemAt(index)
+        destroyItem(index)
+    }
+
+    function destroyItem(index) //deestroys a split view withouth warning
+    {
+        var item = _splitView.itemAt(index)
+        item.destroy()
+        splitObjectModel.remove(index)
+        _splitView.currentIndex = 0
+    }
 }
