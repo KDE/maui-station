@@ -166,7 +166,7 @@ Maui.ApplicationWindow
                 text: i18n("Split vertical")
                 onTriggered: root.currentTab.split(Qt.Vertical)
                 checked:  root.currentTab && root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
-           }
+            }
         }
     ]
 
@@ -203,22 +203,84 @@ Maui.ApplicationWindow
         }
     }
 
-    footBar.visible: Maui.Handy.isTouch
-    footBar.leftContent:  Repeater
-    {
-        model: Station.KeysModel
+//    footBar.visible: Maui.Handy.isTouch
+    footBar.leftContent: [
+        ToolButton
         {
-            id: _keysModel
-        }
+            id: _shortcutsButton
+            checkable: true
+            icon.name: "configure-shortcuts"
+        },
 
-        Button
+        Maui.ToolActions
         {
-            text: model.label
-            icon.name: model.iconName
+            id: _groupsBox
+            visible: _shortcutsButton.checked
+            autoExclusive: true
+            expanded: true
+            currentIndex: 4
 
-            onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
+            Action
+            {
+                text: i18n("Fn")
+                onTriggered: _shortcutsButton.checked = false
+            }
+
+            Action
+            {
+                text: i18n("Nano")
+                onTriggered: _shortcutsButton.checked = false
+            }
+
+            Action
+            {
+                text: i18n("Ctrl")
+                onTriggered: _shortcutsButton.checked = false
+            }
+
+            Action
+            {
+                text: i18n("Nav")
+                onTriggered: _shortcutsButton.checked = false
+            }
+
+            Action
+            {
+                text: i18n("Fav")
+                onTriggered: _shortcutsButton.checked = false
+            }
+        },
+
+        ToolSeparator{},
+
+        Repeater
+        {
+            model: Station.KeysModel
+            {
+                id: _keysModel
+                group: _groupsBox.currentIndex
+            }
+
+            Button
+            {
+                visible: !_shortcutsButton.checked
+
+                id: button
+                text: model.label
+                icon.name: model.iconName
+
+                onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
+
+                activeFocusOnTab: false
+                //FIXME: Qt needs more sophisticated input method protocol, this mousearea is to not give the button the focus on click (closing the keyboard)
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: button.clicked()
+
+                }
+            }
         }
-    }
+    ]
 
     ObjectModel { id: tabsObjectModel }
 
