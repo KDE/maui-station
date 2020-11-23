@@ -81,18 +81,6 @@ Maui.ApplicationWindow
                     onToggled: settings.focusMode = !settings.focusMode
                 }
             }
-
-            Maui.SettingTemplate
-            {
-                label1.text: i18n("PathBar")
-                label2.text: i18n("Display the console current path as breadcrumbs")
-                Switch
-                {
-                    checkable: true
-                    checked: settings.pathBar
-                    onToggled: settings.pathBar = !settings.pathBar
-                }
-            }
         }
 
         Maui.SettingsSection
@@ -361,20 +349,6 @@ Maui.ApplicationWindow
                 }
             }
         }
-
-
-        //           Maui.PathBar
-        //              {
-        //                  //    Kirigami.Theme.backgroundColor:"transparent"
-        //                  //    Kirigami.Theme.textColor:c"white"
-        //                  Layout.fillWidth: true
-
-        //                  border.color: "transparent"
-        //                  radius: 0
-        //                  Layout.alignment:Qt.AlignBottom
-
-        //                  url:  currentTab && currentTab.terminal ? currentTab.terminal.title.slice(currentTab.terminal.title.indexOf(":")+1) : ""
-        //              }
     }
 
     Component.onCompleted:

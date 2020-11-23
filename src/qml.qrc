@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>Terminal.qml</file>
         <file>TerminalLayout.qml</file>
+        <file>TerminalInputArea.qml</file>
     </qresource>
 </RCC>

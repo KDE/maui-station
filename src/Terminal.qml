@@ -24,7 +24,6 @@ Maui.Terminal
     SplitView.preferredHeight: _splitView.orientation === Qt.Vertical ? _splitView.height / (_splitView.count) :  _splitView.height
     SplitView.minimumHeight: _splitView.orientation === Qt.Vertical ?  200 : 0
 
-
     SplitView.preferredWidth: _splitView.orientation === Qt.Horizontal ? _splitView.width / (_splitView.count) : _splitView.width
     SplitView.minimumWidth: _splitView.orientation === Qt.Horizontal ? 300 :  0
 

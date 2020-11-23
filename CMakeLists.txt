@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
-set(STATION_VERSION 1.2.0)
+
+set(STATION_VERSION 1.2.1)
+
 project(station LANGUAGES CXX VERSION ${STATION_VERSION})
 
 find_package(ECM 1.7.0 REQUIRED NO_MODULE)
