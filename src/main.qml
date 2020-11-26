@@ -1,12 +1,16 @@
-import QtQuick 2.13
-import QtQuick.Controls 2.13
-import org.kde.kirigami 2.7 as Kirigami
-import org.kde.mauikit 1.2 as Maui
+import QtQuick 2.14
+import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
+
 import QtQml.Models 2.3
 import Qt.labs.settings 1.0
 
+import org.kde.kirigami 2.7 as Kirigami
+import org.kde.mauikit 1.2 as Maui
+
 import org.maui.station 1.0 as Station
+
+import "widgets"
 
 Maui.ApplicationWindow
 {
@@ -44,12 +48,23 @@ Maui.ApplicationWindow
         property bool pathBar : true
     }
 
+    TutorialDialog
+    {
+        id: _tutorialDialog
+    }
+
     mainMenu: [
         Action
         {
             icon.name: "settings-configure"
             text: i18n("Settings")
             onTriggered: _settingsDialog.open()
+        },
+
+        Action
+        {
+            text: i18n("Tutorial")
+            onTriggered: _tutorialDialog.open()
         }
     ]
 
