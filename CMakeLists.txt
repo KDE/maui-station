@@ -8,6 +8,7 @@ find_package(ECM 1.7.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
+include(KDEClangFormat)
 include(ECMInstallIcons)
 include(ECMSetupVersion)
 
@@ -45,3 +46,6 @@ ecm_setup_version(${STATION_VERSION}
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Sql Qt5::Qml Qt5::Svg KF5::I18n KF5::CoreAddons)
+
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
