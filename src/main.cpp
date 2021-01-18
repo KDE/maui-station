@@ -9,18 +9,12 @@
 #include <QApplication>
 #endif
 
-#ifdef STATIC_KIRIGAMI
-#include "3rdparty/kirigami/src/kirigamiplugin.h"
-#endif
-
-#ifdef STATIC_MAUIKIT
-#include "./mauikit/src/mauikit.h"
-#endif
-
+#include <KI18n/KLocalizedString>
 #include <KAboutData>
 #include <KI18n/KLocalizedString>
 
 #include "helpers/keyshelper.h"
+#include <QDate>
 
 #define STATION_URI "org.maui.station"
 
@@ -40,27 +34,20 @@ int main(int argc, char *argv[])
     app.setOrganizationName("Maui");
     app.setWindowIcon(QIcon(":/station.svg"));
 
-    KLocalizedString::setApplicationDomain("station");
-    KAboutData about(QStringLiteral("station"), i18n("Station"), STATION_VERSION_STRING, i18n("Convergent terminal emulator."), KAboutLicense::LGPL_V3, i18n("© 2019-2020 Nitrux Development Team"));
-    about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
-    about.setHomepage("https://mauikit.org");
-    about.setProductName("maui/station");
-    about.setBugAddress("https://invent.kde.org/maui/station/-/issues");
-    about.setOrganizationDomain(STATION_URI);
-    about.setProgramLogo(app.windowIcon());
+	KLocalizedString::setApplicationDomain("station");
+	KAboutData about(QStringLiteral("station"), i18n("Station"), STATION_VERSION_STRING, i18n("Convergent terminal emulator."),
+                     KAboutLicense::LGPL_V3, i18n("© 2019-%1 Nitrux Development Team", QString::number(QDate::currentDate().year())));
+	about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
+	about.setHomepage("https://mauikit.org");
+	about.setProductName("maui/station");
+	about.setBugAddress("https://invent.kde.org/maui/station/-/issues");
+	about.setOrganizationDomain(STATION_URI);
+	about.setProgramLogo(app.windowIcon());
 
     KAboutData::setApplicationData(about);
 
-#ifdef STATIC_KIRIGAMI
-    KirigamiPlugin::getInstance().registerTypes();
-#endif
-
-#ifdef STATIC_MAUIKIT
-    MauiKit::getInstance().registerTypes();
-#endif
-
-    qmlRegisterAnonymousType<Key>(STATION_URI, 1);
-    qmlRegisterType<KeysHelper>(STATION_URI, 1, 0, "KeysModel");
+	qmlRegisterAnonymousType<Key> (STATION_URI, 1);
+	qmlRegisterType<KeysHelper> (STATION_URI, 1, 0, "KeysModel");
 
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
