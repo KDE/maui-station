@@ -16,6 +16,7 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
+    altHeader: Kirigami.Settings.isMobile
 
     Maui.App.handleAccounts: false
     Maui.App.iconName: "qrc:/station.svg"
