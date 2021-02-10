@@ -34,10 +34,7 @@ add_executable(${PROJECT_NAME}
 
 install(TARGETS station ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.station.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
-ecm_install_icons(
-  ICONS src/assets/station.svg
-  DESTINATION share/icons
-)
+install(FILES src/assets/station.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
 
 ecm_setup_version(${STATION_VERSION}
     VARIABLE_PREFIX STATION
