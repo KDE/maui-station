@@ -54,4 +54,4 @@ Terminal=false
 Type=Application
 Categories=Qt;KDE;System;
 StartupNotify=true
-Icon=maui-station
+Icon=station
