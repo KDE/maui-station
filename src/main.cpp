@@ -3,6 +3,8 @@
 
 #include "station_version.h"
 
+#include <MauiKit/mauiapp.h>
+
 #ifdef Q_OS_ANDROID
 #include <QGuiApplication>
 #else
@@ -33,6 +35,9 @@ int main(int argc, char *argv[])
 
     app.setOrganizationName("Maui");
     app.setWindowIcon(QIcon(":/station.svg"));
+
+     MauiApp::instance()->setHandleAccounts(false); // for now index can not handle cloud accounts
+    MauiApp::instance()->setIconName("qrc:/station.svg");
 
 	KLocalizedString::setApplicationDomain("station");
 	KAboutData about(QStringLiteral("station"), i18n("Station"), STATION_VERSION_STRING, i18n("Convergent terminal emulator."),

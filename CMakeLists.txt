@@ -23,7 +23,9 @@ set(REQUIRED_KF5_VERSION 5.60)
 
 find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Sql Svg QuickControls2)
 
-find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n Notifications CoreAddons)
+find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons Config KIO)
+
+find_package(MauiKit REQUIRED)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
@@ -42,7 +44,7 @@ ecm_setup_version(${STATION_VERSION}
     )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Sql Qt5::Qml Qt5::Svg KF5::I18n KF5::CoreAddons)
+target_link_libraries(${PROJECT_NAME} PRIVATE MauiKit Qt5::Sql Qt5::Qml Qt5::Svg KF5::I18n KF5::CoreAddons)
 
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})

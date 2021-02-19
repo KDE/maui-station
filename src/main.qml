@@ -18,11 +18,11 @@ Maui.ApplicationWindow
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
     altHeader: Kirigami.Settings.isMobile
 
-    Maui.App.handleAccounts: false
-    Maui.App.iconName: "qrc:/station.svg"
-
+    page.title: root.title
+    page.showTitle: true
+    
     autoHideHeader: settings.focusMode
-
+    
     property alias currentTab : _browserList.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
 
@@ -132,20 +132,6 @@ Maui.ApplicationWindow
         {
             icon.name: "tab-new"
             onClicked: root.openTab("~")
-        },
-        Label
-        {
-            text : root.title
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            //            visible: text.length
-            verticalAlignment: Qt.AlignVCenter
-            horizontalAlignment: Qt.AlignLeft
-            elide: Text.ElideMiddle
-            wrapMode: Text.NoWrap
-            color: Kirigami.Theme.textColor
-            font.weight: Font.Normal
-            font.pointSize: Maui.Style.fontSizes.default
         }]
 
     headBar.rightContent: [
