@@ -141,7 +141,7 @@ Maui.ApplicationWindow
             id: _splitButton
             expanded: isWide
             autoExclusive: true
-            display: ToolButton.TextBesideIcon
+            display: ToolButton.IconOnly
 
             currentIndex: -1
             cyclic: true
@@ -212,6 +212,7 @@ Maui.ApplicationWindow
             id: _shortcutsButton
             checkable: true
             icon.name: "configure-shortcuts"
+            focusPolicy: Qt.NoFocus
         },
 
         Maui.ToolActions
