@@ -48,7 +48,10 @@ Maui.ApplicationWindow
         property string colorScheme: "DarkPastels"
         property bool focusMode : false
         property bool pathBar : true
+        property int lineSpacing : 0
+        property font font
     }
+
 
     TutorialDialog
     {
@@ -124,7 +127,49 @@ Maui.ApplicationWindow
                     }
                 }
             }
+        }
 
+        Maui.SettingsSection
+        {
+            title: i18n("Fonts")
+            description: i18n("Configure the terminal font family and size")
+
+            Maui.SettingTemplate
+            {
+                label1.text:  i18n("Family")
+
+                ComboBox
+                {
+                    Layout.fillWidth: true
+                    model: Qt.fontFamilies()
+                    Component.onCompleted: currentIndex = find(settings.font.family, Qt.MatchExactly)
+                    onActivated: settings.font.family = currentText
+                }
+            }
+
+            Maui.SettingTemplate
+            {
+                label1.text:  i18n("Size")
+
+                SpinBox
+                {
+                    from: 0; to : 500
+                    value: settings.font.pointSize
+                    onValueChanged: settings.font.pointSize = value
+                }
+            }
+
+            Maui.SettingTemplate
+            {
+                label1.text:  i18n("Line Spacing")
+
+                SpinBox
+                {
+                    from: 0; to : 500
+                    value: settings.tabSpace
+                    onValueChanged: settings.lineSpacing = value
+                }
+            }
         }
     }
 
@@ -205,7 +250,7 @@ Maui.ApplicationWindow
         }
     }
 
-//    footBar.visible: Maui.Handy.isTouch
+    //    footBar.visible: Maui.Handy.isTouch
     footBar.leftContent: [
         ToolButton
         {
@@ -213,6 +258,8 @@ Maui.ApplicationWindow
             checkable: true
             icon.name: "configure-shortcuts"
             focusPolicy: Qt.NoFocus
+
+            onClicked: console.log(currentTerminal.session.history)
         },
 
         Maui.ToolActions

@@ -30,24 +30,26 @@ Maui.Terminal
 
     opacity: _splitView.currentIndex === control._index ? 1 : 0.5
 
-   Component.onCompleted:
-   {
-       control.session.initialWorkingDirectory = control.path
-   }
+    Component.onCompleted:
+    {
+        control.session.initialWorkingDirectory = control.path
+    }
 
-   onClicked:
-   {
-       _splitView.currentIndex = control._index
-   }
+    onClicked:
+    {
+        _splitView.currentIndex = control._index
+    }
 
-   onUrlsDropped:
-   {
-       for(var i in urls)
-       control.session.sendText(urls[i].replace("file://", "")+ " ")
-   }
+    onUrlsDropped:
+    {
+        for(var i in urls)
+            control.session.sendText(urls[i].replace("file://", "")+ " ")
+    }
 
-
+    kterminal.font: settings.font
     kterminal.colorScheme: settings.colorScheme
+    kterminal.lineSpacing: settings.lineSpacing
+
     onKeyPressed:
     {
         if ((event.key == Qt.Key_Tab) && (event.modifiers & Qt.ControlModifier))
