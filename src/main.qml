@@ -1,4 +1,5 @@
 import QtQuick 2.14
+import QtQml 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 
@@ -138,12 +139,23 @@ Maui.ApplicationWindow
         Maui.ToolActions
         {
             id: _splitButton
-            expanded: headBar.width > Kirigami.Units.gridUnit * 32
+            expanded: isWide
             autoExclusive: true
             display: ToolButton.TextBesideIcon
 
+            currentIndex: -1
+            cyclic: true
+
+            Binding on currentIndex
+            {
+                when :root.currentTab && root.currentTab.count === 2
+                value: root.currentTab.orientation === Qt.Horizontal ? 0 : 1
+                restoreMode: RestoreBindingOrValue
+            }
+
             Action
             {
+                enabled: isWide
                 icon.name: "view-split-left-right"
                 text: i18n("Split horizontal")
                 onTriggered: root.currentTab.split(Qt.Horizontal)

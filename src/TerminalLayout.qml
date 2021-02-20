@@ -1,8 +1,11 @@
-import QtQuick 2.9
-import QtQuick.Controls 2.13
+import QtQuick 2.14
+import QtQml 2.14
+import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
-import org.kde.kirigami 2.7 as Kirigami
-import org.kde.mauikit 1.0 as Maui
+
+import org.kde.kirigami 2.14 as Kirigami
+import org.kde.mauikit 1.3 as Maui
+
 import QtQml.Models 2.3
 
 ColumnLayout
@@ -28,6 +31,13 @@ ColumnLayout
     {
         id: _splitView
         focus: true
+
+        Binding on orientation
+        {
+            value: width >= 600 ? Qt.Horizontal : Qt.Vertical
+            restoreMode: Binding.RestoreValue
+        }
+
         Layout.fillWidth: true
         Layout.fillHeight: true
 
