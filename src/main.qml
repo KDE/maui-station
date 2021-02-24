@@ -153,70 +153,29 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
 //    footBar.visible: Maui.Handy.isTouch
 
 //    page.footerBackground.color: "transparent"
-    Maui.NewDialog
-    {
-        id: _newCommandDialog
-        title: i18n("New Command")
-        message: i18n("Add a new command shortcut")
-
-        onFinished: _commandsList.insert(text)
-    }
 
 
-    page.footerColumn: Maui.Page
+    page.footerColumn: CommandShortcuts
     {
         id: _shortcuts
+
         visible: false
 
-//        title: i18n("Commands")
-        height: Math.min(Math.max(200, _commandsShortcutList.contentHeight), 200)
-
+        //        title: i18n("Commands")
         width: parent.width
+//        height: implicitHeight
 
-        headBar.rightContent: ToolButton
+        onCommandTriggered:
         {
-            icon.name: "list-add"
-            onClicked: _newCommandDialog.open()
-        }
+            root.currentTerminal.session.sendText(command)
+            root.currentTerminal.forceActiveFocus()
 
-        headBar.leftContent: ToolButton
-        {
-            icon.name: "mail-attachment"
-        }
-
-        headBar.middleContent: Maui.TextField
-        {
-            Layout.fillWidth: true
-            placeholderText: i18n("Filter command")
-        }
-
-        Maui.Holder
-        {
-            visible: _commandsShortcutList.count === 0
-            emoji: "qrc:/edit-rename.svg"
-            title: i18n("No Commands")
-            body: i18n("Start adding new command shortcuts")
-        }
-
-        Maui.ListBrowser
-        {
-            id: _commandsShortcutList
-            anchors.fill: parent
-
-            model: Maui.BaseModel
+            if(!pinned)
             {
-                list: Station.CommandsModel
-                {
-                    id: _commandsList
-                }
-            }
-
-            delegate: Maui.ListBrowserDelegate
-            {
-                width: ListView.view.width
-                label1.text: model.value
+                _shortcuts.visible = false
             }
         }
+
     }
 
     footBar.rightContent: ToolButton
