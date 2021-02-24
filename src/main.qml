@@ -117,53 +117,14 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         }
     ]
 
-    Maui.PieButton
-    {
-        visible: Maui.Handy.isTouch
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        anchors.margins: height
-        //        radius: Maui.Style.radiusV
-        z: 999
-
-        height: Maui.Style.toolBarHeight
-        icon.name: "tools"
-        icon.color: Kirigami.Theme.highlightedTextColor
-        alignment: Qt.AlignLeft
-
-        Action
-        {
-            icon.name: "edit-copy"
-            onTriggered: currentTab.terminal.kterminal.copyClipboard()
-        }
-
-        Action
-        {
-            icon.name: "edit-paste"
-            onTriggered: currentTab.terminal.kterminal.pasteClipboard()
-        }
-
-        Action
-        {
-            icon.name: "edit-find"
-            onTriggered: currentTab.terminal.findBar.visible = !currentTab.terminal.findBar.visible
-        }
-    }
-
-//    footBar.visible: Maui.Handy.isTouch
-
+    footBar.visible: Maui.Handy.isTouch
     page.footerBackground.color: "transparent"
-
 
     page.footerColumn: CommandShortcuts
     {
         id: _shortcuts
-
         visible: false
-
-        //        title: i18n("Commands")
         width: parent.width
-//        height: implicitHeight
 
         onCommandTriggered:
         {
@@ -266,16 +227,19 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
                 activeFocusOnTab: false
                 focusPolicy: Qt.NoFocus
 
-
-                background: Kirigami.ShadowedRectangle {
+                background: Kirigami.ShadowedRectangle
+                {
                     color: Kirigami.Theme.backgroundColor
 
                     radius: Kirigami.Units.smallSpacing
 
                     shadow.size: Kirigami.Units.largeSpacing
                     shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
-//                    shadow.yOffset:
+                    shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
 
+                    border.width: Kirigami.Units.devicePixelRatio
+                    border.color: Qt.tint(Kirigami.Theme.textColor,
+                                          Qt.rgba(color.r, color.g, color.b, 0.6))
                 }
             }
         }
