@@ -4,5 +4,6 @@
         <file>Terminal.qml</file>
         <file>TerminalLayout.qml</file>
         <file>widgets/TutorialDialog.qml</file>
+        <file>SettingsDialog.qml</file>
     </qresource>
 </RCC>

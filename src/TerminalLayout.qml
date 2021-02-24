@@ -131,20 +131,15 @@ ColumnLayout
         Layout.fillWidth: true
     }
 
-    Component.onCompleted: split(Qt.Vertical)
+    Component.onCompleted: split()
 
-    function split(orientation)
+    function split()
     {
-        if(orientation === _splitView.orientation && _splitView.count === 2)
+        if(_splitView.count === 2)
         {
             pop()
             return
         }//close the innactive split
-
-        _splitView.orientation = orientation
-
-        if(_splitView.count === 2)
-            return;
 
         const component = Qt.createComponent("Terminal.qml");
         if (component.status === Component.Ready)

@@ -61,116 +61,29 @@ Maui.ApplicationWindow
     mainMenu: [
         Action
         {
-            icon.name: "settings-configure"
-            text: i18n("Settings")
-            onTriggered: _settingsDialog.open()
+            text: i18n("Tutorial")
+            onTriggered: _tutorialDialog.open()
+            icon.name : "help-contents"
         },
 
         Action
         {
-            text: i18n("Tutorial")
-            onTriggered: _tutorialDialog.open()
+            text: i18n("Commands")
+//            onTriggered: _tutorialDialog.open()
+            icon.name: "edit-pin"
+        },
+
+        Action
+        {
+            icon.name: "settings-configure"
+            text: i18n("Settings")
+            onTriggered: _settingsDialog.open()
         }
     ]
 
-    Maui.Terminal
-    {
-        id: _dummyTerminal
-    }
-
-    Maui.SettingsDialog
+    SettingsDialog
     {
         id: _settingsDialog
-
-        Maui.SettingsSection
-        {
-            title: i18n("Interface")
-            description: i18n("Configure the application components and behaviour.")
-            alt: true
-
-            Maui.SettingTemplate
-            {
-                label1.text: i18n("Focus Mode")
-                label2.text: i18n("Hides the main header for a distraction free console experience")
-
-                Switch
-                {
-
-                    checkable: true
-                    checked: settings.focusMode
-                    onToggled: settings.focusMode = !settings.focusMode
-                }
-            }
-        }
-
-        Maui.SettingsSection
-        {
-            title: i18n("Terminal")
-            description: i18n("Configure the app UI and plugins.")
-            alt: false
-            lastOne: true
-
-            Maui.SettingTemplate
-            {
-                label1.text: i18n("Color Scheme")
-                label2.text: i18n("Change the color scheme of the terminal")
-
-                ComboBox
-                {
-                    id: _colorSchemesCombobox
-                    model: _dummyTerminal.kterminal.availableColorSchemes
-                    //                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
-                    onActivated:
-                    {
-                        //                    settings.setValue("colorScheme", currentValue)
-                        settings.colorScheme = _colorSchemesCombobox.currentValue
-                    }
-                }
-            }
-        }
-
-        Maui.SettingsSection
-        {
-            title: i18n("Fonts")
-            description: i18n("Configure the terminal font family and size")
-
-            Maui.SettingTemplate
-            {
-                label1.text:  i18n("Family")
-
-                ComboBox
-                {
-                    Layout.fillWidth: true
-                    model: Qt.fontFamilies()
-                    Component.onCompleted: currentIndex = find(settings.font.family, Qt.MatchExactly)
-                    onActivated: settings.font.family = currentText
-                }
-            }
-
-            Maui.SettingTemplate
-            {
-                label1.text:  i18n("Size")
-
-                SpinBox
-                {
-                    from: 0; to : 500
-                    value: settings.font.pointSize
-                    onValueChanged: settings.font.pointSize = value
-                }
-            }
-
-            Maui.SettingTemplate
-            {
-                label1.text:  i18n("Line Spacing")
-
-                SpinBox
-                {
-                    from: 0; to : 500
-                    value: settings.tabSpace
-                    onValueChanged: settings.lineSpacing = value
-                }
-            }
-        }
     }
 
     headBar.leftContent: [
@@ -181,38 +94,23 @@ Maui.ApplicationWindow
         }]
 
     headBar.rightContent: [
-        Maui.ToolActions
+        ToolButton
         {
             id: _splitButton
-            expanded: isWide
-            autoExclusive: true
-            display: ToolButton.IconOnly
+            checked: root.currentTab && root.currentTab.count === 2
 
-            currentIndex: -1
-            cyclic: true
+icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+           onClicked: root.currentTab.split()
+        },
 
-            Binding on currentIndex
+
+        ToolButton
+        {
+            icon.name: "edit-find"
+            checked: currentTab.terminal.findBar.visible
+            onClicked:
             {
-                when :root.currentTab && root.currentTab.count === 2
-                value: root.currentTab.orientation === Qt.Horizontal ? 0 : 1
-                restoreMode: RestoreBindingOrValue
-            }
-
-            Action
-            {
-                enabled: isWide
-                icon.name: "view-split-left-right"
-                text: i18n("Split horizontal")
-                onTriggered: root.currentTab.split(Qt.Horizontal)
-                checked:  root.currentTab && root.currentTab.orientation === Qt.Horizontal && root.currentTab.count > 1
-            }
-
-            Action
-            {
-                icon.name: "view-split-top-bottom"
-                text: i18n("Split vertical")
-                onTriggered: root.currentTab.split(Qt.Vertical)
-                checked:  root.currentTab && root.currentTab.orientation === Qt.Vertical && root.currentTab.count > 1
+                currentTab.terminal.footBar.visible = !currentTab.terminal.footBar.visible
             }
         }
     ]
@@ -250,7 +148,7 @@ Maui.ApplicationWindow
         }
     }
 
-    //    footBar.visible: Maui.Handy.isTouch
+    footBar.visible: Maui.Handy.isTouch
     footBar.leftContent: [
         ToolButton
         {

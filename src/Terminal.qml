@@ -60,12 +60,12 @@ Maui.Terminal
 
         if ((event.key == Qt.Key_Down) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
         {
-            split(Qt.Vertical)
+            split()
         }
 
         if ((event.key == Qt.Key_Right) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
         {
-            split(Qt.Horizontal)
+            split()
         }
 
         if ((event.key == Qt.Key_T) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
