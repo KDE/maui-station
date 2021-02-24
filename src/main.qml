@@ -152,7 +152,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
 
 //    footBar.visible: Maui.Handy.isTouch
 
-//    page.footerBackground.color: "transparent"
+    page.footerBackground.color: "transparent"
 
 
     page.footerColumn: CommandShortcuts
@@ -274,11 +274,8 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
 
                     shadow.size: Kirigami.Units.largeSpacing
                     shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
-                    shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
+//                    shadow.yOffset:
 
-                    border.width: Kirigami.Units.devicePixelRatio
-                    border.color: Qt.tint(Kirigami.Theme.textColor,
-                                          Qt.rgba(color.r, color.g, color.b, 0.6))
                 }
             }
         }
