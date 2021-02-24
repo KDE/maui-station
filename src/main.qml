@@ -6,8 +6,10 @@ import QtQuick.Layouts 1.3
 import QtQml.Models 2.3
 import Qt.labs.settings 1.0
 
-import org.kde.kirigami 2.7 as Kirigami
-import org.kde.mauikit 1.2 as Maui
+import QtGraphicalEffects 1.0
+
+import org.kde.kirigami 2.14 as Kirigami
+import org.kde.mauikit 1.3 as Maui
 
 import org.maui.station 1.0 as Station
 
@@ -148,7 +150,83 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         }
     }
 
-    footBar.visible: Maui.Handy.isTouch
+//    footBar.visible: Maui.Handy.isTouch
+
+//    page.footerBackground.color: "transparent"
+    Maui.NewDialog
+    {
+        id: _newCommandDialog
+        title: i18n("New Command")
+        message: i18n("Add a new command shortcut")
+
+        onFinished: _commandsList.insert(text)
+    }
+
+
+    page.footerColumn: Maui.Page
+    {
+        id: _shortcuts
+        visible: false
+
+//        title: i18n("Commands")
+        height: Math.min(Math.max(200, _commandsShortcutList.contentHeight), 200)
+
+        width: parent.width
+
+        headBar.rightContent: ToolButton
+        {
+            icon.name: "list-add"
+            onClicked: _newCommandDialog.open()
+        }
+
+        headBar.leftContent: ToolButton
+        {
+            icon.name: "mail-attachment"
+        }
+
+        headBar.middleContent: Maui.TextField
+        {
+            Layout.fillWidth: true
+            placeholderText: i18n("Filter command")
+        }
+
+        Maui.Holder
+        {
+            visible: _commandsShortcutList.count === 0
+            emoji: "qrc:/edit-rename.svg"
+            title: i18n("No Commands")
+            body: i18n("Start adding new command shortcuts")
+        }
+
+        Maui.ListBrowser
+        {
+            id: _commandsShortcutList
+            anchors.fill: parent
+
+            model: Maui.BaseModel
+            {
+                list: Station.CommandsModel
+                {
+                    id: _commandsList
+                }
+            }
+
+            delegate: Maui.ListBrowserDelegate
+            {
+                width: ListView.view.width
+                label1.text: model.value
+            }
+        }
+    }
+
+    footBar.rightContent: ToolButton
+    {
+        icon.name: "edit-rename"
+        checked: _shortcuts.visible
+        checkable: true
+        onClicked: _shortcuts.visible = !_shortcuts.visible
+    }
+
     footBar.leftContent: [
         ToolButton
         {
@@ -168,34 +246,39 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
             expanded: true
             currentIndex: 4
 
+            function close()
+            {
+                _shortcutsButton.checked = false
+            }
+
             Action
             {
                 text: i18n("Fn")
-                onTriggered: _shortcutsButton.checked = false
+                onTriggered: _groupsBox.close()
             }
 
             Action
             {
                 text: i18n("Nano")
-                onTriggered: _shortcutsButton.checked = false
+                onTriggered: _groupsBox.close()
             }
 
             Action
             {
                 text: i18n("Ctrl")
-                onTriggered: _shortcutsButton.checked = false
+                onTriggered: _groupsBox.close()
             }
 
             Action
             {
                 text: i18n("Nav")
-                onTriggered: _shortcutsButton.checked = false
+                onTriggered: _groupsBox.close()
             }
 
             Action
             {
                 text: i18n("Fav")
-                onTriggered: _shortcutsButton.checked = false
+                onTriggered: _groupsBox.close()
             }
         },
 
@@ -209,9 +292,11 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
                 group: _groupsBox.currentIndex
             }
 
-            Button
+            Maui.BasicToolButton
             {
                 visible: !_shortcutsButton.checked
+
+                height: Maui.Style.iconSizes.medium + Maui.Style.space.medium
 
                 id: button
                 text: model.label
@@ -220,11 +305,21 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
                 onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
 
                 activeFocusOnTab: false
-                //FIXME: Qt needs more sophisticated input method protocol, this mousearea is to not give the button the focus on click (closing the keyboard)
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: button.clicked()
+                focusPolicy: Qt.NoFocus
 
+
+                background: Kirigami.ShadowedRectangle {
+                    color: Kirigami.Theme.backgroundColor
+
+                    radius: Kirigami.Units.smallSpacing
+
+                    shadow.size: Kirigami.Units.largeSpacing
+                    shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
+                    shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
+
+                    border.width: Kirigami.Units.devicePixelRatio
+                    border.color: Qt.tint(Kirigami.Theme.textColor,
+                                          Qt.rgba(color.r, color.g, color.b, 0.6))
                 }
             }
         }

@@ -16,6 +16,7 @@
 #include <KI18n/KLocalizedString>
 
 #include "helpers/keyshelper.h"
+#include "helpers/commandsmodel.h"
 #include <QDate>
 
 #define STATION_URI "org.maui.station"
@@ -52,7 +53,8 @@ int main(int argc, char *argv[])
     KAboutData::setApplicationData(about);
 
 	qmlRegisterAnonymousType<Key> (STATION_URI, 1);
-	qmlRegisterType<KeysHelper> (STATION_URI, 1, 0, "KeysModel");
+    qmlRegisterType<KeysHelper> (STATION_URI, 1, 0, "KeysModel");
+    qmlRegisterType<CommandsModel> (STATION_URI, 1, 0, "CommandsModel");
 
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));

@@ -30,6 +30,7 @@ find_package(MauiKit REQUIRED)
 add_executable(${PROJECT_NAME}
     src/main.cpp
     src/helpers/keyshelper.cpp
+    src/helpers/commandsmodel.cpp
     src/qml.qrc
     src/assets/assets.qrc
     )

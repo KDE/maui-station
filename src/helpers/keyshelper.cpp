@@ -119,10 +119,10 @@ QVector<Key> KeysHelper::fnKeys() const
 QVector<Key> KeysHelper::navKeys() const
 {
     QVector<Key> res;
-    res.append({Qt::Key::Key_Up, "", "go-up"});
-    res.append({Qt::Key::Key_Down, "", "go-down"});
-    res.append({Qt::Key::Key_Left, "", "go-previous"});
-    res.append({Qt::Key::Key_Right, "", "go-next"});
+    res.append({Qt::Key::Key_Up, "↑", "go-up"});
+    res.append({Qt::Key::Key_Down, "↓", "go-down"});
+    res.append({Qt::Key::Key_Left, "←", "go-previous"});
+    res.append({Qt::Key::Key_Right, "→", "go-next"});
 
     return res;
 }
@@ -130,11 +130,11 @@ QVector<Key> KeysHelper::navKeys() const
 QVector<Key> KeysHelper::nanoKeys() const
 {
     QVector<Key> res;
-    res.append({Qt::Key::Key_Up, "", "go-up"});
-    res.append({Qt::Key::Key_Down, "", "go-down"});
+    res.append({Qt::Key::Key_Up, "↑", "go-up"});
+    res.append({Qt::Key::Key_Down, "↓", "go-down"});
 
-    res.append({Qt::Key::Key_Left, "", "go-previous"});
-    res.append({Qt::Key::Key_Right, "", "go-next"});
+    res.append({Qt::Key::Key_Left, "←", "go-previous"});
+    res.append({Qt::Key::Key_Right, "→", "go-next"});
 
     res.append({Qt::Key::Key_G, "Ctrl+G", "", Qt::Modifier::CTRL});
     res.append({Qt::Key::Key_X, "Ctrl+X", "", Qt::Modifier::CTRL});
@@ -151,8 +151,8 @@ QVector<Key> KeysHelper::nanoKeys() const
 QVector<Key> KeysHelper::defaultKeys() const
 {
     QVector<Key> res;
-    res.append({Qt::Key::Key_Up, "", "go-up"});
-    res.append({Qt::Key::Key_Down, "", "go-down"});
+    res.append({Qt::Key::Key_Up, "↑"});
+    res.append({Qt::Key::Key_Down, "↓"});
     res.append({Qt::Key::Key_Tab, "Tab"});
     res.append({Qt::Key::Key_Escape, "Esc"});
     res.append({Qt::Key::Key_Control, "Ctrl"});
