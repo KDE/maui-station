@@ -27,6 +27,15 @@ ColumnLayout
 
     ObjectModel { id: splitObjectModel }
 
+    Maui.Dialog
+    {
+        id: _confirmCloseDialog
+        title: i18n("Close")
+        message: i18n("A process is currently still running. Are oyu sure you want to close it?")
+
+        onAccepted: pop()
+    }
+
     SplitView
     {
         id: _splitView
@@ -137,7 +146,14 @@ ColumnLayout
     {
         if(_splitView.count === 2)
         {
-            pop()
+            if(control.terminal.session.hasActiveProcess)
+            {
+                _confirmCloseDialog.open()
+            }else
+            {
+                pop()
+            }
+
             return
         }//close the innactive split
 

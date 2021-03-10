@@ -22,10 +22,10 @@ Maui.Page
 
     property alias pinned : _pinButton.checked
 
-    headBar.rightContent: ToolButton
+    Maui.Separator
     {
-        icon.name: "list-add"
-        onClicked: _newCommandDialog.open()
+        width: parent.width
+        edge: Qt.TopEdge
     }
 
     headBar.leftContent: ToolButton
@@ -38,7 +38,32 @@ Maui.Page
     headBar.middleContent: Maui.TextField
     {
         Layout.fillWidth: true
-        placeholderText: i18n("Filter command")
+        placeholderText: i18n("Filter or add a new command")
+
+        actions.data: ToolButton
+        {
+            flat: true
+            icon.name: "list-add"
+            onClicked: _newCommandDialog.open()
+        }
+
+        onTextChanged:
+        {
+            _commandsShortcutList.model.filter = text
+        }
+
+        onCleared: _commandsShortcutList.model.filter = ""
+
+        onAccepted:
+        {
+            _commandsShortcutList.model.filter = text
+
+            if(_commandsList.insert(text))
+            {
+                commandTriggered(text)
+                clear()
+            }
+        }
     }
 
     Maui.NewDialog
@@ -88,31 +113,50 @@ Maui.Page
             width: ListView.view.width
             label1.text: model.value
 
-            onClicked: commandTriggered(model.value)
+            onClicked:
+            {
+                _commandsShortcutList.currentIndex = index
+                commandTriggered(model.value)
+            }
 
-            template.content: [
+            onRightClicked:
+            {
+                _commandsShortcutList.currentIndex = index
+                 _menu.popup()
+            }
 
-                ToolButton
-                {
-                    icon.name: "edit-clear"
-                    onClicked:
-                    {
-                         _commandsList.remove(index)
-                    }
-                },
+            onPressAndHold:
+            {
+                _commandsShortcutList.currentIndex = index
+                 _menu.popup()
+            }
+        }
+    }
 
-                ToolButton
-                {
-                    icon.name: "edit-rename"
-                    onClicked:
-                    {
-                        _editCommandDialog.index= index
-                        _editCommandDialog.textEntry.text = model.value
-                         _editCommandDialog.open()
-                    }
-                }
+    Menu
+    {
+        id: _menu
 
-            ]
+        MenuItem
+        {
+            text: i18n("Remove")
+            icon.name: "edit-clear"
+            onTriggered:
+            {
+                 _commandsList.remove(index)
+            }
+        }
+
+        MenuItem
+        {
+            text: i18n("Edit")
+            icon.name: "edit-rename"
+            onTriggered:
+            {
+                _editCommandDialog.index= index
+                _editCommandDialog.textEntry.text = model.value
+                 _editCommandDialog.open()
+            }
         }
     }
 }

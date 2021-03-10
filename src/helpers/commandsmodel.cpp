@@ -40,11 +40,11 @@ void CommandsModel::saveCommands()
     FMStatic::saveSettings("commands", m_commands, "shortcuts");
 }
 
-void CommandsModel::insert(const QString &command)
+bool CommandsModel::insert(const QString &command)
 {
     if(m_commands.contains(command))
     {
-        return;
+        return false;
     }
 
     qDebug() << "try to insert command" << command;
@@ -55,6 +55,8 @@ void CommandsModel::insert(const QString &command)
     emit postItemAppended();
 
     this->saveCommands();
+
+    return true;
 }
 
 void CommandsModel::remove(const int &index)

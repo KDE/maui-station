@@ -25,7 +25,7 @@ private:
     void saveCommands();
 
 public slots:
-    void insert(const QString &command);
+    bool insert(const QString &command);
     void remove(const int &index);
 };
 

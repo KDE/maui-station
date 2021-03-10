@@ -19,7 +19,7 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
-    altHeader: Kirigami.Settings.isMobile
+    altHeader: !isWide
 
     page.title: root.title
     page.showTitle: true
@@ -70,13 +70,6 @@ Maui.ApplicationWindow
 
         Action
         {
-            text: i18n("Commands")
-//            onTriggered: _tutorialDialog.open()
-            icon.name: "edit-pin"
-        },
-
-        Action
-        {
             icon.name: "settings-configure"
             text: i18n("Settings")
             onTriggered: _settingsDialog.open()
@@ -117,7 +110,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         }
     ]
 
-    footBar.visible: Maui.Handy.isTouch
+//    footBar.visible: Maui.Handy.isTouch
     page.footerBackground.color: "transparent"
 
     page.footerColumn: CommandShortcuts
@@ -136,10 +129,9 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
                 _shortcuts.visible = false
             }
         }
-
     }
 
-    footBar.rightContent: ToolButton
+    footBar.farRightContent: ToolButton
     {
         icon.name: "edit-rename"
         checked: _shortcuts.visible
@@ -147,7 +139,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         onClicked: _shortcuts.visible = !_shortcuts.visible
     }
 
-    footBar.leftContent: [
+    footBar.farLeftContent: [
         ToolButton
         {
             id: _shortcutsButton
@@ -202,48 +194,48 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
             }
         },
 
-        ToolSeparator{},
+        ToolSeparator{}
+    ]
 
-        Repeater
+    footBar.leftContent: Repeater
+    {
+        model: Station.KeysModel
         {
-            model: Station.KeysModel
+            id: _keysModel
+            group: _groupsBox.currentIndex
+        }
+
+        Maui.BasicToolButton
+        {
+            visible: !_shortcutsButton.checked
+
+            height: Maui.Style.iconSizes.medium + Maui.Style.space.medium
+
+            id: button
+            text: model.label
+            icon.name: model.iconName
+
+            onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
+
+            activeFocusOnTab: false
+            focusPolicy: Qt.NoFocus
+
+            background: Kirigami.ShadowedRectangle
             {
-                id: _keysModel
-                group: _groupsBox.currentIndex
-            }
+                color: Kirigami.Theme.backgroundColor
 
-            Maui.BasicToolButton
-            {
-                visible: !_shortcutsButton.checked
+                radius: Kirigami.Units.smallSpacing
 
-                height: Maui.Style.iconSizes.medium + Maui.Style.space.medium
+                shadow.size: Kirigami.Units.largeSpacing
+                shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
+                shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
 
-                id: button
-                text: model.label
-                icon.name: model.iconName
-
-                onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
-
-                activeFocusOnTab: false
-                focusPolicy: Qt.NoFocus
-
-                background: Kirigami.ShadowedRectangle
-                {
-                    color: Kirigami.Theme.backgroundColor
-
-                    radius: Kirigami.Units.smallSpacing
-
-                    shadow.size: Kirigami.Units.largeSpacing
-                    shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
-                    shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
-
-                    border.width: Kirigami.Units.devicePixelRatio
-                    border.color: Qt.tint(Kirigami.Theme.textColor,
-                                          Qt.rgba(color.r, color.g, color.b, 0.6))
-                }
+                border.width: Kirigami.Units.devicePixelRatio
+                border.color: Qt.tint(Kirigami.Theme.textColor,
+                                      Qt.rgba(color.r, color.g, color.b, 0.6))
             }
         }
-    ]
+    }
 
     ObjectModel { id: tabsObjectModel }
 
