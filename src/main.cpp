@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 	KLocalizedString::setApplicationDomain("station");
 	KAboutData about(QStringLiteral("station"), i18n("Station"), STATION_VERSION_STRING, i18n("Convergent terminal emulator."),
-                     KAboutLicense::LGPL_V3, i18n("© 2019-%1 Nitrux Development Team", QString::number(QDate::currentDate().year())), i18n("Built from ") + QString(GIT_BRANCH) + " " + QString(GIT_COMMIT_HASH));
+		     KAboutLicense::LGPL_V3, i18n("© 2019-%1 Nitrux Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
 	about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
 	about.setHomepage("https://mauikit.org");
 	about.setProductName("maui/station");
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 
     KAboutData::setApplicationData(about);
 
-	qmlRegisterAnonymousType<Key> (STATION_URI, 1);
+        qmlRegisterAnonymousType<Key> (STATION_URI, 1);
     qmlRegisterType<KeysHelper> (STATION_URI, 1, 0, "KeysModel");
     qmlRegisterType<CommandsModel> (STATION_URI, 1, 0, "CommandsModel");
 

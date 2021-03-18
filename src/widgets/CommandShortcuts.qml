@@ -40,11 +40,10 @@ Maui.Page
         Layout.fillWidth: true
         placeholderText: i18n("Filter or add a new command")
 
-        actions.data: ToolButton
+        actions: Action
         {
-            flat: true
             icon.name: "list-add"
-            onClicked: _newCommandDialog.open()
+            onTriggered: _newCommandDialog.open()
         }
 
         onTextChanged:
