@@ -12,7 +12,8 @@ ColumnLayout
 {
     id: control
     spacing: 0
-
+    height: ListView.view.height
+    width:  ListView.view.width
     focus: true
 
     property string title: terminal.title

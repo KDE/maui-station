@@ -18,7 +18,7 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
-    altHeader: !isWide
+//    altHeader: !isWide
 
     page.title: root.title
     page.showTitle: true
@@ -27,11 +27,6 @@ Maui.ApplicationWindow
 
     property alias currentTab : _layout.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
-
-    onCurrentTabChanged:
-    {
-        _splitButton.currentIndex = currentTab && currentTab.count > 1 ? currentTab.orientation === Qt.Vertical ? 1 : (currentTab.orientation === Qt.Horizontal ? 0 : -1) : -1
-    }
 
     onClosing:
     {
@@ -241,9 +236,8 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         id: _layout
         anchors.fill: parent
         spacing: 0
-
-        Keys.enabled : true
-        Keys.forwardTo : currentItem.terminal
+        mobile: !root.isWide
+        onNewTabClicked: openTab("$HOME")
     }
 
     Component.onCompleted:
@@ -251,14 +245,16 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         openTab("$HOME")
     }
 
+    Component
+    {
+        id: _terminalComponent
+        TerminalLayout {}
+    }
+
     function openTab(path)
     {
-        const component = Qt.createComponent("TerminalLayout.qml");
-        if (component.status === Component.Ready)
-        {
-            const object = component.createObject(_layout, {'path': path});
-            _layout.currentIndex = _layout.count - 1
-        }
+        _layout.addTab(_terminalComponent, {'path': path});
+        _layout.incrementCurrentIndex()
     }
 
     function closeTab(index)
