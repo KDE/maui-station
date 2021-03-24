@@ -254,7 +254,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
     function openTab(path)
     {
         _layout.addTab(_terminalComponent, {'path': path});
-        _layout.incrementCurrentIndex()
+        _layout.currentIndex = _layout.count -1
     }
 
     function closeTab(index)
