@@ -12,10 +12,10 @@ ColumnLayout
 {
     id: control
     spacing: 0
-    height: _browserList.height
-    width: _browserList.width
+
     focus: true
 
+    property string title: terminal.title
     property alias terminal : _splitView.currentItem
     property alias orientation : _splitView.orientation
     property alias count : _splitView.count

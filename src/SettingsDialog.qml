@@ -14,7 +14,6 @@ Maui.SettingsDialog
     {
         title: i18n("Interface")
         description: i18n("Configure the application components and behaviour.")
-        alt: true
 
         Maui.SettingTemplate
         {
@@ -35,7 +34,6 @@ Maui.SettingsDialog
     {
         title: i18n("Terminal")
         description: i18n("Configure the app UI and plugins.")
-        alt: false
         lastOne: true
 
         Maui.SettingTemplate

@@ -3,7 +3,6 @@ import QtQml 2.15
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 
-import QtQml.Models 2.3
 import Qt.labs.settings 1.0
 
 import QtGraphicalEffects 1.0
@@ -23,10 +22,10 @@ Maui.ApplicationWindow
 
     page.title: root.title
     page.showTitle: true
-    
+
     autoHideHeader: settings.focusMode
-    
-    property alias currentTab : _browserList.currentItem
+
+    property alias currentTab : _layout.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.terminal
 
     onCurrentTabChanged:
@@ -237,85 +236,14 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         }
     }
 
-    ObjectModel { id: tabsObjectModel }
-
-    ColumnLayout
+    Maui.TabView
     {
         id: _layout
         anchors.fill: parent
         spacing: 0
 
-        Maui.TabBar
-        {
-            id: tabsBar
-            visible: _browserList.count > 1
-            Layout.fillWidth: true
-            Layout.preferredHeight: tabsBar.implicitHeight
-            position: TabBar.Header
-            currentIndex : _browserList.currentIndex
-            onNewTabClicked: openTab("$HOME")
-            Repeater
-            {
-                id: _repeater
-                model: tabsObjectModel.count
-
-                Maui.TabButton
-                {
-                    id: _tabButton
-                    implicitHeight: tabsBar.implicitHeight
-                    implicitWidth: Math.max(parent.width / _repeater.count, 120)
-                    checked: index === _browserList.currentIndex
-
-                    text: tabsObjectModel.get(index).terminal.title
-
-                    onClicked:
-                    {
-                        _browserList.currentIndex = index
-                    }
-
-                    onCloseClicked: root.closeTab(index)
-                }
-            }
-        }
-
-        Flickable
-        {
-            Layout.margins: 0
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-
-            ListView
-            {
-                id: _browserList
-                anchors.fill: parent
-                clip: true
-                focus: true
-                orientation: ListView.Horizontal
-                model: tabsObjectModel
-                snapMode: ListView.SnapOneItem
-                spacing: 0
-                interactive: Kirigami.Settings.hasTransientTouchInput && tabsObjectModel.count > 1
-                highlightFollowsCurrentItem: true
-                highlightMoveDuration: 0
-                highlightResizeDuration: 0
-                highlightRangeMode: ListView.StrictlyEnforceRange
-                preferredHighlightBegin: 0
-                preferredHighlightEnd: width
-                highlight: Item {}
-                highlightMoveVelocity: -1
-                highlightResizeVelocity: -1
-
-                onMovementEnded: _browserList.currentIndex = indexAt(contentX, contentY)
-                boundsBehavior: Flickable.StopAtBounds
-
-                onCurrentItemChanged:
-                {
-                    //                       control.currentPath =  tabsObjectModel.get(currentIndex).path
-                    //                       _viewTypeGroup.currentIndex = browserView.viewType
-                    currentItem.forceActiveFocus()
-                }
-            }
-        }
+        Keys.enabled : true
+        Keys.forwardTo : currentItem.terminal
     }
 
     Component.onCompleted:
@@ -328,14 +256,13 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         const component = Qt.createComponent("TerminalLayout.qml");
         if (component.status === Component.Ready)
         {
-            const object = component.createObject(tabsObjectModel, {'path': path});
-            tabsObjectModel.append(object)
-            _browserList.currentIndex = tabsObjectModel.count - 1
+            const object = component.createObject(_layout, {'path': path});
+            _layout.currentIndex = _layout.count - 1
         }
     }
 
     function closeTab(index)
     {
-        tabsObjectModel.remove(index)
+        _layout.closeTab(index)
     }
 }
