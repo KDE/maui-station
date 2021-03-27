@@ -20,19 +20,12 @@ Maui.Page
 
     signal commandTriggered(string command)
 
-    property alias pinned : _pinButton.checked
+    property bool pinned : false
 
     Maui.Separator
     {
         width: parent.width
         edge: Qt.TopEdge
-    }
-
-    headBar.leftContent: ToolButton
-    {
-        id: _pinButton
-        icon.name: "edit-pin"
-        checkable: true
     }
 
     headBar.middleContent: Maui.TextField

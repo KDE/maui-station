@@ -18,7 +18,7 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
-//    altHeader: !isWide
+    altHeader: Kirigami.Settings.isMobile
 
     page.title: root.title
     page.showTitle: true
@@ -186,9 +186,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
                 text: i18n("Fav")
                 onTriggered: _groupsBox.close()
             }
-        },
-
-        ToolSeparator{}
+        }
     ]
 
     footBar.leftContent: Repeater
