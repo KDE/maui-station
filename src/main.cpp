@@ -3,7 +3,7 @@
 
 #include "station_version.h"
 
-#include <MauiKit/mauiapp.h>
+#include <MauiKit/Core/mauiapp.h>
 
 #ifdef Q_OS_ANDROID
 #include <QGuiApplication>

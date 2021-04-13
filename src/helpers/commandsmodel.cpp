@@ -1,6 +1,7 @@
 #include "commandsmodel.h"
+#include <QDebug>
 
-#include <MauiKit/fmstatic.h>
+#include <MauiKit/Core/utils.h>
 
 CommandsModel::CommandsModel(QObject *parent)
 {
@@ -24,7 +25,7 @@ void CommandsModel::setList()
     this->m_list.clear();
     this->m_commands.clear();
 
-    m_commands = FMStatic::loadSettings("commands", "shortcuts", QStringList()).toStringList();
+    m_commands = UTIL::loadSettings("commands", "shortcuts", QStringList()).toStringList();
 
     for(const auto &command : m_commands)
     {
@@ -37,7 +38,7 @@ void CommandsModel::setList()
 
 void CommandsModel::saveCommands()
 {
-    FMStatic::saveSettings("commands", m_commands, "shortcuts");
+    UTIL::saveSettings("commands", m_commands, "shortcuts");
 }
 
 bool CommandsModel::insert(const QString &command)

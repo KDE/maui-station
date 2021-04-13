@@ -4,7 +4,7 @@
 #include <mauilist.h>
 #include <QObject>
 
-#include <MauiKit/mauilist.h>
+#include <MauiKit/Core/mauilist.h>
 
 class CommandsModel : public MauiList
 {
