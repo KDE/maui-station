@@ -21,6 +21,9 @@ ColumnLayout
     property alias orientation : _splitView.orientation
     property alias count : _splitView.count
 
+    Maui.TabViewInfo.tabTitle: title
+    Maui.TabViewInfo.tabToolTipText: terminal.session.currentDir
+
     function forceActiveFocus()
     {
         control.terminal.forceActiveFocus()

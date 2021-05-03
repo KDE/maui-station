@@ -201,7 +201,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         {
             visible: !_shortcutsButton.checked
 
-            height: Maui.Style.iconSizes.medium + Maui.Style.space.medium
+            implicitHeight: Maui.Style.iconSizes.medium + Maui.Style.space.medium
 
             id: button
             text: model.label
