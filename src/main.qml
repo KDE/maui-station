@@ -104,7 +104,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         }
     ]
 
-//    footBar.visible: Maui.Handy.isTouch
+    footBar.visible: Maui.Handy.isTouch
     page.footerBackground.color: "transparent"
 
     page.footerColumn: CommandShortcuts
