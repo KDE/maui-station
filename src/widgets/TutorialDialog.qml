@@ -26,24 +26,18 @@ Maui.SettingsDialog
         {
             label1.text: i18n("Up & Down")
             label2.text: i18n("Swipe up or down to navigate the commands history.")
-            iconSource: "hand"
-            iconSizeHint: Maui.Style.iconSizes.big
         }
 
         Maui.SettingTemplate
         {
             label1.text: i18n("Left & Right")
             label2.text: i18n("Swipe left or right to move through the command line to edit.")
-            iconSource: "hand"
-            iconSizeHint: Maui.Style.iconSizes.big
         }
 
         Maui.SettingTemplate
         {
             label1.text: i18n("Two Fingers Left & Right")
             label2.text: i18n("Swipe up or down with two fingers to scroll.")
-            iconSource: "hand"
-            iconSizeHint: Maui.Style.iconSizes.big
         }
     }
 
@@ -56,16 +50,14 @@ Maui.SettingsDialog
         {
             label1.text: i18n("Up & Down")
             label2.text: i18n("Swipe up or down to navigate the commands history.")
-            iconSource: "help-keybord-shortcuts"
-            iconSizeHint: Maui.Style.iconSizes.big
         }
 
         Maui.SettingTemplate
         {
             label1.text: i18n("Left & Right")
             label2.text: i18n("Swipe left or right to move through the command line to edit.")
-            iconSource: "help-keybord-shortcuts"
-            iconSizeHint: Maui.Style.iconSizes.big
+
+
         }
     }
 
@@ -78,16 +70,16 @@ Maui.SettingsDialog
         {
             label1.text: i18n("Create")
             label2.text: i18n("Create a new command shorcut to quickly trigger actions.")
-            iconSource: "help-keybord-shortcuts"
-            iconSizeHint: Maui.Style.iconSizes.big
+
+
         }
 
         Maui.SettingTemplate
         {
             label1.text: i18n("Left & Right")
             label2.text: i18n("Swipe left or right to move through the command line to edit.")
-            iconSource: "help-keybord-shortcuts"
-            iconSizeHint: Maui.Style.iconSizes.big
+
+
         }
     }
 }

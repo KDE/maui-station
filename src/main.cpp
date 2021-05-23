@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
     app.setOrganizationName("Maui");
     app.setWindowIcon(QIcon(":/station.svg"));
 
-     MauiApp::instance()->setHandleAccounts(false); // for now index can not handle cloud accounts
     MauiApp::instance()->setIconName("qrc:/station.svg");
 
 	KLocalizedString::setApplicationDomain("station");
