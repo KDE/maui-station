@@ -5,8 +5,6 @@ import QtQuick.Layouts 1.3
 
 import Qt.labs.settings 1.0
 
-import QtGraphicalEffects 1.0
-
 import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
@@ -17,7 +15,7 @@ import "widgets"
 Maui.ApplicationWindow
 {
     id: root
-    title: currentTab && currentTab.terminal ? currentTab.terminal.session.title : ""
+    title: currentTerminal? currentTerminal.session.title : ""
     altHeader: Kirigami.Settings.isMobile
 
     page.title: root.title
@@ -26,11 +24,11 @@ Maui.ApplicationWindow
     autoHideHeader: settings.focusMode
 
     property alias currentTab : _layout.currentItem
-    readonly property Maui.Terminal currentTerminal : currentTab.terminal
+    readonly property Maui.Terminal currentTerminal : currentTab.currentItem.terminal
 
     onClosing:
     {
-        if(currentTab.terminal.session.hasActiveProcess)
+        if(currentTerminal.session.hasActiveProcess)
         {
             root.notify("face-ninja", "Process is running", "Are you sure you want to quit?", root.close())
             close.accepted = false
@@ -96,10 +94,10 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         ToolButton
         {
             icon.name: "edit-find"
-            checked: currentTab.terminal.findBar.visible
+            checked: currentTerminal.findBar.visible
             onClicked:
             {
-                currentTab.terminal.footBar.visible = !currentTab.terminal.footBar.visible
+                currentTerminal.footBar.visible = !currentTerminal.footBar.visible
             }
         }
     ]
@@ -236,6 +234,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         spacing: 0
         mobile: !root.isWide
         onNewTabClicked: openTab("$HOME")
+        onCloseTabClicked: closeTab(index)
     }
 
     Component.onCompleted:
