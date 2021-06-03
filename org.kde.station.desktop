@@ -58,6 +58,6 @@ TryExec=station
 Exec=station %U
 Terminal=false
 Type=Application
-Categories=Qt;KDE;System;
+Categories=Qt;KDE;System;TerminalEmulator;
 StartupNotify=true
 Icon=station
