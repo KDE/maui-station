@@ -22,7 +22,7 @@ find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick 
 
 find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons Config KIO)
 
-find_package(MauiKit REQUIRED)
+find_package(MauiKit REQUIRED COMPONENTS FileBrowsing)
 
 include(KDEInstallDirs)
 include(KDEClangFormat)
@@ -55,25 +55,12 @@ else()
     add_definitions(-DGIT_BRANCH="Stable")
 endif()
 
-add_executable(${PROJECT_NAME}
-    src/main.cpp
-    src/helpers/keyshelper.cpp
-    src/helpers/commandsmodel.cpp
-    src/qml.qrc
-    src/assets/assets.qrc
-    )
-
 ecm_setup_version(${STATION_VERSION}
     VARIABLE_PREFIX STATION
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/station_version.h"
     )
 
-target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(${PROJECT_NAME} PRIVATE MauiKit Qt5::Sql Qt5::Qml Qt5::Svg KF5::I18n KF5::CoreAddons)
-
-install(TARGETS station ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
-install(FILES org.kde.station.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
-install(FILES src/assets/station.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
+add_subdirectory(src)
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 

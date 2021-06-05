@@ -6,7 +6,6 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
-
 Maui.SplitView
 {
     id: control
@@ -17,6 +16,8 @@ Maui.SplitView
     orientation: width >= 600 ? Qt.Horizontal : Qt.Vertical
 
     readonly property string title: currentItem.title
+
+    property string path : "~"
 
     Maui.TabViewInfo.tabTitle: title
     Maui.TabViewInfo.tabToolTipText: currentItem.session.currentDir
@@ -58,7 +59,7 @@ Maui.SplitView
             return
         }//close the innactive split
 
-        control.addSplit(_terminalComponent, {'path': "~"});
+        control.addSplit(_terminalComponent, {'path': control.path});
     }
 
     function pop()

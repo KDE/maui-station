@@ -248,6 +248,19 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         TerminalLayout {}
     }
 
+    Connections
+    {
+        target: Station.Station
+        function onOpenPaths(urls)
+        {
+            for(var url of urls)
+            {
+                console.log("Open tabs:", url)
+                 openTab(url)
+            }
+        }
+    }
+
     function openTab(path)
     {
         _layout.addTab(_terminalComponent, {'path': path});

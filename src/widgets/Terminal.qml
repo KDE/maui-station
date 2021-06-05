@@ -10,7 +10,6 @@ Maui.SplitViewItem
 
     property string path
 
-
     function forceActiveFocus()
     {
         control.kterminal.forceActiveFocus()
@@ -26,10 +25,12 @@ Maui.SplitViewItem
         id: _terminal
 
         anchors.fill: parent
-        Component.onCompleted:
-        {
-            control.session.initialWorkingDirectory = control.path
-        }
+        session.initialWorkingDirectory :control.path
+//        Component.onCompleted:
+//        {
+//            control.session.initialWorkingDirectory = control.path
+//            control.session.sendText("cd "+ control.path + "\n")
+//        }
 
         //    onClicked:
         //    {
