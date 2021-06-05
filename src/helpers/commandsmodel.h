@@ -1,7 +1,6 @@
 #ifndef COMMANDSMODEL_H
 #define COMMANDSMODEL_H
 
-#include <mauilist.h>
 #include <QObject>
 
 #include <MauiKit/Core/mauilist.h>

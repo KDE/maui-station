@@ -8,7 +8,6 @@ CommandsModel::CommandsModel(QObject *parent)
 
 }
 
-
 void CommandsModel::componentComplete()
 {
     this->setList();
