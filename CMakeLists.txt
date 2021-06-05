@@ -30,6 +30,7 @@ include(ECMInstallIcons)
 include(ECMSetupVersion)
 include(ECMSourceVersionControl)
 include(FeatureSummary)
+include(ECMQMLModules)
 
 if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
 execute_process(
@@ -59,6 +60,9 @@ ecm_setup_version(${STATION_VERSION}
     VARIABLE_PREFIX STATION
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/station_version.h"
     )
+
+ecm_find_qmlmodule(QMLTermWidget 1.0)
+set_package_properties(QMLTermWidget-QMLModule PROPERTIES URL "https://github.com/Swordfish90/qmltermwidget")
 
 add_subdirectory(src)
 

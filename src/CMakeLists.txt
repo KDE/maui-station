@@ -8,6 +8,7 @@ set(station_SRCS
     helpers/station.h
     helpers/keyshelper.cpp
     helpers/commandsmodel.cpp
+    helpers/fonts.cpp
     qml.qrc
     assets/assets.qrc
     )

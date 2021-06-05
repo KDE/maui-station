@@ -26,6 +26,14 @@ Maui.ApplicationWindow
     property alias currentTab : _layout.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.currentItem.terminal
 
+    Text
+    {
+        visible: false
+        id: _defaultFont
+        font.family: "Monospace"
+        font.pointSize: Maui.Style.defaultFontSize
+    }
+
     onClosing:
     {
         if(currentTerminal.session.hasActiveProcess)
@@ -43,7 +51,7 @@ Maui.ApplicationWindow
         property bool focusMode : false
         property bool pathBar : true
         property int lineSpacing : 0
-        property font font
+        property font font : _defaultFont.font
     }
 
 
@@ -209,6 +217,7 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
 
             activeFocusOnTab: false
             focusPolicy: Qt.NoFocus
+            autoRepeat: true
 
             background: Kirigami.ShadowedRectangle
             {

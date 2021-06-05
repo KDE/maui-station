@@ -6,6 +6,8 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
+import org.maui.station 1.0 as Station
+
 Maui.SettingsDialog
 {
     id: control
@@ -74,7 +76,7 @@ Maui.SettingsDialog
             ComboBox
             {
                 Layout.fillWidth: true
-                model: Qt.fontFamilies()
+                model: Station.Fonts.monospaceFamilies
                 Component.onCompleted: currentIndex = find(settings.font.family, Qt.MatchExactly)
                 onActivated: settings.font.family = currentText
             }

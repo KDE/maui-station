@@ -12,6 +12,7 @@
 #include "helpers/keyshelper.h"
 #include "helpers/commandsmodel.h"
 #include "helpers/station.h"
+#include "helpers/fonts.h"
 
 #include "../station_version.h"
 
@@ -68,6 +69,11 @@ int main(int argc, char *argv[])
     qmlRegisterType<KeysHelper> (STATION_URI, 1, 0, "KeysModel");
     qmlRegisterType<CommandsModel> (STATION_URI, 1, 0, "CommandsModel");
     qmlRegisterSingletonInstance<Station>(STATION_URI, 1, 0, "Station", Station::instance());
+    qmlRegisterSingletonType<Fonts>(STATION_URI, 1, 0, "Fonts", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+           Q_UNUSED(engine)
+           Q_UNUSED(scriptEngine)
+           return new Fonts;
+       });
 
     engine.load(url);
 
