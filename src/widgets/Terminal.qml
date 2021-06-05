@@ -8,7 +8,7 @@ Maui.SplitViewItem
 {
     id: control
 
-    property string path
+    property string path : "$HOME"
 
     function forceActiveFocus()
     {
@@ -25,7 +25,7 @@ Maui.SplitViewItem
         id: _terminal
 
         anchors.fill: parent
-        session.initialWorkingDirectory :control.path
+        session.initialWorkingDirectory : control.path
 //        Component.onCompleted:
 //        {
 //            control.session.initialWorkingDirectory = control.path

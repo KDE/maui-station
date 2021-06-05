@@ -85,7 +85,7 @@ Maui.ApplicationWindow
         ToolButton
         {
             icon.name: "tab-new"
-            onClicked: root.openTab("~")
+            onClicked: root.openTab("$HOME")
         }]
 
     headBar.rightContent: [
