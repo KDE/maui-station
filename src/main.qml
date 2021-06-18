@@ -134,8 +134,7 @@ Maui.ApplicationWindow
         {
             id: _shortcuts
 
-            //            visible: Maui.Handy.isTouch
-            //            page.footerBackground.color: "transparent"
+            visible: Maui.Handy.isTouch
 
             SplitView.fillWidth: true
             SplitView.preferredHeight: Maui.Style.toolBarHeight -1
@@ -148,40 +147,40 @@ Maui.ApplicationWindow
                 root.currentTerminal.forceActiveFocus()
             }
         }
-        }
+    }
 
-        Component.onCompleted:
-        {
-            openTab("$HOME")
-        }
+    Component.onCompleted:
+    {
+        openTab("$HOME")
+    }
 
-        Component
-        {
-            id: _terminalComponent
-            TerminalLayout {}
-        }
+    Component
+    {
+        id: _terminalComponent
+        TerminalLayout {}
+    }
 
-        Connections
+    Connections
+    {
+        target: Station.Station
+        function onOpenPaths(urls)
         {
-            target: Station.Station
-            function onOpenPaths(urls)
+            for(var url of urls)
             {
-                for(var url of urls)
-                {
-                    console.log("Open tabs:", url)
-                    openTab(url)
-                }
+                console.log("Open tabs:", url)
+                openTab(url)
             }
         }
-
-        function openTab(path)
-        {
-            _layout.addTab(_terminalComponent, {'path': path});
-            _layout.currentIndex = _layout.count -1
-        }
-
-        function closeTab(index)
-        {
-            _layout.closeTab(index)
-        }
     }
+
+    function openTab(path)
+    {
+        _layout.addTab(_terminalComponent, {'path': path});
+        _layout.currentIndex = _layout.count -1
+    }
+
+    function closeTab(index)
+    {
+        _layout.closeTab(index)
+    }
+}
