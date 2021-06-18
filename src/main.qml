@@ -94,8 +94,8 @@ Maui.ApplicationWindow
             id: _splitButton
             checked: root.currentTab && root.currentTab.count === 2
 
-icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-           onClicked: root.currentTab.split()
+            icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+            onClicked: root.currentTab.split()
         },
 
 
@@ -110,174 +110,78 @@ icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-righ
         }
     ]
 
-    footBar.visible: Maui.Handy.isTouch
-    page.footerBackground.color: "transparent"
 
-    page.footerColumn: CommandShortcuts
+    Maui.SplitView
     {
-        id: _shortcuts
-        visible: false
-        width: parent.width
-
-        onCommandTriggered:
-        {
-            root.currentTerminal.session.sendText(command)
-            root.currentTerminal.forceActiveFocus()
-
-            if(!pinned)
-            {
-                _shortcuts.visible = false
-            }
-        }
-    }
-
-    footBar.farRightContent: ToolButton
-    {
-        icon.name: "edit-rename"
-        checked: _shortcuts.visible
-        checkable: true
-        onClicked: _shortcuts.visible = !_shortcuts.visible
-    }
-
-    footBar.farLeftContent: [
-        ToolButton
-        {
-            id: _shortcutsButton
-            checkable: true
-            icon.name: "configure-shortcuts"
-            focusPolicy: Qt.NoFocus
-
-            onClicked: console.log(currentTerminal.session.history)
-        },
-
-        Maui.ToolActions
-        {
-            id: _groupsBox
-            visible: _shortcutsButton.checked
-            autoExclusive: true
-            expanded: true
-            currentIndex: 4
-
-            function close()
-            {
-                _shortcutsButton.checked = false
-            }
-
-            Action
-            {
-                text: i18n("Fn")
-                onTriggered: _groupsBox.close()
-            }
-
-            Action
-            {
-                text: i18n("Nano")
-                onTriggered: _groupsBox.close()
-            }
-
-            Action
-            {
-                text: i18n("Ctrl")
-                onTriggered: _groupsBox.close()
-            }
-
-            Action
-            {
-                text: i18n("Nav")
-                onTriggered: _groupsBox.close()
-            }
-
-            Action
-            {
-                text: i18n("Fav")
-                onTriggered: _groupsBox.close()
-            }
-        }
-    ]
-
-    footBar.leftContent: Repeater
-    {
-        model: Station.KeysModel
-        {
-            id: _keysModel
-            group: _groupsBox.currentIndex
-        }
-
-        Maui.BasicToolButton
-        {
-            visible: !_shortcutsButton.checked
-
-            implicitHeight: Maui.Style.iconSizes.medium + Maui.Style.space.medium
-
-            id: button
-            text: model.label
-            icon.name: model.iconName
-
-            onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
-
-            activeFocusOnTab: false
-            focusPolicy: Qt.NoFocus
-            autoRepeat: true
-
-            background: Kirigami.ShadowedRectangle
-            {
-                color: Kirigami.Theme.backgroundColor
-
-                radius: Kirigami.Units.smallSpacing
-
-                shadow.size: Kirigami.Units.largeSpacing
-                shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
-                shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
-
-                border.width: Kirigami.Units.devicePixelRatio
-                border.color: Qt.tint(Kirigami.Theme.textColor,
-                                      Qt.rgba(color.r, color.g, color.b, 0.6))
-            }
-        }
-    }
-
-    Maui.TabView
-    {
-        id: _layout
         anchors.fill: parent
         spacing: 0
-        mobile: !root.isWide
-        onNewTabClicked: openTab("$HOME")
-        onCloseTabClicked: closeTab(index)
-    }
+        orientation: Qt.Vertical
 
-    Component.onCompleted:
-    {
-        openTab("$HOME")
-    }
-
-    Component
-    {
-        id: _terminalComponent
-        TerminalLayout {}
-    }
-
-    Connections
-    {
-        target: Station.Station
-        function onOpenPaths(urls)
+        Maui.TabView
         {
-            for(var url of urls)
+            id: _layout
+
+            SplitView.fillWidth: true
+            SplitView.fillHeight: true
+
+            spacing: 0
+            mobile: !root.isWide
+            onNewTabClicked: openTab("$HOME")
+            onCloseTabClicked: closeTab(index)
+        }
+
+        CommandShortcuts
+        {
+            id: _shortcuts
+
+            //            visible: Maui.Handy.isTouch
+            //            page.footerBackground.color: "transparent"
+
+            SplitView.fillWidth: true
+            SplitView.preferredHeight: Maui.Style.toolBarHeight -1
+            SplitView.maximumHeight: parent.height * 0.5
+            SplitView.minimumHeight : Maui.Style.toolBarHeight -1
+
+            onCommandTriggered:
             {
-                console.log("Open tabs:", url)
-                 openTab(url)
+                root.currentTerminal.session.sendText(command)
+                root.currentTerminal.forceActiveFocus()
             }
         }
-    }
+        }
 
-    function openTab(path)
-    {
-        _layout.addTab(_terminalComponent, {'path': path});
-        _layout.currentIndex = _layout.count -1
-    }
+        Component.onCompleted:
+        {
+            openTab("$HOME")
+        }
 
-    function closeTab(index)
-    {
-        _layout.closeTab(index)
+        Component
+        {
+            id: _terminalComponent
+            TerminalLayout {}
+        }
+
+        Connections
+        {
+            target: Station.Station
+            function onOpenPaths(urls)
+            {
+                for(var url of urls)
+                {
+                    console.log("Open tabs:", url)
+                    openTab(url)
+                }
+            }
+        }
+
+        function openTab(path)
+        {
+            _layout.addTab(_terminalComponent, {'path': path});
+            _layout.currentIndex = _layout.count -1
+        }
+
+        function closeTab(index)
+        {
+            _layout.closeTab(index)
+        }
     }
-}

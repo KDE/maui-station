@@ -16,29 +16,125 @@ import org.maui.station 1.0 as Station
 Maui.Page
 {
     id: control
+
     implicitHeight: Math.min(Math.max(root.height* 0.3, _commandsShortcutList.contentHeight), 200)
 
     signal commandTriggered(string command)
 
-    property bool pinned : false
-
-    Maui.Separator
+    headBar.farRightContent: ToolButton
     {
-        width: parent.width
-        edge: Qt.TopEdge
+        icon.name: "list-add"
+        onClicked:
+        {
+            if(currentTerminal.kte)
+            _newCommandDialog.textEntry.text = _commandField.text
+
+            _newCommandDialog.open()
+        }
     }
 
-    headBar.middleContent: Maui.TextField
+    headBar.farLeftContent: [
+        ToolButton
+        {
+            id: _shortcutsButton
+            checkable: true
+            icon.name: "configure-shortcuts"
+            focusPolicy: Qt.NoFocus
+
+            onClicked: console.log(currentTerminal.session.history)
+        },
+
+        Maui.ToolActions
+        {
+            id: _groupsBox
+            visible: _shortcutsButton.checked
+            autoExclusive: true
+            expanded: true
+            currentIndex: 4
+
+            function close()
+            {
+                _shortcutsButton.checked = false
+            }
+
+            Action
+            {
+                text: i18n("Fn")
+                onTriggered: _groupsBox.close()
+            }
+
+            Action
+            {
+                text: i18n("Nano")
+                onTriggered: _groupsBox.close()
+            }
+
+            Action
+            {
+                text: i18n("Ctrl")
+                onTriggered: _groupsBox.close()
+            }
+
+            Action
+            {
+                text: i18n("Nav")
+                onTriggered: _groupsBox.close()
+            }
+
+            Action
+            {
+                text: i18n("Fav")
+                onTriggered: _groupsBox.close()
+            }
+        }
+    ]
+
+    headBar.leftContent: Repeater
+    {
+        model: Station.KeysModel
+        {
+            id: _keysModel
+            group: _groupsBox.currentIndex
+        }
+
+        Maui.BasicToolButton
+        {
+            visible: !_shortcutsButton.checked
+
+            implicitHeight: Maui.Style.iconSizes.medium + Maui.Style.space.medium
+
+            id: button
+            text: model.label
+            icon.name: model.iconName
+
+            onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
+
+            activeFocusOnTab: false
+            focusPolicy: Qt.NoFocus
+            autoRepeat: true
+
+            background: Kirigami.ShadowedRectangle
+            {
+                color: Kirigami.Theme.backgroundColor
+
+                radius: Kirigami.Units.smallSpacing
+
+                shadow.size: Kirigami.Units.largeSpacing
+                shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
+                shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
+
+                border.width: Kirigami.Units.devicePixelRatio
+                border.color: Qt.tint(Kirigami.Theme.textColor,
+                                      Qt.rgba(color.r, color.g, color.b, 0.6))
+            }
+        }
+    }
+
+    footBar.middleContent: Maui.TextField
     {
         id: _commandField
         Layout.fillWidth: true
         placeholderText: i18n("Filter or add a new command")
-
-        actions: Action
-        {
-            icon.name: "list-add"
-            onTriggered: _newCommandDialog.open()
-        }
 
         onTextChanged:
         {
@@ -115,13 +211,13 @@ Maui.Page
             onRightClicked:
             {
                 _commandsShortcutList.currentIndex = index
-                 _menu.popup()
+                _menu.popup()
             }
 
             onPressAndHold:
             {
                 _commandsShortcutList.currentIndex = index
-                 _menu.popup()
+                _menu.popup()
             }
         }
     }
@@ -136,7 +232,7 @@ Maui.Page
             icon.name: "edit-clear"
             onTriggered:
             {
-                 _commandsList.remove(index)
+                _commandsList.remove(index)
             }
         }
 
@@ -148,7 +244,7 @@ Maui.Page
             {
                 _editCommandDialog.index= index
                 _editCommandDialog.textEntry.text = model.value
-                 _editCommandDialog.open()
+                _editCommandDialog.open()
             }
         }
     }
