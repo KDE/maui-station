@@ -134,7 +134,7 @@ Maui.ApplicationWindow
         {
             id: _shortcuts
 
-            visible: Maui.Handy.isTouch
+//            visible: Maui.Handy.isTouch
 
             SplitView.fillWidth: true
             SplitView.preferredHeight: Maui.Style.toolBarHeight -1

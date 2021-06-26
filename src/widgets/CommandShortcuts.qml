@@ -101,9 +101,9 @@ Maui.Page
         {
             visible: !_shortcutsButton.checked
 
+            Layout.minimumWidth: 54
             implicitHeight: Maui.Style.iconSizes.medium + Maui.Style.space.medium
 
-            id: button
             text: model.label
             icon.name: model.iconName
 
@@ -115,17 +115,13 @@ Maui.Page
 
             background: Kirigami.ShadowedRectangle
             {
-                color: Kirigami.Theme.backgroundColor
+                color: pressed || down || checked || hovered ? Qt.rgba(Kirigami.Theme.highlightColor.r, Kirigami.Theme.highlightColor.g, Kirigami.Theme.highlightColor.b, 0.15) : Qt.lighter(Kirigami.Theme.backgroundColor)
 
                 radius: Kirigami.Units.smallSpacing
 
                 shadow.size: Kirigami.Units.largeSpacing
                 shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
                 shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
-
-                border.width: Kirigami.Units.devicePixelRatio
-                border.color: Qt.tint(Kirigami.Theme.textColor,
-                                      Qt.rgba(color.r, color.g, color.b, 0.6))
             }
         }
     }
