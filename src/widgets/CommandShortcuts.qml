@@ -24,13 +24,8 @@ Maui.Page
     headBar.farRightContent: ToolButton
     {
         icon.name: "list-add"
-        onClicked:
-        {
-            if(currentTerminal.kte)
-            _newCommandDialog.textEntry.text = _commandField.text
+        onClicked: control.newCommand()
 
-            _newCommandDialog.open()
-        }
     }
 
     headBar.farLeftContent: [
@@ -243,5 +238,11 @@ Maui.Page
                 _editCommandDialog.open()
             }
         }
+    }
+
+    function newCommand()
+    {
+        _newCommandDialog.textEntry.text = _commandField.text
+        _newCommandDialog.open()
     }
 }

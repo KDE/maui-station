@@ -55,11 +55,6 @@ Maui.SplitViewItem
                 currentTerminal.forceActiveFocus()
             }
 
-            if ((event.key == Qt.Key_Down) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
-            {
-                split()
-            }
-
             if ((event.key == Qt.Key_Right) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
             {
                 split()
@@ -68,21 +63,6 @@ Maui.SplitViewItem
             if ((event.key == Qt.Key_T) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
             {
                 root.openTab(control.session.intialWorkingDirectory)
-            }
-
-            if ((event.key == Qt.Key_C) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
-            {
-                kterminal.copyClipboard()
-            }
-
-            if ((event.key == Qt.Key_V) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
-            {
-                kterminal.pasteClipboard()
-            }
-
-            if ((event.key == Qt.Key_F) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
-            {
-                footBar.visible = !footBar.visible
             }
         }
     }

@@ -60,19 +60,31 @@ Maui.ApplicationWindow
         id: _tutorialDialog
     }
 
-    mainMenu: [
-        Action
+    headBar.leftContent: [
+
+        Maui.ToolButtonMenu
         {
-            text: i18n("Tutorial")
-            onTriggered: _tutorialDialog.open()
-            icon.name : "help-contents"
+            icon.name: "application-menu"
+
+            MenuItem
+            {
+                text: i18n("Tutorial")
+                onTriggered: _tutorialDialog.open()
+                icon.name : "help-contents"
+            }
+
+            MenuItem
+            {
+                icon.name: "settings-configure"
+                text: i18n("Settings")
+                onTriggered: _settingsDialog.open()
+            }
         },
 
-        Action
+        ToolButton
         {
-            icon.name: "settings-configure"
-            text: i18n("Settings")
-            onTriggered: _settingsDialog.open()
+            icon.name: "tab-new"
+            onClicked: root.openTab("$HOME")
         }
     ]
 
@@ -80,13 +92,6 @@ Maui.ApplicationWindow
     {
         id: _settingsDialog
     }
-
-    headBar.leftContent: [
-        ToolButton
-        {
-            icon.name: "tab-new"
-            onClicked: root.openTab("$HOME")
-        }]
 
     headBar.rightContent: [
         ToolButton
