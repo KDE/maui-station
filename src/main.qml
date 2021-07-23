@@ -79,6 +79,13 @@ Maui.ApplicationWindow
                 text: i18n("Settings")
                 onTriggered: _settingsDialog.open()
             }
+
+            MenuItem
+            {
+                text: i18n("About")
+                icon.name: "documentinfo"
+                onTriggered: root.about()
+            }
         },
 
         ToolButton

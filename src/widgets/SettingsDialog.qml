@@ -42,7 +42,7 @@ Maui.SettingsDialog
             label1.text: i18n("Color Scheme")
             label2.text: i18n("Change the color scheme of the terminal")
 
-            ComboBox
+            Maui.ComboBox
             {
                 id: _colorSchemesCombobox
                 model: _dummyTerminal.kterminal.availableColorSchemes
@@ -72,7 +72,7 @@ Maui.SettingsDialog
         {
             label1.text:  i18n("Family")
 
-            ComboBox
+            Maui.ComboBox
             {
                 Layout.fillWidth: true
                 model: Station.Fonts.monospaceFamilies
