@@ -1,7 +1,5 @@
 import QtQuick 2.15
-import QtQml 2.15
 import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
 
 import Qt.labs.settings 1.0
 
@@ -25,14 +23,7 @@ Maui.ApplicationWindow
 
     property alias currentTab : _layout.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.currentItem.terminal
-
-    Text
-    {
-        visible: false
-        id: _defaultFont
-        font.family: "Monospace"
-        font.pointSize: Maui.Style.defaultFontSize
-    }
+    readonly property font defaultFont : Qt.font({ family: "Monospace", pointSize: Maui.Style.defaultFontSize})
 
     onClosing:
     {
@@ -51,15 +42,15 @@ Maui.ApplicationWindow
         property bool focusMode : false
         property bool pathBar : true
         property int lineSpacing : 0
-        property font font : _defaultFont.font
+        property font font : defaultFont
     }
-
 
     TutorialDialog
     {
         id: _tutorialDialog
     }
 
+    headBar.forceCenterMiddleContent: root.isWide
     headBar.leftContent: [
 
         Maui.ToolButtonMenu
@@ -90,7 +81,7 @@ Maui.ApplicationWindow
 
         ToolButton
         {
-            icon.name: "tab-new"
+            icon.name: "list-add"
             onClicked: root.openTab("$HOME")
         }
     ]
@@ -110,16 +101,24 @@ Maui.ApplicationWindow
             onClicked: root.currentTab.split()
         },
 
-
         ToolButton
         {
-            icon.name: "edit-find"
-            checked: currentTerminal.findBar.visible
-            onClicked:
-            {
-                currentTerminal.footBar.visible = !currentTerminal.footBar.visible
-            }
+            visible: _layout.mobile && _layout.count > 1
+            text: _layout.count
+            checked: _layout.overviewMode
+            checkable: true
+            icon.name: "tab-new"
+            onClicked: _layout.openOverview()
         }
+//        ToolButton
+//        {
+//            icon.name: "edit-find"
+//            checked: currentTerminal.findBar.visible
+//            onClicked:
+//            {
+//                currentTerminal.footBar.visible = !currentTerminal.footBar.visible
+//            }
+//        }
     ]
 
 
@@ -132,10 +131,10 @@ Maui.ApplicationWindow
         Maui.TabView
         {
             id: _layout
-
+//mobile: true
             SplitView.fillWidth: true
             SplitView.fillHeight: true
-
+            tabBarVisible: !mobile
             spacing: 0
             mobile: !root.isWide
             onNewTabClicked: openTab("$HOME")
