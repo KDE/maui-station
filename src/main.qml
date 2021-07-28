@@ -15,6 +15,7 @@ Maui.ApplicationWindow
     id: root
     title: currentTerminal? currentTerminal.session.title : ""
     altHeader: Kirigami.Settings.isMobile
+    Kirigami.Theme.colorSet: Kirigami.Theme.Window
 
     page.title: root.title
     page.showTitle: true
@@ -51,9 +52,7 @@ Maui.ApplicationWindow
     }
 
     headBar.forceCenterMiddleContent: root.isWide
-    headBar.leftContent: [
-
-        Maui.ToolButtonMenu
+    headBar.leftContent: Maui.ToolButtonMenu
         {
             icon.name: "application-menu"
 
@@ -77,14 +76,7 @@ Maui.ApplicationWindow
                 icon.name: "documentinfo"
                 onTriggered: root.about()
             }
-        },
-
-        ToolButton
-        {
-            icon.name: "list-add"
-            onClicked: root.openTab("$HOME")
         }
-    ]
 
     SettingsDialog
     {
@@ -109,18 +101,14 @@ Maui.ApplicationWindow
             checkable: true
             icon.name: "tab-new"
             onClicked: _layout.openOverview()
-        }
-//        ToolButton
-//        {
-//            icon.name: "edit-find"
-//            checked: currentTerminal.findBar.visible
-//            onClicked:
-//            {
-//                currentTerminal.footBar.visible = !currentTerminal.footBar.visible
-//            }
-//        }
-    ]
+        },
 
+        ToolButton
+        {
+            icon.name: "list-add"
+            onClicked: root.openTab("$HOME")
+        }
+    ]
 
     Maui.SplitView
     {
@@ -131,7 +119,7 @@ Maui.ApplicationWindow
         Maui.TabView
         {
             id: _layout
-//mobile: true
+            //mobile: true
             SplitView.fillWidth: true
             SplitView.fillHeight: true
             tabBarVisible: !mobile
@@ -145,7 +133,7 @@ Maui.ApplicationWindow
         {
             id: _shortcuts
 
-            visible: Maui.Handy.isTouch
+            //            visible: Maui.Handy.isTouch
 
             SplitView.fillWidth: true
             SplitView.preferredHeight: Maui.Style.toolBarHeight -1
