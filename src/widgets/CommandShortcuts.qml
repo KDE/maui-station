@@ -21,68 +21,66 @@ Maui.Page
 
     signal commandTriggered(string command)
 
-    headBar.farRightContent: ToolButton
+    headBar.farRightContent: Maui.ToolButtonMenu
     {
-        icon.name: "list-add"
-        onClicked: control.newCommand()
+        id: _groupsBox
+        property int currentIndex : 4
+        icon.name: "overflow-menu"
+        MenuItem
+        {
+            text: i18n("Fn")
+            autoExclusive: true
+            checked: currentIndex = 0
+            checkable: true
+            onTriggered: _groupsBox.currentIndex = 0
+        }
+
+        MenuItem
+        {
+            text: i18n("Nano")
+            autoExclusive: true
+            checked: currentIndex = 1
+            checkable: true
+            onTriggered: _groupsBox.currentIndex = 1
+        }
+
+        MenuItem
+        {
+            text: i18n("Ctrl")
+            autoExclusive: true
+            checked: currentIndex = 2
+            checkable: true
+            onTriggered: _groupsBox.currentIndex = 2
+        }
+
+        MenuItem
+        {
+            text: i18n("Nav")
+            autoExclusive: true
+            checked: currentIndex = 3
+            checkable: true
+            onTriggered: _groupsBox.currentIndex = 3
+        }
+
+        MenuItem
+        {
+            text: i18n("Fav")
+            autoExclusive: true
+            checked: currentIndex = 4
+            checkable: true
+            onTriggered: _groupsBox.currentIndex = 4
+        }
+
+        MenuSeparator {}
+
+        MenuItem
+        {
+            text: i18n("Add shortcut")
+            icon.name: "list-add"
+            onTriggered: control.newCommand()
+        }
 
     }
-
-    headBar.farLeftContent: [
-        ToolButton
-        {
-            id: _shortcutsButton
-            checkable: true
-            icon.name: "configure-shortcuts"
-            focusPolicy: Qt.NoFocus
-
-            onClicked: console.log(currentTerminal.session.history)
-        },
-
-        Maui.ToolActions
-        {
-            id: _groupsBox
-            visible: _shortcutsButton.checked
-            autoExclusive: true
-            expanded: true
-            currentIndex: 4
-
-            function close()
-            {
-                _shortcutsButton.checked = false
-            }
-
-            Action
-            {
-                text: i18n("Fn")
-                onTriggered: _groupsBox.close()
-            }
-
-            Action
-            {
-                text: i18n("Nano")
-                onTriggered: _groupsBox.close()
-            }
-
-            Action
-            {
-                text: i18n("Ctrl")
-                onTriggered: _groupsBox.close()
-            }
-
-            Action
-            {
-                text: i18n("Nav")
-                onTriggered: _groupsBox.close()
-            }
-
-            Action
-            {
-                text: i18n("Fav")
-                onTriggered: _groupsBox.close()
-            }
-        }
-    ]
 
     headBar.leftContent: Repeater
     {
