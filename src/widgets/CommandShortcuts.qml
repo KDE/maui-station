@@ -28,7 +28,7 @@ Maui.Page
         icon.name: "overflow-menu"
         MenuItem
         {
-            text: i18n("Fn")
+            text: i18n("Function Keys")
             autoExclusive: true
             checked: currentIndex = 0
             checkable: true
@@ -46,7 +46,7 @@ Maui.Page
 
         MenuItem
         {
-            text: i18n("Ctrl")
+            text: i18n("Ctrl Modifiers")
             autoExclusive: true
             checked: currentIndex = 2
             checkable: true
@@ -55,7 +55,7 @@ Maui.Page
 
         MenuItem
         {
-            text: i18n("Nav")
+            text: i18n("Navigation")
             autoExclusive: true
             checked: currentIndex = 3
             checkable: true
@@ -64,7 +64,7 @@ Maui.Page
 
         MenuItem
         {
-            text: i18n("Fav")
+            text: i18n("Favorite")
             autoExclusive: true
             checked: currentIndex = 4
             checkable: true
