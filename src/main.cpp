@@ -21,9 +21,7 @@
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    QCoreApplication::setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
     QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-    QCoreApplication::setAttribute(Qt::AA_DisableSessionManager, true);
 
     QApplication app(argc, argv);
 
@@ -44,9 +42,10 @@ int main(int argc, char *argv[])
     KAboutData::setApplicationData(about);
 
     QCommandLineParser parser;
-    parser.process(app);
 
     about.setupCommandLine(&parser);
+    parser.process(app);
+
     about.processCommandLine(&parser);
     const QStringList args = parser.positionalArguments();
 
