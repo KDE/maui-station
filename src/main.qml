@@ -26,6 +26,14 @@ Maui.ApplicationWindow
     readonly property Maui.Terminal currentTerminal : currentTab.currentItem.terminal
     readonly property font defaultFont : Qt.font({ family: "Monospace", pointSize: Maui.Style.defaultFontSize})
 
+    Maui.WindowBlur
+    {
+        view: root
+        geometry: Qt.rect(root.x, root.y, root.width, root.height)
+        windowRadius: root.background.radius
+        enabled: !Kirigami.Settings.isMobile
+    }
+
     onClosing:
     {
         if(currentTerminal.session.hasActiveProcess)

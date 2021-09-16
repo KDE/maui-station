@@ -21,6 +21,13 @@ Maui.Page
 
     signal commandTriggered(string command)
 
+    background: Rectangle
+    {
+        opacity: 0.5
+        color: Kirigami.Theme.backgroundColor
+    }
+    footBar.background: null
+
     headBar.farRightContent: Maui.ToolButtonMenu
     {
         id: _groupsBox
