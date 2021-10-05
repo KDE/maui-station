@@ -15,12 +15,13 @@ Maui.ApplicationWindow
     id: root
     title: currentTerminal? currentTerminal.session.title : ""
     altHeader: Kirigami.Settings.isMobile
-    Kirigami.Theme.colorSet: Kirigami.Theme.Window
 
     page.title: root.title
     page.showTitle: true
 
     autoHideHeader: settings.focusMode
+
+    property alias dialog : _dialogLoader.item
 
     property alias currentTab : _layout.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.currentItem.terminal
@@ -54,20 +55,39 @@ Maui.ApplicationWindow
         property font font : defaultFont
     }
 
-    TutorialDialog
+    Loader
     {
-        id: _tutorialDialog
+        id: _dialogLoader
+    }
+
+    Component
+    {
+        id: _tutorialDialogComponent
+        TutorialDialog {}
+    }
+
+    Component
+    {
+        id: _settingsDialogComponent
+        SettingsDialog {}
     }
 
     headBar.forceCenterMiddleContent: root.isWide
-    headBar.leftContent: Maui.ToolButtonMenu
+    headBar.leftContent: Loader
+    {
+        asynchronous: true
+        sourceComponent: Maui.ToolButtonMenu
         {
             icon.name: "application-menu"
 
             MenuItem
             {
                 text: i18n("Tutorial")
-                onTriggered: _tutorialDialog.open()
+                onTriggered:
+                {
+                    _dialogLoader.sourceComponent = _tutorialDialogComponent
+                    dialog.open()
+                }
                 icon.name : "help-contents"
             }
 
@@ -75,7 +95,11 @@ Maui.ApplicationWindow
             {
                 icon.name: "settings-configure"
                 text: i18n("Settings")
-                onTriggered: _settingsDialog.open()
+                onTriggered:
+                {
+                    _dialogLoader.sourceComponent = _settingsDialogComponent
+                    dialog.open()
+                }
             }
 
             MenuItem
@@ -85,10 +109,6 @@ Maui.ApplicationWindow
                 onTriggered: root.about()
             }
         }
-
-    SettingsDialog
-    {
-        id: _settingsDialog
     }
 
     headBar.rightContent: [
@@ -137,21 +157,24 @@ Maui.ApplicationWindow
             onCloseTabClicked: closeTab(index)
         }
 
-        CommandShortcuts
+        Loader
         {
-            id: _shortcuts
-
-            //            visible: Maui.Handy.isTouch
+            id: _shortcutsLoader
 
             SplitView.fillWidth: true
             SplitView.preferredHeight: Maui.Style.toolBarHeight -1
             SplitView.maximumHeight: parent.height * 0.5
             SplitView.minimumHeight : Maui.Style.toolBarHeight -1
-
-            onCommandTriggered:
+            active: Maui.Handy.isTouch
+            visible: active
+            asynchronous: true
+            sourceComponent: CommandShortcuts
             {
-                root.currentTerminal.session.sendText(command)
-                root.currentTerminal.forceActiveFocus()
+                onCommandTriggered:
+                {
+                    root.currentTerminal.session.sendText(command)
+                    root.currentTerminal.forceActiveFocus()
+                }
             }
         }
     }

@@ -147,7 +147,7 @@ Maui.SettingsDialog
             Button
             {
                 text: i18n("Add")
-                onClicked: _shortcuts.newCommand()
+                onClicked: _shortcutsLoader.item.newCommand()
             }
         }
     }

@@ -1,9 +1,6 @@
 import QtQuick 2.14
-import QtQml 2.14
 import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
 
-import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
 Maui.SplitView
@@ -27,13 +24,17 @@ Maui.SplitView
         control.currentItem.forceActiveFocus()
     }
 
-    Maui.Dialog
+    Component
     {
-        id: _confirmCloseDialog
-        title: i18n("Close")
-        message: i18n("A process is currently still running. Are oyu sure you want to close it?")
+        id: _confirmCloseDialogComponent
 
-        onAccepted: pop()
+        Maui.Dialog
+        {
+            title: i18n("Close")
+            message: i18n("A process is currently still running. Are oyu sure you want to close it?")
+
+            onAccepted: pop()
+        }
     }
 
     Component
@@ -50,7 +51,8 @@ Maui.SplitView
         {
             if(control.currentItem.session.hasActiveProcess)
             {
-                _confirmCloseDialog.open()
+                _dialogLoader.sourceComponent = _confirmCloseDialogComponent
+                dialog.open()
             }else
             {
                 pop()
