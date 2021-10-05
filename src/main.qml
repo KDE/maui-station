@@ -53,6 +53,7 @@ Maui.ApplicationWindow
         property bool pathBar : true
         property int lineSpacing : 0
         property font font : defaultFont
+        property int keysModelCurrentIndex : 4
     }
 
     Loader

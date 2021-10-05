@@ -24,12 +24,9 @@ Maui.Page
 
     headBar.farRightContent: Loader
     {
-        id: _groupsBoxLoader
         asynchronous: true
         sourceComponent: Maui.ToolButtonMenu
         {
-            id: _groupsBox
-            property int currentIndex : 4
             icon.name: "overflow-menu"
             MenuItem
             {
@@ -37,7 +34,7 @@ Maui.Page
                 autoExclusive: true
                 checked: currentIndex = 0
                 checkable: true
-                onTriggered: _groupsBox.currentIndex = 0
+                onTriggered: keysModelCurrentIndex = 0
             }
 
             MenuItem
@@ -46,7 +43,7 @@ Maui.Page
                 autoExclusive: true
                 checked: currentIndex = 1
                 checkable: true
-                onTriggered: _groupsBox.currentIndex = 1
+                onTriggered: keysModelCurrentIndex = 1
             }
 
             MenuItem
@@ -55,7 +52,7 @@ Maui.Page
                 autoExclusive: true
                 checked: currentIndex = 2
                 checkable: true
-                onTriggered: _groupsBox.currentIndex = 2
+                onTriggered: keysModelCurrentIndex = 2
             }
 
             MenuItem
@@ -64,7 +61,7 @@ Maui.Page
                 autoExclusive: true
                 checked: currentIndex = 3
                 checkable: true
-                onTriggered: _groupsBox.currentIndex = 3
+                onTriggered: keysModelCurrentIndex = 3
             }
 
             MenuItem
@@ -73,7 +70,7 @@ Maui.Page
                 autoExclusive: true
                 checked: currentIndex = 4
                 checkable: true
-                onTriggered: _groupsBox.currentIndex = 4
+                onTriggered: keysModelCurrentIndex = 4
             }
 
             MenuSeparator {}
@@ -92,7 +89,7 @@ Maui.Page
         model: Station.KeysModel
         {
             id: _keysModel
-            group: _groupsBoxLoader.item.currentIndex
+            group: keysModelCurrentIndex
         }
 
         Maui.BasicToolButton
