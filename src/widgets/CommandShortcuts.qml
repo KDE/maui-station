@@ -32,45 +32,45 @@ Maui.Page
             {
                 text: i18n("Function Keys")
                 autoExclusive: true
-                checked: currentIndex = 0
+                checked: settings.keysModelCurrentIndex === 0
                 checkable: true
-                onTriggered: keysModelCurrentIndex = 0
+                onTriggered: settings.keysModelCurrentIndex = 0
             }
 
             MenuItem
             {
                 text: i18n("Nano")
                 autoExclusive: true
-                checked: currentIndex = 1
+                checked: settings.keysModelCurrentIndex = 1
                 checkable: true
-                onTriggered: keysModelCurrentIndex = 1
+                onTriggered: settings.keysModelCurrentIndex = 1
             }
 
             MenuItem
             {
                 text: i18n("Ctrl Modifiers")
                 autoExclusive: true
-                checked: currentIndex = 2
+                checked: settings.keysModelCurrentIndex === 2
                 checkable: true
-                onTriggered: keysModelCurrentIndex = 2
+                onTriggered:settings.keysModelCurrentIndex = 2
             }
 
             MenuItem
             {
                 text: i18n("Navigation")
                 autoExclusive: true
-                checked: currentIndex = 3
+                checked: settings.keysModelCurrentIndex = 3
                 checkable: true
-                onTriggered: keysModelCurrentIndex = 3
+                onTriggered: settings.keysModelCurrentIndex = 3
             }
 
             MenuItem
             {
                 text: i18n("Favorite")
                 autoExclusive: true
-                checked: currentIndex = 4
+                checked: settings.keysModelCurrentIndex = 4
                 checkable: true
-                onTriggered: keysModelCurrentIndex = 4
+                onTriggered: settings.keysModelCurrentIndex = 4
             }
 
             MenuSeparator {}
@@ -89,7 +89,7 @@ Maui.Page
         model: Station.KeysModel
         {
             id: _keysModel
-            group: keysModelCurrentIndex
+            group: settings.keysModelCurrentIndex
         }
 
         Maui.BasicToolButton
