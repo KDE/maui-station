@@ -22,65 +22,69 @@ Maui.Page
     }
     footBar.background: null
 
-    headBar.farRightContent: Maui.ToolButtonMenu
+    headBar.farRightContent: Loader
     {
-        id: _groupsBox
-        property int currentIndex : 4
-        icon.name: "overflow-menu"
-        MenuItem
+        id: _groupsBoxLoader
+        asynchronous: true
+        sourceComponent: Maui.ToolButtonMenu
         {
-            text: i18n("Function Keys")
-            autoExclusive: true
-            checked: currentIndex = 0
-            checkable: true
-            onTriggered: _groupsBox.currentIndex = 0
+            id: _groupsBox
+            property int currentIndex : 4
+            icon.name: "overflow-menu"
+            MenuItem
+            {
+                text: i18n("Function Keys")
+                autoExclusive: true
+                checked: currentIndex = 0
+                checkable: true
+                onTriggered: _groupsBox.currentIndex = 0
+            }
+
+            MenuItem
+            {
+                text: i18n("Nano")
+                autoExclusive: true
+                checked: currentIndex = 1
+                checkable: true
+                onTriggered: _groupsBox.currentIndex = 1
+            }
+
+            MenuItem
+            {
+                text: i18n("Ctrl Modifiers")
+                autoExclusive: true
+                checked: currentIndex = 2
+                checkable: true
+                onTriggered: _groupsBox.currentIndex = 2
+            }
+
+            MenuItem
+            {
+                text: i18n("Navigation")
+                autoExclusive: true
+                checked: currentIndex = 3
+                checkable: true
+                onTriggered: _groupsBox.currentIndex = 3
+            }
+
+            MenuItem
+            {
+                text: i18n("Favorite")
+                autoExclusive: true
+                checked: currentIndex = 4
+                checkable: true
+                onTriggered: _groupsBox.currentIndex = 4
+            }
+
+            MenuSeparator {}
+
+            MenuItem
+            {
+                text: i18n("Add shortcut")
+                icon.name: "list-add"
+                onTriggered: control.newCommand()
+            }
         }
-
-        MenuItem
-        {
-            text: i18n("Nano")
-            autoExclusive: true
-            checked: currentIndex = 1
-            checkable: true
-            onTriggered: _groupsBox.currentIndex = 1
-        }
-
-        MenuItem
-        {
-            text: i18n("Ctrl Modifiers")
-            autoExclusive: true
-            checked: currentIndex = 2
-            checkable: true
-            onTriggered: _groupsBox.currentIndex = 2
-        }
-
-        MenuItem
-        {
-            text: i18n("Navigation")
-            autoExclusive: true
-            checked: currentIndex = 3
-            checkable: true
-            onTriggered: _groupsBox.currentIndex = 3
-        }
-
-        MenuItem
-        {
-            text: i18n("Favorite")
-            autoExclusive: true
-            checked: currentIndex = 4
-            checkable: true
-            onTriggered: _groupsBox.currentIndex = 4
-        }
-
-        MenuSeparator {}
-
-        MenuItem
-        {
-            text: i18n("Add shortcut")
-            icon.name: "list-add"
-            onTriggered: control.newCommand()
-        }
-
     }
 
     headBar.leftContent: Repeater
@@ -88,7 +92,7 @@ Maui.Page
         model: Station.KeysModel
         {
             id: _keysModel
-            group: _groupsBox.currentIndex
+            group: _groupsBoxLoader.item.currentIndex
         }
 
         Maui.BasicToolButton
@@ -145,29 +149,38 @@ Maui.Page
         }
     }
 
-    Maui.NewDialog
+    Component
     {
-        id: _newCommandDialog
-        title: i18n("New Command")
-        message: i18n("Add a new command shortcut")
-        textEntry.text: _commandField.text
-        onFinished: _commandsList.insert(text)
+        id: _newCommandDialogComponent
+        Maui.NewDialog
+        {
+            title: i18n("New Command")
+            message: i18n("Add a new command shortcut")
+            textEntry.text: _commandField.text
+            onFinished: _commandsList.insert(text)
+        }
+
     }
 
 
-    Maui.NewDialog
+    Component
     {
-        id: _editCommandDialog
-        property int index : -1
+        id: _editCommandDialogComponent
 
-        title: i18n("Edit Command")
-        message: i18n("Edit a command shortcut")
+        Maui.NewDialog
+        {
+            property int index : -1
 
-        onFinished: _commandsList.edit(index, text)
+            title: i18n("Edit Command")
+            message: i18n("Edit a command shortcut")
+
+            onFinished: _commandsList.edit(index, text)
+        }
     }
 
     Maui.Holder
     {
+        anchors.fill: parent
         visible: _commandsShortcutList.count === 0
         emoji: "qrc:/edit-rename.svg"
         title: i18n("No Commands")
@@ -232,16 +245,18 @@ Maui.Page
             icon.name: "edit-rename"
             onTriggered:
             {
-                _editCommandDialog.index= index
-                _editCommandDialog.textEntry.text = model.value
-                _editCommandDialog.open()
+                _dialogLoader.sourceComponent = _editCommandDialogComponent
+                dialog.index= index
+                dialog.textEntry.text = model.value
+                dialog.open()
             }
         }
     }
 
     function newCommand()
     {
-        _newCommandDialog.textEntry.text = _commandField.text
-        _newCommandDialog.open()
+        _dialogLoader.sourceComponent = _newCommandDialogComponent
+        dialog.textEntry.text = _commandField.text
+        dialog.open()
     }
 }
