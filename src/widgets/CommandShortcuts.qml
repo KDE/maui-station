@@ -41,7 +41,7 @@ Maui.Page
             {
                 text: i18n("Nano")
                 autoExclusive: true
-                checked: settings.keysModelCurrentIndex = 1
+                checked: settings.keysModelCurrentIndex === 1
                 checkable: true
                 onTriggered: settings.keysModelCurrentIndex = 1
             }
@@ -59,7 +59,7 @@ Maui.Page
             {
                 text: i18n("Navigation")
                 autoExclusive: true
-                checked: settings.keysModelCurrentIndex = 3
+                checked: settings.keysModelCurrentIndex === 3
                 checkable: true
                 onTriggered: settings.keysModelCurrentIndex = 3
             }
@@ -68,7 +68,7 @@ Maui.Page
             {
                 text: i18n("Favorite")
                 autoExclusive: true
-                checked: settings.keysModelCurrentIndex = 4
+                checked: settings.keysModelCurrentIndex === 4
                 checkable: true
                 onTriggered: settings.keysModelCurrentIndex = 4
             }
