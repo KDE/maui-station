@@ -20,6 +20,7 @@ Maui.Page
         opacity: 0.5
         color: Kirigami.Theme.backgroundColor
     }
+
     footBar.background: null
 
     headBar.farRightContent: Loader
@@ -98,7 +99,7 @@ Maui.Page
 
             Layout.minimumWidth: 54
             implicitHeight: Maui.Style.iconSizes.medium + Maui.Style.space.medium
-
+            font.bold: true
             text: model.label
             icon.name: model.iconName
 
