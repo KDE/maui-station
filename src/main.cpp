@@ -26,9 +26,9 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     app.setOrganizationName("Maui");
-    app.setWindowIcon(QIcon(":/station.svg"));
+    app.setWindowIcon(QIcon(":/station/station.svg"));
 
-    MauiApp::instance()->setIconName("qrc:/station.svg");
+    MauiApp::instance()->setIconName("qrc:/station/station.svg");
 
     KLocalizedString::setApplicationDomain("station");
     KAboutData about(QStringLiteral("station"), i18n("Station"), STATION_VERSION_STRING, i18n("Convergent terminal emulator."), KAboutLicense::LGPL_V3, i18n("© 2019-%1 Maui Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));

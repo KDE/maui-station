@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/station">
         <file>station.svg</file>
         <file>edit-rename.svg</file>
     </qresource>

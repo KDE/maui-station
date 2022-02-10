@@ -10,7 +10,7 @@ set(station_SRCS
     helpers/commandsmodel.cpp
     helpers/fonts.cpp
     qml.qrc
-    assets/assets.qrc
+    assets/img_assets.qrc
     )
 
 add_executable(${PROJECT_NAME} ${station_SRCS})

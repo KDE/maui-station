@@ -180,7 +180,7 @@ Maui.Page
     {
         anchors.fill: parent
         visible: _commandsShortcutList.count === 0
-        emoji: "qrc:/edit-rename.svg"
+        emoji: "qrc:/station/edit-rename.svg"
         title: i18n("No Commands")
         body: i18n("Start adding new command shortcuts")
     }

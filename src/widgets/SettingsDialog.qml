@@ -29,6 +29,23 @@ Maui.SettingsDialog
                 onToggled: settings.focusMode = !settings.focusMode
             }
         }
+
+        Maui.SettingTemplate
+        {
+            visible: Maui.App.bundledStyle
+            label1.text: i18n("Dark Mode")
+            label2.text: i18n("Switch between light and dark colorscheme")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checked: Maui.App.darkMode
+                onToggled:
+                {
+                    Maui.App.darkMode = !Maui.App.darkMode
+                }
+            }
+        }
     }
 
     Maui.SettingsSection
