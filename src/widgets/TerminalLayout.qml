@@ -68,4 +68,9 @@ Maui.SplitView
     {
         control.closeSplit(control.currentIndex === 1 ? 0 : 1)
     }
+
+    function closeCurrentView()
+    {
+        control.closeSplit(control.currentIndex)
+    }
 }

@@ -47,20 +47,33 @@ Maui.SplitViewItem
 
         onKeyPressed:
         {
+            if ((event.key == Qt.Key_D) && (event.modifiers & Qt.ControlModifier))
+            {
+                closeSplit()
+                event.accepted = true
+                return
+            }
+
             if ((event.key == Qt.Key_Tab) && (event.modifiers & Qt.ControlModifier))
             {
                 control.SplitView.view.incrementCurrentIndex();
                 currentTerminal.forceActiveFocus()
+                event.accepted = true
+                return
             }
 
             if ((event.key == Qt.Key_Right) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
             {
                 split()
+                event.accepted = true
+                return
             }
 
             if ((event.key == Qt.Key_T) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
             {
                 root.openTab(control.session.intialWorkingDirectory)
+                event.accepted = true
+                return
             }
         }
     }
