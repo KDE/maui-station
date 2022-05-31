@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(STATION_VERSION 2.1.2)
+set(STATION_VERSION 2.2.0)
 
 project(station LANGUAGES CXX VERSION ${STATION_VERSION})
 

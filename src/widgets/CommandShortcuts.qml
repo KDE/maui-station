@@ -18,7 +18,7 @@ Maui.Page
     background: Rectangle
     {
         opacity: 0.5
-        color: Kirigami.Theme.backgroundColor
+        color: Maui.Theme.backgroundColor
     }
 
     footBar.background: null
@@ -111,13 +111,12 @@ Maui.Page
 
             background: Kirigami.ShadowedRectangle
             {
-                color: pressed || down || checked || hovered ? Qt.rgba(Kirigami.Theme.highlightColor.r, Kirigami.Theme.highlightColor.g, Kirigami.Theme.highlightColor.b, 0.15) : Qt.lighter(Kirigami.Theme.backgroundColor)
+                color: pressed || down || checked || hovered ? Qt.rgba(Maui.Theme.highlightColor.r, Maui.Theme.highlightColor.g, Maui.Theme.highlightColor.b, 0.15) : Qt.lighter(Maui.Theme.backgroundColor)
 
-                radius: Kirigami.Units.smallSpacing
-
-                shadow.size: Kirigami.Units.largeSpacing
+                radius: Maui.Style.radiusV
+                shadow.size: Maui.Style.space.medium
                 shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
-                shadow.yOffset: Kirigami.Units.devicePixelRatio * 2
+                shadow.yOffset: 2
             }
         }
     }
