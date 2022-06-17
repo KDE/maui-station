@@ -1,8 +1,6 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
-
-import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
 import org.maui.station 1.0 as Station
@@ -52,7 +50,6 @@ Maui.SettingsDialog
     {
         title: i18n("Terminal")
         description: i18n("Configure the app UI and plugins.")
-        lastOne: true
 
         Maui.SettingTemplate
         {

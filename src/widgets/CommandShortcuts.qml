@@ -1,8 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
-
-import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
 import org.maui.station 1.0 as Station
@@ -109,7 +107,7 @@ Maui.Page
             focusPolicy: Qt.NoFocus
             autoRepeat: true
 
-            background: Kirigami.ShadowedRectangle
+            background: Maui.ShadowedRectangle
             {
                 color: pressed || down || checked || hovered ? Qt.rgba(Maui.Theme.highlightColor.r, Maui.Theme.highlightColor.g, Maui.Theme.highlightColor.b, 0.15) : Qt.lighter(Maui.Theme.backgroundColor)
 

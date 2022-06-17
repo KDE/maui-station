@@ -2,8 +2,6 @@ import QtQuick 2.15
 import QtQuick.Controls 2.14
 
 import Qt.labs.settings 1.0
-
-import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
 import org.maui.station 1.0 as Station
@@ -14,7 +12,7 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentTerminal? currentTerminal.session.title : ""
-    altHeader: Kirigami.Settings.isMobile
+    altHeader: Maui.Handy.isMobile
 
     page.title: root.title
     page.showTitle: true
@@ -32,7 +30,7 @@ Maui.ApplicationWindow
         view: root
         geometry: Qt.rect(root.x, root.y, root.width, root.height)
         windowRadius: root.background.radius
-        enabled: !Kirigami.Settings.isMobile
+        enabled: !Maui.Handy.isMobile
     }
 
     onClosing:
@@ -163,10 +161,10 @@ Maui.ApplicationWindow
             id: _shortcutsLoader
 
             SplitView.fillWidth: true
-            SplitView.preferredHeight: Maui.Style.toolBarHeight -1
+            SplitView.preferredHeight: item.headBar.height
             SplitView.maximumHeight: parent.height * 0.5
-            SplitView.minimumHeight : Maui.Style.toolBarHeight -1
-            active: Maui.Handy.isTouch
+            SplitView.minimumHeight : item.headBar.height
+//            active: Maui.Handy.isTouch
             visible: active
             asynchronous: true
             sourceComponent: CommandShortcuts
