@@ -12,12 +12,6 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentTerminal? currentTerminal.session.title : ""
-    altHeader: Maui.Handy.isMobile
-
-    page.title: root.title
-    page.showTitle: true
-
-    autoHideHeader: settings.focusMode
 
     property alias dialog : _dialogLoader.item
 
@@ -71,108 +65,122 @@ Maui.ApplicationWindow
         SettingsDialog {}
     }
 
-    headBar.forceCenterMiddleContent: root.isWide
-    headBar.leftContent: Loader
+
+    Maui.Page
     {
-        asynchronous: true
-        sourceComponent: Maui.ToolButtonMenu
-        {
-            icon.name: "application-menu"
-
-            MenuItem
-            {
-                text: i18n("Tutorial")
-                onTriggered:
-                {
-                    _dialogLoader.sourceComponent = _tutorialDialogComponent
-                    dialog.open()
-                }
-                icon.name : "help-contents"
-            }
-
-            MenuItem
-            {
-                icon.name: "settings-configure"
-                text: i18n("Settings")
-                onTriggered:
-                {
-                    _dialogLoader.sourceComponent = _settingsDialogComponent
-                    dialog.open()
-                }
-            }
-
-            MenuItem
-            {
-                text: i18n("About")
-                icon.name: "documentinfo"
-                onTriggered: root.about()
-            }
-        }
-    }
-
-    headBar.rightContent: [
-        ToolButton
-        {
-            id: _splitButton
-            checked: root.currentTab && root.currentTab.count === 2
-
-            icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-            onClicked: root.currentTab.split()
-        },
-
-        ToolButton
-        {
-            visible: _layout.mobile && _layout.count > 1
-            text: _layout.count
-            checked: _layout.overviewMode
-            checkable: true
-            icon.name: "tab-new"
-            onClicked: _layout.openOverview()
-        },
-
-        ToolButton
-        {
-            icon.name: "list-add"
-            onClicked: root.openTab("$HOME")
-        }
-    ]
-
-    Maui.SplitView
-    {
+        id: _mainPage
         anchors.fill: parent
-        spacing: 0
-        orientation: Qt.Vertical
+        altHeader: Kirigami.Settings.isMobile
 
-        Maui.TabView
+        title: root.title
+        showTitle: true
+
+        autoHideHeader: settings.focusMode
+
+
+        headBar.forceCenterMiddleContent: root.isWide
+        headBar.leftContent: Loader
         {
-            id: _layout
-            //mobile: true
-            SplitView.fillWidth: true
-            SplitView.fillHeight: true
-            tabBarVisible: !mobile
-            spacing: 0
-            mobile: !root.isWide
-            onNewTabClicked: openTab("$HOME")
-            onCloseTabClicked: closeTab(index)
+            asynchronous: true
+            sourceComponent: Maui.ToolButtonMenu
+            {
+                icon.name: "application-menu"
+
+                MenuItem
+                {
+                    text: i18n("Tutorial")
+                    onTriggered:
+                    {
+                        _dialogLoader.sourceComponent = _tutorialDialogComponent
+                        dialog.open()
+                    }
+                    icon.name : "help-contents"
+                }
+
+                MenuItem
+                {
+                    icon.name: "settings-configure"
+                    text: i18n("Settings")
+                    onTriggered:
+                    {
+                        _dialogLoader.sourceComponent = _settingsDialogComponent
+                        dialog.open()
+                    }
+                }
+
+                MenuItem
+                {
+                    text: i18n("About")
+                    icon.name: "documentinfo"
+                    onTriggered: root.about()
+                }
+            }
         }
 
-        Loader
-        {
-            id: _shortcutsLoader
-
-            SplitView.fillWidth: true
-            SplitView.preferredHeight: item.headBar.height
-            SplitView.maximumHeight: parent.height * 0.5
-            SplitView.minimumHeight : item.headBar.height
-//            active: Maui.Handy.isTouch
-            visible: active
-            asynchronous: true
-            sourceComponent: CommandShortcuts
+        headBar.rightContent: [
+            ToolButton
             {
-                onCommandTriggered:
+                id: _splitButton
+                checked: root.currentTab && root.currentTab.count === 2
+
+                icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+                onClicked: root.currentTab.split()
+            },
+
+            ToolButton
+            {
+                visible: _layout.mobile && _layout.count > 1
+                text: _layout.count
+                checked: _layout.overviewMode
+                checkable: true
+                icon.name: "tab-new"
+                onClicked: _layout.openOverview()
+            },
+
+            ToolButton
+            {
+                icon.name: "list-add"
+                onClicked: root.openTab("$HOME")
+            }
+        ]
+
+        Maui.SplitView
+        {
+            anchors.fill: parent
+            spacing: 0
+            orientation: Qt.Vertical
+
+            Maui.TabView
+            {
+                id: _layout
+                //mobile: true
+                SplitView.fillWidth: true
+                SplitView.fillHeight: true
+                tabBarVisible: !mobile
+                spacing: 0
+                mobile: !root.isWide
+                onNewTabClicked: openTab("$HOME")
+                onCloseTabClicked: closeTab(index)
+            }
+
+            Loader
+            {
+                id: _shortcutsLoader
+
+                SplitView.fillWidth: true
+                SplitView.preferredHeight: Maui.Style.toolBarHeight -1
+                SplitView.maximumHeight: parent.height * 0.5
+                SplitView.minimumHeight : Maui.Style.toolBarHeight -1
+                active: Maui.Handy.isTouch
+                visible: active
+                asynchronous: true
+                sourceComponent: CommandShortcuts
                 {
-                    root.currentTerminal.session.sendText(command)
-                    root.currentTerminal.forceActiveFocus()
+                    onCommandTriggered:
+                    {
+                        root.currentTerminal.session.sendText(command)
+                        root.currentTerminal.forceActiveFocus()
+                    }
                 }
             }
         }
