@@ -68,9 +68,7 @@ Maui.SettingsDialog
                     text: i18n("Adaptive")
                     onTriggered:
                     {
-                        settings.colorStyle = currentTerminal
-                        Maui.Style.styleType = Maui.Style.Adaptive
-
+                        settings.colorStyle = Maui.Style.Adaptive
                     }
 
                     checked: settings.colorStyle === Maui.Style.Adaptive

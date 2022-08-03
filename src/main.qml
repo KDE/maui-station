@@ -72,12 +72,11 @@ Maui.ApplicationWindow
         id: _mainPage
         anchors.fill: parent
         altHeader: Maui.Handy.isMobile
-
+        showCSDControls: true
         title: root.title
         showTitle: true
 
         autoHideHeader: settings.focusMode
-
 
         headBar.forceCenterMiddleContent: root.isWide
         headBar.leftContent: Loader
