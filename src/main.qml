@@ -14,7 +14,7 @@ Maui.ApplicationWindow
     title: currentTerminal? currentTerminal.session.title : ""
 
     property alias dialog : _dialogLoader.item
-
+    Maui.Style.styleType: settings.colorStyle
     property alias currentTab : _layout.currentItem
     readonly property Maui.Terminal currentTerminal : currentTab.currentItem.terminal
     readonly property font defaultFont : Qt.font({ family: "Monospace", pointSize: Maui.Style.defaultFontSize})
@@ -23,7 +23,7 @@ Maui.ApplicationWindow
     {
         view: root
         geometry: Qt.rect(root.x, root.y, root.width, root.height)
-        windowRadius: root.background.radius
+        windowRadius: Maui.Style.radiusV
         enabled: !Maui.Handy.isMobile
     }
 
@@ -46,6 +46,7 @@ Maui.ApplicationWindow
         property int lineSpacing : 0
         property font font : defaultFont
         property int keysModelCurrentIndex : 4
+        property int colorStyle : Maui.Style.Dark
     }
 
     Loader
@@ -70,7 +71,7 @@ Maui.ApplicationWindow
     {
         id: _mainPage
         anchors.fill: parent
-        altHeader: Kirigami.Settings.isMobile
+        altHeader: Maui.Handy.isMobile
 
         title: root.title
         showTitle: true

@@ -30,17 +30,50 @@ Maui.SettingsDialog
 
         Maui.SettingTemplate
         {
-            visible: Maui.App.bundledStyle
-            label1.text: i18n("Dark Mode")
+            label1.text: i18n("Color")
             label2.text: i18n("Switch between light and dark colorscheme")
 
-            Switch
+            Maui.ToolActions
             {
-                Layout.fillHeight: true
-                checked: Maui.App.darkMode
-                onToggled:
+                autoExclusive: true
+
+                Action
                 {
-                    Maui.App.darkMode = !Maui.App.darkMode
+                    text: i18n("Light")
+                    onTriggered: settings.colorStyle = Maui.Style.Light
+                    checked: settings.colorStyle === Maui.Style.Light
+                }
+
+                Action
+                {
+                    text: i18n("Dark")
+                    onTriggered: settings.colorStyle = Maui.Style.Dark
+                    checked: settings.colorStyle === Maui.Style.Dark
+                }
+
+//                Action
+//                {
+//                    text: i18n("System")
+//                    onTriggered:
+//                    {
+//                        Maui.Style.styleType = undefined
+//                        settings.colorStyle = Maui.Style.styleType
+//                    }
+
+//                    checked: Maui.Style.styleType === 'undefined'
+//                }
+
+                Action
+                {
+                    text: i18n("Adaptive")
+                    onTriggered:
+                    {
+                        settings.colorStyle = currentTerminal
+                        Maui.Style.styleType = Maui.Style.Adaptive
+
+                    }
+
+                    checked: settings.colorStyle === Maui.Style.Adaptive
                 }
             }
         }
