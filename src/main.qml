@@ -83,8 +83,8 @@ Maui.ApplicationWindow
             mobile: !root.isWide
             onNewTabClicked: openTab("$HOME")
             onCloseTabClicked: closeTab(index)
-            tabBarVisible: true
             tabBar.showNewTabButton: false
+            tabBar.visible: true
             tabBar.leftContent: Loader
             {
                 asynchronous: true
@@ -127,21 +127,21 @@ Maui.ApplicationWindow
 
                 ToolButton
                 {
-                    id: _splitButton
-                    checked: root.currentTab && root.currentTab.count === 2
-
-                    icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-                    onClicked: root.currentTab.split()
-                },
-
-                ToolButton
-                {
                     visible: _layout.mobile && _layout.count > 1
                     text: _layout.count
                     checked: _layout.overviewMode
                     checkable: true
                     icon.name: "tab-new"
                     onClicked: _layout.openOverview()
+                },
+
+                ToolButton
+                {
+                    id: _splitButton
+                    checked: root.currentTab && root.currentTab.count === 2
+
+                    icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+                    onClicked: root.currentTab.split()
                 },
 
                 ToolButton
