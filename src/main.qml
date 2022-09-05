@@ -79,12 +79,12 @@ Maui.ApplicationWindow
             SplitView.fillWidth: true
             SplitView.fillHeight: true
 
-            tabBar.showTabs: !mobile
             onNewTabClicked: openTab("$HOME")
             onCloseTabClicked: closeTab(index)
 
             tabBar.showNewTabButton: false
             tabBar.visible: true
+
             tabBar.leftContent: Loader
             {
                 asynchronous: true
