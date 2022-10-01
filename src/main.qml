@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.14
+import QtQuick.Layouts 1.3
 
 import Qt.labs.settings 1.0
 import org.mauikit.controls 1.3 as Maui
@@ -41,7 +42,6 @@ Maui.ApplicationWindow
         id: settings
         category: "General"
         property string colorScheme: "DarkPastels"
-        property bool focusMode : false
         property bool pathBar : true
         property int lineSpacing : 0
         property font font : defaultFont
@@ -66,18 +66,16 @@ Maui.ApplicationWindow
         SettingsDialog {}
     }
 
-    Maui.SplitView
+    Maui.Page
     {
         anchors.fill: parent
-        spacing: 0
-        orientation: Qt.Vertical
+headBar.visible: false
 
         Maui.TabView
         {
             id: _layout
-            //mobile: true
-            SplitView.fillWidth: true
-            SplitView.fillHeight: true
+
+            anchors.fill: parent
 
             onNewTabClicked: openTab("$HOME")
             onCloseTabClicked: closeTab(index)
@@ -85,12 +83,32 @@ Maui.ApplicationWindow
             tabBar.showNewTabButton: false
             tabBar.visible: true
 
-            tabBar.leftContent: Loader
-            {
-                asynchronous: true
-                sourceComponent: Maui.ToolButtonMenu
+            tabBar.content: [
+
+
+
+                Maui.ToolButtonMenu
                 {
-                    icon.name: "application-menu"
+                    icon.name: "list-add"
+
+                    MenuItem
+                    {
+                        icon.name: "tab-new"
+                        text: i18n("New tab")
+                        onTriggered: root.openTab("$HOME")
+                    }
+
+                    MenuItem
+                    {
+//                        enabled: root.currentTab && root.currentTab.count === 1
+                        checked: root.currentTab && root.currentTab.count === 2
+                        text: i18n("Split")
+
+                        icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+                        onTriggered: root.currentTab.split()
+                    }
+
+                    MenuSeparator {}
 
                     MenuItem
                     {
@@ -120,34 +138,6 @@ Maui.ApplicationWindow
                         icon.name: "documentinfo"
                         onTriggered: root.about()
                     }
-                }
-            }
-
-            tabBar.content: [
-
-                ToolButton
-                {
-                    visible: _layout.mobile && _layout.count > 1
-                    text: _layout.count
-                    checked: _layout.overviewMode
-                    checkable: true
-                    icon.name: "tab-new"
-                    onClicked: _layout.openOverview()
-                },
-
-                ToolButton
-                {
-                    id: _splitButton
-                    checked: root.currentTab && root.currentTab.count === 2
-
-                    icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-                    onClicked: root.currentTab.split()
-                },
-
-                ToolButton
-                {
-                    icon.name: "list-add"
-                    onClicked: root.openTab("$HOME")
                 },
 
                 Maui.WindowControls
@@ -157,23 +147,121 @@ Maui.ApplicationWindow
             ]
         }
 
-        Loader
-        {
-            id: _shortcutsLoader
+//        Loader
+//        {
+//            id: _shortcutsLoader
 
-            SplitView.fillWidth: true
-            SplitView.preferredHeight: Maui.Style.toolBarHeight -1
-            SplitView.maximumHeight: parent.height * 0.5
-            SplitView.minimumHeight : Maui.Style.toolBarHeight -1
-            active: Maui.Handy.isTouch
-            visible: active
+//            SplitView.fillWidth: true
+//            SplitView.preferredHeight: Maui.Style.toolBarHeight -1
+//            SplitView.maximumHeight: parent.height * 0.5
+//            SplitView.minimumHeight : Maui.Style.toolBarHeight -1
+////            active: Maui.Handy.isTouch
+//            visible: active
+//            asynchronous: true
+//            sourceComponent: CommandShortcuts
+//            {
+//                onCommandTriggered:
+//                {
+//                    root.currentTerminal.session.sendText(command)
+//                    root.currentTerminal.forceActiveFocus()
+//                }
+//            }
+//        }
+
+        footBar.farRightContent: Loader
+        {
             asynchronous: true
-            sourceComponent: CommandShortcuts
+            sourceComponent: Maui.ToolButtonMenu
             {
-                onCommandTriggered:
+                icon.name: "overflow-menu"
+                MenuItem
                 {
-                    root.currentTerminal.session.sendText(command)
-                    root.currentTerminal.forceActiveFocus()
+                    text: i18n("Function Keys")
+                    autoExclusive: true
+                    checked: settings.keysModelCurrentIndex === 0
+                    checkable: true
+                    onTriggered: settings.keysModelCurrentIndex = 0
+                }
+
+                MenuItem
+                {
+                    text: i18n("Nano")
+                    autoExclusive: true
+                    checked: settings.keysModelCurrentIndex === 1
+                    checkable: true
+                    onTriggered: settings.keysModelCurrentIndex = 1
+                }
+
+                MenuItem
+                {
+                    text: i18n("Ctrl Modifiers")
+                    autoExclusive: true
+                    checked: settings.keysModelCurrentIndex === 2
+                    checkable: true
+                    onTriggered:settings.keysModelCurrentIndex = 2
+                }
+
+                MenuItem
+                {
+                    text: i18n("Navigation")
+                    autoExclusive: true
+                    checked: settings.keysModelCurrentIndex === 3
+                    checkable: true
+                    onTriggered: settings.keysModelCurrentIndex = 3
+                }
+
+                MenuItem
+                {
+                    text: i18n("Favorite")
+                    autoExclusive: true
+                    checked: settings.keysModelCurrentIndex === 4
+                    checkable: true
+                    onTriggered: settings.keysModelCurrentIndex = 4
+                }
+
+                MenuSeparator {}
+
+                MenuItem
+                {
+                    text: i18n("Add shortcut")
+                    icon.name: "list-add"
+                    onTriggered: control.newCommand()
+                }
+            }
+        }
+
+        footBar.leftContent: Repeater
+        {
+            model: Station.KeysModel
+            {
+                id: _keysModel
+                group: settings.keysModelCurrentIndex
+            }
+
+            Maui.BasicToolButton
+            {
+                visible: !_shortcutsButton.checked
+
+                Layout.minimumWidth: 54
+                implicitHeight: Maui.Style.iconSizes.medium + Maui.Style.space.medium
+                font.bold: true
+                text: model.label
+                icon.name: model.iconName
+
+                onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
+
+                activeFocusOnTab: false
+                focusPolicy: Qt.NoFocus
+                autoRepeat: true
+
+                background: Maui.ShadowedRectangle
+                {
+                    color: pressed || down || checked || hovered ? Qt.rgba(Maui.Theme.highlightColor.r, Maui.Theme.highlightColor.g, Maui.Theme.highlightColor.b, 0.15) : Qt.lighter(Maui.Theme.backgroundColor)
+
+                    radius: Maui.Style.radiusV
+                    shadow.size: Maui.Style.space.medium
+                    shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
+                    shadow.yOffset: 2
                 }
             }
         }
@@ -191,18 +279,18 @@ Maui.ApplicationWindow
         TerminalLayout {}
     }
 
-    Connections
-    {
-        target: Station.Station
-        function onOpenPaths(urls)
-        {
-            for(var url of urls)
-            {
-                console.log("Open tabs:", url)
-                openTab(url)
-            }
-        }
-    }
+//    Connections
+//    {
+//        target: Station.Station
+//        function onOpenPaths(urls)
+//        {
+//            for(var url of urls)
+//            {
+//                console.log("Open tabs:", url)
+//                openTab(url)
+//            }
+//        }
+//    }
 
     function openTab(path)
     {

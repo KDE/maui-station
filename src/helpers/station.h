@@ -5,8 +5,6 @@
 #include <QObject>
 #include <QDebug>
 
-#include <MauiKit/FileBrowsing/fmstatic.h>
-
 class Station : public QObject
 {
     Q_OBJECT
@@ -14,8 +12,8 @@ class Station : public QObject
 public:
     static Station *instance()
     {
-        static Station nota;
-        return &nota;
+        static Station station;
+        return &station;
     }
 
     Station(const Station &) = delete;
@@ -24,32 +22,8 @@ public:
     Station &operator=(Station &&) = delete;
 
 public slots:
-    void requestPaths(const QStringList &urls)
-    {
-        qDebug() << "REQUEST FILES" << urls;
-        QStringList res;
-        for (const auto &url : urls) {
-            const auto url_ = QUrl::fromUserInput(url);
-
-            if(url_.isLocalFile())
-            {
-                if (FMStatic::isDir(url_))
-                {
-                    res << url_.toLocalFile();
-                }
-                else
-                {
-                    res << QUrl(FMStatic::fileDir(url_)).toLocalFile();
-                }
-            }
-        }
-
-        emit this->openPaths(res);
-    }
-
 
 signals:
-    void openPaths(QStringList urls);
 
 private:
     explicit Station(QObject *parent = nullptr)

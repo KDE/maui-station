@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
 
-        if (!args.isEmpty())
-            Station::instance()->requestPaths(args);
+//        if (!args.isEmpty())
+//            Station::instance()->requestPaths(args);
     },
     Qt::QueuedConnection);
 

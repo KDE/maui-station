@@ -14,19 +14,6 @@ Maui.SettingsDialog
         title: i18n("Interface")
         description: i18n("Configure the application components and behaviour.")
 
-        Maui.SettingTemplate
-        {
-            label1.text: i18n("Focus Mode")
-            label2.text: i18n("Hides the main header for a distraction free console experience")
-
-            Switch
-            {
-
-                checkable: true
-                checked: settings.focusMode
-                onToggled: settings.focusMode = !settings.focusMode
-            }
-        }
 
         Maui.SettingTemplate
         {

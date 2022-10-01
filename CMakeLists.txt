@@ -12,16 +12,10 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
 set(REQUIRED_QT_VERSION 5.15.0)
-set(REQUIRED_KF5_VERSION 5.60)
+set(REQUIRED_KF5_VERSION 5.40.0)
 
-find_package(ECM 1.7.0 REQUIRED NO_MODULE)
+find_package(ECM ${REQUIRED_KF5_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
-
-find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Widgets)
-
-find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
-
-find_package(MauiKit REQUIRED COMPONENTS FileBrowsing)
 
 include(KDEInstallDirs)
 include(KDEClangFormat)
@@ -30,6 +24,19 @@ include(ECMSetupVersion)
 include(ECMSourceVersionControl)
 include(FeatureSummary)
 include(ECMQMLModules)
+
+find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Widgets)
+find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
+
+option(QUICK_COMPILER "Use QtQuick compiler to improve performance" TRUE)
+
+if(QUICK_COMPILER)
+        find_package(Qt5QuickCompiler)
+        set_package_properties(Qt5QuickCompiler PROPERTIES
+                DESCRIPTION "Compile QML at build time"
+                TYPE OPTIONAL
+        )
+endif()
 
 if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
 execute_process(

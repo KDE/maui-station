@@ -13,136 +13,17 @@ Maui.Page
 
     signal commandTriggered(string command)
 
-    background: Rectangle
-    {
-        opacity: 0.5
-        color: Maui.Theme.backgroundColor
-    }
+//    background: Rectangle
+//    {
+//        opacity: 0.5
+//        color: Maui.Theme.backgroundColor
+//    }
 
-    footBar.background: null
+//    footBar.background: null
 
-    headBar.farRightContent: Loader
-    {
-        asynchronous: true
-        sourceComponent: Maui.ToolButtonMenu
-        {
-            icon.name: "overflow-menu"
-            MenuItem
-            {
-                text: i18n("Function Keys")
-                autoExclusive: true
-                checked: settings.keysModelCurrentIndex === 0
-                checkable: true
-                onTriggered: settings.keysModelCurrentIndex = 0
-            }
 
-            MenuItem
-            {
-                text: i18n("Nano")
-                autoExclusive: true
-                checked: settings.keysModelCurrentIndex === 1
-                checkable: true
-                onTriggered: settings.keysModelCurrentIndex = 1
-            }
 
-            MenuItem
-            {
-                text: i18n("Ctrl Modifiers")
-                autoExclusive: true
-                checked: settings.keysModelCurrentIndex === 2
-                checkable: true
-                onTriggered:settings.keysModelCurrentIndex = 2
-            }
 
-            MenuItem
-            {
-                text: i18n("Navigation")
-                autoExclusive: true
-                checked: settings.keysModelCurrentIndex === 3
-                checkable: true
-                onTriggered: settings.keysModelCurrentIndex = 3
-            }
-
-            MenuItem
-            {
-                text: i18n("Favorite")
-                autoExclusive: true
-                checked: settings.keysModelCurrentIndex === 4
-                checkable: true
-                onTriggered: settings.keysModelCurrentIndex = 4
-            }
-
-            MenuSeparator {}
-
-            MenuItem
-            {
-                text: i18n("Add shortcut")
-                icon.name: "list-add"
-                onTriggered: control.newCommand()
-            }
-        }
-    }
-
-    headBar.leftContent: Repeater
-    {
-        model: Station.KeysModel
-        {
-            id: _keysModel
-            group: settings.keysModelCurrentIndex
-        }
-
-        Maui.BasicToolButton
-        {
-            visible: !_shortcutsButton.checked
-
-            Layout.minimumWidth: 54
-            implicitHeight: Maui.Style.iconSizes.medium + Maui.Style.space.medium
-            font.bold: true
-            text: model.label
-            icon.name: model.iconName
-
-            onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
-
-            activeFocusOnTab: false
-            focusPolicy: Qt.NoFocus
-            autoRepeat: true
-
-            background: Maui.ShadowedRectangle
-            {
-                color: pressed || down || checked || hovered ? Qt.rgba(Maui.Theme.highlightColor.r, Maui.Theme.highlightColor.g, Maui.Theme.highlightColor.b, 0.15) : Qt.lighter(Maui.Theme.backgroundColor)
-
-                radius: Maui.Style.radiusV
-                shadow.size: Maui.Style.space.medium
-                shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
-                shadow.yOffset: 2
-            }
-        }
-    }
-
-    footBar.middleContent: Maui.TextField
-    {
-        id: _commandField
-        Layout.fillWidth: true
-        placeholderText: i18n("Filter or add a new command")
-
-        onTextChanged:
-        {
-            _commandsShortcutList.model.filter = text
-        }
-
-        onCleared: _commandsShortcutList.model.filter = ""
-
-        onAccepted:
-        {
-            _commandsShortcutList.model.filter = text
-
-            if(_commandsList.insert(text))
-            {
-                commandTriggered(text)
-                clear()
-            }
-        }
-    }
 
     Component
     {

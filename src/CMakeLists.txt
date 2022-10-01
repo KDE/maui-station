@@ -9,14 +9,22 @@ set(station_SRCS
     helpers/keyshelper.cpp
     helpers/commandsmodel.cpp
     helpers/fonts.cpp
-    qml.qrc
     assets/img_assets.qrc
     )
 
-add_executable(${PROJECT_NAME} ${station_SRCS})
+if(QUICK_COMPILER)
+        qtquick_compiler_add_resources(station_QML_QRC qml.qrc)
+else()
+        qt5_add_resources(station_QML_QRC qml.qrc)
+endif()
+
+add_executable(${PROJECT_NAME}
+    ${station_SRCS}
+    ${station_QML_QRC}
+    )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(${PROJECT_NAME} PRIVATE MauiKit MauiKit::FileBrowsing Qt5::Widgets Qt5::Qml KF5::I18n KF5::CoreAddons)
+target_link_libraries(${PROJECT_NAME} PRIVATE MauiKit Qt5::Widgets Qt5::Qml KF5::I18n KF5::CoreAddons)
 
 install(TARGETS ${PROJECT_NAME} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.station.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
