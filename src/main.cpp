@@ -14,6 +14,8 @@
 #include "helpers/station.h"
 #include "helpers/fonts.h"
 
+#include "server/server.h"
+
 #include "../station_version.h"
 
 #define STATION_URI "org.maui.station"
@@ -49,18 +51,36 @@ int main(int argc, char *argv[])
     about.processCommandLine(&parser);
     const QStringList args = parser.positionalArguments();
 
+    QStringList paths;
+    if (!args.isEmpty())
+    {
+        for(const auto &path : args)
+            paths << QUrl::fromUserInput(path).toString();
+    }
+
+    if (AppInstance::attachToExistingInstance(QUrl::fromStringList(paths), false))
+    {
+        // Successfully attached to existing instance of Nota
+        return 0;
+    }
+
+    AppInstance::registerService();
+    auto server = std::make_unique<Server>();
+
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(
                 &engine,
                 &QQmlApplicationEngine::objectCreated,
                 &app,
-                [url, args](QObject *obj, const QUrl &objUrl) {
+                [url, args, &server](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
 
+        server->setQmlObject(obj);
 //        if (!args.isEmpty())
-//            Station::instance()->requestPaths(args);
+//            server->openTabs(QStringList::from, false);
+
     },
     Qt::QueuedConnection);
 
@@ -69,10 +89,10 @@ int main(int argc, char *argv[])
     qmlRegisterType<CommandsModel> (STATION_URI, 1, 0, "CommandsModel");
     qmlRegisterSingletonInstance<Station>(STATION_URI, 1, 0, "Station", Station::instance());
     qmlRegisterSingletonType<Fonts>(STATION_URI, 1, 0, "Fonts", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
-           Q_UNUSED(engine)
-           Q_UNUSED(scriptEngine)
-           return new Fonts;
-       });
+        Q_UNUSED(engine)
+        Q_UNUSED(scriptEngine)
+        return new Fonts;
+    });
 
     engine.load(url);
 
