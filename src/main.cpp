@@ -78,8 +78,12 @@ int main(int argc, char *argv[])
             QCoreApplication::exit(-1);
 
         server->setQmlObject(obj);
-//        if (!args.isEmpty())
-//            server->openTabs(QStringList::from, false);
+        if (!args.isEmpty())
+            server->openTabs(args, false);
+        else
+        {
+            server->openTabs({"$HOME"}, false);
+        }
 
     },
     Qt::QueuedConnection);

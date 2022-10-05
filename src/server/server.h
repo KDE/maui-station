@@ -35,10 +35,7 @@ public slots:
              */
     void openTabs(const QStringList &urls, bool splitView = false);
     void openNewTab(const QString& url);
-    /**
-             * Opens a new empty tab in the background.
-             */
-    void openEmptyTab();
+
 
     /**
              * Opens a new window showing the URL \a url.

@@ -69,7 +69,7 @@ bool AppInstance::attachToExistingInstance(const QList<QUrl>& inputUrls, bool sp
     if(inputUrls.isEmpty())
     {
         auto interface = dolphinInterfaces.first();
-        auto reply = interface.first->openEmptyTab();
+        auto reply = interface.first->openNewTab(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
         reply.waitForFinished();
 
         if (!reply.isError())
@@ -82,7 +82,7 @@ bool AppInstance::attachToExistingInstance(const QList<QUrl>& inputUrls, bool sp
 
     for (const auto& interface: qAsConst(dolphinInterfaces))
     {
-        auto reply = interface.first->openTabs(QUrl::toStringList(inputUrls), splitView);
+        auto reply = interface.first->openTabs(QUrl::toStringList(inputUrls, QUrl::PreferLocalFile), splitView);
         reply.waitForFinished();
 
         if (!reply.isError())
@@ -160,6 +160,7 @@ void Server::openTabs(const QStringList &urls, bool splitView)
 
     for(const auto &url : urls)
     {
+        qDebug() << "REQUEST TO OPEN TAB AT LOCATION" << url;
         this->openNewTab(url);
     }
 }
@@ -170,14 +171,6 @@ void Server::openNewTab(const QString &url)
     {
         QMetaObject::invokeMethod(m_qmlObject, "openTab",
                                   Q_ARG(QString, url));
-    }
-}
-
-void Server::openEmptyTab()
-{
-    if(m_qmlObject)
-    {
-        QMetaObject::invokeMethod(m_qmlObject, "openTab");
     }
 }
 

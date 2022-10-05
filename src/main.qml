@@ -147,6 +147,7 @@ Maui.ApplicationWindow
             ]
         }
 
+        footBar.visible: Maui.Handy.isTouch
 
         footBar.farRightContent: Loader
         {
@@ -219,8 +220,6 @@ Maui.ApplicationWindow
 
                 Button
                 {
-                    visible: !_shortcutsButton.checked
-
                     font.bold: true
                     text: model.label
                     icon.name: model.iconName
@@ -233,12 +232,6 @@ Maui.ApplicationWindow
                 }
             }
         ]
-    }
-
-
-    Component.onCompleted:
-    {
-        openTab("$HOME")
     }
 
     Component
@@ -261,7 +254,7 @@ Maui.ApplicationWindow
         }
     }
 
-    function openTab(path)
+    function openTab(path : string)
     {
         _layout.addTab(_terminalComponent, {'path': path});
         _layout.currentIndex = _layout.count -1
