@@ -69,7 +69,7 @@ Maui.ApplicationWindow
     Maui.Page
     {
         anchors.fill: parent
-headBar.visible: false
+        headBar.visible: false
 
         Maui.TabView
         {
@@ -100,7 +100,7 @@ headBar.visible: false
 
                     MenuItem
                     {
-//                        enabled: root.currentTab && root.currentTab.count === 1
+                        //                        enabled: root.currentTab && root.currentTab.count === 1
                         checked: root.currentTab && root.currentTab.count === 2
                         text: i18n("Split")
 
@@ -147,26 +147,6 @@ headBar.visible: false
             ]
         }
 
-//        Loader
-//        {
-//            id: _shortcutsLoader
-
-//            SplitView.fillWidth: true
-//            SplitView.preferredHeight: Maui.Style.toolBarHeight -1
-//            SplitView.maximumHeight: parent.height * 0.5
-//            SplitView.minimumHeight : Maui.Style.toolBarHeight -1
-////            active: Maui.Handy.isTouch
-//            visible: active
-//            asynchronous: true
-//            sourceComponent: CommandShortcuts
-//            {
-//                onCommandTriggered:
-//                {
-//                    root.currentTerminal.session.sendText(command)
-//                    root.currentTerminal.forceActiveFocus()
-//                }
-//            }
-//        }
 
         footBar.farRightContent: Loader
         {
@@ -218,53 +198,41 @@ headBar.visible: false
                     checkable: true
                     onTriggered: settings.keysModelCurrentIndex = 4
                 }
-
-                MenuSeparator {}
-
-                MenuItem
-                {
-                    text: i18n("Add shortcut")
-                    icon.name: "list-add"
-                    onTriggered: control.newCommand()
-                }
             }
         }
 
-        footBar.leftContent: Repeater
-        {
-            model: Station.KeysModel
+        footBar.leftContent: [
+
+            ToolButton
             {
-                id: _keysModel
-                group: settings.keysModelCurrentIndex
-            }
+                icon.name: "document-edit"
+                onClicked: openCommandDialog()
+            },
 
-            Maui.BasicToolButton
+            Repeater
             {
-                visible: !_shortcutsButton.checked
-
-                Layout.minimumWidth: 54
-                implicitHeight: Maui.Style.iconSizes.medium + Maui.Style.space.medium
-                font.bold: true
-                text: model.label
-                icon.name: model.iconName
-
-                onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
-
-                activeFocusOnTab: false
-                focusPolicy: Qt.NoFocus
-                autoRepeat: true
-
-                background: Maui.ShadowedRectangle
+                model: Station.KeysModel
                 {
-                    color: pressed || down || checked || hovered ? Qt.rgba(Maui.Theme.highlightColor.r, Maui.Theme.highlightColor.g, Maui.Theme.highlightColor.b, 0.15) : Qt.lighter(Maui.Theme.backgroundColor)
+                    id: _keysModel
+                    group: settings.keysModelCurrentIndex
+                }
 
-                    radius: Maui.Style.radiusV
-                    shadow.size: Maui.Style.space.medium
-                    shadow.color: Qt.rgba(0.0, 0.0, 0.0, 0.15)
-                    shadow.yOffset: 2
+                Button
+                {
+                    visible: !_shortcutsButton.checked
+
+                    font.bold: true
+                    text: model.label
+                    icon.name: model.iconName
+
+                    onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
+
+                    activeFocusOnTab: false
+                    focusPolicy: Qt.NoFocus
+                    autoRepeat: true
                 }
             }
-        }
+        ]
     }
 
 
@@ -279,18 +247,19 @@ headBar.visible: false
         TerminalLayout {}
     }
 
-//    Connections
-//    {
-//        target: Station.Station
-//        function onOpenPaths(urls)
-//        {
-//            for(var url of urls)
-//            {
-//                console.log("Open tabs:", url)
-//                openTab(url)
-//            }
-//        }
-//    }
+    Component
+    {
+        id: _commandDialogComponent
+
+        CommandShortcuts
+        {
+            onCommandTriggered:
+            {
+                root.currentTerminal.session.sendText(command)
+                root.currentTerminal.forceActiveFocus()
+            }
+        }
+    }
 
     function openTab(path)
     {
@@ -301,5 +270,11 @@ headBar.visible: false
     function closeTab(index)
     {
         _layout.closeTab(index)
+    }
+
+    function openCommandDialog()
+    {
+        _dialogLoader.sourceComponent = _commandDialogComponent
+        dialog.open()
     }
 }

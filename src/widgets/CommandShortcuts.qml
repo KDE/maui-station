@@ -5,46 +5,32 @@ import org.mauikit.controls 1.3 as Maui
 
 import org.maui.station 1.0 as Station
 
-Maui.Page
+Maui.Dialog
 {
     id: control
 
-    implicitHeight: Math.min(Math.max(root.height* 0.3, _commandsShortcutList.contentHeight), 200)
 
+    maxHeight: 600
+    maxWidth: 400
+
+    defaultButtons: false
+    persistent: false
+
+    headBar.visible: true
     signal commandTriggered(string command)
 
-//    background: Rectangle
-//    {
-//        opacity: 0.5
-//        color: Maui.Theme.backgroundColor
-//    }
-
-//    footBar.background: null
-
-
-
-
-
-    Component
+    headBar.middleContent: Maui.TextField
     {
-        id: _newCommandDialogComponent
-        Maui.NewDialog
-        {
-            title: i18n("New Command")
-            message: i18n("Add a new command shortcut")
-            textEntry.text: _commandField.text
-            onFinished: _commandsList.insert(text)
-        }
+        Layout.fillWidth: true
+        Layout.maximumWidth: 500
+        onAccepted: _commandsList.insert(text)
+        placeholderText: i18n("New Command")
 
     }
 
-
-    Component
-    {
-        id: _editCommandDialogComponent
-
         Maui.NewDialog
         {
+            id: _editCommandDialog
             property int index : -1
 
             title: i18n("Edit Command")
@@ -52,21 +38,18 @@ Maui.Page
 
             onFinished: _commandsList.edit(index, text)
         }
-    }
 
-    Maui.Holder
-    {
-        anchors.fill: parent
-        visible: _commandsShortcutList.count === 0
-        emoji: "qrc:/station/edit-rename.svg"
-        title: i18n("No Commands")
-        body: i18n("Start adding new command shortcuts")
-    }
 
-    Maui.ListBrowser
+    stack: Maui.ListBrowser
     {
         id: _commandsShortcutList
-        anchors.fill: parent
+        Layout.fillWidth: true
+        Layout.fillHeight: true
+
+        holder.visible: _commandsShortcutList.count === 0
+        holder.emoji: "qrc:/station/edit-rename.svg"
+        holder.title: i18n("No Commands")
+        holder.body: i18n("Start adding new command shortcuts")
 
         model: Maui.BaseModel
         {
@@ -85,6 +68,7 @@ Maui.Page
             {
                 _commandsShortcutList.currentIndex = index
                 commandTriggered(model.value)
+                control.close()
             }
 
             onRightClicked:
@@ -121,18 +105,10 @@ Maui.Page
             icon.name: "edit-rename"
             onTriggered:
             {
-                _dialogLoader.sourceComponent = _editCommandDialogComponent
-                dialog.index= index
-                dialog.textEntry.text = model.value
-                dialog.open()
+                _editCommandDialog.index= _commandsShortcutList.currentIndex
+                _editCommandDialog.textEntry.text = _commandsShortcutList.model.get(_commandsShortcutList.currentIndex).value
+                _editCommandDialog.open()
             }
         }
-    }
-
-    function newCommand()
-    {
-        _dialogLoader.sourceComponent = _newCommandDialogComponent
-        dialog.textEntry.text = _commandField.text
-        dialog.open()
     }
 }
