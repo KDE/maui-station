@@ -72,6 +72,8 @@ set_package_properties(QMLTermWidget-QMLModule PROPERTIES URL "https://github.co
 
 add_subdirectory(src)
 
+install(FILES org.kde.station.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)

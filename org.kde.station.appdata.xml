@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop">
+  <id>org.kde.station.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LGPL-3.0</project_license>
+  <name>Station</name>
+  <summary>Terminal Emulator</summary>
+  <description>
+    <p>Station is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.</p>
+  </description>
+  <url type="homepage">https://apps.kde.org/station</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=station</url>
+  <url type="donation">https://kde.org/community/donations</url>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://cdn.kde.org/screenshots/station/station-stable.png</image>
+      <caption>Station in desktop and phone.</caption>
+    </screenshot>   
+  </screenshots>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </recommends>
+  <content_rating type="oars-1.0"/>
+  <provides>
+    <binary>station</binary>
+  </provides>
+  <project_group>KDE</project_group>
+  <releases>
+  <release version="2.1.2" date="2022-05-16">
+    <url>https://mauikit.org/blog/maui-2-1-2-release/</url>
+  </release>
+<release version="2.2.0" date="2022-08-30">
+  <url>https://mauikit.org/blog/maui-2-2-0-release/</url>
+</release>
+    <release version="1.2.2" date="2021-05-11">
+      <url>https://nxos.org/maui/maui-1-2-2-release/</url>
+    </release>
+    <release version="0.1.0" date="2018-09-06"/>
+  </releases>
+</component>
