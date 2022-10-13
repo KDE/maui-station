@@ -4,9 +4,30 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0</project_license>
   <name>Station</name>
+  <name xml:lang="ca">Station</name>
+  <name xml:lang="ca-valencia">Station</name>
+  <name xml:lang="eu">Station</name>
+  <name xml:lang="nl">Station:</name>
+  <name xml:lang="tr">İstasyon</name>
+  <name xml:lang="uk">Станція</name>
+  <name xml:lang="x-test">xxStationxx</name>
   <summary>Terminal Emulator</summary>
+  <summary xml:lang="ca">Emulador de terminal</summary>
+  <summary xml:lang="ca-valencia">Emulador de terminal</summary>
+  <summary xml:lang="eu">Terminal emulatzailea</summary>
+  <summary xml:lang="nl">Terminalprogramma</summary>
+  <summary xml:lang="tr">Uçbirim Öykünücüsü</summary>
+  <summary xml:lang="uk">Емулятор термінала</summary>
+  <summary xml:lang="x-test">xxTerminal Emulatorxx</summary>
   <description>
     <p>Station is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.</p>
+    <p xml:lang="ca">L'Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que usen el GNU/Linux.</p>
+    <p xml:lang="ca-valencia">Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que utilitzen GNU/Linux.</p>
+    <p xml:lang="eu">«Station» terminal emulatzaile konbergente bat da, GNU/Linux erabiltzen duten mahaigain eta mugikorretarako prest dagoena.</p>
+    <p xml:lang="nl">Station is een convergent terminalprogramma, gereed voor bureaublad en mobiele apparaten die GNU/Linux gebruiken.</p>
+    <p xml:lang="tr">İstasyon, GNU/Linux kullanan masaüstü ve taşınabilir aygıtlar için yakınsak bir uçbirim öykünücüsüdür.</p>
+    <p xml:lang="uk">«Станція» — гнучкий емулятор термінала, працює на робочих станціях та мобільних пристроях, де використано GNU/Linux.</p>
+    <p xml:lang="x-test">xxStation is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.xx</p>
   </description>
   <url type="homepage">https://apps.kde.org/station</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=station</url>
@@ -15,7 +36,14 @@
     <screenshot type="default">
       <image type="source">https://cdn.kde.org/screenshots/station/station-stable.png</image>
       <caption>Station in desktop and phone.</caption>
-    </screenshot>   
+      <caption xml:lang="ca">L'Station a l'escriptori i al telèfon.</caption>
+      <caption xml:lang="ca-valencia">Station a l'escriptori i al telèfon.</caption>
+      <caption xml:lang="eu">«Station» mahaigainean eta telefonoan.</caption>
+      <caption xml:lang="nl">Station op bureaublad en telefoon.</caption>
+      <caption xml:lang="tr">Masaüstü ve telefonda İstasyon</caption>
+      <caption xml:lang="uk">«Станція» на робочій станції та телефоні.</caption>
+      <caption xml:lang="x-test">xxStation in desktop and phone.xx</caption>
+    </screenshot>
   </screenshots>
   <recommends>
     <control>pointing</control>
@@ -28,12 +56,12 @@
   </provides>
   <project_group>KDE</project_group>
   <releases>
-  <release version="2.1.2" date="2022-05-16">
-    <url>https://mauikit.org/blog/maui-2-1-2-release/</url>
-  </release>
-<release version="2.2.0" date="2022-08-30">
-  <url>https://mauikit.org/blog/maui-2-2-0-release/</url>
-</release>
+    <release version="2.1.2" date="2022-05-16">
+      <url>https://mauikit.org/blog/maui-2-1-2-release/</url>
+    </release>
+    <release version="2.2.0" date="2022-08-30">
+      <url>https://mauikit.org/blog/maui-2-2-0-release/</url>
+    </release>
     <release version="1.2.2" date="2021-05-11">
       <url>https://nxos.org/maui/maui-1-2-2-release/</url>
     </release>
