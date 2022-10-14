@@ -7,7 +7,10 @@
   <name xml:lang="ca">Station</name>
   <name xml:lang="ca-valencia">Station</name>
   <name xml:lang="eu">Station</name>
+  <name xml:lang="fr">Station</name>
   <name xml:lang="nl">Station:</name>
+  <name xml:lang="pt">Station</name>
+  <name xml:lang="sl">Station</name>
   <name xml:lang="tr">İstasyon</name>
   <name xml:lang="uk">Станція</name>
   <name xml:lang="x-test">xxStationxx</name>
@@ -15,7 +18,10 @@
   <summary xml:lang="ca">Emulador de terminal</summary>
   <summary xml:lang="ca-valencia">Emulador de terminal</summary>
   <summary xml:lang="eu">Terminal emulatzailea</summary>
+  <summary xml:lang="fr">Émulateur de terminal</summary>
   <summary xml:lang="nl">Terminalprogramma</summary>
+  <summary xml:lang="pt">Emulador do Terminal</summary>
+  <summary xml:lang="sl">Emulator terminala</summary>
   <summary xml:lang="tr">Uçbirim Öykünücüsü</summary>
   <summary xml:lang="uk">Емулятор термінала</summary>
   <summary xml:lang="x-test">xxTerminal Emulatorxx</summary>
@@ -24,7 +30,10 @@
     <p xml:lang="ca">L'Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que usen el GNU/Linux.</p>
     <p xml:lang="ca-valencia">Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que utilitzen GNU/Linux.</p>
     <p xml:lang="eu">«Station» terminal emulatzaile konbergente bat da, GNU/Linux erabiltzen duten mahaigain eta mugikorretarako prest dagoena.</p>
+    <p xml:lang="fr">Le logiciel « Station » est un émulateur de terminal convergent, prêt pour les appareils de bureau et mobiles utilisant « GNU/Linux ».</p>
     <p xml:lang="nl">Station is een convergent terminalprogramma, gereed voor bureaublad en mobiele apparaten die GNU/Linux gebruiken.</p>
+    <p xml:lang="pt">O Station é um emulador de terminal convergente, pronto para computadores e dispositivos móveis que usem o GNU/Linux.</p>
+    <p xml:lang="sl">Station je konvergentni emulator terminala pripravljen tako za namizje kot za mobilne naprave, ki uporabljajo GNU/Linux.</p>
     <p xml:lang="tr">İstasyon, GNU/Linux kullanan masaüstü ve taşınabilir aygıtlar için yakınsak bir uçbirim öykünücüsüdür.</p>
     <p xml:lang="uk">«Станція» — гнучкий емулятор термінала, працює на робочих станціях та мобільних пристроях, де використано GNU/Linux.</p>
     <p xml:lang="x-test">xxStation is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.xx</p>
@@ -39,7 +48,10 @@
       <caption xml:lang="ca">L'Station a l'escriptori i al telèfon.</caption>
       <caption xml:lang="ca-valencia">Station a l'escriptori i al telèfon.</caption>
       <caption xml:lang="eu">«Station» mahaigainean eta telefonoan.</caption>
+      <caption xml:lang="fr">Station dans un ordinateur de bureau ou un téléphone.</caption>
       <caption xml:lang="nl">Station op bureaublad en telefoon.</caption>
+      <caption xml:lang="pt">O Station num computador e num telefone.</caption>
+      <caption xml:lang="sl">Station na namizju in telefonu.</caption>
       <caption xml:lang="tr">Masaüstü ve telefonda İstasyon</caption>
       <caption xml:lang="uk">«Станція» на робочій станції та телефоні.</caption>
       <caption xml:lang="x-test">xxStation in desktop and phone.xx</caption>
