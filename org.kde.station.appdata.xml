@@ -9,6 +9,7 @@
   <name xml:lang="es">Station</name>
   <name xml:lang="eu">Station</name>
   <name xml:lang="fr">Station</name>
+  <name xml:lang="id">Station</name>
   <name xml:lang="nl">Station:</name>
   <name xml:lang="pt">Station</name>
   <name xml:lang="sl">Station</name>
@@ -21,6 +22,7 @@
   <summary xml:lang="es">Emulador de terminal</summary>
   <summary xml:lang="eu">Terminal emulatzailea</summary>
   <summary xml:lang="fr">Émulateur de terminal</summary>
+  <summary xml:lang="id">Emulator Terminal</summary>
   <summary xml:lang="nl">Terminalprogramma</summary>
   <summary xml:lang="pt">Emulador do Terminal</summary>
   <summary xml:lang="pt-BR">Emulador de terminal</summary>
@@ -35,6 +37,7 @@
     <p xml:lang="es">Station es un emulador de terminal convergente, preparado para escritorios y dispositivos móviles que usen GNU/Linux.</p>
     <p xml:lang="eu">«Station» terminal emulatzaile konbergente bat da, GNU/Linux erabiltzen duten mahaigain eta mugikorretarako prest dagoena.</p>
     <p xml:lang="fr">Le logiciel « Station » est un émulateur de terminal convergent, prêt pour les appareils de bureau et mobiles utilisant « GNU/Linux ».</p>
+    <p xml:lang="id">Station adalah emulator terminal terpusat, siap untuk peranti desktop dan ponsel yang menggunakan GNU/Linux.</p>
     <p xml:lang="nl">Station is een convergent terminalprogramma, gereed voor bureaublad en mobiele apparaten die GNU/Linux gebruiken.</p>
     <p xml:lang="pt">O Station é um emulador de terminal convergente, pronto para computadores e dispositivos móveis que usem o GNU/Linux.</p>
     <p xml:lang="sl">Station je konvergentni emulator terminala pripravljen tako za namizje kot za mobilne naprave, ki uporabljajo GNU/Linux.</p>
@@ -54,6 +57,7 @@
       <caption xml:lang="es">Station en el escritorio y el en teléfono.</caption>
       <caption xml:lang="eu">«Station» mahaigainean eta telefonoan.</caption>
       <caption xml:lang="fr">Station dans un ordinateur de bureau ou un téléphone.</caption>
+      <caption xml:lang="id">Station di desktop dan ponsel.</caption>
       <caption xml:lang="nl">Station op bureaublad en telefoon.</caption>
       <caption xml:lang="pt">O Station num computador e num telefone.</caption>
       <caption xml:lang="sl">Station na namizju in telefonu.</caption>
