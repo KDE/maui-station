@@ -1,6 +1,7 @@
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QCommandLineParser>
+#include <QQmlContext>
 #include <QIcon>
 #include <QDate>
 
@@ -87,6 +88,8 @@ int main(int argc, char *argv[])
 
     },
     Qt::QueuedConnection);
+
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
     qmlRegisterAnonymousType<Key> (STATION_URI, 1);
     qmlRegisterType<KeysHelper> (STATION_URI, 1, 0, "KeysModel");
