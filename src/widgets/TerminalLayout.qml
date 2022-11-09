@@ -31,7 +31,7 @@ Maui.SplitView
         Maui.Dialog
         {
             title: i18n("Close")
-            message: i18n("A process is currently still running. Are oyu sure you want to close it?")
+            message: i18n("A process is currently still running. Are you sure you want to close it?")
 
             onAccepted: pop()
         }
