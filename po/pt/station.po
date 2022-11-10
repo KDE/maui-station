@@ -1,0 +1,314 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-station package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-station\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-11-10 00:45+0000\n"
+"PO-Revision-Date: 2022-11-09 22:02+0000\n"
+"Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
+"Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "Station"
+msgstr "Station"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "Convergent terminal emulator."
+msgstr ""
+
+#: src/main.cpp:37
+#, kde-format
+msgid "© 2019-%1 Maui Development Team"
+msgstr "© 2019-%1 da Equipa de Desenvolvimento do Maui"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Developer"
+msgstr "Desenvolvimento"
+
+#: src/main.qml:97
+#, kde-format
+msgid "New tab"
+msgstr "Nova página"
+
+#: src/main.qml:105 src/widgets/TutorialDialog.qml:23
+#, kde-format
+msgid "Split"
+msgstr "Dividir"
+
+#: src/main.qml:115
+#, kde-format
+msgid "Tutorial"
+msgstr "Tutorial"
+
+#: src/main.qml:127
+#, kde-format
+msgid "Settings"
+msgstr "Configuração"
+
+#: src/main.qml:137
+#, kde-format
+msgid "About"
+msgstr "Acerca"
+
+#: src/main.qml:160
+#, kde-format
+msgid "Function Keys"
+msgstr ""
+
+#: src/main.qml:169
+#, kde-format
+msgid "Nano"
+msgstr "Nano"
+
+#: src/main.qml:178
+#, kde-format
+msgid "Ctrl Modifiers"
+msgstr ""
+
+#: src/main.qml:187 src/widgets/TutorialDialog.qml:113
+#, kde-format
+msgid "Navigation"
+msgstr "Navegação"
+
+#: src/main.qml:196
+#, kde-format
+msgid "Favorite"
+msgstr "Favorito"
+
+#: src/widgets/CommandShortcuts.qml:27
+#, kde-format
+msgid "New Command"
+msgstr ""
+
+#: src/widgets/CommandShortcuts.qml:36
+#, kde-format
+msgid "Edit Command"
+msgstr ""
+
+#: src/widgets/CommandShortcuts.qml:37
+#, kde-format
+msgid "Edit a command shortcut"
+msgstr ""
+
+#: src/widgets/CommandShortcuts.qml:51
+#, kde-format
+msgid "No Commands"
+msgstr ""
+
+#: src/widgets/CommandShortcuts.qml:52
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr ""
+
+#: src/widgets/CommandShortcuts.qml:94
+#, kde-format
+msgid "Remove"
+msgstr "Remover"
+
+#: src/widgets/CommandShortcuts.qml:104
+#, kde-format
+msgid "Edit"
+msgstr "Editar"
+
+#: src/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Interface"
+msgstr "Interface"
+
+#: src/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid "Configure the application components and behaviour."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Color"
+msgstr "Cor"
+
+#: src/widgets/SettingsDialog.qml:21
+#, kde-format
+msgid "Switch between light and dark colorscheme"
+msgstr "Alternar entre o esquema de cores claro e escuro"
+
+#: src/widgets/SettingsDialog.qml:29
+#, kde-format
+msgid "Light"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:36
+#, kde-format
+msgid "Dark"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:55
+#, kde-format
+msgid "Adaptive"
+msgstr "Adaptativo"
+
+#: src/widgets/SettingsDialog.qml:69
+#, kde-format
+msgid "Terminal"
+msgstr "Terminal"
+
+#: src/widgets/SettingsDialog.qml:70
+#, kde-format
+msgid "Configure the app UI and plugins."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:74
+#, kde-format
+msgid "Color Scheme"
+msgstr "Esquema de Cores"
+
+#: src/widgets/SettingsDialog.qml:75
+#, kde-format
+msgid "Change the color scheme of the terminal"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:100
+#, kde-format
+msgid "Fonts"
+msgstr "Tipos de Letra"
+
+#: src/widgets/SettingsDialog.qml:101
+#, kde-format
+msgid "Configure the terminal font family and size"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:105
+#, kde-format
+msgid "Family"
+msgstr "Família"
+
+#: src/widgets/SettingsDialog.qml:118
+#, kde-format
+msgid "Size"
+msgstr "Tamanho"
+
+#: src/widgets/SettingsDialog.qml:130
+#, kde-format
+msgid "Line Spacing"
+msgstr "Espaço entre Linhas"
+
+#: src/widgets/TerminalLayout.qml:33
+#, kde-format
+msgid "Close"
+msgstr "Fechar"
+
+#: src/widgets/TerminalLayout.qml:34
+#, kde-format
+msgid ""
+"A process is currently still running. Are you sure you want to close it?"
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:18
+#, kde-format
+msgid "Shortcuts"
+msgstr "Atalhos"
+
+#: src/widgets/TutorialDialog.qml:19
+#, kde-format
+msgid "When using a keyboard you can use the following shortcuts to navigate."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:24
+#, kde-format
+msgid "Open a new split view, vertically or horizontally."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:49
+#, kde-format
+msgid "New Tab"
+msgstr "Nova Página"
+
+#: src/widgets/TutorialDialog.qml:69
+#, kde-format
+msgid "Find"
+msgstr "Procurar"
+
+#: src/widgets/TutorialDialog.qml:70
+#, kde-format
+msgid "Open the find bar."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:90
+#, kde-format
+msgid "Switch"
+msgstr "Mudar"
+
+#: src/widgets/TutorialDialog.qml:91
+#, kde-format
+msgid "Switch between split views."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:114
+#, kde-format
+msgid "On touch devices you can use the following gestures to navigate."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:118
+#, kde-format
+msgid "Up & Down"
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:119
+#, kde-format
+msgid "Swipe up or down to navigate the commands history."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:124
+#, kde-format
+msgid "Left & Right"
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:125
+#, kde-format
+msgid "Swipe left or right to move through the command line to edit."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:130
+#, kde-format
+msgid "Two Fingers Left & Right"
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:131
+#, kde-format
+msgid "Swipe up or down with two fingers to scroll."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:138
+#, kde-format
+msgid "Commands"
+msgstr "Comandos"
+
+#: src/widgets/TutorialDialog.qml:142
+#, kde-format
+msgid "Create"
+msgstr "Criar"
+
+#: src/widgets/TutorialDialog.qml:143
+#, kde-format
+msgid "Create a new command shorcut to quickly trigger actions."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:147
+#, kde-format
+msgid "Add"
+msgstr "Adicionar"
