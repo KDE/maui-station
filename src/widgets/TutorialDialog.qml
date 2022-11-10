@@ -140,7 +140,7 @@ Maui.SettingsDialog
         Maui.SettingTemplate
         {
             label1.text: i18n("Create")
-            label2.text: i18n("Create a new command shorcut to quickly trigger actions.")
+            label2.text: i18n("Create a new command shortcut to quickly trigger actions.")
 
             Button
             {
