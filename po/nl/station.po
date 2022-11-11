@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-10 00:45+0000\n"
-"PO-Revision-Date: 2022-11-09 20:18-0400\n"
+"POT-Creation-Date: 2022-11-11 00:44+0000\n"
+"PO-Revision-Date: 2022-11-10 19:01-0400\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -213,12 +213,10 @@ msgid "Close"
 msgstr "Sluiten"
 
 #: src/widgets/TerminalLayout.qml:34
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently still running. Are oyu sure you want to close it?"
+#, kde-format
 msgid ""
 "A process is currently still running. Are you sure you want to close it?"
-msgstr "Er draait momenteel een proces. Wilt u het toch sluiten?"
+msgstr "Er draait momenteel nog een proces. Wilt u het toch sluiten?"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
@@ -310,8 +308,9 @@ msgid "Create"
 msgstr "Aanmaken"
 
 #: src/widgets/TutorialDialog.qml:143
-#, kde-format
-msgid "Create a new command shorcut to quickly trigger actions."
+#, fuzzy, kde-format
+#| msgid "Create a new command shorcut to quickly trigger actions."
+msgid "Create a new command shortcut to quickly trigger actions."
 msgstr "Een nieuwe commando-sneltoets aanmaken om snel acties te starten."
 
 #: src/widgets/TutorialDialog.qml:147
