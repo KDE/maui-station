@@ -1,21 +1,21 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2022.
+# Víctor Rodrigo Córdoba <vrcordoba@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-11 00:44+0000\n"
-"PO-Revision-Date: 2022-11-13 15:22+0100\n"
-"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: \n"
-"Language: nl\n"
+"PO-Revision-Date: 2022-11-12 18:13+0100\n"
+"Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.04.2\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -25,12 +25,12 @@ msgstr "Station"
 #: src/main.cpp:37
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr "Convergente terminalemulator."
+msgstr "Emulador de terminal convergente."
 
 #: src/main.cpp:37
 #, kde-format
 msgid "© 2019-%1 Maui Development Team"
-msgstr "© 2019-%1 Ontwikkelteam van Maui"
+msgstr "© 2019-%1 El equipo de desarrollo de Maui"
 
 #: src/main.cpp:38
 #, kde-format
@@ -40,37 +40,37 @@ msgstr "Camilo Higuita"
 #: src/main.cpp:38
 #, kde-format
 msgid "Developer"
-msgstr "Ontwikkelaar"
+msgstr "Desarrollador"
 
 #: src/main.qml:97
 #, kde-format
 msgid "New tab"
-msgstr "Nieuw tabblad"
+msgstr "Nueva pestaña"
 
 #: src/main.qml:105 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
-msgstr "Splitsen"
+msgstr "Separar"
 
 #: src/main.qml:115
 #, kde-format
 msgid "Tutorial"
-msgstr "Inleiding"
+msgstr "Tutorial"
 
 #: src/main.qml:127
 #, kde-format
 msgid "Settings"
-msgstr "Instellingen"
+msgstr "Preferencias"
 
 #: src/main.qml:137
 #, kde-format
 msgid "About"
-msgstr "Info over"
+msgstr "Acerca de"
 
 #: src/main.qml:160
 #, kde-format
 msgid "Function Keys"
-msgstr "Functietoetsen"
+msgstr "Teclas de función"
 
 #: src/main.qml:169
 #, kde-format
@@ -80,87 +80,87 @@ msgstr "Nano"
 #: src/main.qml:178
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr "Ctrl-modifiers"
+msgstr "Modificadores tecla Ctrl"
 
 #: src/main.qml:187 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
-msgstr "Navigatie"
+msgstr "Navegación"
 
 #: src/main.qml:196
 #, kde-format
 msgid "Favorite"
-msgstr "Favoriet"
+msgstr "Favorito"
 
 #: src/widgets/CommandShortcuts.qml:27
 #, kde-format
 msgid "New Command"
-msgstr "Nieuw commando"
+msgstr "Nueva orden"
 
 #: src/widgets/CommandShortcuts.qml:36
 #, kde-format
 msgid "Edit Command"
-msgstr "Commando bewerken"
+msgstr "Editar orden"
 
 #: src/widgets/CommandShortcuts.qml:37
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr "Een commando-sneltoets bewerken"
+msgstr "Editar un atajo de teclado"
 
 #: src/widgets/CommandShortcuts.qml:51
 #, kde-format
 msgid "No Commands"
-msgstr "Geen commando's"
+msgstr "Ninguna orden"
 
 #: src/widgets/CommandShortcuts.qml:52
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr "Met toevoegen van nieuwe commando-sneltoetsen beginnen"
+msgstr "Empiece añadiendo nuevos atajos de órdenes"
 
 #: src/widgets/CommandShortcuts.qml:94
 #, kde-format
 msgid "Remove"
-msgstr "Verwijderen"
+msgstr "Eliminar"
 
 #: src/widgets/CommandShortcuts.qml:104
 #, kde-format
 msgid "Edit"
-msgstr "Bewerken"
+msgstr "Editar"
 
 #: src/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Interface"
-msgstr "Interface"
+msgstr "Interfaz"
 
 #: src/widgets/SettingsDialog.qml:15
 #, kde-format
 msgid "Configure the application components and behaviour."
-msgstr "De componenten en gedrag van de toepassing configureren."
+msgstr "Configurar los componentes de la aplicación y el comportamiento."
 
 #: src/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Color"
-msgstr "Kleur"
+msgstr "Color"
 
 #: src/widgets/SettingsDialog.qml:21
 #, kde-format
 msgid "Switch between light and dark colorscheme"
-msgstr "Tussen licht en donker kleurenschema wisselen"
+msgstr "Cambiar entre esquema de color oscuro y claro"
 
 #: src/widgets/SettingsDialog.qml:29
 #, kde-format
 msgid "Light"
-msgstr "Licht"
+msgstr "Claro"
 
 #: src/widgets/SettingsDialog.qml:36
 #, kde-format
 msgid "Dark"
-msgstr "Donker"
+msgstr "Oscuro"
 
 #: src/widgets/SettingsDialog.qml:55
 #, kde-format
 msgid "Adaptive"
-msgstr "Aanpasbaar"
+msgstr "Adaptativo"
 
 #: src/widgets/SettingsDialog.qml:69
 #, kde-format
@@ -170,149 +170,150 @@ msgstr "Terminal"
 #: src/widgets/SettingsDialog.qml:70
 #, kde-format
 msgid "Configure the app UI and plugins."
-msgstr "Het gedrag en plug-ins van de UI van de toepassing configureren."
+msgstr "Configurar la interfaz de usuario y los complementos."
 
 #: src/widgets/SettingsDialog.qml:74
 #, kde-format
 msgid "Color Scheme"
-msgstr "Kleurenschema"
+msgstr "Esquema de colores"
 
 #: src/widgets/SettingsDialog.qml:75
 #, kde-format
 msgid "Change the color scheme of the terminal"
-msgstr "Het kleurenschema van de terminal wijzigen"
+msgstr "Cambiar el esquema de colores de la terminal"
 
 #: src/widgets/SettingsDialog.qml:100
 #, kde-format
 msgid "Fonts"
-msgstr "Lettertypen"
+msgstr "Fuentes"
 
 #: src/widgets/SettingsDialog.qml:101
 #, kde-format
 msgid "Configure the terminal font family and size"
-msgstr "De lettertypefamilie en -grootte van de terminal configureren"
+msgstr "Configurar la familia de la fuente del terminal y su tamaño"
 
 #: src/widgets/SettingsDialog.qml:105
 #, kde-format
 msgid "Family"
-msgstr "Familie"
+msgstr "Familia"
 
 #: src/widgets/SettingsDialog.qml:118
 #, kde-format
 msgid "Size"
-msgstr "Grootte"
+msgstr "Tamaño"
 
 #: src/widgets/SettingsDialog.qml:130
 #, kde-format
 msgid "Line Spacing"
-msgstr "Regelafstand"
+msgstr "Espaciado ente líneas"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Close"
-msgstr "Sluiten"
+msgstr "Cerrar"
 
 #: src/widgets/TerminalLayout.qml:34
 #, kde-format
 msgid ""
 "A process is currently still running. Are you sure you want to close it?"
-msgstr "Er draait momenteel nog een proces. Wilt u het toch sluiten?"
+msgstr "Al menos un proceso sigue ejecutando. ¿Está seguro de cerrarlo?"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
 msgid "Shortcuts"
-msgstr "Sneltoetsen"
+msgstr "Atajos"
 
 #: src/widgets/TutorialDialog.qml:19
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
 msgstr ""
-"Bij gebruik van een toetsenbord kunt u de volgende sneltoetsen gebruiken om "
-"te navigeren."
+"Cuando use un teclado, puede utilizar los siguientes atajos para navegar."
 
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr "Een nieuw gesplitst beeld openen, verticaal of horizontaal."
+msgstr "Abrir una nueva vista dividida, vertical u horizontalmente."
 
 #: src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
-msgstr "Nieuw tabblad"
+msgstr "Nueva pestaña"
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
 msgid "Find"
-msgstr "Zoeken"
+msgstr "Encontrar"
 
 #: src/widgets/TutorialDialog.qml:70
 #, kde-format
 msgid "Open the find bar."
-msgstr "De zoekbalk openen."
+msgstr "Abrir la barra de búsqueda."
 
 #: src/widgets/TutorialDialog.qml:90
 #, kde-format
 msgid "Switch"
-msgstr "Omschakelen"
+msgstr "Alternar"
 
 #: src/widgets/TutorialDialog.qml:91
 #, kde-format
 msgid "Switch between split views."
-msgstr "Tussen gesplitste weergaven te wisselen."
+msgstr "Alternar este vistas divididas"
 
 #: src/widgets/TutorialDialog.qml:114
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
 msgstr ""
-"Op aanraakschermen kunt u de Volgende gebaren gebruiken om te navigeren."
+"En dispositivos táctiles puede usar los siguientes gestos para navegar."
 
 #: src/widgets/TutorialDialog.qml:118
 #, kde-format
 msgid "Up & Down"
-msgstr "Op & neer"
+msgstr "Arriba y Abajo"
 
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr "Veeg op of neer om in de geschiedenis van de commando'ste navigeren."
+msgstr ""
+"Arrastre un dedo arriba o abajo para navegar por el historial de órdenes."
 
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
 msgid "Left & Right"
-msgstr "Links & rechts"
+msgstr "Izquierda y derecha"
 
 #: src/widgets/TutorialDialog.qml:125
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
-"Veeg links of rechts om door de commandoregel te bewegen om te bewerken."
+"Arrastre un dedo a la izquierda o derecha a través de la línea de órdenes "
+"para editar."
 
 #: src/widgets/TutorialDialog.qml:130
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr "Twee vingers links & rechts"
+msgstr "Izquierda y derecha con dos dedos"
 
 #: src/widgets/TutorialDialog.qml:131
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr "Veeg omhoog of omlaag met twee vingers om te schuiven."
+msgstr "Arrastre dos dedos arriba o abajo para desplazarse."
 
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
 msgid "Commands"
-msgstr "Commando's"
+msgstr "Órdenes"
 
 #: src/widgets/TutorialDialog.qml:142
 #, kde-format
 msgid "Create"
-msgstr "Aanmaken"
+msgstr "Crear"
 
 #: src/widgets/TutorialDialog.qml:143
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr "Een nieuwe commando-sneltoets aanmaken om snel acties te starten."
+msgstr "Crear un nuevo atajo de orden para ejecutar acciones rápidamente."
 
 #: src/widgets/TutorialDialog.qml:147
 #, kde-format
 msgid "Add"
-msgstr "Toevoegen"
+msgstr "Añadir"
