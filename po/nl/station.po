@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-11 00:44+0000\n"
+"POT-Creation-Date: 2022-11-15 00:45+0000\n"
 "PO-Revision-Date: 2022-11-13 15:22+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -17,27 +17,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 22.08.2\n"
 
-#: src/main.cpp:37
+#: src/main.cpp:35
 #, kde-format
 msgid "Station"
 msgstr "Station"
 
-#: src/main.cpp:37
+#: src/main.cpp:35
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "Convergente terminalemulator."
 
-#: src/main.cpp:37
+#: src/main.cpp:35
 #, kde-format
 msgid "© 2019-%1 Maui Development Team"
 msgstr "© 2019-%1 Ontwikkelteam van Maui"
 
-#: src/main.cpp:38
+#: src/main.cpp:36
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: src/main.cpp:38
+#: src/main.cpp:36
 #, kde-format
 msgid "Developer"
 msgstr "Ontwikkelaar"
