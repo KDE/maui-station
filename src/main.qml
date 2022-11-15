@@ -47,6 +47,7 @@ Maui.ApplicationWindow
         property font font : defaultFont
         property int keysModelCurrentIndex : 4
         property int colorStyle : Maui.Style.Dark
+        property double windowOpacity: 1
     }
 
     Loader
@@ -71,9 +72,12 @@ Maui.ApplicationWindow
         anchors.fill: parent
         headBar.visible: false
 
+        background: null
+
         Maui.TabView
         {
             id: _layout
+            background: null
 
             anchors.fill: parent
 
@@ -84,8 +88,6 @@ Maui.ApplicationWindow
             tabBar.visible: true
 
             tabBar.content: [
-
-
 
                 Maui.ToolButtonMenu
                 {
@@ -140,10 +142,7 @@ Maui.ApplicationWindow
                     }
                 },
 
-                Maui.WindowControls
-                {
-
-                }
+                Maui.WindowControls {}
             ]
         }
 

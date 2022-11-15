@@ -38,17 +38,17 @@ Maui.SettingsDialog
                     checked: settings.colorStyle === Maui.Style.Dark
                 }
 
-//                Action
-//                {
-//                    text: i18n("System")
-//                    onTriggered:
-//                    {
-//                        Maui.Style.styleType = undefined
-//                        settings.colorStyle = Maui.Style.styleType
-//                    }
+                //                Action
+                //                {
+                //                    text: i18n("System")
+                //                    onTriggered:
+                //                    {
+                //                        Maui.Style.styleType = undefined
+                //                        settings.colorStyle = Maui.Style.styleType
+                //                    }
 
-//                    checked: Maui.Style.styleType === 'undefined'
-//                }
+                //                    checked: Maui.Style.styleType === 'undefined'
+                //                }
 
                 Action
                 {
@@ -61,6 +61,43 @@ Maui.SettingsDialog
                     checked: settings.colorStyle === Maui.Style.Adaptive
                 }
             }
+        }
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Opacity")
+            label2.text: i18n("Background opacity")
+
+            RowLayout
+            {
+                width: parent.parent.width
+
+                Slider
+                {
+                    id: _opacitySlider
+                    Layout.fillWidth: true
+
+                    from: 0
+                    to: 100
+                    value: (1 - settings.windowOpacity) * 100
+                    stepSize: 5
+                    snapMode: Slider.SnapAlways
+
+                    onMoved:
+                    {
+                        settings.windowOpacity = 1 - (value / 100);
+                    }
+
+                }
+
+                Label
+                {
+                    text: i18n("%1\%", _opacitySlider.value)
+
+                }
+
+            }
+
         }
     }
 

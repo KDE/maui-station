@@ -5,6 +5,7 @@ import org.mauikit.controls 1.3 as Maui
 Maui.SplitViewItem
 {
     id: control
+//    background: null
 
     property string path : "$HOME"
 
@@ -21,6 +22,7 @@ Maui.SplitViewItem
     Maui.Terminal
     {
         id: _terminal
+        background: null
 
         anchors.fill: parent
         session.initialWorkingDirectory : control.path
@@ -44,6 +46,7 @@ Maui.SplitViewItem
         kterminal.font: settings.font
         kterminal.colorScheme: settings.colorScheme
         kterminal.lineSpacing: settings.lineSpacing
+//        kterminal.opacity: settings.windowOpacity
 
         onKeyPressed:
         {
