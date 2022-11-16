@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-11-16 00:46+0000\n"
 "PO-Revision-Date: 2022-11-12 08:59+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -43,52 +43,52 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Razvojnik"
 
-#: src/main.qml:97
+#: src/main.qml:99
 #, kde-format
 msgid "New tab"
 msgstr "Nov zavihek"
 
-#: src/main.qml:105 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:107 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Razdeli"
 
-#: src/main.qml:115
+#: src/main.qml:117
 #, kde-format
 msgid "Tutorial"
 msgstr "Učbenik"
 
-#: src/main.qml:127
+#: src/main.qml:129
 #, kde-format
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: src/main.qml:137
+#: src/main.qml:139
 #, kde-format
 msgid "About"
 msgstr "O programu"
 
-#: src/main.qml:160
+#: src/main.qml:159
 #, kde-format
 msgid "Function Keys"
 msgstr "Funkcijske tipke"
 
-#: src/main.qml:169
+#: src/main.qml:168
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:178
+#: src/main.qml:177
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Spremembe krmilke"
 
-#: src/main.qml:187 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:186 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Krmarjenje"
 
-#: src/main.qml:196
+#: src/main.qml:195
 #, kde-format
 msgid "Favorite"
 msgstr "Priljubljen"
@@ -163,47 +163,62 @@ msgstr "Temna"
 msgid "Adaptive"
 msgstr "Prilagodljiva"
 
+#: src/widgets/SettingsDialog.qml:68
+#, kde-format
+msgid "Opacity"
+msgstr ""
+
 #: src/widgets/SettingsDialog.qml:69
+#, kde-format
+msgid "Background opacity"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:95
+#, kde-format
+msgid "%1%"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:70
+#: src/widgets/SettingsDialog.qml:107
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Konfiguriraj uporabniški vmesnik aplikacije in vtičnike."
 
-#: src/widgets/SettingsDialog.qml:74
+#: src/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Color Scheme"
 msgstr "Barvna shema"
 
-#: src/widgets/SettingsDialog.qml:75
+#: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Change the color scheme of the terminal"
 msgstr "Spremeni barvno shemo terminala"
 
-#: src/widgets/SettingsDialog.qml:100
+#: src/widgets/SettingsDialog.qml:137
 #, kde-format
 msgid "Fonts"
 msgstr "Pisave"
 
-#: src/widgets/SettingsDialog.qml:101
+#: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Configure the terminal font family and size"
 msgstr "Konfiguriraj družino pisav za terminal in velikost"
 
-#: src/widgets/SettingsDialog.qml:105
+#: src/widgets/SettingsDialog.qml:142
 #, kde-format
 msgid "Family"
 msgstr "Družina"
 
-#: src/widgets/SettingsDialog.qml:118
+#: src/widgets/SettingsDialog.qml:155
 #, kde-format
 msgid "Size"
 msgstr "Velikost"
 
-#: src/widgets/SettingsDialog.qml:130
+#: src/widgets/SettingsDialog.qml:167
 #, kde-format
 msgid "Line Spacing"
 msgstr "Razmik med vrsticami"
