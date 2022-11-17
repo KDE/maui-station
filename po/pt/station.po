@@ -166,17 +166,17 @@ msgstr "Adaptativo"
 #: src/widgets/SettingsDialog.qml:68
 #, kde-format
 msgid "Opacity"
-msgstr ""
+msgstr "Opacidade"
 
 #: src/widgets/SettingsDialog.qml:69
 #, kde-format
 msgid "Background opacity"
-msgstr ""
+msgstr "Opacidade do fundo"
 
 #: src/widgets/SettingsDialog.qml:95
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: src/widgets/SettingsDialog.qml:106
 #, kde-format
