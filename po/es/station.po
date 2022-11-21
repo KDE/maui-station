@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-16 00:46+0000\n"
-"PO-Revision-Date: 2022-11-12 18:13+0100\n"
+"PO-Revision-Date: 2022-11-20 10:00+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -165,17 +165,17 @@ msgstr "Adaptativo"
 #: src/widgets/SettingsDialog.qml:68
 #, kde-format
 msgid "Opacity"
-msgstr ""
+msgstr "Opacidad"
 
 #: src/widgets/SettingsDialog.qml:69
 #, kde-format
 msgid "Background opacity"
-msgstr ""
+msgstr "Opacidad del fondo"
 
 #: src/widgets/SettingsDialog.qml:95
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: src/widgets/SettingsDialog.qml:106
 #, kde-format
