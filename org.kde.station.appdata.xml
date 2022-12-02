@@ -11,6 +11,7 @@
   <name xml:lang="fr">Station</name>
   <name xml:lang="id">Station</name>
   <name xml:lang="it">Station</name>
+  <name xml:lang="ka">სადგური</name>
   <name xml:lang="nl">Station:</name>
   <name xml:lang="pt">Station</name>
   <name xml:lang="sl">Station</name>
@@ -25,6 +26,7 @@
   <summary xml:lang="fr">Émulateur de terminal</summary>
   <summary xml:lang="id">Emulator Terminal</summary>
   <summary xml:lang="it">Emulatore di terminale</summary>
+  <summary xml:lang="ka">ტერმინალის ემულატორი</summary>
   <summary xml:lang="nl">Terminalprogramma</summary>
   <summary xml:lang="pt">Emulador do Terminal</summary>
   <summary xml:lang="pt-BR">Emulador de terminal</summary>
@@ -41,6 +43,7 @@
     <p xml:lang="fr">Le logiciel « Station » est un émulateur de terminal convergent, prêt pour les appareils de bureau et mobiles utilisant « GNU/Linux ».</p>
     <p xml:lang="id">Station adalah emulator terminal terpusat, siap untuk peranti desktop dan ponsel yang menggunakan GNU/Linux.</p>
     <p xml:lang="it">Station è un emulatore di terminale convergente, pronto per desktop e dispositivi mobili che utilizzano GNU/Linux.</p>
+    <p xml:lang="ka">სადგური კონვერგენტულ ტერმინალის ემულატორს წარმოადგენს, რომელიც მზადაა GNU/Linux-ის ქვეშ მომუშავე სამუშაო კომპიუტერებისა და მობილური მოწყობილობებისათვის.</p>
     <p xml:lang="nl">Station is een convergent terminalprogramma, gereed voor bureaublad en mobiele apparaten die GNU/Linux gebruiken.</p>
     <p xml:lang="pt">O Station é um emulador de terminal convergente, pronto para computadores e dispositivos móveis que usem o GNU/Linux.</p>
     <p xml:lang="sl">Station je konvergentni emulator terminala pripravljen tako za namizje kot za mobilne naprave, ki uporabljajo GNU/Linux.</p>
@@ -62,6 +65,7 @@
       <caption xml:lang="fr">Station dans un ordinateur de bureau ou un téléphone.</caption>
       <caption xml:lang="id">Station di desktop dan ponsel.</caption>
       <caption xml:lang="it">Station su desktop e telefono.</caption>
+      <caption xml:lang="ka">სადგური კომპიუტერზე და ტელეფონზე.</caption>
       <caption xml:lang="nl">Station op bureaublad en telefoon.</caption>
       <caption xml:lang="pt">O Station num computador e num telefone.</caption>
       <caption xml:lang="sl">Station na namizju in telefonu.</caption>
