@@ -6,6 +6,7 @@
   <name>Station</name>
   <name xml:lang="ca">Station</name>
   <name xml:lang="ca-valencia">Station</name>
+  <name xml:lang="en-GB">Station</name>
   <name xml:lang="es">Station</name>
   <name xml:lang="eu">Station</name>
   <name xml:lang="fr">Station</name>
@@ -21,6 +22,7 @@
   <summary>Terminal Emulator</summary>
   <summary xml:lang="ca">Emulador de terminal</summary>
   <summary xml:lang="ca-valencia">Emulador de terminal</summary>
+  <summary xml:lang="en-GB">Terminal Emulator</summary>
   <summary xml:lang="es">Emulador de terminal</summary>
   <summary xml:lang="eu">Terminal emulatzailea</summary>
   <summary xml:lang="fr">Émulateur de terminal</summary>
@@ -38,6 +40,7 @@
     <p>Station is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.</p>
     <p xml:lang="ca">L'Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que usen el GNU/Linux.</p>
     <p xml:lang="ca-valencia">Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que utilitzen GNU/Linux.</p>
+    <p xml:lang="en-GB">Station is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.</p>
     <p xml:lang="es">Station es un emulador de terminal convergente, preparado para escritorios y dispositivos móviles que usen GNU/Linux.</p>
     <p xml:lang="eu">«Station» terminal emulatzaile konbergente bat da, GNU/Linux erabiltzen duten mahaigain eta mugikorretarako prest dagoena.</p>
     <p xml:lang="fr">Le logiciel « Station » est un émulateur de terminal convergent, prêt pour les appareils de bureau et mobiles utilisant « GNU/Linux ».</p>
@@ -60,6 +63,7 @@
       <caption>Station in desktop and phone.</caption>
       <caption xml:lang="ca">L'Station a l'escriptori i al telèfon.</caption>
       <caption xml:lang="ca-valencia">Station en l'escriptori i al telèfon.</caption>
+      <caption xml:lang="en-GB">Station in desktop and phone.</caption>
       <caption xml:lang="es">Station en el escritorio y el en teléfono.</caption>
       <caption xml:lang="eu">«Station» mahaigainean eta telefonoan.</caption>
       <caption xml:lang="fr">Station dans un ordinateur de bureau ou un téléphone.</caption>
