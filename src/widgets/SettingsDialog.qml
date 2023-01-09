@@ -111,7 +111,7 @@ Maui.SettingsDialog
             label1.text: i18n("Color Scheme")
             label2.text: i18n("Change the color scheme of the terminal")
 
-            Maui.ComboBox
+            ComboBox
             {
                 id: _colorSchemesCombobox
                 model: _dummyTerminal.kterminal.availableColorSchemes

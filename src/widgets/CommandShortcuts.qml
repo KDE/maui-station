@@ -8,8 +8,6 @@ import org.maui.station 1.0 as Station
 Maui.Dialog
 {
     id: control
-
-
     maxHeight: 600
     maxWidth: 400
 
@@ -19,7 +17,7 @@ Maui.Dialog
     headBar.visible: true
     signal commandTriggered(string command)
 
-    headBar.middleContent: Maui.TextField
+    headBar.middleContent: TextField
     {
         Layout.fillWidth: true
         Layout.maximumWidth: 500
