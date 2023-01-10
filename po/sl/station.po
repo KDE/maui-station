@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:46+0000\n"
+"POT-Creation-Date: 2023-01-10 00:55+0000\n"
 "PO-Revision-Date: 2022-11-17 10:35+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -93,37 +93,37 @@ msgstr "Krmarjenje"
 msgid "Favorite"
 msgstr "Priljubljen"
 
-#: src/widgets/CommandShortcuts.qml:27
+#: src/widgets/CommandShortcuts.qml:25
 #, kde-format
 msgid "New Command"
 msgstr "Nov ukaz"
 
-#: src/widgets/CommandShortcuts.qml:36
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
 msgstr "Uredi ukaz"
 
-#: src/widgets/CommandShortcuts.qml:37
+#: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Uredi bližnjico ukaza"
 
-#: src/widgets/CommandShortcuts.qml:51
+#: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "No Commands"
 msgstr "Ni ukazov"
 
-#: src/widgets/CommandShortcuts.qml:52
+#: src/widgets/CommandShortcuts.qml:50
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "Začni dodajanje bližnjic novih ukazov"
 
-#: src/widgets/CommandShortcuts.qml:94
+#: src/widgets/CommandShortcuts.qml:92
 #, kde-format
 msgid "Remove"
 msgstr "Odstrani"
 
-#: src/widgets/CommandShortcuts.qml:104
+#: src/widgets/CommandShortcuts.qml:102
 #, kde-format
 msgid "Edit"
 msgstr "Uredi"

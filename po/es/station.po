@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:46+0000\n"
+"POT-Creation-Date: 2023-01-10 00:55+0000\n"
 "PO-Revision-Date: 2022-11-20 10:00+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -92,37 +92,37 @@ msgstr "Navegación"
 msgid "Favorite"
 msgstr "Favorito"
 
-#: src/widgets/CommandShortcuts.qml:27
+#: src/widgets/CommandShortcuts.qml:25
 #, kde-format
 msgid "New Command"
 msgstr "Nueva orden"
 
-#: src/widgets/CommandShortcuts.qml:36
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
 msgstr "Editar orden"
 
-#: src/widgets/CommandShortcuts.qml:37
+#: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Editar un atajo de teclado"
 
-#: src/widgets/CommandShortcuts.qml:51
+#: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "No Commands"
 msgstr "Ninguna orden"
 
-#: src/widgets/CommandShortcuts.qml:52
+#: src/widgets/CommandShortcuts.qml:50
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "Empiece añadiendo nuevos atajos de órdenes"
 
-#: src/widgets/CommandShortcuts.qml:94
+#: src/widgets/CommandShortcuts.qml:92
 #, kde-format
 msgid "Remove"
 msgstr "Eliminar"
 
-#: src/widgets/CommandShortcuts.qml:104
+#: src/widgets/CommandShortcuts.qml:102
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
