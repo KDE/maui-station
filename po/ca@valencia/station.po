@@ -292,7 +292,7 @@ msgstr "Amunt i avall"
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr "Llisqueu amunt o avall per a navegar per les ordres de l'historial."
+msgstr "Feu lliscar amunt o avall per a navegar per les ordres de l'historial."
 
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
@@ -303,7 +303,7 @@ msgstr "Esquerra i dreta"
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
-"Llisqueu a la dreta o esquerra per a moure's per la línia d'ordres per a "
+"Feu lliscar a la dreta o esquerra per a moure's per la línia d'ordres per a "
 "editar-la."
 
 #: src/widgets/TutorialDialog.qml:130
@@ -314,7 +314,7 @@ msgstr "Dos dits esquerra i dreta"
 #: src/widgets/TutorialDialog.qml:131
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr "Llisqueu amunt o avall amb dos dits per a desplaçar-se."
+msgstr "Feu lliscar amunt o avall amb dos dits per a desplaçar-se."
 
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
