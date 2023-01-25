@@ -6,6 +6,7 @@
   <name>Station</name>
   <name xml:lang="ca">Station</name>
   <name xml:lang="ca-valencia">Station</name>
+  <name xml:lang="cs">Station</name>
   <name xml:lang="en-GB">Station</name>
   <name xml:lang="es">Station</name>
   <name xml:lang="eu">Station</name>
@@ -22,6 +23,7 @@
   <summary>Terminal Emulator</summary>
   <summary xml:lang="ca">Emulador de terminal</summary>
   <summary xml:lang="ca-valencia">Emulador de terminal</summary>
+  <summary xml:lang="cs">Emulátor terminálu</summary>
   <summary xml:lang="en-GB">Terminal Emulator</summary>
   <summary xml:lang="es">Emulador de terminal</summary>
   <summary xml:lang="eu">Terminal emulatzailea</summary>
