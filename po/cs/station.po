@@ -1,0 +1,329 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-station package.
+# Vit Pelcak <vit@pelcak.org>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-station\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-01-10 00:55+0000\n"
+"PO-Revision-Date: 2023-01-24 15:41+0100\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 22.12.1\n"
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Station"
+msgstr "Station"
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Convergent terminal emulator."
+msgstr ""
+
+#: src/main.cpp:35
+#, kde-format
+msgid "© 2019-%1 Maui Development Team"
+msgstr "© 2019-%1 Vývojový tým Maui"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Developer"
+msgstr "Vývojář"
+
+#: src/main.qml:99
+#, kde-format
+msgid "New tab"
+msgstr "Nová karta"
+
+#: src/main.qml:107 src/widgets/TutorialDialog.qml:23
+#, kde-format
+msgid "Split"
+msgstr "Rozdělit"
+
+#: src/main.qml:117
+#, kde-format
+msgid "Tutorial"
+msgstr "Výuka"
+
+#: src/main.qml:129
+#, kde-format
+msgid "Settings"
+msgstr "Nastavení"
+
+#: src/main.qml:139
+#, kde-format
+msgid "About"
+msgstr "O aplikaci"
+
+#: src/main.qml:159
+#, kde-format
+msgid "Function Keys"
+msgstr "Funkční klávesy"
+
+#: src/main.qml:168
+#, kde-format
+msgid "Nano"
+msgstr "Nano"
+
+#: src/main.qml:177
+#, kde-format
+msgid "Ctrl Modifiers"
+msgstr ""
+
+#: src/main.qml:186 src/widgets/TutorialDialog.qml:113
+#, kde-format
+msgid "Navigation"
+msgstr "Ovládání"
+
+#: src/main.qml:195
+#, kde-format
+msgid "Favorite"
+msgstr "Oblíbené"
+
+#: src/widgets/CommandShortcuts.qml:25
+#, kde-format
+msgid "New Command"
+msgstr "Nový příkaz"
+
+#: src/widgets/CommandShortcuts.qml:34
+#, kde-format
+msgid "Edit Command"
+msgstr "Upravit příkaz"
+
+#: src/widgets/CommandShortcuts.qml:35
+#, kde-format
+msgid "Edit a command shortcut"
+msgstr ""
+
+#: src/widgets/CommandShortcuts.qml:49
+#, kde-format
+msgid "No Commands"
+msgstr ""
+
+#: src/widgets/CommandShortcuts.qml:50
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr ""
+
+#: src/widgets/CommandShortcuts.qml:92
+#, kde-format
+msgid "Remove"
+msgstr "Odstranit"
+
+#: src/widgets/CommandShortcuts.qml:102
+#, kde-format
+msgid "Edit"
+msgstr "Upravit"
+
+#: src/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Interface"
+msgstr "Rozhraní"
+
+#: src/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid "Configure the application components and behaviour."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Color"
+msgstr "Barva"
+
+#: src/widgets/SettingsDialog.qml:21
+#, kde-format
+msgid "Switch between light and dark colorscheme"
+msgstr "Přepínač mezi světlým a tmavým barevným schématem"
+
+#: src/widgets/SettingsDialog.qml:29
+#, kde-format
+msgid "Light"
+msgstr "Světlé"
+
+#: src/widgets/SettingsDialog.qml:36
+#, kde-format
+msgid "Dark"
+msgstr "Tmavé"
+
+#: src/widgets/SettingsDialog.qml:55
+#, kde-format
+msgid "Adaptive"
+msgstr "Adaptivní"
+
+#: src/widgets/SettingsDialog.qml:68
+#, kde-format
+msgid "Opacity"
+msgstr "Krytí"
+
+#: src/widgets/SettingsDialog.qml:69
+#, kde-format
+msgid "Background opacity"
+msgstr "Krytí pozadí"
+
+#: src/widgets/SettingsDialog.qml:95
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: src/widgets/SettingsDialog.qml:106
+#, kde-format
+msgid "Terminal"
+msgstr "Terminál"
+
+#: src/widgets/SettingsDialog.qml:107
+#, kde-format
+msgid "Configure the app UI and plugins."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:111
+#, kde-format
+msgid "Color Scheme"
+msgstr "Barevné schéma"
+
+#: src/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Change the color scheme of the terminal"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:137
+#, kde-format
+msgid "Fonts"
+msgstr "Písma"
+
+#: src/widgets/SettingsDialog.qml:138
+#, kde-format
+msgid "Configure the terminal font family and size"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:142
+#, kde-format
+msgid "Family"
+msgstr "Rodina"
+
+#: src/widgets/SettingsDialog.qml:155
+#, kde-format
+msgid "Size"
+msgstr "Velikost"
+
+#: src/widgets/SettingsDialog.qml:167
+#, kde-format
+msgid "Line Spacing"
+msgstr "Rozestupy řádků"
+
+#: src/widgets/TerminalLayout.qml:33
+#, kde-format
+msgid "Close"
+msgstr "Zavřít"
+
+#: src/widgets/TerminalLayout.qml:34
+#, kde-format
+msgid ""
+"A process is currently still running. Are you sure you want to close it?"
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:18
+#, kde-format
+msgid "Shortcuts"
+msgstr "Zkratky"
+
+#: src/widgets/TutorialDialog.qml:19
+#, kde-format
+msgid "When using a keyboard you can use the following shortcuts to navigate."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:24
+#, kde-format
+msgid "Open a new split view, vertically or horizontally."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:49
+#, kde-format
+msgid "New Tab"
+msgstr "Nová karta"
+
+#: src/widgets/TutorialDialog.qml:69
+#, kde-format
+msgid "Find"
+msgstr "Najít"
+
+#: src/widgets/TutorialDialog.qml:70
+#, kde-format
+msgid "Open the find bar."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:90
+#, kde-format
+msgid "Switch"
+msgstr "Přepnout"
+
+#: src/widgets/TutorialDialog.qml:91
+#, kde-format
+msgid "Switch between split views."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:114
+#, kde-format
+msgid "On touch devices you can use the following gestures to navigate."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:118
+#, kde-format
+msgid "Up & Down"
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:119
+#, kde-format
+msgid "Swipe up or down to navigate the commands history."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:124
+#, kde-format
+msgid "Left & Right"
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:125
+#, kde-format
+msgid "Swipe left or right to move through the command line to edit."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:130
+#, kde-format
+msgid "Two Fingers Left & Right"
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:131
+#, kde-format
+msgid "Swipe up or down with two fingers to scroll."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:138
+#, kde-format
+msgid "Commands"
+msgstr "Příkazy"
+
+#: src/widgets/TutorialDialog.qml:142
+#, kde-format
+msgid "Create"
+msgstr "Vytvořit"
+
+#: src/widgets/TutorialDialog.qml:143
+#, kde-format
+msgid "Create a new command shortcut to quickly trigger actions."
+msgstr ""
+
+#: src/widgets/TutorialDialog.qml:147
+#, kde-format
+msgid "Add"
+msgstr "Přidat"
