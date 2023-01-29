@@ -9,13 +9,13 @@ Maui.SettingsDialog
 {
     id: control
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("Interface")
         description: i18n("Configure the application components and behaviour.")
 
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Color")
             label2.text: i18n("Switch between light and dark colorscheme")
@@ -63,7 +63,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Opacity")
             label2.text: i18n("Background opacity")
@@ -101,12 +101,12 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("Terminal")
         description: i18n("Configure the app UI and plugins.")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Color Scheme")
             label2.text: i18n("Change the color scheme of the terminal")
@@ -132,12 +132,12 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("Fonts")
         description: i18n("Configure the terminal font family and size")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Family")
 
@@ -150,7 +150,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Size")
 
@@ -162,7 +162,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Line Spacing")
 

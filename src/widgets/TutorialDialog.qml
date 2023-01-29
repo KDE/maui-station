@@ -12,13 +12,13 @@ Maui.SettingsDialog
     page.showTitle: false
     headBar.visible: false
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         Layout.fillWidth: true
         title: i18n("Shortcuts")
         description: i18n("When using a keyboard you can use the following shortcuts to navigate.")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Split")
             label2.text: i18n("Open a new split view, vertically or horizontally.")
@@ -44,7 +44,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("New Tab")
 
@@ -64,7 +64,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Find")
             label2.text: i18n("Open the find bar.")
@@ -85,7 +85,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Switch")
             label2.text: i18n("Switch between split views.")
@@ -107,37 +107,37 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         Layout.fillWidth: true
         title: i18n("Navigation")
         description: i18n("On touch devices you can use the following gestures to navigate.")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Up & Down")
             label2.text: i18n("Swipe up or down to navigate the commands history.")
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Left & Right")
             label2.text: i18n("Swipe left or right to move through the command line to edit.")
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Two Fingers Left & Right")
             label2.text: i18n("Swipe up or down with two fingers to scroll.")
         }
     }
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         Layout.fillWidth: true
         title: i18n("Commands")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Create")
             label2.text: i18n("Create a new command shortcut to quickly trigger actions.")
