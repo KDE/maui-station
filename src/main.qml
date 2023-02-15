@@ -81,7 +81,7 @@ Maui.ApplicationWindow
 
             anchors.fill: parent
 
-            onNewTabClicked: openTab("$HOME")
+            onNewTabClicked: openTab("$PWD")
             onCloseTabClicked: closeTab(index)
 
             tabBar.showNewTabButton: false
@@ -97,7 +97,7 @@ Maui.ApplicationWindow
                     {
                         icon.name: "tab-new"
                         text: i18n("New tab")
-                        onTriggered: root.openTab("$HOME")
+                        onTriggered: root.openTab("$PWD")
                     }
 
                     MenuItem

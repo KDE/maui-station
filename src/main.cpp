@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
             server->openTabs(args, false);
         else
         {
-            server->openTabs({"$HOME"}, false);
+            server->openTabs({"$PWD"}, false);
         }
 
     },

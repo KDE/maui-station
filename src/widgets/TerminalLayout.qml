@@ -14,7 +14,7 @@ Maui.SplitView
 
     readonly property string title: currentItem.title
 
-    property string path : "$HOME"
+    property string path : "$PWD"
 
     Maui.TabViewInfo.tabTitle: title
     Maui.TabViewInfo.tabToolTipText: currentItem.session.currentDir
