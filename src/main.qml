@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.3
 
 import Qt.labs.settings 1.0
 import org.mauikit.controls 1.3 as Maui
+import org.mauikit.terminal 1.0 as Term
 
 import org.maui.station 1.0 as Station
 
@@ -17,7 +18,7 @@ Maui.ApplicationWindow
     property alias dialog : _dialogLoader.item
     Maui.Style.styleType: settings.colorStyle
     property alias currentTab : _layout.currentItem
-    readonly property Maui.Terminal currentTerminal : currentTab.currentItem.terminal
+    readonly property Term.Terminal currentTerminal : currentTab.currentItem.terminal
     readonly property font defaultFont : Qt.font({ family: "Monospace", pointSize: Maui.Style.defaultFontSize})
 
     Maui.WindowBlur
@@ -41,13 +42,14 @@ Maui.ApplicationWindow
     {
         id: settings
         category: "General"
-        property string colorScheme: "DarkPastels"
+        property string colorScheme: "Maui-Dark"
         property bool pathBar : true
         property int lineSpacing : 0
         property font font : defaultFont
         property int keysModelCurrentIndex : 4
         property int colorStyle : Maui.Style.Dark
         property double windowOpacity: 1
+        property int tabSpace: 4
     }
 
     Loader

@@ -1,6 +1,7 @@
 import QtQuick 2.14
 
 import org.mauikit.controls 1.3 as Maui
+import org.mauikit.terminal 1.0 as Term
 
 Maui.SplitViewItem
 {
@@ -19,7 +20,7 @@ Maui.SplitViewItem
     property alias title : _terminal.title
     property alias kterminal : _terminal.kterminal
 
-    Maui.Terminal
+    Term.Terminal
     {
         id: _terminal
         background: null
@@ -46,7 +47,7 @@ Maui.SplitViewItem
         kterminal.font: settings.font
         kterminal.colorScheme: settings.colorScheme
         kterminal.lineSpacing: settings.lineSpacing
-//        kterminal.opacity: settings.windowOpacity
+        kterminal.backgroundOpacity: settings.windowOpacity
 
         onKeyPressed:
         {

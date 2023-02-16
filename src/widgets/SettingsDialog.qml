@@ -1,7 +1,9 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
+
 import org.mauikit.controls 1.3 as Maui
+import org.mauikit.terminal 1.0 as Term
 
 import org.maui.station 1.0 as Station
 
@@ -114,8 +116,17 @@ Maui.SettingsDialog
             ComboBox
             {
                 id: _colorSchemesCombobox
-                model: _dummyTerminal.kterminal.availableColorSchemes
-                //                currentIndex: _dummyTerminal.kterminal.availableColorSchemes.indexOf(root.colorScheme)
+
+                textRole: "name"
+                valueRole: "name"
+
+                model: Maui.BaseModel
+                {
+                    list: Term.ColorSchemesModel
+                    {
+                    }
+                }
+                Component.onCompleted: currentIndex = indexOfValue(settings.colorScheme)
                 onActivated:
                 {
                     //                    settings.setValue("colorScheme", currentValue)
@@ -123,11 +134,7 @@ Maui.SettingsDialog
                 }
 
 
-                Maui.Terminal
-                {
-                    id: _dummyTerminal
-                    visible: false
-                }
+
             }
         }
     }
