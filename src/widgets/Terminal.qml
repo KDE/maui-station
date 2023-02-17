@@ -6,7 +6,7 @@ import org.mauikit.terminal 1.0 as Term
 Maui.SplitViewItem
 {
     id: control
-//    background: null
+    //    background: null
 
     property string path : "$HOME"
 
@@ -27,11 +27,11 @@ Maui.SplitViewItem
 
         anchors.fill: parent
         session.initialWorkingDirectory : control.path
-//        Component.onCompleted:
-//        {
-//            control.session.initialWorkingDirectory = control.path
-//            control.session.sendText("cd "+ control.path + "\n")
-//        }
+        //        Component.onCompleted:
+        //        {
+        //            control.session.initialWorkingDirectory = control.path
+        //            control.session.sendText("cd "+ control.path + "\n")
+        //        }
 
         //    onClicked:
         //    {
@@ -45,9 +45,25 @@ Maui.SplitViewItem
         }
 
         kterminal.font: settings.font
-        kterminal.colorScheme: settings.colorScheme
+        kterminal.colorScheme: settings.adaptiveColorScheme ? _customCS.path : settings.colorScheme
         kterminal.lineSpacing: settings.lineSpacing
         kterminal.backgroundOpacity: settings.windowOpacity
+
+        Term.CustomColorScheme
+        {
+            id: _customCS
+            Maui.Theme.colorSet: Maui.Theme.Header
+            Maui.Theme.inherit: false
+            name: "Adaptive"
+            description: i18n("Follows the system color scheme.")
+            backgroundColor: Maui.Theme.backgroundColor
+            foregroundColor: Maui.Theme.textColor
+            color2: Maui.Theme.alternateColor
+            color3: Maui.Theme.negativeTextColor
+            color4: Maui.Theme.positiveTextColor
+            color5: Maui.Theme.neutralTextColor
+            color6: Maui.Theme.highlightColor
+        }
 
         onKeyPressed:
         {

@@ -11,6 +11,95 @@ Maui.SettingsDialog
 {
     id: control
 
+    Component
+    {
+        id:_csPageComponent
+
+        Maui.ScrollColumn
+        {
+            Maui.SectionItem
+            {
+                label1.text: i18n("Color Scheme")
+                label2.text: i18n("Change the color scheme of the terminal")
+                enabled: !settings.adaptiveColorScheme
+
+                GridLayout
+                {
+                    columns: 3
+                    width: parent.parent.width
+                    opacity: enabled ? 1 : 0.5
+                    Repeater
+                    {
+                        model: Term.ColorSchemesModel
+                        {
+                        }
+
+                        delegate: Maui.GridBrowserDelegate
+                        {
+                            Layout.fillWidth: true
+                            checked: model.name === settings.colorScheme
+                            onClicked: settings.colorScheme = model.name
+
+                            template.iconComponent: Pane
+                            {
+                                implicitHeight: Math.max(contentHeight + topPadding + bottomPadding, 64)
+                                padding: Maui.Style.space.small
+
+                                background: Rectangle
+                                {
+                                    color: model.background
+                                    radius: Maui.Style.radiusV
+                                }
+
+                                contentItem: Column
+                                {
+                                    spacing: 2
+
+                                    Text
+                                    {
+                                        wrapMode: Text.NoWrap
+                                        elide: Text.ElideLeft
+                                        width: parent.width
+                                        //                                    font.pointSize: Maui.Style.fontSizes.small
+                                        text: "Hello world!"
+                                        color: model.foreground
+                                        font.family: settings.font.family
+                                    }
+
+                                    Rectangle
+                                    {
+                                        radius: 2
+                                        height: 8
+                                        width: parent.width
+                                        color: model.highlight
+                                    }
+
+                                    Rectangle
+                                    {
+                                        radius: 2
+                                        height: 8
+                                        width: parent.width
+                                        color: model.color3
+                                    }
+
+                                    Rectangle
+                                    {
+                                        radius: 2
+                                        height: 8
+                                        width: parent.width
+                                        color: model.color4
+                                    }
+                                }
+                            }
+
+                            label1.text: model.name
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     Maui.SectionGroup
     {
         title: i18n("Interface")
@@ -67,8 +156,8 @@ Maui.SettingsDialog
 
         Maui.SectionItem
         {
-            label1.text: i18n("Opacity")
-            label2.text: i18n("Background opacity")
+            label1.text: i18n("Translucency")
+            label2.text: i18n("Level of translucency. Works better if there is blurred background support.")
 
             RowLayout
             {
@@ -89,7 +178,6 @@ Maui.SettingsDialog
                     {
                         settings.windowOpacity = 1 - (value / 100);
                     }
-
                 }
 
                 Label
@@ -97,9 +185,7 @@ Maui.SettingsDialog
                     text: i18n("%1\%", _opacitySlider.value)
 
                 }
-
             }
-
         }
     }
 
@@ -108,34 +194,35 @@ Maui.SettingsDialog
         title: i18n("Terminal")
         description: i18n("Configure the app UI and plugins.")
 
+
+        Maui.SectionItem
+        {
+            label1.text: i18n("Adaptive Color Scheme")
+            label2.text: i18n("Colors based on the current style")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  settings.adaptiveColorScheme
+                onToggled: settings.adaptiveColorScheme = ! settings.adaptiveColorScheme
+            }
+
+        }
+
         Maui.SectionItem
         {
             label1.text: i18n("Color Scheme")
             label2.text: i18n("Change the color scheme of the terminal")
+            enabled: !settings.adaptiveColorScheme
+//onClicked: control.addPage(_csPageComponent)
 
-            ComboBox
-            {
-                id: _colorSchemesCombobox
-
-                textRole: "name"
-                valueRole: "name"
-
-                model: Maui.BaseModel
-                {
-                    list: Term.ColorSchemesModel
-                    {
-                    }
-                }
-                Component.onCompleted: currentIndex = indexOfValue(settings.colorScheme)
-                onActivated:
-                {
-                    //                    settings.setValue("colorScheme", currentValue)
-                    settings.colorScheme = _colorSchemesCombobox.currentValue
-                }
-
-
-
-            }
+ToolButton
+{
+    checkable: true
+    icon.name: "go-next"
+    onToggled: control.addPage(_csPageComponent)
+}
         }
     }
 

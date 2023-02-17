@@ -29,6 +29,8 @@ Maui.ApplicationWindow
         enabled: !Maui.Handy.isMobile
     }
 
+
+
     onClosing:
     {
         if(currentTerminal.session.hasActiveProcess)
@@ -50,6 +52,7 @@ Maui.ApplicationWindow
         property int colorStyle : Maui.Style.Dark
         property double windowOpacity: 1
         property int tabSpace: 4
+        property bool adaptiveColorScheme : true
     }
 
     Loader
