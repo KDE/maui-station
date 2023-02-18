@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-10 00:55+0000\n"
+"POT-Creation-Date: 2023-02-18 00:57+0000\n"
 "PO-Revision-Date: 2022-11-11 10:24+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -42,52 +42,52 @@ msgstr ""
 msgid "Developer"
 msgstr ""
 
-#: src/main.qml:99
+#: src/main.qml:104
 #, kde-format
 msgid "New tab"
 msgstr ""
 
-#: src/main.qml:107 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:112 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr ""
 
-#: src/main.qml:117
+#: src/main.qml:122
 #, kde-format
 msgid "Tutorial"
 msgstr ""
 
-#: src/main.qml:129
+#: src/main.qml:134
 #, kde-format
 msgid "Settings"
 msgstr ""
 
-#: src/main.qml:139
+#: src/main.qml:144
 #, kde-format
 msgid "About"
 msgstr ""
 
-#: src/main.qml:159
+#: src/main.qml:164
 #, kde-format
 msgid "Function Keys"
 msgstr ""
 
-#: src/main.qml:168
+#: src/main.qml:173
 #, kde-format
 msgid "Nano"
 msgstr ""
 
-#: src/main.qml:177
+#: src/main.qml:182
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr ""
 
-#: src/main.qml:186 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:191 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr ""
 
-#: src/main.qml:195
+#: src/main.qml:200
 #, kde-format
 msgid "Favorite"
 msgstr ""
@@ -127,99 +127,115 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:14
-#, kde-format
-msgid "Interface"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:15
-#, kde-format
-msgid "Configure the application components and behaviour."
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:20
-#, kde-format
-msgid "Color"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:21
-#, kde-format
-msgid "Switch between light and dark colorscheme"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:29
-#, kde-format
-msgid "Light"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:36
-#, kde-format
-msgid "Dark"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:55
-#, kde-format
-msgid "Adaptive"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:68
-#, kde-format
-msgid "Opacity"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:69
-#, kde-format
-msgid "Background opacity"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:95
-#, kde-format
-msgid "%1%"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:106
-#, kde-format
-msgid "Terminal"
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:107
-#, kde-format
-msgid "Configure the app UI and plugins."
-msgstr ""
-
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:22 src/widgets/SettingsDialog.qml:215
 #, kde-format
 msgid "Color Scheme"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:112
+#: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
 #, kde-format
 msgid "Change the color scheme of the terminal"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:137
+#: src/widgets/SettingsDialog.qml:105
+#, kde-format
+msgid "Interface"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:106
+#, kde-format
+msgid "Configure the application components and behaviour."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:111
+#, kde-format
+msgid "Color"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Switch between light and dark colorscheme"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:120
+#, kde-format
+msgid "Light"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:127
+#, kde-format
+msgid "Dark"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Adaptive"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:159
+#, kde-format
+msgid "Translucency"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:160
+#, kde-format
+msgid ""
+"Level of translucency. Works better if there is blurred background support."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:185
+#, kde-format
+msgid "%1%"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid "Terminal"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:195
+#, kde-format
+msgid "Configure the app UI and plugins."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:200
+#, kde-format
+msgid "Adaptive Color Scheme"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:201
+#, kde-format
+msgid "Colors based on the current style"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:231
 #, kde-format
 msgid "Fonts"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:138
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Configure the terminal font family and size"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:142
+#: src/widgets/SettingsDialog.qml:236
 #, kde-format
 msgid "Family"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:155
+#: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Size"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:167
+#: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Line Spacing"
+msgstr ""
+
+#: src/widgets/Terminal.qml:58
+#, kde-format
+msgid "Follows the system color scheme."
 msgstr ""
 
 #: src/widgets/TerminalLayout.qml:33

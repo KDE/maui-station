@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-10 00:55+0000\n"
+"POT-Creation-Date: 2023-02-18 00:57+0000\n"
 "PO-Revision-Date: 2022-11-16 06:27+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -45,52 +45,52 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Garatzailea"
 
-#: src/main.qml:99
+#: src/main.qml:104
 #, kde-format
 msgid "New tab"
 msgstr "Fitxa berria"
 
-#: src/main.qml:107 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:112 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Zatitu"
 
-#: src/main.qml:117
+#: src/main.qml:122
 #, kde-format
 msgid "Tutorial"
 msgstr "Tutoretza"
 
-#: src/main.qml:129
+#: src/main.qml:134
 #, kde-format
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: src/main.qml:139
+#: src/main.qml:144
 #, kde-format
 msgid "About"
 msgstr "Honi buruz"
 
-#: src/main.qml:159
+#: src/main.qml:164
 #, kde-format
 msgid "Function Keys"
 msgstr "Funtzio teklak"
 
-#: src/main.qml:168
+#: src/main.qml:173
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:177
+#: src/main.qml:182
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ktrl aldarazleak"
 
-#: src/main.qml:186 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:191 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Nabigazioa"
 
-#: src/main.qml:195
+#: src/main.qml:200
 #, kde-format
 msgid "Favorite"
 msgstr "Gogokoak"
@@ -130,100 +130,117 @@ msgstr "Kendu"
 msgid "Edit"
 msgstr "Editatu"
 
-#: src/widgets/SettingsDialog.qml:14
-#, kde-format
-msgid "Interface"
-msgstr "Interfazea"
-
-#: src/widgets/SettingsDialog.qml:15
-#, kde-format
-msgid "Configure the application components and behaviour."
-msgstr "Konfiguratu aplikazioaren osagaiak eta jokabidea."
-
-#: src/widgets/SettingsDialog.qml:20
-#, kde-format
-msgid "Color"
-msgstr "Kolorea"
-
-#: src/widgets/SettingsDialog.qml:21
-#, kde-format
-msgid "Switch between light and dark colorscheme"
-msgstr "Aldatu kolore-antolaera argi eta ilunaren artean"
-
-#: src/widgets/SettingsDialog.qml:29
-#, kde-format
-msgid "Light"
-msgstr "Argia"
-
-#: src/widgets/SettingsDialog.qml:36
-#, kde-format
-msgid "Dark"
-msgstr "Iluna"
-
-#: src/widgets/SettingsDialog.qml:55
-#, kde-format
-msgid "Adaptive"
-msgstr "Moldakorra"
-
-#: src/widgets/SettingsDialog.qml:68
-#, kde-format
-msgid "Opacity"
-msgstr "Opakutasuna"
-
-#: src/widgets/SettingsDialog.qml:69
-#, kde-format
-msgid "Background opacity"
-msgstr "Atzeko planoaren opakutasuna"
-
-#: src/widgets/SettingsDialog.qml:95
-#, kde-format
-msgid "%1%"
-msgstr "%%1"
-
-#: src/widgets/SettingsDialog.qml:106
-#, kde-format
-msgid "Terminal"
-msgstr "Terminala"
-
-#: src/widgets/SettingsDialog.qml:107
-#, kde-format
-msgid "Configure the app UI and plugins."
-msgstr "Konfiguratu aplikazioaren EI eta pluginak."
-
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:22 src/widgets/SettingsDialog.qml:215
 #, kde-format
 msgid "Color Scheme"
 msgstr "Kolore-antolaera"
 
-#: src/widgets/SettingsDialog.qml:112
+#: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
 #, kde-format
 msgid "Change the color scheme of the terminal"
 msgstr "Aldatu terminalaren kolore-antolaera"
 
-#: src/widgets/SettingsDialog.qml:137
+#: src/widgets/SettingsDialog.qml:105
+#, kde-format
+msgid "Interface"
+msgstr "Interfazea"
+
+#: src/widgets/SettingsDialog.qml:106
+#, kde-format
+msgid "Configure the application components and behaviour."
+msgstr "Konfiguratu aplikazioaren osagaiak eta jokabidea."
+
+#: src/widgets/SettingsDialog.qml:111
+#, kde-format
+msgid "Color"
+msgstr "Kolorea"
+
+#: src/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Switch between light and dark colorscheme"
+msgstr "Aldatu kolore-antolaera argi eta ilunaren artean"
+
+#: src/widgets/SettingsDialog.qml:120
+#, kde-format
+msgid "Light"
+msgstr "Argia"
+
+#: src/widgets/SettingsDialog.qml:127
+#, kde-format
+msgid "Dark"
+msgstr "Iluna"
+
+#: src/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Adaptive"
+msgstr "Moldakorra"
+
+#: src/widgets/SettingsDialog.qml:159
+#, kde-format
+msgid "Translucency"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:160
+#, kde-format
+msgid ""
+"Level of translucency. Works better if there is blurred background support."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:185
+#, kde-format
+msgid "%1%"
+msgstr "%%1"
+
+#: src/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid "Terminal"
+msgstr "Terminala"
+
+#: src/widgets/SettingsDialog.qml:195
+#, kde-format
+msgid "Configure the app UI and plugins."
+msgstr "Konfiguratu aplikazioaren EI eta pluginak."
+
+#: src/widgets/SettingsDialog.qml:200
+#, fuzzy, kde-format
+#| msgid "Color Scheme"
+msgid "Adaptive Color Scheme"
+msgstr "Kolore-antolaera"
+
+#: src/widgets/SettingsDialog.qml:201
+#, kde-format
+msgid "Colors based on the current style"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:231
 #, kde-format
 msgid "Fonts"
 msgstr "Letra-tipoak"
 
-#: src/widgets/SettingsDialog.qml:138
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Configure the terminal font family and size"
 msgstr "Konfiguratu terminaleko letra-tipo familia eta neurria"
 
-#: src/widgets/SettingsDialog.qml:142
+#: src/widgets/SettingsDialog.qml:236
 #, kde-format
 msgid "Family"
 msgstr "Familia"
 
-#: src/widgets/SettingsDialog.qml:155
+#: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Size"
 msgstr "Neurria"
 
-#: src/widgets/SettingsDialog.qml:167
+#: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Line Spacing"
 msgstr "Lerroartea"
+
+#: src/widgets/Terminal.qml:58
+#, kde-format
+msgid "Follows the system color scheme."
+msgstr ""
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -333,3 +350,9 @@ msgstr "Sortu komando baten lasterbide berri bat ekintzak azkar eragiteko."
 #, kde-format
 msgid "Add"
 msgstr "Gehitu"
+
+#~ msgid "Opacity"
+#~ msgstr "Opakutasuna"
+
+#~ msgid "Background opacity"
+#~ msgstr "Atzeko planoaren opakutasuna"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-10 00:55+0000\n"
+"POT-Creation-Date: 2023-02-18 00:57+0000\n"
 "PO-Revision-Date: 2022-11-16 09:37+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -44,52 +44,52 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Desenvolupador"
 
-#: src/main.qml:99
+#: src/main.qml:104
 #, kde-format
 msgid "New tab"
 msgstr "Pestanya nova"
 
-#: src/main.qml:107 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:112 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Divideix"
 
-#: src/main.qml:117
+#: src/main.qml:122
 #, kde-format
 msgid "Tutorial"
 msgstr "Guia d'aprenentatge"
 
-#: src/main.qml:129
+#: src/main.qml:134
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
 
-#: src/main.qml:139
+#: src/main.qml:144
 #, kde-format
 msgid "About"
 msgstr "Quant a"
 
-#: src/main.qml:159
+#: src/main.qml:164
 #, kde-format
 msgid "Function Keys"
 msgstr "Tecles de funció"
 
-#: src/main.qml:168
+#: src/main.qml:173
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:177
+#: src/main.qml:182
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificadors Ctrl"
 
-#: src/main.qml:186 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:191 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navegació"
 
-#: src/main.qml:195
+#: src/main.qml:200
 #, kde-format
 msgid "Favorite"
 msgstr "Preferit"
@@ -129,100 +129,117 @@ msgstr "Elimina"
 msgid "Edit"
 msgstr "Edita"
 
-#: src/widgets/SettingsDialog.qml:14
-#, kde-format
-msgid "Interface"
-msgstr "Interfície"
-
-#: src/widgets/SettingsDialog.qml:15
-#, kde-format
-msgid "Configure the application components and behaviour."
-msgstr "Configura els components i el comportament de l'aplicació."
-
-#: src/widgets/SettingsDialog.qml:20
-#, kde-format
-msgid "Color"
-msgstr "Color"
-
-#: src/widgets/SettingsDialog.qml:21
-#, kde-format
-msgid "Switch between light and dark colorscheme"
-msgstr "Alterna entre els esquemes de color clar i fosc"
-
-#: src/widgets/SettingsDialog.qml:29
-#, kde-format
-msgid "Light"
-msgstr "Clar"
-
-#: src/widgets/SettingsDialog.qml:36
-#, kde-format
-msgid "Dark"
-msgstr "Fosc"
-
-#: src/widgets/SettingsDialog.qml:55
-#, kde-format
-msgid "Adaptive"
-msgstr "Adaptatiu"
-
-#: src/widgets/SettingsDialog.qml:68
-#, kde-format
-msgid "Opacity"
-msgstr "Opacitat"
-
-#: src/widgets/SettingsDialog.qml:69
-#, kde-format
-msgid "Background opacity"
-msgstr "Opacitat del fons"
-
-#: src/widgets/SettingsDialog.qml:95
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: src/widgets/SettingsDialog.qml:106
-#, kde-format
-msgid "Terminal"
-msgstr "Terminal"
-
-#: src/widgets/SettingsDialog.qml:107
-#, kde-format
-msgid "Configure the app UI and plugins."
-msgstr "Configura la IU de l'aplicació i els connectors."
-
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:22 src/widgets/SettingsDialog.qml:215
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquema de color"
 
-#: src/widgets/SettingsDialog.qml:112
+#: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
 #, kde-format
 msgid "Change the color scheme of the terminal"
 msgstr "Canvia l'esquema de color del terminal"
 
-#: src/widgets/SettingsDialog.qml:137
+#: src/widgets/SettingsDialog.qml:105
+#, kde-format
+msgid "Interface"
+msgstr "Interfície"
+
+#: src/widgets/SettingsDialog.qml:106
+#, kde-format
+msgid "Configure the application components and behaviour."
+msgstr "Configura els components i el comportament de l'aplicació."
+
+#: src/widgets/SettingsDialog.qml:111
+#, kde-format
+msgid "Color"
+msgstr "Color"
+
+#: src/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Switch between light and dark colorscheme"
+msgstr "Alterna entre els esquemes de color clar i fosc"
+
+#: src/widgets/SettingsDialog.qml:120
+#, kde-format
+msgid "Light"
+msgstr "Clar"
+
+#: src/widgets/SettingsDialog.qml:127
+#, kde-format
+msgid "Dark"
+msgstr "Fosc"
+
+#: src/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Adaptive"
+msgstr "Adaptatiu"
+
+#: src/widgets/SettingsDialog.qml:159
+#, kde-format
+msgid "Translucency"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:160
+#, kde-format
+msgid ""
+"Level of translucency. Works better if there is blurred background support."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:185
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: src/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid "Terminal"
+msgstr "Terminal"
+
+#: src/widgets/SettingsDialog.qml:195
+#, kde-format
+msgid "Configure the app UI and plugins."
+msgstr "Configura la IU de l'aplicació i els connectors."
+
+#: src/widgets/SettingsDialog.qml:200
+#, fuzzy, kde-format
+#| msgid "Color Scheme"
+msgid "Adaptive Color Scheme"
+msgstr "Esquema de color"
+
+#: src/widgets/SettingsDialog.qml:201
+#, kde-format
+msgid "Colors based on the current style"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:231
 #, kde-format
 msgid "Fonts"
 msgstr "Tipus de lletra"
 
-#: src/widgets/SettingsDialog.qml:138
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Configure the terminal font family and size"
 msgstr "Configura la família i la mida dels tipus de lletra del terminal"
 
-#: src/widgets/SettingsDialog.qml:142
+#: src/widgets/SettingsDialog.qml:236
 #, kde-format
 msgid "Family"
 msgstr "Família"
 
-#: src/widgets/SettingsDialog.qml:155
+#: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Size"
 msgstr "Mida"
 
-#: src/widgets/SettingsDialog.qml:167
+#: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Line Spacing"
 msgstr "Interlineat"
+
+#: src/widgets/Terminal.qml:58
+#, kde-format
+msgid "Follows the system color scheme."
+msgstr ""
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -335,3 +352,9 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afegeix"
+
+#~ msgid "Opacity"
+#~ msgstr "Opacitat"
+
+#~ msgid "Background opacity"
+#~ msgstr "Opacitat del fons"
