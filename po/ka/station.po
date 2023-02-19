@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 00:57+0000\n"
-"PO-Revision-Date: 2022-12-01 23:33+0100\n"
+"PO-Revision-Date: 2023-02-18 07:10+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -176,13 +176,14 @@ msgstr "შეგუებადი"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "გამჭვირვალობა"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
+"გამჭვირვალობის დონე. მუშაობს უკეთ, თუ ბუნდოვანი ფონის მხარდაჭერა არსებობს."
 
 #: src/widgets/SettingsDialog.qml:185
 #, kde-format
@@ -200,15 +201,14 @@ msgid "Configure the app UI and plugins."
 msgstr "მოირგეთ აპის ინტერფეისი და გაფართოებები."
 
 #: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "ფერების სქემა"
+msgstr "ადაპტიური ფერების სქემა"
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Colors based on the current style"
-msgstr ""
+msgstr "მიმდინარე სტილზე ბაზირებული ფერები"
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -238,7 +238,7 @@ msgstr "ხაზებს შუა მანძილი"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "სისტემური ფერების სქემის მიყოლა."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format

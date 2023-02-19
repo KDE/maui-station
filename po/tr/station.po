@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Emir SARI <emir_sari@icloud.com>, 2022.
+# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 00:57+0000\n"
-"PO-Revision-Date: 2022-11-16 19:21+0300\n"
+"PO-Revision-Date: 2023-02-18 11:18+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -175,13 +175,14 @@ msgstr "Uyan"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Yarısaydamlık"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
+"Yarısaydamlık düzeyi. Bulanık arka plan desteği varsa daha iyi çalışır."
 
 #: src/widgets/SettingsDialog.qml:185
 #, kde-format
@@ -199,15 +200,14 @@ msgid "Configure the app UI and plugins."
 msgstr "Uygulama arayüzünü ve eklentilerini yapılandırın."
 
 #: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Renk Şeması"
+msgstr "Uyarlanabilir Renk Şeması"
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Colors based on the current style"
-msgstr ""
+msgstr "Renkler geçerli biçem tabanlıdır"
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -237,7 +237,7 @@ msgstr "Satır Aralıklandırması"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Sistem renk şemasını izler"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format

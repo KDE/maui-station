@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 00:57+0000\n"
-"PO-Revision-Date: 2022-11-16 18:41+0200\n"
+"PO-Revision-Date: 2023-02-18 09:03+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -176,13 +176,14 @@ msgstr "Адаптивна"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Прозорість"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
+"Рівень прозорості. Працює краще, якщо передбачено підтримку розмиття тла."
 
 #: src/widgets/SettingsDialog.qml:185
 #, kde-format
@@ -200,15 +201,14 @@ msgid "Configure the app UI and plugins."
 msgstr "Налаштувати інтерфейс та додатки програми."
 
 #: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Схема кольорів"
+msgstr "Адаптивна схема кольорів"
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Colors based on the current style"
-msgstr ""
+msgstr "Кольори, які засновано на поточному стилі"
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -238,7 +238,7 @@ msgstr "Інтервал між рядками"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Використовувати загальносистемну схему кольорів."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format

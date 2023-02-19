@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2022.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 00:57+0000\n"
-"PO-Revision-Date: 2022-11-16 14:38+0100\n"
+"PO-Revision-Date: 2023-02-18 10:57+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -175,13 +175,15 @@ msgstr "Aanpasbaar"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Transparantie"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
+"Niveau van transparantie. Werkt beter als er ondersteuning is voor vervaagde "
+"achtergrond."
 
 #: src/widgets/SettingsDialog.qml:185
 #, kde-format
@@ -199,15 +201,14 @@ msgid "Configure the app UI and plugins."
 msgstr "Het gedrag en plug-ins van de UI van de toepassing configureren."
 
 #: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Kleurenschema"
+msgstr "Adaptief kleurenschema"
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Colors based on the current style"
-msgstr ""
+msgstr "Kleuren gebaseerd op de huidige stijl"
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -237,7 +238,7 @@ msgstr "Regelafstand"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Volgt het kleurenschema van het systeem"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format

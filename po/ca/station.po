@@ -1,15 +1,15 @@
 # Translation of station.po to Catalan
-# Copyright (C) 2022 This_file_is_part_of_KDE
+# Copyright (C) 2022-2023 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2022.
+# Josep M. Ferrer <txemaq@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 00:57+0000\n"
-"PO-Revision-Date: 2022-11-16 09:37+0100\n"
+"PO-Revision-Date: 2023-02-18 11:09+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -177,13 +177,14 @@ msgstr "Adaptatiu"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Translucidesa"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
+"Nivell de translucidesa. Funciona millor si hi ha suport de fons difuminat."
 
 #: src/widgets/SettingsDialog.qml:185
 #, kde-format
@@ -201,15 +202,14 @@ msgid "Configure the app UI and plugins."
 msgstr "Configura la IU de l'aplicació i els connectors."
 
 #: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Esquema de color"
+msgstr "Esquema de color adaptatiu"
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Colors based on the current style"
-msgstr ""
+msgstr "Colors basats en l'estil actual"
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -239,7 +239,7 @@ msgstr "Interlineat"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Segueix l'esquema de colors del sistema."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -352,9 +352,3 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afegeix"
-
-#~ msgid "Opacity"
-#~ msgstr "Opacitat"
-
-#~ msgid "Background opacity"
-#~ msgstr "Opacitat del fons"
