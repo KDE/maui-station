@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Matjaž Jeran <matjaz.jeran@amis.net>, 2022.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 00:57+0000\n"
-"PO-Revision-Date: 2022-11-17 10:35+0100\n"
+"PO-Revision-Date: 2023-02-19 06:43+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -176,13 +176,13 @@ msgstr "Prilagodljiva"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Prosojnost"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
-msgstr ""
+msgstr "Raven prosojnosti. Deluje bolje, če je podpora zamegljenemu ozadju."
 
 #: src/widgets/SettingsDialog.qml:185
 #, kde-format
@@ -200,15 +200,14 @@ msgid "Configure the app UI and plugins."
 msgstr "Konfiguriraj uporabniški vmesnik aplikacije in vtičnike."
 
 #: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Barvna shema"
+msgstr "Prilagodljiva barvna shema"
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Colors based on the current style"
-msgstr ""
+msgstr "Barve na osnovi trenutnega sloga"
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -238,7 +237,7 @@ msgstr "Razmik med vrsticami"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Sledi sistemski barvni shemi."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
