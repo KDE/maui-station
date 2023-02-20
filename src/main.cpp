@@ -39,7 +39,9 @@ int main(int argc, char *argv[])
     about.setBugAddress("https://invent.kde.org/maui/station/-/issues");
     about.setOrganizationDomain(STATION_URI);
     about.setProgramLogo(app.windowIcon());
-    about.addComponent("QMLTermWidget");
+
+    about.addCredit("QMLTermWidget");
+    about.addCredit("Cutefish Terminal");
 
     KAboutData::setApplicationData(about);
 

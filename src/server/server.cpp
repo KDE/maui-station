@@ -69,7 +69,7 @@ bool AppInstance::attachToExistingInstance(const QList<QUrl>& inputUrls, bool sp
     if(inputUrls.isEmpty())
     {
         auto interface = dolphinInterfaces.first();
-        auto reply = interface.first->openNewTab(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
+        auto reply = interface.first->openNewTab("$PWD");
         reply.waitForFinished();
 
         if (!reply.isError())
