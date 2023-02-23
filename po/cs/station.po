@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 00:57+0000\n"
-"PO-Revision-Date: 2023-01-24 15:41+0100\n"
+"PO-Revision-Date: 2023-02-22 14:09+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -175,7 +175,7 @@ msgstr "Adaptivní"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Průhlednost"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
@@ -199,15 +199,14 @@ msgid "Configure the app UI and plugins."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Barevné schéma"
+msgstr "Adaptivní barevné schéma"
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Colors based on the current style"
-msgstr ""
+msgstr "Barvy založené na současném stylu"
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -237,7 +236,7 @@ msgstr "Rozestupy řádků"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Následuje barevné schéma systému."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -344,9 +343,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "Opacity"
-#~ msgstr "Krytí"
-
-#~ msgid "Background opacity"
-#~ msgstr "Krytí pozadí"
