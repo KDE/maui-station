@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-18 00:57+0000\n"
-"PO-Revision-Date: 2023-02-09 02:30+0900\n"
+"PO-Revision-Date: 2023-02-24 23:21+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.03.70\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -75,7 +75,7 @@ msgstr "功能鍵"
 #: src/main.qml:173
 #, kde-format
 msgid "Nano"
-msgstr ""
+msgstr "Nano"
 
 #: src/main.qml:182
 #, kde-format
@@ -175,13 +175,13 @@ msgstr "自動調整"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "半透明"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
-msgstr ""
+msgstr "半透明程度。支援背景模糊時效果較好。"
 
 #: src/widgets/SettingsDialog.qml:185
 #, kde-format
@@ -199,15 +199,14 @@ msgid "Configure the app UI and plugins."
 msgstr "設定應用程式介面與外掛。"
 
 #: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "配色方案"
+msgstr "自動調整配色方案"
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Colors based on the current style"
-msgstr ""
+msgstr "基於目前風格的色彩"
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -237,7 +236,7 @@ msgstr "行間距"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "跟隨系統配色。"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
