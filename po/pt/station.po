@@ -176,7 +176,7 @@ msgstr "Adaptativo"
 #: src/widgets/SettingsDialog.qml:159
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Translucidez"
 
 #: src/widgets/SettingsDialog.qml:160
 #, kde-format
