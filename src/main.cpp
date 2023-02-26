@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
     about.setProgramLogo(app.windowIcon());
 
     about.addCredit("QMLTermWidget");
+    about.addCredit("UBPorts Terminal");
     about.addCredit("Cutefish Terminal");
 
     KAboutData::setApplicationData(about);

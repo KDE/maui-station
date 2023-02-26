@@ -20,7 +20,7 @@ Maui.SettingsDialog
             Maui.SectionItem
             {
                 label1.text: i18n("Color Scheme")
-                label2.text: i18n("Change the color scheme of the terminal")
+                label2.text: i18n("Change the color scheme of the terminal.")
                 enabled: !settings.adaptiveColorScheme
 
                 GridLayout
@@ -109,7 +109,7 @@ Maui.SettingsDialog
         Maui.SectionItem
         {
             label1.text: i18n("Color")
-            label2.text: i18n("Switch between light and dark colorscheme")
+            label2.text: i18n("Switch between light and dark colorscheme.")
 
             Maui.ToolActions
             {
@@ -129,17 +129,6 @@ Maui.SettingsDialog
                     checked: settings.colorStyle === Maui.Style.Dark
                 }
 
-                //                Action
-                //                {
-                //                    text: i18n("System")
-                //                    onTriggered:
-                //                    {
-                //                        Maui.Style.styleType = undefined
-                //                        settings.colorStyle = Maui.Style.styleType
-                //                    }
-
-                //                    checked: Maui.Style.styleType === 'undefined'
-                //                }
 
                 Action
                 {
@@ -150,7 +139,18 @@ Maui.SettingsDialog
                     }
 
                     checked: settings.colorStyle === Maui.Style.Adaptive
-                }
+                }/*
+
+                Action
+                {
+                    text: i18n("System")
+                    onTriggered:
+                    {
+                        settings.colorStyle = undefined
+                    }
+
+                    checked: Maui.Style.styleType === 'undefined'
+                }*/
             }
         }
 
@@ -198,7 +198,7 @@ Maui.SettingsDialog
         Maui.SectionItem
         {
             label1.text: i18n("Adaptive Color Scheme")
-            label2.text: i18n("Colors based on the current style")
+            label2.text: i18n("Colors based on the current style.")
 
             Switch
             {
@@ -213,23 +213,23 @@ Maui.SettingsDialog
         Maui.SectionItem
         {
             label1.text: i18n("Color Scheme")
-            label2.text: i18n("Change the color scheme of the terminal")
+            label2.text: i18n("Change the color scheme of the terminal.")
             enabled: !settings.adaptiveColorScheme
-//onClicked: control.addPage(_csPageComponent)
+            //onClicked: control.addPage(_csPageComponent)
 
-ToolButton
-{
-    checkable: true
-    icon.name: "go-next"
-    onToggled: control.addPage(_csPageComponent)
-}
+            ToolButton
+            {
+                checkable: true
+                icon.name: "go-next"
+                onToggled: control.addPage(_csPageComponent)
+            }
         }
     }
 
     Maui.SectionGroup
     {
         title: i18n("Fonts")
-        description: i18n("Configure the terminal font family and size")
+        description: i18n("Configure the terminal font family and size.")
 
         Maui.SectionItem
         {
