@@ -15,8 +15,9 @@ Maui.SettingsDialog
     {
         id:_csPageComponent
 
-        Maui.ScrollColumn
+        Maui.SettingsPage
         {
+             title: i18n("Color Scheme")
             Maui.SectionItem
             {
                 label1.text: i18n("Color Scheme")
