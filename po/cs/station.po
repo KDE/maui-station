@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 00:57+0000\n"
+"POT-Creation-Date: 2023-02-27 00:59+0000\n"
 "PO-Revision-Date: 2023-02-22 14:09+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -42,9 +42,9 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Vývojář"
 
-#: src/main.qml:104
+#: src/main.qml:104 src/widgets/TutorialDialog.qml:49
 #, kde-format
-msgid "New tab"
+msgid "New Tab"
 msgstr "Nová karta"
 
 #: src/main.qml:112 src/widgets/TutorialDialog.qml:23
@@ -134,7 +134,7 @@ msgstr "Barevné schéma"
 
 #: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
 #, kde-format
-msgid "Change the color scheme of the terminal"
+msgid "Change the color scheme of the terminal."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:105
@@ -153,8 +153,9 @@ msgid "Color"
 msgstr "Barva"
 
 #: src/widgets/SettingsDialog.qml:112
-#, kde-format
-msgid "Switch between light and dark colorscheme"
+#, fuzzy, kde-format
+#| msgid "Switch between light and dark colorscheme"
+msgid "Switch between light and dark colorscheme."
 msgstr "Přepínač mezi světlým a tmavým barevným schématem"
 
 #: src/widgets/SettingsDialog.qml:120
@@ -167,7 +168,7 @@ msgstr "Světlé"
 msgid "Dark"
 msgstr "Tmavé"
 
-#: src/widgets/SettingsDialog.qml:146
+#: src/widgets/SettingsDialog.qml:135
 #, kde-format
 msgid "Adaptive"
 msgstr "Adaptivní"
@@ -204,8 +205,9 @@ msgid "Adaptive Color Scheme"
 msgstr "Adaptivní barevné schéma"
 
 #: src/widgets/SettingsDialog.qml:201
-#, kde-format
-msgid "Colors based on the current style"
+#, fuzzy, kde-format
+#| msgid "Colors based on the current style"
+msgid "Colors based on the current style."
 msgstr "Barvy založené na současném stylu"
 
 #: src/widgets/SettingsDialog.qml:231
@@ -215,7 +217,7 @@ msgstr "Písma"
 
 #: src/widgets/SettingsDialog.qml:232
 #, kde-format
-msgid "Configure the terminal font family and size"
+msgid "Configure the terminal font family and size."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:236
@@ -263,11 +265,6 @@ msgstr ""
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
 msgstr ""
-
-#: src/widgets/TutorialDialog.qml:49
-#, kde-format
-msgid "New Tab"
-msgstr "Nová karta"
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
@@ -343,3 +340,6 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
+
+#~ msgid "New tab"
+#~ msgstr "Nová karta"

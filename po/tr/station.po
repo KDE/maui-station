@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 00:57+0000\n"
+"POT-Creation-Date: 2023-02-27 00:59+0000\n"
 "PO-Revision-Date: 2023-02-18 11:18+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -42,9 +42,9 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Geliştirici"
 
-#: src/main.qml:104
+#: src/main.qml:104 src/widgets/TutorialDialog.qml:49
 #, kde-format
-msgid "New tab"
+msgid "New Tab"
 msgstr "Yeni Sekme"
 
 #: src/main.qml:112 src/widgets/TutorialDialog.qml:23
@@ -133,8 +133,9 @@ msgid "Color Scheme"
 msgstr "Renk Şeması"
 
 #: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
-#, kde-format
-msgid "Change the color scheme of the terminal"
+#, fuzzy, kde-format
+#| msgid "Change the color scheme of the terminal"
+msgid "Change the color scheme of the terminal."
 msgstr "Uçbirimin renk şemasını değiştirin"
 
 #: src/widgets/SettingsDialog.qml:105
@@ -153,8 +154,9 @@ msgid "Color"
 msgstr "Renk"
 
 #: src/widgets/SettingsDialog.qml:112
-#, kde-format
-msgid "Switch between light and dark colorscheme"
+#, fuzzy, kde-format
+#| msgid "Switch between light and dark colorscheme"
+msgid "Switch between light and dark colorscheme."
 msgstr "Açık ve koyu renk şemaları arasında geçiş yapın"
 
 #: src/widgets/SettingsDialog.qml:120
@@ -167,7 +169,7 @@ msgstr "Açık"
 msgid "Dark"
 msgstr "Koyu"
 
-#: src/widgets/SettingsDialog.qml:146
+#: src/widgets/SettingsDialog.qml:135
 #, kde-format
 msgid "Adaptive"
 msgstr "Uyan"
@@ -205,8 +207,9 @@ msgid "Adaptive Color Scheme"
 msgstr "Uyarlanabilir Renk Şeması"
 
 #: src/widgets/SettingsDialog.qml:201
-#, kde-format
-msgid "Colors based on the current style"
+#, fuzzy, kde-format
+#| msgid "Colors based on the current style"
+msgid "Colors based on the current style."
 msgstr "Renkler geçerli biçem tabanlıdır"
 
 #: src/widgets/SettingsDialog.qml:231
@@ -215,8 +218,9 @@ msgid "Fonts"
 msgstr "Yazıtipleri"
 
 #: src/widgets/SettingsDialog.qml:232
-#, kde-format
-msgid "Configure the terminal font family and size"
+#, fuzzy, kde-format
+#| msgid "Configure the terminal font family and size"
+msgid "Configure the terminal font family and size."
 msgstr "Uçbirim yazıtipi ailesini ve boyutunu yapılandırın"
 
 #: src/widgets/SettingsDialog.qml:236
@@ -264,11 +268,6 @@ msgstr "Klavye kullanırken, aşağıdaki kısayolları kullanarak dolaşabilirs
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
 msgstr "Yatay veya dikey olarak yeni bir bölünmüş görünüm açın."
-
-#: src/widgets/TutorialDialog.qml:49
-#, kde-format
-msgid "New Tab"
-msgstr "Yeni Sekme"
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
@@ -345,6 +344,9 @@ msgstr "Eylemleri tez tetiklemek için yeni bir komut kısayolu oluşturun."
 #, kde-format
 msgid "Add"
 msgstr "Ekle"
+
+#~ msgid "New tab"
+#~ msgstr "Yeni Sekme"
 
 #~ msgid "Opacity"
 #~ msgstr "Matlık"

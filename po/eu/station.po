@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 00:57+0000\n"
+"POT-Creation-Date: 2023-02-27 00:59+0000\n"
 "PO-Revision-Date: 2023-02-23 21:26+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -45,9 +45,9 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Garatzailea"
 
-#: src/main.qml:104
+#: src/main.qml:104 src/widgets/TutorialDialog.qml:49
 #, kde-format
-msgid "New tab"
+msgid "New Tab"
 msgstr "Fitxa berria"
 
 #: src/main.qml:112 src/widgets/TutorialDialog.qml:23
@@ -136,8 +136,9 @@ msgid "Color Scheme"
 msgstr "Kolore-antolaera"
 
 #: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
-#, kde-format
-msgid "Change the color scheme of the terminal"
+#, fuzzy, kde-format
+#| msgid "Change the color scheme of the terminal"
+msgid "Change the color scheme of the terminal."
 msgstr "Aldatu terminalaren kolore-antolaera"
 
 #: src/widgets/SettingsDialog.qml:105
@@ -156,8 +157,9 @@ msgid "Color"
 msgstr "Kolorea"
 
 #: src/widgets/SettingsDialog.qml:112
-#, kde-format
-msgid "Switch between light and dark colorscheme"
+#, fuzzy, kde-format
+#| msgid "Switch between light and dark colorscheme"
+msgid "Switch between light and dark colorscheme."
 msgstr "Aldatu kolore-antolaera argi eta ilunaren artean"
 
 #: src/widgets/SettingsDialog.qml:120
@@ -170,7 +172,7 @@ msgstr "Argia"
 msgid "Dark"
 msgstr "Iluna"
 
-#: src/widgets/SettingsDialog.qml:146
+#: src/widgets/SettingsDialog.qml:135
 #, kde-format
 msgid "Adaptive"
 msgstr "Moldakorra"
@@ -209,8 +211,9 @@ msgid "Adaptive Color Scheme"
 msgstr "Kolore-antolaera moldakorra"
 
 #: src/widgets/SettingsDialog.qml:201
-#, kde-format
-msgid "Colors based on the current style"
+#, fuzzy, kde-format
+#| msgid "Colors based on the current style"
+msgid "Colors based on the current style."
 msgstr "Uneko estiloan oinarritutako koloreak"
 
 #: src/widgets/SettingsDialog.qml:231
@@ -219,8 +222,9 @@ msgid "Fonts"
 msgstr "Letra-tipoak"
 
 #: src/widgets/SettingsDialog.qml:232
-#, kde-format
-msgid "Configure the terminal font family and size"
+#, fuzzy, kde-format
+#| msgid "Configure the terminal font family and size"
+msgid "Configure the terminal font family and size."
 msgstr "Konfiguratu terminaleko letra-tipo familia eta neurria"
 
 #: src/widgets/SettingsDialog.qml:236
@@ -269,11 +273,6 @@ msgstr ""
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
 msgstr "Ireki ikuspegi zatitu berri bat, bertikalean edo horizontalean."
-
-#: src/widgets/TutorialDialog.qml:49
-#, kde-format
-msgid "New Tab"
-msgstr "Fitxa berria"
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
@@ -351,6 +350,9 @@ msgstr "Sortu komando baten lasterbide berri bat ekintzak azkar eragiteko."
 #, kde-format
 msgid "Add"
 msgstr "Gehitu"
+
+#~ msgid "New tab"
+#~ msgstr "Fitxa berria"
 
 #~ msgid "Opacity"
 #~ msgstr "Opakutasuna"

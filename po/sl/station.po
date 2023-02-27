@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 00:57+0000\n"
+"POT-Creation-Date: 2023-02-27 00:59+0000\n"
 "PO-Revision-Date: 2023-02-19 06:43+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -43,10 +43,10 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Razvojnik"
 
-#: src/main.qml:104
+#: src/main.qml:104 src/widgets/TutorialDialog.qml:49
 #, kde-format
-msgid "New tab"
-msgstr "Nov zavihek"
+msgid "New Tab"
+msgstr "Novi zavihek"
 
 #: src/main.qml:112 src/widgets/TutorialDialog.qml:23
 #, kde-format
@@ -134,8 +134,9 @@ msgid "Color Scheme"
 msgstr "Barvna shema"
 
 #: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
-#, kde-format
-msgid "Change the color scheme of the terminal"
+#, fuzzy, kde-format
+#| msgid "Change the color scheme of the terminal"
+msgid "Change the color scheme of the terminal."
 msgstr "Spremeni barvno shemo terminala"
 
 #: src/widgets/SettingsDialog.qml:105
@@ -154,8 +155,9 @@ msgid "Color"
 msgstr "Barva"
 
 #: src/widgets/SettingsDialog.qml:112
-#, kde-format
-msgid "Switch between light and dark colorscheme"
+#, fuzzy, kde-format
+#| msgid "Switch between light and dark colorscheme"
+msgid "Switch between light and dark colorscheme."
 msgstr "Preklopi med svetlo in temno barvno shemo"
 
 #: src/widgets/SettingsDialog.qml:120
@@ -168,7 +170,7 @@ msgstr "Svetla"
 msgid "Dark"
 msgstr "Temna"
 
-#: src/widgets/SettingsDialog.qml:146
+#: src/widgets/SettingsDialog.qml:135
 #, kde-format
 msgid "Adaptive"
 msgstr "Prilagodljiva"
@@ -205,8 +207,9 @@ msgid "Adaptive Color Scheme"
 msgstr "Prilagodljiva barvna shema"
 
 #: src/widgets/SettingsDialog.qml:201
-#, kde-format
-msgid "Colors based on the current style"
+#, fuzzy, kde-format
+#| msgid "Colors based on the current style"
+msgid "Colors based on the current style."
 msgstr "Barve na osnovi trenutnega sloga"
 
 #: src/widgets/SettingsDialog.qml:231
@@ -215,8 +218,9 @@ msgid "Fonts"
 msgstr "Pisave"
 
 #: src/widgets/SettingsDialog.qml:232
-#, kde-format
-msgid "Configure the terminal font family and size"
+#, fuzzy, kde-format
+#| msgid "Configure the terminal font family and size"
+msgid "Configure the terminal font family and size."
 msgstr "Konfiguriraj družino pisav za terminal in velikost"
 
 #: src/widgets/SettingsDialog.qml:236
@@ -265,11 +269,6 @@ msgstr ""
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
 msgstr "Odpri razcepljeni pogled, navpično ali vodoravno."
-
-#: src/widgets/TutorialDialog.qml:49
-#, kde-format
-msgid "New Tab"
-msgstr "Novi zavihek"
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
@@ -347,6 +346,9 @@ msgstr "Ustvari novo bližnjico ukaza za hitro proženje dejavnosti."
 #, kde-format
 msgid "Add"
 msgstr "Dodaj"
+
+#~ msgid "New tab"
+#~ msgstr "Nov zavihek"
 
 #~ msgid "Opacity"
 #~ msgstr "Neprosojnost"

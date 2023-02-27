@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 00:57+0000\n"
+"POT-Creation-Date: 2023-02-27 00:59+0000\n"
 "PO-Revision-Date: 2022-11-11 10:24+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -42,9 +42,9 @@ msgstr ""
 msgid "Developer"
 msgstr ""
 
-#: src/main.qml:104
+#: src/main.qml:104 src/widgets/TutorialDialog.qml:49
 #, kde-format
-msgid "New tab"
+msgid "New Tab"
 msgstr ""
 
 #: src/main.qml:112 src/widgets/TutorialDialog.qml:23
@@ -134,7 +134,7 @@ msgstr ""
 
 #: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
 #, kde-format
-msgid "Change the color scheme of the terminal"
+msgid "Change the color scheme of the terminal."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:105
@@ -154,7 +154,7 @@ msgstr ""
 
 #: src/widgets/SettingsDialog.qml:112
 #, kde-format
-msgid "Switch between light and dark colorscheme"
+msgid "Switch between light and dark colorscheme."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:120
@@ -167,7 +167,7 @@ msgstr ""
 msgid "Dark"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:146
+#: src/widgets/SettingsDialog.qml:135
 #, kde-format
 msgid "Adaptive"
 msgstr ""
@@ -205,7 +205,7 @@ msgstr ""
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
-msgid "Colors based on the current style"
+msgid "Colors based on the current style."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:231
@@ -215,7 +215,7 @@ msgstr ""
 
 #: src/widgets/SettingsDialog.qml:232
 #, kde-format
-msgid "Configure the terminal font family and size"
+msgid "Configure the terminal font family and size."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:236
@@ -262,11 +262,6 @@ msgstr ""
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr ""
-
-#: src/widgets/TutorialDialog.qml:49
-#, kde-format
-msgid "New Tab"
 msgstr ""
 
 #: src/widgets/TutorialDialog.qml:69

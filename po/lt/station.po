@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-18 00:57+0000\n"
+"POT-Creation-Date: 2023-02-27 00:59+0000\n"
 "PO-Revision-Date: 2023-02-18 00:57+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"Language: \n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -43,9 +43,9 @@ msgstr ""
 msgid "Developer"
 msgstr ""
 
-#: src/main.qml:104
+#: src/main.qml:104 src/widgets/TutorialDialog.qml:49
 #, kde-format
-msgid "New tab"
+msgid "New Tab"
 msgstr ""
 
 #: src/main.qml:112 src/widgets/TutorialDialog.qml:23
@@ -135,7 +135,7 @@ msgstr ""
 
 #: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
 #, kde-format
-msgid "Change the color scheme of the terminal"
+msgid "Change the color scheme of the terminal."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:105
@@ -155,7 +155,7 @@ msgstr ""
 
 #: src/widgets/SettingsDialog.qml:112
 #, kde-format
-msgid "Switch between light and dark colorscheme"
+msgid "Switch between light and dark colorscheme."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:120
@@ -168,7 +168,7 @@ msgstr ""
 msgid "Dark"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:146
+#: src/widgets/SettingsDialog.qml:135
 #, kde-format
 msgid "Adaptive"
 msgstr ""
@@ -206,7 +206,7 @@ msgstr ""
 
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
-msgid "Colors based on the current style"
+msgid "Colors based on the current style."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:231
@@ -216,7 +216,7 @@ msgstr ""
 
 #: src/widgets/SettingsDialog.qml:232
 #, kde-format
-msgid "Configure the terminal font family and size"
+msgid "Configure the terminal font family and size."
 msgstr ""
 
 #: src/widgets/SettingsDialog.qml:236
@@ -263,11 +263,6 @@ msgstr ""
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr ""
-
-#: src/widgets/TutorialDialog.qml:49
-#, kde-format
-msgid "New Tab"
 msgstr ""
 
 #: src/widgets/TutorialDialog.qml:69
