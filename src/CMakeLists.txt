@@ -39,6 +39,8 @@ target_link_libraries(${PROJECT_NAME}
     Qt5::Qml
     Qt5::DBus
     KF5::I18n
+    KF5::ConfigCore
+    KF5::ConfigGui
     KF5::CoreAddons)
 
 install(TARGETS ${PROJECT_NAME} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
