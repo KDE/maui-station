@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-27 00:59+0000\n"
-"PO-Revision-Date: 2023-02-18 07:10+0100\n"
+"POT-Creation-Date: 2023-02-28 00:57+0000\n"
+"PO-Revision-Date: 2023-02-27 06:33+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -128,113 +128,110 @@ msgstr "წაშლა"
 msgid "Edit"
 msgstr "ჩასწორება"
 
-#: src/widgets/SettingsDialog.qml:22 src/widgets/SettingsDialog.qml:215
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
+#: src/widgets/SettingsDialog.qml:216
 #, kde-format
 msgid "Color Scheme"
 msgstr "ფერების სქემა"
 
-#: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
-#, fuzzy, kde-format
-#| msgid "Change the color scheme of the terminal"
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
+#, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "ტერმინალის ფერის სქემის შეცვლა"
+msgstr "ტერმინალის ფერის სქემის შეცვლა."
 
-#: src/widgets/SettingsDialog.qml:105
+#: src/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "Interface"
 msgstr "ინტერფეისი"
 
-#: src/widgets/SettingsDialog.qml:106
+#: src/widgets/SettingsDialog.qml:107
 #, kde-format
 msgid "Configure the application components and behaviour."
 msgstr "მოირგეთ აპლიკაციის კომპონენტები და ქცევა."
 
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Color"
 msgstr "ფერი"
 
-#: src/widgets/SettingsDialog.qml:112
-#, fuzzy, kde-format
-#| msgid "Switch between light and dark colorscheme"
+#: src/widgets/SettingsDialog.qml:113
+#, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "ღია და მუქ ფერებს შორის გადართვა"
+msgstr "ღია და მუქ ფერებს შორის გადართვა."
 
-#: src/widgets/SettingsDialog.qml:120
+#: src/widgets/SettingsDialog.qml:121
 #, kde-format
 msgid "Light"
 msgstr "ღია"
 
-#: src/widgets/SettingsDialog.qml:127
+#: src/widgets/SettingsDialog.qml:128
 #, kde-format
 msgid "Dark"
 msgstr "ბნელი"
 
-#: src/widgets/SettingsDialog.qml:135
+#: src/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Adaptive"
 msgstr "შეგუებადი"
 
-#: src/widgets/SettingsDialog.qml:159
+#: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid "Translucency"
 msgstr "გამჭვირვალობა"
 
-#: src/widgets/SettingsDialog.qml:160
+#: src/widgets/SettingsDialog.qml:161
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
 "გამჭვირვალობის დონე. მუშაობს უკეთ, თუ ბუნდოვანი ფონის მხარდაჭერა არსებობს."
 
-#: src/widgets/SettingsDialog.qml:185
+#: src/widgets/SettingsDialog.qml:186
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:194
+#: src/widgets/SettingsDialog.qml:195
 #, kde-format
 msgid "Terminal"
 msgstr "ტერმინალი"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:196
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "მოირგეთ აპის ინტერფეისი და გაფართოებები."
 
-#: src/widgets/SettingsDialog.qml:200
+#: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "ადაპტიური ფერების სქემა"
 
-#: src/widgets/SettingsDialog.qml:201
-#, fuzzy, kde-format
-#| msgid "Colors based on the current style"
+#: src/widgets/SettingsDialog.qml:202
+#, kde-format
 msgid "Colors based on the current style."
-msgstr "მიმდინარე სტილზე ბაზირებული ფერები"
+msgstr "მიმდინარე სტილზე ბაზირებული ფერები."
 
-#: src/widgets/SettingsDialog.qml:231
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Fonts"
 msgstr "ფონტები"
 
-#: src/widgets/SettingsDialog.qml:232
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size"
+#: src/widgets/SettingsDialog.qml:233
+#, kde-format
 msgid "Configure the terminal font family and size."
-msgstr "ფონტის ოჯახისა და ზომის მორგება"
+msgstr "ფონტის ოჯახისა და ზომის მორგება."
 
-#: src/widgets/SettingsDialog.qml:236
+#: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Family"
 msgstr "ოჯახი"
 
-#: src/widgets/SettingsDialog.qml:249
+#: src/widgets/SettingsDialog.qml:250
 #, kde-format
 msgid "Size"
 msgstr "ზომა"
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Line Spacing"
 msgstr "ხაზებს შუა მანძილი"

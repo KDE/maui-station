@@ -1,15 +1,15 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Steve Allewell <steve.allewell@gmail.com>, 2022.
+# Steve Allewell <steve.allewell@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-27 00:59+0000\n"
-"PO-Revision-Date: 2022-12-31 16:44+0000\n"
+"POT-Creation-Date: 2023-02-28 00:57+0000\n"
+"PO-Revision-Date: 2023-02-27 19:46+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
-"Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
+"Language-Team: English <kde-l10n-en_gb@kde.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -127,112 +127,110 @@ msgstr "Remove"
 msgid "Edit"
 msgstr "Edit"
 
-#: src/widgets/SettingsDialog.qml:22 src/widgets/SettingsDialog.qml:215
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
+#: src/widgets/SettingsDialog.qml:216
 #, kde-format
 msgid "Color Scheme"
 msgstr "Colour Scheme"
 
-#: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
-#, fuzzy, kde-format
-#| msgid "Change the color scheme of the terminal"
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
+#, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "Change the colour scheme of the terminal"
+msgstr "Change the colour scheme of the terminal."
 
-#: src/widgets/SettingsDialog.qml:105
+#: src/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "Interface"
 msgstr "Interface"
 
-#: src/widgets/SettingsDialog.qml:106
+#: src/widgets/SettingsDialog.qml:107
 #, kde-format
 msgid "Configure the application components and behaviour."
 msgstr "Configure the application components and behaviour."
 
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Color"
 msgstr "Colour"
 
-#: src/widgets/SettingsDialog.qml:112
-#, fuzzy, kde-format
-#| msgid "Switch between light and dark colorscheme"
+#: src/widgets/SettingsDialog.qml:113
+#, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "Switch between light and dark colour schemes"
+msgstr "Switch between light and dark colour scheme."
 
-#: src/widgets/SettingsDialog.qml:120
+#: src/widgets/SettingsDialog.qml:121
 #, kde-format
 msgid "Light"
 msgstr "Light"
 
-#: src/widgets/SettingsDialog.qml:127
+#: src/widgets/SettingsDialog.qml:128
 #, kde-format
 msgid "Dark"
 msgstr "Dark"
 
-#: src/widgets/SettingsDialog.qml:135
+#: src/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Adaptive"
 msgstr "Adaptive"
 
-#: src/widgets/SettingsDialog.qml:159
+#: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Translucency"
 
-#: src/widgets/SettingsDialog.qml:160
+#: src/widgets/SettingsDialog.qml:161
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
+"Level of translucency. Works better if there is blurred background support."
 
-#: src/widgets/SettingsDialog.qml:185
+#: src/widgets/SettingsDialog.qml:186
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:194
+#: src/widgets/SettingsDialog.qml:195
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:196
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Configure the app UI and plugins."
 
-#: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
-msgid "Adaptive Color Scheme"
-msgstr "Colour Scheme"
-
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
-msgid "Colors based on the current style."
-msgstr ""
+msgid "Adaptive Color Scheme"
+msgstr "Adaptive Colour Scheme"
 
-#: src/widgets/SettingsDialog.qml:231
+#: src/widgets/SettingsDialog.qml:202
+#, kde-format
+msgid "Colors based on the current style."
+msgstr "Colours based on the current style."
+
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Fonts"
 msgstr "Fonts"
 
-#: src/widgets/SettingsDialog.qml:232
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size"
+#: src/widgets/SettingsDialog.qml:233
+#, kde-format
 msgid "Configure the terminal font family and size."
-msgstr "Configure the terminal font family and size"
+msgstr "Configure the terminal font family and size."
 
-#: src/widgets/SettingsDialog.qml:236
+#: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Family"
 msgstr "Family"
 
-#: src/widgets/SettingsDialog.qml:249
+#: src/widgets/SettingsDialog.qml:250
 #, kde-format
 msgid "Size"
 msgstr "Size"
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Line Spacing"
 msgstr "Line Spacing"
@@ -240,7 +238,7 @@ msgstr "Line Spacing"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Follows the system colour scheme."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format

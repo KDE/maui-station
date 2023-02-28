@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-27 00:59+0000\n"
-"PO-Revision-Date: 2023-02-19 06:43+0100\n"
+"POT-Creation-Date: 2023-02-28 00:57+0000\n"
+"PO-Revision-Date: 2023-02-27 08:55+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -128,112 +128,109 @@ msgstr "Odstrani"
 msgid "Edit"
 msgstr "Uredi"
 
-#: src/widgets/SettingsDialog.qml:22 src/widgets/SettingsDialog.qml:215
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
+#: src/widgets/SettingsDialog.qml:216
 #, kde-format
 msgid "Color Scheme"
 msgstr "Barvna shema"
 
-#: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
-#, fuzzy, kde-format
-#| msgid "Change the color scheme of the terminal"
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
+#, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "Spremeni barvno shemo terminala"
+msgstr "Spremeni barvno shemo terminala."
 
-#: src/widgets/SettingsDialog.qml:105
+#: src/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "Interface"
 msgstr "Vmesnik"
 
-#: src/widgets/SettingsDialog.qml:106
+#: src/widgets/SettingsDialog.qml:107
 #, kde-format
 msgid "Configure the application components and behaviour."
 msgstr "Konfiguriraj komponente aplikacije in obnašanje."
 
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Color"
 msgstr "Barva"
 
-#: src/widgets/SettingsDialog.qml:112
-#, fuzzy, kde-format
-#| msgid "Switch between light and dark colorscheme"
+#: src/widgets/SettingsDialog.qml:113
+#, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "Preklopi med svetlo in temno barvno shemo"
+msgstr "Preklopi med svetlo in temno barvno shemo."
 
-#: src/widgets/SettingsDialog.qml:120
+#: src/widgets/SettingsDialog.qml:121
 #, kde-format
 msgid "Light"
 msgstr "Svetla"
 
-#: src/widgets/SettingsDialog.qml:127
+#: src/widgets/SettingsDialog.qml:128
 #, kde-format
 msgid "Dark"
 msgstr "Temna"
 
-#: src/widgets/SettingsDialog.qml:135
+#: src/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Adaptive"
 msgstr "Prilagodljiva"
 
-#: src/widgets/SettingsDialog.qml:159
+#: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid "Translucency"
 msgstr "Prosojnost"
 
-#: src/widgets/SettingsDialog.qml:160
+#: src/widgets/SettingsDialog.qml:161
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr "Raven prosojnosti. Deluje bolje, če je podpora zamegljenemu ozadju."
 
-#: src/widgets/SettingsDialog.qml:185
+#: src/widgets/SettingsDialog.qml:186
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:194
+#: src/widgets/SettingsDialog.qml:195
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:196
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Konfiguriraj uporabniški vmesnik aplikacije in vtičnike."
 
-#: src/widgets/SettingsDialog.qml:200
+#: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Prilagodljiva barvna shema"
 
-#: src/widgets/SettingsDialog.qml:201
-#, fuzzy, kde-format
-#| msgid "Colors based on the current style"
+#: src/widgets/SettingsDialog.qml:202
+#, kde-format
 msgid "Colors based on the current style."
-msgstr "Barve na osnovi trenutnega sloga"
+msgstr "Barve na osnovi trenutnega sloga."
 
-#: src/widgets/SettingsDialog.qml:231
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Fonts"
 msgstr "Pisave"
 
-#: src/widgets/SettingsDialog.qml:232
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size"
+#: src/widgets/SettingsDialog.qml:233
+#, kde-format
 msgid "Configure the terminal font family and size."
-msgstr "Konfiguriraj družino pisav za terminal in velikost"
+msgstr "Konfiguriraj družino pisav za terminal in velikost."
 
-#: src/widgets/SettingsDialog.qml:236
+#: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Family"
 msgstr "Družina"
 
-#: src/widgets/SettingsDialog.qml:249
+#: src/widgets/SettingsDialog.qml:250
 #, kde-format
 msgid "Size"
 msgstr "Velikost"
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Line Spacing"
 msgstr "Razmik med vrsticami"

@@ -1,13 +1,14 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Víctor Rodrigo Córdoba <vrcordoba@gmail.com>, 2022.
+# Víctor Rodrigo Córdoba <vrcordoba@gmail.com>, 2022, 2023, %Y.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-27 00:59+0000\n"
-"PO-Revision-Date: 2022-11-20 10:00+0100\n"
+"POT-Creation-Date: 2023-02-28 00:57+0000\n"
+"PO-Revision-Date: 2023-02-27 18:56+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -127,112 +128,110 @@ msgstr "Eliminar"
 msgid "Edit"
 msgstr "Editar"
 
-#: src/widgets/SettingsDialog.qml:22 src/widgets/SettingsDialog.qml:215
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
+#: src/widgets/SettingsDialog.qml:216
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquema de colores"
 
-#: src/widgets/SettingsDialog.qml:23 src/widgets/SettingsDialog.qml:216
-#, fuzzy, kde-format
-#| msgid "Change the color scheme of the terminal"
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
+#, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "Cambiar el esquema de colores de la terminal"
+msgstr "Cambiar el esquema de colores de la terminal."
 
-#: src/widgets/SettingsDialog.qml:105
+#: src/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "Interface"
 msgstr "Interfaz"
 
-#: src/widgets/SettingsDialog.qml:106
+#: src/widgets/SettingsDialog.qml:107
 #, kde-format
 msgid "Configure the application components and behaviour."
 msgstr "Configurar los componentes de la aplicación y el comportamiento."
 
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Color"
 msgstr "Color"
 
-#: src/widgets/SettingsDialog.qml:112
-#, fuzzy, kde-format
-#| msgid "Switch between light and dark colorscheme"
+#: src/widgets/SettingsDialog.qml:113
+#, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "Cambiar entre esquema de color oscuro y claro"
+msgstr "Cambiar entre esquema de color oscuro y claro."
 
-#: src/widgets/SettingsDialog.qml:120
+#: src/widgets/SettingsDialog.qml:121
 #, kde-format
 msgid "Light"
 msgstr "Claro"
 
-#: src/widgets/SettingsDialog.qml:127
+#: src/widgets/SettingsDialog.qml:128
 #, kde-format
 msgid "Dark"
 msgstr "Oscuro"
 
-#: src/widgets/SettingsDialog.qml:135
+#: src/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Adaptive"
 msgstr "Adaptativo"
 
-#: src/widgets/SettingsDialog.qml:159
+#: src/widgets/SettingsDialog.qml:160
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Transparencia"
 
-#: src/widgets/SettingsDialog.qml:160
+#: src/widgets/SettingsDialog.qml:161
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
+"Nivel de transparencia. Funciona mejor si se activa el difuminado del fondo."
 
-#: src/widgets/SettingsDialog.qml:185
+#: src/widgets/SettingsDialog.qml:186
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:194
+#: src/widgets/SettingsDialog.qml:195
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:196
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Configurar la interfaz de usuario y los complementos."
 
-#: src/widgets/SettingsDialog.qml:200
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
-msgid "Adaptive Color Scheme"
-msgstr "Esquema de colores"
-
 #: src/widgets/SettingsDialog.qml:201
 #, kde-format
-msgid "Colors based on the current style."
-msgstr ""
+msgid "Adaptive Color Scheme"
+msgstr "Esquema de color adaptativo"
 
-#: src/widgets/SettingsDialog.qml:231
+#: src/widgets/SettingsDialog.qml:202
+#, kde-format
+msgid "Colors based on the current style."
+msgstr "Colores basados en el estilo actual."
+
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Fonts"
 msgstr "Fuentes"
 
-#: src/widgets/SettingsDialog.qml:232
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size"
+#: src/widgets/SettingsDialog.qml:233
+#, kde-format
 msgid "Configure the terminal font family and size."
-msgstr "Configurar la familia de la fuente del terminal y su tamaño"
+msgstr "Configurar la familia de la fuente del terminal y su tamaño."
 
-#: src/widgets/SettingsDialog.qml:236
+#: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Family"
 msgstr "Familia"
 
-#: src/widgets/SettingsDialog.qml:249
+#: src/widgets/SettingsDialog.qml:250
 #, kde-format
 msgid "Size"
 msgstr "Tamaño"
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Line Spacing"
 msgstr "Espaciado ente líneas"
@@ -240,7 +239,7 @@ msgstr "Espaciado ente líneas"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Sigue el esquema de color del sistema."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -350,9 +349,3 @@ msgstr "Añadir"
 
 #~ msgid "New tab"
 #~ msgstr "Nueva pestaña"
-
-#~ msgid "Opacity"
-#~ msgstr "Opacidad"
-
-#~ msgid "Background opacity"
-#~ msgstr "Opacidad del fondo"
