@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-28 00:57+0000\n"
-"PO-Revision-Date: 2023-02-19 09:15+0100\n"
+"PO-Revision-Date: 2023-02-27 19:13+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -131,10 +131,9 @@ msgid "Color Scheme"
 msgstr "Thème de couleurs"
 
 #: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
-#, fuzzy, kde-format
-#| msgid "Change the color scheme of the terminal"
+#, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "Modifier un thème de couleurs du terminal."
+msgstr "Modifier le thème de couleurs du terminal."
 
 #: src/widgets/SettingsDialog.qml:106
 #, kde-format
@@ -152,10 +151,9 @@ msgid "Color"
 msgstr "Couleur"
 
 #: src/widgets/SettingsDialog.qml:113
-#, fuzzy, kde-format
-#| msgid "Switch between light and dark colorscheme"
+#, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "Basculer entre les thèmes de couleurs clair et sombre "
+msgstr "Basculer entre les thèmes clair et sombre de couleurs."
 
 #: src/widgets/SettingsDialog.qml:121
 #, kde-format
@@ -207,10 +205,9 @@ msgid "Adaptive Color Scheme"
 msgstr "Thème adaptatif de couleurs"
 
 #: src/widgets/SettingsDialog.qml:202
-#, fuzzy, kde-format
-#| msgid "Colors based on the current style"
+#, kde-format
 msgid "Colors based on the current style."
-msgstr "Couleurs reposant sur le style courant"
+msgstr "Couleurs reposant sur le style courant."
 
 #: src/widgets/SettingsDialog.qml:232
 #, kde-format
@@ -218,10 +215,9 @@ msgid "Fonts"
 msgstr "Polices"
 
 #: src/widgets/SettingsDialog.qml:233
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size"
+#, kde-format
 msgid "Configure the terminal font family and size."
-msgstr "Configurer la famille et la taille de police du terminal"
+msgstr "Configurer la famille et la taille de police du terminal."
 
 #: src/widgets/SettingsDialog.qml:237
 #, kde-format
