@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-28 00:57+0000\n"
-"PO-Revision-Date: 2022-11-15 18:49+0000\n"
+"PO-Revision-Date: 2023-03-06 16:42+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -135,10 +135,9 @@ msgid "Color Scheme"
 msgstr "Esquema de Cores"
 
 #: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
-#, fuzzy, kde-format
-#| msgid "Change the color scheme of the terminal"
+#, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "Muda o esquema de cores do terminal"
+msgstr "Muda o esquema de cores do terminal."
 
 #: src/widgets/SettingsDialog.qml:106
 #, kde-format
@@ -185,6 +184,8 @@ msgstr "Translucidez"
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
+"Nível de translucidez. Funciona melhor se tiver suporte para um fundo "
+"borrado."
 
 #: src/widgets/SettingsDialog.qml:186
 #, kde-format
@@ -202,15 +203,14 @@ msgid "Configure the app UI and plugins."
 msgstr "Configura a interface e os 'plugins' da aplicação."
 
 #: src/widgets/SettingsDialog.qml:201
-#, fuzzy, kde-format
-#| msgid "Color Scheme"
+#, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Esquema de Cores"
+msgstr "Esquema de Cores Adaptativo"
 
 #: src/widgets/SettingsDialog.qml:202
 #, kde-format
 msgid "Colors based on the current style."
-msgstr ""
+msgstr "Cores baseadas no estilo actual."
 
 #: src/widgets/SettingsDialog.qml:232
 #, kde-format
@@ -218,10 +218,9 @@ msgid "Fonts"
 msgstr "Tipos de Letra"
 
 #: src/widgets/SettingsDialog.qml:233
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size"
+#, kde-format
 msgid "Configure the terminal font family and size."
-msgstr "Configura o tipo e tamanho de letra do terminal"
+msgstr "Configura o tipo e tamanho de letra do terminal."
 
 #: src/widgets/SettingsDialog.qml:237
 #, kde-format
@@ -241,7 +240,7 @@ msgstr "Espaço entre Linhas"
 #: src/widgets/Terminal.qml:58
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Segue o esquema de cores do sistema."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -349,12 +348,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Adicionar"
-
-#~ msgid "New tab"
-#~ msgstr "Nova página"
-
-#~ msgid "Opacity"
-#~ msgstr "Opacidade"
-
-#~ msgid "Background opacity"
-#~ msgstr "Opacidade do fundo"
