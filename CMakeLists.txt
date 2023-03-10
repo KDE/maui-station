@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(STATION_VERSION 2.2.2)
+set(STATION_VERSION 3.0.0)
 
 project(station LANGUAGES CXX VERSION ${STATION_VERSION})
 
@@ -26,7 +26,7 @@ include(FeatureSummary)
 include(ECMQMLModules)
 
 find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Widgets DBus)
-find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons Config)
+find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 
 find_package(MauiKit REQUIRED)
 find_package(MauiKit REQUIRED COMPONENTS Terminal)

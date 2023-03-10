@@ -45,28 +45,9 @@ Maui.SplitViewItem
         }
 
         kterminal.font: settings.font
-        kterminal.colorScheme: settings.adaptiveColorScheme ? _customCS.path : settings.colorScheme
+        kterminal.colorScheme: settings.adaptiveColorScheme ? "Adaptive" : settings.colorScheme
         kterminal.lineSpacing: settings.lineSpacing
         kterminal.backgroundOpacity: settings.windowOpacity
-
-        Term.CustomColorScheme
-        {
-            id: _customCS
-            Maui.Theme.colorSet: Maui.Theme.Header
-            Maui.Theme.inherit: false
-            name: "Adaptive"
-            description: i18n("Follows the system color scheme.")
-            backgroundColor: Maui.Theme.backgroundColor
-            foregroundColor: Maui.Theme.textColor
-            color2: Maui.Theme.disabledTextColor
-            color3: Maui.Theme.negativeBackgroundColor
-            color4: Maui.Theme.positiveBackgroundColor
-            color5: Maui.Theme.neutralBackgroundColor
-            color6: Maui.Theme.highlightColor
-            color7: Maui.Theme.linkColor
-            color8: Maui.Theme.highlightColor
-            color9: Maui.Theme.textColor
-        }
 
         onKeyPressed:
         {

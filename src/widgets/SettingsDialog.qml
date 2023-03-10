@@ -17,17 +17,18 @@ Maui.SettingsDialog
 
         Maui.SettingsPage
         {
-             title: i18n("Color Scheme")
+            title: i18n("Color Scheme")
             Maui.SectionItem
             {
                 label1.text: i18n("Color Scheme")
                 label2.text: i18n("Change the color scheme of the terminal.")
                 enabled: !settings.adaptiveColorScheme
+                columns: 1
 
                 GridLayout
                 {
                     columns: 3
-                    width: parent.parent.width
+                    Layout.fillWidth: true
                     opacity: enabled ? 1 : 0.5
                     Repeater
                     {
