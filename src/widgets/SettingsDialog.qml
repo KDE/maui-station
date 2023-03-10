@@ -42,9 +42,9 @@ Maui.SettingsDialog
                             checked: model.name === settings.colorScheme
                             onClicked: settings.colorScheme = model.name
 
-                            template.iconComponent: Pane
+                            template.iconComponent: Control
                             {
-                                implicitHeight: Math.max(contentHeight + topPadding + bottomPadding, 64)
+                                implicitHeight: Math.max(_layout.implicitHeight + topPadding + bottomPadding, 64)
                                 padding: Maui.Style.space.small
 
                                 background: Rectangle
@@ -55,6 +55,7 @@ Maui.SettingsDialog
 
                                 contentItem: Column
                                 {
+                                    id:_layout
                                     spacing: 2
 
                                     Text
