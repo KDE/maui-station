@@ -10,6 +10,7 @@
   <name xml:lang="en-GB">Station</name>
   <name xml:lang="es">Station</name>
   <name xml:lang="eu">Station</name>
+  <name xml:lang="fi">Station</name>
   <name xml:lang="fr">Station</name>
   <name xml:lang="id">Station</name>
   <name xml:lang="it">Station</name>
@@ -28,6 +29,7 @@
   <summary xml:lang="en-GB">Terminal Emulator</summary>
   <summary xml:lang="es">Emulador de terminal</summary>
   <summary xml:lang="eu">Terminal emulatzailea</summary>
+  <summary xml:lang="fi">Pääte-emulaattori</summary>
   <summary xml:lang="fr">Émulateur de terminal</summary>
   <summary xml:lang="id">Emulator Terminal</summary>
   <summary xml:lang="it">Emulatore di terminale</summary>
@@ -47,6 +49,7 @@
     <p xml:lang="en-GB">Station is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.</p>
     <p xml:lang="es">Station es un emulador de terminal convergente, preparado para escritorios y dispositivos móviles que usen GNU/Linux.</p>
     <p xml:lang="eu">«Station» terminal emulatzaile konbergente bat da, GNU/Linux erabiltzen duten mahaigain eta mugikorretarako prest dagoena.</p>
+    <p xml:lang="fi">Station on mukautuva pääte-emulaattori, ja sopii niin työpöydälle kuin GNU/Linuxia käyttäviin mobiililaitteisiinkin.</p>
     <p xml:lang="fr">Le logiciel « Station » est un émulateur de terminal convergent, prêt pour les appareils de bureau et mobiles utilisant « GNU/Linux ».</p>
     <p xml:lang="id">Station adalah emulator terminal terpusat, siap untuk peranti desktop dan ponsel yang menggunakan GNU/Linux.</p>
     <p xml:lang="it">Station è un emulatore di terminale convergente, pronto per desktop e dispositivi mobili che utilizzano GNU/Linux.</p>
@@ -71,6 +74,7 @@
       <caption xml:lang="en-GB">Station in desktop and phone.</caption>
       <caption xml:lang="es">Station en el escritorio y el en teléfono.</caption>
       <caption xml:lang="eu">«Station» mahaigainean eta telefonoan.</caption>
+      <caption xml:lang="fi">Station työpöydällä ja puhelimessa.</caption>
       <caption xml:lang="fr">Station dans un ordinateur de bureau ou un téléphone.</caption>
       <caption xml:lang="id">Station di desktop dan ponsel.</caption>
       <caption xml:lang="it">Station su desktop e telefono.</caption>
