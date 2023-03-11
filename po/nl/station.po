@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 00:57+0000\n"
+"POT-Creation-Date: 2023-03-11 00:47+0000\n"
 "PO-Revision-Date: 2023-02-27 10:49+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -128,57 +128,57 @@ msgid "Edit"
 msgstr "Bewerken"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
-#: src/widgets/SettingsDialog.qml:216
+#: src/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "Color Scheme"
 msgstr "Kleurenschema"
 
-#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:219
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Het kleurenschema van de terminal wijzigen."
 
-#: src/widgets/SettingsDialog.qml:106
+#: src/widgets/SettingsDialog.qml:108
 #, kde-format
 msgid "Interface"
 msgstr "Interface"
 
-#: src/widgets/SettingsDialog.qml:107
+#: src/widgets/SettingsDialog.qml:109
 #, kde-format
 msgid "Configure the application components and behaviour."
 msgstr "De componenten en gedrag van de toepassing configureren."
 
-#: src/widgets/SettingsDialog.qml:112
+#: src/widgets/SettingsDialog.qml:114
 #, kde-format
 msgid "Color"
 msgstr "Kleur"
 
-#: src/widgets/SettingsDialog.qml:113
+#: src/widgets/SettingsDialog.qml:115
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "Tussen licht en donker kleurenschema wisselen."
 
-#: src/widgets/SettingsDialog.qml:121
+#: src/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Light"
 msgstr "Licht"
 
-#: src/widgets/SettingsDialog.qml:128
+#: src/widgets/SettingsDialog.qml:130
 #, kde-format
 msgid "Dark"
 msgstr "Donker"
 
-#: src/widgets/SettingsDialog.qml:136
+#: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Adaptive"
 msgstr "Aanpasbaar"
 
-#: src/widgets/SettingsDialog.qml:160
+#: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Translucency"
 msgstr "Transparantie"
 
-#: src/widgets/SettingsDialog.qml:161
+#: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
@@ -186,60 +186,55 @@ msgstr ""
 "Niveau van transparantie. Werkt beter als er ondersteuning is voor vervaagde "
 "achtergrond."
 
-#: src/widgets/SettingsDialog.qml:186
+#: src/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:196
+#: src/widgets/SettingsDialog.qml:198
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Het gedrag en plug-ins van de UI van de toepassing configureren."
 
-#: src/widgets/SettingsDialog.qml:201
+#: src/widgets/SettingsDialog.qml:203
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Adaptief kleurenschema"
 
-#: src/widgets/SettingsDialog.qml:202
+#: src/widgets/SettingsDialog.qml:204
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Kleuren gebaseerd op de huidige stijl."
 
-#: src/widgets/SettingsDialog.qml:232
+#: src/widgets/SettingsDialog.qml:234
 #, kde-format
 msgid "Fonts"
 msgstr "Lettertypen"
 
-#: src/widgets/SettingsDialog.qml:233
+#: src/widgets/SettingsDialog.qml:235
 #, kde-format
 msgid "Configure the terminal font family and size."
 msgstr "De lettertypefamilie en -grootte van de terminal configureren."
 
-#: src/widgets/SettingsDialog.qml:237
+#: src/widgets/SettingsDialog.qml:239
 #, kde-format
 msgid "Family"
 msgstr "Familie"
 
-#: src/widgets/SettingsDialog.qml:250
+#: src/widgets/SettingsDialog.qml:252
 #, kde-format
 msgid "Size"
 msgstr "Grootte"
 
-#: src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:264
 #, kde-format
 msgid "Line Spacing"
 msgstr "Regelafstand"
-
-#: src/widgets/Terminal.qml:58
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Volgt het kleurenschema van het systeem"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -345,6 +340,9 @@ msgstr "Een nieuwe commando-sneltoets aanmaken om snel acties te starten."
 #, kde-format
 msgid "Add"
 msgstr "Toevoegen"
+
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Volgt het kleurenschema van het systeem"
 
 #~ msgid "New tab"
 #~ msgstr "Nieuw tabblad"

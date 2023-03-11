@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 00:57+0000\n"
+"POT-Creation-Date: 2023-03-11 00:47+0000\n"
 "PO-Revision-Date: 2023-02-27 06:33+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -129,117 +129,112 @@ msgid "Edit"
 msgstr "ჩასწორება"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
-#: src/widgets/SettingsDialog.qml:216
+#: src/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "Color Scheme"
 msgstr "ფერების სქემა"
 
-#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:219
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "ტერმინალის ფერის სქემის შეცვლა."
 
-#: src/widgets/SettingsDialog.qml:106
+#: src/widgets/SettingsDialog.qml:108
 #, kde-format
 msgid "Interface"
 msgstr "ინტერფეისი"
 
-#: src/widgets/SettingsDialog.qml:107
+#: src/widgets/SettingsDialog.qml:109
 #, kde-format
 msgid "Configure the application components and behaviour."
 msgstr "მოირგეთ აპლიკაციის კომპონენტები და ქცევა."
 
-#: src/widgets/SettingsDialog.qml:112
+#: src/widgets/SettingsDialog.qml:114
 #, kde-format
 msgid "Color"
 msgstr "ფერი"
 
-#: src/widgets/SettingsDialog.qml:113
+#: src/widgets/SettingsDialog.qml:115
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "ღია და მუქ ფერებს შორის გადართვა."
 
-#: src/widgets/SettingsDialog.qml:121
+#: src/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Light"
 msgstr "ღია"
 
-#: src/widgets/SettingsDialog.qml:128
+#: src/widgets/SettingsDialog.qml:130
 #, kde-format
 msgid "Dark"
 msgstr "ბნელი"
 
-#: src/widgets/SettingsDialog.qml:136
+#: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Adaptive"
 msgstr "შეგუებადი"
 
-#: src/widgets/SettingsDialog.qml:160
+#: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Translucency"
 msgstr "გამჭვირვალობა"
 
-#: src/widgets/SettingsDialog.qml:161
+#: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
 "გამჭვირვალობის დონე. მუშაობს უკეთ, თუ ბუნდოვანი ფონის მხარდაჭერა არსებობს."
 
-#: src/widgets/SettingsDialog.qml:186
+#: src/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Terminal"
 msgstr "ტერმინალი"
 
-#: src/widgets/SettingsDialog.qml:196
+#: src/widgets/SettingsDialog.qml:198
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "მოირგეთ აპის ინტერფეისი და გაფართოებები."
 
-#: src/widgets/SettingsDialog.qml:201
+#: src/widgets/SettingsDialog.qml:203
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "ადაპტიური ფერების სქემა"
 
-#: src/widgets/SettingsDialog.qml:202
+#: src/widgets/SettingsDialog.qml:204
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "მიმდინარე სტილზე ბაზირებული ფერები."
 
-#: src/widgets/SettingsDialog.qml:232
+#: src/widgets/SettingsDialog.qml:234
 #, kde-format
 msgid "Fonts"
 msgstr "ფონტები"
 
-#: src/widgets/SettingsDialog.qml:233
+#: src/widgets/SettingsDialog.qml:235
 #, kde-format
 msgid "Configure the terminal font family and size."
 msgstr "ფონტის ოჯახისა და ზომის მორგება."
 
-#: src/widgets/SettingsDialog.qml:237
+#: src/widgets/SettingsDialog.qml:239
 #, kde-format
 msgid "Family"
 msgstr "ოჯახი"
 
-#: src/widgets/SettingsDialog.qml:250
+#: src/widgets/SettingsDialog.qml:252
 #, kde-format
 msgid "Size"
 msgstr "ზომა"
 
-#: src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:264
 #, kde-format
 msgid "Line Spacing"
 msgstr "ხაზებს შუა მანძილი"
-
-#: src/widgets/Terminal.qml:58
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "სისტემური ფერების სქემის მიყოლა."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -344,6 +339,9 @@ msgstr "შექმენით ახალი მალსახმობე�
 #, kde-format
 msgid "Add"
 msgstr "დამატება"
+
+#~ msgid "Follows the system color scheme."
+#~ msgstr "სისტემური ფერების სქემის მიყოლა."
 
 #~ msgid "New tab"
 #~ msgstr "ახალი ჩანართი"

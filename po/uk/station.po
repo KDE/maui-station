@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 00:57+0000\n"
+"POT-Creation-Date: 2023-03-11 00:47+0000\n"
 "PO-Revision-Date: 2023-02-27 16:43+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -129,117 +129,112 @@ msgid "Edit"
 msgstr "Змінити"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
-#: src/widgets/SettingsDialog.qml:216
+#: src/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "Color Scheme"
 msgstr "Схема кольорів"
 
-#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:217
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:219
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Зміна кольорової схеми термінала."
 
-#: src/widgets/SettingsDialog.qml:106
+#: src/widgets/SettingsDialog.qml:108
 #, kde-format
 msgid "Interface"
 msgstr "Інтерфейс"
 
-#: src/widgets/SettingsDialog.qml:107
+#: src/widgets/SettingsDialog.qml:109
 #, kde-format
 msgid "Configure the application components and behaviour."
 msgstr "Налаштувати компоненти та поведінку програми."
 
-#: src/widgets/SettingsDialog.qml:112
+#: src/widgets/SettingsDialog.qml:114
 #, kde-format
 msgid "Color"
 msgstr "Колір"
 
-#: src/widgets/SettingsDialog.qml:113
+#: src/widgets/SettingsDialog.qml:115
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "Перемкнутися між світлою і темною схемою кольорів."
 
-#: src/widgets/SettingsDialog.qml:121
+#: src/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Light"
 msgstr "Світла"
 
-#: src/widgets/SettingsDialog.qml:128
+#: src/widgets/SettingsDialog.qml:130
 #, kde-format
 msgid "Dark"
 msgstr "Темна"
 
-#: src/widgets/SettingsDialog.qml:136
+#: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Adaptive"
 msgstr "Адаптивна"
 
-#: src/widgets/SettingsDialog.qml:160
+#: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Translucency"
 msgstr "Прозорість"
 
-#: src/widgets/SettingsDialog.qml:161
+#: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
 "Рівень прозорості. Працює краще, якщо передбачено підтримку розмиття тла."
 
-#: src/widgets/SettingsDialog.qml:186
+#: src/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Terminal"
 msgstr "Термінал"
 
-#: src/widgets/SettingsDialog.qml:196
+#: src/widgets/SettingsDialog.qml:198
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Налаштувати інтерфейс та додатки програми."
 
-#: src/widgets/SettingsDialog.qml:201
+#: src/widgets/SettingsDialog.qml:203
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Адаптивна схема кольорів"
 
-#: src/widgets/SettingsDialog.qml:202
+#: src/widgets/SettingsDialog.qml:204
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Кольори, які засновано на поточному стилі."
 
-#: src/widgets/SettingsDialog.qml:232
+#: src/widgets/SettingsDialog.qml:234
 #, kde-format
 msgid "Fonts"
 msgstr "Шрифти"
 
-#: src/widgets/SettingsDialog.qml:233
+#: src/widgets/SettingsDialog.qml:235
 #, kde-format
 msgid "Configure the terminal font family and size."
 msgstr "Налаштувати гарнітуру та розмір шрифту термінала."
 
-#: src/widgets/SettingsDialog.qml:237
+#: src/widgets/SettingsDialog.qml:239
 #, kde-format
 msgid "Family"
 msgstr "Сімейство"
 
-#: src/widgets/SettingsDialog.qml:250
+#: src/widgets/SettingsDialog.qml:252
 #, kde-format
 msgid "Size"
 msgstr "Розмір"
 
-#: src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:264
 #, kde-format
 msgid "Line Spacing"
 msgstr "Інтервал між рядками"
-
-#: src/widgets/Terminal.qml:58
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Використовувати загальносистемну схему кольорів."
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
@@ -347,6 +342,9 @@ msgstr "Створіть нове скорочення для команди, щ
 #, kde-format
 msgid "Add"
 msgstr "Додати"
+
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Використовувати загальносистемну схему кольорів."
 
 #~ msgid "New tab"
 #~ msgstr "Нова вкладка"

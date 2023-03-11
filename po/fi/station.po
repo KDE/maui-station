@@ -1,22 +1,21 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
+# Tommi Nieminen <translator@legisign.org>, 2022, 2023.
 #
-# Matjaž Jeran <matjaz.jeran@amis.net>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-11 00:47+0000\n"
-"PO-Revision-Date: 2023-02-27 08:55+0100\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
-"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
-"Language: sl\n"
+"PO-Revision-Date: 2023-03-06 13:45+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -26,12 +25,12 @@ msgstr "Station"
 #: src/main.cpp:35
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr "Konvergentni emulator terminala."
+msgstr "Mukautuva pääte-emulaattori."
 
 #: src/main.cpp:35
 #, kde-format
 msgid "© 2019-%1 Maui Development Team"
-msgstr "© 2019-%1 razvojna ekipa Maui"
+msgstr "© 2019–%1 Maui-kehitysryhmä"
 
 #: src/main.cpp:36
 #, kde-format
@@ -41,37 +40,37 @@ msgstr "Camilo Higuita"
 #: src/main.cpp:36
 #, kde-format
 msgid "Developer"
-msgstr "Razvojnik"
+msgstr "Kehittäjä"
 
 #: src/main.qml:104 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
-msgstr "Novi zavihek"
+msgstr "Uusi välilehti"
 
 #: src/main.qml:112 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
-msgstr "Razdeli"
+msgstr "Jaa"
 
 #: src/main.qml:122
 #, kde-format
 msgid "Tutorial"
-msgstr "Učbenik"
+msgstr "Opastus"
 
 #: src/main.qml:134
 #, kde-format
 msgid "Settings"
-msgstr "Nastavitve"
+msgstr "Asetukset"
 
 #: src/main.qml:144
 #, kde-format
 msgid "About"
-msgstr "O programu"
+msgstr "Tietoa"
 
 #: src/main.qml:164
 #, kde-format
 msgid "Function Keys"
-msgstr "Funkcijske tipke"
+msgstr "Funktionäppäimet"
 
 #: src/main.qml:173
 #, kde-format
@@ -81,272 +80,261 @@ msgstr "Nano"
 #: src/main.qml:182
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr "Spremembe krmilke"
+msgstr "Ctrl-muuntonäppäimet"
 
 #: src/main.qml:191 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
-msgstr "Krmarjenje"
+msgstr "Liikkuminen"
 
 #: src/main.qml:200
 #, kde-format
 msgid "Favorite"
-msgstr "Priljubljen"
+msgstr "Suosikki"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
 msgid "New Command"
-msgstr "Nov ukaz"
+msgstr "Uusi komento"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
-msgstr "Uredi ukaz"
+msgstr "Muokkaa komentoa"
 
 #: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr "Uredi bližnjico ukaza"
+msgstr "Muokkaa komentopikanäppäintä"
 
 #: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "No Commands"
-msgstr "Ni ukazov"
+msgstr "Ei komentoja"
 
 #: src/widgets/CommandShortcuts.qml:50
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr "Začni dodajanje bližnjic novih ukazov"
+msgstr "Ala lisätä uutta komentopikanäppäintä"
 
 #: src/widgets/CommandShortcuts.qml:92
 #, kde-format
 msgid "Remove"
-msgstr "Odstrani"
+msgstr "Poista"
 
 #: src/widgets/CommandShortcuts.qml:102
 #, kde-format
 msgid "Edit"
-msgstr "Uredi"
+msgstr "Muokkaa"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
 #: src/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "Color Scheme"
-msgstr "Barvna shema"
+msgstr "Väriteema"
 
 #: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:219
 #, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "Spremeni barvno shemo terminala."
+msgstr "Vaihda päätteen väriteemaa."
 
 #: src/widgets/SettingsDialog.qml:108
 #, kde-format
 msgid "Interface"
-msgstr "Vmesnik"
+msgstr "Liitäntä"
 
 #: src/widgets/SettingsDialog.qml:109
 #, kde-format
 msgid "Configure the application components and behaviour."
-msgstr "Konfiguriraj komponente aplikacije in obnašanje."
+msgstr "Aseta sovelluksen osat ja toiminta."
 
 #: src/widgets/SettingsDialog.qml:114
 #, kde-format
 msgid "Color"
-msgstr "Barva"
+msgstr "Väri"
 
 #: src/widgets/SettingsDialog.qml:115
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "Preklopi med svetlo in temno barvno shemo."
+msgstr "Vaihda vaalean ja tumman värimallin välillä."
 
 #: src/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Light"
-msgstr "Svetla"
+msgstr "Vaalea"
 
 #: src/widgets/SettingsDialog.qml:130
 #, kde-format
 msgid "Dark"
-msgstr "Temna"
+msgstr "Tumma"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Adaptive"
-msgstr "Prilagodljiva"
+msgstr "Mukautuva"
 
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Translucency"
-msgstr "Prosojnost"
+msgstr "Läpikuultavuus"
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
-msgstr "Raven prosojnosti. Deluje bolje, če je podpora zamegljenemu ozadju."
+msgstr "Läpikuultavuusaste. Toimii paremmin taustan sumennustuella."
 
 #: src/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Terminal"
-msgstr "Terminal"
+msgstr "Pääte"
 
 #: src/widgets/SettingsDialog.qml:198
 #, kde-format
 msgid "Configure the app UI and plugins."
-msgstr "Konfiguriraj uporabniški vmesnik aplikacije in vtičnike."
+msgstr "Aseta sovelluksen käyttöliittymä ja liitännäiset."
 
 #: src/widgets/SettingsDialog.qml:203
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Prilagodljiva barvna shema"
+msgstr "Mukautuva väriteema"
 
 #: src/widgets/SettingsDialog.qml:204
 #, kde-format
 msgid "Colors based on the current style."
-msgstr "Barve na osnovi trenutnega sloga."
+msgstr "Nykyiseen tyyliin perustuvat värit."
 
 #: src/widgets/SettingsDialog.qml:234
 #, kde-format
 msgid "Fonts"
-msgstr "Pisave"
+msgstr "Fontit"
 
 #: src/widgets/SettingsDialog.qml:235
 #, kde-format
 msgid "Configure the terminal font family and size."
-msgstr "Konfiguriraj družino pisav za terminal in velikost."
+msgstr "Aseta päätteen fonttiperhe ja -koko."
 
 #: src/widgets/SettingsDialog.qml:239
 #, kde-format
 msgid "Family"
-msgstr "Družina"
+msgstr "Perhe"
 
 #: src/widgets/SettingsDialog.qml:252
 #, kde-format
 msgid "Size"
-msgstr "Velikost"
+msgstr "Koko"
 
 #: src/widgets/SettingsDialog.qml:264
 #, kde-format
 msgid "Line Spacing"
-msgstr "Razmik med vrsticami"
+msgstr "Riviväli"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Close"
-msgstr "Zapri"
+msgstr "Sulje"
 
 #: src/widgets/TerminalLayout.qml:34
 #, kde-format
 msgid ""
 "A process is currently still running. Are you sure you want to close it?"
-msgstr "Proces trenutno še teče. Ali ste prepričani, da želite zapiranje?"
+msgstr "Prosessi on yhä käynnissä. Haluatko varmasti sulkea sen?"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
 msgid "Shortcuts"
-msgstr "Bližnjice"
+msgstr "Pikanäppäimet"
 
 #: src/widgets/TutorialDialog.qml:19
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
-msgstr ""
-"Ko uporabljate tipkovnico, lahko uporabite naslednje bližnjice za krmarjenje."
+msgstr "Näppäimistöltä voi käyttää liikkumiseen seuraavia pikanäppäimiä."
 
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr "Odpri razcepljeni pogled, navpično ali vodoravno."
+msgstr "Avaa uusi pysty- tai vaakajakonäkymä."
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
 msgid "Find"
-msgstr "Najdi"
+msgstr "Etsi"
 
 #: src/widgets/TutorialDialog.qml:70
 #, kde-format
 msgid "Open the find bar."
-msgstr "Odpri vrstico iskanja."
+msgstr "Avaa hakupalkki."
 
 #: src/widgets/TutorialDialog.qml:90
 #, kde-format
 msgid "Switch"
-msgstr "Preklopi"
+msgstr "Vaihda"
 
 #: src/widgets/TutorialDialog.qml:91
 #, kde-format
 msgid "Switch between split views."
-msgstr "Preklopi med razcepljenimi pogledi."
+msgstr "Vaihda jakonäkymästä toiseen."
 
 #: src/widgets/TutorialDialog.qml:114
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
-msgstr ""
-"Na napravah, ki omogočajo dotik, lahko uporabite naslednje geste za "
-"krmarjenje."
+msgstr "Kosketuskäyttölaitteilla voi käyttää liikkumiseen seuraavia eleitä."
 
 #: src/widgets/TutorialDialog.qml:118
 #, kde-format
 msgid "Up & Down"
-msgstr "Gor in dol"
+msgstr "Ylös ja alas"
 
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr "Poteg gor ali dol za krmarjenje po zgodovini ukazov."
+msgstr "Liiku komentohistoriassa pyyhkäisemällä ylös tai alas."
 
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
 msgid "Left & Right"
-msgstr "Levo in desno"
+msgstr "Vasemmalle ja oikealle"
 
 #: src/widgets/TutorialDialog.qml:125
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
-msgstr "Poteg levo ali desno za pomikanje in urejanje ukazne vrstice."
+msgstr ""
+"Liiku muokattavalla komentorivillä pyyhkäisemällä vasemmalle tai oikealle."
 
 #: src/widgets/TutorialDialog.qml:130
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr "Dva prsta levo in desno"
+msgstr "Kaksi sormea vasemmalle ja oikealle"
 
 #: src/widgets/TutorialDialog.qml:131
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr "Poteg gor ali dol z dvema prstoma za pomik."
+msgstr "Vieritä pyyhkäisemällä ylös tai alas kahdella sormella."
 
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
 msgid "Commands"
-msgstr "Ukazi"
+msgstr "Komennot"
 
 #: src/widgets/TutorialDialog.qml:142
 #, kde-format
 msgid "Create"
-msgstr "Ustvari"
+msgstr "Luo"
 
 #: src/widgets/TutorialDialog.qml:143
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr "Ustvari novo bližnjico ukaza za hitro proženje dejavnosti."
+msgstr "Luo pikakomentoja varten uusi komentopikanäppäin."
 
 #: src/widgets/TutorialDialog.qml:147
 #, kde-format
 msgid "Add"
-msgstr "Dodaj"
+msgstr "Lisää"
 
 #~ msgid "Follows the system color scheme."
-#~ msgstr "Sledi sistemski barvni shemi."
-
-#~ msgid "New tab"
-#~ msgstr "Nov zavihek"
-
-#~ msgid "Opacity"
-#~ msgstr "Neprosojnost"
-
-#~ msgid "Background opacity"
-#~ msgstr "Neprosojnost ozadja"
+#~ msgstr "Seuraa järjestelmän väriteemaa."
