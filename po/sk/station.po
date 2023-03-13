@@ -1,23 +1,19 @@
-# German translations for maui-station package.
-# Copyright (C) 2022 This file is copyright:
-# This file is distributed under the same license as the maui-station package.
-# Frederik Schwarzer <schwarzer@kde.org>, 2023.
-#
-# Automatically generated, 2022.
+# translation of station.po to Slovak
+# Roman Paholik <wizzardsk@gmail.com>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: maui-station\n"
+"Project-Id-Version: station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-11 00:47+0000\n"
-"PO-Revision-Date: 2023-03-12 16:52+0100\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
-"Language-Team: German <kde-i18n-de@kde.org>\n"
-"Language: de\n"
+"PO-Revision-Date: 2023-03-12 10:33+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.07.70\n"
+"X-Generator: Lokalize 22.12.3\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -32,7 +28,7 @@ msgstr ""
 #: src/main.cpp:35
 #, kde-format
 msgid "© 2019-%1 Maui Development Team"
-msgstr "Copyright © 2019-%1 Maui-Entwicklerteam"
+msgstr "© 2019-%1 Vývojársky tím Maui"
 
 #: src/main.cpp:36
 #, kde-format
@@ -42,37 +38,37 @@ msgstr "Camilo Higuita"
 #: src/main.cpp:36
 #, kde-format
 msgid "Developer"
-msgstr "Entwickler"
+msgstr "Vývojár"
 
 #: src/main.qml:104 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
-msgstr "Neues Unterfenster"
+msgstr "Nová karta"
 
 #: src/main.qml:112 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
-msgstr "Teilen"
+msgstr "Rozdeliť"
 
 #: src/main.qml:122
 #, kde-format
 msgid "Tutorial"
-msgstr "Einführung"
+msgstr "Výučba"
 
 #: src/main.qml:134
 #, kde-format
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Nastavenia"
 
 #: src/main.qml:144
 #, kde-format
 msgid "About"
-msgstr "Über"
+msgstr "O aplikácii"
 
 #: src/main.qml:164
 #, kde-format
 msgid "Function Keys"
-msgstr "Funktionstasten"
+msgstr ""
 
 #: src/main.qml:173
 #, kde-format
@@ -87,22 +83,22 @@ msgstr ""
 #: src/main.qml:191 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
-msgstr "Navigation"
+msgstr "Navigácia"
 
 #: src/main.qml:200
 #, kde-format
 msgid "Favorite"
-msgstr "Favoriten"
+msgstr "Obľúbené"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
 msgid "New Command"
-msgstr "Neuer Befehl"
+msgstr "Nový príkaz"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
-msgstr "Befehl bearbeiten"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:35
 #, kde-format
@@ -112,7 +108,7 @@ msgstr ""
 #: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "No Commands"
-msgstr "Keine Befehle"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:50
 #, kde-format
@@ -122,18 +118,18 @@ msgstr ""
 #: src/widgets/CommandShortcuts.qml:92
 #, kde-format
 msgid "Remove"
-msgstr "Entfernen"
+msgstr "Odstrániť"
 
 #: src/widgets/CommandShortcuts.qml:102
 #, kde-format
 msgid "Edit"
-msgstr "Bearbeiten"
+msgstr "Upraviť"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
 #: src/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "Color Scheme"
-msgstr "Farbschema"
+msgstr "Farebná schéma"
 
 #: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:219
 #, kde-format
@@ -143,7 +139,7 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:108
 #, kde-format
 msgid "Interface"
-msgstr "Oberfläche"
+msgstr "Rozhranie"
 
 #: src/widgets/SettingsDialog.qml:109
 #, kde-format
@@ -153,32 +149,32 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:114
 #, kde-format
 msgid "Color"
-msgstr "Farbe"
+msgstr "Farba"
 
 #: src/widgets/SettingsDialog.qml:115
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "Zwischen hellem und dunklem Farbschema umschalten."
+msgstr ""
 
 #: src/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Light"
-msgstr "Hell"
+msgstr "Svetlo"
 
 #: src/widgets/SettingsDialog.qml:130
 #, kde-format
 msgid "Dark"
-msgstr "Dunkel"
+msgstr "Tmavá"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Adaptive"
-msgstr "Adaptiv"
+msgstr "Adaptívny"
 
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Translucency"
-msgstr "Transparenz"
+msgstr "Priesvitnosť"
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
@@ -189,12 +185,12 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "%1%"
-msgstr "%1%"
+msgstr ""
 
 #: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Terminal"
-msgstr "Terminal"
+msgstr "Terminál"
 
 #: src/widgets/SettingsDialog.qml:198
 #, kde-format
@@ -204,7 +200,7 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:203
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Adaptives Farbschema"
+msgstr ""
 
 #: src/widgets/SettingsDialog.qml:204
 #, kde-format
@@ -214,7 +210,7 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:234
 #, kde-format
 msgid "Fonts"
-msgstr "Schriftarten"
+msgstr "Písma"
 
 #: src/widgets/SettingsDialog.qml:235
 #, kde-format
@@ -224,22 +220,22 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:239
 #, kde-format
 msgid "Family"
-msgstr "Familie"
+msgstr "Rodina"
 
 #: src/widgets/SettingsDialog.qml:252
 #, kde-format
 msgid "Size"
-msgstr "Größe"
+msgstr "Veľkosť"
 
 #: src/widgets/SettingsDialog.qml:264
 #, kde-format
 msgid "Line Spacing"
-msgstr "Zeilenabstand"
+msgstr "Riadkovanie"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Close"
-msgstr "Schließen"
+msgstr "Zavrieť"
 
 #: src/widgets/TerminalLayout.qml:34
 #, kde-format
@@ -250,7 +246,7 @@ msgstr ""
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
 msgid "Shortcuts"
-msgstr "Kurzbefehle"
+msgstr "Skratky"
 
 #: src/widgets/TutorialDialog.qml:19
 #, kde-format
@@ -265,17 +261,17 @@ msgstr ""
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
 msgid "Find"
-msgstr "Suchen"
+msgstr "Nájsť"
 
 #: src/widgets/TutorialDialog.qml:70
 #, kde-format
 msgid "Open the find bar."
-msgstr "Die Suchleiste öffnen."
+msgstr ""
 
 #: src/widgets/TutorialDialog.qml:90
 #, kde-format
 msgid "Switch"
-msgstr "Wechseln"
+msgstr "Prepnúť"
 
 #: src/widgets/TutorialDialog.qml:91
 #, kde-format
@@ -290,7 +286,7 @@ msgstr ""
 #: src/widgets/TutorialDialog.qml:118
 #, kde-format
 msgid "Up & Down"
-msgstr ""
+msgstr "Hore/Dolu"
 
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
@@ -300,7 +296,7 @@ msgstr ""
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
 msgid "Left & Right"
-msgstr ""
+msgstr "Vľavo-vpravo"
 
 #: src/widgets/TutorialDialog.qml:125
 #, kde-format
@@ -320,12 +316,12 @@ msgstr ""
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
 msgid "Commands"
-msgstr "Befehle"
+msgstr "Príkazy"
 
 #: src/widgets/TutorialDialog.qml:142
 #, kde-format
 msgid "Create"
-msgstr "Erstellen"
+msgstr "Vytvoriť"
 
 #: src/widgets/TutorialDialog.qml:143
 #, kde-format
@@ -335,4 +331,4 @@ msgstr ""
 #: src/widgets/TutorialDialog.qml:147
 #, kde-format
 msgid "Add"
-msgstr "Hinzufügen"
+msgstr "Pridať"
