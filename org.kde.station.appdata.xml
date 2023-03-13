@@ -17,6 +17,7 @@
   <name xml:lang="ka">სადგური</name>
   <name xml:lang="nl">Station:</name>
   <name xml:lang="pt">Station</name>
+  <name xml:lang="sk">Station</name>
   <name xml:lang="sl">Station</name>
   <name xml:lang="tr">İstasyon</name>
   <name xml:lang="uk">Станція</name>
@@ -37,6 +38,7 @@
   <summary xml:lang="nl">Terminalprogramma</summary>
   <summary xml:lang="pt">Emulador do Terminal</summary>
   <summary xml:lang="pt-BR">Emulador de terminal</summary>
+  <summary xml:lang="sk">Emulátor terminálu</summary>
   <summary xml:lang="sl">Emulator terminala</summary>
   <summary xml:lang="tr">Uçbirim Öykünücü</summary>
   <summary xml:lang="uk">Емулятор термінала</summary>
