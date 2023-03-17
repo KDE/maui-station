@@ -162,9 +162,11 @@ Maui.SettingsDialog
             label1.text: i18n("Translucency")
             label2.text: i18n("Level of translucency. Works better if there is blurred background support.")
 
+            columns: 1
+
             RowLayout
             {
-                width: parent.parent.width
+                Layout.fillWidth: true
 
                 Slider
                 {
@@ -237,7 +239,7 @@ Maui.SettingsDialog
         Maui.SectionItem
         {
             label1.text:  i18n("Family")
-
+            columns: 1
             Maui.FontsComboBox
             {
                 Layout.fillWidth: true
