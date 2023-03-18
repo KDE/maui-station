@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-11 00:47+0000\n"
+"POT-Creation-Date: 2023-03-18 00:57+0000\n"
 "PO-Revision-Date: 2023-02-27 10:38+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -130,12 +130,12 @@ msgid "Edit"
 msgstr "Edita"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
-#: src/widgets/SettingsDialog.qml:218
+#: src/widgets/SettingsDialog.qml:220
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquema de color"
 
-#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:219
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:221
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Canvia l'esquema de color del terminal."
@@ -187,52 +187,52 @@ msgid ""
 msgstr ""
 "Nivell de translucidesa. Funciona millor si hi ha suport de fons difuminat."
 
-#: src/widgets/SettingsDialog.qml:188
+#: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:197
+#: src/widgets/SettingsDialog.qml:199
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:198
+#: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Configura la IU de l'aplicació i els connectors."
 
-#: src/widgets/SettingsDialog.qml:203
+#: src/widgets/SettingsDialog.qml:205
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Esquema de color adaptatiu"
 
-#: src/widgets/SettingsDialog.qml:204
+#: src/widgets/SettingsDialog.qml:206
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Colors basats en l'estil actual."
 
-#: src/widgets/SettingsDialog.qml:234
+#: src/widgets/SettingsDialog.qml:236
 #, kde-format
 msgid "Fonts"
 msgstr "Tipus de lletra"
 
-#: src/widgets/SettingsDialog.qml:235
+#: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Configure the terminal font family and size."
 msgstr "Configura la família i la mida dels tipus de lletra del terminal."
 
-#: src/widgets/SettingsDialog.qml:239
+#: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Family"
 msgstr "Família"
 
-#: src/widgets/SettingsDialog.qml:252
+#: src/widgets/SettingsDialog.qml:254
 #, kde-format
 msgid "Size"
 msgstr "Mida"
 
-#: src/widgets/SettingsDialog.qml:264
+#: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Line Spacing"
 msgstr "Interlineat"

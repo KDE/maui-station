@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-11 00:47+0000\n"
+"POT-Creation-Date: 2023-03-18 00:57+0000\n"
 "PO-Revision-Date: 2023-02-24 23:21+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -128,12 +128,12 @@ msgid "Edit"
 msgstr "編輯"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
-#: src/widgets/SettingsDialog.qml:218
+#: src/widgets/SettingsDialog.qml:220
 #, kde-format
 msgid "Color Scheme"
 msgstr "配色方案"
 
-#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:219
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:221
 #, fuzzy, kde-format
 #| msgid "Change the color scheme of the terminal"
 msgid "Change the color scheme of the terminal."
@@ -186,54 +186,54 @@ msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr "半透明程度。支援背景模糊時效果較好。"
 
-#: src/widgets/SettingsDialog.qml:188
+#: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:197
+#: src/widgets/SettingsDialog.qml:199
 #, kde-format
 msgid "Terminal"
 msgstr "終端機"
 
-#: src/widgets/SettingsDialog.qml:198
+#: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "設定應用程式介面與外掛。"
 
-#: src/widgets/SettingsDialog.qml:203
+#: src/widgets/SettingsDialog.qml:205
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "自動調整配色方案"
 
-#: src/widgets/SettingsDialog.qml:204
+#: src/widgets/SettingsDialog.qml:206
 #, fuzzy, kde-format
 #| msgid "Colors based on the current style"
 msgid "Colors based on the current style."
 msgstr "基於目前風格的色彩"
 
-#: src/widgets/SettingsDialog.qml:234
+#: src/widgets/SettingsDialog.qml:236
 #, kde-format
 msgid "Fonts"
 msgstr "字型"
 
-#: src/widgets/SettingsDialog.qml:235
+#: src/widgets/SettingsDialog.qml:237
 #, fuzzy, kde-format
 #| msgid "Configure the terminal font family and size"
 msgid "Configure the terminal font family and size."
 msgstr "設定終端機字型家族與大小"
 
-#: src/widgets/SettingsDialog.qml:239
+#: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Family"
 msgstr "字型家族"
 
-#: src/widgets/SettingsDialog.qml:252
+#: src/widgets/SettingsDialog.qml:254
 #, kde-format
 msgid "Size"
 msgstr "字型大小"
 
-#: src/widgets/SettingsDialog.qml:264
+#: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Line Spacing"
 msgstr "行間距"

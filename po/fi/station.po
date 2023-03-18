@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-11 00:47+0000\n"
+"POT-Creation-Date: 2023-03-18 00:57+0000\n"
 "PO-Revision-Date: 2023-03-06 13:45+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -128,12 +128,12 @@ msgid "Edit"
 msgstr "Muokkaa"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
-#: src/widgets/SettingsDialog.qml:218
+#: src/widgets/SettingsDialog.qml:220
 #, kde-format
 msgid "Color Scheme"
 msgstr "Väriteema"
 
-#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:219
+#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:221
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Vaihda päätteen väriteemaa."
@@ -184,52 +184,52 @@ msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr "Läpikuultavuusaste. Toimii paremmin taustan sumennustuella."
 
-#: src/widgets/SettingsDialog.qml:188
+#: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "%1%"
 msgstr "%1 %"
 
-#: src/widgets/SettingsDialog.qml:197
+#: src/widgets/SettingsDialog.qml:199
 #, kde-format
 msgid "Terminal"
 msgstr "Pääte"
 
-#: src/widgets/SettingsDialog.qml:198
+#: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Aseta sovelluksen käyttöliittymä ja liitännäiset."
 
-#: src/widgets/SettingsDialog.qml:203
+#: src/widgets/SettingsDialog.qml:205
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Mukautuva väriteema"
 
-#: src/widgets/SettingsDialog.qml:204
+#: src/widgets/SettingsDialog.qml:206
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Nykyiseen tyyliin perustuvat värit."
 
-#: src/widgets/SettingsDialog.qml:234
+#: src/widgets/SettingsDialog.qml:236
 #, kde-format
 msgid "Fonts"
 msgstr "Fontit"
 
-#: src/widgets/SettingsDialog.qml:235
+#: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Configure the terminal font family and size."
 msgstr "Aseta päätteen fonttiperhe ja -koko."
 
-#: src/widgets/SettingsDialog.qml:239
+#: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Family"
 msgstr "Perhe"
 
-#: src/widgets/SettingsDialog.qml:252
+#: src/widgets/SettingsDialog.qml:254
 #, kde-format
 msgid "Size"
 msgstr "Koko"
 
-#: src/widgets/SettingsDialog.qml:264
+#: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Line Spacing"
 msgstr "Riviväli"
