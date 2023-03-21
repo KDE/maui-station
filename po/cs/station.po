@@ -334,6 +334,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "Follows the system color scheme."
-#~ msgstr "Následuje barevné schéma systému."
