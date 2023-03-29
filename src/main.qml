@@ -26,10 +26,8 @@ Maui.ApplicationWindow
         view: root
         geometry: Qt.rect(root.x, root.y, root.width, root.height)
         windowRadius: Maui.Style.radiusV
-        enabled: !Maui.Handy.isMobile
+        enabled: !Maui.Handy.isMobile && settings.windowOpacity < 1
     }
-
-
 
     onClosing:
     {
@@ -91,6 +89,11 @@ Maui.ApplicationWindow
 
             tabBar.showNewTabButton: false
             tabBar.visible: true
+            tabBar.background: Rectangle
+            {
+                color: Maui.Theme.backgroundColor
+                opacity: settings.windowOpacity
+            }
 
             tabBar.content: [
 
