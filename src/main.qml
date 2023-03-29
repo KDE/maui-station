@@ -110,7 +110,7 @@ Maui.ApplicationWindow
 
                     MenuItem
                     {
-                        //                        enabled: root.currentTab && root.currentTab.count === 1
+                        enabled: root.currentTab
                         checked: root.currentTab && root.currentTab.count === 2
                         text: i18n("Split")
 
@@ -152,6 +152,19 @@ Maui.ApplicationWindow
 
                 Maui.WindowControls {}
             ]
+        }
+
+        Maui.Holder
+        {
+            anchors.fill: parent
+            visible: _layout.count === 0
+            title: i18n("Nothing here")
+            body: i18n("To start hacking open a new tab or a split screen.")
+            actions: Action
+            {
+                text: i18n("New Tab")
+                onTriggered: root.openTab("$PWD")
+            }
         }
 
         footBar.visible: Maui.Handy.isTouch

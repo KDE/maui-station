@@ -7,8 +7,6 @@ Maui.SplitView
 {
     id: control
 
-    height: ListView.view.height
-    width:  ListView.view.width
 
     orientation: width >= 600 ? Qt.Horizontal : Qt.Vertical
 
