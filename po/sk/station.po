@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-18 00:57+0000\n"
+"POT-Creation-Date: 2023-03-30 00:48+0000\n"
 "PO-Revision-Date: 2023-03-12 10:33+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -40,52 +40,62 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Vývojár"
 
-#: src/main.qml:104 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:107 src/main.qml:165 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Nová karta"
 
-#: src/main.qml:112 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:115 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Rozdeliť"
 
-#: src/main.qml:122
+#: src/main.qml:125
 #, kde-format
 msgid "Tutorial"
 msgstr "Výučba"
 
-#: src/main.qml:134
+#: src/main.qml:137
 #, kde-format
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: src/main.qml:144
+#: src/main.qml:147
 #, kde-format
 msgid "About"
 msgstr "O aplikácii"
 
-#: src/main.qml:164
+#: src/main.qml:161
+#, kde-format
+msgid "Nothing here"
+msgstr ""
+
+#: src/main.qml:162
+#, kde-format
+msgid "To start hacking open a new tab or a split screen."
+msgstr ""
+
+#: src/main.qml:180
 #, kde-format
 msgid "Function Keys"
 msgstr ""
 
-#: src/main.qml:173
+#: src/main.qml:189
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:182
+#: src/main.qml:198
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr ""
 
-#: src/main.qml:191 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:207 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navigácia"
 
-#: src/main.qml:200
+#: src/main.qml:216
 #, kde-format
 msgid "Favorite"
 msgstr "Obľúbené"
@@ -232,12 +242,12 @@ msgstr "Veľkosť"
 msgid "Line Spacing"
 msgstr "Riadkovanie"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:31
 #, kde-format
 msgid "Close"
 msgstr "Zavrieť"
 
-#: src/widgets/TerminalLayout.qml:34
+#: src/widgets/TerminalLayout.qml:32
 #, kde-format
 msgid ""
 "A process is currently still running. Are you sure you want to close it?"
