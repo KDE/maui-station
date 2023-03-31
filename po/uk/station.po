@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-30 00:48+0000\n"
-"PO-Revision-Date: 2023-02-27 16:43+0200\n"
+"PO-Revision-Date: 2023-03-30 06:26+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -71,12 +71,13 @@ msgstr "Про програму"
 #: src/main.qml:161
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Тут нічого немає"
 
 #: src/main.qml:162
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
+"Щоб розпочати програмування, відкрийте нову вкладку або розділений екран."
 
 #: src/main.qml:180
 #, kde-format

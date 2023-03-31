@@ -70,7 +70,7 @@ msgstr "O aplikaci"
 #: src/main.qml:161
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Zde nic není."
 
 #: src/main.qml:162
 #, kde-format
