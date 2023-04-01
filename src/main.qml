@@ -84,8 +84,8 @@ Maui.ApplicationWindow
 
             anchors.fill: parent
 
-            onNewTabClicked: openTab("$PWD")
-            onCloseTabClicked: closeTab(index)
+            onNewTabClicked: root.openTab("$PWD")
+            onCloseTabClicked: root.closeTab(index)
 
             tabBar.showNewTabButton: false
             tabBar.visible: true
@@ -167,7 +167,7 @@ Maui.ApplicationWindow
             }
         }
 
-        footBar.visible: Maui.Handy.isTouch
+        footBar.visible: true
 
         footBar.farRightContent: Loader
         {
@@ -274,6 +274,35 @@ Maui.ApplicationWindow
         }
     }
 
+    Component
+    {
+        id: _confirmCloseDialogComponent
+
+        Maui.Dialog
+        {
+            property var cb : ({})
+            property int index: -1
+
+            headBar.visible: false
+            title: i18n("Close")
+            message: i18n("A process is still running. Are you sure you want to interrumpt it and close it?")
+            template.iconSource: "dialog-warning"
+            template.iconVisible: true
+            template.iconSizeHint: Maui.Style.iconSizes.huge
+
+            acceptButton.text: i18n("Close")
+            rejectButton.text: i18n("Cancel")
+            scrollView.padding: Maui.Style.space.big
+            onAccepted:
+            {
+                cb(index)
+                close()
+            }
+
+            onRejected: close()
+        }
+    }
+
     function openTab(path : string)
     {
         _layout.addTab(_terminalComponent, {'path': path});
@@ -282,6 +311,18 @@ Maui.ApplicationWindow
 
     function closeTab(index)
     {
+        var tab = _layout.tabAt(index)
+
+        console.log("TRYING TO CLOSE A TAB<<", tab.hasActiveProcess )
+        if(tab && tab.hasActiveProcess)
+        {
+            _dialogLoader.sourceComponent = _confirmCloseDialogComponent
+            dialog.index = index
+            dialog.cb = _layout.closeTab
+            dialog.open()
+            return;
+        }
+
         _layout.closeTab(index)
     }
 
