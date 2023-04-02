@@ -285,7 +285,7 @@ Maui.ApplicationWindow
 
             headBar.visible: false
             title: i18n("Close")
-            message: i18n("A process is still running. Are you sure you want to interrumpt it and close it?")
+            message: i18n("A process is still running. Are you sure you want to interrupt it and close it?")
             template.iconSource: "dialog-warning"
             template.iconVisible: true
             template.iconSizeHint: Maui.Style.iconSizes.huge

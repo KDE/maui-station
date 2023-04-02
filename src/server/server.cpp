@@ -142,7 +142,7 @@ void Server::activateWindow()
         auto window = qobject_cast<QQuickWindow *>(m_qmlObject);
         if (window)
         {
-            qDebug() << "Trying to raise wndow";
+            qDebug() << "Trying to raise window";
             window->raise();
             window->requestActivate();
         }
