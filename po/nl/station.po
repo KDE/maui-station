@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-30 00:48+0000\n"
+"POT-Creation-Date: 2023-04-02 00:46+0000\n"
 "PO-Revision-Date: 2023-03-30 10:05+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -102,6 +102,25 @@ msgstr "Navigatie"
 #, kde-format
 msgid "Favorite"
 msgstr "Favoriet"
+
+#: src/main.qml:287 src/main.qml:293
+#, kde-format
+msgid "Close"
+msgstr "Sluiten"
+
+#: src/main.qml:288
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently still running. Are you sure you want to close it?"
+msgid ""
+"A process is still running. Are you sure you want to interrumpt it and close "
+"it?"
+msgstr "Er draait momenteel nog een proces. Wilt u het toch sluiten?"
+
+#: src/main.qml:294
+#, kde-format
+msgid "Cancel"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -246,17 +265,6 @@ msgstr "Grootte"
 #, kde-format
 msgid "Line Spacing"
 msgstr "Regelafstand"
-
-#: src/widgets/TerminalLayout.qml:31
-#, kde-format
-msgid "Close"
-msgstr "Sluiten"
-
-#: src/widgets/TerminalLayout.qml:32
-#, kde-format
-msgid ""
-"A process is currently still running. Are you sure you want to close it?"
-msgstr "Er draait momenteel nog een proces. Wilt u het toch sluiten?"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

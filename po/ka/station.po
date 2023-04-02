@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-30 00:48+0000\n"
-"PO-Revision-Date: 2023-02-27 06:33+0100\n"
+"POT-Creation-Date: 2023-04-02 00:46+0000\n"
+"PO-Revision-Date: 2023-04-01 06:53+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -71,12 +71,12 @@ msgstr "შესახებ"
 #: src/main.qml:161
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "აქ არაფერია"
 
 #: src/main.qml:162
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "ჰაკინგის დასაწყებად გახსენით ახალი ჩანართი ან ეკრანი გაყავით."
 
 #: src/main.qml:180
 #, kde-format
@@ -102,6 +102,26 @@ msgstr "ნავიგაცია"
 #, kde-format
 msgid "Favorite"
 msgstr "რჩეული"
+
+#: src/main.qml:287 src/main.qml:293
+#, kde-format
+msgid "Close"
+msgstr "დაკეტვა"
+
+#: src/main.qml:288
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently still running. Are you sure you want to close it?"
+msgid ""
+"A process is still running. Are you sure you want to interrumpt it and close "
+"it?"
+msgstr ""
+"პროცესი ამჟამად გაშვებულია. დარწმუნებული ბრძანდებით, რომ გნებავთ, დახუროთ ის?"
+
+#: src/main.qml:294
+#, kde-format
+msgid "Cancel"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -245,18 +265,6 @@ msgstr "ზომა"
 #, kde-format
 msgid "Line Spacing"
 msgstr "ხაზებს შუა მანძილი"
-
-#: src/widgets/TerminalLayout.qml:31
-#, kde-format
-msgid "Close"
-msgstr "დაკეტვა"
-
-#: src/widgets/TerminalLayout.qml:32
-#, kde-format
-msgid ""
-"A process is currently still running. Are you sure you want to close it?"
-msgstr ""
-"პროცესი ამჟამად გაშვებულია. დარწმუნებული ბრძანდებით, რომ გნებავთ, დახუროთ ის?"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

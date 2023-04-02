@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-30 00:48+0000\n"
+"POT-Creation-Date: 2023-04-02 00:46+0000\n"
 "PO-Revision-Date: 2023-03-12 10:33+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -99,6 +99,23 @@ msgstr "Navigácia"
 #, kde-format
 msgid "Favorite"
 msgstr "Obľúbené"
+
+#: src/main.qml:287 src/main.qml:293
+#, kde-format
+msgid "Close"
+msgstr "Zavrieť"
+
+#: src/main.qml:288
+#, kde-format
+msgid ""
+"A process is still running. Are you sure you want to interrumpt it and close "
+"it?"
+msgstr ""
+
+#: src/main.qml:294
+#, kde-format
+msgid "Cancel"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -241,17 +258,6 @@ msgstr "Veľkosť"
 #, kde-format
 msgid "Line Spacing"
 msgstr "Riadkovanie"
-
-#: src/widgets/TerminalLayout.qml:31
-#, kde-format
-msgid "Close"
-msgstr "Zavrieť"
-
-#: src/widgets/TerminalLayout.qml:32
-#, kde-format
-msgid ""
-"A process is currently still running. Are you sure you want to close it?"
-msgstr ""
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-30 00:48+0000\n"
-"PO-Revision-Date: 2023-02-27 19:13+0100\n"
+"POT-Creation-Date: 2023-04-02 00:46+0000\n"
+"PO-Revision-Date: 2023-03-31 19:26+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -67,12 +67,14 @@ msgstr "À propos"
 #: src/main.qml:161
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Rien ici"
 
 #: src/main.qml:162
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
+"Pour commencer à bidouiller, veuillez ouvrir un nouvel onglet ou un écran "
+"partagé."
 
 #: src/main.qml:180
 #, kde-format
@@ -98,6 +100,27 @@ msgstr "Navigation"
 #, kde-format
 msgid "Favorite"
 msgstr "Favori"
+
+#: src/main.qml:287 src/main.qml:293
+#, kde-format
+msgid "Close"
+msgstr "Fermer"
+
+#: src/main.qml:288
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently still running. Are you sure you want to close it?"
+msgid ""
+"A process is still running. Are you sure you want to interrumpt it and close "
+"it?"
+msgstr ""
+"Un processus est actuellement en cours d'exécution. Voulez-vous vraiment le "
+"fermer ?"
+
+#: src/main.qml:294
+#, kde-format
+msgid "Cancel"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -243,19 +266,6 @@ msgstr "Taille"
 #, kde-format
 msgid "Line Spacing"
 msgstr "Espacement des lignes"
-
-#: src/widgets/TerminalLayout.qml:31
-#, kde-format
-msgid "Close"
-msgstr "Fermer"
-
-#: src/widgets/TerminalLayout.qml:32
-#, kde-format
-msgid ""
-"A process is currently still running. Are you sure you want to close it?"
-msgstr ""
-"Un processus est actuellement en cours d'exécution. Voulez-vous vraiment le "
-"fermer ?"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

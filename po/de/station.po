@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-30 00:48+0000\n"
+"POT-Creation-Date: 2023-04-02 00:46+0000\n"
 "PO-Revision-Date: 2023-03-12 16:52+0100\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -103,6 +103,23 @@ msgstr "Navigation"
 #, kde-format
 msgid "Favorite"
 msgstr "Favoriten"
+
+#: src/main.qml:287 src/main.qml:293
+#, kde-format
+msgid "Close"
+msgstr "Schließen"
+
+#: src/main.qml:288
+#, kde-format
+msgid ""
+"A process is still running. Are you sure you want to interrumpt it and close "
+"it?"
+msgstr ""
+
+#: src/main.qml:294
+#, kde-format
+msgid "Cancel"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -245,17 +262,6 @@ msgstr "Größe"
 #, kde-format
 msgid "Line Spacing"
 msgstr "Zeilenabstand"
-
-#: src/widgets/TerminalLayout.qml:31
-#, kde-format
-msgid "Close"
-msgstr "Schließen"
-
-#: src/widgets/TerminalLayout.qml:32
-#, kde-format
-msgid ""
-"A process is currently still running. Are you sure you want to close it?"
-msgstr ""
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

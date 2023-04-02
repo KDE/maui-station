@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-30 00:48+0000\n"
-"PO-Revision-Date: 2023-03-06 16:42+0000\n"
+"POT-Creation-Date: 2023-04-02 00:46+0000\n"
+"PO-Revision-Date: 2023-04-01 12:19+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -71,12 +71,12 @@ msgstr "Acerca"
 #: src/main.qml:161
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Nada aqui"
 
 #: src/main.qml:162
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "Para começar a trabalhar, abra uma nova página ou um ecrã dividido."
 
 #: src/main.qml:180
 #, kde-format
@@ -102,6 +102,26 @@ msgstr "Navegação"
 #, kde-format
 msgid "Favorite"
 msgstr "Favorito"
+
+#: src/main.qml:287 src/main.qml:293
+#, kde-format
+msgid "Close"
+msgstr "Fechar"
+
+#: src/main.qml:288
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently still running. Are you sure you want to close it?"
+msgid ""
+"A process is still running. Are you sure you want to interrumpt it and close "
+"it?"
+msgstr ""
+"Está actualmente um processo em execução. Tem a certeza que o deseja fechar?"
+
+#: src/main.qml:294
+#, kde-format
+msgid "Cancel"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -247,18 +267,6 @@ msgstr "Tamanho"
 msgid "Line Spacing"
 msgstr "Espaço entre Linhas"
 
-#: src/widgets/TerminalLayout.qml:31
-#, kde-format
-msgid "Close"
-msgstr "Fechar"
-
-#: src/widgets/TerminalLayout.qml:32
-#, kde-format
-msgid ""
-"A process is currently still running. Are you sure you want to close it?"
-msgstr ""
-"Está actualmente um processo em execução. Tem a certeza que o deseja fechar?"
-
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
 msgid "Shortcuts"
@@ -353,6 +361,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Adicionar"
-
-#~ msgid "Follows the system color scheme."
-#~ msgstr "Segue o esquema de cores do sistema."

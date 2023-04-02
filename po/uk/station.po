@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-30 00:48+0000\n"
+"POT-Creation-Date: 2023-04-02 00:46+0000\n"
 "PO-Revision-Date: 2023-03-30 06:26+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -103,6 +103,25 @@ msgstr "Навігація"
 #, kde-format
 msgid "Favorite"
 msgstr "Улюблене"
+
+#: src/main.qml:287 src/main.qml:293
+#, kde-format
+msgid "Close"
+msgstr "Закрити"
+
+#: src/main.qml:288
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently still running. Are you sure you want to close it?"
+msgid ""
+"A process is still running. Are you sure you want to interrumpt it and close "
+"it?"
+msgstr "Зараз тут працює процес. Ви справді хочете завершити його роботу?"
+
+#: src/main.qml:294
+#, kde-format
+msgid "Cancel"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -246,17 +265,6 @@ msgstr "Розмір"
 #, kde-format
 msgid "Line Spacing"
 msgstr "Інтервал між рядками"
-
-#: src/widgets/TerminalLayout.qml:31
-#, kde-format
-msgid "Close"
-msgstr "Закрити"
-
-#: src/widgets/TerminalLayout.qml:32
-#, kde-format
-msgid ""
-"A process is currently still running. Are you sure you want to close it?"
-msgstr "Зараз тут працює процес. Ви справді хочете завершити його роботу?"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

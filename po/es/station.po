@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-30 00:48+0000\n"
-"PO-Revision-Date: 2023-02-27 18:56+0100\n"
+"POT-Creation-Date: 2023-04-02 00:46+0000\n"
+"PO-Revision-Date: 2023-04-01 16:55+0200\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 20.04.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -71,12 +71,13 @@ msgstr "Acerca de"
 #: src/main.qml:161
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Nada aquí"
 
 #: src/main.qml:162
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
+"Para empezar a trabajar, abra una nueva pestaña o una ventana separada."
 
 #: src/main.qml:180
 #, kde-format
@@ -102,6 +103,25 @@ msgstr "Navegación"
 #, kde-format
 msgid "Favorite"
 msgstr "Favorito"
+
+#: src/main.qml:287 src/main.qml:293
+#, kde-format
+msgid "Close"
+msgstr "Cerrar"
+
+#: src/main.qml:288
+#, fuzzy, kde-format
+#| msgid ""
+#| "A process is currently still running. Are you sure you want to close it?"
+msgid ""
+"A process is still running. Are you sure you want to interrumpt it and close "
+"it?"
+msgstr "Al menos un proceso sigue ejecutando. ¿Está seguro de cerrarlo?"
+
+#: src/main.qml:294
+#, kde-format
+msgid "Cancel"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -246,17 +266,6 @@ msgstr "Tamaño"
 msgid "Line Spacing"
 msgstr "Espaciado ente líneas"
 
-#: src/widgets/TerminalLayout.qml:31
-#, kde-format
-msgid "Close"
-msgstr "Cerrar"
-
-#: src/widgets/TerminalLayout.qml:32
-#, kde-format
-msgid ""
-"A process is currently still running. Are you sure you want to close it?"
-msgstr "Al menos un proceso sigue ejecutando. ¿Está seguro de cerrarlo?"
-
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
 msgid "Shortcuts"
@@ -351,9 +360,3 @@ msgstr "Crear un nuevo atajo de orden para ejecutar acciones rápidamente."
 #, kde-format
 msgid "Add"
 msgstr "Añadir"
-
-#~ msgid "Follows the system color scheme."
-#~ msgstr "Sigue el esquema de color del sistema."
-
-#~ msgid "New tab"
-#~ msgstr "Nueva pestaña"
