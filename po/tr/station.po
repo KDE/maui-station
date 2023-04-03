@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-02 00:46+0000\n"
-"PO-Revision-Date: 2023-03-30 10:17+0300\n"
+"POT-Creation-Date: 2023-04-03 00:45+0000\n"
+"PO-Revision-Date: 2023-04-02 17:22+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -110,16 +110,18 @@ msgstr "Kapat"
 #: src/main.qml:288
 #, fuzzy, kde-format
 #| msgid ""
-#| "A process is currently still running. Are you sure you want to close it?"
+#| "A process is still running. Are you sure you want to interrumpt it and "
+#| "close it?"
 msgid ""
-"A process is still running. Are you sure you want to interrumpt it and close "
+"A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr "Bir süreç halihazırda çalışıyor. Kapatmak istediğinizden emin misiniz?"
+msgstr ""
+"Bir süreç hâlâ çalışıyor. Yarıda kesip kapatmak istediğinizden emin misiniz?"
 
 #: src/main.qml:294
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
