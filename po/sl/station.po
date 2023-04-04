@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:45+0000\n"
-"PO-Revision-Date: 2023-03-31 08:53+0200\n"
+"PO-Revision-Date: 2023-04-03 08:49+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -109,18 +109,18 @@ msgid "Close"
 msgstr "Zapri"
 
 #: src/main.qml:288
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently still running. Are you sure you want to close it?"
+#, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr "Proces trenutno še teče. Ali ste prepričani, da želite zapiranje?"
+msgstr ""
+"Proces trenutno še teče. Ali ste prepričani, da ga želite prekiniti in "
+"zapreti?"
 
 #: src/main.qml:294
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Prekliči"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format

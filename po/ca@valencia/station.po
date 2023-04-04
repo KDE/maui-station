@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:45+0000\n"
-"PO-Revision-Date: 2023-03-30 09:53+0200\n"
+"PO-Revision-Date: 2023-04-03 11:35+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -111,19 +111,17 @@ msgid "Close"
 msgstr "Tanca"
 
 #: src/main.qml:288
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently still running. Are you sure you want to close it?"
+#, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr ""
-"Actualment, encara hi ha un procés executant-se. Segur que el voleu tancar?"
+"Encara hi ha un procés executant-se. Segur que el voleu interrompre i tancar?"
 
 #: src/main.qml:294
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format

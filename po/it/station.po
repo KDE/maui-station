@@ -1,23 +1,21 @@
-# Translation of station.po to Catalan
-# Copyright (C) 2022-2023 This_file_is_part_of_KDE
-# This file is distributed under the license LGPL version 2.1 or
-# version 3 or later versions approved by the membership of KDE e.V.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-station package.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2023.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:45+0000\n"
-"PO-Revision-Date: 2023-04-03 11:35+0200\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
-"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
-"Language: ca\n"
+"PO-Revision-Date: 2023-04-03 15:56+0200\n"
+"Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -27,12 +25,12 @@ msgstr "Station"
 #: src/main.cpp:35
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr "Emulador de terminal convergent."
+msgstr "Emulatore di terminale convergente."
 
 #: src/main.cpp:35
 #, kde-format
 msgid "© 2019-%1 Maui Development Team"
-msgstr "© 2019-%1 Maui Development Team"
+msgstr "© 2019-%1 La squadra di sviluppo di Maui"
 
 #: src/main.cpp:36
 #, kde-format
@@ -42,48 +40,47 @@ msgstr "Camilo Higuita"
 #: src/main.cpp:36
 #, kde-format
 msgid "Developer"
-msgstr "Desenvolupador"
+msgstr "Sviluppatore"
 
 #: src/main.qml:107 src/main.qml:165 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
-msgstr "Pestanya nova"
+msgstr "Nuova scheda"
 
 #: src/main.qml:115 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
-msgstr "Divideix"
+msgstr "Dividi"
 
 #: src/main.qml:125
 #, kde-format
 msgid "Tutorial"
-msgstr "Guia d'aprenentatge"
+msgstr "Esercitazione"
 
 #: src/main.qml:137
 #, kde-format
 msgid "Settings"
-msgstr "Configuració"
+msgstr "Impostazioni"
 
 #: src/main.qml:147
 #, kde-format
 msgid "About"
-msgstr "Quant a"
+msgstr "Informazioni"
 
 #: src/main.qml:161
 #, kde-format
 msgid "Nothing here"
-msgstr "Res aquí"
+msgstr "Non c'è niente qui"
 
 #: src/main.qml:162
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
-"Per començar a treballar obriu una pestanya nova o una pantalla dividida."
+msgstr "Per iniziare, apri una nuova scheda o uno schermo diviso."
 
 #: src/main.qml:180
 #, kde-format
 msgid "Function Keys"
-msgstr "Tecles de funció"
+msgstr "Tasti funzione"
 
 #: src/main.qml:189
 #, kde-format
@@ -93,22 +90,22 @@ msgstr "Nano"
 #: src/main.qml:198
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr "Modificadors Ctrl"
+msgstr "Modificatori Ctrl"
 
 #: src/main.qml:207 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
-msgstr "Navegació"
+msgstr "Navigazione"
 
 #: src/main.qml:216
 #, kde-format
 msgid "Favorite"
-msgstr "Preferit"
+msgstr "Preferito"
 
 #: src/main.qml:287 src/main.qml:293
 #, kde-format
 msgid "Close"
-msgstr "Tanca"
+msgstr "Chiudi"
 
 #: src/main.qml:288
 #, kde-format
@@ -116,106 +113,107 @@ msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr ""
-"Encara hi ha un procés executant-se. Esteu segur que el voleu interrompre i "
-"tancar?"
+"Un processo è ancora in esecuzione. Sei sicuro di volerlo interrompere e "
+"chiudere?"
 
 #: src/main.qml:294
 #, kde-format
 msgid "Cancel"
-msgstr "Cancel·la"
+msgstr "Annulla"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
 msgid "New Command"
-msgstr "Ordre nova"
+msgstr "Nuovo comando"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
-msgstr "Edita una ordre"
+msgstr "Modifica comando"
 
 #: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr "Edita una drecera d'ordre"
+msgstr "Modifica la scorciatoia di un comando"
 
 #: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "No Commands"
-msgstr "No hi ha cap ordre"
+msgstr "Nessun comando"
 
 #: src/widgets/CommandShortcuts.qml:50
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr "Comenceu afegint dreceres d'ordres noves"
+msgstr "Inizia ad aggiungere nuove scorciatoie per i comandi"
 
 #: src/widgets/CommandShortcuts.qml:92
 #, kde-format
 msgid "Remove"
-msgstr "Elimina"
+msgstr "Rimuovi"
 
 #: src/widgets/CommandShortcuts.qml:102
 #, kde-format
 msgid "Edit"
-msgstr "Edita"
+msgstr "Modifica"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
 #: src/widgets/SettingsDialog.qml:220
 #, kde-format
 msgid "Color Scheme"
-msgstr "Esquema de color"
+msgstr "Schema di colori"
 
 #: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:221
 #, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "Canvia l'esquema de color del terminal."
+msgstr "Cambia lo schema di colori del terminale."
 
 #: src/widgets/SettingsDialog.qml:108
 #, kde-format
 msgid "Interface"
-msgstr "Interfície"
+msgstr "Interfaccia"
 
 #: src/widgets/SettingsDialog.qml:109
 #, kde-format
 msgid "Configure the application components and behaviour."
-msgstr "Configura els components i el comportament de l'aplicació."
+msgstr "Configurare i componenti e il comportamento dell'applicazione."
 
 #: src/widgets/SettingsDialog.qml:114
 #, kde-format
 msgid "Color"
-msgstr "Color"
+msgstr "Colore"
 
 #: src/widgets/SettingsDialog.qml:115
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "Alterna entre els esquemes de color clar i fosc."
+msgstr "Passa dallo schema di colori chiaro allo scuro e viceversa."
 
 #: src/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Light"
-msgstr "Clar"
+msgstr "Chiaro"
 
 #: src/widgets/SettingsDialog.qml:130
 #, kde-format
 msgid "Dark"
-msgstr "Fosc"
+msgstr "Scuro"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Adaptive"
-msgstr "Adaptatiu"
+msgstr "Adattivo"
 
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Translucency"
-msgstr "Translucidesa"
+msgstr "Trasparenza"
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
 msgstr ""
-"Nivell de translucidesa. Funciona millor si hi ha suport de fons difuminat."
+"Livello di trasparenza. Funziona meglio se c'è il supporto dello sfondo "
+"sfocato."
 
 #: src/widgets/SettingsDialog.qml:190
 #, kde-format
@@ -225,138 +223,140 @@ msgstr "%1%"
 #: src/widgets/SettingsDialog.qml:199
 #, kde-format
 msgid "Terminal"
-msgstr "Terminal"
+msgstr "Terminale"
 
 #: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Configure the app UI and plugins."
-msgstr "Configura la IU de l'aplicació i els connectors."
+msgstr "Configura l'interfaccia utente e le estensioni dell'applicazione."
 
 #: src/widgets/SettingsDialog.qml:205
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Esquema de color adaptatiu"
+msgstr "Schema di colori adattivo"
 
 #: src/widgets/SettingsDialog.qml:206
 #, kde-format
 msgid "Colors based on the current style."
-msgstr "Colors basats en l'estil actual."
+msgstr "Colori basati sullo stile attuale."
 
 #: src/widgets/SettingsDialog.qml:236
 #, kde-format
 msgid "Fonts"
-msgstr "Tipus de lletra"
+msgstr "Caratteri"
 
 #: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Configure the terminal font family and size."
-msgstr "Configura la família i la mida dels tipus de lletra del terminal."
+msgstr "Configura la famiglia e la dimensione del carattere del terminale."
 
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Family"
-msgstr "Família"
+msgstr "Famiglia"
 
 #: src/widgets/SettingsDialog.qml:254
 #, kde-format
 msgid "Size"
-msgstr "Mida"
+msgstr "Dimensione"
 
 #: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Line Spacing"
-msgstr "Interlineat"
+msgstr "Interlinea"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
 msgid "Shortcuts"
-msgstr "Dreceres"
+msgstr "Scorciatoie"
 
 #: src/widgets/TutorialDialog.qml:19
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
 msgstr ""
-"Si utilitzeu un teclat, podeu usar les dreceres següents per a navegar."
+"Quando usi una tastiera puoi utilizzare le seguenti scorciatoie per navigare."
 
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr "Obre una vista dividida nova, verticalment o horitzontalment."
+msgstr "Apri una nuova vista divisa, verticalmente o orizzontalmente."
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
 msgid "Find"
-msgstr "Cerca"
+msgstr "Trova"
 
 #: src/widgets/TutorialDialog.qml:70
 #, kde-format
 msgid "Open the find bar."
-msgstr "Obre la barra de cerca."
+msgstr "Apri la barra di ricerca."
 
 #: src/widgets/TutorialDialog.qml:90
 #, kde-format
 msgid "Switch"
-msgstr "Commuta"
+msgstr "Cambia"
 
 #: src/widgets/TutorialDialog.qml:91
 #, kde-format
 msgid "Switch between split views."
-msgstr "Commuta entre les vistes dividides."
+msgstr "Passa da una visualizzazione divisa all'altra."
 
 #: src/widgets/TutorialDialog.qml:114
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
-msgstr ""
-"En els dispositius tàctils, podeu usar els gestos següents per a navegar."
+msgstr "Sui dispositivi tattili puoi usare i seguenti gesti per navigare."
 
 #: src/widgets/TutorialDialog.qml:118
 #, kde-format
 msgid "Up & Down"
-msgstr "Amunt i avall"
+msgstr "Su e giù"
 
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr "Llisqueu amunt o avall per a navegar per les ordres de l'historial."
+msgstr ""
+"Scivola verso l'alto o verso il basso per navigare nella cronologia dei "
+"comandi."
 
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
 msgid "Left & Right"
-msgstr "Esquerra i dreta"
+msgstr "Sinistra e destra"
 
 #: src/widgets/TutorialDialog.qml:125
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
-"Llisqueu a la dreta o esquerra per a moure's per la línia d'ordres per a "
-"editar-la."
+"Scivola verso sinistra o verso destra per spostarti nella riga di comando "
+"per modificare."
 
 #: src/widgets/TutorialDialog.qml:130
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr "Dos dits esquerra i dreta"
+msgstr "Due dita sinistra e destra"
 
 #: src/widgets/TutorialDialog.qml:131
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr "Llisqueu amunt o avall amb dos dits per a desplaçar-se."
+msgstr "Scivola verso l'alto o verso il basso con due dita per scorrere."
 
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
 msgid "Commands"
-msgstr "Ordres"
+msgstr "Comandi"
 
 #: src/widgets/TutorialDialog.qml:142
 #, kde-format
 msgid "Create"
-msgstr "Crea"
+msgstr "Non creare"
 
 #: src/widgets/TutorialDialog.qml:143
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
+msgstr ""
+"Crea una nuova scorciatoia di comando per attivare rapidamente le azioni."
 
 #: src/widgets/TutorialDialog.qml:147
 #, kde-format
 msgid "Add"
-msgstr "Afegeix"
+msgstr "add kig icon"
