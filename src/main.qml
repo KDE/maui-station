@@ -31,11 +31,20 @@ Maui.ApplicationWindow
 
     onClosing:
     {
-        if(currentTerminal.session.hasActiveProcess)
+        _dialogLoader.sourceComponent = _confirmCloseDialogComponent
+
+        if(anyTabHasActiveProcess() && !dialog.discard)
         {
-            root.notify("face-ninja", "Process is running", "Are you sure you want to quit?", root.close())
             close.accepted = false
+
+            dialog.index = -1
+            dialog.cb =  ()=> {root.close()}
+            close.accepted = false
+            dialog.open()
+            return
         }
+
+        close.accepted = true
     }
 
     Settings
@@ -75,7 +84,11 @@ Maui.ApplicationWindow
         anchors.fill: parent
         headBar.visible: false
 
-        background: null
+        background: Rectangle
+        {
+            color: Maui.Theme.backgroundColor
+            opacity: _layout.count === 0 ? 1 : 0
+        }
 
         Maui.TabView
         {
@@ -280,8 +293,10 @@ Maui.ApplicationWindow
 
         Maui.Dialog
         {
+            id : _dialog
             property var cb : ({})
             property int index: -1
+            property bool discard : false
 
             headBar.visible: false
             title: i18n("Close")
@@ -295,8 +310,14 @@ Maui.ApplicationWindow
             scrollView.padding: Maui.Style.space.big
             onAccepted:
             {
-                cb(index)
-                close()
+                discard = true
+                _dialog.close()
+
+                if(cb instanceof Function)
+                {
+                    cb(index)
+                }
+
             }
 
             onRejected: close()
@@ -330,5 +351,20 @@ Maui.ApplicationWindow
     {
         _dialogLoader.sourceComponent = _commandDialogComponent
         dialog.open()
+    }
+
+    function anyTabHasActiveProcess()
+    {
+        for(var i = 0; i < _layout.count; i ++)
+
+        {
+            let tab = _layout.tabAt(i)
+            if(tab && tab.hasActiveProcess)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
