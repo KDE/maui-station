@@ -16,6 +16,8 @@ Maui.SplitView
     property string path : "$PWD"
 
     readonly property bool hasActiveProcess : count === 2 ?  contentModel.get(0).session.hasActiveProcess || contentModel.get(1).session.hasActiveProcess : currentItem.session.hasActiveProcess
+readonly property bool isCurrentTab : SwipeView.isCurrentItem
+
 
         readonly property string title : count === 2 ?  contentModel.get(0).title  + " - " + contentModel.get(1).title : currentItem.title
 
@@ -23,6 +25,14 @@ Maui.SplitView
     Maui.TabViewInfo.tabToolTipText: currentItem.session.currentDir
     Maui.TabViewInfo.tabColor: control.hasActiveProcess ? Maui.Theme.neutralBackgroundColor : "transparent"
     Maui.TabViewInfo.tabIcon: control.hasActiveProcess ? "indicator-messages" : ""
+
+    onHasActiveProcessChanged:
+    {
+        if(!control.isCurrentTab)
+        {
+            root.notify("dialog-warning", i18n("Process Finished"), i18n("Running task has finished."), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, 2500, i18n("Check"))
+        }
+    }
 
     function forceActiveFocus()
     {
