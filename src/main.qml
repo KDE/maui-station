@@ -19,7 +19,7 @@ Maui.ApplicationWindow
     Maui.Style.styleType: settings.colorStyle
     property alias currentTab : _layout.currentItem
     readonly property Term.Terminal currentTerminal : currentTab.currentItem.terminal
-    readonly property font defaultFont : Qt.font({ family: "Monospace", pointSize: Maui.Style.defaultFontSize})
+    readonly property font defaultFont : Maui.Style.monospacedFont
 
     Maui.WindowBlur
     {
@@ -31,9 +31,10 @@ Maui.ApplicationWindow
 
     onClosing:
     {
+        _dialogLoader.sourceComponent = null
         _dialogLoader.sourceComponent = _confirmCloseDialogComponent
 
-        if(anyTabHasActiveProcess() && !dialog.discard)
+        if(anyTabHasActiveProcess() && !dialog.discard && settings.preventClosing)
         {
             close.accepted = false
 
@@ -58,8 +59,15 @@ Maui.ApplicationWindow
         property int keysModelCurrentIndex : 4
         property int colorStyle : Maui.Style.Dark
         property double windowOpacity: 1
-        property int tabSpace: 4
         property bool adaptiveColorScheme : true
+        property bool preventClosing: true
+        property bool alertProcess: true
+
+        property bool enableBold: true
+        property bool blinkingCursor: true
+        property bool fullCursorHeight: true
+        property bool antialiasText: true
+
     }
 
     Loader
@@ -320,7 +328,11 @@ Maui.ApplicationWindow
 
             }
 
-            onRejected: close()
+            onRejected:
+            {
+                discard = false
+                 close()
+            }
         }
     }
 
@@ -334,8 +346,7 @@ Maui.ApplicationWindow
     {
         var tab = _layout.tabAt(index)
 
-        console.log("TRYING TO CLOSE A TAB<<", tab.hasActiveProcess )
-        if(tab && tab.hasActiveProcess)
+        if(tab && tab.hasActiveProcess && settings.preventClosing)
         {
             _dialogLoader.sourceComponent = _confirmCloseDialogComponent
             dialog.index = index

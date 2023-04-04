@@ -49,6 +49,11 @@ Maui.SplitViewItem
         kterminal.lineSpacing: settings.lineSpacing
         kterminal.backgroundOpacity: settings.windowOpacity
 
+        kterminal.enableBold : settings.enableBold
+        kterminal.blinkingCursor : settings.blinkingCursor
+        kterminal.fullCursorHeight : settings.fullCursorHeight
+        kterminal.antialiasText : settings.antialiasText
+
         onKeyPressed:
         {
             if ((event.key == Qt.Key_D) && (event.modifiers & Qt.ControlModifier))

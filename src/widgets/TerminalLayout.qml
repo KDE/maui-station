@@ -28,7 +28,7 @@ readonly property bool isCurrentTab : SwipeView.isCurrentItem
 
     onHasActiveProcessChanged:
     {
-        if(!control.isCurrentTab)
+        if(!control.isCurrentTab && settings.alertProcess)
         {
             root.notify("dialog-warning", i18n("Process Finished"), i18n("Running task has finished for tab: %1", control.title), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, 2500, i18n("Check"))
         }
@@ -61,7 +61,7 @@ readonly property bool isCurrentTab : SwipeView.isCurrentItem
     function pop()
     {
         var index = control.currentIndex === 1 ? 0 : 1
-        if(control.contentModel.get(index).session.hasActiveProcess)
+        if(control.contentModel.get(index).session.hasActiveProcess && settings.preventClosing)
         {
             _dialogLoader.sourceComponent = _confirmCloseDialogComponent
             dialog.index = index

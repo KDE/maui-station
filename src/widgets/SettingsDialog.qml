@@ -13,6 +13,29 @@ Maui.SettingsDialog
 
     Component
     {
+        id:_fontPageComponent
+
+        Maui.SettingsPage
+        {
+            title: i18n("Font")
+
+            Maui.FontPicker
+            {
+                Layout.fillWidth: true
+
+                mfont: settings.font
+                model.onlyMonospaced: true
+
+                onFontModified:
+                {
+                    settings.font = font
+                }
+            }
+        }
+    }
+
+    Component
+    {
         id:_csPageComponent
 
         Maui.SettingsPage
@@ -98,6 +121,39 @@ Maui.SettingsDialog
                             label1.text: model.name
                         }
                     }
+                }
+            }
+        }
+    }
+
+    Component
+    {
+        id: _alertsPageComponent
+
+        Maui.SettingsPage
+        {
+            title: i18n("Alerts")
+            Maui.SectionItem
+            {
+                label1.text: i18n("Running Task")
+                label2.text: i18n("Prevent from closing a running task.")
+
+                Switch
+                {
+                    checked: settings.preventClosing
+                    onToggled: settings.preventClosing = ! settings.preventClosing
+                }
+            }
+
+            Maui.SectionItem
+            {
+                label1.text: i18n("Finished Task")
+                label2.text: i18n("Emit a notificacion when a pending process has finished.")
+
+                Switch
+                {
+                    checked: settings.alertProcess
+                    onToggled: settings.alertProcess = ! settings.alertProcess
                 }
             }
         }
@@ -207,7 +263,6 @@ Maui.SettingsDialog
 
             Switch
             {
-                Layout.fillHeight: true
                 checkable: true
                 checked:  settings.adaptiveColorScheme
                 onToggled: settings.adaptiveColorScheme = ! settings.adaptiveColorScheme
@@ -220,7 +275,6 @@ Maui.SettingsDialog
             label1.text: i18n("Color Scheme")
             label2.text: i18n("Change the color scheme of the terminal.")
             enabled: !settings.adaptiveColorScheme
-            //onClicked: control.addPage(_csPageComponent)
 
             ToolButton
             {
@@ -229,35 +283,36 @@ Maui.SettingsDialog
                 onToggled: control.addPage(_csPageComponent)
             }
         }
+
+        Maui.SectionItem
+        {
+            label1.text: i18n("Alerts")
+            label2.text: i18n("Alert on processes and prevent closing them.")
+
+            ToolButton
+            {
+                checkable: true
+                icon.name: "go-next"
+                onToggled: control.addPage(_alertsPageComponent)
+            }
+        }
     }
 
     Maui.SectionGroup
     {
-        title: i18n("Fonts")
-        description: i18n("Configure the terminal font family and size.")
+        title: i18n("Display")
+        description: i18n("Configure the terminal font and display options.")
 
         Maui.SectionItem
         {
-            label1.text:  i18n("Family")
-            columns: 1
-            Maui.FontsComboBox
-            {
-                Layout.fillWidth: true
-                model: Station.Fonts.monospaceFamilies
-                Component.onCompleted: currentIndex = find(settings.font.family, Qt.MatchExactly)
-                onActivated: settings.font.family = currentText
-            }
-        }
+            label1.text: i18n("Font")
+            label2.text: i18n("Font family and size.")
 
-        Maui.SectionItem
-        {
-            label1.text:  i18n("Size")
-
-            SpinBox
+            ToolButton
             {
-                from: 0; to : 500
-                value: settings.font.pointSize
-                onValueChanged: settings.font.pointSize = value
+                checkable: true
+                icon.name: "go-next"
+                onToggled: control.addPage(_fontPageComponent)
             }
         }
 
@@ -268,8 +323,52 @@ Maui.SettingsDialog
             SpinBox
             {
                 from: 0; to : 500
-                value: settings.tabSpace
+                value: settings.lineSpacing
                 onValueChanged: settings.lineSpacing = value
+            }
+        }
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("Enable Bold")
+
+            Switch
+            {
+               checked: settings.enableBold
+               onToggled:  settings.enableBold = !settings.enableBold
+            }
+        }
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("Blinking Cursor")
+
+            Switch
+            {
+               checked: settings.blinkingCursor
+               onToggled:  settings.blinkingCursor = !settings.blinkingCursor
+            }
+        }
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("Full Cursor Height")
+
+            Switch
+            {
+               checked: settings.fullCursorHeight
+               onToggled:  settings.fullCursorHeight = !settings.fullCursorHeight
+            }
+        }
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("Antialias text")
+
+            Switch
+            {
+               checked: settings.antialiasText
+               onToggled:  settings.antialiasText = !settings.antialiasText
             }
         }
     }
