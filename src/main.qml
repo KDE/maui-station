@@ -118,6 +118,13 @@ Maui.ApplicationWindow
 
             tabBar.content: [
 
+                ToolButton
+                {
+                  icon.name: "edit-find"
+                  checked: root.currentTerminal.footBar.visible
+                  onClicked: root.currentTerminal.toggleSearchBar()
+                },
+
                 Maui.ToolButtonMenu
                 {
                     icon.name: "list-add"

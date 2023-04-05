@@ -41,6 +41,7 @@ Maui.SettingsDialog
         Maui.SettingsPage
         {
             title: i18n("Color Scheme")
+
             Maui.SectionItem
             {
                 label1.text: i18n("Color Scheme")
@@ -53,11 +54,10 @@ Maui.SettingsDialog
                     columns: 3
                     Layout.fillWidth: true
                     opacity: enabled ? 1 : 0.5
+
                     Repeater
                     {
-                        model: Term.ColorSchemesModel
-                        {
-                        }
+                        model: Term.ColorSchemesModel {}
 
                         delegate: Maui.GridBrowserDelegate
                         {
