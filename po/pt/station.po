@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-03 00:45+0000\n"
+"POT-Creation-Date: 2023-04-05 00:47+0000\n"
 "PO-Revision-Date: 2023-04-03 09:46+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -43,72 +43,72 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Desenvolvimento"
 
-#: src/main.qml:107 src/main.qml:165 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:128 src/main.qml:186 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Nova Página"
 
-#: src/main.qml:115 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:136 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Dividir"
 
-#: src/main.qml:125
+#: src/main.qml:146
 #, kde-format
 msgid "Tutorial"
 msgstr "Tutorial"
 
-#: src/main.qml:137
+#: src/main.qml:158
 #, kde-format
 msgid "Settings"
 msgstr "Configuração"
 
-#: src/main.qml:147
+#: src/main.qml:168
 #, kde-format
 msgid "About"
 msgstr "Acerca"
 
-#: src/main.qml:161
+#: src/main.qml:182
 #, kde-format
 msgid "Nothing here"
 msgstr "Nada aqui"
 
-#: src/main.qml:162
+#: src/main.qml:183
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Para começar a trabalhar, abra uma nova página ou um ecrã dividido."
 
-#: src/main.qml:180
+#: src/main.qml:201
 #, kde-format
 msgid "Function Keys"
 msgstr "Teclas de Função"
 
-#: src/main.qml:189
+#: src/main.qml:210
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:198
+#: src/main.qml:219
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificadores Ctrl"
 
-#: src/main.qml:207 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:228 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navegação"
 
-#: src/main.qml:216
+#: src/main.qml:237
 #, kde-format
 msgid "Favorite"
 msgstr "Favorito"
 
-#: src/main.qml:287 src/main.qml:293
+#: src/main.qml:310 src/main.qml:316
 #, kde-format
 msgid "Close"
 msgstr "Fechar"
 
-#: src/main.qml:288
+#: src/main.qml:311
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -117,7 +117,7 @@ msgstr ""
 "Está actualmente um processo em execução. Tem a certeza que o deseja "
 "interromper e fechar?"
 
-#: src/main.qml:294
+#: src/main.qml:317
 #, kde-format
 msgid "Cancel"
 msgstr "Cancelar"
@@ -157,58 +157,89 @@ msgstr "Remover"
 msgid "Edit"
 msgstr "Editar"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:23
-#: src/widgets/SettingsDialog.qml:220
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
+#, fuzzy, kde-format
+#| msgid "Fonts"
+msgid "Font"
+msgstr "Tipos de Letra"
+
+#: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:46
+#: src/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquema de Cores"
 
-#: src/widgets/SettingsDialog.qml:24 src/widgets/SettingsDialog.qml:221
+#: src/widgets/SettingsDialog.qml:47 src/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Muda o esquema de cores do terminal."
 
-#: src/widgets/SettingsDialog.qml:108
+#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
+#, kde-format
+msgid "Alerts"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:138
+#, kde-format
+msgid "Running Task"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:139
+#, kde-format
+msgid "Prevent from closing a running task."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:150
+#, kde-format
+msgid "Finished Task"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:151
+#, kde-format
+msgid "Emit a notificacion when a pending process has finished."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Interface"
 msgstr "Interface"
 
-#: src/widgets/SettingsDialog.qml:109
+#: src/widgets/SettingsDialog.qml:165
 #, kde-format
 msgid "Configure the application components and behaviour."
 msgstr "Configura os componentes e comportamento da aplicação."
 
-#: src/widgets/SettingsDialog.qml:114
+#: src/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "Color"
 msgstr "Cor"
 
-#: src/widgets/SettingsDialog.qml:115
+#: src/widgets/SettingsDialog.qml:171
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "Alternar entre o esquema de cores claro e escuro."
 
-#: src/widgets/SettingsDialog.qml:123
+#: src/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid "Light"
 msgstr "Clara"
 
-#: src/widgets/SettingsDialog.qml:130
+#: src/widgets/SettingsDialog.qml:186
 #, kde-format
 msgid "Dark"
 msgstr "Escura"
 
-#: src/widgets/SettingsDialog.qml:138
+#: src/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Adaptive"
 msgstr "Adaptativo"
 
-#: src/widgets/SettingsDialog.qml:162
+#: src/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "Translucency"
 msgstr "Translucidez"
 
-#: src/widgets/SettingsDialog.qml:163
+#: src/widgets/SettingsDialog.qml:219
 #, kde-format
 msgid ""
 "Level of translucency. Works better if there is blurred background support."
@@ -216,55 +247,92 @@ msgstr ""
 "Nível de translucidez. Funciona melhor se tiver suporte para um fundo "
 "borrado."
 
-#: src/widgets/SettingsDialog.qml:190
+#: src/widgets/SettingsDialog.qml:246
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: src/widgets/SettingsDialog.qml:199
+#: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:200
+#: src/widgets/SettingsDialog.qml:256
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Configura a interface e os 'plugins' da aplicação."
 
-#: src/widgets/SettingsDialog.qml:205
+#: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Esquema de Cores Adaptativo"
 
-#: src/widgets/SettingsDialog.qml:206
+#: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Cores baseadas no estilo actual."
 
-#: src/widgets/SettingsDialog.qml:236
+#: src/widgets/SettingsDialog.qml:290
 #, kde-format
-msgid "Fonts"
-msgstr "Tipos de Letra"
+msgid "Alert on processes and prevent closing them."
+msgstr ""
 
-#: src/widgets/SettingsDialog.qml:237
+#: src/widgets/SettingsDialog.qml:303
 #, kde-format
-msgid "Configure the terminal font family and size."
+msgid "Display"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:304
+#, fuzzy, kde-format
+#| msgid "Configure the terminal font family and size."
+msgid "Configure the terminal font and display options."
 msgstr "Configura o tipo e tamanho de letra do terminal."
 
-#: src/widgets/SettingsDialog.qml:241
-#, kde-format
-msgid "Family"
-msgstr "Família"
+#: src/widgets/SettingsDialog.qml:309
+#, fuzzy, kde-format
+#| msgid "Configure the terminal font family and size."
+msgid "Font family and size."
+msgstr "Configura o tipo e tamanho de letra do terminal."
 
-#: src/widgets/SettingsDialog.qml:254
-#, kde-format
-msgid "Size"
-msgstr "Tamanho"
-
-#: src/widgets/SettingsDialog.qml:266
+#: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Line Spacing"
 msgstr "Espaço entre Linhas"
+
+#: src/widgets/SettingsDialog.qml:333
+#, kde-format
+msgid "Enable Bold"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:344
+#, kde-format
+msgid "Blinking Cursor"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:355
+#, kde-format
+msgid "Full Cursor Height"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:366
+#, kde-format
+msgid "Antialias text"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:33
+#, kde-format
+msgid "Process Finished"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:33
+#, kde-format
+msgid "Running task has finished for tab: %1"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:33
+#, kde-format
+msgid "Check"
+msgstr ""
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
@@ -360,3 +428,9 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Adicionar"
+
+#~ msgid "Family"
+#~ msgstr "Família"
+
+#~ msgid "Size"
+#~ msgstr "Tamanho"
