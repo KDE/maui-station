@@ -148,7 +148,7 @@ Maui.SettingsDialog
             Maui.SectionItem
             {
                 label1.text: i18n("Finished Task")
-                label2.text: i18n("Emit a notificacion when a pending process has finished.")
+                label2.text: i18n("Emit a notification when a pending process has finished.")
 
                 Switch
                 {
