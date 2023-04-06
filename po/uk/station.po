@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-05 00:47+0000\n"
-"PO-Revision-Date: 2023-04-02 08:39+0300\n"
+"POT-Creation-Date: 2023-04-06 00:46+0000\n"
+"PO-Revision-Date: 2023-04-05 12:27+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -157,10 +157,9 @@ msgid "Edit"
 msgstr "Змінити"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
-msgstr "Шрифти"
+msgstr "Шрифт"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:46
 #: src/widgets/SettingsDialog.qml:275
@@ -176,27 +175,28 @@ msgstr "Зміна кольорової схеми термінала."
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Попередження"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Запущене завдання"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Запобігти закриттю запущеного завдання."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Завершене завдання"
 
 #: src/widgets/SettingsDialog.qml:151
-#, kde-format
-msgid "Emit a notificacion when a pending process has finished."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Emit a notificacion when a pending process has finished."
+msgid "Emit a notification when a pending process has finished."
+msgstr "Видати сповіщення, коли виконання процесу буде завершено."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -273,24 +273,22 @@ msgstr "Кольори, які засновано на поточному сти
 #: src/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Попереджати щодо процесів і запобігати їхньому закриттю."
 
 #: src/widgets/SettingsDialog.qml:303
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Показ"
 
 #: src/widgets/SettingsDialog.qml:304
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Configure the terminal font and display options."
-msgstr "Налаштувати гарнітуру та розмір шрифту термінала."
+msgstr "Налаштувати шрифт термінала та параметри показу."
 
 #: src/widgets/SettingsDialog.qml:309
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Font family and size."
-msgstr "Налаштувати гарнітуру та розмір шрифту термінала."
+msgstr "Гарнітура та розмір шрифту."
 
 #: src/widgets/SettingsDialog.qml:321
 #, kde-format
@@ -300,37 +298,37 @@ msgstr "Інтервал між рядками"
 #: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Увімкнути напівжирний"
 
 #: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Миготливий курсор"
 
 #: src/widgets/SettingsDialog.qml:355
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Повна висота курсора"
 
 #: src/widgets/SettingsDialog.qml:366
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Згладжування тексту"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Процес завершив роботу"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "Завершено виконання завдання на цій вкладці: %1"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "Перевірити"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

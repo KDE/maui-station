@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-05 00:47+0000\n"
-"PO-Revision-Date: 2023-04-03 13:35+0300\n"
+"POT-Creation-Date: 2023-04-06 00:46+0000\n"
+"PO-Revision-Date: 2023-04-05 11:39+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -156,10 +156,9 @@ msgid "Edit"
 msgstr "Düzenle"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
-msgstr "Yazıtipleri"
+msgstr "Yazıtipi"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:46
 #: src/widgets/SettingsDialog.qml:275
@@ -175,27 +174,28 @@ msgstr "Uçbirimin renk şemasını değiştirin."
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Alarmlar"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Çalışan Görev"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Çalışan bir görevi kapatmayı engelleyin."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Bitmiş Görev"
 
 #: src/widgets/SettingsDialog.qml:151
-#, kde-format
-msgid "Emit a notificacion when a pending process has finished."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Emit a notificacion when a pending process has finished."
+msgid "Emit a notification when a pending process has finished."
+msgstr "Bekleyen bir süreç bittiğinde bir bildirim gönderin."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -272,24 +272,22 @@ msgstr "Renkler geçerli biçem tabanlıdır."
 #: src/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Süreçlerde uyarın ve onları kapatmayı engelleyin."
 
 #: src/widgets/SettingsDialog.qml:303
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Ekran"
 
 #: src/widgets/SettingsDialog.qml:304
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Configure the terminal font and display options."
-msgstr "Uçbirim yazıtipi ailesini ve boyutunu yapılandırın."
+msgstr "Uçbirim yazıtipi ve ekran seçeneklerini yapılandırın."
 
 #: src/widgets/SettingsDialog.qml:309
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Font family and size."
-msgstr "Uçbirim yazıtipi ailesini ve boyutunu yapılandırın."
+msgstr "Yazıtipi ailesi ve boyutu."
 
 #: src/widgets/SettingsDialog.qml:321
 #, kde-format
@@ -299,37 +297,37 @@ msgstr "Satır Aralıklandırması"
 #: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Kalın Metni Etkinleştir"
 
 #: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Yanıp Sönen İmleç"
 
 #: src/widgets/SettingsDialog.qml:355
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Tam İmleç Yüksekliği"
 
 #: src/widgets/SettingsDialog.qml:366
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Metin Kenar Yumuşatması"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Süreç Bitti"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "Şu sekmede çalışan görev bitti: %1"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "Denetle"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
