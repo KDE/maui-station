@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-06 00:46+0000\n"
-"PO-Revision-Date: 2023-04-03 06:37+0200\n"
+"PO-Revision-Date: 2023-04-06 06:03+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -158,10 +158,9 @@ msgid "Edit"
 msgstr "ჩასწორება"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
-msgstr "ფონტები"
+msgstr "ფონტი"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:46
 #: src/widgets/SettingsDialog.qml:275
@@ -177,27 +176,27 @@ msgstr "ტერმინალის ფერის სქემის შე
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "შეტყობინებები"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "გაშვებული ამოცანა"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "გაშვებული ამოცანის დახურვის აკრძალვა."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "დასრულებული ამოცანა"
 
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "შეტყობინების ჩვენება მომლოდინე პროცესის დასრულებისას."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -274,24 +273,22 @@ msgstr "მიმდინარე სტილზე ბაზირებუ�
 #: src/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "პროცესების გაფრთხილება და მათი დახურვის აკრძალვა."
 
 #: src/widgets/SettingsDialog.qml:303
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "ჩვენება"
 
 #: src/widgets/SettingsDialog.qml:304
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Configure the terminal font and display options."
-msgstr "ფონტის ოჯახისა და ზომის მორგება."
+msgstr "ტერმინალის ფონტისა და ჩვენების პარამეტრების მორგება."
 
 #: src/widgets/SettingsDialog.qml:309
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Font family and size."
-msgstr "ფონტის ოჯახისა და ზომის მორგება."
+msgstr "ფონტის ოჯახი და ზომა."
 
 #: src/widgets/SettingsDialog.qml:321
 #, kde-format
@@ -301,37 +298,37 @@ msgstr "ხაზებს შუა მანძილი"
 #: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "სქელის ჩართვა"
 
 #: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "მოციმციმე კურსორი"
 
 #: src/widgets/SettingsDialog.qml:355
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "კურსორის სრული სიმაღლე"
 
 #: src/widgets/SettingsDialog.qml:366
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "ტექსტის მომრგვალება"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "პროცესი დასრულდა"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "ამოცანის შესრულება დასრულდა ჩანართისთვის: %1"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "შემოწმება"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

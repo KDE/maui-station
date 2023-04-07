@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-06 00:46+0000\n"
-"PO-Revision-Date: 2023-04-05 10:33+0100\n"
+"PO-Revision-Date: 2023-04-06 11:09+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -196,8 +196,7 @@ msgid "Finished Task"
 msgstr "Tasca finalitzada"
 
 #: src/widgets/SettingsDialog.qml:151
-#, fuzzy, kde-format
-#| msgid "Emit a notificacion when a pending process has finished."
+#, kde-format
 msgid "Emit a notification when a pending process has finished."
 msgstr "Emet una notificació quan hagi finalitzat un procés pendent."
 

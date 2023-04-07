@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-06 00:46+0000\n"
-"PO-Revision-Date: 2023-04-03 11:35+0200\n"
+"PO-Revision-Date: 2023-04-06 11:09+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -159,10 +159,9 @@ msgid "Edit"
 msgstr "Edita"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
-msgstr "Tipus de lletra"
+msgstr "Lletra"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:46
 #: src/widgets/SettingsDialog.qml:275
@@ -178,27 +177,27 @@ msgstr "Canvia l'esquema de color del terminal."
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Alertes"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Tasca en execució"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Evita tancar una tasca en execució."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Tasca finalitzada"
 
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Emet una notificació quan haja finalitzat un procés pendent."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -275,24 +274,22 @@ msgstr "Colors basats en l'estil actual."
 #: src/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Alerta dels processos i evita tancar-los."
 
 #: src/widgets/SettingsDialog.qml:303
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Visualització"
 
 #: src/widgets/SettingsDialog.qml:304
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Configure the terminal font and display options."
-msgstr "Configura la família i la mida dels tipus de lletra del terminal."
+msgstr "Configura la lletra del terminal i les opcions de visualització."
 
 #: src/widgets/SettingsDialog.qml:309
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Font family and size."
-msgstr "Configura la família i la mida dels tipus de lletra del terminal."
+msgstr "Família i mida de la lletra."
 
 #: src/widgets/SettingsDialog.qml:321
 #, kde-format
@@ -302,37 +299,37 @@ msgstr "Interlineat"
 #: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Activa la negreta"
 
 #: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Cursor parpellejant"
 
 #: src/widgets/SettingsDialog.qml:355
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Alçària completa del cursor"
 
 #: src/widgets/SettingsDialog.qml:366
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Text amb antialiàsing"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "El procés ha finalitzat"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "La tasca en execució ha finalitzat a la pestanya: %1"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "Comprova"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
@@ -428,9 +425,3 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afig"
-
-#~ msgid "Family"
-#~ msgstr "Família"
-
-#~ msgid "Size"
-#~ msgstr "Mida"
