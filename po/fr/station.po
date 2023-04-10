@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-06 00:46+0000\n"
-"PO-Revision-Date: 2023-04-04 16:42+0200\n"
+"PO-Revision-Date: 2023-04-08 10:56+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -156,10 +156,9 @@ msgid "Edit"
 msgstr "Modifier"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
-msgstr "Polices"
+msgstr "Police"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:46
 #: src/widgets/SettingsDialog.qml:275
@@ -175,27 +174,27 @@ msgstr "Modifier le thème de couleurs du terminal."
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Alertes"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Tâche en cours d'exécution"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Empêcher la fermeture d'une tâche en cours d'exécution."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Tâche terminée"
 
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Émettre une notification lorsqu’un processus en attente est terminé."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -274,24 +273,22 @@ msgstr "Couleurs reposant sur le style courant."
 #: src/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Alerter sur les processus et empêcher leur fermeture."
 
 #: src/widgets/SettingsDialog.qml:303
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Affichage"
 
 #: src/widgets/SettingsDialog.qml:304
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Configure the terminal font and display options."
-msgstr "Configurer la famille et la taille de police du terminal."
+msgstr "Configurer les options pour la police et l'affichage du terminal."
 
 #: src/widgets/SettingsDialog.qml:309
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Font family and size."
-msgstr "Configurer la famille et la taille de police du terminal."
+msgstr "Famille et taille de police."
 
 #: src/widgets/SettingsDialog.qml:321
 #, kde-format
@@ -301,37 +298,37 @@ msgstr "Espacement des lignes"
 #: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Activer le gras"
 
 #: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Curseur clignotant"
 
 #: src/widgets/SettingsDialog.qml:355
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Hauteur totale du curseur"
 
 #: src/widgets/SettingsDialog.qml:366
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Appliquer un anti-crénelage au texte"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Processus terminé"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "La tâche en cours d'exécution s'est terminée pour l'onglet : %1"
 
 #: src/widgets/TerminalLayout.qml:33
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "Vérifier"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
