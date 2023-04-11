@@ -30,7 +30,7 @@ readonly property bool isCurrentTab : SwipeView.isCurrentItem
     {
         if(!control.isCurrentTab && settings.alertProcess)
         {
-            root.notify("dialog-warning", i18n("Process Finished"), i18n("Running task has finished for tab: %1", control.title), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, 2500, i18n("Check"))
+            root.notify("dialog-warning", i18n("Process Finished"), i18n("Running task has finished for tab: %1", control.title), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, i18n("Check"))
         }
     }
 
