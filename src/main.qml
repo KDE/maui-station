@@ -281,6 +281,25 @@ Maui.ApplicationWindow
                 }
             }
         ]
+
+        footBar.farLeftContent:  ToolButton
+        {
+            icon.name: "input-keyboard-virtual"
+            text: i18n("Toggle Virtual Keyboard")
+            display: AbstractButton.IconOnly
+            onClicked:
+            {
+                if (Qt.inputMethod.visible)
+                {
+                    Qt.inputMethod.hide();
+                } else
+                {
+                    root.currentTerminal.forceActiveFocus();
+                    Qt.inputMethod.show();
+                }
+            }
+        }
+
     }
 
     Component
@@ -324,6 +343,7 @@ Maui.ApplicationWindow
             acceptButton.text: i18n("Close")
             rejectButton.text: i18n("Cancel")
             scrollView.padding: Maui.Style.space.big
+
             onAccepted:
             {
                 discard = true
