@@ -216,36 +216,12 @@ Maui.SettingsDialog
         Maui.SectionItem
         {
             label1.text: i18n("Translucency")
-            label2.text: i18n("Level of translucency. Works better if there is blurred background support.")
+            label2.text: i18n("Translucent background.")
 
-            columns: 1
-
-            RowLayout
+            Switch
             {
-                Layout.fillWidth: true
-
-                Slider
-                {
-                    id: _opacitySlider
-                    Layout.fillWidth: true
-
-                    from: 0
-                    to: 100
-                    value: (1 - settings.windowOpacity) * 100
-                    stepSize: 5
-                    snapMode: Slider.SnapAlways
-
-                    onMoved:
-                    {
-                        settings.windowOpacity = 1 - (value / 100);
-                    }
-                }
-
-                Label
-                {
-                    text: i18n("%1\%", _opacitySlider.value)
-
-                }
+                checked: settings.windowTranslucency
+                onToggled: settings.windowTranslucency = !settings.windowTranslucency
             }
         }
     }

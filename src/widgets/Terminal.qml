@@ -6,7 +6,6 @@ import org.mauikit.terminal 1.0 as Term
 Maui.SplitViewItem
 {
     id: control
-    //    background: null
 
     property string path : "$HOME"
 
@@ -27,16 +26,6 @@ Maui.SplitViewItem
 
         anchors.fill: parent
         session.initialWorkingDirectory : control.path
-        //        Component.onCompleted:
-        //        {
-        //            control.session.initialWorkingDirectory = control.path
-        //            control.session.sendText("cd "+ control.path + "\n")
-        //        }
-
-        //    onClicked:
-        //    {
-        //        SplitView.view.currentIndex = control._index
-        //    }
 
         onUrlsDropped:
         {
@@ -47,7 +36,7 @@ Maui.SplitViewItem
         kterminal.font: settings.font
         kterminal.colorScheme: settings.adaptiveColorScheme ? "Adaptive" : settings.colorScheme
         kterminal.lineSpacing: settings.lineSpacing
-        kterminal.backgroundOpacity: settings.windowOpacity
+        kterminal.backgroundOpacity: settings.windowTranslucency ? settings.windowOpacity : 1
 
         kterminal.enableBold : settings.enableBold
         kterminal.blinkingCursor : settings.blinkingCursor

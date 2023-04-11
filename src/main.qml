@@ -26,7 +26,7 @@ Maui.ApplicationWindow
         view: root
         geometry: Qt.rect(root.x, root.y, root.width, root.height)
         windowRadius: Maui.Style.radiusV
-        enabled: !Maui.Handy.isMobile && settings.windowOpacity < 1
+        enabled: !Maui.Handy.isMobile && settings.windowTranslucency
     }
 
     onClosing:
@@ -51,14 +51,16 @@ Maui.ApplicationWindow
     Settings
     {
         id: settings
-        category: "General"
         property string colorScheme: "Maui-Dark"
-        property bool pathBar : true
+
         property int lineSpacing : 0
         property font font : defaultFont
         property int keysModelCurrentIndex : 4
         property int colorStyle : Maui.Style.Dark
-        property double windowOpacity: 1
+
+        property double windowOpacity: 0.6
+        property bool windowTranslucency: false
+
         property bool adaptiveColorScheme : true
         property bool preventClosing: true
         property bool alertProcess: true
@@ -67,7 +69,6 @@ Maui.ApplicationWindow
         property bool blinkingCursor: true
         property bool fullCursorHeight: true
         property bool antialiasText: true
-
     }
 
     Loader
@@ -113,7 +114,7 @@ Maui.ApplicationWindow
             tabBar.background: Rectangle
             {
                 color: Maui.Theme.backgroundColor
-                opacity: settings.windowOpacity
+                opacity: settings.windowTranslucency ? settings.windowOpacity : 1
             }
 
             tabBar.content: [
