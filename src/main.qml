@@ -281,25 +281,6 @@ Maui.ApplicationWindow
                 }
             }
         ]
-
-        footBar.farLeftContent:  ToolButton
-        {
-            icon.name: "input-keyboard-virtual"
-            text: i18n("Toggle Virtual Keyboard")
-            display: AbstractButton.IconOnly
-            onClicked:
-            {
-                if (Qt.inputMethod.visible)
-                {
-                    Qt.inputMethod.hide();
-                } else
-                {
-                    root.currentTerminal.forceActiveFocus();
-                    Qt.inputMethod.show();
-                }
-            }
-        }
-
     }
 
     Component
