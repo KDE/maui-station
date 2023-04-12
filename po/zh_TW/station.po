@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-06 00:46+0000\n"
+"POT-Creation-Date: 2023-04-12 00:48+0000\n"
 "PO-Revision-Date: 2023-02-24 23:21+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -42,72 +42,72 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "開發者"
 
-#: src/main.qml:128 src/main.qml:186 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:136 src/main.qml:194 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "新增分頁"
 
-#: src/main.qml:136 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:144 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "分割"
 
-#: src/main.qml:146
+#: src/main.qml:154
 #, kde-format
 msgid "Tutorial"
 msgstr "教學"
 
-#: src/main.qml:158
+#: src/main.qml:166
 #, kde-format
 msgid "Settings"
 msgstr "設定"
 
-#: src/main.qml:168
+#: src/main.qml:176
 #, kde-format
 msgid "About"
 msgstr "關於"
 
-#: src/main.qml:182
+#: src/main.qml:190
 #, kde-format
 msgid "Nothing here"
 msgstr ""
 
-#: src/main.qml:183
+#: src/main.qml:191
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 
-#: src/main.qml:201
+#: src/main.qml:209
 #, kde-format
 msgid "Function Keys"
 msgstr "功能鍵"
 
-#: src/main.qml:210
+#: src/main.qml:218
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:219
+#: src/main.qml:227
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl 組合鍵"
 
-#: src/main.qml:228 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:236 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "導覽"
 
-#: src/main.qml:237
+#: src/main.qml:245
 #, kde-format
 msgid "Favorite"
 msgstr "最愛"
 
-#: src/main.qml:310 src/main.qml:316
+#: src/main.qml:318 src/main.qml:324
 #, kde-format
 msgid "Close"
 msgstr "關閉"
 
-#: src/main.qml:311
+#: src/main.qml:319
 #, fuzzy, kde-format
 #| msgid ""
 #| "A process is currently still running. Are you sure you want to close it?"
@@ -116,7 +116,7 @@ msgid ""
 "it?"
 msgstr "還有在執行中的行程。您確定要關閉它嗎？"
 
-#: src/main.qml:317
+#: src/main.qml:325
 #, kde-format
 msgid "Cancel"
 msgstr ""
@@ -156,25 +156,25 @@ msgstr "移除"
 msgid "Edit"
 msgstr "編輯"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:284
 #, fuzzy, kde-format
 #| msgid "Fonts"
 msgid "Font"
 msgstr "字型"
 
-#: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:46
-#: src/widgets/SettingsDialog.qml:275
+#: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
+#: src/widgets/SettingsDialog.qml:251
 #, kde-format
 msgid "Color Scheme"
 msgstr "配色方案"
 
-#: src/widgets/SettingsDialog.qml:47 src/widgets/SettingsDialog.qml:276
+#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:252
 #, fuzzy, kde-format
 #| msgid "Change the color scheme of the terminal"
 msgid "Change the color scheme of the terminal."
 msgstr "變更終端機的配色方案"
 
-#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
+#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
 #, kde-format
 msgid "Alerts"
 msgstr ""
@@ -241,80 +241,75 @@ msgid "Translucency"
 msgstr "半透明"
 
 #: src/widgets/SettingsDialog.qml:219
-#, kde-format
-msgid ""
-"Level of translucency. Works better if there is blurred background support."
-msgstr "半透明程度。支援背景模糊時效果較好。"
+#, fuzzy, kde-format
+#| msgid "Translucency"
+msgid "Translucent background."
+msgstr "半透明"
 
-#: src/widgets/SettingsDialog.qml:246
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: src/widgets/SettingsDialog.qml:255
+#: src/widgets/SettingsDialog.qml:231
 #, kde-format
 msgid "Terminal"
 msgstr "終端機"
 
-#: src/widgets/SettingsDialog.qml:256
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "設定應用程式介面與外掛。"
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "自動調整配色方案"
 
-#: src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:238
 #, fuzzy, kde-format
 #| msgid "Colors based on the current style"
 msgid "Colors based on the current style."
 msgstr "基於目前風格的色彩"
 
-#: src/widgets/SettingsDialog.qml:290
+#: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:303
+#: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Display"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:304
+#: src/widgets/SettingsDialog.qml:280
 #, fuzzy, kde-format
 #| msgid "Configure the terminal font family and size"
 msgid "Configure the terminal font and display options."
 msgstr "設定終端機字型家族與大小"
 
-#: src/widgets/SettingsDialog.qml:309
+#: src/widgets/SettingsDialog.qml:285
 #, fuzzy, kde-format
 #| msgid "Configure the terminal font family and size"
 msgid "Font family and size."
 msgstr "設定終端機字型家族與大小"
 
-#: src/widgets/SettingsDialog.qml:321
+#: src/widgets/SettingsDialog.qml:297
 #, kde-format
 msgid "Line Spacing"
 msgstr "行間距"
 
-#: src/widgets/SettingsDialog.qml:333
+#: src/widgets/SettingsDialog.qml:309
 #, kde-format
 msgid "Enable Bold"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:344
+#: src/widgets/SettingsDialog.qml:320
 #, kde-format
 msgid "Blinking Cursor"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:355
+#: src/widgets/SettingsDialog.qml:331
 #, kde-format
 msgid "Full Cursor Height"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:366
+#: src/widgets/SettingsDialog.qml:342
 #, kde-format
 msgid "Antialias text"
 msgstr ""
@@ -423,6 +418,14 @@ msgstr "建立新命令捷徑，方便快速觸發動作。"
 #, kde-format
 msgid "Add"
 msgstr "新增"
+
+#~ msgid ""
+#~ "Level of translucency. Works better if there is blurred background "
+#~ "support."
+#~ msgstr "半透明程度。支援背景模糊時效果較好。"
+
+#~ msgid "%1%"
+#~ msgstr "%1%"
 
 #~ msgid "Family"
 #~ msgstr "字型家族"

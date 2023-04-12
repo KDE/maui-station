@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-06 00:46+0000\n"
+"POT-Creation-Date: 2023-04-12 00:48+0000\n"
 "PO-Revision-Date: 2023-04-06 11:09+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -44,73 +44,73 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Desenvolupador"
 
-#: src/main.qml:128 src/main.qml:186 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:136 src/main.qml:194 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Pestanya nova"
 
-#: src/main.qml:136 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:144 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Dividix"
 
-#: src/main.qml:146
+#: src/main.qml:154
 #, kde-format
 msgid "Tutorial"
 msgstr "Guia d'aprenentatge"
 
-#: src/main.qml:158
+#: src/main.qml:166
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
 
-#: src/main.qml:168
+#: src/main.qml:176
 #, kde-format
 msgid "About"
 msgstr "Quant a"
 
-#: src/main.qml:182
+#: src/main.qml:190
 #, kde-format
 msgid "Nothing here"
 msgstr "Res ací"
 
-#: src/main.qml:183
+#: src/main.qml:191
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 "Per a començar a treballar obriu una pestanya nova o una pantalla dividida."
 
-#: src/main.qml:201
+#: src/main.qml:209
 #, kde-format
 msgid "Function Keys"
 msgstr "Tecles de funció"
 
-#: src/main.qml:210
+#: src/main.qml:218
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:219
+#: src/main.qml:227
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificadors Ctrl"
 
-#: src/main.qml:228 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:236 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navegació"
 
-#: src/main.qml:237
+#: src/main.qml:245
 #, kde-format
 msgid "Favorite"
 msgstr "Preferit"
 
-#: src/main.qml:310 src/main.qml:316
+#: src/main.qml:318 src/main.qml:324
 #, kde-format
 msgid "Close"
 msgstr "Tanca"
 
-#: src/main.qml:311
+#: src/main.qml:319
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -118,7 +118,7 @@ msgid ""
 msgstr ""
 "Encara hi ha un procés executant-se. Segur que el voleu interrompre i tancar?"
 
-#: src/main.qml:317
+#: src/main.qml:325
 #, kde-format
 msgid "Cancel"
 msgstr "Cancel·la"
@@ -158,23 +158,23 @@ msgstr "Elimina"
 msgid "Edit"
 msgstr "Edita"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:284
 #, kde-format
 msgid "Font"
 msgstr "Lletra"
 
-#: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:46
-#: src/widgets/SettingsDialog.qml:275
+#: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
+#: src/widgets/SettingsDialog.qml:251
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquema de color"
 
-#: src/widgets/SettingsDialog.qml:47 src/widgets/SettingsDialog.qml:276
+#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:252
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Canvia l'esquema de color del terminal."
 
-#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
+#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
 #, kde-format
 msgid "Alerts"
 msgstr "Alertes"
@@ -240,78 +240,72 @@ msgid "Translucency"
 msgstr "Translucidesa"
 
 #: src/widgets/SettingsDialog.qml:219
-#, kde-format
-msgid ""
-"Level of translucency. Works better if there is blurred background support."
-msgstr ""
-"Nivell de translucidesa. Funciona millor si hi ha suport de fons difuminat."
+#, fuzzy, kde-format
+#| msgid "Translucency"
+msgid "Translucent background."
+msgstr "Translucidesa"
 
-#: src/widgets/SettingsDialog.qml:246
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: src/widgets/SettingsDialog.qml:255
+#: src/widgets/SettingsDialog.qml:231
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:256
+#: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Configure the app UI and plugins."
 msgstr "Configura la IU de l'aplicació i els connectors."
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Esquema de color adaptatiu"
 
-#: src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:238
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Colors basats en l'estil actual."
 
-#: src/widgets/SettingsDialog.qml:290
+#: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "Alerta dels processos i evita tancar-los."
 
-#: src/widgets/SettingsDialog.qml:303
+#: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Display"
 msgstr "Visualització"
 
-#: src/widgets/SettingsDialog.qml:304
+#: src/widgets/SettingsDialog.qml:280
 #, kde-format
 msgid "Configure the terminal font and display options."
 msgstr "Configura la lletra del terminal i les opcions de visualització."
 
-#: src/widgets/SettingsDialog.qml:309
+#: src/widgets/SettingsDialog.qml:285
 #, kde-format
 msgid "Font family and size."
 msgstr "Família i mida de la lletra."
 
-#: src/widgets/SettingsDialog.qml:321
+#: src/widgets/SettingsDialog.qml:297
 #, kde-format
 msgid "Line Spacing"
 msgstr "Interlineat"
 
-#: src/widgets/SettingsDialog.qml:333
+#: src/widgets/SettingsDialog.qml:309
 #, kde-format
 msgid "Enable Bold"
 msgstr "Activa la negreta"
 
-#: src/widgets/SettingsDialog.qml:344
+#: src/widgets/SettingsDialog.qml:320
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "Cursor parpellejant"
 
-#: src/widgets/SettingsDialog.qml:355
+#: src/widgets/SettingsDialog.qml:331
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "Alçària completa del cursor"
 
-#: src/widgets/SettingsDialog.qml:366
+#: src/widgets/SettingsDialog.qml:342
 #, kde-format
 msgid "Antialias text"
 msgstr "Text amb antialiàsing"
@@ -425,3 +419,13 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afig"
+
+#~ msgid ""
+#~ "Level of translucency. Works better if there is blurred background "
+#~ "support."
+#~ msgstr ""
+#~ "Nivell de translucidesa. Funciona millor si hi ha suport de fons "
+#~ "difuminat."
+
+#~ msgid "%1%"
+#~ msgstr "%1%"
