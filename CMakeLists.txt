@@ -31,9 +31,6 @@ find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 find_package(MauiKit REQUIRED)
 find_package(MauiKit REQUIRED COMPONENTS Terminal)
 
-find_package(MauiKit REQUIRED)
-find_package(MauiKit REQUIRED COMPONENTS Terminal)
-
 option(QUICK_COMPILER "Use QtQuick compiler to improve performance" TRUE)
 
 if(QUICK_COMPILER)
