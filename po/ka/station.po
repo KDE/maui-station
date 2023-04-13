@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-12 00:48+0000\n"
+"POT-Creation-Date: 2023-04-13 00:48+0000\n"
 "PO-Revision-Date: 2023-04-06 06:03+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -103,12 +103,12 @@ msgstr "ნავიგაცია"
 msgid "Favorite"
 msgstr "რჩეული"
 
-#: src/main.qml:318 src/main.qml:324
+#: src/main.qml:319 src/main.qml:326
 #, kde-format
 msgid "Close"
 msgstr "დაკეტვა"
 
-#: src/main.qml:319
+#: src/main.qml:320
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -117,7 +117,7 @@ msgstr ""
 "პროცესი ამჟამად გაშვებულია. დარწმუნებული ბრძანდებით, რომ გნებავთ, შეწყვიტოთ "
 "და დახუროთ ის?"
 
-#: src/main.qml:325
+#: src/main.qml:327
 #, kde-format
 msgid "Cancel"
 msgstr "გაუქმება"

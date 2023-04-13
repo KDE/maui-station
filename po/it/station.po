@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-12 00:48+0000\n"
+"POT-Creation-Date: 2023-04-13 00:48+0000\n"
 "PO-Revision-Date: 2023-04-03 15:56+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -102,12 +102,12 @@ msgstr "Navigazione"
 msgid "Favorite"
 msgstr "Preferito"
 
-#: src/main.qml:318 src/main.qml:324
+#: src/main.qml:319 src/main.qml:326
 #, kde-format
 msgid "Close"
 msgstr "Chiudi"
 
-#: src/main.qml:319
+#: src/main.qml:320
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -116,7 +116,7 @@ msgstr ""
 "Un processo è ancora in esecuzione. Sei sicuro di volerlo interrompere e "
 "chiudere?"
 
-#: src/main.qml:325
+#: src/main.qml:327
 #, kde-format
 msgid "Cancel"
 msgstr "Annulla"

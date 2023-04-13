@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-12 00:48+0000\n"
-"PO-Revision-Date: 2023-04-06 07:42+0300\n"
+"POT-Creation-Date: 2023-04-13 00:48+0000\n"
+"PO-Revision-Date: 2023-04-12 07:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -104,19 +104,19 @@ msgstr "Навігація"
 msgid "Favorite"
 msgstr "Улюблене"
 
-#: src/main.qml:318 src/main.qml:324
+#: src/main.qml:319 src/main.qml:326
 #, kde-format
 msgid "Close"
 msgstr "Закрити"
 
-#: src/main.qml:319
+#: src/main.qml:320
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Працює процес. Ви справді хочете перервати і завершити його роботу?"
 
-#: src/main.qml:325
+#: src/main.qml:327
 #, kde-format
 msgid "Cancel"
 msgstr "Скасувати"
@@ -238,10 +238,9 @@ msgid "Translucency"
 msgstr "Прозорість"
 
 #: src/widgets/SettingsDialog.qml:219
-#, fuzzy, kde-format
-#| msgid "Translucency"
+#, kde-format
 msgid "Translucent background."
-msgstr "Прозорість"
+msgstr "Прозоре тло."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-12 00:48+0000\n"
+"POT-Creation-Date: 2023-04-13 00:48+0000\n"
 "PO-Revision-Date: 2023-03-06 13:45+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -102,12 +102,12 @@ msgstr "Liikkuminen"
 msgid "Favorite"
 msgstr "Suosikki"
 
-#: src/main.qml:318 src/main.qml:324
+#: src/main.qml:319 src/main.qml:326
 #, kde-format
 msgid "Close"
 msgstr "Sulje"
 
-#: src/main.qml:319
+#: src/main.qml:320
 #, fuzzy, kde-format
 #| msgid ""
 #| "A process is currently still running. Are you sure you want to close it?"
@@ -116,7 +116,7 @@ msgid ""
 "it?"
 msgstr "Prosessi on yhä käynnissä. Haluatko varmasti sulkea sen?"
 
-#: src/main.qml:325
+#: src/main.qml:327
 #, kde-format
 msgid "Cancel"
 msgstr ""
