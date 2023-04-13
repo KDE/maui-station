@@ -7,17 +7,12 @@ Maui.SplitView
 {
     id: control
 
-//    height: ListView.view.height
-//    width:  ListView.view.width
-
     orientation: width >= 600 ? Qt.Horizontal : Qt.Vertical
-
 
     property string path : "$PWD"
 
     readonly property bool hasActiveProcess : count === 2 ?  contentModel.get(0).session.hasActiveProcess || contentModel.get(1).session.hasActiveProcess : currentItem.session.hasActiveProcess
 readonly property bool isCurrentTab : SwipeView.isCurrentItem
-
 
         readonly property string title : count === 2 ?  contentModel.get(0).title  + " - " + contentModel.get(1).title : currentItem.title
 
