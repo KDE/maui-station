@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-13 00:48+0000\n"
+"POT-Creation-Date: 2023-04-14 00:45+0000\n"
 "PO-Revision-Date: 2023-04-04 15:56+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -309,17 +309,17 @@ msgstr ""
 msgid "Antialias text"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Check"
 msgstr ""

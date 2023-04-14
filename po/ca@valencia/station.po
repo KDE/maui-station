@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-13 00:48+0000\n"
+"POT-Creation-Date: 2023-04-14 00:45+0000\n"
 "PO-Revision-Date: 2023-04-12 16:47+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -309,17 +309,17 @@ msgstr "Alçària completa del cursor"
 msgid "Antialias text"
 msgstr "Text amb antialiàsing"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
 msgstr "El procés ha finalitzat"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "La tasca en execució ha finalitzat a la pestanya: %1"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Check"
 msgstr "Comprova"

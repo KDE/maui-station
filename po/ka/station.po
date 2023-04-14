@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-13 00:48+0000\n"
-"PO-Revision-Date: 2023-04-06 06:03+0200\n"
+"POT-Creation-Date: 2023-04-14 00:45+0000\n"
+"PO-Revision-Date: 2023-04-13 06:07+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -239,10 +239,9 @@ msgid "Translucency"
 msgstr "გამჭვირვალობა"
 
 #: src/widgets/SettingsDialog.qml:219
-#, fuzzy, kde-format
-#| msgid "Translucency"
+#, kde-format
 msgid "Translucent background."
-msgstr "გამჭვირვალობა"
+msgstr "გამჭვირვალე ფონი."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -309,17 +308,17 @@ msgstr "კურსორის სრული სიმაღლე"
 msgid "Antialias text"
 msgstr "ტექსტის მომრგვალება"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
 msgstr "პროცესი დასრულდა"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "ამოცანის შესრულება დასრულდა ჩანართისთვის: %1"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Check"
 msgstr "შემოწმება"

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-13 00:48+0000\n"
-"PO-Revision-Date: 2023-04-06 09:07+0200\n"
+"POT-Creation-Date: 2023-04-14 00:45+0000\n"
+"PO-Revision-Date: 2023-04-13 09:48+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -239,10 +239,9 @@ msgid "Translucency"
 msgstr "Prosojnost"
 
 #: src/widgets/SettingsDialog.qml:219
-#, fuzzy, kde-format
-#| msgid "Translucency"
+#, kde-format
 msgid "Translucent background."
-msgstr "Prosojnost"
+msgstr "Prosojno ozadje."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -309,17 +308,17 @@ msgstr "Polna višina kazalke"
 msgid "Antialias text"
 msgstr "Zglajeno besedilo"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
 msgstr "Opravilo je končano"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "Opravilo v teku je bilo končano za zavihek: %1"
 
-#: src/widgets/TerminalLayout.qml:33
+#: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Check"
 msgstr "Preveri"
