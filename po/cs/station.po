@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-14 00:45+0000\n"
-"PO-Revision-Date: 2023-04-04 15:56+0200\n"
+"PO-Revision-Date: 2023-04-14 21:56+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -155,10 +155,9 @@ msgid "Edit"
 msgstr "Upravit"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:284
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
-msgstr "Písma"
+msgstr "Písmo"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
 #: src/widgets/SettingsDialog.qml:251
@@ -174,12 +173,12 @@ msgstr "Změnit barevné schéma terminálu."
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Varování"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Běžící úloha"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
@@ -189,12 +188,12 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Dokončená úloha"
 
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Zobrazit upozornění při dokončení úlohy ve frontě."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -237,10 +236,9 @@ msgid "Translucency"
 msgstr "Průhlednost"
 
 #: src/widgets/SettingsDialog.qml:219
-#, fuzzy, kde-format
-#| msgid "Translucency"
+#, kde-format
 msgid "Translucent background."
-msgstr "Průhlednost"
+msgstr "Průhledné pozadí."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -270,19 +268,17 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Zobrazení"
 
 #: src/widgets/SettingsDialog.qml:280
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Configure the terminal font and display options."
-msgstr "Nastavit rodinu a velikost písem terminálu."
+msgstr "Nastavit písmo a volby zobrazení terminálu."
 
 #: src/widgets/SettingsDialog.qml:285
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Font family and size."
-msgstr "Nastavit rodinu a velikost písem terminálu."
+msgstr "Rodina písma a velikost."
 
 #: src/widgets/SettingsDialog.qml:297
 #, kde-format
@@ -292,27 +288,27 @@ msgstr "Rozestupy řádků"
 #: src/widgets/SettingsDialog.qml:309
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Povolit tučné"
 
 #: src/widgets/SettingsDialog.qml:320
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Blikající kurzor"
 
 #: src/widgets/SettingsDialog.qml:331
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Plná výška kurzoru"
 
 #: src/widgets/SettingsDialog.qml:342
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Vyhlazovat text"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Proces dokončen"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -322,7 +318,7 @@ msgstr ""
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "Zkontrolovat"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
@@ -413,12 +409,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "%1%"
-#~ msgstr "%1%"
-
-#~ msgid "Family"
-#~ msgstr "Rodina"
-
-#~ msgid "Size"
-#~ msgstr "Velikost"
