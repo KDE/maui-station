@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-14 00:45+0000\n"
-"PO-Revision-Date: 2023-03-06 13:45+0200\n"
+"PO-Revision-Date: 2023-04-04 23:01+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -70,12 +70,12 @@ msgstr "Tietoa"
 #: src/main.qml:190
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Ei mitään täällä"
 
 #: src/main.qml:191
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "Aloita hommat avaamalla uusi välilehti tai jaettu näyttö."
 
 #: src/main.qml:209
 #, kde-format
@@ -108,18 +108,16 @@ msgid "Close"
 msgstr "Sulje"
 
 #: src/main.qml:320
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently still running. Are you sure you want to close it?"
+#, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr "Prosessi on yhä käynnissä. Haluatko varmasti sulkea sen?"
+msgstr "Prosessi on yhä käynnissä. Haluatko varmasti keskeyttää ja sulkea sen?"
 
 #: src/main.qml:327
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Peru"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
