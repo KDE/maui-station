@@ -13,11 +13,14 @@ import "widgets"
 Maui.ApplicationWindow
 {
     id: root
+
+    Maui.Style.styleType: settings.colorStyle
+
     title: currentTerminal? currentTerminal.session.title : ""
 
     property alias dialog : _dialogLoader.item
-    Maui.Style.styleType: settings.colorStyle
     property alias currentTab : _layout.currentItem
+
     readonly property Term.Terminal currentTerminal : currentTab.currentItem.terminal
     readonly property font defaultFont : Maui.Style.monospacedFont
 
@@ -102,7 +105,9 @@ Maui.ApplicationWindow
         Maui.TabView
         {
             id: _layout
+
             background: null
+            altTabBar: Maui.Handy.isMobile
 
             anchors.fill: parent
 
