@@ -304,6 +304,20 @@ Maui.SettingsDialog
             }
         }
 
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("History Size")
+label2.text: i18n("Number of lines to keep in buffer. Less than zero means infinite lines.")
+
+            SpinBox
+            {
+                from: -1; to : 9999
+                value: settings.historySize
+                onValueChanged: settings.historySize = value
+            }
+        }
+
         Maui.SectionItem
         {
             label1.text:  i18n("Enable Bold")

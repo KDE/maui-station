@@ -19,6 +19,12 @@ Maui.SplitViewItem
     property alias title : _terminal.title
     property alias kterminal : _terminal.kterminal
 
+    property color tabColor : session.foregroundProcessName.startsWith("sudo") ? "red" : "transparent"
+
+    property bool watchForSlience : false
+
+    signal silenceWarning()
+
     Term.Terminal
     {
         id: _terminal
@@ -26,6 +32,7 @@ Maui.SplitViewItem
 
         anchors.fill: parent
         session.initialWorkingDirectory : control.path
+        session.historySize: settings.historySize
 
         onUrlsDropped:
         {
@@ -72,6 +79,16 @@ Maui.SplitViewItem
                 root.openTab(control.session.intialWorkingDirectory)
                 event.accepted = true
                 return
+            }
+        }
+
+        Connections
+        {
+            target: _terminal.session
+            function onProcessHasSilent()
+            {
+                if(control.watchForSlience)
+                control.silenceWarning()
             }
         }
     }

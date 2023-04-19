@@ -57,6 +57,8 @@ Maui.ApplicationWindow
         property string colorScheme: "Maui-Dark"
 
         property int lineSpacing : 0
+        property int historySize : -1
+
         property font font : defaultFont
         property int keysModelCurrentIndex : 4
         property int colorStyle : Maui.Style.Dark

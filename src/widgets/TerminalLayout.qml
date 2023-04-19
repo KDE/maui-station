@@ -18,8 +18,8 @@ readonly property bool isCurrentTab : SwipeView.isCurrentItem
 
     Maui.TabViewInfo.tabTitle: title
     Maui.TabViewInfo.tabToolTipText: currentItem.session.currentDir
-    Maui.TabViewInfo.tabColor: control.hasActiveProcess ? Maui.Theme.neutralBackgroundColor : "transparent"
-    Maui.TabViewInfo.tabIcon: control.hasActiveProcess ? "indicator-messages" : ""
+    Maui.TabViewInfo.tabColor: currentItem.tabColor
+    Maui.TabViewInfo.tabIcon: control.hasActiveProcess ? "run-build" : ""
 
     onHasActiveProcessChanged:
     {
@@ -37,7 +37,18 @@ readonly property bool isCurrentTab : SwipeView.isCurrentItem
     Component
     {
         id: _terminalComponent
-        Terminal{}
+
+        Terminal
+        {
+            watchForSlience: session.hasActiveProcess
+            onSilenceWarning:
+            {
+                if(!control.isCurrentTab)
+                {
+                    root.notify("dialog-warning", i18n("Pending Process"), i18n("Running process has been inactive for more than 30 seconds."), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, i18n("Check"))
+                }
+            }
+        }
     }
 
     Component.onCompleted: split()
