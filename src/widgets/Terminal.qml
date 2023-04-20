@@ -90,6 +90,17 @@ Maui.SplitViewItem
                 if(control.watchForSlience)
                 control.silenceWarning()
             }
+
+            function onForegroundProcessNameChanged()
+            {
+                if(control.session.foregroundProcessName === "nano")
+                {
+                    settings.keysModelCurrentIndex = 1
+                }else
+                {
+                    settings.keysModelCurrentIndex = 4
+                }
+            }
         }
     }
 }
