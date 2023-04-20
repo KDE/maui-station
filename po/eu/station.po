@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-14 00:45+0000\n"
+"POT-Creation-Date: 2023-04-20 00:47+0000\n"
 "PO-Revision-Date: 2023-02-27 21:23+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -45,72 +45,72 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Garatzailea"
 
-#: src/main.qml:136 src/main.qml:194 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:143 src/main.qml:201 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Fitxa berria"
 
-#: src/main.qml:144 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:151 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Zatitu"
 
-#: src/main.qml:154
+#: src/main.qml:161
 #, kde-format
 msgid "Tutorial"
 msgstr "Tutoretza"
 
-#: src/main.qml:166
+#: src/main.qml:173
 #, kde-format
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: src/main.qml:176
+#: src/main.qml:183
 #, kde-format
 msgid "About"
 msgstr "Honi buruz"
 
-#: src/main.qml:190
+#: src/main.qml:197
 #, kde-format
 msgid "Nothing here"
 msgstr ""
 
-#: src/main.qml:191
+#: src/main.qml:198
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 
-#: src/main.qml:209
+#: src/main.qml:216
 #, kde-format
 msgid "Function Keys"
 msgstr "Funtzio teklak"
 
-#: src/main.qml:218
+#: src/main.qml:225
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:227
+#: src/main.qml:234
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ktrl aldarazleak"
 
-#: src/main.qml:236 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Nabigazioa"
 
-#: src/main.qml:245
+#: src/main.qml:252
 #, kde-format
 msgid "Favorite"
 msgstr "Gogokoak"
 
-#: src/main.qml:319 src/main.qml:326
+#: src/main.qml:326 src/main.qml:333
 #, kde-format
 msgid "Close"
 msgstr "Itxi"
 
-#: src/main.qml:320
+#: src/main.qml:327
 #, fuzzy, kde-format
 #| msgid ""
 #| "A process is currently still running. Are you sure you want to close it?"
@@ -119,7 +119,7 @@ msgid ""
 "it?"
 msgstr "Prozesu bat martxan dago oraindik. Ziur zaude itxi nahi duzula?"
 
-#: src/main.qml:327
+#: src/main.qml:334
 #, kde-format
 msgid "Cancel"
 msgstr ""
@@ -294,22 +294,32 @@ msgstr "Konfiguratu terminalaren letra-tipo familia eta neurria."
 msgid "Line Spacing"
 msgstr "Lerroartea"
 
-#: src/widgets/SettingsDialog.qml:309
+#: src/widgets/SettingsDialog.qml:310
+#, kde-format
+msgid "History Size"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:311
+#, kde-format
+msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Enable Bold"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:320
+#: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "Blinking Cursor"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:331
+#: src/widgets/SettingsDialog.qml:345
 #, kde-format
 msgid "Full Cursor Height"
 msgstr ""
 
-#: src/widgets/SettingsDialog.qml:342
+#: src/widgets/SettingsDialog.qml:356
 #, kde-format
 msgid "Antialias text"
 msgstr ""
@@ -324,9 +334,19 @@ msgstr ""
 msgid "Running task has finished for tab: %1"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Check"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:48
+#, kde-format
+msgid "Pending Process"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:48
+#, kde-format
+msgid "Running process has been inactive for more than 30 seconds."
 msgstr ""
 
 #: src/widgets/TutorialDialog.qml:18

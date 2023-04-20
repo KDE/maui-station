@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-14 00:45+0000\n"
+"POT-Creation-Date: 2023-04-20 00:47+0000\n"
 "PO-Revision-Date: 2023-04-13 06:07+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -43,72 +43,72 @@ msgstr "კამილო ჰიგუიტა"
 msgid "Developer"
 msgstr "პროგრამისტი"
 
-#: src/main.qml:136 src/main.qml:194 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:143 src/main.qml:201 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "ახალი ჩანართი"
 
-#: src/main.qml:144 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:151 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "გაყოფა"
 
-#: src/main.qml:154
+#: src/main.qml:161
 #, kde-format
 msgid "Tutorial"
 msgstr "სახელმძღვანელო"
 
-#: src/main.qml:166
+#: src/main.qml:173
 #, kde-format
 msgid "Settings"
 msgstr "მორგება"
 
-#: src/main.qml:176
+#: src/main.qml:183
 #, kde-format
 msgid "About"
 msgstr "შესახებ"
 
-#: src/main.qml:190
+#: src/main.qml:197
 #, kde-format
 msgid "Nothing here"
 msgstr "აქ არაფერია"
 
-#: src/main.qml:191
+#: src/main.qml:198
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "ჰაკინგის დასაწყებად გახსენით ახალი ჩანართი ან ეკრანი გაყავით."
 
-#: src/main.qml:209
+#: src/main.qml:216
 #, kde-format
 msgid "Function Keys"
 msgstr "ფუნქციური ღილაკები"
 
-#: src/main.qml:218
+#: src/main.qml:225
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:227
+#: src/main.qml:234
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl მოდიფიკატორები"
 
-#: src/main.qml:236 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "ნავიგაცია"
 
-#: src/main.qml:245
+#: src/main.qml:252
 #, kde-format
 msgid "Favorite"
 msgstr "რჩეული"
 
-#: src/main.qml:319 src/main.qml:326
+#: src/main.qml:326 src/main.qml:333
 #, kde-format
 msgid "Close"
 msgstr "დაკეტვა"
 
-#: src/main.qml:320
+#: src/main.qml:327
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -117,7 +117,7 @@ msgstr ""
 "პროცესი ამჟამად გაშვებულია. დარწმუნებული ბრძანდებით, რომ გნებავთ, შეწყვიტოთ "
 "და დახუროთ ის?"
 
-#: src/main.qml:327
+#: src/main.qml:334
 #, kde-format
 msgid "Cancel"
 msgstr "გაუქმება"
@@ -288,22 +288,32 @@ msgstr "ფონტის ოჯახი და ზომა."
 msgid "Line Spacing"
 msgstr "ხაზებს შუა მანძილი"
 
-#: src/widgets/SettingsDialog.qml:309
+#: src/widgets/SettingsDialog.qml:310
+#, kde-format
+msgid "History Size"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:311
+#, kde-format
+msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Enable Bold"
 msgstr "სქელის ჩართვა"
 
-#: src/widgets/SettingsDialog.qml:320
+#: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "მოციმციმე კურსორი"
 
-#: src/widgets/SettingsDialog.qml:331
+#: src/widgets/SettingsDialog.qml:345
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "კურსორის სრული სიმაღლე"
 
-#: src/widgets/SettingsDialog.qml:342
+#: src/widgets/SettingsDialog.qml:356
 #, kde-format
 msgid "Antialias text"
 msgstr "ტექსტის მომრგვალება"
@@ -318,10 +328,20 @@ msgstr "პროცესი დასრულდა"
 msgid "Running task has finished for tab: %1"
 msgstr "ამოცანის შესრულება დასრულდა ჩანართისთვის: %1"
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Check"
 msgstr "შემოწმება"
+
+#: src/widgets/TerminalLayout.qml:48
+#, kde-format
+msgid "Pending Process"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:48
+#, kde-format
+msgid "Running process has been inactive for more than 30 seconds."
+msgstr ""
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
