@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-20 00:47+0000\n"
-"PO-Revision-Date: 2023-04-12 07:57+0300\n"
+"PO-Revision-Date: 2023-04-20 08:54+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -290,12 +290,14 @@ msgstr "Інтервал між рядками"
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "Розмір журналу"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Кількість рядків, які слід зберігати у буфері. Якщо вказано значення, яке є "
+"меншим за нуль, зберігатимуться усі доступні рядки."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
@@ -335,12 +337,12 @@ msgstr "Перевірити"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Процес у черзі обробки"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Запущений процес є неактивним протягом понад 30 секунд."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

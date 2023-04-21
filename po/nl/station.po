@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-20 00:47+0000\n"
-"PO-Revision-Date: 2023-04-12 11:01+0200\n"
+"PO-Revision-Date: 2023-04-20 12:08+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -289,12 +289,14 @@ msgstr "Regelafstand"
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "Geschiedenisgrootte"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Aantal te behouden regels in buffer. Minder dan nul betekent oneindig aantal "
+"regels."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
@@ -334,12 +336,12 @@ msgstr "Controleren"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Wachtend proces"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Actief proces is inactief geweest voor meer dan 30 seconden."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
