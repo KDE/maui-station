@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-20 00:47+0000\n"
-"PO-Revision-Date: 2023-04-13 06:07+0200\n"
+"PO-Revision-Date: 2023-04-21 07:26+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -291,12 +291,14 @@ msgstr "ხაზებს შუა მანძილი"
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "ისტორიის ზომა"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"ბუფერში შენახული ხაზების რაოდენობა. ნულზე ნაკლები მნიშვნელობა ხაზების "
+"უსასრულო რაოდენობას ნიშნავს."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
@@ -336,12 +338,12 @@ msgstr "შემოწმება"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "დარჩენილი პროცესი"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "გაშვებული პროცესი 30-ზე მეტი წამია, არააქტიურია."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
