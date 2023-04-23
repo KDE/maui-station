@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-20 00:47+0000\n"
-"PO-Revision-Date: 2023-04-08 11:14+0100\n"
+"PO-Revision-Date: 2023-04-22 10:58+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -238,10 +238,9 @@ msgid "Translucency"
 msgstr "Translucency"
 
 #: src/widgets/SettingsDialog.qml:219
-#, fuzzy, kde-format
-#| msgid "Translucency"
+#, kde-format
 msgid "Translucent background."
-msgstr "Translucency"
+msgstr "Translucent background."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -291,12 +290,13 @@ msgstr "Line Spacing"
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "History Size"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Number of lines to keep in buffer. Less than zero means infinite lines."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
@@ -336,12 +336,12 @@ msgstr "Check"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Pending Process"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Running process has been inactive for more than 30 seconds."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
