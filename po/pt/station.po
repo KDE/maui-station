@@ -291,7 +291,7 @@ msgstr "Espaço entre Linhas"
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "Tamanho do Histórico"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format

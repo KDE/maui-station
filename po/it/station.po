@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-20 00:47+0000\n"
-"PO-Revision-Date: 2023-04-13 10:47+0200\n"
+"PO-Revision-Date: 2023-04-21 10:32+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -290,12 +290,13 @@ msgstr "Interlinea"
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "Dimensione della cronologia"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Numero di righe da tenere nel buffer. Meno di zero significa linee infinite."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
@@ -335,12 +336,12 @@ msgstr "Controlla"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Processo in sospeso"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Il processo in esecuzione è rimasto inattivo per più di 30 secondi."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
