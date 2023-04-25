@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-20 00:47+0000\n"
-"PO-Revision-Date: 2023-04-04 23:01+0300\n"
+"PO-Revision-Date: 2023-04-20 12:38+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -155,10 +155,9 @@ msgid "Edit"
 msgstr "Muokkaa"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:284
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
-msgstr "Fontit"
+msgstr "Fontti"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
 #: src/widgets/SettingsDialog.qml:251
@@ -174,27 +173,27 @@ msgstr "Vaihda päätteen väriteemaa."
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Varoitukset"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Käynnissä oleva tehtävä"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Estää sulkemasta käynnissä olevaa tehtävää."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Valmistunut tehtävä"
 
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Ilmoittaa, kun jonossa ollut työ on valmistunut."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -237,10 +236,9 @@ msgid "Translucency"
 msgstr "Läpikuultavuus"
 
 #: src/widgets/SettingsDialog.qml:219
-#, fuzzy, kde-format
-#| msgid "Translucency"
+#, kde-format
 msgid "Translucent background."
-msgstr "Läpikuultavuus"
+msgstr "Läpikuultava tausta."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -265,24 +263,22 @@ msgstr "Nykyiseen tyyliin perustuvat värit."
 #: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Varoita töistä ja estä sulkemasta niitä."
 
 #: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Näkymä"
 
 #: src/widgets/SettingsDialog.qml:280
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Configure the terminal font and display options."
-msgstr "Aseta päätteen fonttiperhe ja -koko."
+msgstr "Aseta päätefontti ja näyttövalinnat."
 
 #: src/widgets/SettingsDialog.qml:285
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Font family and size."
-msgstr "Aseta päätteen fonttiperhe ja -koko."
+msgstr "Fonttiperhe ja -koko."
 
 #: src/widgets/SettingsDialog.qml:297
 #, kde-format
@@ -302,37 +298,37 @@ msgstr ""
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Käytä lihavointia"
 
 #: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Vilkkuva kohdistin"
 
 #: src/widgets/SettingsDialog.qml:345
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Täysin kohdistinkorkeus"
 
 #: src/widgets/SettingsDialog.qml:356
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Antialiasoi teksti"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Työ valmistui"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "Käynnissä ollut tehtävä valmistui välilehdessä: %1"
 
 #: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "Tarkista"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
