@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-20 00:47+0000\n"
-"PO-Revision-Date: 2023-04-17 17:18+0100\n"
+"PO-Revision-Date: 2023-04-23 13:00+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -297,6 +297,8 @@ msgstr "Tamanho do Histórico"
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"O número de linhas a recordar. Um valor inferior a zero significa linhas "
+"infinitas."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
@@ -336,12 +338,12 @@ msgstr "Verificar"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Processo Pendente"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "O processo em execução ficou inactivo durante mais de 30 segundos."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
