@@ -1,431 +1,435 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-station package.
+#
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
+"Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-20 00:47+0000\n"
-"PO-Revision-Date: 2023-04-29 08:34\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2023-04-29 11:04+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/maui-station/station.pot\n"
-"X-Crowdin-File-ID: 41167\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/main.cpp:35
 #, kde-format
 msgid "Station"
-msgstr ""
+msgstr "Stacja"
 
 #: src/main.cpp:35
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr ""
+msgstr "Zbieżny emulator terminala"
 
 #: src/main.cpp:35
 #, kde-format
 msgid "© 2019-%1 Maui Development Team"
-msgstr ""
+msgstr "© 2019-%1 Zespół programistów Maui"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "Camilo Higuita"
-msgstr ""
+msgstr "Camilo Higuita"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "Programista"
 
 #: src/main.qml:143 src/main.qml:201 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
-msgstr ""
+msgstr "Nowa karta"
 
 #: src/main.qml:151 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
-msgstr ""
+msgstr "Podziel"
 
 #: src/main.qml:161
 #, kde-format
 msgid "Tutorial"
-msgstr ""
+msgstr "Samouczek"
 
 #: src/main.qml:173
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Ustawienia"
 
 #: src/main.qml:183
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "O programie"
 
 #: src/main.qml:197
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Nie ma tutaj niczego"
 
 #: src/main.qml:198
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "Aby zacząć otwórz nową kartę lub podziel ekran."
 
 #: src/main.qml:216
 #, kde-format
 msgid "Function Keys"
-msgstr ""
+msgstr "Klawisze funkcyjne"
 
 #: src/main.qml:225
 #, kde-format
 msgid "Nano"
-msgstr ""
+msgstr "Nano"
 
 #: src/main.qml:234
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr ""
+msgstr "Odmieniacze Ctrl"
 
 #: src/main.qml:243 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
-msgstr ""
+msgstr "Przemieszczanie się"
 
 #: src/main.qml:252
 #, kde-format
 msgid "Favorite"
-msgstr ""
+msgstr "Ulubione"
 
 #: src/main.qml:326 src/main.qml:333
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Zamknij"
 
 #: src/main.qml:327
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr ""
+msgstr "Proces nadal jest uruchomiony. Czy na pewno go przerwać i zamknąć?"
 
 #: src/main.qml:334
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
 msgid "New Command"
-msgstr ""
+msgstr "Nowe polecenie"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
-msgstr ""
+msgstr "Edytuj polecenie"
 
 #: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr ""
+msgstr "Zmień skrót polecenia"
 
 #: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "No Commands"
-msgstr ""
+msgstr "Nie ma żadnych poleceń"
 
 #: src/widgets/CommandShortcuts.qml:50
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr ""
+msgstr "Rozpocznij od dodania nowych skrótów poleceń"
 
 #: src/widgets/CommandShortcuts.qml:92
 #, kde-format
 msgid "Remove"
-msgstr ""
+msgstr "Usuń"
 
 #: src/widgets/CommandShortcuts.qml:102
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Edytuj"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:284
 #, kde-format
 msgid "Font"
-msgstr ""
+msgstr "Czcionka"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
 #: src/widgets/SettingsDialog.qml:251
 #, kde-format
 msgid "Color Scheme"
-msgstr ""
+msgstr "Zestaw barw"
 
 #: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:252
 #, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr ""
+msgstr "Zmień zestaw barw terminala."
 
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Ostrzeżenia"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Uruchamianie zadania"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Zapobiegaj zamykaniu wykonywanych zadań."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Ukończone zadania"
 
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Powiadom, gdy oczekujący proces zakończył."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Interface"
-msgstr ""
+msgstr "Interfejs"
 
 #: src/widgets/SettingsDialog.qml:165
 #, kde-format
 msgid "Configure the application components and behaviour."
-msgstr ""
+msgstr "Ustawienia składników i zachowania aplikacji."
 
 #: src/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "Color"
-msgstr ""
+msgstr "Barwa"
 
 #: src/widgets/SettingsDialog.qml:171
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr ""
+msgstr "Przełącz pomiędzy jasnym i ciemnym trybem."
 
 #: src/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Jasny"
 
 #: src/widgets/SettingsDialog.qml:186
 #, kde-format
 msgid "Dark"
-msgstr ""
+msgstr "Ciemny"
 
 #: src/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Adaptive"
-msgstr ""
+msgstr "Dostosowująca się"
 
 #: src/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Prześwitywanie"
 
 #: src/widgets/SettingsDialog.qml:219
 #, kde-format
 msgid "Translucent background."
-msgstr ""
+msgstr "Prześwitujące tło."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Configure the app UI and plugins."
-msgstr ""
+msgstr "Ustawienia interfejsu i wtyczek aplikacji."
 
 #: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr ""
+msgstr "Dostosowujący się zestaw barw"
 
 #: src/widgets/SettingsDialog.qml:238
 #, kde-format
 msgid "Colors based on the current style."
-msgstr ""
+msgstr "Barwy oparte na bieżącym wyglądzie."
 
 #: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Ostrzeż o procesach i uniemożliw ich zamknięcie."
 
 #: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Wyświetlanie"
 
 #: src/widgets/SettingsDialog.qml:280
 #, kde-format
 msgid "Configure the terminal font and display options."
-msgstr ""
+msgstr "Ustawienia czcionki i wyświetlania."
 
 #: src/widgets/SettingsDialog.qml:285
 #, kde-format
 msgid "Font family and size."
-msgstr ""
+msgstr "Krój i rozmiar czcionki"
 
 #: src/widgets/SettingsDialog.qml:297
 #, kde-format
 msgid "Line Spacing"
-msgstr ""
+msgstr "Odstęp między wierszami"
 
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "Rozmiar historii"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Liczba wierszy do przechowywania w buforze. Mniej niż zero oznacza "
+"nieograniczenie."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Włącz pogrubienie"
 
 #: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Migoczący kursor"
 
 #: src/widgets/SettingsDialog.qml:345
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Pełna wysokość kursora"
 
 #: src/widgets/SettingsDialog.qml:356
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Wygładzony tekst"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Proces ukończył"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "Ukończono wykonywanie zadania w karcie: %1"
 
 #: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "Sprawdź"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Oczekujące procesy"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Wykonywany proces nie wykazywał ruchu przez więcej niż 30 sekund."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
 msgid "Shortcuts"
-msgstr ""
+msgstr "Skróty"
 
 #: src/widgets/TutorialDialog.qml:19
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
-msgstr ""
+msgstr "Używając klawiatury, następujące klawisze umożliwiają poruszanie się."
 
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr ""
+msgstr "Otwórz nowy widok podzielony w pionie lub poziomie."
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
 msgid "Find"
-msgstr ""
+msgstr "Poszukaj"
 
 #: src/widgets/TutorialDialog.qml:70
 #, kde-format
 msgid "Open the find bar."
-msgstr ""
+msgstr "Otwórz pasek wyszukiwania"
 
 #: src/widgets/TutorialDialog.qml:90
 #, kde-format
 msgid "Switch"
-msgstr ""
+msgstr "Przełącz"
 
 #: src/widgets/TutorialDialog.qml:91
 #, kde-format
 msgid "Switch between split views."
-msgstr ""
+msgstr "Przełącz pomiędzy częściami widoku."
 
 #: src/widgets/TutorialDialog.qml:114
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
 msgstr ""
+"Używając urządzeń dotykowych, następujące gesty umożliwiają poruszanie się."
 
 #: src/widgets/TutorialDialog.qml:118
 #, kde-format
 msgid "Up & Down"
-msgstr ""
+msgstr "Góra i dół"
 
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr ""
+msgstr "Przeciągaj w górę lub dół, aby przechodzić po historii poleceń."
 
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
 msgid "Left & Right"
-msgstr ""
+msgstr "Lewo i prawo"
 
 #: src/widgets/TutorialDialog.qml:125
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
-msgstr ""
+msgstr "Przeciągaj w lewo lub prawo, aby przechodzić po historii poleceń."
 
 #: src/widgets/TutorialDialog.qml:130
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr ""
+msgstr "Dwa palce w lewo i prawo"
 
 #: src/widgets/TutorialDialog.qml:131
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr ""
+msgstr "Przeciągaj w górę lub dół dwoma palcami, aby przewinąć."
 
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
 msgid "Commands"
-msgstr ""
+msgstr "Polecenia"
 
 #: src/widgets/TutorialDialog.qml:142
 #, kde-format
 msgid "Create"
-msgstr ""
+msgstr "Utwórz"
 
 #: src/widgets/TutorialDialog.qml:143
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr ""
+msgstr "Utwórz nowy skrót polecenia, aby szybciej wywoływać działania."
 
 #: src/widgets/TutorialDialog.qml:147
 #, kde-format
 msgid "Add"
-msgstr ""
+msgstr "Dodaj"
