@@ -1,5 +1,4 @@
-#ifndef COMMANDSMODEL_H
-#define COMMANDSMODEL_H
+#pragma once
 
 #include <QObject>
 
@@ -23,9 +22,8 @@ private:
     void setList();
     void saveCommands();
 
-public slots:
+public Q_SLOTS:
     bool insert(const QString &command);
     void remove(const int &index);
 };
 
-#endif // COMMANDSMODEL_H

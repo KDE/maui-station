@@ -3,6 +3,8 @@
 #include <QDebug>
 #include <QKeyEvent>
 
+#include <KI18n/KLocalizedString>
+
 KeysHelper::KeysHelper(QObject *parent)
     : QAbstractListModel(parent)
 {
@@ -74,6 +76,10 @@ void KeysHelper::setKeys()
     case Group::DEFAULT_GROUP: {
         this->m_keys = defaultKeys();
         break;
+    }        
+    case Group::SIGNALS_GROUP: {
+        this->m_keys = signalKeys();
+        break;
     }
     default: {
         this->m_keys = defaultKeys();
@@ -85,7 +91,7 @@ void KeysHelper::setKeys()
     emit this->endResetModel();
 }
 
-QVector<Key> KeysHelper::ctrlKeys() const
+QVector<Key> KeysHelper::ctrlKeys()
 {
     QVector<Key> res;
     res.append({Qt::Key::Key_C, "Ctrl+C", "", Qt::Modifier::CTRL});
@@ -97,7 +103,7 @@ QVector<Key> KeysHelper::ctrlKeys() const
     return res;
 }
 
-QVector<Key> KeysHelper::fnKeys() const
+QVector<Key> KeysHelper::fnKeys()
 {
     QVector<Key> res;
     res.append({Qt::Key::Key_F1, "F1"});
@@ -116,7 +122,7 @@ QVector<Key> KeysHelper::fnKeys() const
     return res;
 }
 
-QVector<Key> KeysHelper::navKeys() const
+QVector<Key> KeysHelper::navKeys()
 {
     QVector<Key> res;
     res.append({Qt::Key::Key_Up, "↑", "go-up"});
@@ -127,7 +133,7 @@ QVector<Key> KeysHelper::navKeys() const
     return res;
 }
 
-QVector<Key> KeysHelper::nanoKeys() const
+QVector<Key> KeysHelper::nanoKeys()
 {
     QVector<Key> res;
     res.append({Qt::Key::Key_Up, "↑", "go-up"});
@@ -148,7 +154,7 @@ QVector<Key> KeysHelper::nanoKeys() const
     return res;
 }
 
-QVector<Key> KeysHelper::defaultKeys() const
+QVector<Key> KeysHelper::defaultKeys()
 {
     QVector<Key> res;
     res.append({Qt::Key::Key_Up, "↑"});
@@ -158,6 +164,17 @@ QVector<Key> KeysHelper::defaultKeys() const
     res.append({Qt::Key::Key_Control, "Ctrl"});
     res.append({Qt::Key::Key_Alt, "Alt"});
     res.append({Qt::Key::Key_C, "Ctrl+C", "", Qt::Modifier::CTRL});
+
+    return res;
+}
+
+QVector<Key> KeysHelper::signalKeys()
+{
+    QVector<Key> res;
+
+    res.append({Qt::Key::Key_Z, i18n("Pause"), "", Qt::Modifier::CTRL});
+    res.append({Qt::Key::Key_C, i18n("Interrupt"), "", Qt::Modifier::CTRL});
+    res.append({Qt::Key::Key_Backslash, i18n("Kill"), "", Qt::Modifier::CTRL});
 
     return res;
 }

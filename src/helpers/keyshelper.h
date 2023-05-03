@@ -1,5 +1,4 @@
-#ifndef KEYSHELPER_H
-#define KEYSHELPER_H
+#pragma once
 
 #include <QAbstractListModel>
 #include <QObject>
@@ -22,7 +21,7 @@ public:
     enum ROLES : uint8_t { ICON_NAME, LABEL, KEY, MODIFIER, ITEM };
     Q_ENUM(ROLES)
 
-    enum Group : uint8_t { FN_GROUP, NANO_GROUP, CTRL_GROUP, NAV_GROUP, DEFAULT_GROUP };
+    enum Group : uint8_t { FN_GROUP, NANO_GROUP, CTRL_GROUP, NAV_GROUP, DEFAULT_GROUP, SIGNALS_GROUP };
     Q_ENUM(Group)
 
     explicit KeysHelper(QObject *parent = nullptr);
@@ -39,18 +38,17 @@ private:
     QVector<Key> m_keys;
     Group m_group = Group::DEFAULT_GROUP;
 
-    QVector<Key> ctrlKeys() const;
-    QVector<Key> fnKeys() const;
-    QVector<Key> navKeys() const;
-    QVector<Key> nanoKeys() const;
-    QVector<Key> defaultKeys() const;
+    static QVector<Key> ctrlKeys();
+    static QVector<Key> fnKeys();
+    static QVector<Key> navKeys();
+    static QVector<Key> nanoKeys();
+    static QVector<Key> defaultKeys();
+    static QVector<Key> signalKeys();
 
-signals:
+Q_SIGNALS:
     void groupChanged();
 
-public slots:
+public Q_SLOTS:
     void sendKey(const int &index, QObject *object);
     void setGroup(Group group);
 };
-
-#endif // KEYSHELPER_H

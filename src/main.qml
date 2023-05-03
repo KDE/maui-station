@@ -235,7 +235,7 @@ Maui.ApplicationWindow
                     autoExclusive: true
                     checked: settings.keysModelCurrentIndex === 2
                     checkable: true
-                    onTriggered:settings.keysModelCurrentIndex = 2
+                    onTriggered: settings.keysModelCurrentIndex = 2
                 }
 
                 MenuItem
@@ -254,6 +254,15 @@ Maui.ApplicationWindow
                     checked: settings.keysModelCurrentIndex === 4
                     checkable: true
                     onTriggered: settings.keysModelCurrentIndex = 4
+                }                
+
+                MenuItem
+                {
+                    text: i18n("Signals")
+                    autoExclusive: true
+                    checked: settings.keysModelCurrentIndex === 5
+                    checkable: true
+                    onTriggered: settings.keysModelCurrentIndex = 5
                 }
             }
         }
