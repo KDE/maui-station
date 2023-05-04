@@ -41,6 +41,45 @@ KeysHelper::Group KeysHelper::group() const
     return m_group;
 }
 
+QVariantList KeysHelper::signalsGroup() const
+{
+    auto insert = [](const QString &label, const int &signal) -> QVariantMap
+    {
+        return QVariantMap{{"label", label}, {"signal", signal}};
+    };
+
+    QVariantList res;
+
+    int i = 1;
+    res << insert("SIGHUP", i++);
+    res << insert("SIGINT", i++);
+    res << insert("SIGQUIT", i++);
+    res << insert("SIGILL", i++);
+    res << insert("SIGTRAP", i++);
+    res << insert("SIGABRT", i++);
+    ////    res << insert("SIGIOT", i++);
+    res << insert("SIGBUS", i++);
+    res << insert("SIGFPE", i++);
+    res << insert("SIGKILL", i++);
+    res << insert("SIGUSR1", i++);
+    res << insert("SIGEGV", i++);
+    res << insert("SIGUSR2", i++);
+    res << insert("SIGPIPE", i++);
+    res << insert("SIGALRM", i++);
+    res << insert("SIGTERM", i++);
+    res << insert("SIGSTKFLT", i++);
+    res << insert("SIGCHLD", i++);
+    res << insert("SIGCONT", i++);
+    res << insert("SIGSTOP", i++);
+    res << insert("SIGTSTP", i++);
+    res << insert("SIGTTIN", i++);
+    res << insert("SIGTTOU", i++);
+    res << insert("SIGTSTP", i++);
+    res << insert("SIGURG", i++);
+
+    return res;
+}
+
 QHash<int, QByteArray> KeysHelper::roleNames() const
 {
     static QHash<int, QByteArray> roles;
@@ -76,7 +115,7 @@ void KeysHelper::setKeys()
     case Group::DEFAULT_GROUP: {
         this->m_keys = defaultKeys();
         break;
-    }        
+    }
     case Group::SIGNALS_GROUP: {
         this->m_keys = signalKeys();
         break;

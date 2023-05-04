@@ -93,12 +93,12 @@ Maui.SplitViewItem
 
             function onForegroundProcessNameChanged()
             {
-                if(control.session.foregroundProcessName === "nano")
+                var process = control.session.foregroundProcessName
+
+                switch (process)
                 {
-                    settings.keysModelCurrentIndex = 1
-                }else
-                {
-                    settings.keysModelCurrentIndex = 4
+                case "nano" : settings.keysModelCurrentIndex = 1; break;
+                case "htop" : settings.keysModelCurrentIndex = 0; break;
                 }
             }
         }

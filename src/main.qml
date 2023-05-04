@@ -74,6 +74,8 @@ Maui.ApplicationWindow
         property bool blinkingCursor: true
         property bool fullCursorHeight: true
         property bool antialiasText: true
+
+        property bool showSignalBar: false
     }
 
     Loader
@@ -254,7 +256,7 @@ Maui.ApplicationWindow
                     checked: settings.keysModelCurrentIndex === 4
                     checkable: true
                     onTriggered: settings.keysModelCurrentIndex = 4
-                }                
+                }
 
                 MenuItem
                 {
@@ -263,6 +265,40 @@ Maui.ApplicationWindow
                     checked: settings.keysModelCurrentIndex === 5
                     checkable: true
                     onTriggered: settings.keysModelCurrentIndex = 5
+                }
+
+                MenuSeparator {}
+
+                MenuItem
+                {
+                    text: i18n("More Signals")
+                    checked: settings.showSignalBar
+                    checkable: true
+                    onTriggered: settings.showSignalBar = !settings.showSignalBar
+                }
+            }
+        }
+
+        footerColumn: Maui.ToolBar
+        {
+            visible: settings.showSignalBar
+            width: parent.width
+            position: ToolBar.Footer
+
+            Repeater
+            {
+                model: _keysModel.signalsGroup
+
+                delegate:  Button
+                {
+                    font.bold: true
+                    text: modelData.label + "/ " + modelData.signal
+
+                    onClicked: currentTerminal.session.sendSignal(9)
+
+                    activeFocusOnTab: false
+                    focusPolicy: Qt.NoFocus
+                    autoRepeat: true
                 }
             }
         }

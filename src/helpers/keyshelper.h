@@ -17,6 +17,8 @@ class KeysHelper : public QAbstractListModel
 {
     Q_OBJECT
     Q_PROPERTY(Group group WRITE setGroup READ group NOTIFY groupChanged)
+    Q_PROPERTY(QVariantList signalsGroup READ signalsGroup CONSTANT FINAL)
+
 public:
     enum ROLES : uint8_t { ICON_NAME, LABEL, KEY, MODIFIER, ITEM };
     Q_ENUM(ROLES)
@@ -30,8 +32,15 @@ public:
 
     Group group() const;
 
+    QVariantList signalsGroup() const;
+
 protected:
     QHash<int, QByteArray> roleNames() const override;
+
+
+public Q_SLOTS:
+    void sendKey(const int &index, QObject *object);
+    void setGroup(Group group);
 
 private:
     void setKeys();
@@ -43,12 +52,9 @@ private:
     static QVector<Key> navKeys();
     static QVector<Key> nanoKeys();
     static QVector<Key> defaultKeys();
-    static QVector<Key> signalKeys();
+    static QVector<Key> signalKeys();    
 
 Q_SIGNALS:
     void groupChanged();
 
-public Q_SLOTS:
-    void sendKey(const int &index, QObject *object);
-    void setGroup(Group group);
 };
