@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-20 00:47+0000\n"
+"POT-Creation-Date: 2023-05-04 00:46+0000\n"
 "PO-Revision-Date: 2023-04-21 09:05+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
@@ -13,6 +13,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 22.12.3\n"
+
+#: src/helpers/keyshelper.cpp:175
+#, kde-format
+msgid "Pause"
+msgstr ""
+
+#: src/helpers/keyshelper.cpp:176
+#, kde-format
+msgid "Interrupt"
+msgstr ""
+
+#: src/helpers/keyshelper.cpp:177
+#, kde-format
+msgid "Kill"
+msgstr ""
 
 #: src/main.cpp:35
 #, kde-format
@@ -101,12 +116,17 @@ msgstr "Navigation"
 msgid "Favorite"
 msgstr "Favori"
 
-#: src/main.qml:326 src/main.qml:333
+#: src/main.qml:261
+#, kde-format
+msgid "Signals"
+msgstr ""
+
+#: src/main.qml:335 src/main.qml:342
 #, kde-format
 msgid "Close"
 msgstr "Fermer"
 
-#: src/main.qml:327
+#: src/main.qml:336
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -115,7 +135,7 @@ msgstr ""
 "Un processus est actuellement en cours d'exécution. Voulez-vous vraiment "
 "l'interrompre et le fermer ?"
 
-#: src/main.qml:334
+#: src/main.qml:343
 #, kde-format
 msgid "Cancel"
 msgstr "Annuler"

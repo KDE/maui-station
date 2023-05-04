@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-20 00:47+0000\n"
+"POT-Creation-Date: 2023-05-04 00:46+0000\n"
 "PO-Revision-Date: 2023-04-20 10:08+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -17,6 +17,21 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Generator: Poedit 3.2.2\n"
+
+#: src/helpers/keyshelper.cpp:175
+#, kde-format
+msgid "Pause"
+msgstr ""
+
+#: src/helpers/keyshelper.cpp:176
+#, kde-format
+msgid "Interrupt"
+msgstr ""
+
+#: src/helpers/keyshelper.cpp:177
+#, kde-format
+msgid "Kill"
+msgstr ""
 
 #: src/main.cpp:35
 #, kde-format
@@ -103,12 +118,17 @@ msgstr "Krmarjenje"
 msgid "Favorite"
 msgstr "Priljubljen"
 
-#: src/main.qml:326 src/main.qml:333
+#: src/main.qml:261
+#, kde-format
+msgid "Signals"
+msgstr ""
+
+#: src/main.qml:335 src/main.qml:342
 #, kde-format
 msgid "Close"
 msgstr "Zapri"
 
-#: src/main.qml:327
+#: src/main.qml:336
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -117,7 +137,7 @@ msgstr ""
 "Proces trenutno še teče. Ali ste prepričani, da ga želite prekiniti in "
 "zapreti?"
 
-#: src/main.qml:334
+#: src/main.qml:343
 #, kde-format
 msgid "Cancel"
 msgstr "Prekliči"
