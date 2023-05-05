@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-04 00:46+0000\n"
-"PO-Revision-Date: 2023-04-20 12:08+0200\n"
+"POT-Creation-Date: 2023-05-05 00:47+0000\n"
+"PO-Revision-Date: 2023-05-04 10:17+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,22 +15,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 
-#: src/helpers/keyshelper.cpp:175
+#: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Pauzeren"
 
-#: src/helpers/keyshelper.cpp:176
+#: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr ""
+msgstr "Onderbreking"
 
-#: src/helpers/keyshelper.cpp:177
+#: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr ""
+msgstr "Beëindigen (kill)"
 
 #: src/main.cpp:35
 #, kde-format
@@ -57,85 +57,91 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Ontwikkelaar"
 
-#: src/main.qml:143 src/main.qml:201 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:145 src/main.qml:203 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Nieuw tabblad"
 
-#: src/main.qml:151 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:153 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Splitsen"
 
-#: src/main.qml:161
+#: src/main.qml:163
 #, kde-format
 msgid "Tutorial"
 msgstr "Inleiding"
 
-#: src/main.qml:173
+#: src/main.qml:175
 #, kde-format
 msgid "Settings"
 msgstr "Instellingen"
 
-#: src/main.qml:183
+#: src/main.qml:185
 #, kde-format
 msgid "About"
 msgstr "Info over"
 
-#: src/main.qml:197
+#: src/main.qml:199
 #, kde-format
 msgid "Nothing here"
 msgstr "Er is hier niets"
 
-#: src/main.qml:198
+#: src/main.qml:200
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 "Om met hacking te beginnen open een nieuw tabblad of een gesplitst scherm."
 
-#: src/main.qml:216
+#: src/main.qml:218
 #, kde-format
 msgid "Function Keys"
 msgstr "Functietoetsen"
 
-#: src/main.qml:225
+#: src/main.qml:227
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:234
+#: src/main.qml:236
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl-modifiers"
 
-#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:245 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navigatie"
 
-#: src/main.qml:252
+#: src/main.qml:254
 #, kde-format
 msgid "Favorite"
 msgstr "Favoriet"
 
-#: src/main.qml:261
+#: src/main.qml:263
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "Signalen"
 
-#: src/main.qml:335 src/main.qml:342
+#: src/main.qml:274
+#, fuzzy, kde-format
+#| msgid "Signals"
+msgid "More Signals"
+msgstr "Signalen"
+
+#: src/main.qml:371 src/main.qml:378
 #, kde-format
 msgid "Close"
 msgstr "Sluiten"
 
-#: src/main.qml:336
+#: src/main.qml:372
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Er draait nog een proces. Wilt u het toch onderbreken en sluiten?"
 
-#: src/main.qml:343
+#: src/main.qml:379
 #, kde-format
 msgid "Cancel"
 msgstr "Annuleren"

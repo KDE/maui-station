@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-04 00:46+0000\n"
+"POT-Creation-Date: 2023-05-05 00:47+0000\n"
 "PO-Revision-Date: 2023-04-21 10:32+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 22.12.3\n"
 
-#: src/helpers/keyshelper.cpp:175
+#: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
 msgstr ""
 
-#: src/helpers/keyshelper.cpp:176
+#: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
 msgstr ""
 
-#: src/helpers/keyshelper.cpp:177
+#: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
 msgstr ""
@@ -57,77 +57,82 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Sviluppatore"
 
-#: src/main.qml:143 src/main.qml:201 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:145 src/main.qml:203 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Nuova scheda"
 
-#: src/main.qml:151 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:153 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Dividi"
 
-#: src/main.qml:161
+#: src/main.qml:163
 #, kde-format
 msgid "Tutorial"
 msgstr "Esercitazione"
 
-#: src/main.qml:173
+#: src/main.qml:175
 #, kde-format
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: src/main.qml:183
+#: src/main.qml:185
 #, kde-format
 msgid "About"
 msgstr "Informazioni"
 
-#: src/main.qml:197
+#: src/main.qml:199
 #, kde-format
 msgid "Nothing here"
 msgstr "Non c'è niente qui"
 
-#: src/main.qml:198
+#: src/main.qml:200
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Per iniziare, apri una nuova scheda o uno schermo diviso."
 
-#: src/main.qml:216
+#: src/main.qml:218
 #, kde-format
 msgid "Function Keys"
 msgstr "Tasti funzione"
 
-#: src/main.qml:225
+#: src/main.qml:227
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:234
+#: src/main.qml:236
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificatori Ctrl"
 
-#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:245 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navigazione"
 
-#: src/main.qml:252
+#: src/main.qml:254
 #, kde-format
 msgid "Favorite"
 msgstr "Preferito"
 
-#: src/main.qml:261
+#: src/main.qml:263
 #, kde-format
 msgid "Signals"
 msgstr ""
 
-#: src/main.qml:335 src/main.qml:342
+#: src/main.qml:274
+#, kde-format
+msgid "More Signals"
+msgstr ""
+
+#: src/main.qml:371 src/main.qml:378
 #, kde-format
 msgid "Close"
 msgstr "Chiudi"
 
-#: src/main.qml:336
+#: src/main.qml:372
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -136,7 +141,7 @@ msgstr ""
 "Un processo è ancora in esecuzione. Sei sicuro di volerlo interrompere e "
 "chiudere?"
 
-#: src/main.qml:343
+#: src/main.qml:379
 #, kde-format
 msgid "Cancel"
 msgstr "Annulla"

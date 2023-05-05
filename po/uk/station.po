@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-04 00:46+0000\n"
-"PO-Revision-Date: 2023-04-20 08:54+0300\n"
+"POT-Creation-Date: 2023-05-05 00:47+0000\n"
+"PO-Revision-Date: 2023-05-04 06:33+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -18,20 +18,20 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 20.12.0\n"
 
-#: src/helpers/keyshelper.cpp:175
+#: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Призупинити"
 
-#: src/helpers/keyshelper.cpp:176
+#: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr ""
+msgstr "Перервати"
 
-#: src/helpers/keyshelper.cpp:177
+#: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr ""
+msgstr "Знищити"
 
 #: src/main.cpp:35
 #, kde-format
@@ -58,85 +58,91 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Розробник"
 
-#: src/main.qml:143 src/main.qml:201 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:145 src/main.qml:203 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Нова вкладка"
 
-#: src/main.qml:151 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:153 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Розділити"
 
-#: src/main.qml:161
+#: src/main.qml:163
 #, kde-format
 msgid "Tutorial"
 msgstr "Покрокові настанови"
 
-#: src/main.qml:173
+#: src/main.qml:175
 #, kde-format
 msgid "Settings"
 msgstr "Параметри"
 
-#: src/main.qml:183
+#: src/main.qml:185
 #, kde-format
 msgid "About"
 msgstr "Про програму"
 
-#: src/main.qml:197
+#: src/main.qml:199
 #, kde-format
 msgid "Nothing here"
 msgstr "Тут нічого немає"
 
-#: src/main.qml:198
+#: src/main.qml:200
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 "Щоб розпочати програмування, відкрийте нову вкладку або розділений екран."
 
-#: src/main.qml:216
+#: src/main.qml:218
 #, kde-format
 msgid "Function Keys"
 msgstr "Функціональні клавіші"
 
-#: src/main.qml:225
+#: src/main.qml:227
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:234
+#: src/main.qml:236
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Модифікатори Ctrl"
 
-#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:245 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Навігація"
 
-#: src/main.qml:252
+#: src/main.qml:254
 #, kde-format
 msgid "Favorite"
 msgstr "Улюблене"
 
-#: src/main.qml:261
+#: src/main.qml:263
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "Сигнали"
 
-#: src/main.qml:335 src/main.qml:342
+#: src/main.qml:274
+#, fuzzy, kde-format
+#| msgid "Signals"
+msgid "More Signals"
+msgstr "Сигнали"
+
+#: src/main.qml:371 src/main.qml:378
 #, kde-format
 msgid "Close"
 msgstr "Закрити"
 
-#: src/main.qml:336
+#: src/main.qml:372
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Працює процес. Ви справді хочете перервати і завершити його роботу?"
 
-#: src/main.qml:343
+#: src/main.qml:379
 #, kde-format
 msgid "Cancel"
 msgstr "Скасувати"

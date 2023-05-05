@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-04 00:46+0000\n"
+"POT-Creation-Date: 2023-05-05 00:47+0000\n"
 "PO-Revision-Date: 2023-04-20 19:44+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -19,17 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 22.07.70\n"
 
-#: src/helpers/keyshelper.cpp:175
+#: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
 msgstr ""
 
-#: src/helpers/keyshelper.cpp:176
+#: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
 msgstr ""
 
-#: src/helpers/keyshelper.cpp:177
+#: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
 msgstr ""
@@ -59,84 +59,89 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Entwickler"
 
-#: src/main.qml:143 src/main.qml:201 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:145 src/main.qml:203 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Neues Unterfenster"
 
-#: src/main.qml:151 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:153 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Teilen"
 
-#: src/main.qml:161
+#: src/main.qml:163
 #, kde-format
 msgid "Tutorial"
 msgstr "Einführung"
 
-#: src/main.qml:173
+#: src/main.qml:175
 #, kde-format
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: src/main.qml:183
+#: src/main.qml:185
 #, kde-format
 msgid "About"
 msgstr "Über"
 
-#: src/main.qml:197
+#: src/main.qml:199
 #, kde-format
 msgid "Nothing here"
 msgstr ""
 
-#: src/main.qml:198
+#: src/main.qml:200
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 
-#: src/main.qml:216
+#: src/main.qml:218
 #, kde-format
 msgid "Function Keys"
 msgstr "Funktionstasten"
 
-#: src/main.qml:225
+#: src/main.qml:227
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:234
+#: src/main.qml:236
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr ""
 
-#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:245 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navigation"
 
-#: src/main.qml:252
+#: src/main.qml:254
 #, kde-format
 msgid "Favorite"
 msgstr "Favoriten"
 
-#: src/main.qml:261
+#: src/main.qml:263
 #, kde-format
 msgid "Signals"
 msgstr ""
 
-#: src/main.qml:335 src/main.qml:342
+#: src/main.qml:274
+#, kde-format
+msgid "More Signals"
+msgstr ""
+
+#: src/main.qml:371 src/main.qml:378
 #, kde-format
 msgid "Close"
 msgstr "Schließen"
 
-#: src/main.qml:336
+#: src/main.qml:372
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr ""
 
-#: src/main.qml:343
+#: src/main.qml:379
 #, kde-format
 msgid "Cancel"
 msgstr "Abbrechen"

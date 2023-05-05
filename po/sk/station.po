@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-04 00:46+0000\n"
+"POT-Creation-Date: 2023-05-05 00:47+0000\n"
 "PO-Revision-Date: 2023-03-12 10:33+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -15,17 +15,17 @@ msgstr ""
 "X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: src/helpers/keyshelper.cpp:175
+#: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
 msgstr ""
 
-#: src/helpers/keyshelper.cpp:176
+#: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
 msgstr ""
 
-#: src/helpers/keyshelper.cpp:177
+#: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
 msgstr ""
@@ -55,84 +55,89 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Vývojár"
 
-#: src/main.qml:143 src/main.qml:201 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:145 src/main.qml:203 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Nová karta"
 
-#: src/main.qml:151 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:153 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Rozdeliť"
 
-#: src/main.qml:161
+#: src/main.qml:163
 #, kde-format
 msgid "Tutorial"
 msgstr "Výučba"
 
-#: src/main.qml:173
+#: src/main.qml:175
 #, kde-format
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: src/main.qml:183
+#: src/main.qml:185
 #, kde-format
 msgid "About"
 msgstr "O aplikácii"
 
-#: src/main.qml:197
+#: src/main.qml:199
 #, kde-format
 msgid "Nothing here"
 msgstr ""
 
-#: src/main.qml:198
+#: src/main.qml:200
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 
-#: src/main.qml:216
+#: src/main.qml:218
 #, kde-format
 msgid "Function Keys"
 msgstr ""
 
-#: src/main.qml:225
+#: src/main.qml:227
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:234
+#: src/main.qml:236
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr ""
 
-#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:245 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navigácia"
 
-#: src/main.qml:252
+#: src/main.qml:254
 #, kde-format
 msgid "Favorite"
 msgstr "Obľúbené"
 
-#: src/main.qml:261
+#: src/main.qml:263
 #, kde-format
 msgid "Signals"
 msgstr ""
 
-#: src/main.qml:335 src/main.qml:342
+#: src/main.qml:274
+#, kde-format
+msgid "More Signals"
+msgstr ""
+
+#: src/main.qml:371 src/main.qml:378
 #, kde-format
 msgid "Close"
 msgstr "Zavrieť"
 
-#: src/main.qml:336
+#: src/main.qml:372
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr ""
 
-#: src/main.qml:343
+#: src/main.qml:379
 #, kde-format
 msgid "Cancel"
 msgstr ""
