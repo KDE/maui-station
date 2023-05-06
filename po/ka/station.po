@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 00:47+0000\n"
-"PO-Revision-Date: 2023-04-21 07:26+0200\n"
+"PO-Revision-Date: 2023-05-05 05:33+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -21,17 +21,17 @@ msgstr ""
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "შეჩერება"
 
 #: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr ""
+msgstr "შეწყვეტა"
 
 #: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr ""
+msgstr "მოკვლა"
 
 #: src/main.cpp:35
 #, kde-format
@@ -121,12 +121,12 @@ msgstr "რჩეული"
 #: src/main.qml:263
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "სიგნალები"
 
 #: src/main.qml:274
 #, kde-format
 msgid "More Signals"
-msgstr ""
+msgstr "მეტი სიგნალი"
 
 #: src/main.qml:371 src/main.qml:378
 #, kde-format

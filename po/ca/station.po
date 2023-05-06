@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 00:47+0000\n"
-"PO-Revision-Date: 2023-05-04 09:33+0200\n"
+"PO-Revision-Date: 2023-05-05 13:18+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -126,10 +126,9 @@ msgid "Signals"
 msgstr "Senyals"
 
 #: src/main.qml:274
-#, fuzzy, kde-format
-#| msgid "Signals"
+#, kde-format
 msgid "More Signals"
-msgstr "Senyals"
+msgstr "Més senyals"
 
 #: src/main.qml:371 src/main.qml:378
 #, kde-format
