@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 00:47+0000\n"
-"PO-Revision-Date: 2023-04-22 17:07+0200\n"
+"PO-Revision-Date: 2023-05-06 17:29+0200\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -21,17 +21,17 @@ msgstr ""
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Pausar"
 
 #: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr ""
+msgstr "Interrumpir"
 
 #: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr ""
+msgstr "Finalizar"
 
 #: src/main.cpp:35
 #, kde-format
@@ -122,12 +122,12 @@ msgstr "Favorito"
 #: src/main.qml:263
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "Señales"
 
 #: src/main.qml:274
 #, kde-format
 msgid "More Signals"
-msgstr ""
+msgstr "Más señales"
 
 #: src/main.qml:371 src/main.qml:378
 #, kde-format
