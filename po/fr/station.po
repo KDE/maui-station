@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 00:47+0000\n"
-"PO-Revision-Date: 2023-05-05 16:25+0200\n"
+"PO-Revision-Date: 2023-05-09 13:14+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -124,7 +124,7 @@ msgstr "Signaux"
 #: src/main.qml:274
 #, kde-format
 msgid "More Signals"
-msgstr ""
+msgstr "Plus de signaux"
 
 #: src/main.qml:371 src/main.qml:378
 #, kde-format
