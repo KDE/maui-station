@@ -32,17 +32,18 @@ Maui.ApplicationWindow
         enabled: !Maui.Handy.isMobile && settings.windowTranslucency
     }
 
+    property bool discard : !settings.preventClosing
     onClosing:
     {
-        _dialogLoader.sourceComponent = null
+        // _dialogLoader.sourceComponent = null
         _dialogLoader.sourceComponent = _confirmCloseDialogComponent
 
-        if(anyTabHasActiveProcess() && !dialog.discard && settings.preventClosing)
+        if(anyTabHasActiveProcess() && !root.discard)
         {
             close.accepted = false
 
             dialog.index = -1
-            dialog.cb =  ()=> {root.close()}
+            dialog.cb =  ()=> {root.discard = true; root.close();}
             close.accepted = false
             dialog.open()
             return
@@ -362,9 +363,9 @@ Maui.ApplicationWindow
         Maui.Dialog
         {
             id : _dialog
+
             property var cb : ({})
             property int index: -1
-            property bool discard : false
 
             headBar.visible: false
 
@@ -380,7 +381,6 @@ Maui.ApplicationWindow
 
             onAccepted:
             {
-                discard = true
                 _dialog.close()
 
                 if(cb instanceof Function)
@@ -392,8 +392,7 @@ Maui.ApplicationWindow
 
             onRejected:
             {
-                discard = false
-                 close()
+                close()
             }
         }
     }
@@ -429,7 +428,6 @@ Maui.ApplicationWindow
     function anyTabHasActiveProcess()
     {
         for(var i = 0; i < _layout.count; i ++)
-
         {
             let tab = _layout.tabAt(i)
             if(tab && tab.hasActiveProcess)
