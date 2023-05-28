@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-19 00:45+0000\n"
-"PO-Revision-Date: 2023-04-20 12:38+0300\n"
+"PO-Revision-Date: 2023-04-27 12:45+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -313,12 +313,13 @@ msgstr "Riviväli"
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "Historian koko"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Puskurissa pidettävien rivien määrä; alle nolla tarkoittaa ääretöntä määrää."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
@@ -358,12 +359,12 @@ msgstr "Tarkista"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Jonossa oleva prosessi"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Käynnissä oleva prosessi on ollut passiivinen yli 30 sekuntia."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
