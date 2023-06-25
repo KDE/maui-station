@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-19 00:45+0000\n"
-"PO-Revision-Date: 2023-04-27 12:45+0300\n"
+"PO-Revision-Date: 2023-05-28 16:47+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,22 +15,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Tauko"
 
 #: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr ""
+msgstr "Keskeytä"
 
 #: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr ""
+msgstr "Tapa"
 
 #: src/main.cpp:35
 #, kde-format
@@ -120,12 +120,12 @@ msgstr "Suosikki"
 #: src/main.qml:264
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "Signaalit"
 
 #: src/main.qml:275
 #, kde-format
 msgid "More Signals"
-msgstr ""
+msgstr "Lisää signaaleja"
 
 #: src/main.qml:372 src/main.qml:379
 #, kde-format
