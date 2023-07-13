@@ -8,6 +8,7 @@
   <name xml:lang="ca-valencia">Station</name>
   <name xml:lang="cs">Station</name>
   <name xml:lang="en-GB">Station</name>
+  <name xml:lang="eo">Station</name>
   <name xml:lang="es">Station</name>
   <name xml:lang="eu">Station</name>
   <name xml:lang="fi">Station</name>
@@ -30,6 +31,7 @@
   <summary xml:lang="ca-valencia">Emulador de terminal</summary>
   <summary xml:lang="cs">Emulátor terminálu</summary>
   <summary xml:lang="en-GB">Terminal Emulator</summary>
+  <summary xml:lang="eo">Terminalimitilo</summary>
   <summary xml:lang="es">Emulador de terminal</summary>
   <summary xml:lang="eu">Terminal emulatzailea</summary>
   <summary xml:lang="fi">Pääte-emulaattori</summary>
@@ -80,6 +82,7 @@
       <caption xml:lang="ca">L'Station a l'escriptori i al telèfon.</caption>
       <caption xml:lang="ca-valencia">Station en l'escriptori i al telèfon.</caption>
       <caption xml:lang="en-GB">Station in desktop and phone.</caption>
+      <caption xml:lang="eo">Station en labortablo kaj poŝtelefono.</caption>
       <caption xml:lang="es">Station en el escritorio y el en teléfono.</caption>
       <caption xml:lang="eu">«Station» mahaigainean eta telefonoan.</caption>
       <caption xml:lang="fi">Station työpöydällä ja puhelimessa.</caption>
