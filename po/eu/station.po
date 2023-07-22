@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-19 00:45+0000\n"
-"PO-Revision-Date: 2023-02-27 21:23+0100\n"
+"PO-Revision-Date: 2023-07-21 13:34+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,22 +18,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Etenaldia"
 
 #: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr ""
+msgstr "Etendura"
 
 #: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr ""
+msgstr "Akabatu"
 
 #: src/main.cpp:35
 #, kde-format
@@ -88,12 +88,12 @@ msgstr "Honi buruz"
 #: src/main.qml:200
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Ezer ez hemen"
 
 #: src/main.qml:201
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "Sasi-lanean hasteko, ireki fitxa berri bat edo pantaila zatitu bat."
 
 #: src/main.qml:219
 #, kde-format
@@ -123,12 +123,12 @@ msgstr "Gogokoak"
 #: src/main.qml:264
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "Seinaleak"
 
 #: src/main.qml:275
 #, kde-format
 msgid "More Signals"
-msgstr ""
+msgstr "Seinale gehiago"
 
 #: src/main.qml:372 src/main.qml:379
 #, kde-format
@@ -136,18 +136,17 @@ msgid "Close"
 msgstr "Itxi"
 
 #: src/main.qml:373
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently still running. Are you sure you want to close it?"
+#, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr "Prozesu bat martxan dago oraindik. Ziur zaude itxi nahi duzula?"
+msgstr ""
+"Prozesu batek martxan jarraitzen du. Ziur zaude eten eta itxi nahi duzula?"
 
 #: src/main.qml:380
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Utzi"
 
 #: src/widgets/CommandShortcuts.qml:25
 #, kde-format
@@ -185,10 +184,9 @@ msgid "Edit"
 msgstr "Editatu"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:284
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
-msgstr "Letra-tipoak"
+msgstr "Letra-tipoa"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
 #: src/widgets/SettingsDialog.qml:251
@@ -204,27 +202,27 @@ msgstr "Aldatu terminalaren kolore-antolaera."
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Alertak"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Martxan dagoen ataza"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Martxan dagoen ataza bat ixtea saihestu."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Amaitutako ataza"
 
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Egiteke dagoen prozesu bat amaitutakoan, jakinarazpen bat igortzen du."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -267,10 +265,9 @@ msgid "Translucency"
 msgstr "Zeharrargitasuna"
 
 #: src/widgets/SettingsDialog.qml:219
-#, fuzzy, kde-format
-#| msgid "Translucency"
+#, kde-format
 msgid "Translucent background."
-msgstr "Zeharrargitasuna"
+msgstr "Atzeko plano zeharrargitsua."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -295,24 +292,22 @@ msgstr "Uneko estiloan oinarritutako koloreak."
 #: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Prozesuen alertak eta itxi daitezen saihestu."
 
 #: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Bistaratzea"
 
 #: src/widgets/SettingsDialog.qml:280
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Configure the terminal font and display options."
-msgstr "Konfiguratu terminalaren letra-tipo familia eta neurria."
+msgstr "Konfiguratu terminalaren letra-tipoa eta bistaratze aukerak."
 
 #: src/widgets/SettingsDialog.qml:285
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size."
+#, kde-format
 msgid "Font family and size."
-msgstr "Konfiguratu terminalaren letra-tipo familia eta neurria."
+msgstr "Letra-tipo familia eta neurria."
 
 #: src/widgets/SettingsDialog.qml:297
 #, kde-format
@@ -322,57 +317,59 @@ msgstr "Lerroartea"
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "Historiaren neurria"
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Tarteko memorian mantendu beharreko lerro kopurua. Zero baino gutxiago lerro "
+"infinituak dira."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Gaitu lodia"
 
 #: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Kurtsore keinukaria"
 
 #: src/widgets/SettingsDialog.qml:345
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Kurtsorearen altuera osoa"
 
 #: src/widgets/SettingsDialog.qml:356
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Ertzak leundutako testua"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Prozesua bukatu da"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "Martxan dagoen ataza fitxa honetarako amaitu da: %1"
 
 #: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "Egiaztatu"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Egiteke dagoen prozesua"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Martxan dagoen prozesua 30 segundo baino gehiago ez-aktibo egon da."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
