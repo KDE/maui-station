@@ -1,0 +1,463 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-station package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-station\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-05-19 00:45+0000\n"
+"PO-Revision-Date: 2023-08-05 07:40+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#: src/helpers/keyshelper.cpp:214
+#, kde-format
+msgid "Pause"
+msgstr "Paus"
+
+#: src/helpers/keyshelper.cpp:215
+#, kde-format
+msgid "Interrupt"
+msgstr "Avbrott"
+
+#: src/helpers/keyshelper.cpp:216
+#, kde-format
+msgid "Kill"
+msgstr "Döda"
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Station"
+msgstr "Station"
+
+#: src/main.cpp:35
+#, kde-format
+msgid "Convergent terminal emulator."
+msgstr "Konvergent terminalemulator."
+
+#: src/main.cpp:35
+#, kde-format
+msgid "© 2019-%1 Maui Development Team"
+msgstr "© 2019-%1 Maui utvecklingsgrupp"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Developer"
+msgstr "Utvecklare"
+
+#: src/main.qml:146 src/main.qml:204 src/widgets/TutorialDialog.qml:49
+#, kde-format
+msgid "New Tab"
+msgstr "Ny flik"
+
+#: src/main.qml:154 src/widgets/TutorialDialog.qml:23
+#, kde-format
+msgid "Split"
+msgstr "Dela"
+
+#: src/main.qml:164
+#, kde-format
+msgid "Tutorial"
+msgstr "Handledning"
+
+#: src/main.qml:176
+#, kde-format
+msgid "Settings"
+msgstr "Inställningar"
+
+#: src/main.qml:186
+#, kde-format
+msgid "About"
+msgstr "Om"
+
+#: src/main.qml:200
+#, kde-format
+msgid "Nothing here"
+msgstr "Ingenting här"
+
+#: src/main.qml:201
+#, kde-format
+msgid "To start hacking open a new tab or a split screen."
+msgstr "Öppna en ny flik eller en delad skärm för att börja skriva."
+
+#: src/main.qml:219
+#, kde-format
+msgid "Function Keys"
+msgstr "Funktionstangenter"
+
+#: src/main.qml:228
+#, kde-format
+msgid "Nano"
+msgstr "Nano"
+
+#: src/main.qml:237
+#, kde-format
+msgid "Ctrl Modifiers"
+msgstr "Ctrl-väljartangenter"
+
+#: src/main.qml:246 src/widgets/TutorialDialog.qml:113
+#, kde-format
+msgid "Navigation"
+msgstr "Navigering"
+
+#: src/main.qml:255
+#, kde-format
+msgid "Favorite"
+msgstr "Favorit"
+
+#: src/main.qml:264
+#, kde-format
+msgid "Signals"
+msgstr "Signaler"
+
+#: src/main.qml:275
+#, kde-format
+msgid "More Signals"
+msgstr "Fler signaler"
+
+#: src/main.qml:372 src/main.qml:379
+#, kde-format
+msgid "Close"
+msgstr "Stäng"
+
+#: src/main.qml:373
+#, kde-format
+msgid ""
+"A process is still running. Are you sure you want to interrupt it and close "
+"it?"
+msgstr ""
+"Ett process kör fortfarande. Är du säker på att du vill avbryta och stänga "
+"den?"
+
+#: src/main.qml:380
+#, kde-format
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/widgets/CommandShortcuts.qml:25
+#, kde-format
+msgid "New Command"
+msgstr "Nytt kommando"
+
+#: src/widgets/CommandShortcuts.qml:34
+#, kde-format
+msgid "Edit Command"
+msgstr "Redigera kommando"
+
+#: src/widgets/CommandShortcuts.qml:35
+#, kde-format
+msgid "Edit a command shortcut"
+msgstr "Redigera en kommandogenväg"
+
+#: src/widgets/CommandShortcuts.qml:49
+#, kde-format
+msgid "No Commands"
+msgstr "Inga kommandon"
+
+#: src/widgets/CommandShortcuts.qml:50
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "Börja lägga till nya kommandogenvägar"
+
+#: src/widgets/CommandShortcuts.qml:92
+#, kde-format
+msgid "Remove"
+msgstr "Ta bort"
+
+#: src/widgets/CommandShortcuts.qml:102
+#, kde-format
+msgid "Edit"
+msgstr "Redigera"
+
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:284
+#, kde-format
+msgid "Font"
+msgstr "Teckensnitt"
+
+#: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
+#: src/widgets/SettingsDialog.qml:251
+#, kde-format
+msgid "Color Scheme"
+msgstr "Färgschema"
+
+#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:252
+#, kde-format
+msgid "Change the color scheme of the terminal."
+msgstr "Ändra terminalens färgschema"
+
+#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
+#, kde-format
+msgid "Alerts"
+msgstr "Alerts"
+
+#: src/widgets/SettingsDialog.qml:138
+#, kde-format
+msgid "Running Task"
+msgstr "Pågående aktivitet"
+
+#: src/widgets/SettingsDialog.qml:139
+#, kde-format
+msgid "Prevent from closing a running task."
+msgstr "Förhindra att en pågående aktivitet stängs."
+
+#: src/widgets/SettingsDialog.qml:150
+#, kde-format
+msgid "Finished Task"
+msgstr "Avslutat aktivitet"
+
+#: src/widgets/SettingsDialog.qml:151
+#, kde-format
+msgid "Emit a notification when a pending process has finished."
+msgstr "Skicka en  underrättelse när en pågående process har avslutats."
+
+#: src/widgets/SettingsDialog.qml:164
+#, kde-format
+msgid "Interface"
+msgstr "Gränssnitt"
+
+#: src/widgets/SettingsDialog.qml:165
+#, kde-format
+msgid "Configure the application components and behaviour."
+msgstr "Anpassa programmets komponenter och beteende."
+
+#: src/widgets/SettingsDialog.qml:170
+#, kde-format
+msgid "Color"
+msgstr "Färg"
+
+#: src/widgets/SettingsDialog.qml:171
+#, kde-format
+msgid "Switch between light and dark colorscheme."
+msgstr "Byt mellan ljust och mörkt färgschema."
+
+#: src/widgets/SettingsDialog.qml:179
+#, kde-format
+msgid "Light"
+msgstr "Ljus"
+
+#: src/widgets/SettingsDialog.qml:186
+#, kde-format
+msgid "Dark"
+msgstr "Mörk"
+
+#: src/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid "Adaptive"
+msgstr "Adaptiv"
+
+#: src/widgets/SettingsDialog.qml:218
+#, kde-format
+msgid "Translucency"
+msgstr "Genomlysning"
+
+#: src/widgets/SettingsDialog.qml:219
+#, kde-format
+msgid "Translucent background."
+msgstr "Genomskinlig bakgrund."
+
+#: src/widgets/SettingsDialog.qml:231
+#, kde-format
+msgid "Terminal"
+msgstr "Terminal"
+
+#: src/widgets/SettingsDialog.qml:232
+#, kde-format
+msgid "Configure the app UI and plugins."
+msgstr "Anpassa programmets användargränssnitt och insticksprogram."
+
+#: src/widgets/SettingsDialog.qml:237
+#, kde-format
+msgid "Adaptive Color Scheme"
+msgstr "Adaptivt färgschema"
+
+#: src/widgets/SettingsDialog.qml:238
+#, kde-format
+msgid "Colors based on the current style."
+msgstr "Färger baserade på aktuell stil."
+
+#: src/widgets/SettingsDialog.qml:266
+#, kde-format
+msgid "Alert on processes and prevent closing them."
+msgstr "Varna för processer och förhindra att de stängs."
+
+#: src/widgets/SettingsDialog.qml:279
+#, kde-format
+msgid "Display"
+msgstr "Visning"
+
+#: src/widgets/SettingsDialog.qml:280
+#, kde-format
+msgid "Configure the terminal font and display options."
+msgstr "Anpassa terminalens teckensnitt och skärmalternativ."
+
+#: src/widgets/SettingsDialog.qml:285
+#, kde-format
+msgid "Font family and size."
+msgstr "Teckenfamilj och storlek."
+
+#: src/widgets/SettingsDialog.qml:297
+#, kde-format
+msgid "Line Spacing"
+msgstr "Radmellanrum"
+
+#: src/widgets/SettingsDialog.qml:310
+#, kde-format
+msgid "History Size"
+msgstr "Historikstorlek"
+
+#: src/widgets/SettingsDialog.qml:311
+#, kde-format
+msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
+msgstr ""
+"Antal rader att behålla i buffer. Mindre än noll betyder obegränsat antal "
+"rader."
+
+#: src/widgets/SettingsDialog.qml:323
+#, kde-format
+msgid "Enable Bold"
+msgstr "Aktivera fetstil"
+
+#: src/widgets/SettingsDialog.qml:334
+#, kde-format
+msgid "Blinking Cursor"
+msgstr "Blinkande markör"
+
+#: src/widgets/SettingsDialog.qml:345
+#, kde-format
+msgid "Full Cursor Height"
+msgstr "Hel markörhöjd"
+
+#: src/widgets/SettingsDialog.qml:356
+#, kde-format
+msgid "Antialias text"
+msgstr "Kantutjämning av text"
+
+#: src/widgets/TerminalLayout.qml:28
+#, kde-format
+msgid "Process Finished"
+msgstr "Processen avslutades"
+
+#: src/widgets/TerminalLayout.qml:28
+#, kde-format
+msgid "Running task has finished for tab: %1"
+msgstr "Pågående aktivitet har avslutats under flik: %1"
+
+#: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
+#, kde-format
+msgid "Check"
+msgstr "Kontrollera"
+
+#: src/widgets/TerminalLayout.qml:48
+#, kde-format
+msgid "Pending Process"
+msgstr "Väntande process"
+
+#: src/widgets/TerminalLayout.qml:48
+#, kde-format
+msgid "Running process has been inactive for more than 30 seconds."
+msgstr "Körande process har varit inaktiv i mer än 30 sekunder."
+
+#: src/widgets/TutorialDialog.qml:18
+#, kde-format
+msgid "Shortcuts"
+msgstr "Genvägar"
+
+#: src/widgets/TutorialDialog.qml:19
+#, kde-format
+msgid "When using a keyboard you can use the following shortcuts to navigate."
+msgstr ""
+"När ett tangentbord används kan du använda följande genvägar för att "
+"navigera."
+
+#: src/widgets/TutorialDialog.qml:24
+#, kde-format
+msgid "Open a new split view, vertically or horizontally."
+msgstr "Öppna en ny delad vy, vertikalt eller horisontellt."
+
+#: src/widgets/TutorialDialog.qml:69
+#, kde-format
+msgid "Find"
+msgstr "Sök"
+
+#: src/widgets/TutorialDialog.qml:70
+#, kde-format
+msgid "Open the find bar."
+msgstr "Öppna sökraden."
+
+#: src/widgets/TutorialDialog.qml:90
+#, kde-format
+msgid "Switch"
+msgstr "Byt"
+
+#: src/widgets/TutorialDialog.qml:91
+#, kde-format
+msgid "Switch between split views."
+msgstr "Byt mellan delade vyer."
+
+#: src/widgets/TutorialDialog.qml:114
+#, kde-format
+msgid "On touch devices you can use the following gestures to navigate."
+msgstr "På pekenheter kan följande gester användas för att navigera."
+
+#: src/widgets/TutorialDialog.qml:118
+#, kde-format
+msgid "Up & Down"
+msgstr "Uppåt och neråt"
+
+#: src/widgets/TutorialDialog.qml:119
+#, kde-format
+msgid "Swipe up or down to navigate the commands history."
+msgstr "Svep uppåt eller neråt för att navigera i kommandohistoriken."
+
+#: src/widgets/TutorialDialog.qml:124
+#, kde-format
+msgid "Left & Right"
+msgstr "Vänster och höger"
+
+#: src/widgets/TutorialDialog.qml:125
+#, kde-format
+msgid "Swipe left or right to move through the command line to edit."
+msgstr ""
+"Svep vänster eller höger för att gå igenom kommandoraden som redigeras."
+
+#: src/widgets/TutorialDialog.qml:130
+#, kde-format
+msgid "Two Fingers Left & Right"
+msgstr "Två fingrar åt vänster och höger"
+
+#: src/widgets/TutorialDialog.qml:131
+#, kde-format
+msgid "Swipe up or down with two fingers to scroll."
+msgstr "Svep uppåt eller neråt med två fingrar för att panorera."
+
+#: src/widgets/TutorialDialog.qml:138
+#, kde-format
+msgid "Commands"
+msgstr "Kommandon"
+
+#: src/widgets/TutorialDialog.qml:142
+#, kde-format
+msgid "Create"
+msgstr "Skapa"
+
+#: src/widgets/TutorialDialog.qml:143
+#, kde-format
+msgid "Create a new command shortcut to quickly trigger actions."
+msgstr "Skapa en ny kommandogenväg för att snabbt utföra åtgärder."
+
+#: src/widgets/TutorialDialog.qml:147
+#, kde-format
+msgid "Add"
+msgstr "Lägg till"
