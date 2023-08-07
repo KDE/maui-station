@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-19 00:45+0000\n"
-"PO-Revision-Date: 2023-07-26 00:38+0200\n"
+"PO-Revision-Date: 2023-08-06 22:47+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -137,7 +137,7 @@ msgstr "닫기"
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr ""
+msgstr "프로세스가 실행 중입니다. 프로세스를 중단하고 닫으시겠습니까?"
 
 #: src/main.qml:380
 #, kde-format
@@ -157,17 +157,17 @@ msgstr "편집 명령"
 #: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr ""
+msgstr "명령 단축키 편집"
 
 #: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "No Commands"
-msgstr ""
+msgstr "명령 없음"
 
 #: src/widgets/CommandShortcuts.qml:50
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr ""
+msgstr "새 명령 단축키를 추가하십시오"
 
 #: src/widgets/CommandShortcuts.qml:92
 #, kde-format
@@ -193,7 +193,7 @@ msgstr "색 구성표"
 #: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:252
 #, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr ""
+msgstr "터미널의 색 구성표를 변경합니다."
 
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
 #, kde-format
@@ -208,7 +208,7 @@ msgstr "작업 실행 중"
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "실행 중인 작업 종료를 방지합니다."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
@@ -218,7 +218,7 @@ msgstr "작업 완료됨"
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "대기 중인 프로세스가 종료되었을 때 알림을 발생합니다."
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -228,7 +228,7 @@ msgstr "인터페이스"
 #: src/widgets/SettingsDialog.qml:165
 #, kde-format
 msgid "Configure the application components and behaviour."
-msgstr ""
+msgstr "앱 구성 요소와 행동을 설정합니다."
 
 #: src/widgets/SettingsDialog.qml:170
 #, kde-format
@@ -263,7 +263,7 @@ msgstr "반투명"
 #: src/widgets/SettingsDialog.qml:219
 #, kde-format
 msgid "Translucent background."
-msgstr ""
+msgstr "반투명한 배경입니다."
 
 #: src/widgets/SettingsDialog.qml:231
 #, kde-format
@@ -273,22 +273,22 @@ msgstr "터미널"
 #: src/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Configure the app UI and plugins."
-msgstr ""
+msgstr "앱 UI와 플러그인을 설정합니다."
 
 #: src/widgets/SettingsDialog.qml:237
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr ""
+msgstr "적응형 색 구성표"
 
 #: src/widgets/SettingsDialog.qml:238
 #, kde-format
 msgid "Colors based on the current style."
-msgstr ""
+msgstr "현재 스타일에 기반한 색상입니다."
 
 #: src/widgets/SettingsDialog.qml:266
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "프로세스 알림을 표시하고 종료를 방지합니다."
 
 #: src/widgets/SettingsDialog.qml:279
 #, kde-format
@@ -298,7 +298,7 @@ msgstr "표시"
 #: src/widgets/SettingsDialog.qml:280
 #, kde-format
 msgid "Configure the terminal font and display options."
-msgstr ""
+msgstr "터미널 글꼴과 표시 옵션을 설정합니다."
 
 #: src/widgets/SettingsDialog.qml:285
 #, kde-format
@@ -319,26 +319,27 @@ msgstr "과거 기록 크기"
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"버퍼에 유지할 줄 수 입니다. 0보다 작은 값은 무한히 저장함을 의미합니다."
 
 #: src/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "굵은 글꼴 활성화"
 
 #: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "깜빡이는 커서"
 
 #: src/widgets/SettingsDialog.qml:345
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "전체 커서 높이"
 
 #: src/widgets/SettingsDialog.qml:356
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "텍스트 앤티에일리어싱"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -348,7 +349,7 @@ msgstr "프로세스 완료됨"
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "탭에서 실행 중인 작업이 완료됨: %1"
 
 #: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
@@ -358,12 +359,12 @@ msgstr "검사"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "대기 중인 프로세스"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "실행 중인 프로세스가 30초 이상 비활성 상태입니다."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
@@ -373,12 +374,12 @@ msgstr "단축키"
 #: src/widgets/TutorialDialog.qml:19
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
-msgstr ""
+msgstr "키보드를 사용할 때 다음 단축키로 탐색할 수 있습니다."
 
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr ""
+msgstr "수직이나 수평으로 새로운 분할 보기를 엽니다."
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
@@ -388,7 +389,7 @@ msgstr "찾기"
 #: src/widgets/TutorialDialog.qml:70
 #, kde-format
 msgid "Open the find bar."
-msgstr ""
+msgstr "검색 표시줄을 엽니다."
 
 #: src/widgets/TutorialDialog.qml:90
 #, kde-format
@@ -398,12 +399,12 @@ msgstr "전환"
 #: src/widgets/TutorialDialog.qml:91
 #, kde-format
 msgid "Switch between split views."
-msgstr ""
+msgstr "나뉜 보기간을 전환합니다."
 
 #: src/widgets/TutorialDialog.qml:114
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
-msgstr ""
+msgstr "터치 장치에서는 다음 제스처로 탐색할 수 있습니다."
 
 #: src/widgets/TutorialDialog.qml:118
 #, kde-format
@@ -413,7 +414,7 @@ msgstr "위/아래"
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr ""
+msgstr "위나 아래로 밀어서 명령 기록을 탐색할 수 있습니다."
 
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
@@ -423,17 +424,17 @@ msgstr "왼쪽/오른쪽"
 #: src/widgets/TutorialDialog.qml:125
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
-msgstr ""
+msgstr "왼쪽이나 오른쪽으로 밀어서 명령행 내에서 이동할 수 있습니다."
 
 #: src/widgets/TutorialDialog.qml:130
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr ""
+msgstr "두 손가락으로 왼쪽/오른쪽"
 
 #: src/widgets/TutorialDialog.qml:131
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr ""
+msgstr "두 손가락으로 위나 아래로 밀어서 스크롤할 수 있습니다."
 
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
@@ -448,7 +449,7 @@ msgstr "만들기"
 #: src/widgets/TutorialDialog.qml:143
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr ""
+msgstr "동작을 빠르게 실행할 수 있는 새 명령 단축키를 만듭니다."
 
 #: src/widgets/TutorialDialog.qml:147
 #, kde-format
