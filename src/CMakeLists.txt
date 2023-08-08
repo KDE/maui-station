@@ -10,8 +10,7 @@ set(station_SRCS
     helpers/commandsmodel.cpp
     helpers/fonts.cpp
     server/server.cpp
-    assets/img_assets.qrc
-    )
+    assets/img_assets.qrc)
 
 if(QUICK_COMPILER)
         qtquick_compiler_add_resources(station_QML_QRC qml.qrc)
@@ -26,14 +25,13 @@ qt_add_dbus_interface(station_dbus_SRCS ${CMAKE_CURRENT_BINARY_DIR}/org.kde.Stat
 add_executable(${PROJECT_NAME}
     ${station_SRCS}
     ${station_dbus_SRCS}
-    ${station_QML_QRC}
-    )
+    ${station_QML_QRC})
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
-    MauiKit
+    MauiKit3
     Qt5::Widgets
     Qt5::Quick
     Qt5::Qml

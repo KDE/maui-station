@@ -360,14 +360,12 @@ Maui.ApplicationWindow
     {
         id: _confirmCloseDialogComponent
 
-        Maui.Dialog
+        Maui.InfoDialog
         {
             id : _dialog
 
             property var cb : ({})
             property int index: -1
-
-            headBar.visible: false
 
             title: i18n("Close")
             message: i18n("A process is still running. Are you sure you want to interrupt it and close it?")
@@ -375,9 +373,6 @@ Maui.ApplicationWindow
             template.iconSource: "dialog-warning"
             template.iconVisible: true
             template.iconSizeHint: Maui.Style.iconSizes.huge
-
-            acceptButton.text: i18n("Close")
-            rejectButton.text: i18n("Cancel")
 
             onAccepted:
             {
