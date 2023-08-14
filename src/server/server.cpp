@@ -4,7 +4,7 @@
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
 
-#include <MauiKit/FileBrowsing/fmstatic.h>
+#include <MauiKit3/FileBrowsing/fmstatic.h>
 
 #include "stationinterface.h"
 #include "stationadaptor.h"

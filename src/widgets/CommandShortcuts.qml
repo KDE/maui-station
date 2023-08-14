@@ -5,13 +5,12 @@ import org.mauikit.controls 1.3 as Maui
 
 import org.maui.station 1.0 as Station
 
-Maui.Dialog
+Maui.PopupPage
 {
     id: control
     maxHeight: 600
     maxWidth: 400
 
-    defaultButtons: false
     persistent: false
 
     headBar.visible: true
@@ -26,16 +25,16 @@ Maui.Dialog
 
     }
 
-        Maui.NewDialog
-        {
-            id: _editCommandDialog
-            property int index : -1
+    Maui.InputDialog
+    {
+        id: _editCommandDialog
+        property int index : -1
 
-            title: i18n("Edit Command")
-            message: i18n("Edit a command shortcut")
+        title: i18n("Edit Command")
+        message: i18n("Edit a command shortcut")
 
-            onFinished: _commandsList.edit(index, text)
-        }
+        onFinished: _commandsList.edit(index, text)
+    }
 
 
     stack: Maui.ListBrowser

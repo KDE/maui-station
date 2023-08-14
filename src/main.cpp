@@ -5,7 +5,7 @@
 #include <QIcon>
 #include <QDate>
 
-#include <MauiKit/Core/mauiapp.h>
+#include <MauiKit3/Core/mauiapp.h>
 
 #include <KI18n/KLocalizedString>
 #include <KAboutData>
