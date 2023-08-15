@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-19 00:45+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-05-06 17:29+0200\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -129,54 +129,49 @@ msgstr "Señales"
 msgid "More Signals"
 msgstr "Más señales"
 
-#: src/main.qml:372 src/main.qml:379
+#: src/main.qml:370
 #, kde-format
 msgid "Close"
 msgstr "Cerrar"
 
-#: src/main.qml:373
+#: src/main.qml:371
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Un proceso sigue ejecutando. ¿Está seguro de interrumpirlo y cerrarlo?"
 
-#: src/main.qml:380
-#, kde-format
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/widgets/CommandShortcuts.qml:25
+#: src/widgets/CommandShortcuts.qml:24
 #, kde-format
 msgid "New Command"
 msgstr "Nueva orden"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:33
 #, kde-format
 msgid "Edit Command"
 msgstr "Editar orden"
 
-#: src/widgets/CommandShortcuts.qml:35
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Editar un atajo de teclado"
 
-#: src/widgets/CommandShortcuts.qml:49
+#: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "No Commands"
 msgstr "Ninguna orden"
 
-#: src/widgets/CommandShortcuts.qml:50
+#: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "Empiece añadiendo nuevos atajos de órdenes"
 
-#: src/widgets/CommandShortcuts.qml:92
+#: src/widgets/CommandShortcuts.qml:91
 #, kde-format
 msgid "Remove"
 msgstr "Eliminar"
 
-#: src/widgets/CommandShortcuts.qml:102
+#: src/widgets/CommandShortcuts.qml:101
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
@@ -463,3 +458,6 @@ msgstr "Crear un nuevo atajo de orden para ejecutar acciones rápidamente."
 #, kde-format
 msgid "Add"
 msgstr "Añadir"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"

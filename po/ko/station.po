@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-19 00:45+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-08-06 22:47+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -127,54 +127,49 @@ msgstr "시그널"
 msgid "More Signals"
 msgstr "더 많은 시그널"
 
-#: src/main.qml:372 src/main.qml:379
+#: src/main.qml:370
 #, kde-format
 msgid "Close"
 msgstr "닫기"
 
-#: src/main.qml:373
+#: src/main.qml:371
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "프로세스가 실행 중입니다. 프로세스를 중단하고 닫으시겠습니까?"
 
-#: src/main.qml:380
-#, kde-format
-msgid "Cancel"
-msgstr "취소"
-
-#: src/widgets/CommandShortcuts.qml:25
+#: src/widgets/CommandShortcuts.qml:24
 #, kde-format
 msgid "New Command"
 msgstr "새 명령"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:33
 #, kde-format
 msgid "Edit Command"
 msgstr "편집 명령"
 
-#: src/widgets/CommandShortcuts.qml:35
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "명령 단축키 편집"
 
-#: src/widgets/CommandShortcuts.qml:49
+#: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "No Commands"
 msgstr "명령 없음"
 
-#: src/widgets/CommandShortcuts.qml:50
+#: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "새 명령 단축키를 추가하십시오"
 
-#: src/widgets/CommandShortcuts.qml:92
+#: src/widgets/CommandShortcuts.qml:91
 #, kde-format
 msgid "Remove"
 msgstr "삭제"
 
-#: src/widgets/CommandShortcuts.qml:102
+#: src/widgets/CommandShortcuts.qml:101
 #, kde-format
 msgid "Edit"
 msgstr "편집"
@@ -455,3 +450,6 @@ msgstr "동작을 빠르게 실행할 수 있는 새 명령 단축키를 만듭�
 #, kde-format
 msgid "Add"
 msgstr "추가"
+
+#~ msgid "Cancel"
+#~ msgstr "취소"

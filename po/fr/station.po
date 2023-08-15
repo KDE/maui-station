@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-19 00:45+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-05-09 13:14+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: fr\n"
@@ -126,12 +126,12 @@ msgstr "Signaux"
 msgid "More Signals"
 msgstr "Plus de signaux"
 
-#: src/main.qml:372 src/main.qml:379
+#: src/main.qml:370
 #, kde-format
 msgid "Close"
 msgstr "Fermer"
 
-#: src/main.qml:373
+#: src/main.qml:371
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -140,42 +140,37 @@ msgstr ""
 "Un processus est actuellement en cours d'exécution. Voulez-vous vraiment "
 "l'interrompre et le fermer ?"
 
-#: src/main.qml:380
-#, kde-format
-msgid "Cancel"
-msgstr "Annuler"
-
-#: src/widgets/CommandShortcuts.qml:25
+#: src/widgets/CommandShortcuts.qml:24
 #, kde-format
 msgid "New Command"
 msgstr "Nouvelle commande"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:33
 #, kde-format
 msgid "Edit Command"
 msgstr "Modifier une commande"
 
-#: src/widgets/CommandShortcuts.qml:35
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Modifier un raccourci de commande."
 
-#: src/widgets/CommandShortcuts.qml:49
+#: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "No Commands"
 msgstr "Aucune commande"
 
-#: src/widgets/CommandShortcuts.qml:50
+#: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "Démarrer l'ajout de nouveaux raccourcis de commandes"
 
-#: src/widgets/CommandShortcuts.qml:92
+#: src/widgets/CommandShortcuts.qml:91
 #, kde-format
 msgid "Remove"
 msgstr "Supprimer"
 
-#: src/widgets/CommandShortcuts.qml:102
+#: src/widgets/CommandShortcuts.qml:101
 #, kde-format
 msgid "Edit"
 msgstr "Modifier"
@@ -469,6 +464,9 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Ajouter"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuler"
 
 #~ msgid ""
 #~ "Level of translucency. Works better if there is blurred background "

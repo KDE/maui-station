@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-19 00:45+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-06-11 21:45+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -128,12 +128,12 @@ msgstr "Sinais"
 msgid "More Signals"
 msgstr "Máis sinais"
 
-#: src/main.qml:372 src/main.qml:379
+#: src/main.qml:370
 #, kde-format
 msgid "Close"
 msgstr "Pechar"
 
-#: src/main.qml:373
+#: src/main.qml:371
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -141,42 +141,37 @@ msgid ""
 msgstr ""
 "Hai un proceso aínda en execución. Seguro que quere interrompelo e pechalo?"
 
-#: src/main.qml:380
-#, kde-format
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/widgets/CommandShortcuts.qml:25
+#: src/widgets/CommandShortcuts.qml:24
 #, kde-format
 msgid "New Command"
 msgstr "Nova orde"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:33
 #, kde-format
 msgid "Edit Command"
 msgstr "Editar a orde"
 
-#: src/widgets/CommandShortcuts.qml:35
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Editar un atallo de orde"
 
-#: src/widgets/CommandShortcuts.qml:49
+#: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "No Commands"
 msgstr "Non hai ordes"
 
-#: src/widgets/CommandShortcuts.qml:50
+#: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "Comece por engadir novos atallos de ordes."
 
-#: src/widgets/CommandShortcuts.qml:92
+#: src/widgets/CommandShortcuts.qml:91
 #, kde-format
 msgid "Remove"
 msgstr "Retirar"
 
-#: src/widgets/CommandShortcuts.qml:102
+#: src/widgets/CommandShortcuts.qml:101
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
@@ -461,3 +456,6 @@ msgstr "Cree un novo atallo de orde para executar accións rapidamente."
 #, kde-format
 msgid "Add"
 msgstr "Engadir"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"

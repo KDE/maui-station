@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-19 00:45+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-02-24 23:21+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -127,12 +127,12 @@ msgstr ""
 msgid "More Signals"
 msgstr ""
 
-#: src/main.qml:372 src/main.qml:379
+#: src/main.qml:370
 #, kde-format
 msgid "Close"
 msgstr "關閉"
 
-#: src/main.qml:373
+#: src/main.qml:371
 #, fuzzy, kde-format
 #| msgid ""
 #| "A process is currently still running. Are you sure you want to close it?"
@@ -141,42 +141,37 @@ msgid ""
 "it?"
 msgstr "還有在執行中的行程。您確定要關閉它嗎？"
 
-#: src/main.qml:380
-#, kde-format
-msgid "Cancel"
-msgstr ""
-
-#: src/widgets/CommandShortcuts.qml:25
+#: src/widgets/CommandShortcuts.qml:24
 #, kde-format
 msgid "New Command"
 msgstr "新命令"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:33
 #, kde-format
 msgid "Edit Command"
 msgstr "編輯命令"
 
-#: src/widgets/CommandShortcuts.qml:35
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "編輯命令捷徑"
 
-#: src/widgets/CommandShortcuts.qml:49
+#: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "No Commands"
 msgstr "沒有命令"
 
-#: src/widgets/CommandShortcuts.qml:50
+#: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "開始新增命令捷徑"
 
-#: src/widgets/CommandShortcuts.qml:92
+#: src/widgets/CommandShortcuts.qml:91
 #, kde-format
 msgid "Remove"
 msgstr "移除"
 
-#: src/widgets/CommandShortcuts.qml:102
+#: src/widgets/CommandShortcuts.qml:101
 #, kde-format
 msgid "Edit"
 msgstr "編輯"
