@@ -13,9 +13,9 @@ set(station_SRCS
     assets/img_assets.qrc)
 
 if(QUICK_COMPILER)
-        qtquick_compiler_add_resources(station_QML_QRC qml.qrc)
+    qtquick_compiler_add_resources(station_QML_QRC qml.qrc)
 else()
-        qt5_add_resources(station_QML_QRC qml.qrc)
+    qt5_add_resources(station_QML_QRC qml.qrc)
 endif()
 
 qt_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/server/server.h org.kde.Station.xml)

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(STATION_VERSION 3.0.0)
+set(STATION_VERSION 3.0.1)
 
 project(station LANGUAGES CXX VERSION ${STATION_VERSION})
 
@@ -65,9 +65,6 @@ endif()
 ecm_setup_version(${STATION_VERSION}
     VARIABLE_PREFIX STATION
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/station_version.h")
-
-ecm_find_qmlmodule(QMLTermWidget 1.0)
-set_package_properties(QMLTermWidget-QMLModule PROPERTIES URL "https://github.com/Swordfish90/qmltermwidget")
 
 add_subdirectory(src)
 
