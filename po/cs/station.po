@@ -449,6 +449,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "Cancel"
-#~ msgstr "Zrušit"
