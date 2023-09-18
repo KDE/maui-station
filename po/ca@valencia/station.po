@@ -460,6 +460,3 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afig"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
