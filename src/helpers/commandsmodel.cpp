@@ -20,11 +20,16 @@ const FMH::MODEL_LIST &CommandsModel::items() const
 
 void CommandsModel::setList()
 {
-    emit this->preListChanged();
+    Q_EMIT this->preListChanged();
     this->m_list.clear();
     this->m_commands.clear();
 
-    m_commands = UTIL::loadSettings("commands", "shortcuts", QStringList()).toStringList();
+    QSettings settings;
+    settings.beginGroup("shortcuts");
+
+    m_commands = settings.value("commands",QStringList()).toStringList();
+
+    settings.endGroup();
 
     for(const auto &command : m_commands)
     {
@@ -32,12 +37,15 @@ void CommandsModel::setList()
     }
 
     qDebug()<< "Getting commands" << m_commands;
-    emit this->postListChanged();
+    Q_EMIT this->postListChanged();
 }
 
 void CommandsModel::saveCommands()
 {
-    UTIL::saveSettings("commands", m_commands, "shortcuts");
+    QSettings settings;
+    settings.beginGroup("shorcuts");
+    settings.setValue("commands", m_commands);
+    settings.endGroup();
 }
 
 bool CommandsModel::insert(const QString &command)
@@ -49,10 +57,10 @@ bool CommandsModel::insert(const QString &command)
 
     qDebug() << "try to insert command" << command;
 
-    emit preItemAppended();
+    Q_EMIT preItemAppended();
     m_commands << command;
     m_list << FMH::MODEL {{FMH::MODEL_KEY::VALUE, command}};
-    emit postItemAppended();
+    Q_EMIT postItemAppended();
 
     this->saveCommands();
 
