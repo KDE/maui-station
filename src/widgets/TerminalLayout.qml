@@ -12,9 +12,9 @@ Maui.SplitView
     property string path : "$PWD"
 
     readonly property bool hasActiveProcess : count === 2 ?  contentModel.get(0).session.hasActiveProcess || contentModel.get(1).session.hasActiveProcess : currentItem.session.hasActiveProcess
-readonly property bool isCurrentTab : SwipeView.isCurrentItem
+    readonly property bool isCurrentTab : SwipeView.isCurrentItem
 
-        readonly property string title : count === 2 ?  contentModel.get(0).title  + " - " + contentModel.get(1).title : currentItem.title
+    readonly property string title : count === 2 ?  contentModel.get(0).title  + " - " + contentModel.get(1).title : currentItem.title
 
     Maui.TabViewInfo.tabTitle: title
     Maui.TabViewInfo.tabToolTipText: currentItem.session.currentDir
@@ -40,12 +40,12 @@ readonly property bool isCurrentTab : SwipeView.isCurrentItem
 
         Terminal
         {
-            watchForSlience: session.hasActiveProcess
+            watchForSlience: settings.watchForSilence
             onSilenceWarning:
             {
                 if(!control.isCurrentTab)
                 {
-                    root.notify("dialog-warning", i18n("Pending Process"), i18n("Running process has been inactive for more than 30 seconds."), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, i18n("Check"))
+                    root.notify("dialog-warning", i18n("Pending Process"), i18n("Running process '%1' has been inactive for more than 30 seconds.", title), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, i18n("Check"))
                 }
             }
         }

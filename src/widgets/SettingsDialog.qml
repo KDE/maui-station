@@ -156,14 +156,25 @@ Maui.SettingsDialog
                     onToggled: settings.alertProcess = ! settings.alertProcess
                 }
             }
+
+            Maui.SectionItem
+            {
+                label1.text: i18n("Silent")
+                label2.text: i18n("Emit an alert when a running task has been silent for more than 30 seconds.")
+
+                Switch
+                {
+                    checked: settings.watchForSilence
+                    onToggled: settings.watchForSilence = ! settings.watchForSilence
+                }
+            }
         }
     }
 
     Maui.SectionGroup
     {
         title: i18n("Interface")
-        description: i18n("Configure the application components and behaviour.")
-
+//        description: i18n("Configure the application components and behaviour.")
 
         Maui.SectionItem
         {
@@ -229,8 +240,7 @@ Maui.SettingsDialog
     Maui.SectionGroup
     {
         title: i18n("Terminal")
-        description: i18n("Configure the app UI and plugins.")
-
+//        description: i18n("Configure the app UI and plugins.")
 
         Maui.SectionItem
         {
@@ -277,7 +287,7 @@ Maui.SettingsDialog
     Maui.SectionGroup
     {
         title: i18n("Display")
-        description: i18n("Configure the terminal font and display options.")
+//        description: i18n("Configure the terminal font and display options.")
 
         Maui.SectionItem
         {
@@ -308,7 +318,7 @@ Maui.SettingsDialog
         Maui.SectionItem
         {
             label1.text:  i18n("History Size")
-label2.text: i18n("Number of lines to keep in buffer. Less than zero means infinite lines.")
+            label2.text: i18n("Number of lines to keep in buffer. Less than zero means infinite lines.")
 
             SpinBox
             {

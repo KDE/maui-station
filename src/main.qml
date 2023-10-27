@@ -77,6 +77,7 @@ Maui.ApplicationWindow
         property bool antialiasText: true
 
         property bool showSignalBar: false
+        property bool watchForSilence: false
     }
 
     Loader
@@ -191,15 +192,11 @@ Maui.ApplicationWindow
 
                 Maui.WindowControls {}
             ]
-        }
 
-        Maui.Holder
-        {
-            anchors.fill: parent
-            visible: _layout.count === 0
-            title: i18n("Nothing here")
-            body: i18n("To start hacking open a new tab or a split screen.")
-            actions: Action
+            holder.visible: _layout.count === 0
+            holder.title: i18n("Nothing here")
+            holder.body: i18n("To start hacking open a new tab or a split screen.")
+            holder.actions: Action
             {
                 text: i18n("New Tab")
                 onTriggered: root.openTab("$PWD")

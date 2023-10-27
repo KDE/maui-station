@@ -1,4 +1,5 @@
 import QtQuick 2.14
+import QtQuick.Controls 2.14
 
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.terminal 1.0 as Term
@@ -14,10 +15,10 @@ Maui.SplitViewItem
         control.kterminal.forceActiveFocus()
     }
 
-    property alias terminal : _terminal
-    property alias session : _terminal.session
-    property alias title : _terminal.title
-    property alias kterminal : _terminal.kterminal
+    readonly property alias terminal : _terminal
+    readonly property alias session : _terminal.session
+    readonly property alias title : _terminal.title
+    readonly property alias kterminal : _terminal.kterminal
 
     property color tabColor : session.foregroundProcessName.startsWith("sudo") ? "red" : "transparent"
 
@@ -37,8 +38,10 @@ Maui.SplitViewItem
         background: null
 
         anchors.fill: parent
+
         session.initialWorkingDirectory : control.path
         session.historySize: settings.historySize
+        session.monitorSilence: control.watchForSlience
 
         onUrlsDropped:
         {
@@ -55,6 +58,18 @@ Maui.SplitViewItem
         kterminal.blinkingCursor : settings.blinkingCursor
         kterminal.fullCursorHeight : settings.fullCursorHeight
         kterminal.antialiasText : settings.antialiasText
+
+        menu: MenuItem
+        {
+            enabled: !settings.watchForSilence
+            text: i18n("Watch for Silence")
+            checkable: true
+            checked: control.watchForSlience
+            onTriggered:
+            {
+                control.watchForSlience = !control.watchForSlience
+            }
+        }
 
         onKeyPressed:
         {
@@ -91,10 +106,16 @@ Maui.SplitViewItem
         Connections
         {
             target: _terminal.session
-            function onProcessHasSilent()
+
+            function onBellRequest(message)
             {
-                if(control.watchForSlience)
-                control.silenceWarning()
+                console.log("Bell REQUESTED!!!", message);
+            }
+
+            function onProcessHasSilent(value)
+            {
+                if(control.watchForSlience && value && control.session.hasActiveProcess )
+                    control.silenceWarning()
             }
 
             function onForegroundProcessNameChanged()

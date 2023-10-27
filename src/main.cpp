@@ -3,7 +3,6 @@
 #include <QCommandLineParser>
 #include <QQmlContext>
 #include <QIcon>
-#include <QDate>
 
 #include <MauiKit3/Core/mauiapp.h>
 
@@ -32,7 +31,13 @@ int main(int argc, char *argv[])
     app.setWindowIcon(QIcon(":/station/station.svg"));
 
     KLocalizedString::setApplicationDomain("station");
-    KAboutData about(QStringLiteral("station"), i18n("Station"), STATION_VERSION_STRING, i18n("Convergent terminal emulator."), KAboutLicense::LGPL_V3, i18n("© 2019-%1 Maui Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
+    KAboutData about(QStringLiteral("station"),
+                     i18n("Station"),
+                     STATION_VERSION_STRING,
+                     i18n("Convergent terminal emulator."),
+                     KAboutLicense::LGPL_V3,
+                     i18n("© 2019-2023 Maui Development Team"),
+                     QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
     about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
     about.setHomepage("https://mauikit.org");
     about.setProductName("maui/station");
