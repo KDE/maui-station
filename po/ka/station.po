@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-15 00:44+0000\n"
+"POT-Creation-Date: 2023-10-28 00:42+0000\n"
 "PO-Revision-Date: 2023-05-05 05:33+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -38,102 +38,103 @@ msgstr "მოკვლა"
 msgid "Station"
 msgstr "სადგური"
 
-#: src/main.cpp:35
+#: src/main.cpp:37
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "კონვერგენტული ტერმინალის ემულატორი."
 
-#: src/main.cpp:35
-#, kde-format
-msgid "© 2019-%1 Maui Development Team"
+#: src/main.cpp:39
+#, fuzzy, kde-format
+#| msgid "© 2019-%1 Maui Development Team"
+msgid "© 2019-2023 Maui Development Team"
 msgstr "© 2019- %1 Maui განვითარების გუნდი"
 
-#: src/main.cpp:36
+#: src/main.cpp:41
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "კამილო ჰიგუიტა"
 
-#: src/main.cpp:36
+#: src/main.cpp:41
 #, kde-format
 msgid "Developer"
 msgstr "პროგრამისტი"
 
-#: src/main.qml:146 src/main.qml:204 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:147 src/main.qml:201 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "ახალი ჩანართი"
 
-#: src/main.qml:154 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:155 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "გაყოფა"
 
-#: src/main.qml:164
+#: src/main.qml:165
 #, kde-format
 msgid "Tutorial"
 msgstr "სახელმძღვანელო"
 
-#: src/main.qml:176
+#: src/main.qml:177
 #, kde-format
 msgid "Settings"
 msgstr "მორგება"
 
-#: src/main.qml:186
+#: src/main.qml:187
 #, kde-format
 msgid "About"
 msgstr "შესახებ"
 
-#: src/main.qml:200
+#: src/main.qml:197
 #, kde-format
 msgid "Nothing here"
 msgstr "აქ არაფერია"
 
-#: src/main.qml:201
+#: src/main.qml:198
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "ჰაკინგის დასაწყებად გახსენით ახალი ჩანართი ან ეკრანი გაყავით."
 
-#: src/main.qml:219
+#: src/main.qml:216
 #, kde-format
 msgid "Function Keys"
 msgstr "ფუნქციური ღილაკები"
 
-#: src/main.qml:228
+#: src/main.qml:225
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:237
+#: src/main.qml:234
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl მოდიფიკატორები"
 
-#: src/main.qml:246 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "ნავიგაცია"
 
-#: src/main.qml:255
+#: src/main.qml:252
 #, kde-format
 msgid "Favorite"
 msgstr "რჩეული"
 
-#: src/main.qml:264
+#: src/main.qml:261
 #, kde-format
 msgid "Signals"
 msgstr "სიგნალები"
 
-#: src/main.qml:275
+#: src/main.qml:272
 #, kde-format
 msgid "More Signals"
 msgstr "მეტი სიგნალი"
 
-#: src/main.qml:370
+#: src/main.qml:367
 #, kde-format
 msgid "Close"
 msgstr "დაკეტვა"
 
-#: src/main.qml:371
+#: src/main.qml:368
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -177,23 +178,23 @@ msgstr "წაშლა"
 msgid "Edit"
 msgstr "ჩასწორება"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:284
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:294
 #, kde-format
 msgid "Font"
 msgstr "ფონტი"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
-#: src/widgets/SettingsDialog.qml:251
+#: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Color Scheme"
 msgstr "ფერების სქემა"
 
-#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:252
+#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "ტერმინალის ფერის სქემის შეცვლა."
 
-#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:265
+#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Alerts"
 msgstr "შეტყობინებები"
@@ -218,127 +219,129 @@ msgstr "დასრულებული ამოცანა"
 msgid "Emit a notification when a pending process has finished."
 msgstr "შეტყობინების ჩვენება მომლოდინე პროცესის დასრულებისას."
 
-#: src/widgets/SettingsDialog.qml:164
+#: src/widgets/SettingsDialog.qml:162
+#, kde-format
+msgid "Silent"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:163
+#, fuzzy, kde-format
+#| msgid "Running process has been inactive for more than 30 seconds."
+msgid ""
+"Emit an alert when a running task has been silent for more than 30 seconds."
+msgstr "გაშვებული პროცესი 30-ზე მეტი წამია, არააქტიურია."
+
+#: src/widgets/SettingsDialog.qml:176
 #, kde-format
 msgid "Interface"
 msgstr "ინტერფეისი"
 
-#: src/widgets/SettingsDialog.qml:165
-#, kde-format
-msgid "Configure the application components and behaviour."
-msgstr "მოირგეთ აპლიკაციის კომპონენტები და ქცევა."
-
-#: src/widgets/SettingsDialog.qml:170
+#: src/widgets/SettingsDialog.qml:181
 #, kde-format
 msgid "Color"
 msgstr "ფერი"
 
-#: src/widgets/SettingsDialog.qml:171
+#: src/widgets/SettingsDialog.qml:182
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "ღია და მუქ ფერებს შორის გადართვა."
 
-#: src/widgets/SettingsDialog.qml:179
+#: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "Light"
 msgstr "ღია"
 
-#: src/widgets/SettingsDialog.qml:186
+#: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Dark"
 msgstr "ბნელი"
 
-#: src/widgets/SettingsDialog.qml:194
+#: src/widgets/SettingsDialog.qml:205
 #, kde-format
 msgid "Adaptive"
 msgstr "შეგუებადი"
 
-#: src/widgets/SettingsDialog.qml:218
+#: src/widgets/SettingsDialog.qml:229
 #, kde-format
 msgid "Translucency"
 msgstr "გამჭვირვალობა"
 
-#: src/widgets/SettingsDialog.qml:219
+#: src/widgets/SettingsDialog.qml:230
 #, kde-format
 msgid "Translucent background."
 msgstr "გამჭვირვალე ფონი."
 
-#: src/widgets/SettingsDialog.qml:231
+#: src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Terminal"
 msgstr "ტერმინალი"
 
-#: src/widgets/SettingsDialog.qml:232
-#, kde-format
-msgid "Configure the app UI and plugins."
-msgstr "მოირგეთ აპის ინტერფეისი და გაფართოებები."
-
-#: src/widgets/SettingsDialog.qml:237
+#: src/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "ადაპტიური ფერების სქემა"
 
-#: src/widgets/SettingsDialog.qml:238
+#: src/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "მიმდინარე სტილზე ბაზირებული ფერები."
 
-#: src/widgets/SettingsDialog.qml:266
+#: src/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "პროცესების გაფრთხილება და მათი დახურვის აკრძალვა."
 
-#: src/widgets/SettingsDialog.qml:279
+#: src/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Display"
 msgstr "ჩვენება"
 
-#: src/widgets/SettingsDialog.qml:280
-#, kde-format
-msgid "Configure the terminal font and display options."
-msgstr "ტერმინალის ფონტისა და ჩვენების პარამეტრების მორგება."
-
-#: src/widgets/SettingsDialog.qml:285
+#: src/widgets/SettingsDialog.qml:295
 #, kde-format
 msgid "Font family and size."
 msgstr "ფონტის ოჯახი და ზომა."
 
-#: src/widgets/SettingsDialog.qml:297
+#: src/widgets/SettingsDialog.qml:307
 #, kde-format
 msgid "Line Spacing"
 msgstr "ხაზებს შუა მანძილი"
 
-#: src/widgets/SettingsDialog.qml:310
+#: src/widgets/SettingsDialog.qml:320
 #, kde-format
 msgid "History Size"
 msgstr "ისტორიის ზომა"
 
-#: src/widgets/SettingsDialog.qml:311
+#: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
 "ბუფერში შენახული ხაზების რაოდენობა. ნულზე ნაკლები მნიშვნელობა ხაზების "
 "უსასრულო რაოდენობას ნიშნავს."
 
-#: src/widgets/SettingsDialog.qml:323
+#: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Enable Bold"
 msgstr "სქელის ჩართვა"
 
-#: src/widgets/SettingsDialog.qml:334
+#: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "მოციმციმე კურსორი"
 
-#: src/widgets/SettingsDialog.qml:345
+#: src/widgets/SettingsDialog.qml:355
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "კურსორის სრული სიმაღლე"
 
-#: src/widgets/SettingsDialog.qml:356
+#: src/widgets/SettingsDialog.qml:366
 #, kde-format
 msgid "Antialias text"
 msgstr "ტექსტის მომრგვალება"
+
+#: src/widgets/Terminal.qml:65
+#, kde-format
+msgid "Watch for Silence"
+msgstr ""
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -361,8 +364,9 @@ msgid "Pending Process"
 msgstr "დარჩენილი პროცესი"
 
 #: src/widgets/TerminalLayout.qml:48
-#, kde-format
-msgid "Running process has been inactive for more than 30 seconds."
+#, fuzzy, kde-format
+#| msgid "Running process has been inactive for more than 30 seconds."
+msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "გაშვებული პროცესი 30-ზე მეტი წამია, არააქტიურია."
 
 #: src/widgets/TutorialDialog.qml:18
@@ -456,6 +460,15 @@ msgstr "შექმენით ახალი მალსახმობე�
 #, kde-format
 msgid "Add"
 msgstr "დამატება"
+
+#~ msgid "Configure the application components and behaviour."
+#~ msgstr "მოირგეთ აპლიკაციის კომპონენტები და ქცევა."
+
+#~ msgid "Configure the app UI and plugins."
+#~ msgstr "მოირგეთ აპის ინტერფეისი და გაფართოებები."
+
+#~ msgid "Configure the terminal font and display options."
+#~ msgstr "ტერმინალის ფონტისა და ჩვენების პარამეტრების მორგება."
 
 #~ msgid "Cancel"
 #~ msgstr "გაუქმება"
