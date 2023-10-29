@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-28 00:42+0000\n"
-"PO-Revision-Date: 2023-05-05 11:13+0200\n"
+"PO-Revision-Date: 2023-10-28 11:40+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -43,10 +43,9 @@ msgid "Convergent terminal emulator."
 msgstr "Convergente terminalemulator."
 
 #: src/main.cpp:39
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-%1 Ontwikkelteam van Maui"
+msgstr "© 2019-2023 Ontwikkelteam van Maui"
 
 #: src/main.cpp:41
 #, kde-format
@@ -220,14 +219,15 @@ msgstr "Stuur een melding wanneer een proces in de wacht gereed is."
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Inactief"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "Actief proces is inactief geweest voor meer dan 30 seconden."
+msgstr ""
+"Stuur een signaal uit wanneer een actief proces inactief is geweest voor "
+"meer dan 30 seconden."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -339,7 +339,7 @@ msgstr "Antialias tekst"
 #: src/widgets/Terminal.qml:65
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Bewaak inactiviteit"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -362,10 +362,9 @@ msgid "Pending Process"
 msgstr "Wachtend proces"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "Actief proces is inactief geweest voor meer dan 30 seconden."
+msgstr "Actief proces '%1' is inactief geweest voor meer dan 30 seconden."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

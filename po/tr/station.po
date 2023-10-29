@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-28 00:42+0000\n"
-"PO-Revision-Date: 2023-09-02 23:01+0300\n"
+"PO-Revision-Date: 2023-10-28 05:46+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.11.70\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -43,10 +43,9 @@ msgid "Convergent terminal emulator."
 msgstr "Yakınsak uçbirim öykünücüsü."
 
 #: src/main.cpp:39
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-%1 Maui Geliştirme Takımı"
+msgstr "© 2019-2023 Maui Geliştirme Takımı"
 
 #: src/main.cpp:41
 #, kde-format
@@ -220,14 +219,14 @@ msgstr "Bekleyen bir süreç bittiğinde bir bildirim gönderin."
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Sessiz"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "30 saniyeden uzun süredir etkin olmayan çalışan süreç."
+msgstr ""
+"Çalışan bir görev 30 saniyeden uzun süre sessiz kaldığında bir uyarı verin."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -339,7 +338,7 @@ msgstr "Metin Kenar Yumuşatması"
 #: src/widgets/Terminal.qml:65
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Sessizliği İzle"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -362,10 +361,9 @@ msgid "Pending Process"
 msgstr "Bekleyen Süreç"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "30 saniyeden uzun süredir etkin olmayan çalışan süreç."
+msgstr "Çalıştırılan '%1' süreci, 30 saniyeden uzun süredir etkin değil."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

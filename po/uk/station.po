@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-28 00:42+0000\n"
-"PO-Revision-Date: 2023-05-05 17:27+0300\n"
+"PO-Revision-Date: 2023-10-28 09:21+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -44,10 +44,9 @@ msgid "Convergent terminal emulator."
 msgstr "Зручний емулятор термінала."
 
 #: src/main.cpp:39
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© Команда розробників Maui, 2019–%1"
+msgstr "© Команда розробників Maui, 2019–2023"
 
 #: src/main.cpp:41
 #, kde-format
@@ -221,14 +220,14 @@ msgstr "Видати сповіщення, коли виконання проц�
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Мовчання"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "Запущений процес є неактивним протягом понад 30 секунд."
+msgstr ""
+"Видати сповіщення, якщо запущене завдання не видає даних понад 30 секунд."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -340,7 +339,7 @@ msgstr "Згладжування тексту"
 #: src/widgets/Terminal.qml:65
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Спостерігати за мовчанням"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -363,10 +362,9 @@ msgid "Pending Process"
 msgstr "Процес у черзі обробки"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "Запущений процес є неактивним протягом понад 30 секунд."
+msgstr "Запущений процес «%1» є неактивним протягом понад 30 секунд."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

@@ -1,7 +1,7 @@
 # Translation for station.po to Euskara/Basque (eu).
 # Copyright (C) 2022-2023 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
-# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+# SPDX-FileCopyrightText: 2023 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Iñigo Salvador Azurmendi <xalba@ni.eus>, 2022, 2023.
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-28 00:42+0000\n"
-"PO-Revision-Date: 2023-07-21 13:34+0200\n"
+"PO-Revision-Date: 2023-10-28 12:20+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -46,10 +46,9 @@ msgid "Convergent terminal emulator."
 msgstr "Terminal emulatzaile konbergentea."
 
 #: src/main.cpp:39
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-%1 Maui Garatzeko Taldea"
+msgstr "© 2019-2023 Maui garapen taldea"
 
 #: src/main.cpp:41
 #, kde-format
@@ -223,14 +222,15 @@ msgstr "Egiteke dagoen prozesu bat amaitutakoan, jakinarazpen bat igortzen du."
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Isila"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "Martxan dagoen prozesua 30 segundo baino gehiago ez-aktibo egon da."
+msgstr ""
+"Igorri alerta bat martxan dagoen ataza bat 30 segundo baino gehiago isilik "
+"egon denean."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -342,7 +342,7 @@ msgstr "Ertzak leundutako testua"
 #: src/widgets/Terminal.qml:65
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Zelatatu isiltasuna"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -365,10 +365,10 @@ msgid "Pending Process"
 msgstr "Egiteke dagoen prozesua"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "Martxan dagoen prozesua 30 segundo baino gehiago ez-aktibo egon da."
+msgstr ""
+"Martxan dagoen '%1' prozesua 30 segundo baino gehiago ez-aktibo egon da."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

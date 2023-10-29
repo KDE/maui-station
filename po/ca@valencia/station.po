@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-28 00:42+0000\n"
-"PO-Revision-Date: 2023-05-05 13:18+0200\n"
+"PO-Revision-Date: 2023-10-28 10:53+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -45,10 +45,9 @@ msgid "Convergent terminal emulator."
 msgstr "Emulador de terminal convergent."
 
 #: src/main.cpp:39
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-%1 L'equip de desenvolupament de Maui"
+msgstr "© 2019-2023 L'equip de desenvolupament de Maui"
 
 #: src/main.cpp:41
 #, kde-format
@@ -223,14 +222,15 @@ msgstr "Emet una notificació quan haja finalitzat un procés pendent."
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "En silenci"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "El procés en execució ha sigut inactiu durant més de 30 segons."
+msgstr ""
+"Emet una alerta quan una tasca en execució haja estat en silenci durant més "
+"de 30 segons."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -342,7 +342,7 @@ msgstr "Text amb antialiàsing"
 #: src/widgets/Terminal.qml:65
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Vigila el silenci"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -365,10 +365,9 @@ msgid "Pending Process"
 msgstr "Procés pendent"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "El procés en execució ha sigut inactiu durant més de 30 segons."
+msgstr "El procés en execució «%1» ha sigut inactiu durant més de 30 segons."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
@@ -464,12 +463,3 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afig"
-
-#~ msgid "Configure the application components and behaviour."
-#~ msgstr "Configura els components i el comportament de l'aplicació."
-
-#~ msgid "Configure the app UI and plugins."
-#~ msgstr "Configura la IU de l'aplicació i els connectors."
-
-#~ msgid "Configure the terminal font and display options."
-#~ msgstr "Configura la lletra del terminal i les opcions de visualització."
