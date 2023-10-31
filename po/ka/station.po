@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-28 00:42+0000\n"
-"PO-Revision-Date: 2023-05-05 05:33+0200\n"
+"PO-Revision-Date: 2023-10-30 05:30+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -44,10 +44,9 @@ msgid "Convergent terminal emulator."
 msgstr "კონვერგენტული ტერმინალის ემულატორი."
 
 #: src/main.cpp:39
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019- %1 Maui განვითარების გუნდი"
+msgstr "© 2019-2023 Maui განვითარების გუნდი"
 
 #: src/main.cpp:41
 #, kde-format
@@ -222,14 +221,14 @@ msgstr "შეტყობინების ჩვენება მომლ�
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "ჩუმი"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "გაშვებული პროცესი 30-ზე მეტი წამია, არააქტიურია."
+msgstr ""
+"განგაშის გამოცემა, როცა გაშვებული ამოცანა 30-ზე მეტი წამია, არააქტიურია."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -341,7 +340,7 @@ msgstr "ტექსტის მომრგვალება"
 #: src/widgets/Terminal.qml:65
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "სიჩუმის აღმოჩენა"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -364,10 +363,9 @@ msgid "Pending Process"
 msgstr "დარჩენილი პროცესი"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "გაშვებული პროცესი 30-ზე მეტი წამია, არააქტიურია."
+msgstr "გაშვებული პროცესი '%1' 30-ზე მეტი წამია, არააქტიურია."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
