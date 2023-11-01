@@ -43,10 +43,9 @@ msgid "Convergent terminal emulator."
 msgstr ""
 
 #: src/main.cpp:39
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-%1 Vývojový tým Maui"
+msgstr ""
 
 #: src/main.cpp:41
 #, kde-format
@@ -219,14 +218,13 @@ msgstr "Zobrazit upozornění při dokončení úlohy ve frontě."
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Tichý"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "Běžící proces byl neaktivní déle než 30 sekund."
+msgstr ""
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -359,10 +357,9 @@ msgid "Pending Process"
 msgstr "Zbývající proces"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "Běžící proces byl neaktivní déle než 30 sekund."
+msgstr ""
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
@@ -453,6 +450,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "Configure the terminal font and display options."
-#~ msgstr "Nastavit písmo a volby zobrazení terminálu."

@@ -1,10 +1,10 @@
-# Xavier BESNARD <xavier.besnard@neuf.fr>, 2023.
+# SPDX-FileCopyrightText: 2023 Xavier BESNARD <xavier.besnard@neuf.fr>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-28 00:42+0000\n"
-"PO-Revision-Date: 2023-05-09 13:14+0200\n"
+"PO-Revision-Date: 2023-10-30 15:24+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -40,10 +40,9 @@ msgid "Convergent terminal emulator."
 msgstr "Émulateur de terminal convergent."
 
 #: src/main.cpp:39
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019 - %1 L'équipe de développement de Maui"
+msgstr "© 2019 - 2023 L'équipe de développement de Maui"
 
 #: src/main.cpp:41
 #, kde-format
@@ -220,15 +219,15 @@ msgstr "Émettre une notification lorsqu'un processus en attente est terminé."
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Muet"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
-"Le processus en cours d'exécution a été inactif pendant plus de 30 secondes."
+"Émettre une alerte lorsque la tâche en cours d'exécution a été inactive "
+"pendant plus de 30 secondes."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -340,7 +339,7 @@ msgstr "Appliquer un anti-crénelage au texte"
 #: src/widgets/Terminal.qml:65
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Surveillez le silence"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -363,11 +362,11 @@ msgid "Pending Process"
 msgstr "Processus en attente"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr ""
-"Le processus en cours d'exécution a été inactif pendant plus de 30 secondes."
+"Le processus %1 en cours d'exécution a été inactif pendant plus de 30 "
+"secondes."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
