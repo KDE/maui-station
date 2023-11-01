@@ -1,7 +1,6 @@
 #include "commandsmodel.h"
 #include <QDebug>
-
-#include <MauiKit3/Core/utils.h>
+#include <QSettings>
 
 CommandsModel::CommandsModel(QObject *parent)
 {
