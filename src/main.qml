@@ -132,9 +132,9 @@ Maui.ApplicationWindow
 
                 ToolButton
                 {
-                  icon.name: "edit-find"
-                  checked: root.currentTerminal.footBar.visible
-                  onClicked: root.currentTerminal.toggleSearchBar()
+                    icon.name: "edit-find"
+                    checked: root.currentTerminal.footBar.visible
+                    onClicked: root.currentTerminal.toggleSearchBar()
                 },
 
                 Maui.ToolButtonMenu
@@ -370,6 +370,8 @@ Maui.ApplicationWindow
             template.iconSource: "dialog-warning"
             template.iconVisible: true
             template.iconSizeHint: Maui.Style.iconSizes.huge
+
+            standardButtons: Dialog.Ok | Dialog.Cancel
 
             onAccepted:
             {
