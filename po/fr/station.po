@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-28 00:42+0000\n"
-"PO-Revision-Date: 2023-10-30 15:24+0100\n"
+"PO-Revision-Date: 2023-11-01 14:37+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -334,7 +334,7 @@ msgstr "Hauteur totale du curseur"
 #: src/widgets/SettingsDialog.qml:366
 #, kde-format
 msgid "Antialias text"
-msgstr "Appliquer un anti-crénelage au texte"
+msgstr "Appliquer un anticrénelage au texte"
 
 #: src/widgets/Terminal.qml:65
 #, kde-format
