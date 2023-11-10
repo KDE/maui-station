@@ -36,6 +36,9 @@ Maui.ApplicationWindow
     onClosing:
     {
         // _dialogLoader.sourceComponent = null
+        close.accepted = !settings.restoreSession
+        root.saveSession()
+
         _dialogLoader.sourceComponent = _confirmCloseDialogComponent
 
         if(anyTabHasActiveProcess() && !root.discard)
@@ -51,6 +54,7 @@ Maui.ApplicationWindow
 
         close.accepted = true
     }
+
 
     Settings
     {
@@ -78,6 +82,10 @@ Maui.ApplicationWindow
 
         property bool showSignalBar: false
         property bool watchForSilence: false
+
+        property bool restoreSession : false
+        property var lastSession: []
+        property int lastTabIndex : 0
     }
 
     Loader
@@ -134,7 +142,20 @@ Maui.ApplicationWindow
                 {
                     icon.name: "edit-find"
                     checked: root.currentTerminal.footBar.visible
-                    onClicked: root.currentTerminal.toggleSearchBar()
+                    onClicked:
+                    {
+
+                        for(var i = 0; i < settings.lastSession.length; i ++)
+                        {
+                            var tab = settings.lastSession[i]
+
+                            for(var j = 0; j < tab.length; j ++)
+                            {
+                                console.log(tab[j].path)
+                            }
+                        }
+                    }
+                    // onClicked: root.currentTerminal.toggleSearchBar()
                 },
 
                 Maui.ToolButtonMenu
@@ -194,6 +215,7 @@ Maui.ApplicationWindow
             ]
 
             holder.visible: _layout.count === 0
+            holder.emoji: "terminal-symbolic"
             holder.title: i18n("Nothing here")
             holder.body: i18n("To start hacking open a new tab or a split screen.")
             holder.actions: Action
@@ -391,6 +413,39 @@ Maui.ApplicationWindow
         }
     }
 
+    Component
+    {
+        id: _restoreDialogComponent
+        Maui.InfoDialog
+        {
+            message: i18n("Do you want to restore the previous session?")
+            standardButtons: Dialog.Ok | Dialog.Cancel
+template.iconSource: "dialog-question"
+
+            onAccepted:
+            {
+                const tabs = settings.lastSession
+                if(tabs.length)
+                {
+                    console.log("restore", tabs.length)
+                    // root.closeTab(0)
+                    restoreSession(tabs)
+                    return
+                }
+            }
+        }
+    }
+
+    Component.onCompleted:
+    {
+        if(settings.restoreSession)
+        {
+            _dialogLoader.sourceComponent = _restoreDialogComponent
+            dialog.open()
+            return
+        }
+    }
+
     function openTab(path : string)
     {
         _layout.addTab(_terminalComponent, {'path': path});
@@ -421,7 +476,7 @@ Maui.ApplicationWindow
 
     function anyTabHasActiveProcess()
     {
-        for(var i = 0; i < _layout.count; i ++)
+        for(var i = 0; i++; i < _layout.count)
         {
             let tab = _layout.tabAt(i)
             if(tab && tab.hasActiveProcess)
@@ -431,5 +486,54 @@ Maui.ApplicationWindow
         }
 
         return false;
+    }
+
+    function saveSession()
+    {
+        var tabs = [];
+
+        for(var i = 0; i < _layout.count; i ++)
+        {
+            var tab = _layout.contentModel.get(i)
+            var tabPaths = []
+
+            for(var j = 0; j < tab.count; j ++)
+            {
+                const term = tab.contentModel.get(j)
+var path = String(term.session.currentDir)
+                const tabMap = {'path': path}
+
+                tabPaths.push(tabMap)
+            }
+
+            tabs.push(tabPaths)
+        }
+
+        settings.lastSession = tabs
+        console.log("Saving Session", settings.lastSession.length)
+
+        // settings.lastTabIndex = currentTabIndex
+    }
+
+    function restoreSession(tabs)
+    {
+            console.log("TRYING TO RESTORE SESSION",tabs )
+
+
+        for(var i = 0; i < tabs.length; i++ )
+        {
+            const tab = tabs[i]
+
+            if(tab.length === 2)
+            {
+                root.openTab(tab[0].path, tab[1].path)
+            }else
+            {
+                console.log("TRYING TO RESTORE SESSION", tab[0].path)
+                root.openTab(tab[0].path)
+            }
+        }
+
+        // currentTabIndex = settings.lastTabIndex
     }
 }

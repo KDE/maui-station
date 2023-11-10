@@ -244,6 +244,20 @@ Maui.SettingsDialog
 
         Maui.SectionItem
         {
+            label1.text: i18n("Save Session")
+            label2.text: i18n("Restore previous session on startup.")
+
+            Switch
+            {
+                checkable: true
+                checked:  settings.restoreSession
+                onToggled: settings.restoreSession = ! settings.restoreSession
+            }
+
+        }
+
+        Maui.SectionItem
+        {
             label1.text: i18n("Adaptive Color Scheme")
             label2.text: i18n("Colors based on the current style.")
 
