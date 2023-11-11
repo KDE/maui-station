@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:29+0000\n"
+"POT-Creation-Date: 2023-11-11 00:41+0000\n"
 "PO-Revision-Date: 2023-11-01 07:34+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -57,82 +57,82 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Utvecklare"
 
-#: src/main.qml:147 src/main.qml:201 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:168 src/main.qml:223 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Ny flik"
 
-#: src/main.qml:155 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:176 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Dela"
 
-#: src/main.qml:165
+#: src/main.qml:186
 #, kde-format
 msgid "Tutorial"
 msgstr "Handledning"
 
-#: src/main.qml:177
+#: src/main.qml:198
 #, kde-format
 msgid "Settings"
 msgstr "Inställningar"
 
-#: src/main.qml:187
+#: src/main.qml:208
 #, kde-format
 msgid "About"
 msgstr "Om"
 
-#: src/main.qml:197
+#: src/main.qml:219
 #, kde-format
 msgid "Nothing here"
 msgstr "Ingenting här"
 
-#: src/main.qml:198
+#: src/main.qml:220
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Öppna en ny flik eller en delad skärm för att börja skriva."
 
-#: src/main.qml:216
+#: src/main.qml:238
 #, kde-format
 msgid "Function Keys"
 msgstr "Funktionstangenter"
 
-#: src/main.qml:225
+#: src/main.qml:247
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:234
+#: src/main.qml:256
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl-väljartangenter"
 
-#: src/main.qml:243 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:265 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navigering"
 
-#: src/main.qml:252
+#: src/main.qml:274
 #, kde-format
 msgid "Favorite"
 msgstr "Favorit"
 
-#: src/main.qml:261
+#: src/main.qml:283
 #, kde-format
 msgid "Signals"
 msgstr "Signaler"
 
-#: src/main.qml:272
+#: src/main.qml:294
 #, kde-format
 msgid "More Signals"
 msgstr "Fler signaler"
 
-#: src/main.qml:367
+#: src/main.qml:389
 #, kde-format
 msgid "Close"
 msgstr "Stäng"
 
-#: src/main.qml:368
+#: src/main.qml:390
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -140,6 +140,11 @@ msgid ""
 msgstr ""
 "Ett process kör fortfarande. Är du säker på att du vill avbryta och stänga "
 "den?"
+
+#: src/main.qml:421
+#, kde-format
+msgid "Do you want to restore the previous session?"
+msgstr ""
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
@@ -176,23 +181,23 @@ msgstr "Ta bort"
 msgid "Edit"
 msgstr "Redigera"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:294
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
 #, kde-format
 msgid "Font"
 msgstr "Teckensnitt"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Color Scheme"
 msgstr "Färgschema"
 
-#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Ändra terminalens färgschema"
 
-#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:275
+#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Alerts"
 msgstr "Varningar"
@@ -277,62 +282,72 @@ msgstr "Terminal"
 
 #: src/widgets/SettingsDialog.qml:247
 #, kde-format
+msgid "Save Session"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:248
+#, kde-format
+msgid "Restore previous session on startup."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:261
+#, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Adaptivt färgschema"
 
-#: src/widgets/SettingsDialog.qml:248
+#: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Färger baserade på aktuell stil."
 
-#: src/widgets/SettingsDialog.qml:276
+#: src/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "Varna för processer och förhindra att de stängs."
 
-#: src/widgets/SettingsDialog.qml:289
+#: src/widgets/SettingsDialog.qml:303
 #, kde-format
 msgid "Display"
 msgstr "Visning"
 
-#: src/widgets/SettingsDialog.qml:295
+#: src/widgets/SettingsDialog.qml:309
 #, kde-format
 msgid "Font family and size."
 msgstr "Teckenfamilj och storlek."
 
-#: src/widgets/SettingsDialog.qml:307
+#: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Line Spacing"
 msgstr "Radmellanrum"
 
-#: src/widgets/SettingsDialog.qml:320
+#: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "History Size"
 msgstr "Historikstorlek"
 
-#: src/widgets/SettingsDialog.qml:321
+#: src/widgets/SettingsDialog.qml:335
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
 "Antal rader att behålla i buffer. Mindre än noll betyder obegränsat antal "
 "rader."
 
-#: src/widgets/SettingsDialog.qml:333
+#: src/widgets/SettingsDialog.qml:347
 #, kde-format
 msgid "Enable Bold"
 msgstr "Aktivera fetstil"
 
-#: src/widgets/SettingsDialog.qml:344
+#: src/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "Blinkande markör"
 
-#: src/widgets/SettingsDialog.qml:355
+#: src/widgets/SettingsDialog.qml:369
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "Hel markörhöjd"
 
-#: src/widgets/SettingsDialog.qml:366
+#: src/widgets/SettingsDialog.qml:380
 #, kde-format
 msgid "Antialias text"
 msgstr "Kantutjämning av text"
