@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-11 00:41+0000\n"
-"PO-Revision-Date: 2023-10-28 09:21+0300\n"
+"PO-Revision-Date: 2023-11-11 08:46+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -144,7 +144,7 @@ msgstr "Працює процес. Ви справді хочете перерв
 #: src/main.qml:421
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "Хочете відновити попередній сеанс?"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
@@ -282,12 +282,12 @@ msgstr "Термінал"
 #: src/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Save Session"
-msgstr ""
+msgstr "Зберігати сеанс"
 
 #: src/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Відновлювати попередній сеанс після запуску."
 
 #: src/widgets/SettingsDialog.qml:261
 #, kde-format
