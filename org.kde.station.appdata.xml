@@ -21,6 +21,7 @@
   <name xml:lang="nl">Station:</name>
   <name xml:lang="pl">Stacja</name>
   <name xml:lang="pt">Station</name>
+  <name xml:lang="pt-BR">Station</name>
   <name xml:lang="sk">Station</name>
   <name xml:lang="sl">Station</name>
   <name xml:lang="sv">Station</name>
@@ -72,6 +73,7 @@
     <p xml:lang="nl">Station is een convergent terminalprogramma, gereed voor bureaublad en mobiele apparaten die GNU/Linux gebruiken.</p>
     <p xml:lang="pl">Stacja jest zbieżnym emulatorem terminala, przeznaczonym na urządzenia biurkowe i przenośne, używającym GNU/Linux.</p>
     <p xml:lang="pt">O Station é um emulador de terminal convergente, pronto para computadores e dispositivos móveis que usem o GNU/Linux.</p>
+    <p xml:lang="pt-BR">O Station é um emulador de terminal convergente, pronto para computadores e dispositivos móveis usando Linux.</p>
     <p xml:lang="sl">Station je konvergentni emulator terminala pripravljen tako za namizje kot za mobilne naprave, ki uporabljajo GNU/Linux.</p>
     <p xml:lang="sv">Station är en konvergent terminalemulator, redo för stationära och mobila enheter som använder GNU/Linux.</p>
     <p xml:lang="tr">İstasyon, GNU/Linux kullanan masaüstü ve taşınabilir aygıtlar için yakınsak bir uçbirim öykünücüsüdür.</p>
@@ -102,6 +104,7 @@
       <caption xml:lang="nl">Station op bureaublad en telefoon.</caption>
       <caption xml:lang="pl">Stacja na biurku i telefonie.</caption>
       <caption xml:lang="pt">O Station num computador e num telefone.</caption>
+      <caption xml:lang="pt-BR">Station no computador e telefone.</caption>
       <caption xml:lang="sl">Station na namizju in telefonu.</caption>
       <caption xml:lang="sv">Station på skrivbord och telefon.</caption>
       <caption xml:lang="tr">Masaüstü ve telefonda İstasyon.</caption>
