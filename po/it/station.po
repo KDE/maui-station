@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-11 00:41+0000\n"
-"PO-Revision-Date: 2023-11-08 10:10+0100\n"
+"PO-Revision-Date: 2023-11-12 10:43+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -144,7 +144,7 @@ msgstr ""
 #: src/main.qml:421
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "Vuoi ripristinare la sessione precedente?"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
@@ -283,12 +283,12 @@ msgstr "Terminale"
 #: src/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Save Session"
-msgstr ""
+msgstr "Salva sessione"
 
 #: src/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Ripristina la sessione precedente all'avvio."
 
 #: src/widgets/SettingsDialog.qml:261
 #, kde-format

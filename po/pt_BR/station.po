@@ -1,36 +1,36 @@
-# Copyright (C) 2023 This file is copyright:
+# Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
-# SPDX-FileCopyrightText: 2023 Vit Pelcak <vit@pelcak.org>
 #
+# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-11 00:41+0000\n"
-"PO-Revision-Date: 2023-11-14 13:52+0100\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
-"Language: cs\n"
+"PO-Revision-Date: 2023-11-14 12:04-0300\n"
+"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.3\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr "Pozastavit"
+msgstr "Pausar"
 
 #: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr "Přerušení"
+msgstr "Interromper"
 
 #: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr "Zabít"
+msgstr "Matar"
 
 #: src/main.cpp:35
 #, kde-format
@@ -40,12 +40,12 @@ msgstr "Station"
 #: src/main.cpp:37
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr ""
+msgstr "Emulador de terminal convergente."
 
 #: src/main.cpp:39
 #, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-2023 Vývojový tým Maui"
+msgstr "© 2019-2023 Equipe de desenvolvimento do Maui"
 
 #: src/main.cpp:41
 #, kde-format
@@ -55,47 +55,47 @@ msgstr "Camilo Higuita"
 #: src/main.cpp:41
 #, kde-format
 msgid "Developer"
-msgstr "Vývojář"
+msgstr "Desenvolvedor"
 
 #: src/main.qml:168 src/main.qml:223 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
-msgstr "Nová karta"
+msgstr "Nova janela"
 
 #: src/main.qml:176 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
-msgstr "Rozdělit"
+msgstr "Dividir"
 
 #: src/main.qml:186
 #, kde-format
 msgid "Tutorial"
-msgstr "Výuka"
+msgstr "Tutorial"
 
 #: src/main.qml:198
 #, kde-format
 msgid "Settings"
-msgstr "Nastavení"
+msgstr "Configurações"
 
 #: src/main.qml:208
 #, kde-format
 msgid "About"
-msgstr "O aplikaci"
+msgstr "Sobre"
 
 #: src/main.qml:219
 #, kde-format
 msgid "Nothing here"
-msgstr "Zde nic není."
+msgstr "Não há nada aqui"
 
 #: src/main.qml:220
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "Para começar a hackear, abra um novo janela ou uma tela dividida."
 
 #: src/main.qml:238
 #, kde-format
 msgid "Function Keys"
-msgstr "Funkční klávesy"
+msgstr "Teclas de função"
 
 #: src/main.qml:247
 #, kde-format
@@ -105,363 +105,374 @@ msgstr "Nano"
 #: src/main.qml:256
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr ""
+msgstr "Modificadores Ctrl"
 
 #: src/main.qml:265 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
-msgstr "Ovládání"
+msgstr "Navegação"
 
 #: src/main.qml:274
 #, kde-format
 msgid "Favorite"
-msgstr "Oblíbené"
+msgstr "Favoritos"
 
 #: src/main.qml:283
 #, kde-format
 msgid "Signals"
-msgstr "Signály"
+msgstr "Sinais"
 
 #: src/main.qml:294
 #, kde-format
 msgid "More Signals"
-msgstr "Více signálů"
+msgstr "Mais sinais"
 
 #: src/main.qml:389
 #, kde-format
 msgid "Close"
-msgstr "Zavřít"
+msgstr "Fechar"
 
 #: src/main.qml:390
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr "Proces stále běží. Opravdu jej chcete přerušit a ukončit?"
+msgstr ""
+"Um processo ainda está em execução. Tem certeza de que deseja interrompê-lo "
+"e fechar o processo?"
 
 #: src/main.qml:421
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr "Přejete si obnovit předchozí sezení?"
+msgstr "Deseja restaurar a sessão anterior?"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
 msgid "New Command"
-msgstr "Nový příkaz"
+msgstr "Novo comando"
 
 #: src/widgets/CommandShortcuts.qml:33
 #, kde-format
 msgid "Edit Command"
-msgstr "Upravit příkaz"
+msgstr "Editar comando"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr ""
+msgstr "Editar um atalho de comando"
 
 #: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "No Commands"
-msgstr ""
+msgstr "Sem comandos"
 
 #: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr ""
+msgstr "Comece a adicionar novos atalhos de comando"
 
 #: src/widgets/CommandShortcuts.qml:91
 #, kde-format
 msgid "Remove"
-msgstr "Odstranit"
+msgstr "Remover"
 
 #: src/widgets/CommandShortcuts.qml:101
 #, kde-format
 msgid "Edit"
-msgstr "Upravit"
+msgstr "Editar"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
 #, kde-format
 msgid "Font"
-msgstr "Písmo"
+msgstr "Fontes"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
 #: src/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Color Scheme"
-msgstr "Barevné schéma"
+msgstr "Esquemas de cores"
 
 #: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "Změnit barevné schéma terminálu."
+msgstr "Alterar o esquema de cores do terminal."
 
 #: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Alerts"
-msgstr "Varování"
+msgstr "Alerta"
 
 #: src/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Running Task"
-msgstr "Běžící úloha"
+msgstr "Tarefa de execução"
 
 #: src/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Impedir o encerramento de uma tarefa em execução."
 
 #: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Finished Task"
-msgstr "Dokončená úloha"
+msgstr "Tarefa concluída"
 
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr "Zobrazit upozornění při dokončení úlohy ve frontě."
+msgstr "Emite uma notificação quando um processo pendente tiver terminado."
 
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr "Tichý"
+msgstr "Silencioso"
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
+"Emita um alerta quando uma tarefa em execução ficar em silêncio por mais de "
+"30 segundos."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
 msgid "Interface"
-msgstr "Rozhraní"
+msgstr "Interface"
 
 #: src/widgets/SettingsDialog.qml:181
 #, kde-format
 msgid "Color"
-msgstr "Barva"
+msgstr "Cor"
 
 #: src/widgets/SettingsDialog.qml:182
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "Přepínač mezi světlým a tmavým barevným schématem."
+msgstr "Alterne entre o esquema de cores claras e escuras."
 
 #: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "Light"
-msgstr "Světlé"
+msgstr "Claro"
 
 #: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Dark"
-msgstr "Tmavé"
+msgstr "Escuro"
 
 #: src/widgets/SettingsDialog.qml:205
 #, kde-format
 msgid "Adaptive"
-msgstr "Adaptivní"
+msgstr "Adaptativo"
 
 #: src/widgets/SettingsDialog.qml:229
 #, kde-format
 msgid "Translucency"
-msgstr "Průhlednost"
+msgstr "Transparência"
 
 #: src/widgets/SettingsDialog.qml:230
 #, kde-format
 msgid "Translucent background."
-msgstr "Průhledné pozadí."
+msgstr "Fundo transparente."
 
 #: src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Terminal"
-msgstr "Terminál"
+msgstr "Terminal"
 
 #: src/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Save Session"
-msgstr "Uložit sezení"
+msgstr "Salvar sessão"
 
 #: src/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr "Obnovit předchozí sezení při spuštění."
+msgstr "Restaurar a sessão anteriormente na inicialização."
 
 #: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "Adaptivní barevné schéma"
+msgstr "Esquema de cores adaptativo"
 
 #: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Colors based on the current style."
-msgstr "Barvy založené na současném stylu."
+msgstr "Cores baseadas no estilo atual."
 
 #: src/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Alertar sobre processos e evitar fechá-los."
 
 #: src/widgets/SettingsDialog.qml:303
 #, kde-format
 msgid "Display"
-msgstr "Zobrazení"
+msgstr "Mostrar"
 
 #: src/widgets/SettingsDialog.qml:309
 #, kde-format
 msgid "Font family and size."
-msgstr "Rodina písma a velikost."
+msgstr "Família e tamanho de letra."
 
 #: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Line Spacing"
-msgstr "Rozestupy řádků"
+msgstr "Espaçamento de linhas"
 
 #: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "History Size"
-msgstr "Velikost historie"
+msgstr "Tamanho do histórico"
 
 #: src/widgets/SettingsDialog.qml:335
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Número de linhas a serem mantidas em buffer. Menos que zero significa linhas "
+"infinitas."
 
 #: src/widgets/SettingsDialog.qml:347
 #, kde-format
 msgid "Enable Bold"
-msgstr "Povolit tučné"
+msgstr "Ativar negrito"
 
 #: src/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "Blinking Cursor"
-msgstr "Blikající kurzor"
+msgstr "Cursor piscando"
 
 #: src/widgets/SettingsDialog.qml:369
 #, kde-format
 msgid "Full Cursor Height"
-msgstr "Plná výška kurzoru"
+msgstr "Altura completa do cursor"
 
 #: src/widgets/SettingsDialog.qml:380
 #, kde-format
 msgid "Antialias text"
-msgstr "Vyhlazovat text"
+msgstr "Texto de anti-aliasing"
 
 #: src/widgets/Terminal.qml:65
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Cuidado com o silêncio"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
-msgstr "Proces dokončen"
+msgstr "Processo concluído"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "A tarefa em execução terminou para a guia: %1"
 
 #: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Check"
-msgstr "Zkontrolovat"
+msgstr "Verificar"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr "Zbývající proces"
+msgstr "Processo pendente"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "Běžící proces '%1' byl neaktivní déle než 30 sekund."
+msgstr "O processo em execução \"%1\" está inativo há mais de 30 segundos."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
 msgid "Shortcuts"
-msgstr "Zkratky"
+msgstr "Atalhos"
 
 #: src/widgets/TutorialDialog.qml:19
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
 msgstr ""
+"Ao utilizar um teclado, pode utilizar os seguintes atalhos para navegar."
 
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr ""
+msgstr "Abra uma nova visualização dividida, vertical ou horizontalmente."
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
 msgid "Find"
-msgstr "Najít"
+msgstr "Localizar"
 
 #: src/widgets/TutorialDialog.qml:70
 #, kde-format
 msgid "Open the find bar."
-msgstr ""
+msgstr "Abrir a barra de pesquisa."
 
 #: src/widgets/TutorialDialog.qml:90
 #, kde-format
 msgid "Switch"
-msgstr "Přepnout"
+msgstr "Trocar"
 
 #: src/widgets/TutorialDialog.qml:91
 #, kde-format
 msgid "Switch between split views."
-msgstr ""
+msgstr "Alternar entre visualizações divididas."
 
 #: src/widgets/TutorialDialog.qml:114
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
 msgstr ""
+"Em dispositivos sensíveis ao toque, você pode usar os seguintes gestos para "
+"navegar."
 
 #: src/widgets/TutorialDialog.qml:118
 #, kde-format
 msgid "Up & Down"
-msgstr ""
+msgstr "Para cima e para baixo"
 
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr ""
+msgstr "Deslize para cima ou para baixo para navegar no histórico de comandos."
 
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
 msgid "Left & Right"
-msgstr ""
+msgstr "Esquerda e direta"
 
 #: src/widgets/TutorialDialog.qml:125
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
+"Deslize para a esquerda ou para a direita para percorrer a linha de comando "
+"para editar."
 
 #: src/widgets/TutorialDialog.qml:130
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr ""
+msgstr "Dois dedos direito e esquerdo"
 
 #: src/widgets/TutorialDialog.qml:131
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr ""
+msgstr "Deslize para cima ou para baixo com dois dedos para rolar."
 
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
 msgid "Commands"
-msgstr "Příkazy"
+msgstr "Comandos"
 
 #: src/widgets/TutorialDialog.qml:142
 #, kde-format
 msgid "Create"
-msgstr "Vytvořit"
+msgstr "Criar"
 
 #: src/widgets/TutorialDialog.qml:143
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr ""
+msgstr "Cria um novo atalho de comando para acionar ações rapidamente."
 
 #: src/widgets/TutorialDialog.qml:147
 #, kde-format
 msgid "Add"
-msgstr "Přidat"
+msgstr "Adicionar"
