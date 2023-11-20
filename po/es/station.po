@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-11 00:41+0000\n"
-"PO-Revision-Date: 2023-10-28 12:32+0200\n"
+"PO-Revision-Date: 2023-11-18 18:34+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -144,7 +144,7 @@ msgstr "Un proceso sigue ejecutando. ¿Está seguro de interrumpirlo y cerrarlo?
 #: src/main.qml:421
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "¿Quiere restaurar la sesión previa al inicio?"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
@@ -283,12 +283,12 @@ msgstr "Terminal"
 #: src/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Save Session"
-msgstr ""
+msgstr "Guardar sesión"
 
 #: src/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Restaurar sesión previa al inicio."
 
 #: src/widgets/SettingsDialog.qml:261
 #, kde-format
