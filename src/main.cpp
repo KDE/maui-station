@@ -5,6 +5,7 @@
 #include <QIcon>
 
 #include <MauiKit3/Core/mauiapp.h>
+#include <MauiKit3/Terminal/moduleinfo.h>
 
 #include <KI18n/KLocalizedString>
 #include <KAboutData>
@@ -44,6 +45,9 @@ int main(int argc, char *argv[])
     about.setBugAddress("https://invent.kde.org/maui/station/-/issues");
     about.setOrganizationDomain(STATION_URI);
     about.setProgramLogo(app.windowIcon());
+
+    const auto TData = MauiKitTerminal::aboutData();
+    about.addComponent(TData.name(), MauiKitTerminal::buildVersion(), TData.version(), TData.webAddress());
 
     about.addCredit("QMLTermWidget");
     about.addCredit("UBPorts Terminal");

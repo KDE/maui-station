@@ -32,6 +32,7 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONF
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
     MauiKit3
+    MauiKit3::Terminal
     Qt5::Widgets
     Qt5::Quick
     Qt5::Qml
