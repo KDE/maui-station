@@ -33,7 +33,7 @@ Maui.ApplicationWindow
     }
 
     property bool discard : !settings.preventClosing
-    onClosing:
+    onClosing: (close) =>
     {
         // _dialogLoader.sourceComponent = null
         close.accepted = !settings.restoreSession
@@ -54,7 +54,6 @@ Maui.ApplicationWindow
 
         close.accepted = true
     }
-
 
     Settings
     {
@@ -126,7 +125,7 @@ Maui.ApplicationWindow
             anchors.fill: parent
 
             onNewTabClicked: root.openTab("$PWD")
-            onCloseTabClicked: root.closeTab(index)
+            onCloseTabClicked:(index) => root.closeTab(index)
 
             tabBar.showNewTabButton: false
             tabBar.visible: true
@@ -142,20 +141,7 @@ Maui.ApplicationWindow
                 {
                     icon.name: "edit-find"
                     checked: root.currentTerminal.footBar.visible
-                    onClicked:
-                    {
-
-                        for(var i = 0; i < settings.lastSession.length; i ++)
-                        {
-                            var tab = settings.lastSession[i]
-
-                            for(var j = 0; j < tab.length; j ++)
-                            {
-                                console.log(tab[j].path)
-                            }
-                        }
-                    }
-                    // onClicked: root.currentTerminal.toggleSearchBar()
+                    onClicked: root.currentTerminal.toggleSearchBar()
                 },
 
                 Maui.ToolButtonMenu
@@ -420,7 +406,7 @@ Maui.ApplicationWindow
         {
             message: i18n("Do you want to restore the previous session?")
             standardButtons: Dialog.Ok | Dialog.Cancel
-template.iconSource: "dialog-question"
+            template.iconSource: "dialog-question"
 
             onAccepted:
             {
@@ -500,7 +486,7 @@ template.iconSource: "dialog-question"
             for(var j = 0; j < tab.count; j ++)
             {
                 const term = tab.contentModel.get(j)
-var path = String(term.session.currentDir)
+                var path = String(term.session.currentDir)
                 const tabMap = {'path': path}
 
                 tabPaths.push(tabMap)
@@ -517,7 +503,7 @@ var path = String(term.session.currentDir)
 
     function restoreSession(tabs)
     {
-            console.log("TRYING TO RESTORE SESSION",tabs )
+        console.log("TRYING TO RESTORE SESSION",tabs )
 
 
         for(var i = 0; i < tabs.length; i++ )

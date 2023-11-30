@@ -19,9 +19,7 @@
  * Author: Florian Boucault <florian.boucault@canonical.com>
  */
 
-#ifndef FONTS_H
-#define FONTS_H
-
+#pragma once
 #include <QObject>
 #include <QList>
 #include <QFontDatabase>
@@ -48,5 +46,3 @@ private:
     QStringList m_monospaceFamilies;
     QFontDatabase m_fontDatabase;
 };
-
-#endif // FONTS_H

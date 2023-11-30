@@ -21,7 +21,7 @@ public:
     explicit Server(QObject *parent = nullptr);
     void setQmlObject(QObject  *object);
 
-public slots:
+public Q_SLOTS:
     /**
            * Tries to raise/activate the Dolphin window.
            */
@@ -42,12 +42,8 @@ public slots:
              */
     void openNewWindow(const QString &url);
 
-
-
 private:
     QObject* m_qmlObject = nullptr;
-
-signals:
 
 };
 

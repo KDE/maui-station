@@ -43,7 +43,7 @@ Maui.SplitViewItem
         session.historySize: settings.historySize
         session.monitorSilence: control.watchForSlience
 
-        onUrlsDropped:
+        onUrlsDropped: (urls) =>
         {
             for(var i in urls)
                 control.session.sendText(urls[i].replace("file://", "")+ " ")
@@ -71,7 +71,7 @@ Maui.SplitViewItem
             }
         }
 
-        onKeyPressed:
+        onKeyPressed: (event) =>
         {
             if ((event.key == Qt.Key_D) && (event.modifiers & Qt.ControlModifier))
             {

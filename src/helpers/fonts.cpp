@@ -35,7 +35,7 @@ void Fonts::updateFamilies()
             m_monospaceFamilies << family;
         }
     }
-    emit monospaceFamiliesChanged();
+    Q_EMIT monospaceFamiliesChanged();
 }
 
 QStringList Fonts::monospaceFamilies() const

@@ -1,5 +1,4 @@
-#ifndef STATION_H
-#define STATION_H
+#pragma once
 
 #include <QFileInfo>
 #include <QObject>
@@ -21,15 +20,9 @@ public:
     Station(Station &&) = delete;
     Station &operator=(Station &&) = delete;
 
-public slots:
-
-signals:
-
 private:
     explicit Station(QObject *parent = nullptr)
         : QObject(parent)
     {
     }
 };
-
-#endif // NOTA_H

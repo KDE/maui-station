@@ -93,7 +93,7 @@ QHash<int, QByteArray> KeysHelper::roleNames() const
 
 void KeysHelper::setKeys()
 {
-    emit this->beginResetModel();
+    Q_EMIT this->beginResetModel();
 
     switch (m_group) {
     case Group::FN_GROUP: {
@@ -127,7 +127,7 @@ void KeysHelper::setKeys()
 
     qDebug() << "FINISHED EMITTIGN KEYS" << this->m_keys.count();
 
-    emit this->endResetModel();
+    Q_EMIT this->endResetModel();
 }
 
 QVector<Key> KeysHelper::ctrlKeys()
@@ -235,5 +235,5 @@ void KeysHelper::setGroup(Group group)
 
     m_group = group;
     this->setKeys();
-    emit groupChanged();
+    Q_EMIT groupChanged();
 }
