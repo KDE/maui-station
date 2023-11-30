@@ -119,11 +119,7 @@ Maui.ApplicationWindow
         {
             id: _layout
 
-            background: Rectangle
-            {
-                color: Maui.Theme.backgroundColor
-                opacity: settings.windowTranslucency ? settings.windowOpacity : 1
-            }
+            background: null
 
             altTabBar: Maui.Handy.isMobile
 
