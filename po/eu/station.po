@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-11 00:41+0000\n"
+"POT-Creation-Date: 2023-12-01 00:41+0000\n"
 "PO-Revision-Date: 2023-10-28 12:20+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -35,107 +35,107 @@ msgstr "Etendura"
 msgid "Kill"
 msgstr "Akabatu"
 
-#: src/main.cpp:35
+#: src/main.cpp:36
 #, kde-format
 msgid "Station"
 msgstr "Station"
 
-#: src/main.cpp:37
+#: src/main.cpp:38
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "Terminal emulatzaile konbergentea."
 
-#: src/main.cpp:39
+#: src/main.cpp:40
 #, kde-format
 msgid "© 2019-2023 Maui Development Team"
 msgstr "© 2019-2023 Maui garapen taldea"
 
-#: src/main.cpp:41
+#: src/main.cpp:42
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: src/main.cpp:41
+#: src/main.cpp:42
 #, kde-format
 msgid "Developer"
 msgstr "Garatzailea"
 
-#: src/main.qml:168 src/main.qml:223 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:155 src/main.qml:210 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Fitxa berria"
 
-#: src/main.qml:176 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:163 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Zatitu"
 
-#: src/main.qml:186
+#: src/main.qml:173
 #, kde-format
 msgid "Tutorial"
 msgstr "Tutoretza"
 
-#: src/main.qml:198
+#: src/main.qml:185
 #, kde-format
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: src/main.qml:208
+#: src/main.qml:195
 #, kde-format
 msgid "About"
 msgstr "Honi buruz"
 
-#: src/main.qml:219
+#: src/main.qml:206
 #, kde-format
 msgid "Nothing here"
 msgstr "Ezer ez hemen"
 
-#: src/main.qml:220
+#: src/main.qml:207
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Sasi-lanean hasteko, ireki fitxa berri bat edo pantaila zatitu bat."
 
-#: src/main.qml:238
+#: src/main.qml:225
 #, kde-format
 msgid "Function Keys"
 msgstr "Funtzio teklak"
 
-#: src/main.qml:247
+#: src/main.qml:234
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:256
+#: src/main.qml:243
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ktrl aldarazleak"
 
-#: src/main.qml:265 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:252 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Nabigazioa"
 
-#: src/main.qml:274
+#: src/main.qml:261
 #, kde-format
 msgid "Favorite"
 msgstr "Gogokoak"
 
-#: src/main.qml:283
+#: src/main.qml:270
 #, kde-format
 msgid "Signals"
 msgstr "Seinaleak"
 
-#: src/main.qml:294
+#: src/main.qml:281
 #, kde-format
 msgid "More Signals"
 msgstr "Seinale gehiago"
 
-#: src/main.qml:389
+#: src/main.qml:376
 #, kde-format
 msgid "Close"
 msgstr "Itxi"
 
-#: src/main.qml:390
+#: src/main.qml:377
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -143,7 +143,7 @@ msgid ""
 msgstr ""
 "Prozesu batek martxan jarraitzen du. Ziur zaude eten eta itxi nahi duzula?"
 
-#: src/main.qml:421
+#: src/main.qml:408
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr ""
