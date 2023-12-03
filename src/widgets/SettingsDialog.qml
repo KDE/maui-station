@@ -235,6 +235,37 @@ Maui.SettingsDialog
                 onToggled: settings.windowTranslucency = !settings.windowTranslucency
             }
         }
+
+        Maui.SectionItem
+        {
+            label1.text: i18n("Tab Title")
+
+            Maui.ToolActions
+            {
+                autoExclusive: true
+
+                Action
+                {
+                    text: i18n("Auto")
+                    onTriggered: settings.tabTitleStyle = Terminal.TabTitle.Auto
+                    checked: settings.tabTitleStyle === Terminal.TabTitle.Auto
+                }
+
+                Action
+                {
+                    text: i18n("Process")
+                    onTriggered: settings.tabTitleStyle = Terminal.TabTitle.ProcessName
+                    checked: settings.tabTitleStyle === Terminal.TabTitle.ProcessName
+                }
+
+                Action
+                {
+                    text: i18n("Directory")
+                    onTriggered: settings.tabTitleStyle = Terminal.TabTitle.WorkingDirectory
+                    checked: settings.tabTitleStyle === Terminal.TabTitle.WorkingDirectory
+                }
+            }
+        }
     }
 
     Maui.SectionGroup

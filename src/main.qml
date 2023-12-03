@@ -85,6 +85,7 @@ Maui.ApplicationWindow
         property bool restoreSession : false
         property var lastSession: []
         property int lastTabIndex : 0
+        property int tabTitleStyle: Terminal.TabTitle.Auto
     }
 
     Loader

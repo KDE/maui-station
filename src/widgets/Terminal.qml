@@ -15,9 +15,21 @@ Maui.SplitViewItem
         control.kterminal.forceActiveFocus()
     }
 
+    enum TabTitle
+    {
+        ProcessName,
+        WorkingDirectory,
+        Auto
+    }
+
     readonly property alias terminal : _terminal
     readonly property alias session : _terminal.session
-    readonly property alias title : _terminal.title
+    readonly property string title : switch(settings.tabTitleStyle)
+                                     {
+                                     case Terminal.TabTitle.ProcessName : return _terminal.session.foregroundProcessName
+                                     case Terminal.TabTitle.WorkingDirectory : return _terminal.session.currentDir
+                                     case Terminal.TabTitle.Auto : return terminal.title
+                                     }
     readonly property alias kterminal : _terminal.kterminal
 
     property color tabColor : session.foregroundProcessName.startsWith("sudo") ? "red" : "transparent"
