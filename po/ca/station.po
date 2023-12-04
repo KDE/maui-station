@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-01 00:41+0000\n"
+"POT-Creation-Date: 2023-12-04 00:40+0000\n"
 "PO-Revision-Date: 2023-11-11 11:07+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -59,83 +59,83 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Desenvolupador"
 
-#: src/main.qml:155 src/main.qml:210 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:156 src/main.qml:211 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "Pestanya nova"
 
-#: src/main.qml:163 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:164 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "Divideix"
 
-#: src/main.qml:173
+#: src/main.qml:174
 #, kde-format
 msgid "Tutorial"
 msgstr "Guia d'aprenentatge"
 
-#: src/main.qml:185
+#: src/main.qml:186
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
 
-#: src/main.qml:195
+#: src/main.qml:196
 #, kde-format
 msgid "About"
 msgstr "Quant a"
 
-#: src/main.qml:206
+#: src/main.qml:207
 #, kde-format
 msgid "Nothing here"
 msgstr "Res aquí"
 
-#: src/main.qml:207
+#: src/main.qml:208
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 "Per començar a treballar obriu una pestanya nova o una pantalla dividida."
 
-#: src/main.qml:225
+#: src/main.qml:226
 #, kde-format
 msgid "Function Keys"
 msgstr "Tecles de funció"
 
-#: src/main.qml:234
+#: src/main.qml:235
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:243
+#: src/main.qml:244
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificadors Ctrl"
 
-#: src/main.qml:252 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:253 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "Navegació"
 
-#: src/main.qml:261
+#: src/main.qml:262
 #, kde-format
 msgid "Favorite"
 msgstr "Preferit"
 
-#: src/main.qml:270
+#: src/main.qml:271
 #, kde-format
 msgid "Signals"
 msgstr "Senyals"
 
-#: src/main.qml:281
+#: src/main.qml:282
 #, kde-format
 msgid "More Signals"
 msgstr "Més senyals"
 
-#: src/main.qml:376
+#: src/main.qml:377
 #, kde-format
 msgid "Close"
 msgstr "Tanca"
 
-#: src/main.qml:377
+#: src/main.qml:378
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -144,7 +144,7 @@ msgstr ""
 "Encara hi ha un procés executant-se. Esteu segur que el voleu interrompre i "
 "tancar?"
 
-#: src/main.qml:408
+#: src/main.qml:409
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Voleu restaurar la sessió anterior?"
@@ -184,23 +184,23 @@ msgstr "Elimina"
 msgid "Edit"
 msgstr "Edita"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:308
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:339
 #, kde-format
 msgid "Font"
 msgstr "Lletra"
 
 #: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
-#: src/widgets/SettingsDialog.qml:275
+#: src/widgets/SettingsDialog.qml:306
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquema de color"
 
-#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:276
+#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:307
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Canvia l'esquema de color del terminal."
 
-#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:289
+#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:320
 #, kde-format
 msgid "Alerts"
 msgstr "Alertes"
@@ -278,84 +278,105 @@ msgstr "Translucidesa"
 msgid "Translucent background."
 msgstr "Fons translúcid."
 
-#: src/widgets/SettingsDialog.qml:242
+#: src/widgets/SettingsDialog.qml:241
+#, kde-format
+msgid "Tab Title"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:249
+#, kde-format
+msgid "Auto"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:256
+#, fuzzy, kde-format
+#| msgid "Pending Process"
+msgid "Process"
+msgstr "Procés pendent"
+
+#: src/widgets/SettingsDialog.qml:263
+#, kde-format
+msgid "Directory"
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:273
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:247
+#: src/widgets/SettingsDialog.qml:278
 #, kde-format
 msgid "Save Session"
 msgstr "Desa la sessió"
 
-#: src/widgets/SettingsDialog.qml:248
+#: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Restore previous session on startup."
 msgstr "Restaurar la sessió anterior en iniciar."
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:292
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Esquema de color adaptatiu"
 
-#: src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:293
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Colors basats en l'estil actual."
 
-#: src/widgets/SettingsDialog.qml:290
+#: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "Alerta dels processos i evita tancar-los."
 
-#: src/widgets/SettingsDialog.qml:303
+#: src/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "Display"
 msgstr "Visualització"
 
-#: src/widgets/SettingsDialog.qml:309
+#: src/widgets/SettingsDialog.qml:340
 #, kde-format
 msgid "Font family and size."
 msgstr "Família i mida de la lletra."
 
-#: src/widgets/SettingsDialog.qml:321
+#: src/widgets/SettingsDialog.qml:352
 #, kde-format
 msgid "Line Spacing"
 msgstr "Interlineat"
 
-#: src/widgets/SettingsDialog.qml:334
+#: src/widgets/SettingsDialog.qml:365
 #, kde-format
 msgid "History Size"
 msgstr "Mida de l'historial"
 
-#: src/widgets/SettingsDialog.qml:335
+#: src/widgets/SettingsDialog.qml:366
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
 "Nombre de línies a mantenir a la memòria intermèdia. Menys de zero significa "
 "línies infinites."
 
-#: src/widgets/SettingsDialog.qml:347
+#: src/widgets/SettingsDialog.qml:378
 #, kde-format
 msgid "Enable Bold"
 msgstr "Activa la negreta"
 
-#: src/widgets/SettingsDialog.qml:358
+#: src/widgets/SettingsDialog.qml:389
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "Cursor parpellejant"
 
-#: src/widgets/SettingsDialog.qml:369
+#: src/widgets/SettingsDialog.qml:400
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "Alçada completa del cursor"
 
-#: src/widgets/SettingsDialog.qml:380
+#: src/widgets/SettingsDialog.qml:411
 #, kde-format
 msgid "Antialias text"
 msgstr "Text amb antialiàsing"
 
-#: src/widgets/Terminal.qml:65
+#: src/widgets/Terminal.qml:77
 #, kde-format
 msgid "Watch for Silence"
 msgstr "Vigila el silenci"
