@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-04 00:40+0000\n"
-"PO-Revision-Date: 2023-11-11 08:46+0200\n"
+"PO-Revision-Date: 2023-12-04 08:29+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -277,23 +277,22 @@ msgstr "Прозоре тло."
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Заголовок вкладки"
 
 #: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "Авто"
 
 #: src/widgets/SettingsDialog.qml:256
-#, fuzzy, kde-format
-#| msgid "Pending Process"
+#, kde-format
 msgid "Process"
-msgstr "Процес у черзі обробки"
+msgstr "Процес"
 
 #: src/widgets/SettingsDialog.qml:263
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "Каталог"
 
 #: src/widgets/SettingsDialog.qml:273
 #, kde-format

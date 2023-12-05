@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-04 00:40+0000\n"
-"PO-Revision-Date: 2023-11-11 10:40+0100\n"
+"PO-Revision-Date: 2023-12-04 11:54+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -277,23 +277,22 @@ msgstr "Doorschijnende achtergrond."
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Titel van tabblad"
 
 #: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "Automatisch"
 
 #: src/widgets/SettingsDialog.qml:256
-#, fuzzy, kde-format
-#| msgid "Pending Process"
+#, kde-format
 msgid "Process"
-msgstr "Wachtend proces"
+msgstr "Proces"
 
 #: src/widgets/SettingsDialog.qml:263
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "Map"
 
 #: src/widgets/SettingsDialog.qml:273
 #, kde-format
