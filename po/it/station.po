@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-04 00:40+0000\n"
-"PO-Revision-Date: 2023-11-12 10:43+0100\n"
+"PO-Revision-Date: 2023-12-05 06:23+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -278,23 +278,22 @@ msgstr "Sfondo trasparente."
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Nuovo titolo della scheda"
 
 #: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "Automatico"
 
 #: src/widgets/SettingsDialog.qml:256
-#, fuzzy, kde-format
-#| msgid "Pending Process"
+#, kde-format
 msgid "Process"
-msgstr "Processo in sospeso"
+msgstr "Processo"
 
 #: src/widgets/SettingsDialog.qml:263
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "Cartella"
 
 #: src/widgets/SettingsDialog.qml:273
 #, kde-format
