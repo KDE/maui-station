@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-04 00:40+0000\n"
-"PO-Revision-Date: 2023-10-28 12:20+0200\n"
+"PO-Revision-Date: 2023-12-06 12:38+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -146,7 +146,7 @@ msgstr ""
 #: src/main.qml:409
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "Aurreko saioa berrezarri nahi duzu?"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
@@ -280,23 +280,22 @@ msgstr "Atzeko plano zeharrargitsua."
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Fitxaren titulua"
 
 #: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "Automatikoa"
 
 #: src/widgets/SettingsDialog.qml:256
-#, fuzzy, kde-format
-#| msgid "Pending Process"
+#, kde-format
 msgid "Process"
-msgstr "Egiteke dagoen prozesua"
+msgstr "Prozesua"
 
 #: src/widgets/SettingsDialog.qml:263
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "Direktorioa"
 
 #: src/widgets/SettingsDialog.qml:273
 #, kde-format
@@ -306,12 +305,12 @@ msgstr "Terminala"
 #: src/widgets/SettingsDialog.qml:278
 #, kde-format
 msgid "Save Session"
-msgstr ""
+msgstr "Gorde saioa"
 
 #: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Berrezarri aurreko saioa abiatzean."
 
 #: src/widgets/SettingsDialog.qml:292
 #, kde-format
