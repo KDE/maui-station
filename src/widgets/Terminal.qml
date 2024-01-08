@@ -85,14 +85,7 @@ Maui.SplitViewItem
 
         onKeyPressed: (event) =>
         {
-            if ((event.key == Qt.Key_D) && (event.modifiers & Qt.ControlModifier))
-            {
-                closeSplit()
-                event.accepted = true
-                return
-            }
-
-            if ((event.key == Qt.Key_Tab) && (event.modifiers & Qt.ControlModifier))
+            if ((event.key == Qt.Key_Tab) && (event.modifiers & Qt.ControlModifier)  && (event.modifiers & Qt.ShiftModifier))
             {
                 control.SplitView.view.incrementCurrentIndex();
                 currentTerminal.forceActiveFocus()
@@ -138,6 +131,18 @@ Maui.SplitViewItem
                 {
                 case "nano" : settings.keysModelCurrentIndex = 1; break;
                 case "htop" : settings.keysModelCurrentIndex = 0; break;
+                }
+            }
+
+            function onFinished()
+            {
+                console.log("ASKED TO CLOSE SESSION")
+                if(currentTab.count === 1)
+                {
+                    closeTab(currentTabIndex)
+                }else
+                {
+                closeSplit()
                 }
             }
         }

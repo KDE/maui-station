@@ -18,11 +18,12 @@ Maui.ApplicationWindow
 
     title: currentTerminal? currentTerminal.session.title : ""
 
-    property alias dialog : _dialogLoader.item
-    property alias currentTab : _layout.currentItem
+    readonly property alias dialog : _dialogLoader.item
+    readonly property alias currentTab : _layout.currentItem
 
     readonly property Term.Terminal currentTerminal : currentTab.currentItem.terminal
     readonly property font defaultFont : Maui.Style.monospacedFont
+    readonly property alias currentTabIndex : _layout.currentIndex
 
     Maui.WindowBlur
     {
