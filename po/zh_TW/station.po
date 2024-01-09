@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-04 00:40+0000\n"
+"POT-Creation-Date: 2024-01-09 00:40+0000\n"
 "PO-Revision-Date: 2023-02-24 23:21+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -58,82 +58,82 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "開發者"
 
-#: src/main.qml:156 src/main.qml:211 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:157 src/main.qml:212 src/widgets/TutorialDialog.qml:49
 #, kde-format
 msgid "New Tab"
 msgstr "新增分頁"
 
-#: src/main.qml:164 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:165 src/widgets/TutorialDialog.qml:23
 #, kde-format
 msgid "Split"
 msgstr "分割"
 
-#: src/main.qml:174
+#: src/main.qml:175
 #, kde-format
 msgid "Tutorial"
 msgstr "教學"
 
-#: src/main.qml:186
+#: src/main.qml:187
 #, kde-format
 msgid "Settings"
 msgstr "設定"
 
-#: src/main.qml:196
+#: src/main.qml:197
 #, kde-format
 msgid "About"
 msgstr "關於"
 
-#: src/main.qml:207
+#: src/main.qml:208
 #, kde-format
 msgid "Nothing here"
 msgstr ""
 
-#: src/main.qml:208
+#: src/main.qml:209
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 
-#: src/main.qml:226
+#: src/main.qml:227
 #, kde-format
 msgid "Function Keys"
 msgstr "功能鍵"
 
-#: src/main.qml:235
+#: src/main.qml:236
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:244
+#: src/main.qml:245
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl 組合鍵"
 
-#: src/main.qml:253 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:254 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
 msgstr "導覽"
 
-#: src/main.qml:262
+#: src/main.qml:263
 #, kde-format
 msgid "Favorite"
 msgstr "最愛"
 
-#: src/main.qml:271
+#: src/main.qml:272
 #, kde-format
 msgid "Signals"
 msgstr ""
 
-#: src/main.qml:282
+#: src/main.qml:283
 #, kde-format
 msgid "More Signals"
 msgstr ""
 
-#: src/main.qml:377
+#: src/main.qml:378
 #, kde-format
 msgid "Close"
 msgstr "關閉"
 
-#: src/main.qml:378
+#: src/main.qml:379
 #, fuzzy, kde-format
 #| msgid ""
 #| "A process is currently still running. Are you sure you want to close it?"
@@ -142,7 +142,7 @@ msgid ""
 "it?"
 msgstr "還有在執行中的行程。您確定要關閉它嗎？"
 
-#: src/main.qml:409
+#: src/main.qml:410
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr ""
