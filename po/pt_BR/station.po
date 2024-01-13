@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2023.
+# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-09 00:40+0000\n"
-"PO-Revision-Date: 2023-11-14 12:04-0300\n"
+"PO-Revision-Date: 2024-01-11 21:01-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -278,23 +278,22 @@ msgstr "Fundo transparente."
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Título da aba"
 
 #: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "Automático"
 
 #: src/widgets/SettingsDialog.qml:256
-#, fuzzy, kde-format
-#| msgid "Pending Process"
+#, kde-format
 msgid "Process"
-msgstr "Processo pendente"
+msgstr "Processo"
 
 #: src/widgets/SettingsDialog.qml:263
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "Pasta"
 
 #: src/widgets/SettingsDialog.qml:273
 #, kde-format
