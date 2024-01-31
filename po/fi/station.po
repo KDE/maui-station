@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-09 00:40+0000\n"
-"PO-Revision-Date: 2023-05-28 16:47+0300\n"
+"PO-Revision-Date: 2023-12-11 18:13+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -43,10 +43,9 @@ msgid "Convergent terminal emulator."
 msgstr "Mukautuva pääte-emulaattori."
 
 #: src/main.cpp:40
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019–%1 Maui-kehitysryhmä"
+msgstr "© 2019–2023 Maui-kehitysryhmä"
 
 #: src/main.cpp:42
 #, kde-format
@@ -143,7 +142,7 @@ msgstr "Prosessi on yhä käynnissä. Haluatko varmasti keskeyttää ja sulkea s
 #: src/main.qml:410
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "Haluatko palauttaa edellisen istunnon?"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
@@ -224,14 +223,14 @@ msgstr "Ilmoittaa, kun jonossa ollut työ on valmistunut."
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Hiljainen"
 
 #: src/widgets/SettingsDialog.qml:163
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "Käynnissä oleva prosessi on ollut passiivinen yli 30 sekuntia."
+msgstr ""
+"Tee hälytys, kun käynnissä oleva tehtävä on ollut hiljaa yli 30 sekuntia."
 
 #: src/widgets/SettingsDialog.qml:176
 #, kde-format
@@ -276,23 +275,22 @@ msgstr "Läpikuultava tausta."
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Välilehden otsikko"
 
 #: src/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "Automaattinen"
 
 #: src/widgets/SettingsDialog.qml:256
-#, fuzzy, kde-format
-#| msgid "Pending Process"
+#, kde-format
 msgid "Process"
-msgstr "Jonossa oleva prosessi"
+msgstr "Prosessi"
 
 #: src/widgets/SettingsDialog.qml:263
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "Kansio"
 
 #: src/widgets/SettingsDialog.qml:273
 #, kde-format
@@ -302,12 +300,12 @@ msgstr "Pääte"
 #: src/widgets/SettingsDialog.qml:278
 #, kde-format
 msgid "Save Session"
-msgstr ""
+msgstr "Tallenna istunto"
 
 #: src/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Palauta edellinen istunto käynnistettäessä."
 
 #: src/widgets/SettingsDialog.qml:292
 #, kde-format
@@ -373,7 +371,7 @@ msgstr "Antialiasoi teksti"
 #: src/widgets/Terminal.qml:77
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Tarkkaile hiljaisuutta"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -396,10 +394,9 @@ msgid "Pending Process"
 msgstr "Jonossa oleva prosessi"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "Käynnissä oleva prosessi on ollut passiivinen yli 30 sekuntia."
+msgstr "Käynnissä oleva prosessi ”%1” on ollut passiivinen yli 30 sekuntia."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
