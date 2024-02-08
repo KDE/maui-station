@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-09 00:40+0000\n"
+"POT-Creation-Date: 2024-02-08 01:39+0000\n"
 "PO-Revision-Date: 2023-12-11 18:13+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -179,191 +179,190 @@ msgstr "Poista"
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:339
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:260
 #, kde-format
 msgid "Font"
 msgstr "Fontti"
 
-#: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
-#: src/widgets/SettingsDialog.qml:306
-#, kde-format
-msgid "Color Scheme"
-msgstr "Väriteema"
-
-#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:307
-#, kde-format
-msgid "Change the color scheme of the terminal."
-msgstr "Vaihda päätteen väriteemaa."
-
-#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:320
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Alerts"
 msgstr "Varoitukset"
 
-#: src/widgets/SettingsDialog.qml:138
+#: src/widgets/SettingsDialog.qml:59
 #, kde-format
 msgid "Running Task"
 msgstr "Käynnissä oleva tehtävä"
 
-#: src/widgets/SettingsDialog.qml:139
+#: src/widgets/SettingsDialog.qml:60
 #, kde-format
 msgid "Prevent from closing a running task."
 msgstr "Estää sulkemasta käynnissä olevaa tehtävää."
 
-#: src/widgets/SettingsDialog.qml:150
+#: src/widgets/SettingsDialog.qml:71
 #, kde-format
 msgid "Finished Task"
 msgstr "Valmistunut tehtävä"
 
-#: src/widgets/SettingsDialog.qml:151
+#: src/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
 msgstr "Ilmoittaa, kun jonossa ollut työ on valmistunut."
 
-#: src/widgets/SettingsDialog.qml:162
+#: src/widgets/SettingsDialog.qml:83
 #, kde-format
 msgid "Silent"
 msgstr "Hiljainen"
 
-#: src/widgets/SettingsDialog.qml:163
+#: src/widgets/SettingsDialog.qml:84
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
 "Tee hälytys, kun käynnissä oleva tehtävä on ollut hiljaa yli 30 sekuntia."
 
-#: src/widgets/SettingsDialog.qml:176
+#: src/widgets/SettingsDialog.qml:97
 #, kde-format
 msgid "Interface"
 msgstr "Liitäntä"
 
-#: src/widgets/SettingsDialog.qml:181
+#: src/widgets/SettingsDialog.qml:102
 #, kde-format
 msgid "Color"
 msgstr "Väri"
 
-#: src/widgets/SettingsDialog.qml:182
+#: src/widgets/SettingsDialog.qml:103
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "Vaihda vaalean ja tumman värimallin välillä."
 
-#: src/widgets/SettingsDialog.qml:190
+#: src/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Light"
 msgstr "Vaalea"
 
-#: src/widgets/SettingsDialog.qml:197
+#: src/widgets/SettingsDialog.qml:118
 #, kde-format
 msgid "Dark"
 msgstr "Tumma"
 
-#: src/widgets/SettingsDialog.qml:205
+#: src/widgets/SettingsDialog.qml:126
 #, kde-format
 msgid "Adaptive"
 msgstr "Mukautuva"
 
-#: src/widgets/SettingsDialog.qml:229
+#: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Translucency"
 msgstr "Läpikuultavuus"
 
-#: src/widgets/SettingsDialog.qml:230
+#: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Translucent background."
 msgstr "Läpikuultava tausta."
 
-#: src/widgets/SettingsDialog.qml:241
+#: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Tab Title"
 msgstr "Välilehden otsikko"
 
-#: src/widgets/SettingsDialog.qml:249
+#: src/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "Auto"
 msgstr "Automaattinen"
 
-#: src/widgets/SettingsDialog.qml:256
+#: src/widgets/SettingsDialog.qml:177
 #, kde-format
 msgid "Process"
 msgstr "Prosessi"
 
-#: src/widgets/SettingsDialog.qml:263
+#: src/widgets/SettingsDialog.qml:184
 #, kde-format
 msgid "Directory"
 msgstr "Kansio"
 
-#: src/widgets/SettingsDialog.qml:273
+#: src/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Terminal"
 msgstr "Pääte"
 
-#: src/widgets/SettingsDialog.qml:278
+#: src/widgets/SettingsDialog.qml:199
 #, kde-format
 msgid "Save Session"
 msgstr "Tallenna istunto"
 
-#: src/widgets/SettingsDialog.qml:279
+#: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Restore previous session on startup."
 msgstr "Palauta edellinen istunto käynnistettäessä."
 
-#: src/widgets/SettingsDialog.qml:292
+#: src/widgets/SettingsDialog.qml:213
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Mukautuva väriteema"
 
-#: src/widgets/SettingsDialog.qml:293
+#: src/widgets/SettingsDialog.qml:214
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Nykyiseen tyyliin perustuvat värit."
 
-#: src/widgets/SettingsDialog.qml:321
+#: src/widgets/SettingsDialog.qml:227
+#, kde-format
+msgid "Color Scheme"
+msgstr "Väriteema"
+
+#: src/widgets/SettingsDialog.qml:228
+#, kde-format
+msgid "Change the color scheme of the terminal."
+msgstr "Vaihda päätteen väriteemaa."
+
+#: src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "Varoita töistä ja estä sulkemasta niitä."
 
-#: src/widgets/SettingsDialog.qml:334
+#: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Display"
 msgstr "Näkymä"
 
-#: src/widgets/SettingsDialog.qml:340
+#: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Font family and size."
 msgstr "Fonttiperhe ja -koko."
 
-#: src/widgets/SettingsDialog.qml:352
+#: src/widgets/SettingsDialog.qml:273
 #, kde-format
 msgid "Line Spacing"
 msgstr "Riviväli"
 
-#: src/widgets/SettingsDialog.qml:365
+#: src/widgets/SettingsDialog.qml:286
 #, kde-format
 msgid "History Size"
 msgstr "Historian koko"
 
-#: src/widgets/SettingsDialog.qml:366
+#: src/widgets/SettingsDialog.qml:287
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
 "Puskurissa pidettävien rivien määrä; alle nolla tarkoittaa ääretöntä määrää."
 
-#: src/widgets/SettingsDialog.qml:378
+#: src/widgets/SettingsDialog.qml:299
 #, kde-format
 msgid "Enable Bold"
 msgstr "Käytä lihavointia"
 
-#: src/widgets/SettingsDialog.qml:389
+#: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "Vilkkuva kohdistin"
 
-#: src/widgets/SettingsDialog.qml:400
+#: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "Täysin kohdistinkorkeus"
 
-#: src/widgets/SettingsDialog.qml:411
+#: src/widgets/SettingsDialog.qml:332
 #, kde-format
 msgid "Antialias text"
 msgstr "Antialiasoi teksti"

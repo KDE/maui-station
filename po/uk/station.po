@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-09 00:40+0000\n"
+"POT-Creation-Date: 2024-02-08 01:39+0000\n"
 "PO-Revision-Date: 2023-12-04 08:29+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -181,192 +181,191 @@ msgstr "Вилучити"
 msgid "Edit"
 msgstr "Змінити"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:339
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:260
 #, kde-format
 msgid "Font"
 msgstr "Шрифт"
 
-#: src/widgets/SettingsDialog.qml:43 src/widgets/SettingsDialog.qml:47
-#: src/widgets/SettingsDialog.qml:306
-#, kde-format
-msgid "Color Scheme"
-msgstr "Схема кольорів"
-
-#: src/widgets/SettingsDialog.qml:48 src/widgets/SettingsDialog.qml:307
-#, kde-format
-msgid "Change the color scheme of the terminal."
-msgstr "Зміна кольорової схеми термінала."
-
-#: src/widgets/SettingsDialog.qml:135 src/widgets/SettingsDialog.qml:320
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Alerts"
 msgstr "Попередження"
 
-#: src/widgets/SettingsDialog.qml:138
+#: src/widgets/SettingsDialog.qml:59
 #, kde-format
 msgid "Running Task"
 msgstr "Запущене завдання"
 
-#: src/widgets/SettingsDialog.qml:139
+#: src/widgets/SettingsDialog.qml:60
 #, kde-format
 msgid "Prevent from closing a running task."
 msgstr "Запобігти закриттю запущеного завдання."
 
-#: src/widgets/SettingsDialog.qml:150
+#: src/widgets/SettingsDialog.qml:71
 #, kde-format
 msgid "Finished Task"
 msgstr "Завершене завдання"
 
-#: src/widgets/SettingsDialog.qml:151
+#: src/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
 msgstr "Видати сповіщення, коли виконання процесу буде завершено."
 
-#: src/widgets/SettingsDialog.qml:162
+#: src/widgets/SettingsDialog.qml:83
 #, kde-format
 msgid "Silent"
 msgstr "Мовчання"
 
-#: src/widgets/SettingsDialog.qml:163
+#: src/widgets/SettingsDialog.qml:84
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
 "Видати сповіщення, якщо запущене завдання не видає даних понад 30 секунд."
 
-#: src/widgets/SettingsDialog.qml:176
+#: src/widgets/SettingsDialog.qml:97
 #, kde-format
 msgid "Interface"
 msgstr "Інтерфейс"
 
-#: src/widgets/SettingsDialog.qml:181
+#: src/widgets/SettingsDialog.qml:102
 #, kde-format
 msgid "Color"
 msgstr "Колір"
 
-#: src/widgets/SettingsDialog.qml:182
+#: src/widgets/SettingsDialog.qml:103
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "Перемкнутися між світлою і темною схемою кольорів."
 
-#: src/widgets/SettingsDialog.qml:190
+#: src/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Light"
 msgstr "Світла"
 
-#: src/widgets/SettingsDialog.qml:197
+#: src/widgets/SettingsDialog.qml:118
 #, kde-format
 msgid "Dark"
 msgstr "Темна"
 
-#: src/widgets/SettingsDialog.qml:205
+#: src/widgets/SettingsDialog.qml:126
 #, kde-format
 msgid "Adaptive"
 msgstr "Адаптивна"
 
-#: src/widgets/SettingsDialog.qml:229
+#: src/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Translucency"
 msgstr "Прозорість"
 
-#: src/widgets/SettingsDialog.qml:230
+#: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Translucent background."
 msgstr "Прозоре тло."
 
-#: src/widgets/SettingsDialog.qml:241
+#: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Tab Title"
 msgstr "Заголовок вкладки"
 
-#: src/widgets/SettingsDialog.qml:249
+#: src/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "Auto"
 msgstr "Авто"
 
-#: src/widgets/SettingsDialog.qml:256
+#: src/widgets/SettingsDialog.qml:177
 #, kde-format
 msgid "Process"
 msgstr "Процес"
 
-#: src/widgets/SettingsDialog.qml:263
+#: src/widgets/SettingsDialog.qml:184
 #, kde-format
 msgid "Directory"
 msgstr "Каталог"
 
-#: src/widgets/SettingsDialog.qml:273
+#: src/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Terminal"
 msgstr "Термінал"
 
-#: src/widgets/SettingsDialog.qml:278
+#: src/widgets/SettingsDialog.qml:199
 #, kde-format
 msgid "Save Session"
 msgstr "Зберігати сеанс"
 
-#: src/widgets/SettingsDialog.qml:279
+#: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Restore previous session on startup."
 msgstr "Відновлювати попередній сеанс після запуску."
 
-#: src/widgets/SettingsDialog.qml:292
+#: src/widgets/SettingsDialog.qml:213
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Адаптивна схема кольорів"
 
-#: src/widgets/SettingsDialog.qml:293
+#: src/widgets/SettingsDialog.qml:214
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Кольори, які засновано на поточному стилі."
 
-#: src/widgets/SettingsDialog.qml:321
+#: src/widgets/SettingsDialog.qml:227
+#, kde-format
+msgid "Color Scheme"
+msgstr "Схема кольорів"
+
+#: src/widgets/SettingsDialog.qml:228
+#, kde-format
+msgid "Change the color scheme of the terminal."
+msgstr "Зміна кольорової схеми термінала."
+
+#: src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "Попереджати щодо процесів і запобігати їхньому закриттю."
 
-#: src/widgets/SettingsDialog.qml:334
+#: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Display"
 msgstr "Показ"
 
-#: src/widgets/SettingsDialog.qml:340
+#: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Font family and size."
 msgstr "Гарнітура та розмір шрифту."
 
-#: src/widgets/SettingsDialog.qml:352
+#: src/widgets/SettingsDialog.qml:273
 #, kde-format
 msgid "Line Spacing"
 msgstr "Інтервал між рядками"
 
-#: src/widgets/SettingsDialog.qml:365
+#: src/widgets/SettingsDialog.qml:286
 #, kde-format
 msgid "History Size"
 msgstr "Розмір журналу"
 
-#: src/widgets/SettingsDialog.qml:366
+#: src/widgets/SettingsDialog.qml:287
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
 "Кількість рядків, які слід зберігати у буфері. Якщо вказано значення, яке є "
 "меншим за нуль, зберігатимуться усі доступні рядки."
 
-#: src/widgets/SettingsDialog.qml:378
+#: src/widgets/SettingsDialog.qml:299
 #, kde-format
 msgid "Enable Bold"
 msgstr "Увімкнути напівжирний"
 
-#: src/widgets/SettingsDialog.qml:389
+#: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "Миготливий курсор"
 
-#: src/widgets/SettingsDialog.qml:400
+#: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "Повна висота курсора"
 
-#: src/widgets/SettingsDialog.qml:411
+#: src/widgets/SettingsDialog.qml:332
 #, kde-format
 msgid "Antialias text"
 msgstr "Згладжування тексту"
