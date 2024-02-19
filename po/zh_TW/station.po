@@ -1,36 +1,36 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
+# SPDX-FileCopyrightText: 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-08 01:39+0000\n"
-"PO-Revision-Date: 2023-02-24 23:21+0900\n"
+"PO-Revision-Date: 2024-02-19 07:38+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
-"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "暫停"
 
 #: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr ""
+msgstr "中斷"
 
 #: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr ""
+msgstr "強制停止"
 
 #: src/main.cpp:36
 #, kde-format
@@ -43,10 +43,9 @@ msgid "Convergent terminal emulator."
 msgstr "響應式終端機模擬器。"
 
 #: src/main.cpp:40
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-%1 Maui 開發團隊"
+msgstr "© 2019-2023 Maui 開發團隊"
 
 #: src/main.cpp:42
 #, kde-format
@@ -86,12 +85,12 @@ msgstr "關於"
 #: src/main.qml:208
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "這裡什麼都沒有"
 
 #: src/main.qml:209
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "開啟新分頁或分割畫面來開始使用終端機。"
 
 #: src/main.qml:227
 #, kde-format
@@ -121,12 +120,12 @@ msgstr "最愛"
 #: src/main.qml:272
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "訊號"
 
 #: src/main.qml:283
 #, kde-format
 msgid "More Signals"
-msgstr ""
+msgstr "更多訊號"
 
 #: src/main.qml:378
 #, kde-format
@@ -134,18 +133,16 @@ msgid "Close"
 msgstr "關閉"
 
 #: src/main.qml:379
-#, fuzzy, kde-format
-#| msgid ""
-#| "A process is currently still running. Are you sure you want to close it?"
+#, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr "還有在執行中的行程。您確定要關閉它嗎？"
+msgstr "還有在執行中的行程。您確定要中斷並關閉它嗎？"
 
 #: src/main.qml:410
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "您要回復前一個工作階段嗎？"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
@@ -183,46 +180,45 @@ msgid "Edit"
 msgstr "編輯"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:260
-#, fuzzy, kde-format
-#| msgid "Fonts"
+#, kde-format
 msgid "Font"
 msgstr "字型"
 
 #: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "警示"
 
 #: src/widgets/SettingsDialog.qml:59
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "執行中工作"
 
 #: src/widgets/SettingsDialog.qml:60
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "防止關閉一個執行中的工作。"
 
 #: src/widgets/SettingsDialog.qml:71
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "已完成工作"
 
 #: src/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "待處理工作已完成時傳送通知。"
 
 #: src/widgets/SettingsDialog.qml:83
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "靜默"
 
 #: src/widgets/SettingsDialog.qml:84
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr ""
+msgstr "執行中的工作靜默超過 30 秒時提出警示。"
 
 #: src/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -235,10 +231,9 @@ msgid "Color"
 msgstr "色彩"
 
 #: src/widgets/SettingsDialog.qml:103
-#, fuzzy, kde-format
-#| msgid "Switch between light and dark colorscheme"
+#, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "在明亮和暗色配色方案間切換"
+msgstr "在明亮和暗色配色方案間切換。"
 
 #: src/widgets/SettingsDialog.qml:111
 #, kde-format
@@ -261,30 +256,29 @@ msgid "Translucency"
 msgstr "半透明"
 
 #: src/widgets/SettingsDialog.qml:151
-#, fuzzy, kde-format
-#| msgid "Translucency"
+#, kde-format
 msgid "Translucent background."
-msgstr "半透明"
+msgstr "半透明背景。"
 
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "分頁標題"
 
 #: src/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "自動"
 
 #: src/widgets/SettingsDialog.qml:177
 #, kde-format
 msgid "Process"
-msgstr ""
+msgstr "行程"
 
 #: src/widgets/SettingsDialog.qml:184
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "目錄"
 
 #: src/widgets/SettingsDialog.qml:194
 #, kde-format
@@ -294,12 +288,12 @@ msgstr "終端機"
 #: src/widgets/SettingsDialog.qml:199
 #, kde-format
 msgid "Save Session"
-msgstr ""
+msgstr "儲存工作階段"
 
 #: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "啟動時回覆前一個工作階段。"
 
 #: src/widgets/SettingsDialog.qml:213
 #, kde-format
@@ -307,10 +301,9 @@ msgid "Adaptive Color Scheme"
 msgstr "自動調整配色方案"
 
 #: src/widgets/SettingsDialog.qml:214
-#, fuzzy, kde-format
-#| msgid "Colors based on the current style"
+#, kde-format
 msgid "Colors based on the current style."
-msgstr "基於目前風格的色彩"
+msgstr "基於目前風格的色彩。"
 
 #: src/widgets/SettingsDialog.qml:227
 #, kde-format
@@ -318,26 +311,24 @@ msgid "Color Scheme"
 msgstr "配色方案"
 
 #: src/widgets/SettingsDialog.qml:228
-#, fuzzy, kde-format
-#| msgid "Change the color scheme of the terminal"
+#, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "變更終端機的配色方案"
+msgstr "變更終端機的配色方案。"
 
 #: src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "為行程警示並防止關閉它們。"
 
 #: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "顯示"
 
 #: src/widgets/SettingsDialog.qml:261
-#, fuzzy, kde-format
-#| msgid "Configure the terminal font family and size"
+#, kde-format
 msgid "Font family and size."
-msgstr "設定終端機字型家族與大小"
+msgstr "字型家族與大小。"
 
 #: src/widgets/SettingsDialog.qml:273
 #, kde-format
@@ -347,62 +338,62 @@ msgstr "行間距"
 #: src/widgets/SettingsDialog.qml:286
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "歷史大小"
 
 #: src/widgets/SettingsDialog.qml:287
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
-msgstr ""
+msgstr "要保留在緩衝區的行數。小於零代表無限行。"
 
 #: src/widgets/SettingsDialog.qml:299
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "啟用粗體"
 
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "閃爍游標"
 
 #: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "完整游標高度"
 
 #: src/widgets/SettingsDialog.qml:332
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "文字反鋸齒"
 
 #: src/widgets/Terminal.qml:77
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "監控靜默"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "行程已完成"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "分頁的工作已完成執行：%1"
 
 #: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Check"
-msgstr ""
+msgstr "檢查"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "待處理行程"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "執行中行程「%1」已超過 30 秒沒有回應。"
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
