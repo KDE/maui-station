@@ -64,7 +64,7 @@
     <p xml:lang="es">Station es un emulador de terminal convergente, preparado para escritorios y dispositivos móviles que usen GNU/Linux.</p>
     <p xml:lang="eu">«Station» terminal emulatzaile konbergente bat da, GNU/Linux erabiltzen duten mahaigain eta mugikorretarako prest dagoena.</p>
     <p xml:lang="fi">Station on mukautuva pääte-emulaattori, ja sopii niin työpöydälle kuin GNU/Linuxia käyttäviin mobiililaitteisiinkin.</p>
-    <p xml:lang="fr">Le logiciel « Station » est un émulateur de terminal convergent, prêt pour les appareils de bureau et mobiles utilisant « GNU/Linux ».</p>
+    <p xml:lang="fr">Le logiciel « Station » est un émulateur de terminal convergent, prêt pour les appareils de bureau et mobiles utilisant « GNU/Linux ».</p>
     <p xml:lang="gl">Station é un emulador de terminal converxente, listo para dispositivos de escritorio e móbiles con GNU/Linux.</p>
     <p xml:lang="id">Station adalah emulator terminal terpusat, siap untuk peranti desktop dan ponsel yang menggunakan GNU/Linux.</p>
     <p xml:lang="it">Station è un emulatore di terminale convergente, pronto per desktop e dispositivi mobili che utilizzano GNU/Linux.</p>
@@ -124,6 +124,9 @@
   </provides>
   <project_group>KDE</project_group>
   <releases>
+  <release version="3.1.0" date="2024-02-26">
+    <url>https://mauikit.org/blog/maui-release-briefing-5/</url>
+  </release>
     <release version="3.0.2" date="2023-11-30">
       <url>https://mauikit.org/blog/maui-release-briefing-4/</url>
     </release>
