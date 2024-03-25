@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-08 01:39+0000\n"
-"PO-Revision-Date: 2024-02-26 21:30+0100\n"
+"PO-Revision-Date: 2024-03-24 10:34+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo.org>\n"
 "Language: eo\n"
@@ -41,17 +41,17 @@ msgstr "Station"
 #: src/main.cpp:38
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr ""
+msgstr "Konverĝa terminal-emulilo."
 
 #: src/main.cpp:40
 #, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr ""
+msgstr "© 2019-2023 Maŭi Disvolva Teamo"
 
 #: src/main.cpp:42
 #, kde-format
 msgid "Camilo Higuita"
-msgstr ""
+msgstr "Camilo Higuita"
 
 #: src/main.cpp:42
 #, kde-format
@@ -86,27 +86,27 @@ msgstr "Pri"
 #: src/main.qml:208
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Nenio ĉi tie"
 
 #: src/main.qml:209
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "Por komenci haki, malfermu novan langeton aŭ dividitan ekranon."
 
 #: src/main.qml:227
 #, kde-format
 msgid "Function Keys"
-msgstr ""
+msgstr "Funkciaj Ŝlosiloj"
 
 #: src/main.qml:236
 #, kde-format
 msgid "Nano"
-msgstr ""
+msgstr "Nano"
 
 #: src/main.qml:245
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr ""
+msgstr "Ctrl-Modifiloj"
 
 #: src/main.qml:254 src/widgets/TutorialDialog.qml:113
 #, kde-format
@@ -121,12 +121,12 @@ msgstr "Ŝatata"
 #: src/main.qml:272
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "Signaloj"
 
 #: src/main.qml:283
 #, kde-format
 msgid "More Signals"
-msgstr ""
+msgstr "Pli da Signaloj"
 
 #: src/main.qml:378
 #, kde-format
@@ -143,12 +143,12 @@ msgstr ""
 #: src/main.qml:410
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "Ĉu vi volas restarigi la antaŭan seancon?"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
 msgid "New Command"
-msgstr ""
+msgstr "Nova Komando"
 
 #: src/widgets/CommandShortcuts.qml:33
 #, kde-format
@@ -158,17 +158,17 @@ msgstr "Redakti Komandon"
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr ""
+msgstr "Redakti komandan ŝparvojon"
 
 #: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "No Commands"
-msgstr ""
+msgstr "Neniuj Komandoj"
 
 #: src/widgets/CommandShortcuts.qml:49
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr ""
+msgstr "Komenci aldoni novajn komandajn ŝparvojojn"
 
 #: src/widgets/CommandShortcuts.qml:91
 #, kde-format
@@ -193,27 +193,27 @@ msgstr "Avertoj"
 #: src/widgets/SettingsDialog.qml:59
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Kuranta Tasko"
 
 #: src/widgets/SettingsDialog.qml:60
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Malhelpi fermi kurantan taskon."
 
 #: src/widgets/SettingsDialog.qml:71
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Finita Tasko"
 
 #: src/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Elsendi sciigon kiam pritraktata procezo finiĝis."
 
 #: src/widgets/SettingsDialog.qml:83
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Silenta"
 
 #: src/widgets/SettingsDialog.qml:84
 #, kde-format
@@ -234,7 +234,7 @@ msgstr "Koloro"
 #: src/widgets/SettingsDialog.qml:103
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr ""
+msgstr "Ŝanĝu inter hela kaj malhela kolorskemo."
 
 #: src/widgets/SettingsDialog.qml:111
 #, kde-format
@@ -259,12 +259,12 @@ msgstr "Travidebleco"
 #: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Translucent background."
-msgstr ""
+msgstr "Travidebla fono."
 
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Tabeto Titolo"
 
 #: src/widgets/SettingsDialog.qml:170
 #, kde-format
@@ -294,17 +294,17 @@ msgstr "Konservi Seancon"
 #: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Restarigi antaŭan seancon ĉe ekfunkciigo."
 
 #: src/widgets/SettingsDialog.qml:213
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr ""
+msgstr "Adapta Kolorskemo"
 
 #: src/widgets/SettingsDialog.qml:214
 #, kde-format
 msgid "Colors based on the current style."
-msgstr ""
+msgstr "Koloroj bazitaj sur la nuna stilo."
 
 #: src/widgets/SettingsDialog.qml:227
 #, kde-format
@@ -319,7 +319,7 @@ msgstr "Ŝanĝi kolorskemon de la terminalo."
 #: src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Atenti pri procezoj kaj malebligu fermi ilin."
 
 #: src/widgets/SettingsDialog.qml:255
 #, kde-format
@@ -329,7 +329,7 @@ msgstr "Montri"
 #: src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Font family and size."
-msgstr ""
+msgstr "Tipara familio kaj grandeco."
 
 #: src/widgets/SettingsDialog.qml:273
 #, kde-format
@@ -345,41 +345,43 @@ msgstr "Historio Grandeco"
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Nombro de linioj por konservi en bufro. Malpli ol nulo signifas senfinajn "
+"liniojn."
 
 #: src/widgets/SettingsDialog.qml:299
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Ebligi Grasan"
 
 #: src/widgets/SettingsDialog.qml:310
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Palpebrumanta Kursoro"
 
 #: src/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Plena Kursor-Alteco"
 
 #: src/widgets/SettingsDialog.qml:332
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Kontraŭaliasi teksto"
 
 #: src/widgets/Terminal.qml:77
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Atenti pri Silento"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Procezo Finita"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "Rulanta tasko finiĝis por langeto: %1"
 
 #: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
 #, kde-format
@@ -389,12 +391,12 @@ msgstr "Kontroli"
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Pritraktata Procezo"
 
 #: src/widgets/TerminalLayout.qml:48
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Rulanta procezo '%1' estas neaktiva dum pli ol 30 sekundoj."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format
@@ -404,12 +406,12 @@ msgstr "Ŝparvojoj"
 #: src/widgets/TutorialDialog.qml:19
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
-msgstr ""
+msgstr "Kiam vi uzas klavaron, vi povas uzi la sekvajn ŝparvojojn por navigi."
 
 #: src/widgets/TutorialDialog.qml:24
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr ""
+msgstr "Malfermu novan dividitan vidon, vertikale aŭ horizontale."
 
 #: src/widgets/TutorialDialog.qml:69
 #, kde-format
@@ -419,7 +421,7 @@ msgstr "Trovi"
 #: src/widgets/TutorialDialog.qml:70
 #, kde-format
 msgid "Open the find bar."
-msgstr ""
+msgstr "Malfermu la trovi-breton."
 
 #: src/widgets/TutorialDialog.qml:90
 #, kde-format
@@ -429,42 +431,43 @@ msgstr "Ŝalti"
 #: src/widgets/TutorialDialog.qml:91
 #, kde-format
 msgid "Switch between split views."
-msgstr ""
+msgstr "Ŝanĝu inter dividitaj vidoj."
 
 #: src/widgets/TutorialDialog.qml:114
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
-msgstr ""
+msgstr "Sur tuŝaj aparatoj vi povas uzi la jenajn gestojn por navigi."
 
 #: src/widgets/TutorialDialog.qml:118
 #, kde-format
 msgid "Up & Down"
-msgstr ""
+msgstr "Supren malsupren"
 
 #: src/widgets/TutorialDialog.qml:119
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr ""
+msgstr "Glitu supren aŭ malsupren por navigi la historion de komandoj."
 
 #: src/widgets/TutorialDialog.qml:124
 #, kde-format
 msgid "Left & Right"
-msgstr ""
+msgstr "Maldekstra dekstra"
 
 #: src/widgets/TutorialDialog.qml:125
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
+"Glitu maldekstren aŭ dekstren por moviĝi tra la komandlinio por redakti."
 
 #: src/widgets/TutorialDialog.qml:130
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr ""
+msgstr "Du Fingroj Maldekstre & Dekstre"
 
 #: src/widgets/TutorialDialog.qml:131
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr ""
+msgstr "Glitu supren aŭ malsupren per du fingroj por rulumi."
 
 #: src/widgets/TutorialDialog.qml:138
 #, kde-format
@@ -479,7 +482,7 @@ msgstr "Krei"
 #: src/widgets/TutorialDialog.qml:143
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr ""
+msgstr "Krei novan komandan ŝparvojon por rapide ekigi agojn."
 
 #: src/widgets/TutorialDialog.qml:147
 #, kde-format
