@@ -1,16 +1,11 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
-import org.mauikit.controls 1.2 as Maui
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import org.mauikit.controls as Maui
 
 Maui.SettingsDialog
 {
     id: control
-
-    persistent: false
-
-    page.showTitle: false
-    headBar.visible: false
 
     Maui.SectionGroup
     {
@@ -27,6 +22,7 @@ Maui.SettingsDialog
             {
                 checkable: false
                 autoExclusive: false
+
                 Action
                 {
                     text: "↑"

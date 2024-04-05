@@ -1,12 +1,13 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
+import QtQuick
+import QtCore
 
-import Qt.labs.settings 1.0
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.terminal 1.0 as Term
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.maui.station 1.0 as Station
+import org.mauikit.controls as Maui
+import org.mauikit.terminal as Term
+
+import org.maui.station as Station
 
 import "widgets"
 

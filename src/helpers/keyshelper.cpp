@@ -3,7 +3,7 @@
 #include <QDebug>
 #include <QKeyEvent>
 
-#include <KI18n/KLocalizedString>
+#include <KLocalizedString>
 
 KeysHelper::KeysHelper(QObject *parent)
     : QAbstractListModel(parent)

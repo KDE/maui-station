@@ -1,8 +1,8 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
+import QtQuick
+import QtQuick.Controls
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.terminal 1.0 as Term
+import org.mauikit.controls as Maui
+import org.mauikit.terminal as Term
 
 Maui.SplitViewItem
 {

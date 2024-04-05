@@ -1,11 +1,11 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.terminal 1.0 as Term
+import org.mauikit.controls as Maui
+import org.mauikit.terminal as Term
 
-import org.maui.station 1.0 as Station
+import org.maui.station as Station
 
 Maui.SettingsDialog
 {
@@ -54,6 +54,7 @@ Maui.SettingsDialog
         Maui.SettingsPage
         {
             title: i18n("Alerts")
+
             Maui.SectionItem
             {
                 label1.text: i18n("Running Task")
@@ -97,7 +98,7 @@ Maui.SettingsDialog
         title: i18n("Interface")
 //        description: i18n("Configure the application components and behaviour.")
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Color")
             label2.text: i18n("Switch between light and dark colorscheme.")
@@ -145,7 +146,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Translucency")
             label2.text: i18n("Translucent background.")
@@ -157,7 +158,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Tab Title")
 
@@ -194,7 +195,7 @@ Maui.SettingsDialog
         title: i18n("Terminal")
 //        description: i18n("Configure the app UI and plugins.")
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Save Session")
             label2.text: i18n("Restore previous session on startup.")
@@ -208,7 +209,7 @@ Maui.SettingsDialog
 
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Adaptive Color Scheme")
             label2.text: i18n("Colors based on the current style.")
@@ -222,7 +223,7 @@ Maui.SettingsDialog
 
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Color Scheme")
             label2.text: i18n("Change the color scheme of the terminal.")
@@ -236,7 +237,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Alerts")
             label2.text: i18n("Alert on processes and prevent closing them.")
@@ -255,7 +256,7 @@ Maui.SettingsDialog
         title: i18n("Display")
 //        description: i18n("Configure the terminal font and display options.")
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Font")
             label2.text: i18n("Font family and size.")
@@ -268,7 +269,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text:  i18n("Line Spacing")
 
@@ -280,8 +281,7 @@ Maui.SettingsDialog
             }
         }
 
-
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text:  i18n("History Size")
             label2.text: i18n("Number of lines to keep in buffer. Less than zero means infinite lines.")
@@ -294,7 +294,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text:  i18n("Enable Bold")
 
@@ -305,7 +305,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text:  i18n("Blinking Cursor")
 
@@ -316,7 +316,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text:  i18n("Full Cursor Height")
 
@@ -327,7 +327,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text:  i18n("Antialias text")
 

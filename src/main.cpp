@@ -4,10 +4,10 @@
 #include <QQmlContext>
 #include <QIcon>
 
-#include <MauiKit3/Core/mauiapp.h>
-#include <MauiKit3/Terminal/moduleinfo.h>
+#include <MauiKit4/Core/mauiapp.h>
+#include <MauiKit4/Terminal/moduleinfo.h>
 
-#include <KI18n/KLocalizedString>
+#include <KLocalizedString>
 #include <KAboutData>
 
 #include "helpers/keyshelper.h"
@@ -23,9 +23,6 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-
     QApplication app(argc, argv);
 
     app.setOrganizationName("Maui");
