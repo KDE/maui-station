@@ -55,6 +55,11 @@
   <summary xml:lang="uk">Емулятор термінала</summary>
   <summary xml:lang="x-test">xxTerminal Emulatorxx</summary>
   <summary xml:lang="zh-TW">終端機模擬器</summary>
+  <developer>
+    <id>org.mauikit</id>
+    <name>maui</name>
+    <url>https://mauikit.org/</url>
+  </developer>
   <description>
     <p>Station is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.</p>
     <p xml:lang="ca">L'Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que usen el GNU/Linux.</p>
@@ -84,6 +89,12 @@
   <url type="homepage">https://apps.kde.org/station</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=station</url>
   <url type="donation">https://kde.org/community/donations</url>
+  <url type="vcs-browser">https://invent.kde.org/maui/station</url>
+    <categories>
+    <category>System</category>
+    <category>Qt</category>
+    <category>TerminalEmulator</category>
+  </categories>
   <screenshots>
     <screenshot type="default">
       <image type="source">https://cdn.kde.org/screenshots/station/station-stable.png</image>
