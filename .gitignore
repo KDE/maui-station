@@ -116,4 +116,5 @@ target_wrapper.*
 # QtCreator CMake
 CMakeLists.txt.user*
 
-build
+build/
+build.6/

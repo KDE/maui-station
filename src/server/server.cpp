@@ -80,7 +80,7 @@ bool AppInstance::attachToExistingInstance(const QList<QUrl>& inputUrls, bool sp
         return true;
     }
 
-    for (const auto& interface: qAsConst(dolphinInterfaces))
+    for (const auto& interface: std::as_const(dolphinInterfaces))
     {
         auto reply = interface.first->openTabs(QUrl::toStringList(inputUrls, QUrl::PreferLocalFile), splitView);
         reply.waitForFinished();
