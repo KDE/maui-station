@@ -7,13 +7,15 @@ Maui.SettingsDialog
 {
     id: control
 
+    Maui.Controls.title: i18n("Shortcuts")
+
     Maui.SectionGroup
     {
         Layout.fillWidth: true
         title: i18n("Shortcuts")
         description: i18n("When using a keyboard you can use the following shortcuts to navigate.")
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Split")
             label2.text: i18n("Open a new split view, vertically or horizontally.")
@@ -40,7 +42,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("New Tab")
 
@@ -60,7 +62,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Find")
             label2.text: i18n("Open the find bar.")
@@ -81,7 +83,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SectionItem
+        Maui.FlexSectionItem
         {
             label1.text: i18n("Switch")
             label2.text: i18n("Switch between split views.")

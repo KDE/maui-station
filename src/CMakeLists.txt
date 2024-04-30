@@ -8,8 +8,9 @@ set(station_SRCS
     helpers/station.cpp
     helpers/keyshelper.cpp
     helpers/commandsmodel.cpp
-    helpers/fonts.cpp
-    server/server.cpp
+    server/server.cpp)
+
+qt_add_resources(station_QML_QRC
     assets/img_assets.qrc
     qml.qrc)
 

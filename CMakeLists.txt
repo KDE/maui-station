@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(STATION_VERSION 3.1.1)
+set(STATION_VERSION 4.0.0)
 add_compile_definitions(APP_COPYRIGHT_NOTICE="© 2019-2024 Maui Development Team")
 
 project(station LANGUAGES CXX VERSION ${STATION_VERSION})
@@ -22,11 +22,9 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
 include(KDEClangFormat)
-include(ECMInstallIcons)
 include(ECMSetupVersion)
 include(ECMSourceVersionControl)
 include(FeatureSummary)
-include(ECMQMLModules)
 
 find_package(Qt6 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Widgets DBus)
 find_package(KF6 ${REQUIRED_KF_VERSION} REQUIRED COMPONENTS I18n CoreAddons)

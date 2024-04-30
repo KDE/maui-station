@@ -55,7 +55,7 @@ Maui.SettingsDialog
         {
             title: i18n("Alerts")
 
-            Maui.SectionItem
+            Maui.FlexSectionItem
             {
                 label1.text: i18n("Running Task")
                 label2.text: i18n("Prevent from closing a running task.")
@@ -67,7 +67,7 @@ Maui.SettingsDialog
                 }
             }
 
-            Maui.SectionItem
+            Maui.FlexSectionItem
             {
                 label1.text: i18n("Finished Task")
                 label2.text: i18n("Emit a notification when a pending process has finished.")
@@ -79,7 +79,7 @@ Maui.SettingsDialog
                 }
             }
 
-            Maui.SectionItem
+            Maui.FlexSectionItem
             {
                 label1.text: i18n("Silent")
                 label2.text: i18n("Emit an alert when a running task has been silent for more than 30 seconds.")
