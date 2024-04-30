@@ -102,7 +102,7 @@ Maui.SplitViewItem
 
             if ((event.key == Qt.Key_T) && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.ShiftModifier))
             {
-                root.openTab(control.session.intialWorkingDirectory)
+                root.openTab("$PWD")
                 event.accepted = true
                 return
             }
