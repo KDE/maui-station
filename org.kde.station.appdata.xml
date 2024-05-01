@@ -90,7 +90,7 @@
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=station</url>
   <url type="donation">https://kde.org/community/donations</url>
   <url type="vcs-browser">https://invent.kde.org/maui/station</url>
-    <categories>
+  <categories>
     <category>System</category>
     <category>Qt</category>
     <category>TerminalEmulator</category>
