@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Steve Allewell <steve.allewell@gmail.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Steve Allewell <steve.allewell@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-08 01:39+0000\n"
-"PO-Revision-Date: 2023-05-06 15:46+0100\n"
+"PO-Revision-Date: 2024-05-24 19:15+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.03.70\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -43,10 +43,9 @@ msgid "Convergent terminal emulator."
 msgstr "Convergent terminal emulator."
 
 #: src/main.cpp:40
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
+#, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-%1 Maui Development Team"
+msgstr "© 2019-2023 Maui Development Team"
 
 #: src/main.cpp:42
 #, kde-format
@@ -145,7 +144,7 @@ msgstr ""
 #: src/main.qml:410
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "Do you want to restore the previous session?"
 
 #: src/widgets/CommandShortcuts.qml:24
 #, kde-format
@@ -215,14 +214,14 @@ msgstr "Emit a notification when a pending process has finished."
 #: src/widgets/SettingsDialog.qml:83
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Silent"
 
 #: src/widgets/SettingsDialog.qml:84
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "Running process has been inactive for more than 30 seconds."
+msgstr ""
+"Emit an alert when a running task has been silent for more than 30 seconds."
 
 #: src/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -267,23 +266,22 @@ msgstr "Translucent background."
 #: src/widgets/SettingsDialog.qml:162
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Tab Title"
 
 #: src/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "Auto"
 
 #: src/widgets/SettingsDialog.qml:177
-#, fuzzy, kde-format
-#| msgid "Pending Process"
+#, kde-format
 msgid "Process"
-msgstr "Pending Process"
+msgstr "Process"
 
 #: src/widgets/SettingsDialog.qml:184
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "Directory"
 
 #: src/widgets/SettingsDialog.qml:194
 #, kde-format
@@ -293,12 +291,12 @@ msgstr "Terminal"
 #: src/widgets/SettingsDialog.qml:199
 #, kde-format
 msgid "Save Session"
-msgstr ""
+msgstr "Save Session"
 
 #: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Restore previous session on startup."
 
 #: src/widgets/SettingsDialog.qml:213
 #, kde-format
@@ -374,7 +372,7 @@ msgstr "Antialias text"
 #: src/widgets/Terminal.qml:77
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Watch for Silence"
 
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
@@ -397,10 +395,9 @@ msgid "Pending Process"
 msgstr "Pending Process"
 
 #: src/widgets/TerminalLayout.qml:48
-#, fuzzy, kde-format
-#| msgid "Running process has been inactive for more than 30 seconds."
+#, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "Running process has been inactive for more than 30 seconds."
+msgstr "Running process '%1' has been inactive for more than 30 seconds."
 
 #: src/widgets/TutorialDialog.qml:18
 #, kde-format

@@ -113,7 +113,7 @@ msgstr "Modificadors Ctrl"
 #: src/main.qml:254 src/widgets/TutorialDialog.qml:113
 #, kde-format
 msgid "Navigation"
-msgstr "Navegació"
+msgstr "Navegueu"
 
 #: src/main.qml:263
 #, kde-format
