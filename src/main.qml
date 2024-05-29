@@ -466,16 +466,16 @@ Maui.ApplicationWindow
 
     function anyTabHasActiveProcess()
     {
-        for(var i = 0; i++; i < _layout.count)
+        for(var i = 0; i < _layout.count; i++)
         {
             let tab = _layout.tabAt(i)
             if(tab && tab.hasActiveProcess)
             {
-                return true;
+                return true
             }
         }
 
-        return false;
+        return false
     }
 
     function saveSession()
