@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-08 01:39+0000\n"
+"POT-Creation-Date: 2024-05-30 01:47+0000\n"
 "PO-Revision-Date: 2023-12-11 18:13+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -32,114 +32,114 @@ msgstr "Keskeytä"
 msgid "Kill"
 msgstr "Tapa"
 
-#: src/main.cpp:36
+#: src/main.cpp:32
 #, kde-format
 msgid "Station"
 msgstr "Station"
 
-#: src/main.cpp:38
+#: src/main.cpp:34
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "Mukautuva pääte-emulaattori."
 
-#: src/main.cpp:40
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2019-2023 Maui Development Team"
 msgstr "© 2019–2023 Maui-kehitysryhmä"
 
-#: src/main.cpp:42
+#: src/main.cpp:38
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: src/main.cpp:42
+#: src/main.cpp:38
 #, kde-format
 msgid "Developer"
 msgstr "Kehittäjä"
 
-#: src/main.qml:157 src/main.qml:212 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:158 src/main.qml:213 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Uusi välilehti"
 
-#: src/main.qml:165 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:166 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Jaa"
 
-#: src/main.qml:175
+#: src/main.qml:176
 #, kde-format
 msgid "Tutorial"
 msgstr "Opastus"
 
-#: src/main.qml:187
+#: src/main.qml:188
 #, kde-format
 msgid "Settings"
 msgstr "Asetukset"
 
-#: src/main.qml:197
+#: src/main.qml:198
 #, kde-format
 msgid "About"
 msgstr "Tietoa"
 
-#: src/main.qml:208
+#: src/main.qml:209
 #, kde-format
 msgid "Nothing here"
 msgstr "Ei mitään täällä"
 
-#: src/main.qml:209
+#: src/main.qml:210
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Aloita hommat avaamalla uusi välilehti tai jaettu näyttö."
 
-#: src/main.qml:227
+#: src/main.qml:228
 #, kde-format
 msgid "Function Keys"
 msgstr "Funktionäppäimet"
 
-#: src/main.qml:236
+#: src/main.qml:237
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:245
+#: src/main.qml:246
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl-muuntonäppäimet"
 
-#: src/main.qml:254 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:255 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Liikkuminen"
 
-#: src/main.qml:263
+#: src/main.qml:264
 #, kde-format
 msgid "Favorite"
 msgstr "Suosikki"
 
-#: src/main.qml:272
+#: src/main.qml:273
 #, kde-format
 msgid "Signals"
 msgstr "Signaalit"
 
-#: src/main.qml:283
+#: src/main.qml:284
 #, kde-format
 msgid "More Signals"
 msgstr "Lisää signaaleja"
 
-#: src/main.qml:378
+#: src/main.qml:379
 #, kde-format
 msgid "Close"
 msgstr "Sulje"
 
-#: src/main.qml:379
+#: src/main.qml:380
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Prosessi on yhä käynnissä. Haluatko varmasti keskeyttää ja sulkea sen?"
 
-#: src/main.qml:410
+#: src/main.qml:411
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Haluatko palauttaa edellisen istunnon?"
@@ -179,159 +179,159 @@ msgstr "Poista"
 msgid "Edit"
 msgstr "Muokkaa"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:260
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Font"
 msgstr "Fontti"
 
-#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:241
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Alerts"
 msgstr "Varoitukset"
 
-#: src/widgets/SettingsDialog.qml:59
+#: src/widgets/SettingsDialog.qml:60
 #, kde-format
 msgid "Running Task"
 msgstr "Käynnissä oleva tehtävä"
 
-#: src/widgets/SettingsDialog.qml:60
+#: src/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Prevent from closing a running task."
 msgstr "Estää sulkemasta käynnissä olevaa tehtävää."
 
-#: src/widgets/SettingsDialog.qml:71
+#: src/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Finished Task"
 msgstr "Valmistunut tehtävä"
 
-#: src/widgets/SettingsDialog.qml:72
+#: src/widgets/SettingsDialog.qml:73
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
 msgstr "Ilmoittaa, kun jonossa ollut työ on valmistunut."
 
-#: src/widgets/SettingsDialog.qml:83
+#: src/widgets/SettingsDialog.qml:84
 #, kde-format
 msgid "Silent"
 msgstr "Hiljainen"
 
-#: src/widgets/SettingsDialog.qml:84
+#: src/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
 "Tee hälytys, kun käynnissä oleva tehtävä on ollut hiljaa yli 30 sekuntia."
 
-#: src/widgets/SettingsDialog.qml:97
+#: src/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Interface"
 msgstr "Liitäntä"
 
-#: src/widgets/SettingsDialog.qml:102
+#: src/widgets/SettingsDialog.qml:103
 #, kde-format
 msgid "Color"
 msgstr "Väri"
 
-#: src/widgets/SettingsDialog.qml:103
+#: src/widgets/SettingsDialog.qml:104
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "Vaihda vaalean ja tumman värimallin välillä."
 
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Light"
 msgstr "Vaalea"
 
-#: src/widgets/SettingsDialog.qml:118
+#: src/widgets/SettingsDialog.qml:119
 #, kde-format
 msgid "Dark"
 msgstr "Tumma"
 
-#: src/widgets/SettingsDialog.qml:126
+#: src/widgets/SettingsDialog.qml:127
 #, kde-format
 msgid "Adaptive"
 msgstr "Mukautuva"
 
-#: src/widgets/SettingsDialog.qml:150
+#: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Translucency"
 msgstr "Läpikuultavuus"
 
-#: src/widgets/SettingsDialog.qml:151
+#: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Translucent background."
 msgstr "Läpikuultava tausta."
 
-#: src/widgets/SettingsDialog.qml:162
+#: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid "Tab Title"
 msgstr "Välilehden otsikko"
 
-#: src/widgets/SettingsDialog.qml:170
+#: src/widgets/SettingsDialog.qml:171
 #, kde-format
 msgid "Auto"
 msgstr "Automaattinen"
 
-#: src/widgets/SettingsDialog.qml:177
+#: src/widgets/SettingsDialog.qml:178
 #, kde-format
 msgid "Process"
 msgstr "Prosessi"
 
-#: src/widgets/SettingsDialog.qml:184
+#: src/widgets/SettingsDialog.qml:185
 #, kde-format
 msgid "Directory"
 msgstr "Kansio"
 
-#: src/widgets/SettingsDialog.qml:194
+#: src/widgets/SettingsDialog.qml:195
 #, kde-format
 msgid "Terminal"
 msgstr "Pääte"
 
-#: src/widgets/SettingsDialog.qml:199
+#: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Save Session"
 msgstr "Tallenna istunto"
 
-#: src/widgets/SettingsDialog.qml:200
+#: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Restore previous session on startup."
 msgstr "Palauta edellinen istunto käynnistettäessä."
 
-#: src/widgets/SettingsDialog.qml:213
+#: src/widgets/SettingsDialog.qml:214
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Mukautuva väriteema"
 
-#: src/widgets/SettingsDialog.qml:214
+#: src/widgets/SettingsDialog.qml:215
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Nykyiseen tyyliin perustuvat värit."
 
-#: src/widgets/SettingsDialog.qml:227
+#: src/widgets/SettingsDialog.qml:228
 #, kde-format
 msgid "Color Scheme"
 msgstr "Väriteema"
 
-#: src/widgets/SettingsDialog.qml:228
+#: src/widgets/SettingsDialog.qml:229
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Vaihda päätteen väriteemaa."
 
-#: src/widgets/SettingsDialog.qml:242
+#: src/widgets/SettingsDialog.qml:243
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "Varoita töistä ja estä sulkemasta niitä."
 
-#: src/widgets/SettingsDialog.qml:255
+#: src/widgets/SettingsDialog.qml:256
 #, kde-format
 msgid "Display"
 msgstr "Näkymä"
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Font family and size."
 msgstr "Fonttiperhe ja -koko."
 
-#: src/widgets/SettingsDialog.qml:273
+#: src/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Line Spacing"
 msgstr "Riviväli"
@@ -397,93 +397,93 @@ msgstr "Jonossa oleva prosessi"
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "Käynnissä oleva prosessi ”%1” on ollut passiivinen yli 30 sekuntia."
 
-#: src/widgets/TutorialDialog.qml:18
+#: src/widgets/TutorialDialog.qml:10 src/widgets/TutorialDialog.qml:15
 #, kde-format
 msgid "Shortcuts"
 msgstr "Pikanäppäimet"
 
-#: src/widgets/TutorialDialog.qml:19
+#: src/widgets/TutorialDialog.qml:16
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
 msgstr "Näppäimistöltä voi käyttää liikkumiseen seuraavia pikanäppäimiä."
 
-#: src/widgets/TutorialDialog.qml:24
+#: src/widgets/TutorialDialog.qml:21
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
 msgstr "Avaa uusi pysty- tai vaakajakonäkymä."
 
-#: src/widgets/TutorialDialog.qml:69
+#: src/widgets/TutorialDialog.qml:67
 #, kde-format
 msgid "Find"
 msgstr "Etsi"
 
-#: src/widgets/TutorialDialog.qml:70
+#: src/widgets/TutorialDialog.qml:68
 #, kde-format
 msgid "Open the find bar."
 msgstr "Avaa hakupalkki."
 
-#: src/widgets/TutorialDialog.qml:90
+#: src/widgets/TutorialDialog.qml:88
 #, kde-format
 msgid "Switch"
 msgstr "Vaihda"
 
-#: src/widgets/TutorialDialog.qml:91
+#: src/widgets/TutorialDialog.qml:89
 #, kde-format
 msgid "Switch between split views."
 msgstr "Vaihda jakonäkymästä toiseen."
 
-#: src/widgets/TutorialDialog.qml:114
+#: src/widgets/TutorialDialog.qml:112
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
 msgstr "Kosketuskäyttölaitteilla voi käyttää liikkumiseen seuraavia eleitä."
 
-#: src/widgets/TutorialDialog.qml:118
+#: src/widgets/TutorialDialog.qml:116
 #, kde-format
 msgid "Up & Down"
 msgstr "Ylös ja alas"
 
-#: src/widgets/TutorialDialog.qml:119
+#: src/widgets/TutorialDialog.qml:117
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
 msgstr "Liiku komentohistoriassa pyyhkäisemällä ylös tai alas."
 
-#: src/widgets/TutorialDialog.qml:124
+#: src/widgets/TutorialDialog.qml:122
 #, kde-format
 msgid "Left & Right"
 msgstr "Vasemmalle ja oikealle"
 
-#: src/widgets/TutorialDialog.qml:125
+#: src/widgets/TutorialDialog.qml:123
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
 "Liiku muokattavalla komentorivillä pyyhkäisemällä vasemmalle tai oikealle."
 
-#: src/widgets/TutorialDialog.qml:130
+#: src/widgets/TutorialDialog.qml:128
 #, kde-format
 msgid "Two Fingers Left & Right"
 msgstr "Kaksi sormea vasemmalle ja oikealle"
 
-#: src/widgets/TutorialDialog.qml:131
+#: src/widgets/TutorialDialog.qml:129
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
 msgstr "Vieritä pyyhkäisemällä ylös tai alas kahdella sormella."
 
-#: src/widgets/TutorialDialog.qml:138
+#: src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "Komennot"
 
-#: src/widgets/TutorialDialog.qml:142
+#: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
 msgstr "Luo"
 
-#: src/widgets/TutorialDialog.qml:143
+#: src/widgets/TutorialDialog.qml:141
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
 msgstr "Luo pikakomentoja varten uusi komentopikanäppäin."
 
-#: src/widgets/TutorialDialog.qml:147
+#: src/widgets/TutorialDialog.qml:145
 #, kde-format
 msgid "Add"
 msgstr "Lisää"

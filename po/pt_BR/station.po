@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-08 01:39+0000\n"
+"POT-Creation-Date: 2024-05-30 01:47+0000\n"
 "PO-Revision-Date: 2024-01-11 21:01-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -32,107 +32,107 @@ msgstr "Interromper"
 msgid "Kill"
 msgstr "Matar"
 
-#: src/main.cpp:36
+#: src/main.cpp:32
 #, kde-format
 msgid "Station"
 msgstr "Station"
 
-#: src/main.cpp:38
+#: src/main.cpp:34
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "Emulador de terminal convergente."
 
-#: src/main.cpp:40
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2019-2023 Maui Development Team"
 msgstr "© 2019-2023 Equipe de desenvolvimento do Maui"
 
-#: src/main.cpp:42
+#: src/main.cpp:38
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: src/main.cpp:42
+#: src/main.cpp:38
 #, kde-format
 msgid "Developer"
 msgstr "Desenvolvedor"
 
-#: src/main.qml:157 src/main.qml:212 src/widgets/TutorialDialog.qml:49
+#: src/main.qml:158 src/main.qml:213 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Nova janela"
 
-#: src/main.qml:165 src/widgets/TutorialDialog.qml:23
+#: src/main.qml:166 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Dividir"
 
-#: src/main.qml:175
+#: src/main.qml:176
 #, kde-format
 msgid "Tutorial"
 msgstr "Tutorial"
 
-#: src/main.qml:187
+#: src/main.qml:188
 #, kde-format
 msgid "Settings"
 msgstr "Configurações"
 
-#: src/main.qml:197
+#: src/main.qml:198
 #, kde-format
 msgid "About"
 msgstr "Sobre"
 
-#: src/main.qml:208
+#: src/main.qml:209
 #, kde-format
 msgid "Nothing here"
 msgstr "Não há nada aqui"
 
-#: src/main.qml:209
+#: src/main.qml:210
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Para começar a hackear, abra um novo janela ou uma tela dividida."
 
-#: src/main.qml:227
+#: src/main.qml:228
 #, kde-format
 msgid "Function Keys"
 msgstr "Teclas de função"
 
-#: src/main.qml:236
+#: src/main.qml:237
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:245
+#: src/main.qml:246
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificadores Ctrl"
 
-#: src/main.qml:254 src/widgets/TutorialDialog.qml:113
+#: src/main.qml:255 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navegação"
 
-#: src/main.qml:263
+#: src/main.qml:264
 #, kde-format
 msgid "Favorite"
 msgstr "Favoritos"
 
-#: src/main.qml:272
+#: src/main.qml:273
 #, kde-format
 msgid "Signals"
 msgstr "Sinais"
 
-#: src/main.qml:283
+#: src/main.qml:284
 #, kde-format
 msgid "More Signals"
 msgstr "Mais sinais"
 
-#: src/main.qml:378
+#: src/main.qml:379
 #, kde-format
 msgid "Close"
 msgstr "Fechar"
 
-#: src/main.qml:379
+#: src/main.qml:380
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -141,7 +141,7 @@ msgstr ""
 "Um processo ainda está em execução. Tem certeza de que deseja interrompê-lo "
 "e fechar o processo?"
 
-#: src/main.qml:410
+#: src/main.qml:411
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Deseja restaurar a sessão anterior?"
@@ -181,42 +181,42 @@ msgstr "Remover"
 msgid "Edit"
 msgstr "Editar"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:260
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Font"
 msgstr "Fontes"
 
-#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:241
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Alerts"
 msgstr "Alerta"
 
-#: src/widgets/SettingsDialog.qml:59
+#: src/widgets/SettingsDialog.qml:60
 #, kde-format
 msgid "Running Task"
 msgstr "Tarefa de execução"
 
-#: src/widgets/SettingsDialog.qml:60
+#: src/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Prevent from closing a running task."
 msgstr "Impedir o encerramento de uma tarefa em execução."
 
-#: src/widgets/SettingsDialog.qml:71
+#: src/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Finished Task"
 msgstr "Tarefa concluída"
 
-#: src/widgets/SettingsDialog.qml:72
+#: src/widgets/SettingsDialog.qml:73
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
 msgstr "Emite uma notificação quando um processo pendente tiver terminado."
 
-#: src/widgets/SettingsDialog.qml:83
+#: src/widgets/SettingsDialog.qml:84
 #, kde-format
 msgid "Silent"
 msgstr "Silencioso"
 
-#: src/widgets/SettingsDialog.qml:84
+#: src/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
@@ -224,117 +224,117 @@ msgstr ""
 "Emita um alerta quando uma tarefa em execução ficar em silêncio por mais de "
 "30 segundos."
 
-#: src/widgets/SettingsDialog.qml:97
+#: src/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Interface"
 msgstr "Interface"
 
-#: src/widgets/SettingsDialog.qml:102
+#: src/widgets/SettingsDialog.qml:103
 #, kde-format
 msgid "Color"
 msgstr "Cor"
 
-#: src/widgets/SettingsDialog.qml:103
+#: src/widgets/SettingsDialog.qml:104
 #, kde-format
 msgid "Switch between light and dark colorscheme."
 msgstr "Alterne entre o esquema de cores claras e escuras."
 
-#: src/widgets/SettingsDialog.qml:111
+#: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Light"
 msgstr "Claro"
 
-#: src/widgets/SettingsDialog.qml:118
+#: src/widgets/SettingsDialog.qml:119
 #, kde-format
 msgid "Dark"
 msgstr "Escuro"
 
-#: src/widgets/SettingsDialog.qml:126
+#: src/widgets/SettingsDialog.qml:127
 #, kde-format
 msgid "Adaptive"
 msgstr "Adaptativo"
 
-#: src/widgets/SettingsDialog.qml:150
+#: src/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Translucency"
 msgstr "Transparência"
 
-#: src/widgets/SettingsDialog.qml:151
+#: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Translucent background."
 msgstr "Fundo transparente."
 
-#: src/widgets/SettingsDialog.qml:162
+#: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid "Tab Title"
 msgstr "Título da aba"
 
-#: src/widgets/SettingsDialog.qml:170
+#: src/widgets/SettingsDialog.qml:171
 #, kde-format
 msgid "Auto"
 msgstr "Automático"
 
-#: src/widgets/SettingsDialog.qml:177
+#: src/widgets/SettingsDialog.qml:178
 #, kde-format
 msgid "Process"
 msgstr "Processo"
 
-#: src/widgets/SettingsDialog.qml:184
+#: src/widgets/SettingsDialog.qml:185
 #, kde-format
 msgid "Directory"
 msgstr "Pasta"
 
-#: src/widgets/SettingsDialog.qml:194
+#: src/widgets/SettingsDialog.qml:195
 #, kde-format
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/widgets/SettingsDialog.qml:199
+#: src/widgets/SettingsDialog.qml:200
 #, kde-format
 msgid "Save Session"
 msgstr "Salvar sessão"
 
-#: src/widgets/SettingsDialog.qml:200
+#: src/widgets/SettingsDialog.qml:201
 #, kde-format
 msgid "Restore previous session on startup."
 msgstr "Restaurar a sessão anteriormente na inicialização."
 
-#: src/widgets/SettingsDialog.qml:213
+#: src/widgets/SettingsDialog.qml:214
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "Esquema de cores adaptativo"
 
-#: src/widgets/SettingsDialog.qml:214
+#: src/widgets/SettingsDialog.qml:215
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "Cores baseadas no estilo atual."
 
-#: src/widgets/SettingsDialog.qml:227
+#: src/widgets/SettingsDialog.qml:228
 #, kde-format
 msgid "Color Scheme"
 msgstr "Esquemas de cores"
 
-#: src/widgets/SettingsDialog.qml:228
+#: src/widgets/SettingsDialog.qml:229
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "Alterar o esquema de cores do terminal."
 
-#: src/widgets/SettingsDialog.qml:242
+#: src/widgets/SettingsDialog.qml:243
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "Alertar sobre processos e evitar fechá-los."
 
-#: src/widgets/SettingsDialog.qml:255
+#: src/widgets/SettingsDialog.qml:256
 #, kde-format
 msgid "Display"
 msgstr "Mostrar"
 
-#: src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Font family and size."
 msgstr "Família e tamanho de letra."
 
-#: src/widgets/SettingsDialog.qml:273
+#: src/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Line Spacing"
 msgstr "Espaçamento de linhas"
@@ -401,97 +401,97 @@ msgstr "Processo pendente"
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "O processo em execução \"%1\" está inativo há mais de 30 segundos."
 
-#: src/widgets/TutorialDialog.qml:18
+#: src/widgets/TutorialDialog.qml:10 src/widgets/TutorialDialog.qml:15
 #, kde-format
 msgid "Shortcuts"
 msgstr "Atalhos"
 
-#: src/widgets/TutorialDialog.qml:19
+#: src/widgets/TutorialDialog.qml:16
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
 msgstr ""
 "Ao utilizar um teclado, pode utilizar os seguintes atalhos para navegar."
 
-#: src/widgets/TutorialDialog.qml:24
+#: src/widgets/TutorialDialog.qml:21
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
 msgstr "Abra uma nova visualização dividida, vertical ou horizontalmente."
 
-#: src/widgets/TutorialDialog.qml:69
+#: src/widgets/TutorialDialog.qml:67
 #, kde-format
 msgid "Find"
 msgstr "Localizar"
 
-#: src/widgets/TutorialDialog.qml:70
+#: src/widgets/TutorialDialog.qml:68
 #, kde-format
 msgid "Open the find bar."
 msgstr "Abrir a barra de pesquisa."
 
-#: src/widgets/TutorialDialog.qml:90
+#: src/widgets/TutorialDialog.qml:88
 #, kde-format
 msgid "Switch"
 msgstr "Trocar"
 
-#: src/widgets/TutorialDialog.qml:91
+#: src/widgets/TutorialDialog.qml:89
 #, kde-format
 msgid "Switch between split views."
 msgstr "Alternar entre visualizações divididas."
 
-#: src/widgets/TutorialDialog.qml:114
+#: src/widgets/TutorialDialog.qml:112
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
 msgstr ""
 "Em dispositivos sensíveis ao toque, você pode usar os seguintes gestos para "
 "navegar."
 
-#: src/widgets/TutorialDialog.qml:118
+#: src/widgets/TutorialDialog.qml:116
 #, kde-format
 msgid "Up & Down"
 msgstr "Para cima e para baixo"
 
-#: src/widgets/TutorialDialog.qml:119
+#: src/widgets/TutorialDialog.qml:117
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
 msgstr "Deslize para cima ou para baixo para navegar no histórico de comandos."
 
-#: src/widgets/TutorialDialog.qml:124
+#: src/widgets/TutorialDialog.qml:122
 #, kde-format
 msgid "Left & Right"
 msgstr "Esquerda e direta"
 
-#: src/widgets/TutorialDialog.qml:125
+#: src/widgets/TutorialDialog.qml:123
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
 "Deslize para a esquerda ou para a direita para percorrer a linha de comando "
 "para editar."
 
-#: src/widgets/TutorialDialog.qml:130
+#: src/widgets/TutorialDialog.qml:128
 #, kde-format
 msgid "Two Fingers Left & Right"
 msgstr "Dois dedos direito e esquerdo"
 
-#: src/widgets/TutorialDialog.qml:131
+#: src/widgets/TutorialDialog.qml:129
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
 msgstr "Deslize para cima ou para baixo com dois dedos para rolar."
 
-#: src/widgets/TutorialDialog.qml:138
+#: src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "Comandos"
 
-#: src/widgets/TutorialDialog.qml:142
+#: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
 msgstr "Criar"
 
-#: src/widgets/TutorialDialog.qml:143
+#: src/widgets/TutorialDialog.qml:141
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
 msgstr "Cria um novo atalho de comando para acionar ações rapidamente."
 
-#: src/widgets/TutorialDialog.qml:147
+#: src/widgets/TutorialDialog.qml:145
 #, kde-format
 msgid "Add"
 msgstr "Adicionar"
