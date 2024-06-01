@@ -55,8 +55,7 @@
   <summary xml:lang="uk">Емулятор термінала</summary>
   <summary xml:lang="x-test">xxTerminal Emulatorxx</summary>
   <summary xml:lang="zh-TW">終端機模擬器</summary>
-  <developer>
-    <id>org.mauikit</id>
+  <developer id="org.mauikit">
     <name>maui</name>
     <url>https://mauikit.org/</url>
   </developer>
