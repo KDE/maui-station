@@ -7,6 +7,10 @@ import org.mauikit.terminal as Term
 Maui.SplitViewItem
 {
     id: control
+Maui.Controls.title: title
+Maui.Controls.badgeText: hasActiveProcess ? "!" : ""
+
+readonly property bool hasActiveProcess : session.hasActiveProcess
 
     property string path : "$HOME"
 

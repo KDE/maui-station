@@ -125,6 +125,7 @@ Maui.ApplicationWindow
             background: null
 
             altTabBar: Maui.Handy.isMobile
+            Maui.Controls.showCSD: true
 
             anchors.fill: parent
 
@@ -199,9 +200,7 @@ Maui.ApplicationWindow
                         icon.name: "documentinfo"
                         onTriggered: Maui.App.aboutDialog()
                     }
-                },
-
-                Maui.WindowControls {}
+                }
             ]
 
             holder.visible: _layout.count === 0
