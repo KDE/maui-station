@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-30 01:47+0000\n"
+"POT-Creation-Date: 2024-06-26 01:46+0000\n"
 "PO-Revision-Date: 2023-03-12 10:33+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -56,89 +56,89 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Vývojár"
 
-#: src/main.qml:158 src/main.qml:213 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:159 src/main.qml:212 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Nová karta"
 
-#: src/main.qml:166 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:167 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Rozdeliť"
 
-#: src/main.qml:176
+#: src/main.qml:177
 #, kde-format
 msgid "Tutorial"
 msgstr "Výučba"
 
-#: src/main.qml:188
+#: src/main.qml:189
 #, kde-format
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: src/main.qml:198
+#: src/main.qml:199
 #, kde-format
 msgid "About"
 msgstr "O aplikácii"
 
-#: src/main.qml:209
+#: src/main.qml:208
 #, kde-format
 msgid "Nothing here"
 msgstr ""
 
-#: src/main.qml:210
+#: src/main.qml:209
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 
-#: src/main.qml:228
+#: src/main.qml:227
 #, kde-format
 msgid "Function Keys"
 msgstr ""
 
-#: src/main.qml:237
+#: src/main.qml:236
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:246
+#: src/main.qml:245
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr ""
 
-#: src/main.qml:255 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:254 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navigácia"
 
-#: src/main.qml:264
+#: src/main.qml:263
 #, kde-format
 msgid "Favorite"
 msgstr "Obľúbené"
 
-#: src/main.qml:273
+#: src/main.qml:272
 #, kde-format
 msgid "Signals"
 msgstr ""
 
-#: src/main.qml:284
+#: src/main.qml:283
 #, kde-format
 msgid "More Signals"
 msgstr ""
 
-#: src/main.qml:379
+#: src/main.qml:378
 #, kde-format
 msgid "Close"
 msgstr "Zavrieť"
 
-#: src/main.qml:380
+#: src/main.qml:379
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr ""
 
-#: src/main.qml:411
+#: src/main.qml:410
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr ""
@@ -366,32 +366,32 @@ msgstr ""
 msgid "Antialias text"
 msgstr ""
 
-#: src/widgets/Terminal.qml:77
+#: src/widgets/Terminal.qml:81
 #, kde-format
 msgid "Watch for Silence"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "Process Finished"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
+#: src/widgets/TerminalLayout.qml:29 src/widgets/TerminalLayout.qml:49
 #, kde-format
 msgid "Check"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:48
+#: src/widgets/TerminalLayout.qml:49
 #, kde-format
 msgid "Pending Process"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:48
+#: src/widgets/TerminalLayout.qml:49
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr ""

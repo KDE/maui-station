@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-30 01:47+0000\n"
+"POT-Creation-Date: 2024-06-26 01:46+0000\n"
 "PO-Revision-Date: 2024-02-08 17:22+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -58,82 +58,82 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Geliştirici"
 
-#: src/main.qml:158 src/main.qml:213 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:159 src/main.qml:212 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Yeni Sekme"
 
-#: src/main.qml:166 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:167 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Böl"
 
-#: src/main.qml:176
+#: src/main.qml:177
 #, kde-format
 msgid "Tutorial"
 msgstr "Eğitmen"
 
-#: src/main.qml:188
+#: src/main.qml:189
 #, kde-format
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: src/main.qml:198
+#: src/main.qml:199
 #, kde-format
 msgid "About"
 msgstr "Hakkında"
 
-#: src/main.qml:209
+#: src/main.qml:208
 #, kde-format
 msgid "Nothing here"
 msgstr "Burada bir şey yok"
 
-#: src/main.qml:210
+#: src/main.qml:209
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Deşmeye başlamak için yeni bir sekme veya bölünmüş görünüm açın."
 
-#: src/main.qml:228
+#: src/main.qml:227
 #, kde-format
 msgid "Function Keys"
 msgstr "İşlev Düğmeleri"
 
-#: src/main.qml:237
+#: src/main.qml:236
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:246
+#: src/main.qml:245
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Kontrol Niteleyicileri"
 
-#: src/main.qml:255 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:254 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Dolaşım"
 
-#: src/main.qml:264
+#: src/main.qml:263
 #, kde-format
 msgid "Favorite"
 msgstr "Sık Kullanılan"
 
-#: src/main.qml:273
+#: src/main.qml:272
 #, kde-format
 msgid "Signals"
 msgstr "Sinyaller"
 
-#: src/main.qml:284
+#: src/main.qml:283
 #, kde-format
 msgid "More Signals"
 msgstr "Daha Çok Sinyal"
 
-#: src/main.qml:379
+#: src/main.qml:378
 #, kde-format
 msgid "Close"
 msgstr "Kapat"
 
-#: src/main.qml:380
+#: src/main.qml:379
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -141,7 +141,7 @@ msgid ""
 msgstr ""
 "Bir süreç hâlâ çalışıyor. Yarıda kesip kapatmak istediğinizden emin misiniz?"
 
-#: src/main.qml:411
+#: src/main.qml:410
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Önceki oturumu geri yüklemek istiyor musunuz?"
@@ -370,32 +370,32 @@ msgstr "Tam İmleç Yüksekliği"
 msgid "Antialias text"
 msgstr "Metin Kenar Yumuşatması"
 
-#: src/widgets/Terminal.qml:77
+#: src/widgets/Terminal.qml:81
 #, kde-format
 msgid "Watch for Silence"
 msgstr "Sessizliği İzle"
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "Process Finished"
 msgstr "Süreç Bitti"
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "Şu sekmede çalışan görev bitti: %1"
 
-#: src/widgets/TerminalLayout.qml:28 src/widgets/TerminalLayout.qml:48
+#: src/widgets/TerminalLayout.qml:29 src/widgets/TerminalLayout.qml:49
 #, kde-format
 msgid "Check"
 msgstr "Denetle"
 
-#: src/widgets/TerminalLayout.qml:48
+#: src/widgets/TerminalLayout.qml:49
 #, kde-format
 msgid "Pending Process"
 msgstr "Bekleyen Süreç"
 
-#: src/widgets/TerminalLayout.qml:48
+#: src/widgets/TerminalLayout.qml:49
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "Çalıştırılan '%1' süreci, 30 saniyeden uzun süredir etkin değil."
