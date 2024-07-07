@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-26 01:46+0000\n"
-"PO-Revision-Date: 2024-03-24 10:34+0100\n"
+"PO-Revision-Date: 2024-07-06 16:50+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -139,6 +139,8 @@ msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr ""
+"Procezo ankoraŭ estas rulanta. Ĉu vi certas, ke vi volas interrompi ĝin kaj "
+"fermi ĝin?"
 
 #: src/main.qml:410
 #, kde-format
@@ -220,6 +222,7 @@ msgstr "Silenta"
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
+"Elsendi atentigon kiam rulanta tasko estis silenta por pli ol 30 sekundoj."
 
 #: src/widgets/SettingsDialog.qml:98
 #, kde-format
