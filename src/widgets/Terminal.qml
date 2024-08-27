@@ -62,7 +62,7 @@ readonly property bool hasActiveProcess : session.hasActiveProcess
         onUrlsDropped: (urls) =>
         {
             for(var i in urls)
-                control.session.sendText(urls[i].replace("file://", "")+ " ")
+                control.session.sendText((urls[i]).toString().replace("file://", "")+ " ")
         }
 
         kterminal.font: settings.font
