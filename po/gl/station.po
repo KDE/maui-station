@@ -45,7 +45,7 @@ msgstr "Emulador de terminal converxente."
 #: src/main.cpp:36
 #, kde-format
 msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-2023 Equipo de desenvolvemento de Maui"
+msgstr "© 2019-2023 Equipo desenvolvedor de Maui"
 
 #: src/main.cpp:38
 #, kde-format
