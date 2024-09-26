@@ -22,11 +22,21 @@ Maui.SplitView
     Maui.Controls.color: currentItem.tabColor
     Maui.Controls.iconName: control.hasActiveProcess ? "run-build" : ""
 
+    Action
+    {
+        id: _reviewAction
+        text: i18n("View")
+        onTriggered:
+        {
+            _layout.setCurrentIndex(control.SwipeView.index)
+        }
+    }
+
     onHasActiveProcessChanged:
     {
         if(!control.isCurrentTab && settings.alertProcess)
         {
-            root.notify("dialog-warning", i18n("Process Finished"), i18n("Running task has finished for tab: %1", control.title), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, i18n("Check"))
+            root.notify("dialog-warning", i18n("Process Finished"), i18n("Running task has finished for tab: %1", control.title), [_reviewAction])
         }
     }
 
@@ -46,7 +56,7 @@ Maui.SplitView
             {
                 if(!control.isCurrentTab)
                 {
-                    root.notify("dialog-warning", i18n("Pending Process"), i18n("Running process '%1' has been inactive for more than 30 seconds.", title), ()=>{_layout.setCurrentIndex(control.SwipeView.index)}, i18n("Check"))
+                    root.notify("dialog-warning", i18n("Pending Process"), i18n("Running process '%1' has been inactive for more than 30 seconds.", title), [_reviewAction])
                 }
             }
         }
