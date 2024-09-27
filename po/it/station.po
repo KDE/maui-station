@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-26 01:46+0000\n"
+"POT-Creation-Date: 2024-09-27 01:53+0000\n"
 "PO-Revision-Date: 2023-12-05 06:23+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -375,27 +375,27 @@ msgstr "Antialias del testo"
 msgid "Watch for Silence"
 msgstr "Controllo inattività"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:28
+#, kde-format
+msgid "View"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Process Finished"
 msgstr "Processo terminato"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "L'attività in esecuzione è terminata per la scheda: %1"
 
-#: src/widgets/TerminalLayout.qml:29 src/widgets/TerminalLayout.qml:49
-#, kde-format
-msgid "Check"
-msgstr "Controlla"
-
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Pending Process"
 msgstr "Processo in sospeso"
 
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr ""
@@ -496,6 +496,9 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "add kig icon"
+
+#~ msgid "Check"
+#~ msgstr "Controlla"
 
 #~ msgid "Configure the application components and behaviour."
 #~ msgstr "Configurare i componenti e il comportamento dell'applicazione."

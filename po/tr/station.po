@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-26 01:46+0000\n"
+"POT-Creation-Date: 2024-09-27 01:53+0000\n"
 "PO-Revision-Date: 2024-02-08 17:22+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -375,27 +375,27 @@ msgstr "Metin Kenar Yumuşatması"
 msgid "Watch for Silence"
 msgstr "Sessizliği İzle"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:28
+#, kde-format
+msgid "View"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Process Finished"
 msgstr "Süreç Bitti"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "Şu sekmede çalışan görev bitti: %1"
 
-#: src/widgets/TerminalLayout.qml:29 src/widgets/TerminalLayout.qml:49
-#, kde-format
-msgid "Check"
-msgstr "Denetle"
-
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Pending Process"
 msgstr "Bekleyen Süreç"
 
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "Çalıştırılan '%1' süreci, 30 saniyeden uzun süredir etkin değil."
@@ -490,6 +490,9 @@ msgstr "Eylemleri tez tetiklemek için yeni bir komut kısayolu oluşturun."
 #, kde-format
 msgid "Add"
 msgstr "Ekle"
+
+#~ msgid "Check"
+#~ msgstr "Denetle"
 
 #~ msgid "Configure the application components and behaviour."
 #~ msgstr "Uygulama bileşenlerini ve davranışını yapılandırın."

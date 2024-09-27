@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-26 01:46+0000\n"
+"POT-Creation-Date: 2024-09-27 01:53+0000\n"
 "PO-Revision-Date: 2024-05-24 19:15+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -374,27 +374,27 @@ msgstr "Antialias text"
 msgid "Watch for Silence"
 msgstr "Watch for Silence"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:28
+#, kde-format
+msgid "View"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Process Finished"
 msgstr "Process Finished"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "Running task has finished for tab: %1"
 
-#: src/widgets/TerminalLayout.qml:29 src/widgets/TerminalLayout.qml:49
-#, kde-format
-msgid "Check"
-msgstr "Check"
-
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Pending Process"
 msgstr "Pending Process"
 
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "Running process '%1' has been inactive for more than 30 seconds."
@@ -488,6 +488,9 @@ msgstr "Create a new command shortcut to quickly trigger actions."
 #, kde-format
 msgid "Add"
 msgstr "Add"
+
+#~ msgid "Check"
+#~ msgstr "Check"
 
 #~ msgid "Configure the application components and behaviour."
 #~ msgstr "Configure the application components and behaviour."

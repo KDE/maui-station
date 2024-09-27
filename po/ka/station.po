@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-26 01:46+0000\n"
+"POT-Creation-Date: 2024-09-27 01:53+0000\n"
 "PO-Revision-Date: 2023-12-06 06:22+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -376,27 +376,27 @@ msgstr "ტექსტის მომრგვალება"
 msgid "Watch for Silence"
 msgstr "სიჩუმის აღმოჩენა"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:28
+#, kde-format
+msgid "View"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Process Finished"
 msgstr "პროცესი დასრულდა"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "ამოცანის შესრულება დასრულდა ჩანართისთვის: %1"
 
-#: src/widgets/TerminalLayout.qml:29 src/widgets/TerminalLayout.qml:49
-#, kde-format
-msgid "Check"
-msgstr "შემოწმება"
-
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Pending Process"
 msgstr "დარჩენილი პროცესი"
 
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "გაშვებული პროცესი '%1' 30-ზე მეტი წამია, არააქტიურია."
@@ -492,6 +492,9 @@ msgstr "შექმენით ახალი მალსახმობე�
 #, kde-format
 msgid "Add"
 msgstr "დამატება"
+
+#~ msgid "Check"
+#~ msgstr "შემოწმება"
 
 #~ msgid "Configure the application components and behaviour."
 #~ msgstr "მოირგეთ აპლიკაციის კომპონენტები და ქცევა."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-26 01:46+0000\n"
+"POT-Creation-Date: 2024-09-27 01:53+0000\n"
 "PO-Revision-Date: 2023-12-11 18:13+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -372,27 +372,27 @@ msgstr "Antialiasoi teksti"
 msgid "Watch for Silence"
 msgstr "Tarkkaile hiljaisuutta"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:28
+#, kde-format
+msgid "View"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Process Finished"
 msgstr "Työ valmistui"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "Käynnissä ollut tehtävä valmistui välilehdessä: %1"
 
-#: src/widgets/TerminalLayout.qml:29 src/widgets/TerminalLayout.qml:49
-#, kde-format
-msgid "Check"
-msgstr "Tarkista"
-
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Pending Process"
 msgstr "Jonossa oleva prosessi"
 
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "Käynnissä oleva prosessi ”%1” on ollut passiivinen yli 30 sekuntia."
@@ -487,6 +487,9 @@ msgstr "Luo pikakomentoja varten uusi komentopikanäppäin."
 #, kde-format
 msgid "Add"
 msgstr "Lisää"
+
+#~ msgid "Check"
+#~ msgstr "Tarkista"
 
 #~ msgid "Configure the application components and behaviour."
 #~ msgstr "Aseta sovelluksen osat ja toiminta."

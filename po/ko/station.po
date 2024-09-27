@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-26 01:46+0000\n"
+"POT-Creation-Date: 2024-09-27 01:53+0000\n"
 "PO-Revision-Date: 2024-02-10 00:20+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -371,27 +371,27 @@ msgstr "텍스트 앤티에일리어싱"
 msgid "Watch for Silence"
 msgstr "침묵 감시"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:28
+#, kde-format
+msgid "View"
+msgstr ""
+
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Process Finished"
 msgstr "프로세스 완료됨"
 
-#: src/widgets/TerminalLayout.qml:29
+#: src/widgets/TerminalLayout.qml:39
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "탭에서 실행 중인 작업이 완료됨: %1"
 
-#: src/widgets/TerminalLayout.qml:29 src/widgets/TerminalLayout.qml:49
-#, kde-format
-msgid "Check"
-msgstr "검사"
-
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Pending Process"
 msgstr "대기 중인 프로세스"
 
-#: src/widgets/TerminalLayout.qml:49
+#: src/widgets/TerminalLayout.qml:59
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "실행 중인 프로세스 '%1'이(가) 30초 이상 비활성 상태입니다."
@@ -485,6 +485,9 @@ msgstr "동작을 빠르게 실행할 수 있는 새 명령 단축키를 만듭�
 #, kde-format
 msgid "Add"
 msgstr "추가"
+
+#~ msgid "Check"
+#~ msgstr "검사"
 
 #~ msgid "Configure the application components and behaviour."
 #~ msgstr "앱 구성 요소와 행동을 설정합니다."
