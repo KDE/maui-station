@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
-# SPDX-FileCopyrightText: 2023 Adrián Chaves (Gallaecio)
+# SPDX-FileCopyrightText: 2023, 2024 Adrián Chaves (Gallaecio)
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-27 01:53+0000\n"
-"PO-Revision-Date: 2023-12-05 08:04+0100\n"
+"PO-Revision-Date: 2024-09-28 13:01+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.3\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -379,7 +379,7 @@ msgstr "Monitorizar silencios"
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "Vista"
 
 #: src/widgets/TerminalLayout.qml:39
 #, kde-format

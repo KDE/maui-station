@@ -1,14 +1,15 @@
-# Copyright (C) YEAR This file is copyright:
+# Translation of maui-station to Spanish
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Víctor Rodrigo Córdoba <vrcordoba@gmail.com>, 2022, 2023, %Y.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2024 Víctor Rodrigo Córdoba <vrcordoba@gmail.com>
+# SPDX-FileCopyrightText: 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-27 01:53+0000\n"
-"PO-Revision-Date: 2023-12-30 17:51+0100\n"
+"PO-Revision-Date: 2024-09-29 01:10+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -379,7 +380,7 @@ msgstr "Vigilar silencios"
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "Ver"
 
 #: src/widgets/TerminalLayout.qml:39
 #, kde-format
@@ -496,6 +497,3 @@ msgstr "Crear un nuevo atajo de orden para ejecutar acciones rápidamente."
 #, kde-format
 msgid "Add"
 msgstr "Añadir"
-
-#~ msgid "Check"
-#~ msgstr "Comprobar"
