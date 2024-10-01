@@ -373,7 +373,7 @@ msgstr ""
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "Pohled"
 
 #: src/widgets/TerminalLayout.qml:39
 #, kde-format
@@ -484,6 +484,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "Check"
-#~ msgstr "Zkontrolovat"
