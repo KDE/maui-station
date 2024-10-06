@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-27 01:53+0000\n"
-"PO-Revision-Date: 2024-07-21 13:18+0200\n"
+"PO-Revision-Date: 2024-10-05 13:16+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -378,7 +378,7 @@ msgstr "Monitoruj ciszę"
 #: src/widgets/TerminalLayout.qml:28
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "Widok"
 
 #: src/widgets/TerminalLayout.qml:39
 #, kde-format
