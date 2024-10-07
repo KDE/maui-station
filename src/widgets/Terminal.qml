@@ -81,6 +81,7 @@ readonly property bool hasActiveProcess : session.hasActiveProcess
             text: i18n("Watch for Silence")
             checkable: true
             checked: control.watchForSlience
+            icon.name: "notifications"
             onTriggered:
             {
                 control.watchForSlience = !control.watchForSlience

@@ -164,6 +164,7 @@ Maui.ApplicationWindow
                     {
                         enabled: root.currentTab
                         checked: root.currentTab && root.currentTab.count === 2
+                        checkable: true
                         text: i18n("Split")
 
                         icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
