@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-27 01:53+0000\n"
+"POT-Creation-Date: 2024-10-08 01:47+0000\n"
 "PO-Revision-Date: 2024-09-27 20:21+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -58,90 +58,90 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Розробник"
 
-#: src/main.qml:159 src/main.qml:212 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:159 src/main.qml:213 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Нова вкладка"
 
-#: src/main.qml:167 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:168 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Розділити"
 
-#: src/main.qml:177
+#: src/main.qml:178
 #, kde-format
 msgid "Tutorial"
 msgstr "Покрокові настанови"
 
-#: src/main.qml:189
+#: src/main.qml:190
 #, kde-format
 msgid "Settings"
 msgstr "Параметри"
 
-#: src/main.qml:199
+#: src/main.qml:200
 #, kde-format
 msgid "About"
 msgstr "Про програму"
 
-#: src/main.qml:208
+#: src/main.qml:209
 #, kde-format
 msgid "Nothing here"
 msgstr "Тут нічого немає"
 
-#: src/main.qml:209
+#: src/main.qml:210
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 "Щоб розпочати програмування, відкрийте нову вкладку або розділений екран."
 
-#: src/main.qml:227
+#: src/main.qml:228
 #, kde-format
 msgid "Function Keys"
 msgstr "Функціональні клавіші"
 
-#: src/main.qml:236
+#: src/main.qml:237
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:245
+#: src/main.qml:246
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Модифікатори Ctrl"
 
-#: src/main.qml:254 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:255 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Навігація"
 
-#: src/main.qml:263
+#: src/main.qml:264
 #, kde-format
 msgid "Favorite"
 msgstr "Улюблене"
 
-#: src/main.qml:272
+#: src/main.qml:273
 #, kde-format
 msgid "Signals"
 msgstr "Сигнали"
 
-#: src/main.qml:283
+#: src/main.qml:284
 #, kde-format
 msgid "More Signals"
 msgstr "Інші сигнали"
 
-#: src/main.qml:378
+#: src/main.qml:379
 #, kde-format
 msgid "Close"
 msgstr "Закрити"
 
-#: src/main.qml:379
+#: src/main.qml:380
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Працює процес. Ви справді хочете перервати і завершити його роботу?"
 
-#: src/main.qml:410
+#: src/main.qml:411
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Хочете відновити попередній сеанс?"
