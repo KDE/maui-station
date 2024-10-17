@@ -158,6 +158,10 @@ Maui.ApplicationWindow
                         icon.name: "tab-new"
                         text: i18n("New Tab")
                         onTriggered: root.openTab("$PWD")
+                        action: Action
+                        {
+                         shortcut: "Ctrl+Shift+T"
+                        }
                     }
 
                     MenuItem
@@ -169,6 +173,10 @@ Maui.ApplicationWindow
 
                         icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
                         onTriggered: root.currentTab.split()
+                        action: Action
+                        {
+                            shortcut: "Ctrl+Shift+→"
+                        }
                     }
 
                     MenuSeparator {}
