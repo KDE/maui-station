@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-08 01:47+0000\n"
+"POT-Creation-Date: 2024-10-18 01:47+0000\n"
 "PO-Revision-Date: 2024-09-27 14:58+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -57,82 +57,82 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Sviluppatore"
 
-#: src/main.qml:159 src/main.qml:213 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:159 src/main.qml:221 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Nuova scheda"
 
-#: src/main.qml:168 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:172 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Dividi"
 
-#: src/main.qml:178
+#: src/main.qml:186
 #, kde-format
 msgid "Tutorial"
 msgstr "Esercitazione"
 
-#: src/main.qml:190
+#: src/main.qml:198
 #, kde-format
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: src/main.qml:200
+#: src/main.qml:208
 #, kde-format
 msgid "About"
 msgstr "Informazioni"
 
-#: src/main.qml:209
+#: src/main.qml:217
 #, kde-format
 msgid "Nothing here"
 msgstr "Non c'è niente qui"
 
-#: src/main.qml:210
+#: src/main.qml:218
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Per iniziare, apri una nuova scheda o uno schermo diviso."
 
-#: src/main.qml:228
+#: src/main.qml:236
 #, kde-format
 msgid "Function Keys"
 msgstr "Tasti funzione"
 
-#: src/main.qml:237
+#: src/main.qml:245
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:246
+#: src/main.qml:254
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificatori Ctrl"
 
-#: src/main.qml:255 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:263 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navigazione"
 
-#: src/main.qml:264
+#: src/main.qml:272
 #, kde-format
 msgid "Favorite"
 msgstr "Preferito"
 
-#: src/main.qml:273
+#: src/main.qml:281
 #, kde-format
 msgid "Signals"
 msgstr "Segnali"
 
-#: src/main.qml:284
+#: src/main.qml:292
 #, kde-format
 msgid "More Signals"
 msgstr "Altri segnali"
 
-#: src/main.qml:379
+#: src/main.qml:387
 #, kde-format
 msgid "Close"
 msgstr "Chiudi"
 
-#: src/main.qml:380
+#: src/main.qml:388
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -141,7 +141,7 @@ msgstr ""
 "Un processo è ancora in esecuzione. Sei sicuro di volerlo interrompere e "
 "chiudere?"
 
-#: src/main.qml:411
+#: src/main.qml:419
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Vuoi ripristinare la sessione precedente?"
