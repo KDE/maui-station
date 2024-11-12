@@ -3,7 +3,7 @@
 #include <QCommandLineParser>
 #include <QQmlContext>
 #include <QIcon>
-
+#include <QDir>
 #include <MauiKit4/Core/mauiapp.h>
 #include <MauiKit4/Terminal/moduleinfo.h>
 
@@ -66,6 +66,9 @@ int main(int argc, char *argv[])
     {
         for(const auto &path : args)
             paths << QUrl::fromUserInput(path).toString();
+    }else
+    {
+        paths << QDir::currentPath();
     }
 
     if (AppInstance::attachToExistingInstance(QUrl::fromStringList(paths), false))
@@ -83,13 +86,13 @@ int main(int argc, char *argv[])
                 &engine,
                 &QQmlApplicationEngine::objectCreated,
                 &app,
-                [url, args, &server](QObject *obj, const QUrl &objUrl) {
+                [url, paths, &server](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
 
         server->setQmlObject(obj);
-        if (!args.isEmpty())
-            server->openTabs(args, false);
+        if (!paths.isEmpty())
+            server->openTabs(paths, false);
         else
         {
             server->openTabs({"$PWD"}, false);
