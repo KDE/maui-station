@@ -29,7 +29,7 @@ include(FeatureSummary)
 find_package(Qt6 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Widgets DBus)
 find_package(KF6 ${REQUIRED_KF_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 
-find_package(MauiKit4 REQUIRED COMPONENTS Terminal)
+find_package(MauiKit4 REQUIRED COMPONENTS Terminal FileBrowsing)
 
 if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
     execute_process(
