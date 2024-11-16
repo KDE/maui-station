@@ -21,6 +21,7 @@ Maui.SplitView
     Maui.Controls.toolTipText: currentItem.session.currentDir
     Maui.Controls.color: currentItem.tabColor
     Maui.Controls.iconName: control.hasActiveProcess ? "run-build" : ""
+    Maui.Controls.badgeText: count === 2 ? "[|]" : ""
 
     Action
     {
