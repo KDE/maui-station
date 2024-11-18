@@ -15,17 +15,24 @@ Station * Station::instance()
 }
 
 
-bool Station::isLocalUrl(const QString &url)
+bool Station::isValidUrl(const QString &url)
 {
-    QFileInfo file(QUrl(url).toLocalFile());
-    return file.exists();
+    QUrl m_url(url);
+    if(m_url.isLocalFile())
+    {
+        QFileInfo file(QUrl(url).toLocalFile());
+        return file.exists();
+    }else
+    {
+        return m_url.isValid();
+    }
 }
 
 
 QString Station::resolveUrl(const QString &url, const QString &dir)
 {
     QUrl m_dir = QUrl::fromLocalFile(dir+"/");
-    QUrl m_url (url);
+    QUrl m_url (url.simplified());
 
     // if(!m_url.isRelative())
     //     return url;

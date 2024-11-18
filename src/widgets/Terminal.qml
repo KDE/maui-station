@@ -84,7 +84,7 @@ readonly property bool hasActiveProcess : session.hasActiveProcess
             MenuItem
             {
                 property string url: kterminal.isTextSelected && visible ? parseUrl() : ""
-                enabled: Station.Station.isLocalUrl(url) && kterminal.isTextSelected
+                enabled: Station.Station.isValidUrl(url) && kterminal.isTextSelected
 
                 text: "Open"
                 icon.name: "quickopen"

@@ -11,7 +11,7 @@ public:
     static Station *instance();
 
 public Q_SLOTS:
-    static bool isLocalUrl(const QString &url);
+    static bool isValidUrl(const QString &url);
     static QString resolveUrl(const QString &url, const QString &dir);
 };
 
