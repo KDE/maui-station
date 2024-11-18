@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-18 01:47+0000\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
 "PO-Revision-Date: 2024-09-27 20:21+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -375,27 +375,27 @@ msgstr "Згладжування тексту"
 msgid "Watch for Silence"
 msgstr "Спостерігати за мовчанням"
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "View"
 msgstr "Перегляд"
 
-#: src/widgets/TerminalLayout.qml:39
+#: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Process Finished"
 msgstr "Процес завершив роботу"
 
-#: src/widgets/TerminalLayout.qml:39
+#: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "Завершено виконання завдання на цій вкладці: %1"
 
-#: src/widgets/TerminalLayout.qml:59
+#: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Pending Process"
 msgstr "Процес у черзі обробки"
 
-#: src/widgets/TerminalLayout.qml:59
+#: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "Запущений процес «%1» є неактивним протягом понад 30 секунд."

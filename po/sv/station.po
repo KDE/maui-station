@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-18 01:47+0000\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
 "PO-Revision-Date: 2024-09-27 17:45+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -376,27 +376,27 @@ msgstr "Kantutjämning av text"
 msgid "Watch for Silence"
 msgstr "Övervaka tystnad"
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "View"
 msgstr "Visa"
 
-#: src/widgets/TerminalLayout.qml:39
+#: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Process Finished"
 msgstr "Processen avslutades"
 
-#: src/widgets/TerminalLayout.qml:39
+#: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "Pågående aktivitet har avslutats under flik: %1"
 
-#: src/widgets/TerminalLayout.qml:59
+#: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Pending Process"
 msgstr "Väntande process"
 
-#: src/widgets/TerminalLayout.qml:59
+#: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "Körande process '%1' har varit inaktiv i mer än 30 sekunder."

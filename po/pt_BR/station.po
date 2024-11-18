@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-18 01:47+0000\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
 "PO-Revision-Date: 2024-01-11 21:01-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -376,27 +376,27 @@ msgstr "Texto de anti-aliasing"
 msgid "Watch for Silence"
 msgstr "Cuidado com o silêncio"
 
-#: src/widgets/TerminalLayout.qml:28
+#: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "View"
 msgstr ""
 
-#: src/widgets/TerminalLayout.qml:39
+#: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Process Finished"
 msgstr "Processo concluído"
 
-#: src/widgets/TerminalLayout.qml:39
+#: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Running task has finished for tab: %1"
 msgstr "A tarefa em execução terminou para a guia: %1"
 
-#: src/widgets/TerminalLayout.qml:59
+#: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Pending Process"
 msgstr "Processo pendente"
 
-#: src/widgets/TerminalLayout.qml:59
+#: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "O processo em execução \"%1\" está inativo há mais de 30 segundos."
