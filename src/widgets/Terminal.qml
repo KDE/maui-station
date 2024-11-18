@@ -9,10 +9,10 @@ import org.maui.station as Station
 Maui.SplitViewItem
 {
     id: control
-Maui.Controls.title: title
-Maui.Controls.badgeText: hasActiveProcess ? "!" : ""
+    Maui.Controls.title: title
+    Maui.Controls.badgeText: hasActiveProcess ? "!" : ""
 
-readonly property bool hasActiveProcess : session.hasActiveProcess
+    readonly property bool hasActiveProcess : session.hasActiveProcess
 
     property string path : "$HOME"
 
@@ -83,10 +83,17 @@ readonly property bool hasActiveProcess : session.hasActiveProcess
 
             MenuItem
             {
-                property string url: kterminal.isTextSelected && visible ? parseUrl() : ""
+                text: i18n("Open Location")
+                icon.name: "folder"
+                onTriggered: Qt.openUrlExternally("file://"+session.currentDir)
+            },
+
+            MenuItem
+            {
+                readonly property string url: kterminal.isTextSelected && visible ? parseUrl() : ""
                 enabled: Station.Station.isValidUrl(url) && kterminal.isTextSelected
 
-                text: "Open"
+                text: "Open Link"
                 icon.name: "quickopen"
 
                 function parseUrl() : string
@@ -98,8 +105,18 @@ readonly property bool hasActiveProcess : session.hasActiveProcess
                 {
                     Qt.openUrlExternally(url)
                 }
-
             },
+
+            MenuItem
+            {
+                enabled: kterminal.isTextSelected
+                text: i18n("Search Web")
+                icon.name: "webpage-symbolic"
+                onTriggered: Qt.openUrlExternally("https://www.google.com/search?q="+kterminal.selectedText())
+            },
+
+            MenuSeparator{},
+
 
             MenuItem
         {
