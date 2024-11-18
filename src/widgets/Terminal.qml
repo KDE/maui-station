@@ -4,6 +4,8 @@ import QtQuick.Controls
 import org.mauikit.controls as Maui
 import org.mauikit.terminal as Term
 
+import org.maui.station as Station
+
 Maui.SplitViewItem
 {
     id: control
@@ -75,7 +77,31 @@ readonly property bool hasActiveProcess : session.hasActiveProcess
         kterminal.fullCursorHeight : settings.fullCursorHeight
         kterminal.antialiasText : settings.antialiasText
 
-        menu: MenuItem
+        menu: [
+
+            MenuSeparator{},
+
+            MenuItem
+            {
+                property string url: kterminal.isTextSelected && visible ? parseUrl() : ""
+                enabled: Station.Station.isLocalUrl(url) && kterminal.isTextSelected
+
+                text: "Open"
+                icon.name: "quickopen"
+
+                function parseUrl() : string
+                {
+                    return Station.Station.resolveUrl(kterminal.selectedText(), session.currentDir)
+                }
+
+                onTriggered:
+                {
+                    Qt.openUrlExternally(url)
+                }
+
+            },
+
+            MenuItem
         {
             enabled: !settings.watchForSilence
             text: i18n("Watch for Silence")
@@ -87,6 +113,7 @@ readonly property bool hasActiveProcess : session.hasActiveProcess
                 control.watchForSlience = !control.watchForSlience
             }
         }
+        ]
 
         onKeyPressed: (event) =>
         {
