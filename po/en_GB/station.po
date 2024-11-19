@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-18 01:56+0000\n"
+"POT-Creation-Date: 2024-11-19 01:49+0000\n"
 "PO-Revision-Date: 2024-10-18 18:54+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -369,7 +369,17 @@ msgstr "Full Cursor Height"
 msgid "Antialias text"
 msgstr "Antialias text"
 
-#: src/widgets/Terminal.qml:81
+#: src/widgets/Terminal.qml:86
+#, kde-format
+msgid "Open Location"
+msgstr ""
+
+#: src/widgets/Terminal.qml:113
+#, kde-format
+msgid "Search Web"
+msgstr ""
+
+#: src/widgets/Terminal.qml:124
 #, kde-format
 msgid "Watch for Silence"
 msgstr "Watch for Silence"

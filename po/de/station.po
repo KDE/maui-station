@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-18 01:56+0000\n"
+"POT-Creation-Date: 2024-11-19 01:49+0000\n"
 "PO-Revision-Date: 2023-05-05 19:33+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -369,7 +369,17 @@ msgstr ""
 msgid "Antialias text"
 msgstr ""
 
-#: src/widgets/Terminal.qml:81
+#: src/widgets/Terminal.qml:86
+#, kde-format
+msgid "Open Location"
+msgstr ""
+
+#: src/widgets/Terminal.qml:113
+#, kde-format
+msgid "Search Web"
+msgstr ""
+
+#: src/widgets/Terminal.qml:124
 #, kde-format
 msgid "Watch for Silence"
 msgstr ""
