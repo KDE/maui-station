@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-19 01:49+0000\n"
-"PO-Revision-Date: 2024-09-28 13:01+0200\n"
+"PO-Revision-Date: 2024-12-04 09:41+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -374,12 +374,12 @@ msgstr "Texto con suavizado"
 #: src/widgets/Terminal.qml:86
 #, kde-format
 msgid "Open Location"
-msgstr ""
+msgstr "Abrir a localización"
 
 #: src/widgets/Terminal.qml:113
 #, kde-format
 msgid "Search Web"
-msgstr ""
+msgstr "Buscar en Internet"
 
 #: src/widgets/Terminal.qml:124
 #, kde-format
