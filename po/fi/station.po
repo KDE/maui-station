@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-19 01:49+0000\n"
-"PO-Revision-Date: 2024-10-18 13:46+0300\n"
+"PO-Revision-Date: 2024-12-01 14:57+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -370,12 +370,12 @@ msgstr "Antialiasoi teksti"
 #: src/widgets/Terminal.qml:86
 #, kde-format
 msgid "Open Location"
-msgstr ""
+msgstr "Avaa sijainti"
 
 #: src/widgets/Terminal.qml:113
 #, kde-format
 msgid "Search Web"
-msgstr ""
+msgstr "Etsi verkosta"
 
 #: src/widgets/Terminal.qml:124
 #, kde-format
