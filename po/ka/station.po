@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-19 01:49+0000\n"
-"PO-Revision-Date: 2023-12-06 06:22+0100\n"
+"PO-Revision-Date: 2024-12-25 22:34+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -374,12 +374,12 @@ msgstr "ტექსტის მომრგვალება"
 #: src/widgets/Terminal.qml:86
 #, kde-format
 msgid "Open Location"
-msgstr ""
+msgstr "მდებარეობის გახსნა"
 
 #: src/widgets/Terminal.qml:113
 #, kde-format
 msgid "Search Web"
-msgstr ""
+msgstr "ინტერნეტში ძებნა"
 
 #: src/widgets/Terminal.qml:124
 #, kde-format
@@ -389,7 +389,7 @@ msgstr "სიჩუმის აღმოჩენა"
 #: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "ხედი"
 
 #: src/widgets/TerminalLayout.qml:40
 #, kde-format
