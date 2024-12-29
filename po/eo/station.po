@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-19 01:49+0000\n"
-"PO-Revision-Date: 2024-07-06 16:50+0200\n"
+"PO-Revision-Date: 2024-12-28 17:41+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -374,12 +374,12 @@ msgstr "Kontraŭaliasi teksto"
 #: src/widgets/Terminal.qml:86
 #, kde-format
 msgid "Open Location"
-msgstr ""
+msgstr "Malfermi Lokon"
 
 #: src/widgets/Terminal.qml:113
 #, kde-format
 msgid "Search Web"
-msgstr ""
+msgstr "Serĉi la Reton"
 
 #: src/widgets/Terminal.qml:124
 #, kde-format
@@ -389,7 +389,7 @@ msgstr "Atenti pri Silento"
 #: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "Rigardi"
 
 #: src/widgets/TerminalLayout.qml:40
 #, kde-format
@@ -501,6 +501,3 @@ msgstr "Krei novan komandan ŝparvojon por rapide ekigi agojn."
 #, kde-format
 msgid "Add"
 msgstr "Aldoni"
-
-#~ msgid "Check"
-#~ msgstr "Kontroli"
