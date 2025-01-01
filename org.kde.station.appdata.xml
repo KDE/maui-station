@@ -14,6 +14,7 @@
   <name xml:lang="fi">Station</name>
   <name xml:lang="fr">Station</name>
   <name xml:lang="gl">Station</name>
+  <name xml:lang="he">תחנה</name>
   <name xml:lang="id">Station</name>
   <name xml:lang="it">Station</name>
   <name xml:lang="ka">სადგური</name>
@@ -41,6 +42,7 @@
   <summary xml:lang="fi">Pääte-emulaattori</summary>
   <summary xml:lang="fr">Émulateur de terminal</summary>
   <summary xml:lang="gl">Emulador de terminal.</summary>
+  <summary xml:lang="he">מדמה מסוף</summary>
   <summary xml:lang="id">Emulator Terminal</summary>
   <summary xml:lang="it">Emulatore di terminale</summary>
   <summary xml:lang="ka">ტერმინალის ემულატორი</summary>
@@ -72,6 +74,7 @@
     <p xml:lang="fi">Station on mukautuva pääte-emulaattori, ja sopii niin työpöydälle kuin GNU/Linuxia käyttäviin mobiililaitteisiinkin.</p>
     <p xml:lang="fr">Le logiciel « Station » est un émulateur de terminal convergent, prêt pour les appareils de bureau et mobiles utilisant « GNU/Linux ».</p>
     <p xml:lang="gl">Station é un emulador de terminal converxente, listo para dispositivos de escritorio e móbiles con GNU/Linux.</p>
+    <p xml:lang="he">תחנה היא מדמה מסוף גמיש, תומך בשולחן עבודה ומכשירים ניידים, מבוסס על גנו/לינוקס.</p>
     <p xml:lang="id">Station adalah emulator terminal terpusat, siap untuk peranti desktop dan ponsel yang menggunakan GNU/Linux.</p>
     <p xml:lang="it">Station è un emulatore di terminale convergente, pronto per desktop e dispositivi mobili che utilizzano GNU/Linux.</p>
     <p xml:lang="ka">სადგური კონვერგენტულ ტერმინალის ემულატორს წარმოადგენს, რომელიც მზადაა GNU/Linux-ის ქვეშ მომუშავე სამუშაო კომპიუტერებისა და მობილური მოწყობილობებისათვის.</p>
@@ -110,6 +113,7 @@
       <caption xml:lang="fi">Station työpöydällä ja puhelimessa.</caption>
       <caption xml:lang="fr">Station dans un ordinateur de bureau ou un téléphone.</caption>
       <caption xml:lang="gl">Station en escritorio e en móbil.</caption>
+      <caption xml:lang="he">תחנה בשולחן העבודה ובטלפון.</caption>
       <caption xml:lang="id">Station di desktop dan ponsel.</caption>
       <caption xml:lang="it">Station su desktop e telefono.</caption>
       <caption xml:lang="ka">სადგური კომპიუტერზე და ტელეფონზე.</caption>
