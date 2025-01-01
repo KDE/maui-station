@@ -1,0 +1,497 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the maui-station package.
+#
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-station\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-11-19 01:49+0000\n"
+"PO-Revision-Date: 2024-12-31 21:16+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.12.0\n"
+
+#: src/helpers/keyshelper.cpp:214
+#, kde-format
+msgid "Pause"
+msgstr "השהיה"
+
+#: src/helpers/keyshelper.cpp:215
+#, kde-format
+msgid "Interrupt"
+msgstr "הפרעה"
+
+#: src/helpers/keyshelper.cpp:216
+#, kde-format
+msgid "Kill"
+msgstr "חיסול"
+
+#: src/main.cpp:32
+#, kde-format
+msgid "Station"
+msgstr "תחנה"
+
+#: src/main.cpp:34
+#, kde-format
+msgid "Convergent terminal emulator."
+msgstr "מדמה מסוף גמיש."
+
+#: src/main.cpp:36
+#, kde-format
+msgid "© 2019-2023 Maui Development Team"
+msgstr "© 2019-‏2023 צוות פיתוח Maui"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "קמילו היגוויטה"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Developer"
+msgstr "מפתח"
+
+#: src/main.qml:159 src/main.qml:221 src/widgets/TutorialDialog.qml:47
+#, kde-format
+msgid "New Tab"
+msgstr "לשונית חדשה"
+
+#: src/main.qml:172 src/widgets/TutorialDialog.qml:20
+#, kde-format
+msgid "Split"
+msgstr "פיצול"
+
+#: src/main.qml:186
+#, kde-format
+msgid "Tutorial"
+msgstr "הדרכה"
+
+#: src/main.qml:198
+#, kde-format
+msgid "Settings"
+msgstr "הגדרות"
+
+#: src/main.qml:208
+#, kde-format
+msgid "About"
+msgstr "על אודות"
+
+#: src/main.qml:217
+#, kde-format
+msgid "Nothing here"
+msgstr "אין כאן כלום"
+
+#: src/main.qml:218
+#, kde-format
+msgid "To start hacking open a new tab or a split screen."
+msgstr "כדי להתחיל לפצח יש לפתוח לשונית חדשה או מסך מפוצל."
+
+#: src/main.qml:236
+#, kde-format
+msgid "Function Keys"
+msgstr "מקשי פונקציה"
+
+#: src/main.qml:245
+#, kde-format
+msgid "Nano"
+msgstr "Nano"
+
+#: src/main.qml:254
+#, kde-format
+msgid "Ctrl Modifiers"
+msgstr "מחליפי Ctrl"
+
+#: src/main.qml:263 src/widgets/TutorialDialog.qml:111
+#, kde-format
+msgid "Navigation"
+msgstr "ניווט"
+
+#: src/main.qml:272
+#, kde-format
+msgid "Favorite"
+msgstr "הוספה למועדפים"
+
+#: src/main.qml:281
+#, kde-format
+msgid "Signals"
+msgstr "אותות"
+
+#: src/main.qml:292
+#, kde-format
+msgid "More Signals"
+msgstr "אותות נוספים"
+
+#: src/main.qml:387
+#, kde-format
+msgid "Close"
+msgstr "סגירה"
+
+#: src/main.qml:388
+#, kde-format
+msgid ""
+"A process is still running. Are you sure you want to interrupt it and close "
+"it?"
+msgstr "יש עדיין תהליך פעיל. להפריע לו ולסגור אותו?"
+
+#: src/main.qml:419
+#, kde-format
+msgid "Do you want to restore the previous session?"
+msgstr "לשחזר את ההפעלה הקודמת?"
+
+#: src/widgets/CommandShortcuts.qml:24
+#, kde-format
+msgid "New Command"
+msgstr "פקודה חדשה"
+
+#: src/widgets/CommandShortcuts.qml:33
+#, kde-format
+msgid "Edit Command"
+msgstr "עריכת פקודה"
+
+#: src/widgets/CommandShortcuts.qml:34
+#, kde-format
+msgid "Edit a command shortcut"
+msgstr "עריכת קיצור מקשים לפקודה"
+
+#: src/widgets/CommandShortcuts.qml:48
+#, kde-format
+msgid "No Commands"
+msgstr "אין פקודות"
+
+#: src/widgets/CommandShortcuts.qml:49
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "ניתן להתחיל להוסיף קיצורי מקשים חדשים לפקודות"
+
+#: src/widgets/CommandShortcuts.qml:91
+#, kde-format
+msgid "Remove"
+msgstr "הסרה"
+
+#: src/widgets/CommandShortcuts.qml:101
+#, kde-format
+msgid "Edit"
+msgstr "עריכה"
+
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
+#, kde-format
+msgid "Font"
+msgstr "גופן"
+
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:242
+#, kde-format
+msgid "Alerts"
+msgstr "התראות"
+
+#: src/widgets/SettingsDialog.qml:60
+#, kde-format
+msgid "Running Task"
+msgstr "משימה פעילה"
+
+#: src/widgets/SettingsDialog.qml:61
+#, kde-format
+msgid "Prevent from closing a running task."
+msgstr "למנוע מסגירת משימה פעילה."
+
+#: src/widgets/SettingsDialog.qml:72
+#, kde-format
+msgid "Finished Task"
+msgstr "משימה שהסתיימה"
+
+#: src/widgets/SettingsDialog.qml:73
+#, kde-format
+msgid "Emit a notification when a pending process has finished."
+msgstr "הצגת התראה כשתהליך ממתין הסתיים."
+
+#: src/widgets/SettingsDialog.qml:84
+#, kde-format
+msgid "Silent"
+msgstr "שקט"
+
+#: src/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid ""
+"Emit an alert when a running task has been silent for more than 30 seconds."
+msgstr "הצגת התראה כאשר משימה פעילה הייתה שקטה למשך יותר מ־30 שניות."
+
+#: src/widgets/SettingsDialog.qml:98
+#, kde-format
+msgid "Interface"
+msgstr "ממשק"
+
+#: src/widgets/SettingsDialog.qml:103
+#, kde-format
+msgid "Color"
+msgstr "צבע"
+
+#: src/widgets/SettingsDialog.qml:104
+#, kde-format
+msgid "Switch between light and dark colorscheme."
+msgstr "החלפה בין ערכת צבעים כהה לבהירה ולהפך."
+
+#: src/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Light"
+msgstr "בהירה"
+
+#: src/widgets/SettingsDialog.qml:119
+#, kde-format
+msgid "Dark"
+msgstr "כהה"
+
+#: src/widgets/SettingsDialog.qml:127
+#, kde-format
+msgid "Adaptive"
+msgstr "מסתגלת"
+
+#: src/widgets/SettingsDialog.qml:151
+#, kde-format
+msgid "Translucency"
+msgstr "שקיפות"
+
+#: src/widgets/SettingsDialog.qml:152
+#, kde-format
+msgid "Translucent background."
+msgstr "רקע שקוף למחצה."
+
+#: src/widgets/SettingsDialog.qml:163
+#, kde-format
+msgid "Tab Title"
+msgstr "כותרת לשונית"
+
+#: src/widgets/SettingsDialog.qml:171
+#, kde-format
+msgid "Auto"
+msgstr "אוטו׳"
+
+#: src/widgets/SettingsDialog.qml:178
+#, kde-format
+msgid "Process"
+msgstr "תהליך"
+
+#: src/widgets/SettingsDialog.qml:185
+#, kde-format
+msgid "Directory"
+msgstr "תיקייה"
+
+#: src/widgets/SettingsDialog.qml:195
+#, kde-format
+msgid "Terminal"
+msgstr "מסוף"
+
+#: src/widgets/SettingsDialog.qml:200
+#, kde-format
+msgid "Save Session"
+msgstr "שמירת הפעלה"
+
+#: src/widgets/SettingsDialog.qml:201
+#, kde-format
+msgid "Restore previous session on startup."
+msgstr "שחזור ההפעלה הקודמת עם העלייה."
+
+#: src/widgets/SettingsDialog.qml:214
+#, kde-format
+msgid "Adaptive Color Scheme"
+msgstr "ערכת צבעים מסתגלת"
+
+#: src/widgets/SettingsDialog.qml:215
+#, kde-format
+msgid "Colors based on the current style."
+msgstr "צבעים שמבוססים על הסגנון הנוכחי."
+
+#: src/widgets/SettingsDialog.qml:228
+#, kde-format
+msgid "Color Scheme"
+msgstr "ערכת צבעים"
+
+#: src/widgets/SettingsDialog.qml:229
+#, kde-format
+msgid "Change the color scheme of the terminal."
+msgstr "החלפת ערכת הצבע של המסוף."
+
+#: src/widgets/SettingsDialog.qml:243
+#, kde-format
+msgid "Alert on processes and prevent closing them."
+msgstr "התראה על תהליכים ומניעת סגירתם."
+
+#: src/widgets/SettingsDialog.qml:256
+#, kde-format
+msgid "Display"
+msgstr "תצוגה"
+
+#: src/widgets/SettingsDialog.qml:262
+#, kde-format
+msgid "Font family and size."
+msgstr "משפחת וגודל גופן."
+
+#: src/widgets/SettingsDialog.qml:274
+#, kde-format
+msgid "Line Spacing"
+msgstr "ריווח שורות"
+
+#: src/widgets/SettingsDialog.qml:286
+#, kde-format
+msgid "History Size"
+msgstr "גודל ההיסטוריה"
+
+#: src/widgets/SettingsDialog.qml:287
+#, kde-format
+msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
+msgstr ""
+"מספר השורות לשמירה בזיכרון החוצץ. פחות מאפס משמעו כמות אינסופית של שורות."
+
+#: src/widgets/SettingsDialog.qml:299
+#, kde-format
+msgid "Enable Bold"
+msgstr "הפעלת הדגשה"
+
+#: src/widgets/SettingsDialog.qml:310
+#, kde-format
+msgid "Blinking Cursor"
+msgstr "סמן מהבהב"
+
+#: src/widgets/SettingsDialog.qml:321
+#, kde-format
+msgid "Full Cursor Height"
+msgstr "גובה סמן מלא"
+
+#: src/widgets/SettingsDialog.qml:332
+#, kde-format
+msgid "Antialias text"
+msgstr "החלקת קצוות טקסט"
+
+#: src/widgets/Terminal.qml:86
+#, kde-format
+msgid "Open Location"
+msgstr "פתיחת מקום"
+
+#: src/widgets/Terminal.qml:113
+#, kde-format
+msgid "Search Web"
+msgstr "חיפוש באינטרנט"
+
+#: src/widgets/Terminal.qml:124
+#, kde-format
+msgid "Watch for Silence"
+msgstr "המתנה לשקט"
+
+#: src/widgets/TerminalLayout.qml:29
+#, kde-format
+msgid "View"
+msgstr "הצגה"
+
+#: src/widgets/TerminalLayout.qml:40
+#, kde-format
+msgid "Process Finished"
+msgstr "התהליך הסתיים"
+
+#: src/widgets/TerminalLayout.qml:40
+#, kde-format
+msgid "Running task has finished for tab: %1"
+msgstr "המשימה הפעילה הסתיימה ללשונית: %1"
+
+#: src/widgets/TerminalLayout.qml:60
+#, kde-format
+msgid "Pending Process"
+msgstr "תהליך ממתין"
+
+#: src/widgets/TerminalLayout.qml:60
+#, kde-format
+msgid "Running process '%1' has been inactive for more than 30 seconds."
+msgstr "התהליך הפעיל ‚%1’ לא הראה פעילות במשך למעלה מ־30 שניות."
+
+#: src/widgets/TutorialDialog.qml:10 src/widgets/TutorialDialog.qml:15
+#, kde-format
+msgid "Shortcuts"
+msgstr "מקשי קיצור"
+
+#: src/widgets/TutorialDialog.qml:16
+#, kde-format
+msgid "When using a keyboard you can use the following shortcuts to navigate."
+msgstr "בעת שימוש במקלדת אפשר להשתמש במקשי הקיצור הבאים כדי לנווט."
+
+#: src/widgets/TutorialDialog.qml:21
+#, kde-format
+msgid "Open a new split view, vertically or horizontally."
+msgstr "פתיחת תצוגה מפוצלת, אנכית או אופקית."
+
+#: src/widgets/TutorialDialog.qml:67
+#, kde-format
+msgid "Find"
+msgstr "איתור"
+
+#: src/widgets/TutorialDialog.qml:68
+#, kde-format
+msgid "Open the find bar."
+msgstr "פתיחת סרגל האיתור."
+
+#: src/widgets/TutorialDialog.qml:88
+#, kde-format
+msgid "Switch"
+msgstr "החלפה"
+
+#: src/widgets/TutorialDialog.qml:89
+#, kde-format
+msgid "Switch between split views."
+msgstr "החלפה בין תצוגות מפוצלות."
+
+#: src/widgets/TutorialDialog.qml:112
+#, kde-format
+msgid "On touch devices you can use the following gestures to navigate."
+msgstr "בהתקני מגע אפשר להשתמש במחוות הבאות כדי לנווט."
+
+#: src/widgets/TutorialDialog.qml:116
+#, kde-format
+msgid "Up & Down"
+msgstr "למעלה ולמטה"
+
+#: src/widgets/TutorialDialog.qml:117
+#, kde-format
+msgid "Swipe up or down to navigate the commands history."
+msgstr "החלקה למעלה או למטה תנווט בהיסטוריית הפקודות."
+
+#: src/widgets/TutorialDialog.qml:122
+#, kde-format
+msgid "Left & Right"
+msgstr "שמאל וימין"
+
+#: src/widgets/TutorialDialog.qml:123
+#, kde-format
+msgid "Swipe left or right to move through the command line to edit."
+msgstr "החלקה שמאלה או ימינה תזיז את הסמן בשורת הפקודה כדי לאפשר עריכה."
+
+#: src/widgets/TutorialDialog.qml:128
+#, kde-format
+msgid "Two Fingers Left & Right"
+msgstr "שמאלה וימינה עם שתי אצבעות"
+
+#: src/widgets/TutorialDialog.qml:129
+#, kde-format
+msgid "Swipe up or down with two fingers to scroll."
+msgstr "החלקה למעלה או למטה עם שתי אצבעות תגלול."
+
+#: src/widgets/TutorialDialog.qml:136
+#, kde-format
+msgid "Commands"
+msgstr "פקודות"
+
+#: src/widgets/TutorialDialog.qml:140
+#, kde-format
+msgid "Create"
+msgstr "יצירה"
+
+#: src/widgets/TutorialDialog.qml:141
+#, kde-format
+msgid "Create a new command shortcut to quickly trigger actions."
+msgstr "אפשר ליצור מקשי קיצור חדשים לפקודות כדי להזניק פעולות בזריזות."
+
+#: src/widgets/TutorialDialog.qml:145
+#, kde-format
+msgid "Add"
+msgstr "הוספה"
