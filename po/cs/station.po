@@ -368,7 +368,7 @@ msgstr "Vyhlazovat text"
 #: src/widgets/Terminal.qml:86
 #, kde-format
 msgid "Open Location"
-msgstr ""
+msgstr "Otevřít umístění"
 
 #: src/widgets/Terminal.qml:113
 #, kde-format
