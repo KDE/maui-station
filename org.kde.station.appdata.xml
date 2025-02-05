@@ -19,6 +19,7 @@
   <name xml:lang="it">Station</name>
   <name xml:lang="ka">სადგური</name>
   <name xml:lang="ko">Station</name>
+  <name xml:lang="lv">Station</name>
   <name xml:lang="nl">Station:</name>
   <name xml:lang="pl">Stacja</name>
   <name xml:lang="pt">Station</name>
@@ -47,6 +48,7 @@
   <summary xml:lang="it">Emulatore di terminale</summary>
   <summary xml:lang="ka">ტერმინალის ემულატორი</summary>
   <summary xml:lang="ko">터미널 에뮬레이터</summary>
+  <summary xml:lang="lv">Termināļa emulators</summary>
   <summary xml:lang="nl">Terminalprogramma</summary>
   <summary xml:lang="pl">Emulator terminala</summary>
   <summary xml:lang="pt">Emulador do Terminal</summary>
@@ -79,6 +81,7 @@
     <p xml:lang="it">Station è un emulatore di terminale convergente, pronto per desktop e dispositivi mobili che utilizzano GNU/Linux.</p>
     <p xml:lang="ka">სადგური კონვერგენტულ ტერმინალის ემულატორს წარმოადგენს, რომელიც მზადაა GNU/Linux-ის ქვეშ მომუშავე სამუშაო კომპიუტერებისა და მობილური მოწყობილობებისათვის.</p>
     <p xml:lang="ko">Station은 올인원 터미널 에뮬레이터입니다. GNU/리눅스 기반 데스크톱과 모바일 장치에서 실행할 수 있습니다.</p>
+    <p xml:lang="lv">„Station“ ir konverģents termināļa emulators, kas ir gatavs lietošanai datorā un mobilajās ierīcēs ar GNU/„Linux“.</p>
     <p xml:lang="nl">Station is een convergent terminalprogramma, gereed voor bureaublad en mobiele apparaten die GNU/Linux gebruiken.</p>
     <p xml:lang="pl">Stacja jest zbieżnym emulatorem terminala, przeznaczonym na urządzenia biurkowe i przenośne, używającym GNU/Linux.</p>
     <p xml:lang="pt">O Station é um emulador de terminal convergente, pronto para computadores e dispositivos móveis que usem o GNU/Linux.</p>
@@ -118,6 +121,7 @@
       <caption xml:lang="it">Station su desktop e telefono.</caption>
       <caption xml:lang="ka">სადგური კომპიუტერზე და ტელეფონზე.</caption>
       <caption xml:lang="ko">데스크톱과 휴대폰에서의 Station입니다.</caption>
+      <caption xml:lang="lv">Station datorā un telefonā</caption>
       <caption xml:lang="nl">Station op bureaublad en telefoon.</caption>
       <caption xml:lang="pl">Stacja na biurku i telefonie.</caption>
       <caption xml:lang="pt">O Station num computador e num telefone.</caption>
