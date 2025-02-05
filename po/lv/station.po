@@ -1,0 +1,501 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the maui-station package.
+#
+# SPDX-FileCopyrightText: 2025 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-station\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-11-19 01:49+0000\n"
+"PO-Revision-Date: 2025-02-03 16:16+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 24.12.1\n"
+
+#: src/helpers/keyshelper.cpp:214
+#, kde-format
+msgid "Pause"
+msgstr "Pauze"
+
+#: src/helpers/keyshelper.cpp:215
+#, kde-format
+msgid "Interrupt"
+msgstr "Pārtraukt"
+
+#: src/helpers/keyshelper.cpp:216
+#, kde-format
+msgid "Kill"
+msgstr "Nobeigt"
+
+#: src/main.cpp:32
+#, kde-format
+msgid "Station"
+msgstr "Station"
+
+#: src/main.cpp:34
+#, kde-format
+msgid "Convergent terminal emulator."
+msgstr "Konverģents termināļa emulators."
+
+#: src/main.cpp:36
+#, kde-format
+msgid "© 2019-2023 Maui Development Team"
+msgstr "© 2019—2023 „Maui“ izstrādātāju komanda"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Developer"
+msgstr "Izstrādātājs"
+
+#: src/main.qml:159 src/main.qml:221 src/widgets/TutorialDialog.qml:47
+#, kde-format
+msgid "New Tab"
+msgstr "Jauna cilne"
+
+#: src/main.qml:172 src/widgets/TutorialDialog.qml:20
+#, kde-format
+msgid "Split"
+msgstr "Sadalīt"
+
+#: src/main.qml:186
+#, kde-format
+msgid "Tutorial"
+msgstr "Pamācība"
+
+#: src/main.qml:198
+#, kde-format
+msgid "Settings"
+msgstr "Iestatījumi"
+
+#: src/main.qml:208
+#, kde-format
+msgid "About"
+msgstr "Par"
+
+#: src/main.qml:217
+#, kde-format
+msgid "Nothing here"
+msgstr "Te nekā nav"
+
+#: src/main.qml:218
+#, kde-format
+msgid "To start hacking open a new tab or a split screen."
+msgstr "Lai sāktu darbu, atveriet jaunu cilni vai sadaliet ekrānu."
+
+#: src/main.qml:236
+#, kde-format
+msgid "Function Keys"
+msgstr "Funkciju taustiņi"
+
+#: src/main.qml:245
+#, kde-format
+msgid "Nano"
+msgstr "Nano"
+
+#: src/main.qml:254
+#, kde-format
+msgid "Ctrl Modifiers"
+msgstr "„Ctrl“ modifikatori"
+
+#: src/main.qml:263 src/widgets/TutorialDialog.qml:111
+#, kde-format
+msgid "Navigation"
+msgstr "Navigācija"
+
+#: src/main.qml:272
+#, kde-format
+msgid "Favorite"
+msgstr "Iecienīts"
+
+#: src/main.qml:281
+#, kde-format
+msgid "Signals"
+msgstr "Signāli"
+
+#: src/main.qml:292
+#, kde-format
+msgid "More Signals"
+msgstr "Vairāk signālu"
+
+#: src/main.qml:387
+#, kde-format
+msgid "Close"
+msgstr "Aizvērt"
+
+#: src/main.qml:388
+#, kde-format
+msgid ""
+"A process is still running. Are you sure you want to interrupt it and close "
+"it?"
+msgstr "Joprojām darbojas process. Vai tiešām vēlaties to apturēt un aizvērt?"
+
+#: src/main.qml:419
+#, kde-format
+msgid "Do you want to restore the previous session?"
+msgstr "Vai vēlaties atjaunot uz iepriekšējo sesiju?"
+
+#: src/widgets/CommandShortcuts.qml:24
+#, kde-format
+msgid "New Command"
+msgstr "Jauna komanda"
+
+#: src/widgets/CommandShortcuts.qml:33
+#, kde-format
+msgid "Edit Command"
+msgstr "Rediģēt komandu"
+
+#: src/widgets/CommandShortcuts.qml:34
+#, kde-format
+msgid "Edit a command shortcut"
+msgstr "Rediģēt komandas saīsni"
+
+#: src/widgets/CommandShortcuts.qml:48
+#, kde-format
+msgid "No Commands"
+msgstr "Nav komandu"
+
+#: src/widgets/CommandShortcuts.qml:49
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "Sāciet pievienot jaunas komandu saīsnes"
+
+#: src/widgets/CommandShortcuts.qml:91
+#, kde-format
+msgid "Remove"
+msgstr "Noņemt"
+
+#: src/widgets/CommandShortcuts.qml:101
+#, kde-format
+msgid "Edit"
+msgstr "Rediģēt"
+
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
+#, kde-format
+msgid "Font"
+msgstr "Fonts"
+
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:242
+#, kde-format
+msgid "Alerts"
+msgstr "Brīdinājumi"
+
+#: src/widgets/SettingsDialog.qml:60
+#, kde-format
+msgid "Running Task"
+msgstr "Palaistie darbi"
+
+#: src/widgets/SettingsDialog.qml:61
+#, kde-format
+msgid "Prevent from closing a running task."
+msgstr "Novērst palaista darba aizvēršanu."
+
+#: src/widgets/SettingsDialog.qml:72
+#, kde-format
+msgid "Finished Task"
+msgstr "Pabeigts darbs"
+
+#: src/widgets/SettingsDialog.qml:73
+#, kde-format
+msgid "Emit a notification when a pending process has finished."
+msgstr "Parādīt paziņojumu, kad ir pabeigts kāds process."
+
+#: src/widgets/SettingsDialog.qml:84
+#, kde-format
+msgid "Silent"
+msgstr "Kluss"
+
+#: src/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid ""
+"Emit an alert when a running task has been silent for more than 30 seconds."
+msgstr ""
+"Parādīt brīdinājumu, kad palaists uzdevums ir bijis kluss ilgāk par 30 "
+"sekundēm."
+
+#: src/widgets/SettingsDialog.qml:98
+#, kde-format
+msgid "Interface"
+msgstr "Saskarne"
+
+#: src/widgets/SettingsDialog.qml:103
+#, kde-format
+msgid "Color"
+msgstr "Krāsa"
+
+#: src/widgets/SettingsDialog.qml:104
+#, kde-format
+msgid "Switch between light and dark colorscheme."
+msgstr "Pārslēgties starp gaišo un tumšo motīvu."
+
+#: src/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Light"
+msgstr "Gaišs"
+
+#: src/widgets/SettingsDialog.qml:119
+#, kde-format
+msgid "Dark"
+msgstr "Tumšs"
+
+#: src/widgets/SettingsDialog.qml:127
+#, kde-format
+msgid "Adaptive"
+msgstr "Adaptīvs"
+
+#: src/widgets/SettingsDialog.qml:151
+#, kde-format
+msgid "Translucency"
+msgstr "Caurspīdīgums"
+
+#: src/widgets/SettingsDialog.qml:152
+#, kde-format
+msgid "Translucent background."
+msgstr "Caurspīdīgs fons"
+
+#: src/widgets/SettingsDialog.qml:163
+#, kde-format
+msgid "Tab Title"
+msgstr "Cilnes nosaukums"
+
+#: src/widgets/SettingsDialog.qml:171
+#, kde-format
+msgid "Auto"
+msgstr "Automātisks"
+
+#: src/widgets/SettingsDialog.qml:178
+#, kde-format
+msgid "Process"
+msgstr "Process"
+
+#: src/widgets/SettingsDialog.qml:185
+#, kde-format
+msgid "Directory"
+msgstr "Mape"
+
+#: src/widgets/SettingsDialog.qml:195
+#, kde-format
+msgid "Terminal"
+msgstr "Terminālis"
+
+#: src/widgets/SettingsDialog.qml:200
+#, kde-format
+msgid "Save Session"
+msgstr "Saglabāt sesiju"
+
+#: src/widgets/SettingsDialog.qml:201
+#, kde-format
+msgid "Restore previous session on startup."
+msgstr "Palaižot programmu, atjaunot iepriekšējo sesiju"
+
+#: src/widgets/SettingsDialog.qml:214
+#, kde-format
+msgid "Adaptive Color Scheme"
+msgstr "Adaptīva krāsu shēma"
+
+#: src/widgets/SettingsDialog.qml:215
+#, kde-format
+msgid "Colors based on the current style."
+msgstr "Krāsas balstās uz pašreizējo stilu."
+
+#: src/widgets/SettingsDialog.qml:228
+#, kde-format
+msgid "Color Scheme"
+msgstr "Krāsu shēma"
+
+#: src/widgets/SettingsDialog.qml:229
+#, kde-format
+msgid "Change the color scheme of the terminal."
+msgstr "Mainīt termināļa krāsu shēmu."
+
+#: src/widgets/SettingsDialog.qml:243
+#, kde-format
+msgid "Alert on processes and prevent closing them."
+msgstr "Brīdinājums par procesiem un to aizvēršanas novēršana."
+
+#: src/widgets/SettingsDialog.qml:256
+#, kde-format
+msgid "Display"
+msgstr "Izskats"
+
+#: src/widgets/SettingsDialog.qml:262
+#, kde-format
+msgid "Font family and size."
+msgstr "Fonta saime un izmērs."
+
+#: src/widgets/SettingsDialog.qml:274
+#, kde-format
+msgid "Line Spacing"
+msgstr "Rindstarpas"
+
+#: src/widgets/SettingsDialog.qml:286
+#, kde-format
+msgid "History Size"
+msgstr "Vēstures izmērs"
+
+#: src/widgets/SettingsDialog.qml:287
+#, kde-format
+msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
+msgstr ""
+"Rindiņu skaits, kuras paturēt buferī. Mazāk par nulli nozīmē bezgalīgu "
+"skaitu."
+
+#: src/widgets/SettingsDialog.qml:299
+#, kde-format
+msgid "Enable Bold"
+msgstr "Ieslēgt treknrakstu"
+
+#: src/widgets/SettingsDialog.qml:310
+#, kde-format
+msgid "Blinking Cursor"
+msgstr "Mirgojošs kursors"
+
+#: src/widgets/SettingsDialog.qml:321
+#, kde-format
+msgid "Full Cursor Height"
+msgstr "Pilns kursora augstums"
+
+#: src/widgets/SettingsDialog.qml:332
+#, kde-format
+msgid "Antialias text"
+msgstr "Nogludināts teksts"
+
+#: src/widgets/Terminal.qml:86
+#, kde-format
+msgid "Open Location"
+msgstr "Atvērt atrašanās vietu"
+
+#: src/widgets/Terminal.qml:113
+#, kde-format
+msgid "Search Web"
+msgstr "Meklēt tīmeklī"
+
+#: src/widgets/Terminal.qml:124
+#, kde-format
+msgid "Watch for Silence"
+msgstr "Uzraudzīt klusumu"
+
+#: src/widgets/TerminalLayout.qml:29
+#, kde-format
+msgid "View"
+msgstr "Skats"
+
+#: src/widgets/TerminalLayout.qml:40
+#, kde-format
+msgid "Process Finished"
+msgstr "Process ir pabeigts"
+
+#: src/widgets/TerminalLayout.qml:40
+#, kde-format
+msgid "Running task has finished for tab: %1"
+msgstr "Cilnē process ir beidzis darbu: %1"
+
+#: src/widgets/TerminalLayout.qml:60
+#, kde-format
+msgid "Pending Process"
+msgstr "Process gaida"
+
+#: src/widgets/TerminalLayout.qml:60
+#, kde-format
+msgid "Running process '%1' has been inactive for more than 30 seconds."
+msgstr "Palaistais process „%1“ ir bijis neaktīvs ilgāk par 30 sekundēm."
+
+#: src/widgets/TutorialDialog.qml:10 src/widgets/TutorialDialog.qml:15
+#, kde-format
+msgid "Shortcuts"
+msgstr "Saīsnes"
+
+#: src/widgets/TutorialDialog.qml:16
+#, kde-format
+msgid "When using a keyboard you can use the following shortcuts to navigate."
+msgstr "Navigācijai varat izmantot šādas tastatūras saīsnes."
+
+#: src/widgets/TutorialDialog.qml:21
+#, kde-format
+msgid "Open a new split view, vertically or horizontally."
+msgstr "Atvērt jaunu dalīto skatu — vertikāli vai horizontāli."
+
+#: src/widgets/TutorialDialog.qml:67
+#, kde-format
+msgid "Find"
+msgstr "Meklēt"
+
+#: src/widgets/TutorialDialog.qml:68
+#, kde-format
+msgid "Open the find bar."
+msgstr "Atvērt meklēšanas joslu."
+
+#: src/widgets/TutorialDialog.qml:88
+#, kde-format
+msgid "Switch"
+msgstr "Pārslēgt"
+
+#: src/widgets/TutorialDialog.qml:89
+#, kde-format
+msgid "Switch between split views."
+msgstr "Pārslēgties starp dalītiem skatiem."
+
+#: src/widgets/TutorialDialog.qml:112
+#, kde-format
+msgid "On touch devices you can use the following gestures to navigate."
+msgstr "Skārienjutīgās ierīcēs navigācijai varat izmantot šos žestus."
+
+#: src/widgets/TutorialDialog.qml:116
+#, kde-format
+msgid "Up & Down"
+msgstr "Augšup un lejup"
+
+#: src/widgets/TutorialDialog.qml:117
+#, kde-format
+msgid "Swipe up or down to navigate the commands history."
+msgstr "Velciet augšup vai lejup, lai pārlūkotu komandu vēsturi."
+
+#: src/widgets/TutorialDialog.qml:122
+#, kde-format
+msgid "Left & Right"
+msgstr "Pa kreisi un pa labi"
+
+#: src/widgets/TutorialDialog.qml:123
+#, kde-format
+msgid "Swipe left or right to move through the command line to edit."
+msgstr "Velciet pa kreisi vai pa labi, lai rediģētu komandrindu."
+
+#: src/widgets/TutorialDialog.qml:128
+#, kde-format
+msgid "Two Fingers Left & Right"
+msgstr "Divi pirksti pa kreisi un pa labi"
+
+#: src/widgets/TutorialDialog.qml:129
+#, kde-format
+msgid "Swipe up or down with two fingers to scroll."
+msgstr "Velciet augšup vai lejup ar diviem pirkstiem, lai ritinātu."
+
+#: src/widgets/TutorialDialog.qml:136
+#, kde-format
+msgid "Commands"
+msgstr "Komandas"
+
+#: src/widgets/TutorialDialog.qml:140
+#, kde-format
+msgid "Create"
+msgstr "Izveidot"
+
+#: src/widgets/TutorialDialog.qml:141
+#, kde-format
+msgid "Create a new command shortcut to quickly trigger actions."
+msgstr "Izveidot jaunu komandas saīsni, lai ātri palaistu darbības."
+
+#: src/widgets/TutorialDialog.qml:145
+#, kde-format
+msgid "Add"
+msgstr "Pievienot"
