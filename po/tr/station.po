@@ -1,14 +1,14 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
 # Emir SARI <emir_sari@icloud.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-19 01:49+0000\n"
-"PO-Revision-Date: 2024-11-19 20:17+0300\n"
+"PO-Revision-Date: 2025-02-05 11:29+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -189,7 +189,7 @@ msgstr "Yazıtipi"
 #: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:242
 #, kde-format
 msgid "Alerts"
-msgstr "Alarmlar"
+msgstr "İkazlar"
 
 #: src/widgets/SettingsDialog.qml:60
 #, kde-format
@@ -221,7 +221,7 @@ msgstr "Sessiz"
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
-"Çalışan bir görev 30 saniyeden uzun süre sessiz kaldığında bir uyarı verin."
+"Çalışan bir görev 30 saniyeden uzun süre sessiz kaldığında bir ikaz verin."
 
 #: src/widgets/SettingsDialog.qml:98
 #, kde-format
@@ -321,7 +321,7 @@ msgstr "Uçbirimin renk şemasını değiştirin."
 #: src/widgets/SettingsDialog.qml:243
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr "Süreçlerde uyarın ve onları kapatmayı engelleyin."
+msgstr "Süreçlerde ikaz edin ve onları kapatmayı engelleyin."
 
 #: src/widgets/SettingsDialog.qml:256
 #, kde-format
