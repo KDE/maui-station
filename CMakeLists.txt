@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 set(STATION_VERSION 4.0.2)
-add_compile_definitions(APP_COPYRIGHT_NOTICE="© 2019-2024 Maui Development Team")
+add_compile_definitions(APP_COPYRIGHT_NOTICE="© 2019-2025 Maui Development Team")
 
 project(station LANGUAGES CXX VERSION ${STATION_VERSION})
 

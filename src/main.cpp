@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
                      STATION_VERSION_STRING,
                      i18n("Convergent terminal emulator."),
                      KAboutLicense::LGPL_V3,
-                     i18n("© 2019-2023 Maui Development Team"),
+                     APP_COPYRIGHT_NOTICE,
                      QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
     about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
     about.setHomepage("https://mauikit.org");
