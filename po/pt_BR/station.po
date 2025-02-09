@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-19 01:49+0000\n"
+"POT-Creation-Date: 2025-02-09 00:40+0000\n"
 "PO-Revision-Date: 2025-02-05 23:55-0300\n"
 "Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -42,11 +42,6 @@ msgstr "Station"
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "Emulador de terminal convergente."
-
-#: src/main.cpp:36
-#, kde-format
-msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-2023 Equipe de desenvolvimento do Maui"
 
 #: src/main.cpp:38
 #, kde-format
@@ -506,6 +501,9 @@ msgstr "Cria um novo atalho de comando para acionar ações rapidamente."
 #, kde-format
 msgid "Add"
 msgstr "Adicionar"
+
+#~ msgid "© 2019-2023 Maui Development Team"
+#~ msgstr "© 2019-2023 Equipe de desenvolvimento do Maui"
 
 #~ msgid "Check"
 #~ msgstr "Verificar"

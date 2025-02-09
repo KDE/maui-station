@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-19 01:49+0000\n"
+"POT-Creation-Date: 2025-02-09 00:40+0000\n"
 "PO-Revision-Date: 2025-02-05 11:29+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -42,11 +42,6 @@ msgstr "İstasyon"
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "Yakınsak uçbirim öykünücüsü."
-
-#: src/main.cpp:36
-#, kde-format
-msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019–2023 Maui Geliştirme Takımı"
 
 #: src/main.cpp:38
 #, kde-format
@@ -500,6 +495,9 @@ msgstr "Eylemleri tez tetiklemek için yeni bir komut kısayolu oluşturun."
 #, kde-format
 msgid "Add"
 msgstr "Ekle"
+
+#~ msgid "© 2019-2023 Maui Development Team"
+#~ msgstr "© 2019–2023 Maui Geliştirme Takımı"
 
 #~ msgid "Check"
 #~ msgstr "Denetle"

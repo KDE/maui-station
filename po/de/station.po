@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-19 01:49+0000\n"
+"POT-Creation-Date: 2025-02-09 00:40+0000\n"
 "PO-Revision-Date: 2023-05-05 19:33+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -43,12 +43,6 @@ msgstr "Station"
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr ""
-
-#: src/main.cpp:36
-#, fuzzy, kde-format
-#| msgid "© 2019-%1 Maui Development Team"
-msgid "© 2019-2023 Maui Development Team"
-msgstr "Copyright © 2019-%1 Maui-Entwicklerteam"
 
 #: src/main.cpp:38
 #, kde-format
@@ -498,6 +492,11 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Hinzufügen"
+
+#, fuzzy
+#~| msgid "© 2019-%1 Maui Development Team"
+#~ msgid "© 2019-2023 Maui Development Team"
+#~ msgstr "Copyright © 2019-%1 Maui-Entwicklerteam"
 
 #~ msgid "Cancel"
 #~ msgstr "Abbrechen"

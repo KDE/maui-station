@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-19 01:49+0000\n"
+"POT-Creation-Date: 2025-02-09 00:40+0000\n"
 "PO-Revision-Date: 2024-11-19 09:41+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -43,11 +43,6 @@ msgstr "Station"
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "Emulador de terminal convergent."
-
-#: src/main.cpp:36
-#, kde-format
-msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-2023 Maui Development Team"
 
 #: src/main.cpp:38
 #, kde-format
@@ -507,6 +502,9 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afegeix"
+
+#~ msgid "© 2019-2023 Maui Development Team"
+#~ msgstr "© 2019-2023 Maui Development Team"
 
 #~ msgid "Check"
 #~ msgstr "Comprova"

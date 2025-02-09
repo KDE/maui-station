@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-19 01:49+0000\n"
+"POT-Creation-Date: 2025-02-09 00:40+0000\n"
 "PO-Revision-Date: 2024-12-26 18:08+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -44,11 +44,6 @@ msgstr "Station"
 #, kde-format
 msgid "Convergent terminal emulator."
 msgstr "Terminal emulatzaile konbergentea."
-
-#: src/main.cpp:36
-#, kde-format
-msgid "© 2019-2023 Maui Development Team"
-msgstr "© 2019-2023 Maui garapen taldea"
 
 #: src/main.cpp:38
 #, kde-format
@@ -506,6 +501,9 @@ msgstr "Sortu komando baten lasterbide berri bat ekintzak azkar eragiteko."
 #, kde-format
 msgid "Add"
 msgstr "Gehitu"
+
+#~ msgid "© 2019-2023 Maui Development Team"
+#~ msgstr "© 2019-2023 Maui garapen taldea"
 
 #~ msgid "Check"
 #~ msgstr "Egiaztatu"
