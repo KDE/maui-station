@@ -489,6 +489,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "© 2019-2023 Maui Development Team"
-#~ msgstr "© 2019-2023 Vývojový tým Maui"
