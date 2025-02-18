@@ -42,7 +42,7 @@ void CommandsModel::setList()
 void CommandsModel::saveCommands()
 {
     QSettings settings;
-    settings.beginGroup("shorcuts");
+    settings.beginGroup("shortcuts");
     settings.setValue("commands", m_commands);
     settings.endGroup();
 }

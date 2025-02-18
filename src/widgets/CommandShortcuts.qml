@@ -5,24 +5,25 @@ import org.mauikit.controls as Maui
 
 import org.maui.station as Station
 
-Maui.PopupPage
+Maui.Page
 {
     id: control
-    maxHeight: 600
-    maxWidth: 400
 
-    persistent: false
+    signal commandTriggered(string command, bool autorun)
 
-    headBar.visible: true
-    signal commandTriggered(string command)
-
-    headBar.middleContent: TextField
+    footBar.forceCenterMiddleContent: false
+    footBar.middleContent: Maui.SearchField
     {
+        placeholderText: i18n("Filter/Add")
+        onAccepted:
+        {
+            _commandsList.insert(text)
+            clear()
+        }
+
         Layout.fillWidth: true
         Layout.maximumWidth: 500
-        onAccepted: _commandsList.insert(text)
-        placeholderText: i18n("New Command")
-
+        implicitWidth: 80
     }
 
     Maui.InputDialog
@@ -34,52 +35,6 @@ Maui.PopupPage
         message: i18n("Edit a command shortcut")
 
         onFinished: _commandsList.edit(index, text)
-    }
-
-
-    stack: Maui.ListBrowser
-    {
-        id: _commandsShortcutList
-        Layout.fillWidth: true
-        Layout.fillHeight: true
-
-        holder.visible: _commandsShortcutList.count === 0
-        holder.emoji: "qrc:/station/edit-rename.svg"
-        holder.title: i18n("No Commands")
-        holder.body: i18n("Start adding new command shortcuts")
-
-        model: Maui.BaseModel
-        {
-            list: Station.CommandsModel
-            {
-                id: _commandsList
-            }
-        }
-
-        delegate: Maui.ListBrowserDelegate
-        {
-            width: ListView.view.width
-            label1.text: model.value
-
-            onClicked:
-            {
-                _commandsShortcutList.currentIndex = index
-                commandTriggered(model.value)
-                control.close()
-            }
-
-            onRightClicked:
-            {
-                _commandsShortcutList.currentIndex = index
-                _menu.popup()
-            }
-
-            onPressAndHold:
-            {
-                _commandsShortcutList.currentIndex = index
-                _menu.popup()
-            }
-        }
     }
 
     Menu
@@ -105,6 +60,65 @@ Maui.PopupPage
                 _editCommandDialog.index= _commandsShortcutList.currentIndex
                 _editCommandDialog.textEntry.text = _commandsShortcutList.model.get(_commandsShortcutList.currentIndex).value
                 _editCommandDialog.open()
+            }
+        }
+    }
+
+    Maui.ListBrowser
+    {
+        id: _commandsShortcutList
+        anchors.fill: parent
+        currentIndex: -1
+        holder.visible: _commandsShortcutList.count === 0
+        holder.emoji: "qrc:/station/edit-rename.svg"
+        holder.title: i18n("No Commands")
+        holder.body: i18n("Start adding new command shortcuts")
+
+        model: Maui.BaseModel
+        {
+            list: Station.CommandsModel
+            {
+                id: _commandsList
+            }
+        }
+
+        delegate: Maui.ListBrowserDelegate
+        {
+            width: ListView.view.width
+            label1.text: model.value
+
+            onClicked:
+            {
+                commandTriggered(model.value, false)
+            }
+
+            onDoubleClicked:
+            {
+                commandTriggered(model.value, true)
+            }
+
+            onRightClicked:
+            {
+                _commandsShortcutList.currentIndex = index
+                _menu.popup()
+            }
+
+            onPressAndHold:
+            {
+                _commandsShortcutList.currentIndex = index
+                _menu.popup()
+            }
+
+            ToolButton
+            {
+                flat: true
+                icon.name: "media-playback-start"
+                icon.width: Maui.Style.iconSizes.small
+                onClicked:
+                {
+                    _commandsShortcutList.currentIndex = index
+                    commandTriggered(model.value, true)
+                }
             }
         }
     }

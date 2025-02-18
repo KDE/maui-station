@@ -6,6 +6,7 @@ import QtQuick.Layouts
 
 import org.mauikit.controls as Maui
 import org.mauikit.terminal as Term
+import org.mauikit.filebrowsing as FB
 
 import org.maui.station as Station
 
@@ -36,26 +37,26 @@ Maui.ApplicationWindow
 
     property bool discard : !settings.preventClosing
     onClosing: (close) =>
-    {
-        // _dialogLoader.sourceComponent = null
-        close.accepted = !settings.restoreSession
-        root.saveSession()
+               {
+                   // _dialogLoader.sourceComponent = null
+                   close.accepted = !settings.restoreSession
+                   root.saveSession()
 
-        _dialogLoader.sourceComponent = _confirmCloseDialogComponent
+                   _dialogLoader.sourceComponent = _confirmCloseDialogComponent
 
-        if(anyTabHasActiveProcess() && !root.discard)
-        {
-            close.accepted = false
+                   if(anyTabHasActiveProcess() && !root.discard)
+                   {
+                       close.accepted = false
 
-            dialog.index = -1
-            dialog.cb =  ()=> {root.discard = true; root.close();}
-            close.accepted = false
-            dialog.open()
-            return
-        }
+                       dialog.index = -1
+                       dialog.cb =  ()=> {root.discard = true; root.close();}
+                       close.accepted = false
+                       dialog.open()
+                       return
+                   }
 
-        close.accepted = true
-    }
+                   close.accepted = true
+               }
 
     Settings
     {
@@ -88,6 +89,8 @@ Maui.ApplicationWindow
         property var lastSession: []
         property int lastTabIndex : 0
         property int tabTitleStyle: Terminal.TabTitle.Auto
+
+        property bool enableSideBar : true
     }
 
     Loader
@@ -107,270 +110,345 @@ Maui.ApplicationWindow
         SettingsDialog {}
     }
 
-    Maui.Page
+    Maui.SideBarView
     {
+        id: _sideBarView
         anchors.fill: parent
-        headBar.visible: false
 
-        background: Rectangle
+        sideBar.autoShow: false
+        sideBar.autoHide: true
+        sideBar.collapsed: !root.isWide
+        sideBarContent: Loader
         {
-            color: Maui.Theme.backgroundColor
-            opacity: _layout.count === 0 ? 1 : 0
-        }
-
-        Maui.TabView
-        {
-            id: _layout
-
-            background: null
-
-            altTabBar: Maui.Handy.isMobile
-            Maui.Controls.showCSD: true
-
             anchors.fill: parent
 
-            onNewTabClicked: root.openTab("$PWD")
-            onCloseTabClicked:(index) => root.closeTab(index)
+            active: settings.enableSideBar || item
+            asynchronous: true
+            sourceComponent: Maui.Page
+            {
+                headBar.middleContent: Maui.ToolActions
+                {
+                    autoExclusive: true
+                    Layout.alignment: Qt.AlignHCenter
 
-            tabBar.showNewTabButton: false
-            tabBar.visible: true
-            tabBar.background: Rectangle
+                    Action
+                    {
+                        text: i18n("Commands")
+                        checked: _swipeView.currentIndex === 0
+                        onTriggered: _swipeView.setCurrentIndex(0)
+                    }
+
+                    Action
+                    {
+                        text: i18n("Bookmarks")
+                        checked: _swipeView.currentIndex === 1
+                        onTriggered: _swipeView.setCurrentIndex(1)
+
+                    }
+                }
+
+                SwipeView
+                {
+                    id: _swipeView
+                    anchors.fill: parent
+
+                    Maui.SwipeViewLoader
+                    {
+                        CommandShortcuts
+                        {
+                            onCommandTriggered: (command, autorun) =>
+                                                {
+                                                    root.currentTerminal.session.sendText("\x05\x15")
+
+                                                    root.currentTerminal.session.sendText(command)
+
+                                                    if(autorun)
+                                                    {
+                                                        root.currentTerminal.session.sendText("\r")
+                                                    }
+
+                                                    if(_sideBarView.sideBar.peeking)
+                                                    {
+                                                        _sideBarView.sideBar.close()
+                                                    }
+
+                                                    root.currentTerminal.forceActiveFocus()
+                                                }
+                        }
+                    }
+
+                    Maui.Page
+                    {
+                        id: _bookmarksPage
+
+                        FB.PlacesListBrowser
+                        {
+                            currentPath:  "file://"+root.currentTerminal.session.currentDir
+
+                            anchors.fill: parent
+                            onPlaceClicked:  (path) =>
+                                             {
+                                                 root.currentTerminal.session.changeDir(path.replace("file://", ""))
+
+                                                 // root.currentTerminal.forceActiveFocus()
+                                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        Maui.Page
+        {
+            anchors.fill: parent
+            headBar.visible: false
+
+            background: Rectangle
             {
                 color: Maui.Theme.backgroundColor
-                opacity: settings.windowTranslucency ? settings.windowOpacity : 1
+                opacity: _layout.count === 0 ? 1 : 0
             }
 
-            tabBar.content: [
+            Maui.TabView
+            {
+                id: _layout
 
-                ToolButton
+                background: null
+
+                altTabBar: Maui.Handy.isMobile
+                Maui.Controls.showCSD: true
+
+                anchors.fill: parent
+
+                onNewTabClicked: root.openTab("$PWD")
+                onCloseTabClicked:(index) => root.closeTab(index)
+
+                tabBar.showNewTabButton: false
+                tabBar.visible: true
+                tabBar.background: Rectangle
                 {
-                    icon.name: "edit-find"
-                    checked: root.currentTerminal.footBar.visible
-                    onClicked: root.currentTerminal.toggleSearchBar()
-                },
+                    color: Maui.Theme.backgroundColor
+                    opacity: settings.windowTranslucency ? settings.windowOpacity : 1
+                }
 
-                Maui.ToolButtonMenu
+                tabBar.leftContent: ToolButton
                 {
-                    icon.name: "list-add"
+                    icon.name: "document-edit"
+                    checked: _sideBarView.sideBar.visible
+                    onClicked: _sideBarView.sideBar.toggle()
+                }
 
+                tabBar.content: [
+
+                    ToolButton
+                    {
+                        icon.name: "edit-find"
+                        checked: root.currentTerminal.footBar.visible
+                        onClicked: root.currentTerminal.toggleSearchBar()
+                    },
+
+                    Maui.ToolButtonMenu
+                    {
+                        icon.name: "list-add"
+
+                        MenuItem
+                        {
+                            icon.name: "tab-new"
+                            text: i18n("New Tab")
+                            onTriggered: root.openTab("$PWD")
+                            action: Action
+                            {
+                                shortcut: "Ctrl+Shift+T"
+                            }
+                        }
+
+                        MenuItem
+                        {
+                            enabled: root.currentTab
+                            checked: root.currentTab && root.currentTab.count === 2
+                            checkable: true
+                            text: i18n("Split")
+
+                            icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+                            onTriggered: root.currentTab.split()
+                            action: Action
+                            {
+                                shortcut: "Ctrl+Shift+→"
+                            }
+                        }
+
+                        MenuSeparator {}
+
+                        MenuItem
+                        {
+                            text: i18n("Tutorial")
+                            onTriggered:
+                            {
+                                _dialogLoader.sourceComponent = _tutorialDialogComponent
+                                dialog.open()
+                            }
+                            icon.name : "help-contents"
+                        }
+
+                        MenuItem
+                        {
+                            icon.name: "settings-configure"
+                            text: i18n("Settings")
+                            onTriggered:
+                            {
+                                _dialogLoader.sourceComponent = _settingsDialogComponent
+                                dialog.open()
+                            }
+                        }
+
+                        MenuItem
+                        {
+                            text: i18n("About")
+                            icon.name: "documentinfo"
+                            onTriggered: Maui.App.aboutDialog()
+                        }
+                    }
+                ]
+
+                holder.visible: _layout.count === 0
+                holder.emoji: "terminal-symbolic"
+                holder.title: i18n("Nothing here")
+                holder.body: i18n("To start hacking open a new tab or a split screen.")
+                holder.actions: Action
+                {
+                    text: i18n("New Tab")
+                    onTriggered: root.openTab("$PWD")
+                }
+            }
+
+            footBar.visible: Maui.Handy.isMobile || Maui.Handy.isTouch
+
+            footBar.farRightContent: Loader
+            {
+                asynchronous: true
+                sourceComponent: Maui.ToolButtonMenu
+                {
+                    icon.name: "overflow-menu"
                     MenuItem
                     {
-                        icon.name: "tab-new"
-                        text: i18n("New Tab")
-                        onTriggered: root.openTab("$PWD")
-                        action: Action
-                        {
-                         shortcut: "Ctrl+Shift+T"
-                        }
+                        text: i18n("Function Keys")
+                        autoExclusive: true
+                        checked: settings.keysModelCurrentIndex === 0
+                        checkable: true
+                        onTriggered: settings.keysModelCurrentIndex = 0
                     }
 
                     MenuItem
                     {
-                        enabled: root.currentTab
-                        checked: root.currentTab && root.currentTab.count === 2
+                        text: i18n("Nano")
+                        autoExclusive: true
+                        checked: settings.keysModelCurrentIndex === 1
                         checkable: true
-                        text: i18n("Split")
+                        onTriggered: settings.keysModelCurrentIndex = 1
+                    }
 
-                        icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-                        onTriggered: root.currentTab.split()
-                        action: Action
-                        {
-                            shortcut: "Ctrl+Shift+→"
-                        }
+                    MenuItem
+                    {
+                        text: i18n("Ctrl Modifiers")
+                        autoExclusive: true
+                        checked: settings.keysModelCurrentIndex === 2
+                        checkable: true
+                        onTriggered: settings.keysModelCurrentIndex = 2
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Navigation")
+                        autoExclusive: true
+                        checked: settings.keysModelCurrentIndex === 3
+                        checkable: true
+                        onTriggered: settings.keysModelCurrentIndex = 3
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Favorite")
+                        autoExclusive: true
+                        checked: settings.keysModelCurrentIndex === 4
+                        checkable: true
+                        onTriggered: settings.keysModelCurrentIndex = 4
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Signals")
+                        autoExclusive: true
+                        checked: settings.keysModelCurrentIndex === 5
+                        checkable: true
+                        onTriggered: settings.keysModelCurrentIndex = 5
                     }
 
                     MenuSeparator {}
 
                     MenuItem
                     {
-                        text: i18n("Tutorial")
-                        onTriggered:
-                        {
-                            _dialogLoader.sourceComponent = _tutorialDialogComponent
-                            dialog.open()
-                        }
-                        icon.name : "help-contents"
+                        text: i18n("More Signals")
+                        checked: settings.showSignalBar
+                        checkable: true
+                        onTriggered: settings.showSignalBar = !settings.showSignalBar
+                    }
+                }
+            }
+
+            footerColumn: Maui.ToolBar
+            {
+                visible: settings.showSignalBar
+                width: parent.width
+                position: ToolBar.Footer
+
+                Repeater
+                {
+                    model: _keysModel.signalsGroup
+
+                    delegate:  Button
+                    {
+                        font.bold: true
+                        text: modelData.label + "/ " + modelData.signal
+
+                        onClicked: currentTerminal.session.sendSignal(9)
+
+                        activeFocusOnTab: false
+                        focusPolicy: Qt.NoFocus
+                        autoRepeat: true
+                    }
+                }
+            }
+
+            footBar.leftContent: [
+                Repeater
+                {
+                    model: Station.KeysModel
+                    {
+                        id: _keysModel
+                        group: settings.keysModelCurrentIndex
                     }
 
-                    MenuItem
+                    Button
                     {
-                        icon.name: "settings-configure"
-                        text: i18n("Settings")
-                        onTriggered:
-                        {
-                            _dialogLoader.sourceComponent = _settingsDialogComponent
-                            dialog.open()
-                        }
-                    }
+                        font.bold: true
+                        text: model.label
+                        icon.name: model.iconName
 
-                    MenuItem
-                    {
-                        text: i18n("About")
-                        icon.name: "documentinfo"
-                        onTriggered: Maui.App.aboutDialog()
+                        onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
+
+                        activeFocusOnTab: false
+                        focusPolicy: Qt.NoFocus
+                        autoRepeat: true
                     }
                 }
             ]
-
-            holder.visible: _layout.count === 0
-            holder.emoji: "terminal-symbolic"
-            holder.title: i18n("Nothing here")
-            holder.body: i18n("To start hacking open a new tab or a split screen.")
-            holder.actions: Action
-            {
-                text: i18n("New Tab")
-                onTriggered: root.openTab("$PWD")
-            }
         }
-
-        footBar.visible: true
-
-        footBar.farRightContent: Loader
-        {
-            asynchronous: true
-            sourceComponent: Maui.ToolButtonMenu
-            {
-                icon.name: "overflow-menu"
-                MenuItem
-                {
-                    text: i18n("Function Keys")
-                    autoExclusive: true
-                    checked: settings.keysModelCurrentIndex === 0
-                    checkable: true
-                    onTriggered: settings.keysModelCurrentIndex = 0
-                }
-
-                MenuItem
-                {
-                    text: i18n("Nano")
-                    autoExclusive: true
-                    checked: settings.keysModelCurrentIndex === 1
-                    checkable: true
-                    onTriggered: settings.keysModelCurrentIndex = 1
-                }
-
-                MenuItem
-                {
-                    text: i18n("Ctrl Modifiers")
-                    autoExclusive: true
-                    checked: settings.keysModelCurrentIndex === 2
-                    checkable: true
-                    onTriggered: settings.keysModelCurrentIndex = 2
-                }
-
-                MenuItem
-                {
-                    text: i18n("Navigation")
-                    autoExclusive: true
-                    checked: settings.keysModelCurrentIndex === 3
-                    checkable: true
-                    onTriggered: settings.keysModelCurrentIndex = 3
-                }
-
-                MenuItem
-                {
-                    text: i18n("Favorite")
-                    autoExclusive: true
-                    checked: settings.keysModelCurrentIndex === 4
-                    checkable: true
-                    onTriggered: settings.keysModelCurrentIndex = 4
-                }
-
-                MenuItem
-                {
-                    text: i18n("Signals")
-                    autoExclusive: true
-                    checked: settings.keysModelCurrentIndex === 5
-                    checkable: true
-                    onTriggered: settings.keysModelCurrentIndex = 5
-                }
-
-                MenuSeparator {}
-
-                MenuItem
-                {
-                    text: i18n("More Signals")
-                    checked: settings.showSignalBar
-                    checkable: true
-                    onTriggered: settings.showSignalBar = !settings.showSignalBar
-                }
-            }
-        }
-
-        footerColumn: Maui.ToolBar
-        {
-            visible: settings.showSignalBar
-            width: parent.width
-            position: ToolBar.Footer
-
-            Repeater
-            {
-                model: _keysModel.signalsGroup
-
-                delegate:  Button
-                {
-                    font.bold: true
-                    text: modelData.label + "/ " + modelData.signal
-
-                    onClicked: currentTerminal.session.sendSignal(9)
-
-                    activeFocusOnTab: false
-                    focusPolicy: Qt.NoFocus
-                    autoRepeat: true
-                }
-            }
-        }
-
-        footBar.leftContent: [
-
-            ToolButton
-            {
-                icon.name: "document-edit"
-                onClicked: openCommandDialog()
-            },
-
-            Repeater
-            {
-                model: Station.KeysModel
-                {
-                    id: _keysModel
-                    group: settings.keysModelCurrentIndex
-                }
-
-                Button
-                {
-                    font.bold: true
-                    text: model.label
-                    icon.name: model.iconName
-
-                    onClicked: _keysModel.sendKey(index, currentTerminal.kterminal)
-
-                    activeFocusOnTab: false
-                    focusPolicy: Qt.NoFocus
-                    autoRepeat: true
-                }
-            }
-        ]
     }
 
     Component
     {
         id: _terminalComponent
         TerminalLayout {}
-    }
-
-    Component
-    {
-        id: _commandDialogComponent
-
-        CommandShortcuts
-        {
-            onCommandTriggered:
-            {
-                root.currentTerminal.session.sendText(command)
-                root.currentTerminal.forceActiveFocus()
-            }
-        }
     }
 
     Component
@@ -464,12 +542,6 @@ Maui.ApplicationWindow
         }
 
         _layout.closeTab(index)
-    }
-
-    function openCommandDialog()
-    {
-        _dialogLoader.sourceComponent = _commandDialogComponent
-        dialog.open()
     }
 
     function anyTabHasActiveProcess()
