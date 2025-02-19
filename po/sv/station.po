@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-09 00:40+0000\n"
+"POT-Creation-Date: 2025-02-19 00:40+0000\n"
 "PO-Revision-Date: 2024-11-23 17:34+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -52,82 +52,92 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Utvecklare"
 
-#: src/main.qml:159 src/main.qml:221 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:136 src/widgets/TutorialDialog.qml:136
+#, kde-format
+msgid "Commands"
+msgstr "Kommandon"
+
+#: src/main.qml:143
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Ny flik"
 
-#: src/main.qml:172 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:270 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Dela"
 
-#: src/main.qml:186
+#: src/main.qml:284
 #, kde-format
 msgid "Tutorial"
 msgstr "Handledning"
 
-#: src/main.qml:198
+#: src/main.qml:296
 #, kde-format
 msgid "Settings"
 msgstr "Inställningar"
 
-#: src/main.qml:208
+#: src/main.qml:306
 #, kde-format
 msgid "About"
 msgstr "Om"
 
-#: src/main.qml:217
+#: src/main.qml:315
 #, kde-format
 msgid "Nothing here"
 msgstr "Ingenting här"
 
-#: src/main.qml:218
+#: src/main.qml:316
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Öppna en ny flik eller en delad skärm för att börja skriva."
 
-#: src/main.qml:236
+#: src/main.qml:334
 #, kde-format
 msgid "Function Keys"
 msgstr "Funktionstangenter"
 
-#: src/main.qml:245
+#: src/main.qml:343
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:254
+#: src/main.qml:352
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl-väljartangenter"
 
-#: src/main.qml:263 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:361 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navigering"
 
-#: src/main.qml:272
+#: src/main.qml:370
 #, kde-format
 msgid "Favorite"
 msgstr "Favorit"
 
-#: src/main.qml:281
+#: src/main.qml:379
 #, kde-format
 msgid "Signals"
 msgstr "Signaler"
 
-#: src/main.qml:292
+#: src/main.qml:390
 #, kde-format
 msgid "More Signals"
 msgstr "Fler signaler"
 
-#: src/main.qml:387
+#: src/main.qml:465
 #, kde-format
 msgid "Close"
 msgstr "Stäng"
 
-#: src/main.qml:388
+#: src/main.qml:466
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -136,45 +146,45 @@ msgstr ""
 "Ett process kör fortfarande. Är du säker på att du vill avbryta och stänga "
 "den?"
 
-#: src/main.qml:419
+#: src/main.qml:497
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Vill du återställa föregående session?"
 
-#: src/widgets/CommandShortcuts.qml:24
+#: src/widgets/CommandShortcuts.qml:17
 #, kde-format
-msgid "New Command"
-msgstr "Nytt kommando"
+msgid "Filter/Add"
+msgstr ""
 
-#: src/widgets/CommandShortcuts.qml:33
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
 msgstr "Redigera kommando"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Redigera en kommandogenväg"
 
-#: src/widgets/CommandShortcuts.qml:48
-#, kde-format
-msgid "No Commands"
-msgstr "Inga kommandon"
-
-#: src/widgets/CommandShortcuts.qml:49
-#, kde-format
-msgid "Start adding new command shortcuts"
-msgstr "Börja lägga till nya kommandogenvägar"
-
-#: src/widgets/CommandShortcuts.qml:91
+#: src/widgets/CommandShortcuts.qml:46
 #, kde-format
 msgid "Remove"
 msgstr "Ta bort"
 
-#: src/widgets/CommandShortcuts.qml:101
+#: src/widgets/CommandShortcuts.qml:56
 #, kde-format
 msgid "Edit"
 msgstr "Redigera"
+
+#: src/widgets/CommandShortcuts.qml:74
+#, kde-format
+msgid "No Commands"
+msgstr "Inga kommandon"
+
+#: src/widgets/CommandShortcuts.qml:75
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "Börja lägga till nya kommandogenvägar"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
 #, kde-format
@@ -479,11 +489,6 @@ msgstr "Två fingrar åt vänster och höger"
 msgid "Swipe up or down with two fingers to scroll."
 msgstr "Svep uppåt eller neråt med två fingrar för att panorera."
 
-#: src/widgets/TutorialDialog.qml:136
-#, kde-format
-msgid "Commands"
-msgstr "Kommandon"
-
 #: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
@@ -498,6 +503,9 @@ msgstr "Skapa en ny kommandogenväg för att snabbt utföra åtgärder."
 #, kde-format
 msgid "Add"
 msgstr "Lägg till"
+
+#~ msgid "New Command"
+#~ msgstr "Nytt kommando"
 
 #~ msgid "© 2019-2023 Maui Development Team"
 #~ msgstr "© 2019-2023 Maui utvecklingsgrupp"

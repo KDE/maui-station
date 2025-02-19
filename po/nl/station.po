@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-09 00:40+0000\n"
+"POT-Creation-Date: 2025-02-19 00:40+0000\n"
 "PO-Revision-Date: 2024-11-19 11:32+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -52,128 +52,138 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Ontwikkelaar"
 
-#: src/main.qml:159 src/main.qml:221 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:136 src/widgets/TutorialDialog.qml:136
+#, kde-format
+msgid "Commands"
+msgstr "Commando's"
+
+#: src/main.qml:143
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Nieuw tabblad"
 
-#: src/main.qml:172 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:270 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Splitsen"
 
-#: src/main.qml:186
+#: src/main.qml:284
 #, kde-format
 msgid "Tutorial"
 msgstr "Inleiding"
 
-#: src/main.qml:198
+#: src/main.qml:296
 #, kde-format
 msgid "Settings"
 msgstr "Instellingen"
 
-#: src/main.qml:208
+#: src/main.qml:306
 #, kde-format
 msgid "About"
 msgstr "Info over"
 
-#: src/main.qml:217
+#: src/main.qml:315
 #, kde-format
 msgid "Nothing here"
 msgstr "Er is hier niets"
 
-#: src/main.qml:218
+#: src/main.qml:316
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 "Om met hacking te beginnen open een nieuw tabblad of een gesplitst scherm."
 
-#: src/main.qml:236
+#: src/main.qml:334
 #, kde-format
 msgid "Function Keys"
 msgstr "Functietoetsen"
 
-#: src/main.qml:245
+#: src/main.qml:343
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:254
+#: src/main.qml:352
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl-modifiers"
 
-#: src/main.qml:263 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:361 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navigatie"
 
-#: src/main.qml:272
+#: src/main.qml:370
 #, kde-format
 msgid "Favorite"
 msgstr "Favoriet"
 
-#: src/main.qml:281
+#: src/main.qml:379
 #, kde-format
 msgid "Signals"
 msgstr "Signalen"
 
-#: src/main.qml:292
+#: src/main.qml:390
 #, kde-format
 msgid "More Signals"
 msgstr "Meer signalen"
 
-#: src/main.qml:387
+#: src/main.qml:465
 #, kde-format
 msgid "Close"
 msgstr "Sluiten"
 
-#: src/main.qml:388
+#: src/main.qml:466
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Er draait nog een proces. Wilt u het toch onderbreken en sluiten?"
 
-#: src/main.qml:419
+#: src/main.qml:497
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Wilt u de vorige sessie herstellen?"
 
-#: src/widgets/CommandShortcuts.qml:24
+#: src/widgets/CommandShortcuts.qml:17
 #, kde-format
-msgid "New Command"
-msgstr "Nieuw commando"
+msgid "Filter/Add"
+msgstr ""
 
-#: src/widgets/CommandShortcuts.qml:33
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
 msgstr "Commando bewerken"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Een commando-sneltoets bewerken"
 
-#: src/widgets/CommandShortcuts.qml:48
-#, kde-format
-msgid "No Commands"
-msgstr "Geen commando's"
-
-#: src/widgets/CommandShortcuts.qml:49
-#, kde-format
-msgid "Start adding new command shortcuts"
-msgstr "Met toevoegen van nieuwe commando-sneltoetsen beginnen"
-
-#: src/widgets/CommandShortcuts.qml:91
+#: src/widgets/CommandShortcuts.qml:46
 #, kde-format
 msgid "Remove"
 msgstr "Verwijderen"
 
-#: src/widgets/CommandShortcuts.qml:101
+#: src/widgets/CommandShortcuts.qml:56
 #, kde-format
 msgid "Edit"
 msgstr "Bewerken"
+
+#: src/widgets/CommandShortcuts.qml:74
+#, kde-format
+msgid "No Commands"
+msgstr "Geen commando's"
+
+#: src/widgets/CommandShortcuts.qml:75
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "Met toevoegen van nieuwe commando-sneltoetsen beginnen"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
 #, kde-format
@@ -479,11 +489,6 @@ msgstr "Twee vingers links & rechts"
 msgid "Swipe up or down with two fingers to scroll."
 msgstr "Veeg omhoog of omlaag met twee vingers om te schuiven."
 
-#: src/widgets/TutorialDialog.qml:136
-#, kde-format
-msgid "Commands"
-msgstr "Commando's"
-
 #: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
@@ -498,6 +503,9 @@ msgstr "Een nieuwe commando-sneltoets aanmaken om snel acties te starten."
 #, kde-format
 msgid "Add"
 msgstr "Toevoegen"
+
+#~ msgid "New Command"
+#~ msgstr "Nieuw commando"
 
 #~ msgid "© 2019-2023 Maui Development Team"
 #~ msgstr "© 2019-2023 Ontwikkelteam van Maui"

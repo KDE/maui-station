@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-09 00:40+0000\n"
+"POT-Creation-Date: 2025-02-19 00:40+0000\n"
 "PO-Revision-Date: 2024-12-31 21:16+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -53,127 +53,137 @@ msgstr "קמילו היגוויטה"
 msgid "Developer"
 msgstr "מפתח"
 
-#: src/main.qml:159 src/main.qml:221 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:136 src/widgets/TutorialDialog.qml:136
+#, kde-format
+msgid "Commands"
+msgstr "פקודות"
+
+#: src/main.qml:143
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "לשונית חדשה"
 
-#: src/main.qml:172 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:270 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "פיצול"
 
-#: src/main.qml:186
+#: src/main.qml:284
 #, kde-format
 msgid "Tutorial"
 msgstr "הדרכה"
 
-#: src/main.qml:198
+#: src/main.qml:296
 #, kde-format
 msgid "Settings"
 msgstr "הגדרות"
 
-#: src/main.qml:208
+#: src/main.qml:306
 #, kde-format
 msgid "About"
 msgstr "על אודות"
 
-#: src/main.qml:217
+#: src/main.qml:315
 #, kde-format
 msgid "Nothing here"
 msgstr "אין כאן כלום"
 
-#: src/main.qml:218
+#: src/main.qml:316
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "כדי להתחיל לפצח יש לפתוח לשונית חדשה או מסך מפוצל."
 
-#: src/main.qml:236
+#: src/main.qml:334
 #, kde-format
 msgid "Function Keys"
 msgstr "מקשי פונקציה"
 
-#: src/main.qml:245
+#: src/main.qml:343
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:254
+#: src/main.qml:352
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "מחליפי Ctrl"
 
-#: src/main.qml:263 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:361 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "ניווט"
 
-#: src/main.qml:272
+#: src/main.qml:370
 #, kde-format
 msgid "Favorite"
 msgstr "הוספה למועדפים"
 
-#: src/main.qml:281
+#: src/main.qml:379
 #, kde-format
 msgid "Signals"
 msgstr "אותות"
 
-#: src/main.qml:292
+#: src/main.qml:390
 #, kde-format
 msgid "More Signals"
 msgstr "אותות נוספים"
 
-#: src/main.qml:387
+#: src/main.qml:465
 #, kde-format
 msgid "Close"
 msgstr "סגירה"
 
-#: src/main.qml:388
+#: src/main.qml:466
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "יש עדיין תהליך פעיל. להפריע לו ולסגור אותו?"
 
-#: src/main.qml:419
+#: src/main.qml:497
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "לשחזר את ההפעלה הקודמת?"
 
-#: src/widgets/CommandShortcuts.qml:24
+#: src/widgets/CommandShortcuts.qml:17
 #, kde-format
-msgid "New Command"
-msgstr "פקודה חדשה"
+msgid "Filter/Add"
+msgstr ""
 
-#: src/widgets/CommandShortcuts.qml:33
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
 msgstr "עריכת פקודה"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "עריכת קיצור מקשים לפקודה"
 
-#: src/widgets/CommandShortcuts.qml:48
-#, kde-format
-msgid "No Commands"
-msgstr "אין פקודות"
-
-#: src/widgets/CommandShortcuts.qml:49
-#, kde-format
-msgid "Start adding new command shortcuts"
-msgstr "ניתן להתחיל להוסיף קיצורי מקשים חדשים לפקודות"
-
-#: src/widgets/CommandShortcuts.qml:91
+#: src/widgets/CommandShortcuts.qml:46
 #, kde-format
 msgid "Remove"
 msgstr "הסרה"
 
-#: src/widgets/CommandShortcuts.qml:101
+#: src/widgets/CommandShortcuts.qml:56
 #, kde-format
 msgid "Edit"
 msgstr "עריכה"
+
+#: src/widgets/CommandShortcuts.qml:74
+#, kde-format
+msgid "No Commands"
+msgstr "אין פקודות"
+
+#: src/widgets/CommandShortcuts.qml:75
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "ניתן להתחיל להוסיף קיצורי מקשים חדשים לפקודות"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
 #, kde-format
@@ -472,11 +482,6 @@ msgstr "שמאלה וימינה עם שתי אצבעות"
 msgid "Swipe up or down with two fingers to scroll."
 msgstr "החלקה למעלה או למטה עם שתי אצבעות תגלול."
 
-#: src/widgets/TutorialDialog.qml:136
-#, kde-format
-msgid "Commands"
-msgstr "פקודות"
-
 #: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
@@ -491,6 +496,9 @@ msgstr "אפשר ליצור מקשי קיצור חדשים לפקודות כדי
 #, kde-format
 msgid "Add"
 msgstr "הוספה"
+
+#~ msgid "New Command"
+#~ msgstr "פקודה חדשה"
 
 #~ msgid "© 2019-2023 Maui Development Team"
 #~ msgstr "© 2019-‏2023 צוות פיתוח Maui"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-09 00:40+0000\n"
+"POT-Creation-Date: 2025-02-19 00:40+0000\n"
 "PO-Revision-Date: 2024-11-29 00:30+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -52,127 +52,137 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "개발자"
 
-#: src/main.qml:159 src/main.qml:221 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:136 src/widgets/TutorialDialog.qml:136
+#, kde-format
+msgid "Commands"
+msgstr "명령"
+
+#: src/main.qml:143
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "새 탭"
 
-#: src/main.qml:172 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:270 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "분할"
 
-#: src/main.qml:186
+#: src/main.qml:284
 #, kde-format
 msgid "Tutorial"
 msgstr "튜토리얼"
 
-#: src/main.qml:198
+#: src/main.qml:296
 #, kde-format
 msgid "Settings"
 msgstr "설정"
 
-#: src/main.qml:208
+#: src/main.qml:306
 #, kde-format
 msgid "About"
 msgstr "정보"
 
-#: src/main.qml:217
+#: src/main.qml:315
 #, kde-format
 msgid "Nothing here"
 msgstr "아무것도 없습니다"
 
-#: src/main.qml:218
+#: src/main.qml:316
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "해킹을 시작하려면 새 탭을 열거나 화면을 분할하십시오."
 
-#: src/main.qml:236
+#: src/main.qml:334
 #, kde-format
 msgid "Function Keys"
 msgstr "기능 키"
 
-#: src/main.qml:245
+#: src/main.qml:343
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:254
+#: src/main.qml:352
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl 수정자"
 
-#: src/main.qml:263 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:361 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "탐색"
 
-#: src/main.qml:272
+#: src/main.qml:370
 #, kde-format
 msgid "Favorite"
 msgstr "책갈피"
 
-#: src/main.qml:281
+#: src/main.qml:379
 #, kde-format
 msgid "Signals"
 msgstr "시그널"
 
-#: src/main.qml:292
+#: src/main.qml:390
 #, kde-format
 msgid "More Signals"
 msgstr "더 많은 시그널"
 
-#: src/main.qml:387
+#: src/main.qml:465
 #, kde-format
 msgid "Close"
 msgstr "닫기"
 
-#: src/main.qml:388
+#: src/main.qml:466
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "프로세스가 실행 중입니다. 프로세스를 중단하고 닫으시겠습니까?"
 
-#: src/main.qml:419
+#: src/main.qml:497
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "이전 세션을 복원하시겠습니까?"
 
-#: src/widgets/CommandShortcuts.qml:24
+#: src/widgets/CommandShortcuts.qml:17
 #, kde-format
-msgid "New Command"
-msgstr "새 명령"
+msgid "Filter/Add"
+msgstr ""
 
-#: src/widgets/CommandShortcuts.qml:33
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
 msgstr "편집 명령"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "명령 단축키 편집"
 
-#: src/widgets/CommandShortcuts.qml:48
-#, kde-format
-msgid "No Commands"
-msgstr "명령 없음"
-
-#: src/widgets/CommandShortcuts.qml:49
-#, kde-format
-msgid "Start adding new command shortcuts"
-msgstr "새 명령 단축키를 추가하십시오"
-
-#: src/widgets/CommandShortcuts.qml:91
+#: src/widgets/CommandShortcuts.qml:46
 #, kde-format
 msgid "Remove"
 msgstr "삭제"
 
-#: src/widgets/CommandShortcuts.qml:101
+#: src/widgets/CommandShortcuts.qml:56
 #, kde-format
 msgid "Edit"
 msgstr "편집"
+
+#: src/widgets/CommandShortcuts.qml:74
+#, kde-format
+msgid "No Commands"
+msgstr "명령 없음"
+
+#: src/widgets/CommandShortcuts.qml:75
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "새 명령 단축키를 추가하십시오"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
 #, kde-format
@@ -471,11 +481,6 @@ msgstr "두 손가락으로 왼쪽/오른쪽"
 msgid "Swipe up or down with two fingers to scroll."
 msgstr "두 손가락으로 위나 아래로 밀어서 스크롤할 수 있습니다."
 
-#: src/widgets/TutorialDialog.qml:136
-#, kde-format
-msgid "Commands"
-msgstr "명령"
-
 #: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
@@ -490,6 +495,9 @@ msgstr "동작을 빠르게 실행할 수 있는 새 명령 단축키를 만듭�
 #, kde-format
 msgid "Add"
 msgstr "추가"
+
+#~ msgid "New Command"
+#~ msgstr "새 명령"
 
 #~ msgid "© 2019-2023 Maui Development Team"
 #~ msgstr "© 2019-2023 Maui Development Team"

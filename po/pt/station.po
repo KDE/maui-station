@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-09 00:40+0000\n"
+"POT-Creation-Date: 2025-02-19 00:40+0000\n"
 "PO-Revision-Date: 2023-05-06 11:53+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -53,82 +53,92 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Desenvolvimento"
 
-#: src/main.qml:159 src/main.qml:221 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:136 src/widgets/TutorialDialog.qml:136
+#, kde-format
+msgid "Commands"
+msgstr "Comandos"
+
+#: src/main.qml:143
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Nova Página"
 
-#: src/main.qml:172 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:270 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Dividir"
 
-#: src/main.qml:186
+#: src/main.qml:284
 #, kde-format
 msgid "Tutorial"
 msgstr "Tutorial"
 
-#: src/main.qml:198
+#: src/main.qml:296
 #, kde-format
 msgid "Settings"
 msgstr "Configuração"
 
-#: src/main.qml:208
+#: src/main.qml:306
 #, kde-format
 msgid "About"
 msgstr "Acerca"
 
-#: src/main.qml:217
+#: src/main.qml:315
 #, kde-format
 msgid "Nothing here"
 msgstr "Nada aqui"
 
-#: src/main.qml:218
+#: src/main.qml:316
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Para começar a trabalhar, abra uma nova página ou um ecrã dividido."
 
-#: src/main.qml:236
+#: src/main.qml:334
 #, kde-format
 msgid "Function Keys"
 msgstr "Teclas de Função"
 
-#: src/main.qml:245
+#: src/main.qml:343
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:254
+#: src/main.qml:352
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificadores Ctrl"
 
-#: src/main.qml:263 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:361 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navegação"
 
-#: src/main.qml:272
+#: src/main.qml:370
 #, kde-format
 msgid "Favorite"
 msgstr "Favorito"
 
-#: src/main.qml:281
+#: src/main.qml:379
 #, kde-format
 msgid "Signals"
 msgstr "Sinais"
 
-#: src/main.qml:292
+#: src/main.qml:390
 #, kde-format
 msgid "More Signals"
 msgstr "Mais Sinais"
 
-#: src/main.qml:387
+#: src/main.qml:465
 #, kde-format
 msgid "Close"
 msgstr "Fechar"
 
-#: src/main.qml:388
+#: src/main.qml:466
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -137,45 +147,45 @@ msgstr ""
 "Está actualmente um processo em execução. Tem a certeza que o deseja "
 "interromper e fechar?"
 
-#: src/main.qml:419
+#: src/main.qml:497
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr ""
 
-#: src/widgets/CommandShortcuts.qml:24
+#: src/widgets/CommandShortcuts.qml:17
 #, kde-format
-msgid "New Command"
-msgstr "Novo Comando"
+msgid "Filter/Add"
+msgstr ""
 
-#: src/widgets/CommandShortcuts.qml:33
+#: src/widgets/CommandShortcuts.qml:34
 #, kde-format
 msgid "Edit Command"
 msgstr "Editar o Comando"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:35
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Editar o atalho para um comando"
 
-#: src/widgets/CommandShortcuts.qml:48
-#, kde-format
-msgid "No Commands"
-msgstr "Sem Comandos"
-
-#: src/widgets/CommandShortcuts.qml:49
-#, kde-format
-msgid "Start adding new command shortcuts"
-msgstr "Comece a adicionar atalhos para novos comandos"
-
-#: src/widgets/CommandShortcuts.qml:91
+#: src/widgets/CommandShortcuts.qml:46
 #, kde-format
 msgid "Remove"
 msgstr "Remover"
 
-#: src/widgets/CommandShortcuts.qml:101
+#: src/widgets/CommandShortcuts.qml:56
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
+
+#: src/widgets/CommandShortcuts.qml:74
+#, kde-format
+msgid "No Commands"
+msgstr "Sem Comandos"
+
+#: src/widgets/CommandShortcuts.qml:75
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "Comece a adicionar atalhos para novos comandos"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
 #, kde-format
@@ -482,11 +492,6 @@ msgstr "Dois Dedos para a Esquerda & Direita"
 msgid "Swipe up or down with two fingers to scroll."
 msgstr "Deslize para cima ou para baixo com dois dedos para se deslocar."
 
-#: src/widgets/TutorialDialog.qml:136
-#, kde-format
-msgid "Commands"
-msgstr "Comandos"
-
 #: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
@@ -502,6 +507,9 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Adicionar"
+
+#~ msgid "New Command"
+#~ msgstr "Novo Comando"
 
 #, fuzzy
 #~| msgid "© 2019-%1 Maui Development Team"
