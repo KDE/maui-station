@@ -1,15 +1,15 @@
 # Translation of station.po to Catalan
-# Copyright (C) 2022-2024 This_file_is_part_of_KDE
+# Copyright (C) 2022-2025 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-19 00:40+0000\n"
-"PO-Revision-Date: 2024-11-19 09:41+0100\n"
+"PO-Revision-Date: 2025-02-19 09:21+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -62,7 +62,7 @@ msgstr "Ordres"
 #: src/main.qml:143
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Punts"
 
 #: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
 #, kde-format
@@ -157,7 +157,7 @@ msgstr "Voleu restaurar la sessió anterior?"
 #: src/widgets/CommandShortcuts.qml:17
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "Filtra/Afegeix"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
@@ -507,12 +507,3 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afegeix"
-
-#~ msgid "New Command"
-#~ msgstr "Ordre nova"
-
-#~ msgid "© 2019-2023 Maui Development Team"
-#~ msgstr "© 2019-2023 Maui Development Team"
-
-#~ msgid "Check"
-#~ msgstr "Comprova"

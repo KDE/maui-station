@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-19 00:40+0000\n"
-"PO-Revision-Date: 2024-11-19 07:20+0200\n"
+"PO-Revision-Date: 2025-02-19 09:55+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -61,7 +61,7 @@ msgstr "Команди"
 #: src/main.qml:143
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Закладки"
 
 #: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
 #, kde-format
@@ -154,7 +154,7 @@ msgstr "Хочете відновити попередній сеанс?"
 #: src/widgets/CommandShortcuts.qml:17
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "Фільтрувати/Додати"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
