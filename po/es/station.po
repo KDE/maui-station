@@ -1,15 +1,15 @@
 # Translation of maui-station to Spanish
-# Copyright (C) 2024 This file is copyright:
+# Copyright (C) 2024-2025 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2024 Víctor Rodrigo Córdoba <vrcordoba@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Víctor Rodrigo Córdoba <vrcordoba@gmail.com>
 # SPDX-FileCopyrightText: 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-19 00:40+0000\n"
-"PO-Revision-Date: 2024-11-23 18:39+0100\n"
+"PO-Revision-Date: 2025-02-22 19:52+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -62,7 +62,7 @@ msgstr "Órdenes"
 #: src/main.qml:143
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Marcadores"
 
 #: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
 #, kde-format
@@ -155,7 +155,7 @@ msgstr "¿Quiere restaurar la sesión previa al inicio?"
 #: src/widgets/CommandShortcuts.qml:17
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "Filtrar/Añadir"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
@@ -507,9 +507,3 @@ msgstr "Crear un nuevo atajo de orden para ejecutar acciones rápidamente."
 #, kde-format
 msgid "Add"
 msgstr "Añadir"
-
-#~ msgid "New Command"
-#~ msgstr "Nueva orden"
-
-#~ msgid "© 2019-2023 Maui Development Team"
-#~ msgstr "© 2019-2023 El equipo de desarrollo de Maui"
