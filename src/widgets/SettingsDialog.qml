@@ -148,6 +148,18 @@ Maui.SettingsDialog
 
         Maui.FlexSectionItem
         {
+            label1.text: i18n("Shortcuts")
+            label2.text: i18n("Enable the sidebar with commands and places shortcuts.")
+
+            Switch
+            {
+                checked: settings.enableSideBar
+                onToggled: settings.enableSideBar = !settings.enableSideBar
+            }
+        }
+
+        Maui.FlexSectionItem
+        {
             label1.text: i18n("Translucency")
             label2.text: i18n("Translucent background.")
 

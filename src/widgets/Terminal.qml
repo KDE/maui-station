@@ -70,7 +70,7 @@ Maui.SplitViewItem
         kterminal.font: settings.font
         kterminal.colorScheme: settings.adaptiveColorScheme ? "Adaptive" : settings.colorScheme
         kterminal.lineSpacing: settings.lineSpacing
-        kterminal.backgroundOpacity: settings.windowTranslucency ? 0 : 1
+        kterminal.backgroundOpacity: settings.windowTranslucency ? 0.3 : 1
 
         kterminal.enableBold : settings.enableBold
         kterminal.blinkingCursor : settings.blinkingCursor

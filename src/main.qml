@@ -58,6 +58,7 @@ Maui.ApplicationWindow
                    close.accepted = true
                }
 
+
     Settings
     {
         id: settings
@@ -130,10 +131,12 @@ Maui.ApplicationWindow
                 {
                     autoExclusive: true
                     Layout.alignment: Qt.AlignHCenter
+                    display: ToolButton.IconOnly
 
                     Action
                     {
                         text: i18n("Commands")
+                        icon.name: "terminal-symbolic"
                         checked: _swipeView.currentIndex === 0
                         onTriggered: _swipeView.setCurrentIndex(0)
                     }
@@ -141,6 +144,7 @@ Maui.ApplicationWindow
                     Action
                     {
                         text: i18n("Bookmarks")
+                        icon.name:"folder"
                         checked: _swipeView.currentIndex === 1
                         onTriggered: _swipeView.setCurrentIndex(1)
 
@@ -231,11 +235,16 @@ Maui.ApplicationWindow
                     opacity: settings.windowTranslucency ? settings.windowOpacity : 1
                 }
 
-                tabBar.leftContent: ToolButton
+                tabBar.leftContent: Loader
                 {
-                    icon.name: "document-edit"
-                    checked: _sideBarView.sideBar.visible
-                    onClicked: _sideBarView.sideBar.toggle()
+                    active: settings.enableSideBar
+                    asynchronous: true
+                    sourceComponent: ToolButton
+                    {
+                        icon.name: "document-edit"
+                        checked: _sideBarView.sideBar.visible
+                        onClicked: _sideBarView.sideBar.toggle()
+                    }
                 }
 
                 tabBar.content: [

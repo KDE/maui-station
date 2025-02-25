@@ -74,6 +74,25 @@ Maui.Page
         holder.title: i18n("No Commands")
         holder.body: i18n("Start adding new command shortcuts")
 
+        // footer: Maui.ListBrowserDelegate
+        // {
+        //     width: ListView.view.width
+        //     label1.text: "> " + currentTerminal.session.foregroundProcessName
+        //     label1.font
+        //     {
+        //         pointSize: Maui.Style.fontSizes.medium
+        //         family:  currentTerminal.kterminal.font.family
+        //     }
+
+        //     label1.color: currentTerminal.kterminal.foregroundColor
+
+        //     background: Rectangle
+        //     {
+        //         color: currentTerminal.kterminal.backgroundColor
+        //         radius: Maui.Style.radiusV
+        //     }
+        // }
+
         model: Maui.BaseModel
         {
             list: Station.CommandsModel
@@ -85,7 +104,20 @@ Maui.Page
         delegate: Maui.ListBrowserDelegate
         {
             width: ListView.view.width
-            label1.text: model.value
+            label1.text: "> " + model.value
+            label1.font
+            {
+                pointSize: Maui.Style.fontSizes.medium
+                family:  currentTerminal.kterminal.font.family
+            }
+
+            label1.color: currentTerminal.kterminal.foregroundColor
+
+            background: Rectangle
+            {
+                color: currentTerminal.kterminal.backgroundColor
+                radius: Maui.Style.radiusV
+            }
 
             onClicked:
             {
@@ -114,6 +146,9 @@ Maui.Page
                 flat: true
                 icon.name: "media-playback-start"
                 icon.width: Maui.Style.iconSizes.small
+                padding: 0
+                background: null
+                icon.color: currentTerminal.kterminal.foregroundColor
                 onClicked:
                 {
                     _commandsShortcutList.currentIndex = index
