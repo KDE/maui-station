@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:40+0000\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
 "PO-Revision-Date: 2024-12-02 17:24+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -52,99 +52,99 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "開發者"
 
-#: src/main.qml:136 src/widgets/TutorialDialog.qml:136
+#: src/main.qml:138 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "命令"
 
-#: src/main.qml:143
+#: src/main.qml:146
 #, kde-format
 msgid "Bookmarks"
 msgstr ""
 
-#: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:266 src/main.qml:328 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "新增分頁"
 
-#: src/main.qml:270 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:279 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "分割"
 
-#: src/main.qml:284
+#: src/main.qml:293
 #, kde-format
 msgid "Tutorial"
 msgstr "教學"
 
-#: src/main.qml:296
+#: src/main.qml:305
 #, kde-format
 msgid "Settings"
 msgstr "設定"
 
-#: src/main.qml:306
+#: src/main.qml:315
 #, kde-format
 msgid "About"
 msgstr "關於"
 
-#: src/main.qml:315
+#: src/main.qml:324
 #, kde-format
 msgid "Nothing here"
 msgstr "這裡什麼都沒有"
 
-#: src/main.qml:316
+#: src/main.qml:325
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "開啟新分頁或分割畫面來開始使用終端機。"
 
-#: src/main.qml:334
+#: src/main.qml:343
 #, kde-format
 msgid "Function Keys"
 msgstr "功能鍵"
 
-#: src/main.qml:343
+#: src/main.qml:352
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:352
+#: src/main.qml:361
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl 組合鍵"
 
-#: src/main.qml:361 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:370 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "導覽"
 
-#: src/main.qml:370
+#: src/main.qml:379
 #, kde-format
 msgid "Favorite"
 msgstr "最愛"
 
-#: src/main.qml:379
+#: src/main.qml:388
 #, kde-format
 msgid "Signals"
 msgstr "訊號"
 
-#: src/main.qml:390
+#: src/main.qml:399
 #, kde-format
 msgid "More Signals"
 msgstr "更多訊號"
 
-#: src/main.qml:465
+#: src/main.qml:474
 #, kde-format
 msgid "Close"
 msgstr "關閉"
 
-#: src/main.qml:466
+#: src/main.qml:475
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "還有在執行中的行程。您確定要中斷並關閉它嗎？"
 
-#: src/main.qml:497
+#: src/main.qml:506
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "您要回復前一個工作階段嗎？"
@@ -184,12 +184,12 @@ msgstr "沒有命令"
 msgid "Start adding new command shortcuts"
 msgstr "開始新增命令捷徑"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:273
 #, kde-format
 msgid "Font"
 msgstr "字型"
 
-#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:242
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:254
 #, kde-format
 msgid "Alerts"
 msgstr "警示"
@@ -255,117 +255,128 @@ msgstr "暗色"
 msgid "Adaptive"
 msgstr "自動調整"
 
-#: src/widgets/SettingsDialog.qml:151
+#: src/widgets/SettingsDialog.qml:151 src/widgets/TutorialDialog.qml:10
+#: src/widgets/TutorialDialog.qml:15
+#, kde-format
+msgid "Shortcuts"
+msgstr "快捷鍵"
+
+#: src/widgets/SettingsDialog.qml:152
+#, kde-format
+msgid "Enable the sidebar with commands and places shortcuts."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid "Translucency"
 msgstr "半透明"
 
-#: src/widgets/SettingsDialog.qml:152
+#: src/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Translucent background."
 msgstr "半透明背景。"
 
-#: src/widgets/SettingsDialog.qml:163
+#: src/widgets/SettingsDialog.qml:175
 #, kde-format
 msgid "Tab Title"
 msgstr "分頁標題"
 
-#: src/widgets/SettingsDialog.qml:171
+#: src/widgets/SettingsDialog.qml:183
 #, kde-format
 msgid "Auto"
 msgstr "自動"
 
-#: src/widgets/SettingsDialog.qml:178
+#: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "Process"
 msgstr "行程"
 
-#: src/widgets/SettingsDialog.qml:185
+#: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Directory"
 msgstr "目錄"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Terminal"
 msgstr "終端機"
 
-#: src/widgets/SettingsDialog.qml:200
+#: src/widgets/SettingsDialog.qml:212
 #, kde-format
 msgid "Save Session"
 msgstr "儲存工作階段"
 
-#: src/widgets/SettingsDialog.qml:201
+#: src/widgets/SettingsDialog.qml:213
 #, kde-format
 msgid "Restore previous session on startup."
 msgstr "啟動時回覆前一個工作階段。"
 
-#: src/widgets/SettingsDialog.qml:214
+#: src/widgets/SettingsDialog.qml:226
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "自動調整配色方案"
 
-#: src/widgets/SettingsDialog.qml:215
+#: src/widgets/SettingsDialog.qml:227
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "基於目前風格的色彩。"
 
-#: src/widgets/SettingsDialog.qml:228
+#: src/widgets/SettingsDialog.qml:240
 #, kde-format
 msgid "Color Scheme"
 msgstr "配色方案"
 
-#: src/widgets/SettingsDialog.qml:229
+#: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "變更終端機的配色方案。"
 
-#: src/widgets/SettingsDialog.qml:243
+#: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "為行程警示並防止關閉它們。"
 
-#: src/widgets/SettingsDialog.qml:256
+#: src/widgets/SettingsDialog.qml:268
 #, kde-format
 msgid "Display"
 msgstr "顯示"
 
-#: src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Font family and size."
 msgstr "字型家族與大小。"
 
-#: src/widgets/SettingsDialog.qml:274
+#: src/widgets/SettingsDialog.qml:286
 #, kde-format
 msgid "Line Spacing"
 msgstr "行間距"
 
-#: src/widgets/SettingsDialog.qml:286
+#: src/widgets/SettingsDialog.qml:298
 #, kde-format
 msgid "History Size"
 msgstr "歷史大小"
 
-#: src/widgets/SettingsDialog.qml:287
+#: src/widgets/SettingsDialog.qml:299
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr "要保留在緩衝區的行數。小於零代表無限行。"
 
-#: src/widgets/SettingsDialog.qml:299
+#: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Enable Bold"
 msgstr "啟用粗體"
 
-#: src/widgets/SettingsDialog.qml:310
+#: src/widgets/SettingsDialog.qml:322
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "閃爍游標"
 
-#: src/widgets/SettingsDialog.qml:321
+#: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "完整游標高度"
 
-#: src/widgets/SettingsDialog.qml:332
+#: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Antialias text"
 msgstr "文字反鋸齒"
@@ -409,11 +420,6 @@ msgstr "待處理行程"
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "執行中行程「%1」已超過 30 秒沒有回應。"
-
-#: src/widgets/TutorialDialog.qml:10 src/widgets/TutorialDialog.qml:15
-#, kde-format
-msgid "Shortcuts"
-msgstr "快捷鍵"
 
 #: src/widgets/TutorialDialog.qml:16
 #, kde-format

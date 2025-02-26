@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:40+0000\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
 "PO-Revision-Date: 2024-11-29 00:30+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -52,99 +52,99 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "개발자"
 
-#: src/main.qml:136 src/widgets/TutorialDialog.qml:136
+#: src/main.qml:138 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "명령"
 
-#: src/main.qml:143
+#: src/main.qml:146
 #, kde-format
 msgid "Bookmarks"
 msgstr ""
 
-#: src/main.qml:257 src/main.qml:319 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:266 src/main.qml:328 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "새 탭"
 
-#: src/main.qml:270 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:279 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "분할"
 
-#: src/main.qml:284
+#: src/main.qml:293
 #, kde-format
 msgid "Tutorial"
 msgstr "튜토리얼"
 
-#: src/main.qml:296
+#: src/main.qml:305
 #, kde-format
 msgid "Settings"
 msgstr "설정"
 
-#: src/main.qml:306
+#: src/main.qml:315
 #, kde-format
 msgid "About"
 msgstr "정보"
 
-#: src/main.qml:315
+#: src/main.qml:324
 #, kde-format
 msgid "Nothing here"
 msgstr "아무것도 없습니다"
 
-#: src/main.qml:316
+#: src/main.qml:325
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "해킹을 시작하려면 새 탭을 열거나 화면을 분할하십시오."
 
-#: src/main.qml:334
+#: src/main.qml:343
 #, kde-format
 msgid "Function Keys"
 msgstr "기능 키"
 
-#: src/main.qml:343
+#: src/main.qml:352
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:352
+#: src/main.qml:361
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl 수정자"
 
-#: src/main.qml:361 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:370 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "탐색"
 
-#: src/main.qml:370
+#: src/main.qml:379
 #, kde-format
 msgid "Favorite"
 msgstr "책갈피"
 
-#: src/main.qml:379
+#: src/main.qml:388
 #, kde-format
 msgid "Signals"
 msgstr "시그널"
 
-#: src/main.qml:390
+#: src/main.qml:399
 #, kde-format
 msgid "More Signals"
 msgstr "더 많은 시그널"
 
-#: src/main.qml:465
+#: src/main.qml:474
 #, kde-format
 msgid "Close"
 msgstr "닫기"
 
-#: src/main.qml:466
+#: src/main.qml:475
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "프로세스가 실행 중입니다. 프로세스를 중단하고 닫으시겠습니까?"
 
-#: src/main.qml:497
+#: src/main.qml:506
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "이전 세션을 복원하시겠습니까?"
@@ -184,12 +184,12 @@ msgstr "명령 없음"
 msgid "Start adding new command shortcuts"
 msgstr "새 명령 단축키를 추가하십시오"
 
-#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:261
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:273
 #, kde-format
 msgid "Font"
 msgstr "글꼴"
 
-#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:242
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:254
 #, kde-format
 msgid "Alerts"
 msgstr "알림"
@@ -255,118 +255,129 @@ msgstr "어두움"
 msgid "Adaptive"
 msgstr "적응형"
 
-#: src/widgets/SettingsDialog.qml:151
+#: src/widgets/SettingsDialog.qml:151 src/widgets/TutorialDialog.qml:10
+#: src/widgets/TutorialDialog.qml:15
+#, kde-format
+msgid "Shortcuts"
+msgstr "단축키"
+
+#: src/widgets/SettingsDialog.qml:152
+#, kde-format
+msgid "Enable the sidebar with commands and places shortcuts."
+msgstr ""
+
+#: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid "Translucency"
 msgstr "반투명"
 
-#: src/widgets/SettingsDialog.qml:152
+#: src/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Translucent background."
 msgstr "반투명한 배경입니다."
 
-#: src/widgets/SettingsDialog.qml:163
+#: src/widgets/SettingsDialog.qml:175
 #, kde-format
 msgid "Tab Title"
 msgstr "탭 제목"
 
-#: src/widgets/SettingsDialog.qml:171
+#: src/widgets/SettingsDialog.qml:183
 #, kde-format
 msgid "Auto"
 msgstr "자동"
 
-#: src/widgets/SettingsDialog.qml:178
+#: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "Process"
 msgstr "프로세스"
 
-#: src/widgets/SettingsDialog.qml:185
+#: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Directory"
 msgstr "디렉터리"
 
-#: src/widgets/SettingsDialog.qml:195
+#: src/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Terminal"
 msgstr "터미널"
 
-#: src/widgets/SettingsDialog.qml:200
+#: src/widgets/SettingsDialog.qml:212
 #, kde-format
 msgid "Save Session"
 msgstr "세션 저장"
 
-#: src/widgets/SettingsDialog.qml:201
+#: src/widgets/SettingsDialog.qml:213
 #, kde-format
 msgid "Restore previous session on startup."
 msgstr "시작할 때 이전 세션을 복원합니다."
 
-#: src/widgets/SettingsDialog.qml:214
+#: src/widgets/SettingsDialog.qml:226
 #, kde-format
 msgid "Adaptive Color Scheme"
 msgstr "적응형 색 구성표"
 
-#: src/widgets/SettingsDialog.qml:215
+#: src/widgets/SettingsDialog.qml:227
 #, kde-format
 msgid "Colors based on the current style."
 msgstr "현재 스타일에 기반한 색상입니다."
 
-#: src/widgets/SettingsDialog.qml:228
+#: src/widgets/SettingsDialog.qml:240
 #, kde-format
 msgid "Color Scheme"
 msgstr "색 구성표"
 
-#: src/widgets/SettingsDialog.qml:229
+#: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Change the color scheme of the terminal."
 msgstr "터미널의 색 구성표를 변경합니다."
 
-#: src/widgets/SettingsDialog.qml:243
+#: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Alert on processes and prevent closing them."
 msgstr "프로세스 알림을 표시하고 종료를 방지합니다."
 
-#: src/widgets/SettingsDialog.qml:256
+#: src/widgets/SettingsDialog.qml:268
 #, kde-format
 msgid "Display"
 msgstr "표시"
 
-#: src/widgets/SettingsDialog.qml:262
+#: src/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Font family and size."
 msgstr "글꼴 종류와 크기입니다."
 
-#: src/widgets/SettingsDialog.qml:274
+#: src/widgets/SettingsDialog.qml:286
 #, kde-format
 msgid "Line Spacing"
 msgstr "줄 간격"
 
-#: src/widgets/SettingsDialog.qml:286
+#: src/widgets/SettingsDialog.qml:298
 #, kde-format
 msgid "History Size"
 msgstr "과거 기록 크기"
 
-#: src/widgets/SettingsDialog.qml:287
+#: src/widgets/SettingsDialog.qml:299
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
 "버퍼에 유지할 줄 수 입니다. 0보다 작은 값은 무한히 저장함을 의미합니다."
 
-#: src/widgets/SettingsDialog.qml:299
+#: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Enable Bold"
 msgstr "굵은 글꼴 활성화"
 
-#: src/widgets/SettingsDialog.qml:310
+#: src/widgets/SettingsDialog.qml:322
 #, kde-format
 msgid "Blinking Cursor"
 msgstr "깜빡이는 커서"
 
-#: src/widgets/SettingsDialog.qml:321
+#: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Full Cursor Height"
 msgstr "전체 커서 높이"
 
-#: src/widgets/SettingsDialog.qml:332
+#: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Antialias text"
 msgstr "텍스트 앤티에일리어싱"
@@ -410,11 +421,6 @@ msgstr "대기 중인 프로세스"
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
 msgstr "실행 중인 프로세스 '%1'이(가) 30초 이상 비활성 상태입니다."
-
-#: src/widgets/TutorialDialog.qml:10 src/widgets/TutorialDialog.qml:15
-#, kde-format
-msgid "Shortcuts"
-msgstr "단축키"
 
 #: src/widgets/TutorialDialog.qml:16
 #, kde-format
