@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-19 09:55+0200\n"
+"PO-Revision-Date: 2025-02-26 14:38+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -267,7 +267,7 @@ msgstr "Скорочення"
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr ""
+msgstr "Увімкнути бічну панель із кнопками команд і місць."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format

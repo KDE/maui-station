@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-19 18:03+0100\n"
+"PO-Revision-Date: 2025-02-26 17:05+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -267,7 +267,7 @@ msgstr "Sneltoetsen"
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr ""
+msgstr "De zijbalk inschakelen met sneltoetsen voor commando's en plaatsen."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
