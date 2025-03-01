@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-21 07:32+0100\n"
+"PO-Revision-Date: 2025-02-28 07:11+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -268,7 +268,7 @@ msgstr "Atallos"
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr ""
+msgstr "Activar a barra lateral con atallos de ordes e lugares."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format

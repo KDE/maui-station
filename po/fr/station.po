@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-20 09:27+0100\n"
+"PO-Revision-Date: 2025-02-27 09:11+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -268,6 +268,7 @@ msgstr "Raccourcis"
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
 msgstr ""
+"Activez la barre latérale avec des commandes et placez y des raccourcis."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
