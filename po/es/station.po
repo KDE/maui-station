@@ -1,15 +1,15 @@
-# Translation of maui-station to Spanish
-# Copyright (C) 2024-2025 This file is copyright:
+# Translation of station.po to Spanish
+# Copyright (C) 2022-2025 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
 # SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Víctor Rodrigo Córdoba <vrcordoba@gmail.com>
 # SPDX-FileCopyrightText: 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
-"Project-Id-Version: maui-station\n"
+"Project-Id-Version: station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2025-02-22 19:52+0100\n"
+"PO-Revision-Date: 2025-03-01 17:20+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -270,6 +270,7 @@ msgstr "Atajos"
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
 msgstr ""
+"Activar la barra lateral con órdenes y accesos rápidos de localizaciones."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
