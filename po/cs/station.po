@@ -60,7 +60,7 @@ msgstr "Příkazy"
 #: src/main.qml:146
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Záložky"
 
 #: src/main.qml:266 src/main.qml:328 src/widgets/TutorialDialog.qml:47
 #, kde-format
