@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
 #
-# SPDX-FileCopyrightText: 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2024-12-02 17:24+0900\n"
+"PO-Revision-Date: 2025-03-26 18:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -60,7 +60,7 @@ msgstr "命令"
 #: src/main.qml:146
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "書籤"
 
 #: src/main.qml:266 src/main.qml:328 src/widgets/TutorialDialog.qml:47
 #, kde-format
@@ -152,7 +152,7 @@ msgstr "您要回復前一個工作階段嗎？"
 #: src/widgets/CommandShortcuts.qml:17
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "過濾/新增"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
@@ -264,7 +264,7 @@ msgstr "快捷鍵"
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr ""
+msgstr "啟用包含命令與書籤捷徑的側邊欄。"
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
