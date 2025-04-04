@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:40+0000\n"
-"PO-Revision-Date: 2024-12-01 14:57+0200\n"
+"PO-Revision-Date: 2025-03-15 09:22+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -60,7 +60,7 @@ msgstr "Komennot"
 #: src/main.qml:146
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Kirjanmerkit"
 
 #: src/main.qml:266 src/main.qml:328 src/widgets/TutorialDialog.qml:47
 #, kde-format
@@ -152,7 +152,7 @@ msgstr "Haluatko palauttaa edellisen istunnon?"
 #: src/widgets/CommandShortcuts.qml:17
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "Suodata/lisää"
 
 #: src/widgets/CommandShortcuts.qml:34
 #, kde-format
@@ -265,7 +265,7 @@ msgstr "Pikanäppäimet"
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr ""
+msgstr "Käytä komento- ja sijaintisivupaneelia."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
