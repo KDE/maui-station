@@ -31,12 +31,15 @@ bool Station::isValidUrl(const QString &url)
 
 QString Station::resolveUrl(const QString &url, const QString &dir)
 {
-    QUrl m_dir = QUrl::fromLocalFile(dir+"/");
-    QUrl m_url (url.simplified());
+    if(url.contains(" "))
+        return QString();
 
-    // if(!m_url.isRelative())
-    //     return url;
-auto const resolved = m_dir.resolved(m_url).toString();
-qDebug() << "RESOLVED URL" << resolved << m_dir << m_url;
+    QUrl m_dir = QUrl::fromLocalFile(dir+"/");
+    QUrl m_url (url);
+
+           // if(!m_url.isRelative())
+           //     return url;
+    auto const resolved = m_dir.resolved(m_url).toString();
+    qDebug() << "RESOLVED URL" << resolved << m_dir << m_url;
     return resolved;
 }
