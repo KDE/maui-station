@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:40+0000\n"
+"POT-Creation-Date: 2025-05-10 00:41+0000\n"
 "PO-Revision-Date: 2025-02-27 09:11+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -49,94 +49,94 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Développeur"
 
-#: src/main.qml:138 src/widgets/TutorialDialog.qml:136
+#: src/main.qml:139 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "Commandes"
 
-#: src/main.qml:146
+#: src/main.qml:147
 #, kde-format
 msgid "Bookmarks"
 msgstr "Signets"
 
-#: src/main.qml:266 src/main.qml:328 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:268 src/main.qml:330 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Nouvel onglet"
 
-#: src/main.qml:279 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:281 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Fractionner"
 
-#: src/main.qml:293
+#: src/main.qml:295
 #, kde-format
 msgid "Tutorial"
 msgstr "Tutoriel"
 
-#: src/main.qml:305
+#: src/main.qml:307
 #, kde-format
 msgid "Settings"
 msgstr "Configuration"
 
-#: src/main.qml:315
+#: src/main.qml:317
 #, kde-format
 msgid "About"
 msgstr "À propos"
 
-#: src/main.qml:324
+#: src/main.qml:326
 #, kde-format
 msgid "Nothing here"
 msgstr "Rien ici"
 
-#: src/main.qml:325
+#: src/main.qml:327
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
 "Pour commencer à bidouiller, veuillez ouvrir un nouvel onglet ou un écran "
 "partagé."
 
-#: src/main.qml:343
+#: src/main.qml:345
 #, kde-format
 msgid "Function Keys"
 msgstr "Touches de fonction"
 
-#: src/main.qml:352
+#: src/main.qml:354
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:361
+#: src/main.qml:363
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificateurs de contrôle"
 
-#: src/main.qml:370 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:372 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navigation"
 
-#: src/main.qml:379
+#: src/main.qml:381
 #, kde-format
 msgid "Favorite"
 msgstr "Favori"
 
-#: src/main.qml:388
+#: src/main.qml:390
 #, kde-format
 msgid "Signals"
 msgstr "Signaux"
 
-#: src/main.qml:399
+#: src/main.qml:401
 #, kde-format
 msgid "More Signals"
 msgstr "Plus de signaux"
 
-#: src/main.qml:474
+#: src/main.qml:476
 #, kde-format
 msgid "Close"
 msgstr "Fermer"
 
-#: src/main.qml:475
+#: src/main.qml:477
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -145,42 +145,42 @@ msgstr ""
 "Un processus est actuellement en cours d'exécution. Voulez-vous vraiment "
 "l'interrompre et le fermer ?"
 
-#: src/main.qml:506
+#: src/main.qml:508
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Voulez-vous vraiment restaurer la session précédente ?"
 
-#: src/widgets/CommandShortcuts.qml:17
+#: src/widgets/CommandShortcuts.qml:19
 #, kde-format
 msgid "Filter/Add"
 msgstr "Filtrer / Ajouter"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:36
 #, kde-format
 msgid "Edit Command"
 msgstr "Modifier une commande"
 
-#: src/widgets/CommandShortcuts.qml:35
+#: src/widgets/CommandShortcuts.qml:37
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "Modifier un raccourci de commande."
 
-#: src/widgets/CommandShortcuts.qml:46
+#: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "Remove"
 msgstr "Supprimer"
 
-#: src/widgets/CommandShortcuts.qml:56
+#: src/widgets/CommandShortcuts.qml:58
 #, kde-format
 msgid "Edit"
 msgstr "Modifier"
 
-#: src/widgets/CommandShortcuts.qml:74
+#: src/widgets/CommandShortcuts.qml:76
 #, kde-format
 msgid "No Commands"
 msgstr "Aucune commande"
 
-#: src/widgets/CommandShortcuts.qml:75
+#: src/widgets/CommandShortcuts.qml:77
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "Démarrer l'ajout de nouveaux raccourcis de commandes"
@@ -388,16 +388,22 @@ msgid "Antialias text"
 msgstr "Appliquer un anticrénelage au texte"
 
 #: src/widgets/Terminal.qml:86
-#, kde-format
-msgid "Open Location"
+#, fuzzy, kde-format
+#| msgid "Open Location"
+msgid "Open Current Location"
 msgstr "Ouvrir un emplacement"
 
-#: src/widgets/Terminal.qml:113
+#: src/widgets/Terminal.qml:119
+#, kde-format
+msgid "Email"
+msgstr ""
+
+#: src/widgets/Terminal.qml:129
 #, kde-format
 msgid "Search Web"
 msgstr "Recherche sur Internet"
 
-#: src/widgets/Terminal.qml:124
+#: src/widgets/Terminal.qml:139
 #, kde-format
 msgid "Watch for Silence"
 msgstr "Surveillez le silence"

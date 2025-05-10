@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:40+0000\n"
+"POT-Creation-Date: 2025-05-10 00:41+0000\n"
 "PO-Revision-Date: 2025-02-26 08:30+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -53,134 +53,134 @@ msgstr "קמילו היגוויטה"
 msgid "Developer"
 msgstr "מפתח"
 
-#: src/main.qml:138 src/widgets/TutorialDialog.qml:136
+#: src/main.qml:139 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "פקודות"
 
-#: src/main.qml:146
+#: src/main.qml:147
 #, kde-format
 msgid "Bookmarks"
 msgstr "סימניות"
 
-#: src/main.qml:266 src/main.qml:328 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:268 src/main.qml:330 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "לשונית חדשה"
 
-#: src/main.qml:279 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:281 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "פיצול"
 
-#: src/main.qml:293
+#: src/main.qml:295
 #, kde-format
 msgid "Tutorial"
 msgstr "הדרכה"
 
-#: src/main.qml:305
+#: src/main.qml:307
 #, kde-format
 msgid "Settings"
 msgstr "הגדרות"
 
-#: src/main.qml:315
+#: src/main.qml:317
 #, kde-format
 msgid "About"
 msgstr "על אודות"
 
-#: src/main.qml:324
+#: src/main.qml:326
 #, kde-format
 msgid "Nothing here"
 msgstr "אין כאן כלום"
 
-#: src/main.qml:325
+#: src/main.qml:327
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "כדי להתחיל לפצח יש לפתוח לשונית חדשה או מסך מפוצל."
 
-#: src/main.qml:343
+#: src/main.qml:345
 #, kde-format
 msgid "Function Keys"
 msgstr "מקשי פונקציה"
 
-#: src/main.qml:352
+#: src/main.qml:354
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:361
+#: src/main.qml:363
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "מחליפי Ctrl"
 
-#: src/main.qml:370 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:372 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "ניווט"
 
-#: src/main.qml:379
+#: src/main.qml:381
 #, kde-format
 msgid "Favorite"
 msgstr "הוספה למועדפים"
 
-#: src/main.qml:388
+#: src/main.qml:390
 #, kde-format
 msgid "Signals"
 msgstr "אותות"
 
-#: src/main.qml:399
+#: src/main.qml:401
 #, kde-format
 msgid "More Signals"
 msgstr "אותות נוספים"
 
-#: src/main.qml:474
+#: src/main.qml:476
 #, kde-format
 msgid "Close"
 msgstr "סגירה"
 
-#: src/main.qml:475
+#: src/main.qml:477
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "יש עדיין תהליך פעיל. להפריע לו ולסגור אותו?"
 
-#: src/main.qml:506
+#: src/main.qml:508
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "לשחזר את ההפעלה הקודמת?"
 
-#: src/widgets/CommandShortcuts.qml:17
+#: src/widgets/CommandShortcuts.qml:19
 #, kde-format
 msgid "Filter/Add"
 msgstr "סינון/הוספה"
 
-#: src/widgets/CommandShortcuts.qml:34
+#: src/widgets/CommandShortcuts.qml:36
 #, kde-format
 msgid "Edit Command"
 msgstr "עריכת פקודה"
 
-#: src/widgets/CommandShortcuts.qml:35
+#: src/widgets/CommandShortcuts.qml:37
 #, kde-format
 msgid "Edit a command shortcut"
 msgstr "עריכת קיצור מקשים לפקודה"
 
-#: src/widgets/CommandShortcuts.qml:46
+#: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "Remove"
 msgstr "הסרה"
 
-#: src/widgets/CommandShortcuts.qml:56
+#: src/widgets/CommandShortcuts.qml:58
 #, kde-format
 msgid "Edit"
 msgstr "עריכה"
 
-#: src/widgets/CommandShortcuts.qml:74
+#: src/widgets/CommandShortcuts.qml:76
 #, kde-format
 msgid "No Commands"
 msgstr "אין פקודות"
 
-#: src/widgets/CommandShortcuts.qml:75
+#: src/widgets/CommandShortcuts.qml:77
 #, kde-format
 msgid "Start adding new command shortcuts"
 msgstr "ניתן להתחיל להוסיף קיצורי מקשים חדשים לפקודות"
@@ -384,16 +384,22 @@ msgid "Antialias text"
 msgstr "החלקת קצוות טקסט"
 
 #: src/widgets/Terminal.qml:86
-#, kde-format
-msgid "Open Location"
+#, fuzzy, kde-format
+#| msgid "Open Location"
+msgid "Open Current Location"
 msgstr "פתיחת מקום"
 
-#: src/widgets/Terminal.qml:113
+#: src/widgets/Terminal.qml:119
+#, kde-format
+msgid "Email"
+msgstr ""
+
+#: src/widgets/Terminal.qml:129
 #, kde-format
 msgid "Search Web"
 msgstr "חיפוש באינטרנט"
 
-#: src/widgets/Terminal.qml:124
+#: src/widgets/Terminal.qml:139
 #, kde-format
 msgid "Watch for Silence"
 msgstr "המתנה לשקט"
