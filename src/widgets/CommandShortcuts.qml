@@ -11,6 +11,8 @@ Maui.Page
 
     signal commandTriggered(string command, bool autorun)
 
+    headBar.visible: false
+    footerMargins: Maui.Style.defaultPadding
     footBar.forceCenterMiddleContent: false
     footBar.middleContent: Maui.SearchField
     {

@@ -127,6 +127,7 @@ Maui.ApplicationWindow
             asynchronous: true
             sourceComponent: Maui.Page
             {
+                headerMargins: Maui.Style.defaultPadding
                 headBar.middleContent: Maui.ToolActions
                 {
                     autoExclusive: true
@@ -184,6 +185,7 @@ Maui.ApplicationWindow
                     Maui.Page
                     {
                         id: _bookmarksPage
+                        headBar.visible: false
 
                         FB.PlacesListBrowser
                         {
