@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-10 00:41+0000\n"
-"PO-Revision-Date: 2025-02-26 09:33+0100\n"
+"PO-Revision-Date: 2025-05-10 10:33+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -391,15 +391,14 @@ msgid "Antialias text"
 msgstr "Text amb antialiàsing"
 
 #: src/widgets/Terminal.qml:86
-#, fuzzy, kde-format
-#| msgid "Open Location"
+#, kde-format
 msgid "Open Current Location"
-msgstr "Obre la ubicació"
+msgstr "Obre la ubicació actual"
 
 #: src/widgets/Terminal.qml:119
 #, kde-format
 msgid "Email"
-msgstr ""
+msgstr "Correu electrònic"
 
 #: src/widgets/Terminal.qml:129
 #, kde-format
