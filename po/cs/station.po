@@ -382,15 +382,14 @@ msgid "Antialias text"
 msgstr "Vyhlazovat text"
 
 #: src/widgets/Terminal.qml:86
-#, fuzzy, kde-format
-#| msgid "Open Location"
+#, kde-format
 msgid "Open Current Location"
-msgstr "Otevřít umístění"
+msgstr ""
 
 #: src/widgets/Terminal.qml:119
 #, kde-format
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: src/widgets/Terminal.qml:129
 #, kde-format
@@ -506,6 +505,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "New Command"
-#~ msgstr "Nový příkaz"

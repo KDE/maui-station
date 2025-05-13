@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-10 00:41+0000\n"
-"PO-Revision-Date: 2025-02-28 11:59+0100\n"
+"PO-Revision-Date: 2025-05-12 10:11+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -387,15 +387,14 @@ msgid "Antialias text"
 msgstr "Antialias del testo"
 
 #: src/widgets/Terminal.qml:86
-#, fuzzy, kde-format
-#| msgid "Open Location"
+#, kde-format
 msgid "Open Current Location"
-msgstr "Apri posizione"
+msgstr "Apri la posizione attuale"
 
 #: src/widgets/Terminal.qml:119
 #, kde-format
 msgid "Email"
-msgstr ""
+msgstr "Posta elettronica"
 
 #: src/widgets/Terminal.qml:129
 #, kde-format
