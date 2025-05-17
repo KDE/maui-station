@@ -1,554 +1,510 @@
-# Copyright (C) 2024 This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
+# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
-# SPDX-FileCopyrightText: 2023, 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-10 00:41+0000\n"
-"PO-Revision-Date: 2025-05-16 15:55+0900\n"
-"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
-"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
-"Language: zh_TW\n"
+"PO-Revision-Date: 2025-05-16 22:52+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.07.70\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr "暫停"
+msgstr "ألبث"
 
 #: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr "中斷"
+msgstr "مقاطعة"
 
 #: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr "強制停止"
+msgstr "اقتل"
 
 #: src/main.cpp:32
 #, kde-format
 msgid "Station"
-msgstr "Station"
+msgstr "محطة"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr "響應式終端機模擬器。"
+msgstr "محاكي الطرفية متكيف."
 
 #: src/main.cpp:38
 #, kde-format
 msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
+msgstr "كاميلو هيجويتا"
 
 #: src/main.cpp:38
 #, kde-format
 msgid "Developer"
-msgstr "開發者"
+msgstr "المطور"
 
 #: src/main.qml:139 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
-msgstr "命令"
+msgstr "الأوامر"
 
 #: src/main.qml:147
 #, kde-format
 msgid "Bookmarks"
-msgstr "書籤"
+msgstr "العلامات"
 
 #: src/main.qml:268 src/main.qml:330 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
-msgstr "新增分頁"
+msgstr "لسان جديد"
 
 #: src/main.qml:281 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
-msgstr "分割"
+msgstr "اقسم"
 
 #: src/main.qml:295
 #, kde-format
 msgid "Tutorial"
-msgstr "教學"
+msgstr "تعلم"
 
 #: src/main.qml:307
 #, kde-format
 msgid "Settings"
-msgstr "設定"
+msgstr "إعدادات"
 
 #: src/main.qml:317
 #, kde-format
 msgid "About"
-msgstr "關於"
+msgstr "عن"
 
 #: src/main.qml:326
 #, kde-format
 msgid "Nothing here"
-msgstr "這裡什麼都沒有"
+msgstr "لا يوجد شيء هنا"
 
 #: src/main.qml:327
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr "開啟新分頁或分割畫面來開始使用終端機。"
+msgstr "لبدء الاختراق، افتح لسان جديد أو شاشة مقسمة."
 
 #: src/main.qml:345
 #, kde-format
 msgid "Function Keys"
-msgstr "功能鍵"
+msgstr "مفاتيح الوظائف"
 
 #: src/main.qml:354
 #, kde-format
 msgid "Nano"
-msgstr "Nano"
+msgstr "نانو"
 
 #: src/main.qml:363
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr "Ctrl 組合鍵"
+msgstr "معدِّلات Ctrl"
 
 #: src/main.qml:372 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
-msgstr "導覽"
+msgstr "التّنقّل"
 
 #: src/main.qml:381
 #, kde-format
 msgid "Favorite"
-msgstr "最愛"
+msgstr "المفضّلة"
 
 #: src/main.qml:390
 #, kde-format
 msgid "Signals"
-msgstr "訊號"
+msgstr "الإشارات"
 
 #: src/main.qml:401
 #, kde-format
 msgid "More Signals"
-msgstr "更多訊號"
+msgstr "المزيد من الإشارات"
 
 #: src/main.qml:476
 #, kde-format
 msgid "Close"
-msgstr "關閉"
+msgstr "أغلق"
 
 #: src/main.qml:477
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr "還有在執行中的行程。您確定要中斷並關閉它嗎？"
+msgstr "لا تزال العملية جارية. هل أنت متأكد من مقاطعتها وإغلاقها؟"
 
 #: src/main.qml:508
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr "您要回復前一個工作階段嗎？"
+msgstr "هل تريد استعادة الجلسة السابقة؟"
 
 #: src/widgets/CommandShortcuts.qml:19
 #, kde-format
 msgid "Filter/Add"
-msgstr "過濾/新增"
+msgstr "المرشح/أضف"
 
 #: src/widgets/CommandShortcuts.qml:36
 #, kde-format
 msgid "Edit Command"
-msgstr "編輯命令"
+msgstr "حرر أمر"
 
 #: src/widgets/CommandShortcuts.qml:37
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr "編輯命令捷徑"
+msgstr "حرر اختصار أمر"
 
 #: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "Remove"
-msgstr "移除"
+msgstr "أزل"
 
 #: src/widgets/CommandShortcuts.qml:58
 #, kde-format
 msgid "Edit"
-msgstr "編輯"
+msgstr "حرّر"
 
 #: src/widgets/CommandShortcuts.qml:76
 #, kde-format
 msgid "No Commands"
-msgstr "沒有命令"
+msgstr "لا يوجد أوامر"
 
 #: src/widgets/CommandShortcuts.qml:77
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr "開始新增命令捷徑"
+msgstr "ابدأ بإضافة اختصارات أوامر جديدة"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:273
 #, kde-format
 msgid "Font"
-msgstr "字型"
+msgstr "الخط"
 
 #: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:254
 #, kde-format
 msgid "Alerts"
-msgstr "警示"
+msgstr "إنذارات"
 
 #: src/widgets/SettingsDialog.qml:60
 #, kde-format
 msgid "Running Task"
-msgstr "執行中工作"
+msgstr "المهمّة الجارية"
 
 #: src/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr "防止關閉一個執行中的工作。"
+msgstr "امنع إغلاق المهمة الجارية."
 
 #: src/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Finished Task"
-msgstr "已完成工作"
+msgstr "المهمة المنتهية"
 
 #: src/widgets/SettingsDialog.qml:73
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr "待處理工作已完成時傳送通知。"
+msgstr "إرسال إشعار عند انتهاء عملية معلقة."
 
 #: src/widgets/SettingsDialog.qml:84
 #, kde-format
 msgid "Silent"
-msgstr "靜默"
+msgstr "ساكنة"
 
 #: src/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr "執行中的工作靜默超過 30 秒時提出警示。"
+msgstr "إرسال تنبيه عندما تكون المهمة الجارية ساكنة لأكثر من 30 ثانية."
 
 #: src/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Interface"
-msgstr "介面"
+msgstr "الواجهة"
 
 #: src/widgets/SettingsDialog.qml:103
 #, kde-format
 msgid "Color"
-msgstr "色彩"
+msgstr "اللون"
 
 #: src/widgets/SettingsDialog.qml:104
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr "在明亮和暗色配色方案間切換。"
+msgstr "بدّل بين سمة الألوان الفاتحة والداكنة."
 
 #: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Light"
-msgstr "明亮"
+msgstr "فاتحة"
 
 #: src/widgets/SettingsDialog.qml:119
 #, kde-format
 msgid "Dark"
-msgstr "暗色"
+msgstr "مظلمة"
 
 #: src/widgets/SettingsDialog.qml:127
 #, kde-format
 msgid "Adaptive"
-msgstr "自動調整"
+msgstr "متكيف"
 
 #: src/widgets/SettingsDialog.qml:151 src/widgets/TutorialDialog.qml:10
 #: src/widgets/TutorialDialog.qml:15
 #, kde-format
 msgid "Shortcuts"
-msgstr "快捷鍵"
+msgstr "الاختصارات"
 
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr "啟用包含命令與書籤捷徑的側邊欄。"
+msgstr "مكّن الشريط الجانبي باستخدام الأوامر و اختصارات الأماكن."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid "Translucency"
-msgstr "半透明"
+msgstr "شبه الشفافية"
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Translucent background."
-msgstr "半透明背景。"
+msgstr "الخلفية الشفافة."
 
 #: src/widgets/SettingsDialog.qml:175
 #, kde-format
 msgid "Tab Title"
-msgstr "分頁標題"
+msgstr "عنوان اللسان"
 
 #: src/widgets/SettingsDialog.qml:183
 #, kde-format
 msgid "Auto"
-msgstr "自動"
+msgstr "آليّ"
 
 #: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "Process"
-msgstr "行程"
+msgstr "العمليّة"
 
 #: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Directory"
-msgstr "目錄"
+msgstr "الدّليل"
 
 #: src/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Terminal"
-msgstr "終端機"
+msgstr "الطّرفيّة"
 
 #: src/widgets/SettingsDialog.qml:212
 #, kde-format
 msgid "Save Session"
-msgstr "儲存工作階段"
+msgstr "احفظ الجلسة"
 
 #: src/widgets/SettingsDialog.qml:213
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr "啟動時回覆前一個工作階段。"
+msgstr "استعادة الجلسة السابقة عند بدء التشغيل."
 
 #: src/widgets/SettingsDialog.qml:226
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr "自動調整配色方案"
+msgstr "نظام الألوان المتكيف"
 
 #: src/widgets/SettingsDialog.qml:227
 #, kde-format
 msgid "Colors based on the current style."
-msgstr "基於目前風格的色彩。"
+msgstr "الألوان على أساس النمط الحالي."
 
 #: src/widgets/SettingsDialog.qml:240
 #, kde-format
 msgid "Color Scheme"
-msgstr "配色方案"
+msgstr "مخطّط الألوان"
 
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr "變更終端機的配色方案。"
+msgstr "غيّر نظام الألوان الطرفية."
 
 #: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr "為行程警示並防止關閉它們。"
+msgstr "تنبيه على العمليات ومنع إغلاقها."
 
 #: src/widgets/SettingsDialog.qml:268
 #, kde-format
 msgid "Display"
-msgstr "顯示"
+msgstr "العرض"
 
 #: src/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Font family and size."
-msgstr "字型家族與大小。"
+msgstr "عائلة الخط وحجمه."
 
 #: src/widgets/SettingsDialog.qml:286
 #, kde-format
 msgid "Line Spacing"
-msgstr "行間距"
+msgstr "تباعد الأسطر"
 
 #: src/widgets/SettingsDialog.qml:298
 #, kde-format
 msgid "History Size"
-msgstr "歷史大小"
+msgstr "حجم التّأريخ"
 
 #: src/widgets/SettingsDialog.qml:299
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
-msgstr "要保留在緩衝區的行數。小於零代表無限行。"
+msgstr ""
+"عدد الأسطر المطلوب الاحتفاظ بها في المخزن المؤقت. أقل من صفر يعني عدد لا "
+"نهائي من الأسطر."
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Enable Bold"
-msgstr "啟用粗體"
+msgstr "مكّن الخط الثخين"
 
 #: src/widgets/SettingsDialog.qml:322
 #, kde-format
 msgid "Blinking Cursor"
-msgstr "閃爍游標"
+msgstr "مؤشر وامض"
 
 #: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Full Cursor Height"
-msgstr "完整游標高度"
+msgstr "ارتفاع المؤشر الكامل"
 
 #: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Antialias text"
-msgstr "文字反鋸齒"
+msgstr "نعّم النص"
 
 #: src/widgets/Terminal.qml:86
 #, kde-format
-#| msgid "Open Location"
 msgid "Open Current Location"
-msgstr "開啟目前位置"
+msgstr "افتح الموقع الحالي"
 
 #: src/widgets/Terminal.qml:119
 #, kde-format
 msgid "Email"
-msgstr "電子郵件"
+msgstr "البريد الإلكترونيّ"
 
 #: src/widgets/Terminal.qml:129
 #, kde-format
 msgid "Search Web"
-msgstr "搜尋網路"
+msgstr "ابحث في الوِب"
 
 #: src/widgets/Terminal.qml:139
 #, kde-format
 msgid "Watch for Silence"
-msgstr "監控靜默"
+msgstr "راقب السكون"
 
 #: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "View"
-msgstr "檢視"
+msgstr "اعرض"
 
 #: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Process Finished"
-msgstr "行程已完成"
+msgstr "انتهت العملية"
 
 #: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr "分頁的工作已完成執行：%1"
+msgstr "انتهت مهمة التشغيل للسان: %1"
 
 #: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Pending Process"
-msgstr "待處理行程"
+msgstr "العمليّة المعلقة"
 
 #: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr "執行中行程「%1」已超過 30 秒沒有回應。"
+msgstr "ظلت عملية التشغيل '%1' غير نشطة لأكثر من 30 ثانية."
 
 #: src/widgets/TutorialDialog.qml:16
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
-msgstr "使用鍵盤時您可以使用以下快捷鍵進行導覽。"
+msgstr "عند استخدام لوحة المفاتيح، يمكنك استخدام اختصارات التنقل التالية."
 
 #: src/widgets/TutorialDialog.qml:21
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr "開啟新分割檢視，垂直或水平。"
+msgstr "افتح عرضًا مقسمًا جديدًا، عموديًا أو أفقيًا."
 
 #: src/widgets/TutorialDialog.qml:67
 #, kde-format
 msgid "Find"
-msgstr "尋找"
+msgstr "اعثر"
 
 #: src/widgets/TutorialDialog.qml:68
 #, kde-format
 msgid "Open the find bar."
-msgstr "開啟尋找列。"
+msgstr "افتح شريط البحث"
 
 #: src/widgets/TutorialDialog.qml:88
 #, kde-format
 msgid "Switch"
-msgstr "切換"
+msgstr "بدّل"
 
 #: src/widgets/TutorialDialog.qml:89
 #, kde-format
 msgid "Switch between split views."
-msgstr "在分割檢視間切換。"
+msgstr "انتقل بين العروض المنقسمة."
 
 #: src/widgets/TutorialDialog.qml:112
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
-msgstr "在觸控裝置上您可以使用以下手勢來進行導覽。"
+msgstr "على الأجهزة التي تعمل باللمس، يمكنك استخدام الإيماءات التالية للتنقل."
 
 #: src/widgets/TutorialDialog.qml:116
 #, kde-format
 msgid "Up & Down"
-msgstr "上 & 下"
+msgstr "أعلى وأسفل"
 
 #: src/widgets/TutorialDialog.qml:117
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr "上滑或下滑來瀏覽命令歷史。"
+msgstr "امسح لأعلى أو لأسفل للتنقل في سجل الأوامر."
 
 #: src/widgets/TutorialDialog.qml:122
 #, kde-format
 msgid "Left & Right"
-msgstr "左 & 右"
+msgstr "يسار ويمين"
 
 #: src/widgets/TutorialDialog.qml:123
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
-msgstr "左滑或右滑來在命令列上移動方便編輯。"
+msgstr "اسحب لليسار أو لليمين للتنقل عبر سطر الأوامر للتعديل."
 
 #: src/widgets/TutorialDialog.qml:128
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr "雙指左 & 雙指右"
+msgstr "اصبعان لليسار واليمين"
 
 #: src/widgets/TutorialDialog.qml:129
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr "雙指上滑或下滑來捲動。"
+msgstr "اسحب لأعلى أو لأسفل بإصبعين للتمرير."
 
 #: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
-msgstr "建立"
+msgstr "أنشئ"
 
 #: src/widgets/TutorialDialog.qml:141
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr "建立新命令捷徑，方便快速觸發動作。"
+msgstr "أنشئ اختصار أمر جديد لتشغيل الإجراءات بسرعة."
 
 #: src/widgets/TutorialDialog.qml:145
 #, kde-format
 msgid "Add"
-msgstr "新增"
-
-#~ msgid "New Command"
-#~ msgstr "新命令"
-
-#~ msgid "© 2019-2023 Maui Development Team"
-#~ msgstr "© 2019-2023 Maui 開發團隊"
-
-#~ msgid "Check"
-#~ msgstr "檢查"
-
-#~ msgid "Configure the application components and behaviour."
-#~ msgstr "設定應用程式元件與行為。"
-
-#~ msgid "Configure the app UI and plugins."
-#~ msgstr "設定應用程式介面與外掛。"
-
-#, fuzzy
-#~| msgid "Configure the terminal font family and size"
-#~ msgid "Configure the terminal font and display options."
-#~ msgstr "設定終端機字型家族與大小"
-
-#~ msgid ""
-#~ "Level of translucency. Works better if there is blurred background "
-#~ "support."
-#~ msgstr "半透明程度。支援背景模糊時效果較好。"
-
-#~ msgid "%1%"
-#~ msgstr "%1%"
-
-#~ msgid "Family"
-#~ msgstr "字型家族"
-
-#~ msgid "Size"
-#~ msgstr "字型大小"
-
-#~ msgid "Follows the system color scheme."
-#~ msgstr "跟隨系統配色。"
-
-#~ msgid "New tab"
-#~ msgstr "新增分頁"
-
-#~ msgid "Opacity"
-#~ msgstr "不透明度"
-
-#~ msgid "Background opacity"
-#~ msgstr "背景不透明度"
+msgstr "أضف"
