@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Station
+Name[ar]=محطة
 Name[az]=Stansiya
 Name[ca]=Estació
 Name[ca@valencia]=Estació
@@ -37,6 +38,7 @@ Name[x-test]=xxStationxx
 Name[zh_CN]=Station
 Name[zh_TW]=Station
 Comment=Terminal Emulator
+Comment[ar]=محاكي الطرفية
 Comment[az]=Terminal Emulatoru
 Comment[ca]=Emulador de terminal
 Comment[ca@valencia]=Emulador de terminal
