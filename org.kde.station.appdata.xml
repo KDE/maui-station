@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0</project_license>
   <name>Station</name>
+  <name xml:lang="ar">محطة</name>
   <name xml:lang="ca">Station</name>
   <name xml:lang="ca-valencia">Station</name>
   <name xml:lang="cs">Station</name>
@@ -33,6 +34,7 @@
   <name xml:lang="x-test">xxStationxx</name>
   <name xml:lang="zh-TW">Station</name>
   <summary>Terminal Emulator</summary>
+  <summary xml:lang="ar">محاكي الطرفية</summary>
   <summary xml:lang="ca">Emulador de terminal</summary>
   <summary xml:lang="ca-valencia">Emulador de terminal</summary>
   <summary xml:lang="cs">Emulátor terminálu</summary>
@@ -67,6 +69,7 @@
   </developer>
   <description>
     <p>Station is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.</p>
+    <p xml:lang="ar">محطة هو محاكي طرفية متكيف، جاهز لأجهزة سطح المكتب والأجهزة المحمولة التي تستخدم غنو/لينكس.</p>
     <p xml:lang="ca">L'Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que usen el GNU/Linux.</p>
     <p xml:lang="ca-valencia">Station és un emulador de terminal convergent, apte per a l'escriptori i els dispositius mòbils que utilitzen GNU/Linux.</p>
     <p xml:lang="en-GB">Station is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.</p>
@@ -107,6 +110,7 @@
     <screenshot type="default">
       <image type="source">https://cdn.kde.org/screenshots/station/station-stable.png</image>
       <caption>Station in desktop and phone.</caption>
+      <caption xml:lang="ar">محطة في سطح المكتب والجوال.</caption>
       <caption xml:lang="ca">L'Station a l'escriptori i al telèfon.</caption>
       <caption xml:lang="ca-valencia">Station en l'escriptori i al telèfon.</caption>
       <caption xml:lang="en-GB">Station in desktop and phone.</caption>
