@@ -383,7 +383,6 @@ msgstr "文字反鋸齒"
 
 #: src/widgets/Terminal.qml:86
 #, kde-format
-#| msgid "Open Location"
 msgid "Open Current Location"
 msgstr "開啟目前位置"
 
