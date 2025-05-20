@@ -80,11 +80,8 @@ Maui.SplitView
     {
         var index = control.currentIndex === 1 ? 0 : 1
         if(control.contentModel.get(index).session.hasActiveProcess && settings.preventClosing)
-        {
-            _dialogLoader.sourceComponent = _confirmCloseDialogComponent
-            dialog.index = index
-            dialog.cb = control.closeSplit
-            dialog.open()
+        {            
+            openCloseDialog(index, control.closeSplit)
         }else
         {
             control.closeSplit(index)

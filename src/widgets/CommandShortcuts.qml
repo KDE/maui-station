@@ -10,7 +10,7 @@ Maui.Page
     id: control
 
     signal commandTriggered(string command, bool autorun)
-
+    background: null
     headBar.visible: false
     footerMargins: Maui.Style.defaultPadding
     footBar.forceCenterMiddleContent: false

@@ -20,7 +20,6 @@ Maui.ApplicationWindow
 
     title: currentTerminal? currentTerminal.session.title : ""
 
-    readonly property alias dialog : _dialogLoader.item
     readonly property alias currentTab : _layout.currentItem
 
     readonly property Term.Terminal currentTerminal : currentTab.currentItem.terminal
@@ -38,20 +37,13 @@ Maui.ApplicationWindow
     property bool discard : !settings.preventClosing
     onClosing: (close) =>
                {
-                   // _dialogLoader.sourceComponent = null
                    close.accepted = !settings.restoreSession
                    root.saveSession()
 
-                   _dialogLoader.sourceComponent = _confirmCloseDialogComponent
-
                    if(anyTabHasActiveProcess() && !root.discard)
                    {
+                       openCloseDialog(-1, ()=> {root.discard = true; root.close();})
                        close.accepted = false
-
-                       dialog.index = -1
-                       dialog.cb =  ()=> {root.discard = true; root.close();}
-                       close.accepted = false
-                       dialog.open()
                        return
                    }
 
@@ -71,7 +63,7 @@ Maui.ApplicationWindow
         property int keysModelCurrentIndex : 4
         property int colorStyle : Maui.Style.Dark
 
-        property double windowOpacity: 0.6
+        property double windowOpacity: 0.8
         property bool windowTranslucency: false
 
         property bool adaptiveColorScheme : true
@@ -94,21 +86,22 @@ Maui.ApplicationWindow
         property bool enableSideBar : true
     }
 
-    Loader
-    {
-        id: _dialogLoader
-    }
-
     Component
     {
         id: _tutorialDialogComponent
-        TutorialDialog {}
+        TutorialDialog
+        {
+            onClosed: destroy()
+        }
     }
 
     Component
     {
         id: _settingsDialogComponent
-        SettingsDialog {}
+        SettingsDialog
+        {
+            onClosed: destroy()
+        }
     }
 
     Maui.SideBarView
@@ -119,14 +112,29 @@ Maui.ApplicationWindow
         sideBar.autoShow: false
         sideBar.autoHide: true
         sideBar.collapsed: !root.isWide
+
+        background: Rectangle
+        {
+            color: currentTerminal.kterminal.backgroundColor
+            opacity: _layout.count === 0 ? 1 : (settings.windowTranslucency ? settings.windowOpacity : 1)
+        }
+
         sideBarContent: Loader
         {
             anchors.fill: parent
+            anchors.margins: Maui.Style.defaultPadding
 
             active: settings.enableSideBar || item
             asynchronous: true
             sourceComponent: Maui.Page
             {
+                background: Rectangle
+                {
+                    color: Maui.Theme.backgroundColor
+                    radius: Maui.Style.radiusV
+                    opacity: _layout.count === 0 ? 1 : (settings.windowTranslucency ? settings.windowOpacity : 1)
+                }
+
                 headerMargins: Maui.Style.defaultPadding
                 headBar.middleContent: Maui.ToolActions
                 {
@@ -156,11 +164,13 @@ Maui.ApplicationWindow
                 {
                     id: _swipeView
                     anchors.fill: parent
+                    background: null
 
                     Maui.SwipeViewLoader
                     {
                         CommandShortcuts
                         {
+                            background: null
                             onCommandTriggered: (command, autorun) =>
                                                 {
                                                     root.currentTerminal.session.sendText("\x05\x15")
@@ -186,6 +196,7 @@ Maui.ApplicationWindow
                     {
                         id: _bookmarksPage
                         headBar.visible: false
+                        background: null
 
                         FB.PlacesListBrowser
                         {
@@ -218,9 +229,8 @@ Maui.ApplicationWindow
             Maui.TabView
             {
                 id: _layout
-
+                clip: true
                 background: null
-
                 altTabBar: Maui.Handy.isMobile
                 Maui.Controls.showCSD: true
 
@@ -229,12 +239,14 @@ Maui.ApplicationWindow
                 onNewTabClicked: root.openTab("$PWD")
                 onCloseTabClicked:(index) => root.closeTab(index)
 
+                tabBarMargins: Maui.Style.defaultPadding
                 tabBar.showNewTabButton: false
                 tabBar.visible: true
                 tabBar.background: Rectangle
                 {
                     color: Maui.Theme.backgroundColor
                     opacity: settings.windowTranslucency ? settings.windowOpacity : 1
+                    radius: Maui.Style.radiusV
                 }
 
                 tabBar.leftContent: Loader
@@ -295,7 +307,7 @@ Maui.ApplicationWindow
                             text: i18n("Tutorial")
                             onTriggered:
                             {
-                                _dialogLoader.sourceComponent = _tutorialDialogComponent
+                                var dialog = _tutorialDialogComponent.createObject(root)
                                 dialog.open()
                             }
                             icon.name : "help-contents"
@@ -307,7 +319,7 @@ Maui.ApplicationWindow
                             text: i18n("Settings")
                             onTriggered:
                             {
-                                _dialogLoader.sourceComponent = _settingsDialogComponent
+                                var dialog = _settingsDialogComponent.createObject(root)
                                 dialog.open()
                             }
                         }
@@ -464,16 +476,15 @@ Maui.ApplicationWindow
 
     Component
     {
-        id: _confirmCloseDialogComponent
-
+        id:  _confirmCloseDialogComponent
         Maui.InfoDialog
         {
-            id : _dialog
+            id : _confirmCloseDialog
 
             property var cb : ({})
             property int index: -1
 
-            title: i18n("Close")
+            // title: i18n("Close")
             message: i18n("A process is still running. Are you sure you want to interrupt it and close it?")
 
             template.iconSource: "dialog-warning"
@@ -484,7 +495,7 @@ Maui.ApplicationWindow
 
             onAccepted:
             {
-                _dialog.close()
+                _confirmCloseDialog.close()
 
                 if(cb instanceof Function)
                 {
@@ -508,7 +519,7 @@ Maui.ApplicationWindow
             message: i18n("Do you want to restore the previous session?")
             standardButtons: Dialog.Ok | Dialog.Cancel
             template.iconSource: "dialog-question"
-
+            onClosed: destroy()
             onAccepted:
             {
                 const tabs = settings.lastSession
@@ -527,7 +538,7 @@ Maui.ApplicationWindow
     {
         if(settings.restoreSession)
         {
-            _dialogLoader.sourceComponent = _restoreDialogComponent
+            var dialog = _restoreDialogComponent.createObject(root)
             dialog.open()
             return
         }
@@ -545,11 +556,8 @@ Maui.ApplicationWindow
 
         if(tab && tab.hasActiveProcess && settings.preventClosing)
         {
-            _dialogLoader.sourceComponent = _confirmCloseDialogComponent
-            dialog.index = index
-            dialog.cb = _layout.closeTab
-            dialog.open()
-            return;
+            openCloseDialog(index, _layout.closeTab)
+            return
         }
 
         _layout.closeTab(index)
@@ -616,5 +624,15 @@ Maui.ApplicationWindow
         }
 
         // currentTabIndex = settings.lastTabIndex
+    }
+
+    function openCloseDialog(index, cb)
+    {
+        var props = ({
+                         'index' : index,
+                         'cb' : cb
+                     })
+        var dialog = _confirmCloseDialogComponent.createObject(root, props)
+        dialog.open()
     }
 }
