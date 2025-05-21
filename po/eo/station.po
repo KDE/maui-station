@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-10 00:41+0000\n"
+"POT-Creation-Date: 2025-05-21 00:41+0000\n"
 "PO-Revision-Date: 2024-12-28 17:41+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
@@ -53,92 +53,88 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Ellaboranto"
 
-#: src/main.qml:139 src/widgets/TutorialDialog.qml:136
+#: src/main.qml:147 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "Komandoj"
 
-#: src/main.qml:147
+#: src/main.qml:155
 #, kde-format
 msgid "Bookmarks"
 msgstr ""
 
-#: src/main.qml:268 src/main.qml:330 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:280 src/main.qml:342 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Nova Langeto"
 
-#: src/main.qml:281 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:293 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Dividi"
 
-#: src/main.qml:295
+#: src/main.qml:307
 #, kde-format
 msgid "Tutorial"
 msgstr "Lernilo"
 
-#: src/main.qml:307
+#: src/main.qml:319
 #, kde-format
 msgid "Settings"
 msgstr "Agordoj"
 
-#: src/main.qml:317
+#: src/main.qml:329
 #, kde-format
 msgid "About"
 msgstr "Pri"
 
-#: src/main.qml:326
+#: src/main.qml:338
 #, kde-format
 msgid "Nothing here"
 msgstr "Nenio ĉi tie"
 
-#: src/main.qml:327
+#: src/main.qml:339
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Por komenci haki, malfermu novan langeton aŭ dividitan ekranon."
 
-#: src/main.qml:345
+#: src/main.qml:357
 #, kde-format
 msgid "Function Keys"
 msgstr "Funkciaj Ŝlosiloj"
 
-#: src/main.qml:354
+#: src/main.qml:366
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:363
+#: src/main.qml:375
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl-Modifiloj"
 
-#: src/main.qml:372 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:384 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navigado"
 
-#: src/main.qml:381
+#: src/main.qml:393
 #, kde-format
 msgid "Favorite"
 msgstr "Ŝatata"
 
-#: src/main.qml:390
+#: src/main.qml:402
 #, kde-format
 msgid "Signals"
 msgstr "Signaloj"
 
-#: src/main.qml:401
+#: src/main.qml:413
 #, kde-format
 msgid "More Signals"
 msgstr "Pli da Signaloj"
 
-#: src/main.qml:476
-#, kde-format
-msgid "Close"
-msgstr "Fermi"
-
-#: src/main.qml:477
+#. i18n("Close")
+#: src/main.qml:488
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -147,7 +143,7 @@ msgstr ""
 "Procezo ankoraŭ estas rulanta. Ĉu vi certas, ke vi volas interrompi ĝin kaj "
 "fermi ĝin?"
 
-#: src/main.qml:508
+#: src/main.qml:519
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Ĉu vi volas restarigi la antaŭan seancon?"
@@ -387,23 +383,23 @@ msgstr "Plena Kursor-Alteco"
 msgid "Antialias text"
 msgstr "Kontraŭaliasi teksto"
 
-#: src/widgets/Terminal.qml:86
+#: src/widgets/Terminal.qml:82
 #, fuzzy, kde-format
 #| msgid "Open Location"
 msgid "Open Current Location"
 msgstr "Malfermi Lokon"
 
-#: src/widgets/Terminal.qml:119
+#: src/widgets/Terminal.qml:115
 #, kde-format
 msgid "Email"
 msgstr ""
 
-#: src/widgets/Terminal.qml:129
+#: src/widgets/Terminal.qml:125
 #, kde-format
 msgid "Search Web"
 msgstr "Serĉi la Reton"
 
-#: src/widgets/Terminal.qml:139
+#: src/widgets/Terminal.qml:135
 #, kde-format
 msgid "Watch for Silence"
 msgstr "Atenti pri Silento"
@@ -513,6 +509,9 @@ msgstr "Krei novan komandan ŝparvojon por rapide ekigi agojn."
 #, kde-format
 msgid "Add"
 msgstr "Aldoni"
+
+#~ msgid "Close"
+#~ msgstr "Fermi"
 
 #~ msgid "New Command"
 #~ msgstr "Nova Komando"
