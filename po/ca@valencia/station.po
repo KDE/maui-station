@@ -224,7 +224,7 @@ msgstr "En silenci"
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
-"Emet una alerta quan una tasca en execució haja estat en silenci durant més "
+"Emet una alerta quan una tasca en execució haja sigut en silenci durant més "
 "de 30 segons."
 
 #: src/widgets/SettingsDialog.qml:98
@@ -514,6 +514,3 @@ msgstr "Crea una drecera d'ordre nova per a activar accions ràpidament."
 #, kde-format
 msgid "Add"
 msgstr "Afig"
-
-#~ msgid "Close"
-#~ msgstr "Tanca"
