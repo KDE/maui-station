@@ -345,6 +345,8 @@ Maui.ApplicationWindow
             }
 
             footBar.visible: Maui.Handy.isMobile || Maui.Handy.isTouch
+            footerContainer.margins: Maui.Style.contentMargins
+            footerContainer.topMargin: 0
 
             footBar.farRightContent: Loader
             {
