@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-21 00:41+0000\n"
+"POT-Creation-Date: 2025-05-28 00:41+0000\n"
 "PO-Revision-Date: 2025-04-07 23:58+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -97,50 +97,50 @@ msgstr "아무것도 없습니다"
 msgid "To start hacking open a new tab or a split screen."
 msgstr "해킹을 시작하려면 새 탭을 열거나 화면을 분할하십시오."
 
-#: src/main.qml:357
+#: src/main.qml:359
 #, kde-format
 msgid "Function Keys"
 msgstr "기능 키"
 
-#: src/main.qml:366
+#: src/main.qml:368
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:375
+#: src/main.qml:377
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl 수정자"
 
-#: src/main.qml:384 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:386 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "탐색"
 
-#: src/main.qml:393
+#: src/main.qml:395
 #, kde-format
 msgid "Favorite"
 msgstr "책갈피"
 
-#: src/main.qml:402
+#: src/main.qml:404
 #, kde-format
 msgid "Signals"
 msgstr "시그널"
 
-#: src/main.qml:413
+#: src/main.qml:415
 #, kde-format
 msgid "More Signals"
 msgstr "더 많은 시그널"
 
 #. i18n("Close")
-#: src/main.qml:488
+#: src/main.qml:490
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "프로세스가 실행 중입니다. 프로세스를 중단하고 닫으시겠습니까?"
 
-#: src/main.qml:519
+#: src/main.qml:521
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "이전 세션을 복원하시겠습니까?"

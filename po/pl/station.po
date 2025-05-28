@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-21 00:41+0000\n"
+"POT-Creation-Date: 2025-05-28 00:41+0000\n"
 "PO-Revision-Date: 2025-02-23 12:33+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -97,50 +97,50 @@ msgstr "Nie ma tutaj niczego"
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Aby zacząć otwórz nową kartę lub podziel ekran."
 
-#: src/main.qml:357
+#: src/main.qml:359
 #, kde-format
 msgid "Function Keys"
 msgstr "Klawisze funkcyjne"
 
-#: src/main.qml:366
+#: src/main.qml:368
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:375
+#: src/main.qml:377
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Odmieniacze Ctrl"
 
-#: src/main.qml:384 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:386 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Przemieszczanie się"
 
-#: src/main.qml:393
+#: src/main.qml:395
 #, kde-format
 msgid "Favorite"
 msgstr "Ulubione"
 
-#: src/main.qml:402
+#: src/main.qml:404
 #, kde-format
 msgid "Signals"
 msgstr "Sygnały"
 
-#: src/main.qml:413
+#: src/main.qml:415
 #, kde-format
 msgid "More Signals"
 msgstr "Więcej sygnałów"
 
 #. i18n("Close")
-#: src/main.qml:488
+#: src/main.qml:490
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Proces nadal jest uruchomiony. Czy na pewno go przerwać i zamknąć?"
 
-#: src/main.qml:519
+#: src/main.qml:521
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Czy przywrócić poprzednie posiedzenie?"

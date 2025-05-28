@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-21 00:41+0000\n"
+"POT-Creation-Date: 2025-05-28 00:41+0000\n"
 "PO-Revision-Date: 2025-02-28 15:23+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -98,50 +98,50 @@ msgstr "Te nekā nav"
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Lai sāktu darbu, atveriet jaunu cilni vai sadaliet ekrānu."
 
-#: src/main.qml:357
+#: src/main.qml:359
 #, kde-format
 msgid "Function Keys"
 msgstr "Funkciju taustiņi"
 
-#: src/main.qml:366
+#: src/main.qml:368
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:375
+#: src/main.qml:377
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "„Ctrl“ modifikatori"
 
-#: src/main.qml:384 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:386 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navigācija"
 
-#: src/main.qml:393
+#: src/main.qml:395
 #, kde-format
 msgid "Favorite"
 msgstr "Iecienīts"
 
-#: src/main.qml:402
+#: src/main.qml:404
 #, kde-format
 msgid "Signals"
 msgstr "Signāli"
 
-#: src/main.qml:413
+#: src/main.qml:415
 #, kde-format
 msgid "More Signals"
 msgstr "Vairāk signālu"
 
 #. i18n("Close")
-#: src/main.qml:488
+#: src/main.qml:490
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Joprojām darbojas process. Vai tiešām vēlaties to apturēt un aizvērt?"
 
-#: src/main.qml:519
+#: src/main.qml:521
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Vai vēlaties atjaunot uz iepriekšējo sesiju?"
