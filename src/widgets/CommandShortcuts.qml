@@ -19,7 +19,7 @@ Maui.Page
         placeholderText: i18n("Filter/Add")
         onAccepted:
         {
-            _commandsList.insert(text)
+            saveCommand(text)
             clear()
         }
 
@@ -36,7 +36,7 @@ Maui.Page
         title: i18n("Edit Command")
         message: i18n("Edit a command shortcut")
 
-        onFinished: _commandsList.edit(index, text)
+        onFinished:(text) => _commandsList.edit(index, text)
     }
 
     Menu
@@ -49,7 +49,7 @@ Maui.Page
             icon.name: "edit-clear"
             onTriggered:
             {
-                _commandsList.remove(index)
+                _commandsList.remove(_commandsShortcutList.currentIndex)
             }
         }
 
@@ -158,5 +158,10 @@ Maui.Page
                 }
             }
         }
+    }
+
+    function saveCommand(command)
+    {
+        _commandsList.insert(command)
     }
 }

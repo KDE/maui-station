@@ -25,6 +25,7 @@ Maui.ApplicationWindow
     readonly property Term.Terminal currentTerminal : currentTab.currentItem.terminal
     readonly property font defaultFont : Maui.Style.monospacedFont
     readonly property alias currentTabIndex : _layout.currentIndex
+    readonly property CommandShortcuts shortcutsPage : _sideBarLoader.item ?  _sideBarLoader.item.shortcutsPage : null
 
     Maui.WindowBlur
     {
@@ -121,6 +122,7 @@ Maui.ApplicationWindow
 
         sideBarContent: Loader
         {
+            id: _sideBarLoader
             anchors.fill: parent
             anchors.margins: Maui.Style.defaultPadding
 
@@ -128,6 +130,7 @@ Maui.ApplicationWindow
             asynchronous: true
             sourceComponent: Maui.Page
             {
+                property alias shortcutsPage : _shortcutsPage
                 background: Rectangle
                 {
                     color: Maui.Theme.backgroundColor
@@ -166,10 +169,9 @@ Maui.ApplicationWindow
                     anchors.fill: parent
                     background: null
 
-                    Maui.SwipeViewLoader
-                    {
                         CommandShortcuts
                         {
+                            id: _shortcutsPage
                             background: null
                             onCommandTriggered: (command, autorun) =>
                                                 {
@@ -190,7 +192,7 @@ Maui.ApplicationWindow
                                                     root.currentTerminal.forceActiveFocus()
                                                 }
                         }
-                    }
+
 
                     Maui.Page
                     {

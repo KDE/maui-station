@@ -74,6 +74,13 @@ Maui.SplitViewItem
         kterminal.antialiasText : settings.antialiasText
 
         menu: [
+            MenuItem
+            {
+                enabled: kterminal.isTextSelected && shortcutsPage
+              text: i18n("Save as Command")
+              icon.name: "bookmark"
+              onTriggered: shortcutsPage.saveCommand(kterminal.selectedText())
+            },
 
             MenuSeparator{},
 

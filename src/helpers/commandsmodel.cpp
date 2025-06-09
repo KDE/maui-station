@@ -66,7 +66,30 @@ bool CommandsModel::insert(const QString &command)
     return true;
 }
 
-void CommandsModel::remove(const int &index)
+void CommandsModel::remove(int index)
 {
+    Q_EMIT preItemRemoved(index);
+m_commands.removeAt(index);
+Q_EMIT postItemRemoved();
+Q_EMIT countChanged();
+this->saveCommands();
 
+}
+
+bool CommandsModel::edit(int index, const QString &newCommand)
+{
+    qDebug() << "Editing command " << index  << m_commands[index] << newCommand;
+
+    m_commands[index] = newCommand;
+
+
+     m_list[index].insert(FMH::MODEL_KEY::VALUE, m_commands[index]);
+
+    qDebug() << "Editing command " << index  << m_commands[index] << newCommand << m_commands;
+
+    Q_EMIT updateModel(index, {FMH::MODEL_KEY::VALUE});
+
+    this->saveCommands();
+
+    return true;
 }

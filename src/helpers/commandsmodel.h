@@ -24,6 +24,7 @@ private:
 
 public Q_SLOTS:
     bool insert(const QString &command);
-    void remove(const int &index);
+    void remove(int index);
+    bool edit(int index,const QString &newCommand);
 };
 
