@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-28 00:41+0000\n"
+"POT-Creation-Date: 2025-06-10 00:41+0000\n"
 "PO-Revision-Date: 2025-05-12 10:11+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -52,88 +52,88 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Sviluppatore"
 
-#: src/main.qml:147 src/widgets/TutorialDialog.qml:136
+#: src/main.qml:150 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "Comandi"
 
-#: src/main.qml:155
+#: src/main.qml:158
 #, kde-format
 msgid "Bookmarks"
 msgstr "Segnalibri"
 
-#: src/main.qml:280 src/main.qml:342 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:282 src/main.qml:344 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Nuova scheda"
 
-#: src/main.qml:293 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:295 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Dividi"
 
-#: src/main.qml:307
+#: src/main.qml:309
 #, kde-format
 msgid "Tutorial"
 msgstr "Esercitazione"
 
-#: src/main.qml:319
+#: src/main.qml:321
 #, kde-format
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: src/main.qml:329
+#: src/main.qml:331
 #, kde-format
 msgid "About"
 msgstr "Informazioni"
 
-#: src/main.qml:338
+#: src/main.qml:340
 #, kde-format
 msgid "Nothing here"
 msgstr "Non c'è niente qui"
 
-#: src/main.qml:339
+#: src/main.qml:341
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Per iniziare, apri una nuova scheda o uno schermo diviso."
 
-#: src/main.qml:359
+#: src/main.qml:361
 #, kde-format
 msgid "Function Keys"
 msgstr "Tasti funzione"
 
-#: src/main.qml:368
+#: src/main.qml:370
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:377
+#: src/main.qml:379
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Modificatori Ctrl"
 
-#: src/main.qml:386 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:388 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Navigazione"
 
-#: src/main.qml:395
+#: src/main.qml:397
 #, kde-format
 msgid "Favorite"
 msgstr "Preferito"
 
-#: src/main.qml:404
+#: src/main.qml:406
 #, kde-format
 msgid "Signals"
 msgstr "Segnali"
 
-#: src/main.qml:415
+#: src/main.qml:417
 #, kde-format
 msgid "More Signals"
 msgstr "Altri segnali"
 
 #. i18n("Close")
-#: src/main.qml:490
+#: src/main.qml:492
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
@@ -142,7 +142,7 @@ msgstr ""
 "Un processo è ancora in esecuzione. Sei sicuro di volerlo interrompere e "
 "chiudere?"
 
-#: src/main.qml:521
+#: src/main.qml:523
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Vuoi ripristinare la sessione precedente?"
@@ -382,22 +382,28 @@ msgstr "Altezza intera del cursore"
 msgid "Antialias text"
 msgstr "Antialias del testo"
 
-#: src/widgets/Terminal.qml:82
+#: src/widgets/Terminal.qml:80
+#, fuzzy, kde-format
+#| msgid "New Command"
+msgid "Save as Command"
+msgstr "Nuovo comando"
+
+#: src/widgets/Terminal.qml:89
 #, kde-format
 msgid "Open Current Location"
 msgstr "Apri la posizione attuale"
 
-#: src/widgets/Terminal.qml:115
+#: src/widgets/Terminal.qml:122
 #, kde-format
 msgid "Email"
 msgstr "Posta elettronica"
 
-#: src/widgets/Terminal.qml:125
+#: src/widgets/Terminal.qml:132
 #, kde-format
 msgid "Search Web"
 msgstr "Cerca nel web"
 
-#: src/widgets/Terminal.qml:135
+#: src/widgets/Terminal.qml:142
 #, kde-format
 msgid "Watch for Silence"
 msgstr "Controllo inattività"
@@ -516,9 +522,6 @@ msgstr "add kig icon"
 
 #~ msgid "Close"
 #~ msgstr "Chiudi"
-
-#~ msgid "New Command"
-#~ msgstr "Nuovo comando"
 
 #~ msgid "© 2019-2023 Maui Development Team"
 #~ msgstr "© 2019-2023 La squadra di sviluppo di Maui"
