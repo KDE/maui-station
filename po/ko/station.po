@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-10 00:41+0000\n"
-"PO-Revision-Date: 2025-04-07 23:58+0200\n"
+"PO-Revision-Date: 2025-06-10 22:43+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -379,21 +379,19 @@ msgid "Antialias text"
 msgstr "텍스트 앤티에일리어싱"
 
 #: src/widgets/Terminal.qml:80
-#, fuzzy, kde-format
-#| msgid "New Command"
+#, kde-format
 msgid "Save as Command"
-msgstr "새 명령"
+msgstr "명령으로 저장"
 
 #: src/widgets/Terminal.qml:89
-#, fuzzy, kde-format
-#| msgid "Open Location"
+#, kde-format
 msgid "Open Current Location"
-msgstr "위치 열기"
+msgstr "현재 위치 열기"
 
 #: src/widgets/Terminal.qml:122
 #, kde-format
 msgid "Email"
-msgstr ""
+msgstr "이메일"
 
 #: src/widgets/Terminal.qml:132
 #, kde-format

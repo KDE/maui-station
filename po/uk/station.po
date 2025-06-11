@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-10 00:41+0000\n"
-"PO-Revision-Date: 2025-05-10 09:10+0300\n"
+"PO-Revision-Date: 2025-06-10 09:10+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -383,10 +383,9 @@ msgid "Antialias text"
 msgstr "Згладжування тексту"
 
 #: src/widgets/Terminal.qml:80
-#, fuzzy, kde-format
-#| msgid "New Command"
+#, kde-format
 msgid "Save as Command"
-msgstr "Нова команда"
+msgstr "Зберегти як команду"
 
 #: src/widgets/Terminal.qml:89
 #, kde-format

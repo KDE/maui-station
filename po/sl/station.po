@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-10 00:41+0000\n"
-"PO-Revision-Date: 2025-05-10 07:16+0200\n"
+"PO-Revision-Date: 2025-06-10 06:48+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -383,10 +383,9 @@ msgid "Antialias text"
 msgstr "Zglajeno besedilo"
 
 #: src/widgets/Terminal.qml:80
-#, fuzzy, kde-format
-#| msgid "New Command"
+#, kde-format
 msgid "Save as Command"
-msgstr "Nov ukaz"
+msgstr "Shrani kot ukaz"
 
 #: src/widgets/Terminal.qml:89
 #, kde-format
