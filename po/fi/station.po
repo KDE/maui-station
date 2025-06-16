@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-10 00:41+0000\n"
+"POT-Creation-Date: 2025-06-16 00:41+0000\n"
 "PO-Revision-Date: 2025-05-27 23:31+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -52,95 +52,95 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Kehittäjä"
 
-#: src/main.qml:150 src/widgets/TutorialDialog.qml:136
+#: src/main.qml:151 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
 msgstr "Komennot"
 
-#: src/main.qml:158
+#: src/main.qml:159
 #, kde-format
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
-#: src/main.qml:282 src/main.qml:344 src/widgets/TutorialDialog.qml:47
+#: src/main.qml:283 src/main.qml:345 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
 msgstr "Uusi välilehti"
 
-#: src/main.qml:295 src/widgets/TutorialDialog.qml:20
+#: src/main.qml:296 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
 msgstr "Jaa"
 
-#: src/main.qml:309
+#: src/main.qml:310
 #, kde-format
 msgid "Tutorial"
 msgstr "Opastus"
 
-#: src/main.qml:321
+#: src/main.qml:322
 #, kde-format
 msgid "Settings"
 msgstr "Asetukset"
 
-#: src/main.qml:331
+#: src/main.qml:332
 #, kde-format
 msgid "About"
 msgstr "Tietoa"
 
-#: src/main.qml:340
+#: src/main.qml:341
 #, kde-format
 msgid "Nothing here"
 msgstr "Ei mitään täällä"
 
-#: src/main.qml:341
+#: src/main.qml:342
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr "Aloita hommat avaamalla uusi välilehti tai jaettu näyttö."
 
-#: src/main.qml:361
+#: src/main.qml:362
 #, kde-format
 msgid "Function Keys"
 msgstr "Funktionäppäimet"
 
-#: src/main.qml:370
+#: src/main.qml:371
 #, kde-format
 msgid "Nano"
 msgstr "Nano"
 
-#: src/main.qml:379
+#: src/main.qml:380
 #, kde-format
 msgid "Ctrl Modifiers"
 msgstr "Ctrl-muuntonäppäimet"
 
-#: src/main.qml:388 src/widgets/TutorialDialog.qml:111
+#: src/main.qml:389 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
 msgstr "Liikkuminen"
 
-#: src/main.qml:397
+#: src/main.qml:398
 #, kde-format
 msgid "Favorite"
 msgstr "Suosikki"
 
-#: src/main.qml:406
+#: src/main.qml:407
 #, kde-format
 msgid "Signals"
 msgstr "Signaalit"
 
-#: src/main.qml:417
+#: src/main.qml:418
 #, kde-format
 msgid "More Signals"
 msgstr "Lisää signaaleja"
 
 #. i18n("Close")
-#: src/main.qml:492
+#: src/main.qml:493
 #, kde-format
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
 msgstr "Prosessi on yhä käynnissä. Haluatko varmasti keskeyttää ja sulkea sen?"
 
-#: src/main.qml:523
+#: src/main.qml:524
 #, kde-format
 msgid "Do you want to restore the previous session?"
 msgstr "Haluatko palauttaa edellisen istunnon?"
