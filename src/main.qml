@@ -133,9 +133,10 @@ Maui.ApplicationWindow
                 property alias shortcutsPage : _shortcutsPage
                 background: Rectangle
                 {
-                    color: Maui.Theme.backgroundColor
+                    color: Maui.Theme.alternateBackgroundColor
                     radius: Maui.Style.radiusV
                     opacity: _layout.count === 0 ? 1 : (settings.windowTranslucency ? settings.windowOpacity : 1)
+                    border.color:  Maui.Theme.backgroundColor
                 }
 
                 headerMargins: Maui.Style.defaultPadding
