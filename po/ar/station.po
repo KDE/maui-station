@@ -473,7 +473,7 @@ msgstr "أعلى وأسفل"
 #: src/widgets/TutorialDialog.qml:117
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr "امسح لأعلى أو لأسفل للتنقل في سجل الأوامر."
+msgstr "امحُ لأعلى أو لأسفل للتنقل في سجل الأوامر."
 
 #: src/widgets/TutorialDialog.qml:122
 #, kde-format
