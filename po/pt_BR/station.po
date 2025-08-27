@@ -3,20 +3,21 @@
 #
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2023, 2024.
 # SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
+# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-16 00:41+0000\n"
-"PO-Revision-Date: 2025-02-05 23:55-0300\n"
-"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
+"PO-Revision-Date: 2025-08-26 08:16-0300\n"
+"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -61,7 +62,7 @@ msgstr "Comandos"
 #: src/main.qml:159
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Favoritos"
 
 #: src/main.qml:283 src/main.qml:345 src/widgets/TutorialDialog.qml:47
 #, kde-format
@@ -151,7 +152,7 @@ msgstr "Deseja restaurar a sessão anterior?"
 #: src/widgets/CommandShortcuts.qml:19
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "Filtrar/Adicionar"
 
 #: src/widgets/CommandShortcuts.qml:36
 #, kde-format
@@ -265,7 +266,7 @@ msgstr "Atalhos"
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr ""
+msgstr "Ativa a barra lateral com comandos e atalhos de localização."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
@@ -385,21 +386,19 @@ msgid "Antialias text"
 msgstr "Texto de anti-aliasing"
 
 #: src/widgets/Terminal.qml:80
-#, fuzzy, kde-format
-#| msgid "New Command"
+#, kde-format
 msgid "Save as Command"
-msgstr "Novo comando"
+msgstr "Salvar como comando"
 
 #: src/widgets/Terminal.qml:89
-#, fuzzy, kde-format
-#| msgid "Open Location"
+#, kde-format
 msgid "Open Current Location"
-msgstr "Abrir localização"
+msgstr "Abrir localização atual"
 
 #: src/widgets/Terminal.qml:122
 #, kde-format
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: src/widgets/Terminal.qml:132
 #, kde-format
