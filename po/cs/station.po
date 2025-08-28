@@ -378,10 +378,9 @@ msgid "Antialias text"
 msgstr "Vyhlazovat text"
 
 #: src/widgets/Terminal.qml:80
-#, fuzzy, kde-format
-#| msgid "Commands"
+#, kde-format
 msgid "Save as Command"
-msgstr "Příkazy"
+msgstr ""
 
 #: src/widgets/Terminal.qml:89
 #, kde-format
@@ -507,6 +506,3 @@ msgstr ""
 #, kde-format
 msgid "Add"
 msgstr "Přidat"
-
-#~ msgid "Close"
-#~ msgstr "Zavřít"
