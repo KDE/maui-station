@@ -31,7 +31,6 @@
   <name xml:lang="sv">Station</name>
   <name xml:lang="tr">İstasyon</name>
   <name xml:lang="uk">Станція</name>
-  <name xml:lang="x-test">xxStationxx</name>
   <name xml:lang="zh-TW">Station</name>
   <summary>Terminal Emulator</summary>
   <summary xml:lang="ar">محاكي الطرفية</summary>
@@ -61,7 +60,6 @@
   <summary xml:lang="sv">Terminalemulator</summary>
   <summary xml:lang="tr">Uçbirim Öykünücüsü</summary>
   <summary xml:lang="uk">Емулятор термінала</summary>
-  <summary xml:lang="x-test">xxTerminal Emulatorxx</summary>
   <summary xml:lang="zh-TW">終端機模擬器</summary>
   <developer id="org.mauikit">
     <name>maui</name>
@@ -94,7 +92,6 @@
     <p xml:lang="sv">Station är en konvergent terminalemulator, redo för stationära och mobila enheter som använder GNU/Linux.</p>
     <p xml:lang="tr">İstasyon, GNU/Linux kullanan masaüstü ve taşınabilir aygıtlar için yakınsak bir uçbirim öykünücüsüdür.</p>
     <p xml:lang="uk">«Станція» — гнучкий емулятор термінала, працює на робочих станціях та мобільних пристроях, де використано GNU/Linux.</p>
-    <p xml:lang="x-test">xxStation is a convergent terminal emulator, ready for desktop and mobile devices using GNU/Linux.xx</p>
     <p xml:lang="zh-TW">Station 是一個響應式終端機模擬器，可以在使用 GNU/Linux 的桌面與行動裝置上使用。</p>
   </description>
   <url type="homepage">https://apps.kde.org/station</url>
@@ -135,7 +132,6 @@
       <caption xml:lang="sv">Station på skrivbord och telefon.</caption>
       <caption xml:lang="tr">Masaüstü ve telefonda İstasyon.</caption>
       <caption xml:lang="uk">«Станція» на робочій станції та телефоні.</caption>
-      <caption xml:lang="x-test">xxStation in desktop and phone.xx</caption>
       <caption xml:lang="zh-TW">Station 在桌面和手機上。</caption>
     </screenshot>
   </screenshots>
