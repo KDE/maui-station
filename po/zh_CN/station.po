@@ -60,7 +60,7 @@ msgstr ""
 #: src/main.qml:159
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "书签"
 
 #: src/main.qml:283 src/main.qml:345 src/widgets/TutorialDialog.qml:47
 #, kde-format
@@ -148,7 +148,7 @@ msgstr ""
 #: src/widgets/CommandShortcuts.qml:19
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "过滤/添加"
 
 #: src/widgets/CommandShortcuts.qml:36
 #, kde-format
@@ -380,12 +380,12 @@ msgstr ""
 #: src/widgets/Terminal.qml:80
 #, kde-format
 msgid "Save as Command"
-msgstr ""
+msgstr "另存为命令"
 
 #: src/widgets/Terminal.qml:89
 #, kde-format
 msgid "Open Current Location"
-msgstr ""
+msgstr "打开当前位置"
 
 #: src/widgets/Terminal.qml:122
 #, kde-format
