@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the maui-station package.
-# SPDX-FileCopyrightText: 2023, 2024 Vit Pelcak <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Vit Pelcak <vit@pelcak.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2024-01-19 15:48+0100\n"
+"PO-Revision-Date: 2025-12-05 10:17+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
@@ -148,7 +148,7 @@ msgstr "Přejete si obnovit předchozí sezení?"
 #: src/widgets/CommandShortcuts.qml:19
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "Filtr/Přidat"
 
 #: src/widgets/CommandShortcuts.qml:36
 #, kde-format
@@ -380,7 +380,7 @@ msgstr "Vyhlazovat text"
 #: src/widgets/Terminal.qml:80
 #, kde-format
 msgid "Save as Command"
-msgstr ""
+msgstr "Uložit jako příkaz"
 
 #: src/widgets/Terminal.qml:89
 #, kde-format
@@ -395,7 +395,7 @@ msgstr "E-mail"
 #: src/widgets/Terminal.qml:132
 #, kde-format
 msgid "Search Web"
-msgstr ""
+msgstr "Hledat na webu"
 
 #: src/widgets/Terminal.qml:142
 #, kde-format
