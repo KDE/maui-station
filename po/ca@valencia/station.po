@@ -113,7 +113,7 @@ msgstr "Nano"
 #: src/main.qml:380
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr "Modificadors Ctrl"
+msgstr "Modificadors «Ctrl»"
 
 #: src/main.qml:389 src/widgets/TutorialDialog.qml:111
 #, kde-format
