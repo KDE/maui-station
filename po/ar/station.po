@@ -296,7 +296,7 @@ msgstr "الدّليل"
 #: src/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Terminal"
-msgstr "الطّرفيّة"
+msgstr "الطرفية"
 
 #: src/widgets/SettingsDialog.qml:212
 #, kde-format
