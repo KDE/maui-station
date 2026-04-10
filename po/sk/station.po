@@ -38,7 +38,7 @@ msgstr "Station"
 #: src/main.cpp:34
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr ""
+msgstr "Konvergentný emulátor terminálu."
 
 #: src/main.cpp:38
 #, kde-format
@@ -88,12 +88,12 @@ msgstr "O aplikácii"
 #: src/main.qml:341
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Nič tu nie je"
 
 #: src/main.qml:342
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
-msgstr ""
+msgstr "Na začatie práce otvorte novú kartu alebo rozdelené zobrazenie."
 
 #: src/main.qml:362
 #, kde-format
@@ -136,7 +136,7 @@ msgstr "More Signals"
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr ""
+msgstr "Proces stále beží. Naozaj ho chcete prerušiť a zavrieť?"
 
 #: src/main.qml:524
 #, kde-format
@@ -146,7 +146,7 @@ msgstr "Naozaj chcete restore the previous session?"
 #: src/widgets/CommandShortcuts.qml:19
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "Filtrovať/Pridať"
 
 #: src/widgets/CommandShortcuts.qml:36
 #, kde-format
@@ -156,7 +156,7 @@ msgstr "Upraviť príkaz"
 #: src/widgets/CommandShortcuts.qml:37
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr ""
+msgstr "Upraviť skratku príkazu"
 
 #: src/widgets/CommandShortcuts.qml:48
 #, kde-format
@@ -176,7 +176,7 @@ msgstr "No Commands"
 #: src/widgets/CommandShortcuts.qml:77
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr ""
+msgstr "Začnite pridávať nové skratky príkazov"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:273
 #, kde-format
@@ -196,7 +196,7 @@ msgstr "Running Task"
 #: src/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Zabrániť zatvoreniu bežiacej úlohy."
 
 #: src/widgets/SettingsDialog.qml:72
 #, kde-format
@@ -206,7 +206,7 @@ msgstr "Finished Task"
 #: src/widgets/SettingsDialog.qml:73
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Odoslať oznámenie po dokončení čakajúceho procesu."
 
 #: src/widgets/SettingsDialog.qml:84
 #, kde-format
@@ -217,7 +217,7 @@ msgstr "Tiché"
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
-msgstr ""
+msgstr "Odoslať upozornenie, keď bežiaca úloha bola tichá viac ako 30 sekúnd."
 
 #: src/widgets/SettingsDialog.qml:98
 #, kde-format
@@ -232,7 +232,7 @@ msgstr "Farba"
 #: src/widgets/SettingsDialog.qml:104
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr ""
+msgstr "Prepnúť medzi svetlou a tmavou farebnou schémou."
 
 #: src/widgets/SettingsDialog.qml:112
 #, kde-format
@@ -258,7 +258,7 @@ msgstr "Skratky"
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr ""
+msgstr "Povoliť bočný panel so skratkami príkazov a umiestnení."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
@@ -303,7 +303,7 @@ msgstr "Uložiť sedenie"
 #: src/widgets/SettingsDialog.qml:213
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Obnoviť predchádzajúcu reláciu pri spustení."
 
 #: src/widgets/SettingsDialog.qml:226
 #, kde-format
@@ -313,7 +313,7 @@ msgstr "Adaptive Color Scheme"
 #: src/widgets/SettingsDialog.qml:227
 #, kde-format
 msgid "Colors based on the current style."
-msgstr ""
+msgstr "Farby založené na aktuálnom štýle."
 
 #: src/widgets/SettingsDialog.qml:240
 #, kde-format
@@ -323,12 +323,12 @@ msgstr "Farebná schéma"
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr ""
+msgstr "Zmeniť farebnú schému terminálu."
 
 #: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Upozorňovať na procesy a zabrániť ich zatvoreniu."
 
 #: src/widgets/SettingsDialog.qml:268
 #, kde-format
@@ -338,7 +338,7 @@ msgstr "Obrazovka"
 #: src/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Font family and size."
-msgstr ""
+msgstr "Rodina písma a veľkosť."
 
 #: src/widgets/SettingsDialog.qml:286
 #, kde-format
@@ -354,6 +354,8 @@ msgstr "Veľkosť histórie"
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Počet riadkov na uchovanie vo vyrovnávacej pamäti. Menej ako nula znamená "
+"nekonečne veľa riadkov."
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
@@ -373,7 +375,7 @@ msgstr "Full Cursor Height"
 #: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Vyhladený text"
 
 #: src/widgets/Terminal.qml:80
 #, kde-format
@@ -398,7 +400,7 @@ msgstr "Search Web"
 #: src/widgets/Terminal.qml:142
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Sledovať ticho"
 
 #: src/widgets/TerminalLayout.qml:29
 #, kde-format
@@ -413,7 +415,7 @@ msgstr "Process Finished"
 #: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "Bežiaca úloha sa dokončila pre kartu: %1"
 
 #: src/widgets/TerminalLayout.qml:60
 #, kde-format
@@ -423,17 +425,18 @@ msgstr "Pending Process"
 #: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Bežiaci proces '%1' bol neaktívny viac ako 30 sekúnd."
 
 #: src/widgets/TutorialDialog.qml:16
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
 msgstr ""
+"Pri používaní klávesnice môžete na navigáciu použiť nasledujúce skratky."
 
 #: src/widgets/TutorialDialog.qml:21
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr ""
+msgstr "Otvoriť nové rozdelené zobrazenie, zvisle alebo vodorovne."
 
 #: src/widgets/TutorialDialog.qml:67
 #, kde-format
@@ -443,7 +446,7 @@ msgstr "Nájsť"
 #: src/widgets/TutorialDialog.qml:68
 #, kde-format
 msgid "Open the find bar."
-msgstr ""
+msgstr "Otvoriť panel vyhľadávania."
 
 #: src/widgets/TutorialDialog.qml:88
 #, kde-format
@@ -453,12 +456,13 @@ msgstr "Prepnúť"
 #: src/widgets/TutorialDialog.qml:89
 #, kde-format
 msgid "Switch between split views."
-msgstr ""
+msgstr "Prepnúť medzi rozdelenými zobrazeniami."
 
 #: src/widgets/TutorialDialog.qml:112
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
 msgstr ""
+"Na dotykových zariadeniach môžete na navigáciu použiť nasledujúce gestá."
 
 #: src/widgets/TutorialDialog.qml:116
 #, kde-format
@@ -468,7 +472,7 @@ msgstr "Hore/Dolu"
 #: src/widgets/TutorialDialog.qml:117
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr ""
+msgstr "Potiahnite hore alebo dole na prechádzanie históriou príkazov."
 
 #: src/widgets/TutorialDialog.qml:122
 #, kde-format
@@ -479,16 +483,17 @@ msgstr "Vľavo-vpravo"
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
+"Potiahnite doľava alebo doprava na pohyb po príkazovom riadku na úpravu."
 
 #: src/widgets/TutorialDialog.qml:128
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr ""
+msgstr "Dva prsty doľava a doprava"
 
 #: src/widgets/TutorialDialog.qml:129
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr ""
+msgstr "Potiahnite dvoma prstami hore alebo dole na posúvanie."
 
 #: src/widgets/TutorialDialog.qml:140
 #, kde-format
@@ -498,7 +503,7 @@ msgstr "Vytvoriť"
 #: src/widgets/TutorialDialog.qml:141
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr ""
+msgstr "Vytvoriť novú skratku príkazu na rýchle spúšťanie akcií."
 
 #: src/widgets/TutorialDialog.qml:145
 #, kde-format
