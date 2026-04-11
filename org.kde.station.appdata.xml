@@ -88,6 +88,7 @@
     <p xml:lang="pt">O Station é um emulador de terminal convergente, pronto para computadores e dispositivos móveis que usem o GNU/Linux.</p>
     <p xml:lang="pt-BR">O Station é um emulador de terminal convergente, pronto para computadores e dispositivos móveis usando Linux.</p>
     <p xml:lang="sa">स्टेशनः एकः अभिसरणीयः टर्मिनल् अनुकरणकः अस्ति, यः GNU/Linux इत्यस्य उपयोगेन डेस्कटॉप् तथा चलयन्त्राणां कृते सज्जः अस्ति ।</p>
+    <p xml:lang="sk">Station je konvergentný emulátor terminálu, pripravený pre stolné a mobilné zariadenia používajúce GNU/Linux.</p>
     <p xml:lang="sl">Station je konvergentni emulator terminala pripravljen tako za namizje kot za mobilne naprave, ki uporabljajo GNU/Linux.</p>
     <p xml:lang="sv">Station är en konvergent terminalemulator, redo för stationära och mobila enheter som använder GNU/Linux.</p>
     <p xml:lang="tr">İstasyon, GNU/Linux kullanan masaüstü ve taşınabilir aygıtlar için yakınsak bir uçbirim öykünücüsüdür.</p>
@@ -128,6 +129,7 @@
       <caption xml:lang="pt">O Station num computador e num telefone.</caption>
       <caption xml:lang="pt-BR">Station no computador e telefone.</caption>
       <caption xml:lang="sa">डेस्कटॉप् तथा दूरभाषे स्टेशनम्।</caption>
+      <caption xml:lang="sk">Station na stolnom počítači a telefóne.</caption>
       <caption xml:lang="sl">Station na namizju in telefonu.</caption>
       <caption xml:lang="sv">Station på skrivbord och telefon.</caption>
       <caption xml:lang="tr">Masaüstü ve telefonda İstasyon.</caption>
