@@ -242,7 +242,7 @@ msgstr "Basculer entre les thèmes clair et sombre de couleurs."
 #: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Light"
-msgstr "Léger"
+msgstr "Clair"
 
 #: src/widgets/SettingsDialog.qml:119
 #, kde-format
