@@ -296,7 +296,7 @@ msgstr "Procés"
 #: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Directory"
-msgstr "Directori"
+msgstr "Carpeta"
 
 #: src/widgets/SettingsDialog.qml:207
 #, kde-format
