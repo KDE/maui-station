@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2023-02-18 00:57+0000\n"
+"PO-Revision-Date: 2026-09-10 18:21+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,121 +17,123 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.9\n"
 
 #: src/helpers/keyshelper.cpp:214
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Pristabdyti"
 
 #: src/helpers/keyshelper.cpp:215
 #, kde-format
 msgid "Interrupt"
-msgstr ""
+msgstr "Pertraukti"
 
 #: src/helpers/keyshelper.cpp:216
 #, kde-format
 msgid "Kill"
-msgstr ""
+msgstr "Nutraukti"
 
 #: src/main.cpp:32
 #, kde-format
 msgid "Station"
-msgstr ""
+msgstr "Station"
 
 #: src/main.cpp:34
 #, kde-format
 msgid "Convergent terminal emulator."
-msgstr ""
+msgstr "Konverguojantis terminalo emuliatorius."
 
 #: src/main.cpp:38
 #, kde-format
 msgid "Camilo Higuita"
-msgstr ""
+msgstr "Camilo Higuita"
 
 #: src/main.cpp:38
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "Plėtotojas"
 
 #: src/main.qml:151 src/widgets/TutorialDialog.qml:136
 #, kde-format
 msgid "Commands"
-msgstr ""
+msgstr "Komandos"
 
 #: src/main.qml:159
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Žymelės"
 
 #: src/main.qml:283 src/main.qml:345 src/widgets/TutorialDialog.qml:47
 #, kde-format
 msgid "New Tab"
-msgstr ""
+msgstr "Nauja kortelė"
 
 #: src/main.qml:296 src/widgets/TutorialDialog.qml:20
 #, kde-format
 msgid "Split"
-msgstr ""
+msgstr "Padalyti"
 
 #: src/main.qml:310
 #, kde-format
 msgid "Tutorial"
-msgstr ""
+msgstr "Mokomoji priemonė"
 
 #: src/main.qml:322
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Nuostatos"
 
 #: src/main.qml:332
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Apie"
 
 #: src/main.qml:341
 #, kde-format
 msgid "Nothing here"
-msgstr ""
+msgstr "Čia nieko nėra"
 
 #: src/main.qml:342
 #, kde-format
 msgid "To start hacking open a new tab or a split screen."
 msgstr ""
+"Pradėkite darbą terminale atverdami naują kortelę arba padalydami ekraną."
 
 #: src/main.qml:362
 #, kde-format
 msgid "Function Keys"
-msgstr ""
+msgstr "Funkciniai klavišai"
 
 #: src/main.qml:371
 #, kde-format
 msgid "Nano"
-msgstr ""
+msgstr "Nano"
 
 #: src/main.qml:380
 #, kde-format
 msgid "Ctrl Modifiers"
-msgstr ""
+msgstr "Vald modifikatoriai"
 
 #: src/main.qml:389 src/widgets/TutorialDialog.qml:111
 #, kde-format
 msgid "Navigation"
-msgstr ""
+msgstr "Naršymas"
 
 #: src/main.qml:398
 #, kde-format
 msgid "Favorite"
-msgstr ""
+msgstr "Mėgstami"
 
 #: src/main.qml:407
 #, kde-format
 msgid "Signals"
-msgstr ""
+msgstr "Signalai"
 
 #: src/main.qml:418
 #, kde-format
 msgid "More Signals"
-msgstr ""
+msgstr "Daugiau signalų"
 
 #. i18n("Close")
 #: src/main.qml:493
@@ -139,371 +141,377 @@ msgstr ""
 msgid ""
 "A process is still running. Are you sure you want to interrupt it and close "
 "it?"
-msgstr ""
+msgstr "Procesas vis dar veikia. Ar tikrai norite jį pertraukti ir užverti?"
 
 #: src/main.qml:524
 #, kde-format
 msgid "Do you want to restore the previous session?"
-msgstr ""
+msgstr "Ar norite atkurti ankstesnį seansą?"
 
 #: src/widgets/CommandShortcuts.qml:19
 #, kde-format
 msgid "Filter/Add"
-msgstr ""
+msgstr "Filtruoti/Pridėti"
 
 #: src/widgets/CommandShortcuts.qml:36
 #, kde-format
 msgid "Edit Command"
-msgstr ""
+msgstr "Taisyti komandą"
 
 #: src/widgets/CommandShortcuts.qml:37
 #, kde-format
 msgid "Edit a command shortcut"
-msgstr ""
+msgstr "Taisyti komandos spartųjį klavišą"
 
 #: src/widgets/CommandShortcuts.qml:48
 #, kde-format
 msgid "Remove"
-msgstr ""
+msgstr "Šalinti"
 
 #: src/widgets/CommandShortcuts.qml:58
 #, kde-format
 msgid "Edit"
-msgstr ""
+msgstr "Taisyti"
 
 #: src/widgets/CommandShortcuts.qml:76
 #, kde-format
 msgid "No Commands"
-msgstr ""
+msgstr "Nėra komandų"
 
 #: src/widgets/CommandShortcuts.qml:77
 #, kde-format
 msgid "Start adding new command shortcuts"
-msgstr ""
+msgstr "Pridėkite naujus komandų šaukinius"
 
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:273
 #, kde-format
 msgid "Font"
-msgstr ""
+msgstr "Šriftas"
 
 #: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:254
 #, kde-format
 msgid "Alerts"
-msgstr ""
+msgstr "Įspėjimai"
 
 #: src/widgets/SettingsDialog.qml:60
 #, kde-format
 msgid "Running Task"
-msgstr ""
+msgstr "Vykdoma užduotis"
 
 #: src/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Prevent from closing a running task."
-msgstr ""
+msgstr "Neleisti užverti vykdomą užduotį."
 
 #: src/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Finished Task"
-msgstr ""
+msgstr "Užbaigta užduotis"
 
 #: src/widgets/SettingsDialog.qml:73
 #, kde-format
 msgid "Emit a notification when a pending process has finished."
-msgstr ""
+msgstr "Rodyti pranešimą, kai laukiamas procesas užbaigė darbą."
 
 #: src/widgets/SettingsDialog.qml:84
 #, kde-format
 msgid "Silent"
-msgstr ""
+msgstr "Pasyvumas"
 
 #: src/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid ""
 "Emit an alert when a running task has been silent for more than 30 seconds."
 msgstr ""
+"Rodyti pranešimą, kai vykdoma užduotis buvo pasyvi ilgiau nei 30 sekundžių."
 
 #: src/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Interface"
-msgstr ""
+msgstr "Sąsaja"
 
 #: src/widgets/SettingsDialog.qml:103
 #, kde-format
 msgid "Color"
-msgstr ""
+msgstr "Spalva"
 
 #: src/widgets/SettingsDialog.qml:104
 #, kde-format
 msgid "Switch between light and dark colorscheme."
-msgstr ""
+msgstr "Perjungti tarp šviesaus ir tamsaus spalvų rinkinio."
 
 #: src/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Šviesus"
 
 #: src/widgets/SettingsDialog.qml:119
 #, kde-format
 msgid "Dark"
-msgstr ""
+msgstr "Tamsus"
 
 #: src/widgets/SettingsDialog.qml:127
 #, kde-format
 msgid "Adaptive"
-msgstr ""
+msgstr "Prisitaikantis"
 
 #: src/widgets/SettingsDialog.qml:151 src/widgets/TutorialDialog.qml:10
 #: src/widgets/TutorialDialog.qml:15
 #, kde-format
 msgid "Shortcuts"
-msgstr ""
+msgstr "Šaukiniai"
 
 #: src/widgets/SettingsDialog.qml:152
 #, kde-format
 msgid "Enable the sidebar with commands and places shortcuts."
-msgstr ""
+msgstr "Įjungti šoninę juosta su komandų ir vietų šaukiniais."
 
 #: src/widgets/SettingsDialog.qml:163
 #, kde-format
 msgid "Translucency"
-msgstr ""
+msgstr "Dalinis permatomumas"
 
 #: src/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Translucent background."
-msgstr ""
+msgstr "Dalinai permatomas fonas."
 
 #: src/widgets/SettingsDialog.qml:175
 #, kde-format
 msgid "Tab Title"
-msgstr ""
+msgstr "Kortelės pavadinimas"
 
 #: src/widgets/SettingsDialog.qml:183
 #, kde-format
 msgid "Auto"
-msgstr ""
+msgstr "Automatiškai"
 
 #: src/widgets/SettingsDialog.qml:190
 #, kde-format
 msgid "Process"
-msgstr ""
+msgstr "Procesas"
 
 #: src/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid "Directory"
-msgstr ""
+msgstr "Katalogas"
 
 #: src/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminalas"
 
 #: src/widgets/SettingsDialog.qml:212
 #, kde-format
 msgid "Save Session"
-msgstr ""
+msgstr "Įrašyti seansą"
 
 #: src/widgets/SettingsDialog.qml:213
 #, kde-format
 msgid "Restore previous session on startup."
-msgstr ""
+msgstr "Paleidus programą atkurti ankstesnį seansą."
 
 #: src/widgets/SettingsDialog.qml:226
 #, kde-format
 msgid "Adaptive Color Scheme"
-msgstr ""
+msgstr "Prisitaikantis spalvų rinkinys"
 
 #: src/widgets/SettingsDialog.qml:227
 #, kde-format
 msgid "Colors based on the current style."
-msgstr ""
+msgstr "Spalvos, paremtos dabartiniu stiliumi."
 
 #: src/widgets/SettingsDialog.qml:240
 #, kde-format
 msgid "Color Scheme"
-msgstr ""
+msgstr "Spalvų rinkinys"
 
 #: src/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "Change the color scheme of the terminal."
-msgstr ""
+msgstr "Keisti terminalo spalvų rinkinį."
 
 #: src/widgets/SettingsDialog.qml:255
 #, kde-format
 msgid "Alert on processes and prevent closing them."
-msgstr ""
+msgstr "Įspėti apie procesus ir neleisti juos užverti."
 
 #: src/widgets/SettingsDialog.qml:268
 #, kde-format
 msgid "Display"
-msgstr ""
+msgstr "Atvaizdavimas"
 
 #: src/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Font family and size."
-msgstr ""
+msgstr "Šriftas ir jo dydis."
 
 #: src/widgets/SettingsDialog.qml:286
 #, kde-format
 msgid "Line Spacing"
-msgstr ""
+msgstr "Tarpai tarp eilučių"
 
 #: src/widgets/SettingsDialog.qml:298
 #, kde-format
 msgid "History Size"
-msgstr ""
+msgstr "Istorijos dydis"
 
 #: src/widgets/SettingsDialog.qml:299
 #, kde-format
 msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
 msgstr ""
+"Buferyje saugomų eilučių skaičius. Mažiau nei nulis, reiškia begalybę "
+"eilučių."
 
 #: src/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid "Enable Bold"
-msgstr ""
+msgstr "Įjungti pusjuodį"
 
 #: src/widgets/SettingsDialog.qml:322
 #, kde-format
 msgid "Blinking Cursor"
-msgstr ""
+msgstr "Mirkčiojantis žymeklis"
 
 #: src/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid "Full Cursor Height"
-msgstr ""
+msgstr "Visas žymeklio aukštis"
 
 #: src/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid "Antialias text"
-msgstr ""
+msgstr "Glodinti tekstą"
 
 #: src/widgets/Terminal.qml:80
 #, kde-format
 msgid "Save as Command"
-msgstr ""
+msgstr "Įrašyti kaip komandą"
 
 #: src/widgets/Terminal.qml:89
 #, kde-format
 msgid "Open Current Location"
-msgstr ""
+msgstr "Atverti dabartinę vietą"
 
 #: src/widgets/Terminal.qml:122
 #, kde-format
 msgid "Email"
-msgstr ""
+msgstr "Rašyti el. laišką"
 
 #: src/widgets/Terminal.qml:132
 #, kde-format
 msgid "Search Web"
-msgstr ""
+msgstr "Ieškoti saityne"
 
 #: src/widgets/Terminal.qml:142
 #, kde-format
 msgid "Watch for Silence"
-msgstr ""
+msgstr "Stebėti, ar yra pasyvumas"
 
 #: src/widgets/TerminalLayout.qml:29
 #, kde-format
 msgid "View"
-msgstr ""
+msgstr "Rodinys"
 
 #: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Process Finished"
-msgstr ""
+msgstr "Procesas užbaigė darbą"
 
 #: src/widgets/TerminalLayout.qml:40
 #, kde-format
 msgid "Running task has finished for tab: %1"
-msgstr ""
+msgstr "Vykdoma užduotis užbaigė darbą kortelėje: %1"
 
 #: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Pending Process"
-msgstr ""
+msgstr "Laukiamas procesas"
 
 #: src/widgets/TerminalLayout.qml:60
 #, kde-format
 msgid "Running process '%1' has been inactive for more than 30 seconds."
-msgstr ""
+msgstr "Vykdomas procesas „%1“ jau pasyvus ilgiau nei 30 sekundžių."
 
 #: src/widgets/TutorialDialog.qml:16
 #, kde-format
 msgid "When using a keyboard you can use the following shortcuts to navigate."
 msgstr ""
+"Naudodami klaviatūrą galite naršymui naudoti šiuos sparčiuosius klavišus."
 
 #: src/widgets/TutorialDialog.qml:21
 #, kde-format
 msgid "Open a new split view, vertically or horizontally."
-msgstr ""
+msgstr "Atverti naują padalytą rodinį, vertikaliai arba horizontaliai."
 
 #: src/widgets/TutorialDialog.qml:67
 #, kde-format
 msgid "Find"
-msgstr ""
+msgstr "Rasti"
 
 #: src/widgets/TutorialDialog.qml:68
 #, kde-format
 msgid "Open the find bar."
-msgstr ""
+msgstr "Atverti paieškos juostą"
 
 #: src/widgets/TutorialDialog.qml:88
 #, kde-format
 msgid "Switch"
-msgstr ""
+msgstr "Perjungti"
 
 #: src/widgets/TutorialDialog.qml:89
 #, kde-format
 msgid "Switch between split views."
-msgstr ""
+msgstr "Perjungti tarp padalytų rodinių."
 
 #: src/widgets/TutorialDialog.qml:112
 #, kde-format
 msgid "On touch devices you can use the following gestures to navigate."
-msgstr ""
+msgstr "Jutikliniuose įrenginiuose naršymui galite naudoti šiuos gestus."
 
 #: src/widgets/TutorialDialog.qml:116
 #, kde-format
 msgid "Up & Down"
-msgstr ""
+msgstr "Aukštyn ir žemyn"
 
 #: src/widgets/TutorialDialog.qml:117
 #, kde-format
 msgid "Swipe up or down to navigate the commands history."
-msgstr ""
+msgstr "Perbraukite aukštyn ar žemyn norėdami naršyti komandų istoriją."
 
 #: src/widgets/TutorialDialog.qml:122
 #, kde-format
 msgid "Left & Right"
-msgstr ""
+msgstr "Kairėn ir dešinėn"
 
 #: src/widgets/TutorialDialog.qml:123
 #, kde-format
 msgid "Swipe left or right to move through the command line to edit."
 msgstr ""
+"Perbraukite kairėn ar dešinėn norėdami judėti per komandų eilutę, kad "
+"atliktumėte taisymus."
 
 #: src/widgets/TutorialDialog.qml:128
 #, kde-format
 msgid "Two Fingers Left & Right"
-msgstr ""
+msgstr "Dviem pirštais kairėn ir dešinėn"
 
 #: src/widgets/TutorialDialog.qml:129
 #, kde-format
 msgid "Swipe up or down with two fingers to scroll."
-msgstr ""
+msgstr "Perbraukite dviem pirštais aukštyn ar žemyn norėdami slinkti."
 
 #: src/widgets/TutorialDialog.qml:140
 #, kde-format
 msgid "Create"
-msgstr ""
+msgstr "Sukurti"
 
 #: src/widgets/TutorialDialog.qml:141
 #, kde-format
 msgid "Create a new command shortcut to quickly trigger actions."
-msgstr ""
+msgstr "Sukurti naują komandos šaukinį, skirtą greitai paleisti veiksmus."
 
 #: src/widgets/TutorialDialog.qml:145
 #, kde-format
 msgid "Add"
-msgstr ""
+msgstr "Pridėti"
