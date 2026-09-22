@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2026-05-31 20:31-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -154,7 +154,7 @@ msgstr ""
 #: src/widgets/CommandShortcuts.qml:36
 #, kde-format
 msgid "Edit Command"
-msgstr ""
+msgstr "بۇيرۇق تەھرىر"
 
 #: src/widgets/CommandShortcuts.qml:37
 #, kde-format
@@ -245,7 +245,7 @@ msgstr "ئاق"
 #: src/widgets/SettingsDialog.qml:119
 #, kde-format
 msgid "Dark"
-msgstr ""
+msgstr "قاراڭغۇ"
 
 #: src/widgets/SettingsDialog.qml:127
 #, kde-format
