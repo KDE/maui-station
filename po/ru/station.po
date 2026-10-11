@@ -1,0 +1,516 @@
+# Translation of station into Russian.
+# This file is distributed under the same license as the maui-station package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: station\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:51+0000\n"
+"PO-Revision-Date: 2026-10-10 12:40+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: src/helpers/keyshelper.cpp:214
+#, kde-format
+msgid "Pause"
+msgstr "Приостановить"
+
+#: src/helpers/keyshelper.cpp:215
+#, kde-format
+msgid "Interrupt"
+msgstr "Прервать"
+
+#: src/helpers/keyshelper.cpp:216
+#, kde-format
+msgid "Kill"
+msgstr "Завершить"
+
+#: src/main.cpp:32
+#, kde-format
+msgid "Station"
+msgstr "Station"
+
+#: src/main.cpp:34
+#, kde-format
+msgid "Convergent terminal emulator."
+msgstr "Адаптивный эмулятор терминала."
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "Developer"
+msgstr "Разработчик"
+
+#: src/main.qml:151 src/widgets/TutorialDialog.qml:136
+#, kde-format
+msgid "Commands"
+msgstr "Команды"
+
+#: src/main.qml:159
+#, kde-format
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: src/main.qml:283 src/main.qml:345 src/widgets/TutorialDialog.qml:47
+#, kde-format
+msgid "New Tab"
+msgstr "Новая вкладка"
+
+#: src/main.qml:296 src/widgets/TutorialDialog.qml:20
+#, kde-format
+msgid "Split"
+msgstr "Разделить"
+
+#: src/main.qml:310
+#, kde-format
+msgid "Tutorial"
+msgstr "Обучение"
+
+#: src/main.qml:322
+#, kde-format
+msgid "Settings"
+msgstr "Параметры"
+
+#: src/main.qml:332
+#, kde-format
+msgid "About"
+msgstr "О программе"
+
+#: src/main.qml:341
+#, kde-format
+msgid "Nothing here"
+msgstr "Здесь ничего нет"
+
+#: src/main.qml:342
+#, kde-format
+msgid "To start hacking open a new tab or a split screen."
+msgstr "Чтобы начать работу, откройте новую вкладку или разделите экран."
+
+#: src/main.qml:362
+#, kde-format
+msgid "Function Keys"
+msgstr "Функциональные клавиши"
+
+#: src/main.qml:371
+#, kde-format
+msgid "Nano"
+msgstr "Nano"
+
+#: src/main.qml:380
+#, kde-format
+msgid "Ctrl Modifiers"
+msgstr "Модификаторы Ctrl"
+
+#: src/main.qml:389 src/widgets/TutorialDialog.qml:111
+#, kde-format
+msgid "Navigation"
+msgstr "Навигация"
+
+#: src/main.qml:398
+#, kde-format
+msgid "Favorite"
+msgstr "Избранное"
+
+#: src/main.qml:407
+#, kde-format
+msgid "Signals"
+msgstr "Сигналы"
+
+#: src/main.qml:418
+#, kde-format
+msgid "More Signals"
+msgstr "Другие сигналы"
+
+#. i18n("Close")
+#: src/main.qml:493
+#, kde-format
+msgid ""
+"A process is still running. Are you sure you want to interrupt it and close "
+"it?"
+msgstr "Процесс всё ещё выполняется. Прервать его и закрыть?"
+
+#: src/main.qml:524
+#, kde-format
+msgid "Do you want to restore the previous session?"
+msgstr "Восстановить предыдущий сеанс?"
+
+#: src/widgets/CommandShortcuts.qml:19
+#, kde-format
+msgid "Filter/Add"
+msgstr "Фильтр или добавление"
+
+#: src/widgets/CommandShortcuts.qml:36
+#, kde-format
+msgid "Edit Command"
+msgstr "Изменение команды"
+
+#: src/widgets/CommandShortcuts.qml:37
+#, kde-format
+msgid "Edit a command shortcut"
+msgstr "Изменить быструю команду"
+
+#: src/widgets/CommandShortcuts.qml:48
+#, kde-format
+msgid "Remove"
+msgstr "Удалить"
+
+#: src/widgets/CommandShortcuts.qml:58
+#, kde-format
+msgid "Edit"
+msgstr "Изменить"
+
+#: src/widgets/CommandShortcuts.qml:76
+#, kde-format
+msgid "No Commands"
+msgstr "Нет команд"
+
+#: src/widgets/CommandShortcuts.qml:77
+#, kde-format
+msgid "Start adding new command shortcuts"
+msgstr "Добавьте первые быстрые команды"
+
+#: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:273
+#, kde-format
+msgid "Font"
+msgstr "Шрифт"
+
+#: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:254
+#, kde-format
+msgid "Alerts"
+msgstr "Предупреждения"
+
+#: src/widgets/SettingsDialog.qml:60
+#, kde-format
+msgid "Running Task"
+msgstr "Выполняемая задача"
+
+#: src/widgets/SettingsDialog.qml:61
+#, kde-format
+msgid "Prevent from closing a running task."
+msgstr "Не давать закрыть выполняющуюся задачу."
+
+#: src/widgets/SettingsDialog.qml:72
+#, kde-format
+msgid "Finished Task"
+msgstr "Завершённая задача"
+
+#: src/widgets/SettingsDialog.qml:73
+#, kde-format
+msgid "Emit a notification when a pending process has finished."
+msgstr "Уведомлять о завершении ожидаемого процесса."
+
+#: src/widgets/SettingsDialog.qml:84
+#, kde-format
+msgid "Silent"
+msgstr "Тишина"
+
+#: src/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid ""
+"Emit an alert when a running task has been silent for more than 30 seconds."
+msgstr "Предупреждать, если выполняющаяся задача молчит более 30 секунд."
+
+#: src/widgets/SettingsDialog.qml:98
+#, kde-format
+msgid "Interface"
+msgstr "Интерфейс"
+
+#: src/widgets/SettingsDialog.qml:103
+#, kde-format
+msgid "Color"
+msgstr "Цвет"
+
+#: src/widgets/SettingsDialog.qml:104
+#, kde-format
+msgid "Switch between light and dark colorscheme."
+msgstr "Переключение между светлой и тёмной цветовыми схемами."
+
+#: src/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Light"
+msgstr "Светлая"
+
+#: src/widgets/SettingsDialog.qml:119
+#, kde-format
+msgid "Dark"
+msgstr "Тёмная"
+
+#: src/widgets/SettingsDialog.qml:127
+#, kde-format
+msgid "Adaptive"
+msgstr "Адаптивная"
+
+#: src/widgets/SettingsDialog.qml:151 src/widgets/TutorialDialog.qml:10
+#: src/widgets/TutorialDialog.qml:15
+#, kde-format
+msgid "Shortcuts"
+msgstr "Комбинации клавиш"
+
+#: src/widgets/SettingsDialog.qml:152
+#, kde-format
+msgid "Enable the sidebar with commands and places shortcuts."
+msgstr "Боковая панель с быстрыми командами и точками входа."
+
+#: src/widgets/SettingsDialog.qml:163
+#, kde-format
+msgid "Translucency"
+msgstr "Полупрозрачность"
+
+#: src/widgets/SettingsDialog.qml:164
+#, kde-format
+msgid "Translucent background."
+msgstr "Полупрозрачный фон."
+
+#: src/widgets/SettingsDialog.qml:175
+#, kde-format
+msgid "Tab Title"
+msgstr "Название вкладки"
+
+#: src/widgets/SettingsDialog.qml:183
+#, kde-format
+msgid "Auto"
+msgstr "Автоматически"
+
+#: src/widgets/SettingsDialog.qml:190
+#, kde-format
+msgid "Process"
+msgstr "Процесс"
+
+#: src/widgets/SettingsDialog.qml:197
+#, kde-format
+msgid "Directory"
+msgstr "Папка"
+
+#: src/widgets/SettingsDialog.qml:207
+#, kde-format
+msgid "Terminal"
+msgstr "Терминал"
+
+#: src/widgets/SettingsDialog.qml:212
+#, kde-format
+msgid "Save Session"
+msgstr "Сохранять сеанс"
+
+#: src/widgets/SettingsDialog.qml:213
+#, kde-format
+msgid "Restore previous session on startup."
+msgstr "Восстанавливать предыдущий сеанс при запуске."
+
+#: src/widgets/SettingsDialog.qml:226
+#, kde-format
+msgid "Adaptive Color Scheme"
+msgstr "Адаптивная цветовая схема"
+
+#: src/widgets/SettingsDialog.qml:227
+#, kde-format
+msgid "Colors based on the current style."
+msgstr "Цвета на основе текущего оформления."
+
+#: src/widgets/SettingsDialog.qml:240
+#, kde-format
+msgid "Color Scheme"
+msgstr "Цветовая схема"
+
+#: src/widgets/SettingsDialog.qml:241
+#, kde-format
+msgid "Change the color scheme of the terminal."
+msgstr "Изменение цветовой схемы терминала."
+
+#: src/widgets/SettingsDialog.qml:255
+#, kde-format
+msgid "Alert on processes and prevent closing them."
+msgstr "Предупреждать о процессах и предотвращать их закрытие."
+
+#: src/widgets/SettingsDialog.qml:268
+#, kde-format
+msgid "Display"
+msgstr "Внешний вид"
+
+#: src/widgets/SettingsDialog.qml:274
+#, kde-format
+msgid "Font family and size."
+msgstr "Гарнитура и размер шрифта."
+
+#: src/widgets/SettingsDialog.qml:286
+#, kde-format
+msgid "Line Spacing"
+msgstr "Межстрочный интервал"
+
+#: src/widgets/SettingsDialog.qml:298
+#, kde-format
+msgid "History Size"
+msgstr "Размер истории"
+
+#: src/widgets/SettingsDialog.qml:299
+#, kde-format
+msgid "Number of lines to keep in buffer. Less than zero means infinite lines."
+msgstr ""
+"Число строк, сохраняемых в буфере. Значение меньше нуля означает "
+"неограниченное число строк."
+
+#: src/widgets/SettingsDialog.qml:311
+#, kde-format
+msgid "Enable Bold"
+msgstr "Включить полужирное начертание"
+
+#: src/widgets/SettingsDialog.qml:322
+#, kde-format
+msgid "Blinking Cursor"
+msgstr "Мигающий курсор"
+
+#: src/widgets/SettingsDialog.qml:333
+#, kde-format
+msgid "Full Cursor Height"
+msgstr "Полная высота курсора"
+
+#: src/widgets/SettingsDialog.qml:344
+#, kde-format
+msgid "Antialias text"
+msgstr "Сглаживать текст"
+
+#: src/widgets/Terminal.qml:80
+#, kde-format
+msgid "Save as Command"
+msgstr "Сохранить как команду"
+
+#: src/widgets/Terminal.qml:89
+#, kde-format
+msgid "Open Current Location"
+msgstr "Открыть текущее расположение"
+
+#: src/widgets/Terminal.qml:122
+#, kde-format
+msgid "Email"
+msgstr "Электронная почта"
+
+#: src/widgets/Terminal.qml:132
+#, kde-format
+msgid "Search Web"
+msgstr "Искать в Интернете"
+
+#: src/widgets/Terminal.qml:142
+#, kde-format
+msgid "Watch for Silence"
+msgstr "Следить за тишиной"
+
+#: src/widgets/TerminalLayout.qml:29
+#, kde-format
+msgid "View"
+msgstr "Вид"
+
+#: src/widgets/TerminalLayout.qml:40
+#, kde-format
+msgid "Process Finished"
+msgstr "Процесс завершён"
+
+#: src/widgets/TerminalLayout.qml:40
+#, kde-format
+msgid "Running task has finished for tab: %1"
+msgstr "Выполнявшаяся задача во вкладке %1 завершена"
+
+#: src/widgets/TerminalLayout.qml:60
+#, kde-format
+msgid "Pending Process"
+msgstr "Неактивный процесс"
+
+#: src/widgets/TerminalLayout.qml:60
+#, kde-format
+msgid "Running process '%1' has been inactive for more than 30 seconds."
+msgstr "Выполняющийся процесс «%1» неактивен более 30 секунд."
+
+#: src/widgets/TutorialDialog.qml:16
+#, kde-format
+msgid "When using a keyboard you can use the following shortcuts to navigate."
+msgstr ""
+"При работе с клавиатурой для навигации можно использовать следующие "
+"комбинации клавиш."
+
+#: src/widgets/TutorialDialog.qml:21
+#, kde-format
+msgid "Open a new split view, vertically or horizontally."
+msgstr "Открыть разделённый вид по вертикали или горизонтали."
+
+#: src/widgets/TutorialDialog.qml:67
+#, kde-format
+msgid "Find"
+msgstr "Найти"
+
+#: src/widgets/TutorialDialog.qml:68
+#, kde-format
+msgid "Open the find bar."
+msgstr "Открыть панель поиска."
+
+#: src/widgets/TutorialDialog.qml:88
+#, kde-format
+msgid "Switch"
+msgstr "Переключить"
+
+#: src/widgets/TutorialDialog.qml:89
+#, kde-format
+msgid "Switch between split views."
+msgstr "Переключаться между разделёнными видами."
+
+#: src/widgets/TutorialDialog.qml:112
+#, kde-format
+msgid "On touch devices you can use the following gestures to navigate."
+msgstr ""
+"На сенсорных устройствах для навигации можно использовать следующие жесты."
+
+#: src/widgets/TutorialDialog.qml:116
+#, kde-format
+msgid "Up & Down"
+msgstr "Вверх и вниз"
+
+#: src/widgets/TutorialDialog.qml:117
+#, kde-format
+msgid "Swipe up or down to navigate the commands history."
+msgstr "Для навигации по истории команд смахивайте вверх или вниз."
+
+#: src/widgets/TutorialDialog.qml:122
+#, kde-format
+msgid "Left & Right"
+msgstr "Влево и вправо"
+
+#: src/widgets/TutorialDialog.qml:123
+#, kde-format
+msgid "Swipe left or right to move through the command line to edit."
+msgstr ""
+"Смахните влево или вправо, чтобы перемещаться по командной строке при "
+"редактировании."
+
+# BUGME: title says left & right, but the description below is about swiping up or down --ayavorsky 2026-10-10
+#: src/widgets/TutorialDialog.qml:128
+#, kde-format
+msgid "Two Fingers Left & Right"
+msgstr "Двумя пальцами влево и вправо"
+
+#: src/widgets/TutorialDialog.qml:129
+#, kde-format
+msgid "Swipe up or down with two fingers to scroll."
+msgstr "Проведите двумя пальцами вверх или вниз для прокрутки."
+
+#: src/widgets/TutorialDialog.qml:140
+#, kde-format
+msgid "Create"
+msgstr "Создать"
+
+#: src/widgets/TutorialDialog.qml:141
+#, kde-format
+msgid "Create a new command shortcut to quickly trigger actions."
+msgstr "Создать быструю команду для мгновенного запуска действий."
+
+#: src/widgets/TutorialDialog.qml:145
+#, kde-format
+msgid "Add"
+msgstr "Добавить"
