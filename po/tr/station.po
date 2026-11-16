@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-station\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2026-11-10 21:39+0300\n"
+"PO-Revision-Date: 2026-11-15 20:18+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -185,7 +185,7 @@ msgstr "Yeni komut kısayolları eklemeye başlayın"
 #: src/widgets/SettingsDialog.qml:20 src/widgets/SettingsDialog.qml:273
 #, kde-format
 msgid "Font"
-msgstr "Yazıtipi"
+msgstr "Yazı tipi"
 
 #: src/widgets/SettingsDialog.qml:56 src/widgets/SettingsDialog.qml:254
 #, kde-format
@@ -343,7 +343,7 @@ msgstr "Ekran"
 #: src/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Font family and size."
-msgstr "Yazıtipi ailesi ve boyutu."
+msgstr "Yazı tipi ailesi ve boyutu."
 
 #: src/widgets/SettingsDialog.qml:286
 #, kde-format
